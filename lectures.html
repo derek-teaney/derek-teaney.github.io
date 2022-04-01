@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+
+<!--  Title ---------------------------------------- --> 
+<head>
+  <title>Physics 306 -- Spring 2022</title>
+  <meta name="Physics 306" content="Physics 306 -- Spring 2022" />
+  <meta name="Thermal Physics" content="Physics, Thermal" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+
+    <!-- Menu -------------------------------------  -->
+    <div id="header">
+      <div id="logo">
+        <h1>Thermal Physics</h1>
+        <div class="slogan">Physics 306: Spring 2022</div>
+      </div>
+
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Syllabus</a></li>
+          <li class="current"><a href="lectures.html">Lectures</a></li>
+          <li><a href="homework.html">Homework</a></li>
+          <!-- <li><a href="notes.html">Notes</a></li>  -->
+           <li><a href="exams.html">Exams</a></li>
+        </ul>
+      </div>
+    </div>
+
+<!-- Content ------------------------------------- -->
+<div id="site_content">
+<div id="content">
+
+    <h3>Lecture Notes:</h3>
+
+     <br>
+
+     <h3> Outline: </h3>
+     <p>
+     <ul>
+        <li> <a href="#Introduction">Probability and Kinetics of Gasses</a> </li>
+        <li> <a href="#FirstLaw">The First Law</a> </li>
+        <li> <a href="#Entropy">Entropy and the Second Law</a> </li>
+        <li> <a href="#CanonicalEnsemble">Basic Statistical Mechanics</a> </li>
+     </ul>
+     </p>
+<br>
+<hr>
+<br>
+     
+     <h3> <a name="Introduction"></a> Introduction: </h3>
+     <p>
+      <ul> 
+         <li> <i> <a href="./lectures/math_bignumbers_probability.pdf">Big numbers and probability</a></i>
+            <ul>
+               <li> Stirling approximation: Sec 1.4 </li>
+               <li> Combinatorics  of choosing, binomial expansion: Sec  1.4 </li>
+               <li> Probability and probability density: Chap 3.1 - 3.5 </li>
+               <li> Sums of random numbers and the central limit theorem: Chap 3.6, 3.7 </li>
+            </ul>
+         <li> <i><a href="./lectures/idealgas_overview.pdf">Estimates of ideal gasses</a></i>
+            <ul>
+               <li> Ideal gas law. 1.1 -- 1.3 </li>
+               <li> Equipartition theorem. Given much later in book  </li>
+               <li> Estimates of interparticle spacing, typical speed, debroglie wavelength. Scattered throughout book </li>
+            </ul>
+         </li>
+         <li> <i><a href="./lectures/boltzmann_overview.pdf">The Boltzmann factor</a></i>
+            <ul>
+               <li> Just a short description of the result of Chp. 4.  More details will be given later </li>
+            </ul>
+         </li>
+         <li> <i><a href="./lectures/speed_distribution.pdf">Distribution of speeds and velocities</a></i>
+            <ul>
+               <li> This covers chapter 5.  There are a tiny bits of notational change. The book calls g(vx) what I call P(vx).
+                  And it calls    f(v), what I call P(v).  It also doesnt give a name for P(vx, vy, vz) = P(vx) P(vy) P(vz).
+            </ul>
+         </li>
+
+         <li> <i><a href="./lectures/changeofvars.pdf">Change of variables and spherical coordinates</a></i>
+            <ul>
+               <li>  This covers some mathematics needed in Chapter 6. Blundell introduces it in Chapter 6, but often in a 
+                  somewhat incomplete way.  
+            </ul>
+         </li>
+
+         <li> <i><a href="./lectures/effusion.pdf">Pressure and Effusion</a></i>
+            <ul>
+               <li>  Computes the pressure and effusion rate for a monoatomic ideal gas. Completes Chapter 6 and Chapter 7.   Introduces the concept of flux  dN/dtdA
+            </ul>
+         </li>
+      <ul>
+     </p>
+     <h3> <a name="FirstLaw"></a> Thermodynamics and the First Law</h3>
+     <p>
+      <ul> 
+         <li> <i> <a href="./lectures/thermometers.pdf">Measuring Temperature</a></i>
+            <ul>
+               <li> Discussion Largely Based on Zemansky. Chapter 1 </li>
+               <li> Discusses how the absolute temperature scale was measured, and how other thermometers are calibrated agains this.
+            </ul>
+          <li>
+         <li> <i> <a href="./lectures/specific_heats.pdf">Specific Heats</a></i>
+            <ul>
+               <li> Blundell -- Chapter 2. Zemanskyi 4.7 </li>
+               <li> Describes how energy entering the system changes the temperature. We parametrize this with specific heats Cv and Cp. I discuss these quantities and some measurements of them for gasses and solids.
+            </ul>
+          <li>
+         <li> <i> <a href="./lectures/eos.pdf">Equation of State</a></i>
+            <ul>
+               <li> Zemanskyi 2.1-2.3. Schroeder Chapter 1. </li>
+               <li> I discuss the pressure as a function of temperature and volume P(T,V) or V(T,P). The expansion coefficients and the isothermal compressibility parametrize the V(T,P) relation. I discuss how these coefficients are measured.
+            </ul>
+          <li>
+         <li> <i> <a href="./lectures/energy.pdf">Energy function</a></i>
+            <ul>
+               <li> Zemansky, Chapter 5 </li>
+               <li> I discuss the energy of a system U(T,V) how it depends on temperature and volume.  The specific heats tell one a lot about this function.
+            </ul>
+          <li>
+         <li> <i> <a href="./lectures/FirstLaw.pdf">The First Law</a></i>
+            <ul>
+               <li> Blundell, Chapter 11 </li>
+            </ul>
+          <li>
+         <li> <i> <a href="./lectures/AdiabaticIsothermal.pdf">Adiabatic and Isothermal Expansions</a></i>
+            <ul>
+               <li> Blundell, Chapter 12 </li>
+            </ul>
+         <li> <i> <a href="./lectures/Engines.pdf">Engines, Otto and Carnot</a></i>
+            <ul>
+               <li> Blundell, Chapter 12 </li>
+               <li> Blundell, Chapter 13 -- Carnot Cycle Only</li>
+               <li> In class we presented slides about how the car engine actually works, see  <a href="./lectures/EngineSlides/index.html">slides</a>. You should look at these slides while you read the notes on the Otto cycle, to try and make it a bit less abstract.
+            </ul>
+          <li>
+      </ul>
+     </p>
+     <h3> <a name="Entropy"></a> Entropy and the Second Law</h3>
+     <p>
+     <ul>
+         <li> <i> <a href="./lectures/CarnotLogic.pdf">Carnot cycle and reversible engines</a></i>.
+            Carnot cycle and how Carnot, Clausius, and Kelvin inferred
+            by pure logic that entropy exists, and that it should increase.
+            Blundell Chapter 13.
+         </li>
+        <li> 
+           <i> <a href="./lectures/EntropyPart1.pdf">Entropy, Temperature, Thermal Equilibrium </a></i>. Presents why we care about entropy and how it precisely defines temperature. This is based on chapter 4.3 and 4.4. as well as my own perspective.  </li>
+         <li>
+           <i> <a href="./lectures/EntropyPart2.pdf">Entropy of Ideal Mono-Atomic Gas</a></i>.  Computes the entropy of a classical mono-atomic gas, by directly counting microstates.
+         </li>
+         <li>
+           <i> <a href="./lectures/EntropyAndHeat.pdf">Entropy and Heat Flow</a></i>.  Works through several examples of
+           entropy associated with heat flow.  Readings: Chapter 14.1, 14.2
+         </li>
+         <li>
+           <i> <a href="./lectures/EntropyAndMechanicalEquilibrium.pdf">Entropy, Pressure, Mechanical Equilibrium</a></i>. Discusses mechanical equilibrium (equalities of pressures), in equilibrium.  Readings: Chapter 14.3
+         </li>
+         <li>
+           <i> <a href="./lectures/JouleThompsonExpansion.pdf">Entropy Change in free expansion</a></i>.  Works through 
+           entropy change of a free expansion.  Readings: Chapter 14.4
+         </li>
+         <li>
+           <i> <a href="./lectures/EntropyOfMixing.pdf">Entropy of mixing</a></i>.  Entropy change due to mixing of two gasses.  Readings: Chapter 14.6
+         </li>
+         <li>
+           <i> <a href="./lectures/CarnotAndEntropy.pdf">Entropy and Carnot Efficiency</a></i>.  Discusses Carnot efficiency using entropy concepts. Shows that  in a non-equilibrium process the entropy produced is greater than dQ/T.
+         <li>
+         <li> Entropy of ideal gas from a mathematical perspective
+            <ul>
+              <li> <i> <a href="./lectures/InexactDifferentials.pdf">Exact and Inexact Differentials</a></i>,
+                    Blundell, appendix C.7 and  Example 11.1 
+              </li>
+              <li> <i> <a href="./lectures/ThermoAndDifferentials.pdf">Heat and Entropy as inexact and exact differentials</a></i>,
+                       This allows us to revisit the Carnot Cycle.
+              </li>
+            </ul>
+         </li>
+     </ul>
+     </p>
+     <h3> <a name="CanonicalEnsemble"></a> Basic Statistical Mechanics </h3>
+     <p>
+     <ul>
+        <li>  <a href="./lectures/canonical_derivation.pdf">A derivation of the canonical ensemble and partition functions.</li>
+        <li> <a href="./lectures/canonical_einstein_model.pdf">The Einstein Solid</a>.  An instructive model of a solid </li>
+        <li> <a href="./lectures/canonical_entropy_derivation.pdf">Entropy in the canonical ensemble</a>. Determines the entropy of the Einstein solid using the canonical ensemble. </a>
+     </ul>
+     </p>
+     
+</div> <!-- site-content-->
+</div> <!-- content -->
+
+    <!--
+-->
