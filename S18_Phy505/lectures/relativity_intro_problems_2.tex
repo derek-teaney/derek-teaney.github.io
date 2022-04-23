@@ -1,0 +1,121 @@
+\newif\ifanswers
+%\answerstrue
+\documentclass[12pt]{article}
+
+\RequirePackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{graphicx,graphics}
+\usepackage{bm,mathrsfs, amssymb,amsmath,accents}
+%\usepackage[opta]{optional}
+\usepackage[colorlinks=true]{hyperref}
+
+\def\half{{\textstyle\frac{1}{2}}}
+\def\third{{\textstyle\frac{1}{3}}}
+\def\threehalf{{\textstyle\frac{3}{2}}}
+\def\twothird{{\textstyle\frac{2}{3}}}
+\def\quarter{{\textstyle\frac{1}{4}}}
+\def\fifth{{\textstyle\frac{1}{5}}}
+\def\sixth{{\textstyle\frac{1}{6}}}
+\def\mring#1{\accentset{\circ}{#1}}
+
+\def\ul#1{\underline{#1}}
+\def\options#1#2{{\opt{opta}{#1}\opt{optb}{#2}}}
+\def\F{{\bm F}}
+\def\E{{\bm E}}
+\def\da{{\rm d}{\bf a}}
+\def\B{{\bm B}}
+\def\A{{\bm A}}
+\def\n{{\bm n}}
+\def\pot{{\varphi}}
+\def\x{{\bm x}}
+\def\xh{{\hat{\bf x}}}
+\def\yh{{\hat{\bf y}}}
+\def\zh{{\hat{\bf z}}}
+\def\rh{{\hat{\bm r}}}
+\def\p{{\bm p}}
+\def\r{{\bm r}}
+\def\j{{\bf j}}
+\def\k{{\bm k}}
+\def\rhat{{\bm \hat{r} }}
+\def\S{{\bm S}}
+\def\dl{{\rm d}{\bm \ell}}
+\def\dV{{\rm d}^3r}
+\def\n{{\bm n}}
+\def\v{{\bm v}}
+\def\phmu{\phantom{\mu}}
+
+\def\ppx#1{\frac{\partial}{\partial #1}}
+
+\def\st{\begin{equation}}
+\def\stp{\end{equation}}
+\def\bg{\begin{eqnarray}}
+\def\nd{\end{eqnarray}}
+\def\Eq#1{Eq.~(\ref{#1})}
+\def\llangle{\left\langle }
+\def\rrangle{\right\rangle }
+
+\newcommand*{\handfig}[1]{\vspace{1.5in}\begin{center}Figure: {#1}\end{center}} 
+
+\newcommand*{\anyproblem}[1]{\newpage\subsection*{#1}}
+\newcommand*{\problem}[1]{\stepcounter{ProblemNum} %
+   \anyproblem{Problem \theProblemNum. \; #1}}
+
+\newcommand*{\soln}[1]{\subsubsection*{#1}}
+\newcommand*{\solution}{\soln{Solution:}}
+\renewcommand*{\part}{\stepcounter{SubProblemNum} %
+  \soln{Part (\theSubProblemNum)}}
+
+\newcounter{ProblemNum}
+\newcounter{SubProblemNum}[ProblemNum]
+ 
+\renewcommand{\theProblemNum}{\arabic{ProblemNum}}
+\renewcommand{\theSubProblemNum}{\alph{SubProblemNum}}
+  
+\renewcommand{\theenumi}{(\alph{enumi})}
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\theenumii}{\roman{enumii}}
+
+
+%\newenvironment{solution}%
+%{\noindent\ignorespaces {\bf Solution:}\\}%
+%{\par\noindent%
+%\ignorespacesafterend}
+
+
+\begin{document}
+
+\problem{One liners}
+\begin{enumerate}
+\item Starting from the Maxwell equations for $F^{\mu\nu}$ and
+the definition of $F^{\mu\nu}$,  derive 
+the wave equation $-\Box A^{\mu} = J^{\mu}/c$.
+\item Starting from the maxwell equations for $F^{\mu\nu}$ in covariant form,
+show that we must have $\partial_{\mu} J^{\mu} = 0$ for consistency.
+\item (This is two lines) Show that the energy conserivation and force laws
+\begin{align}
+    \frac{dE_\p}{dt} =& q\E\cdot \v_p \\
+    \frac{d\p}{dt} =& q (\E + \frac{{\bm v}_\p}{c} \times \B)
+\end{align}
+can be written covariantly
+\st
+\label{foo}
+ \frac{dP^{\mu}}{d\tau} = F^{\mu\nu} u_{\nu}/c
+\stp
+Note that $E_\p$ (the energy of the particle) is different from $\E$ the
+electric field.
+\item From \Eq{foo} show that $P_{\mu}P^{\mu}$ is constant in time.
+
+\item Show that $F_{\mu\nu} = \partial_\mu A_{\nu} - \partial_\nu A_{\mu}$  
+    is invariant under the gauge transform
+    \st
+                A_{\mu}  \rightarrow A_{\mu} + \partial_{\mu} \Lambda(X)
+    \stp
+    where $\Lambda$ is an arbitrary function of $X = (t,\r)$.
+
+\item Given $F^{\mu\nu}$ the only two Lorentz invariant quantities 
+    are $F_{\mu\nu} F^{\mu\nu}$ and $F_{\mu\nu} \tilde F^{\mu\nu}$. 
+Evaluate these two invariants in terms of $\E$ and $\B$\footnote{{\tiny answers: $2(B^2 - E^2)$ and $-4E\cdot B$}}
+\end{enumerate}
+
+\end{document}
+
+

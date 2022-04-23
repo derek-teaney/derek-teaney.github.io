@@ -1,0 +1,300 @@
+
+\newif\ifanswers
+%\answerstrue
+\documentclass[12pt]{article}
+
+\RequirePackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{graphicx,graphics}
+\usepackage{bm,mathrsfs, amssymb,amsmath,accents}
+%\usepackage[opta]{optional}
+\usepackage[colorlinks=true]{hyperref}
+
+\def\half{{\textstyle\frac{1}{2}}}
+\def\third{{\textstyle\frac{1}{3}}}
+\def\threehalf{{\textstyle\frac{3}{2}}}
+\def\twothird{{\textstyle\frac{2}{3}}}
+\def\quarter{{\textstyle\frac{1}{4}}}
+\def\fifth{{\textstyle\frac{1}{5}}}
+\def\sixth{{\textstyle\frac{1}{6}}}
+\def\mring#1{\accentset{\circ}{#1}}
+
+\def\ul#1{\underline{#1}}
+\def\options#1#2{{\opt{opta}{#1}\opt{optb}{#2}}}
+\def\F{{\bm F}}
+\def\E{{\bm E}}
+\def\da{{\rm d}{\bf a}}
+\def\B{{\bm B}}
+\def\A{{\bm A}}
+\def\n{{\bm n}}
+\def\pot{{\varphi}}
+\def\x{{\bm x}}
+\def\xh{{\hat{\bf x}}}
+\def\yh{{\hat{\bf y}}}
+\def\zh{{\hat{\bf z}}}
+\def\rh{{\hat{\bm r}}}
+\def\p{{\bm p}}
+\def\r{{\bm r}}
+\def\j{{\bm j}}
+\def\k{{\bm k}}
+\def\rhat{{\bm \hat{r} }}
+\def\S{{\bm S}}
+\def\dl{{\rm d}{\bm \ell}}
+\def\dV{{\rm d}^3r}
+\def\n{{\bm n}}
+\def\v{{\bm v}}
+
+\def\ppx#1{\frac{\partial}{\partial #1}}
+
+\def\st{\begin{equation}}
+\def\stp{\end{equation}}
+\def\bg{\begin{eqnarray}}
+\def\nd{\end{eqnarray}}
+\def\Eq#1{Eq.~(\ref{#1})}
+\def\llangle{\left\langle }
+\def\rrangle{\right\rangle }
+
+\newcommand*{\handfig}[1]{\vspace{1.5in}\begin{center}Figure: {#1}\end{center}} 
+
+\newcommand*{\anyproblem}[1]{\newpage\subsection*{#1}}
+\newcommand*{\problem}[1]{\stepcounter{ProblemNum} %
+   \anyproblem{Problem \theProblemNum. \; #1}}
+
+\newcommand*{\soln}[1]{\subsubsection*{#1}}
+\newcommand*{\solution}{\soln{Solution:}}
+\renewcommand*{\part}{\stepcounter{SubProblemNum} %
+  \soln{Part (\theSubProblemNum)}}
+
+\newcounter{ProblemNum}
+\newcounter{SubProblemNum}[ProblemNum]
+ 
+\renewcommand{\theProblemNum}{\arabic{ProblemNum}}
+\renewcommand{\theSubProblemNum}{\alph{SubProblemNum}}
+  
+\renewcommand{\theenumi}{(\alph{enumi})}
+\renewcommand{\labelenumi}{\theenumi}
+\renewcommand{\theenumii}{\roman{enumii}}
+
+
+%\newenvironment{solution}%
+%{\noindent\ignorespaces {\bf Solution:}\\}%
+%{\par\noindent%
+%\ignorespacesafterend}
+
+
+\begin{document}
+
+
+%\problem{Dipole two ways}
+%Consider two charges $\pm q$ moving a short distance on $\ell$ the $z$ axis
+%forming  a dipole, i.e.
+%\begin{align}
+%  z_{+}(t) =& \ell/2 \cos(\omega t) \\
+%  z_{-}(t) =& -\ell/2 \cos(\omega t)
+%\end{align}
+%This charged has dipole moment $p = q \ell \cos(\omega t)$  directed in the $z$ direction
+%\begin{enumerate}
+%\item Write down the electric field as a function of time.
+%\item
+%   By treating the time
+%dependent electric field as a ``displacement current"
+%\st
+%  \frac{{\bm j}_D }{c}= \frac{1}{c} \partial_t \E,
+%\stp 
+%      determine the magnetic field 
+%using Ampere's Law 
+%\st
+%  \oint \B\cdot d{\bm \ell} = \int_S d{\bm a} \cdot \frac{{\bm j}_D }{c} 
+%\stp
+%with an appropriate Amperian loop.
+%      Assume that ${\bm B}=B(r,\theta) \, \hat{\phi}$ which 
+%      can be justified from the symmetry of the problem. You should find
+%      \st
+%           {\B} =  \frac{\dot \p \times \n}{4\pi r^2 c}
+%      \stp
+
+%\item  Consider the Biot Savat Law
+%   \st
+%       \B(\r) = \int d^3\r_0 \frac{{\bm j(\r_0)}}{c} \times \frac{(\r - \r_0) }{4\pi |\r - \r_0|^3 }
+%    \stp
+%      Show that if ${\bm j}$ is curl free $\nabla \times {\bm j} =0$ 
+%      the magnetic field is zero.  Explain why the displacement current from an electrostatic field
+%      does not need to be included in the Biot-Savat Law. 
+
+%      Thus we see that the \emph{electrostatic} displacement current
+%      is necessary for consistency of Ampere's Law but does not actually
+%      produce a magnetic field.
+
+
+%\item 
+%   Show (using a high-school physics argument) that the current integrated over small volume $\Delta V$
+%      surrounding the charges is
+%\st
+% {\bm j} \Delta V = \partial_t \p
+%\stp
+%Use the Biot-Savat Law 
+%to determine the magnetic
+%field.   It should agree with $(b)$. 
+
+
+%%\item Recall the a magnetic dipole has a vector 
+%%potential
+%%\st
+%%   {\bm A} = \frac{{\bm m} \times \hat {\bm r} }{4\pi r^3}
+%%\stp
+%%and $\nabla \times {\bm A} = {\bm B}$. Using a formal analogy 
+%%to this familiar result, determine the magnetic field from a time dependent 
+%%electric dipole to first order in $1/c$.
+
+%%\item For a constant vector   ${\v}$ times a scalar \phi(\r) show 
+%%   that
+%%   \st
+%%      \nabla \times (\v \phi) =  \v \times (-\nabla \phi) \, .
+%%   \stp
+%%   Use this to  show that the vector potential in a particular gauge
+%%   takes the form
+%%      \st
+%%             \frac{\partial_t {\bm p} }{4\pi r}
+%%      \stp
+%%      Show that this is the Lorentz gauge and construct a gague transformation
+%%      to find the vector potential in the Coulomb gauge
+
+%\item At what radius do the  electric fields  part (a) 
+%   and the magnetic fields of part (b), (d) become
+%   equal in magnitude. At this radius the approximation scheme is no
+%   longer valid.
+
+%%\item For a constant vector   ${\v}$ times a scalar \phi(\r) show 
+%%   that
+%%   \st
+%%      \nabla \times (\v \phi) =  \v \times (-\nabla \phi) \, .
+%%   \stp
+%%   Use this to  show that the vector potential in a particular gauge
+%%   takes the form
+%%      \st
+%%             \frac{\partial_t {\bm p} }{4\pi r}
+%%      \stp
+%%      Show that this is the Lorentz gauge. 
+
+%%\item Construct a gague transformation 
+%%      to find the vector potential in the Coulomb gauge.
+%%      \st
+%%          \A = \frac{ 
+%%      \stp
+%%      Hint try a gauge transformation
+
+%\end{enumerate}
+%\newpage
+
+\problem{Dipole from potentials to order $1/c^2$}
+      This continues the ``Dipole two ways'' problem  from the homework
+
+\begin{enumerate}
+%\item For a constant vector   ${\v}$ times a scalar $f(\r)$ show 
+%   that
+%   \st
+%      \nabla \times (\v f(\r)) =  \v \times (-\nabla f(\r)) \, .
+%   \stp
+%   Use this to  guess that the vector potential in a particular gauge
+%   takes the form
+%      \st
+%            \label{Aguess}
+%            {\bm A}  = \frac{\partial_t {\bm p} }{4\pi r c}
+%      \stp
+%      As we will see this is the  Lorenz gauge
+
+%      Show that this is the Lorenz gauge by 
+%      evaluating
+%      \st
+%         \frac{1}{c} \partial_t \pot + \nabla \cdot \A = 0 
+%      \stp
+
+
+   \item (Optional) Starting from the Maxwell equations derive/write down  the equations for ($\phi,\A$)
+   in the Lorenz gauge 
+      \st
+          \frac{1}{c} \partial_t \varphi + \nabla \cdot \A = 0 
+      \stp
+      and Coulomb gauges
+      \st
+          \nabla \cdot \A = 0 
+      \stp
+
+\item  Use your expressions to shown that to first order in $1/c$
+   \begin{align}
+       \A_{\rm lrnz}(\r) =&  \int d^3\r_0 \frac{{\bm j}(\r_0)/c }{4\pi |\r - \r_0|} \\
+       \A_{\rm coul}(\r) =&  \int d^3\r_0 \frac{ {\bm j}(\r_0)/c + {\bm j}_{\rm D}(\r_0)/c}{4\pi |\r-\r_0|}
+   \end{align}
+   Evaluate the Lorenz gauge integral (using the results of homework 2)
+      yielding
+      \st
+            \label{Aguess}
+            {\bm A}_{\rm lrnz}  = \frac{\dot \p }{4\pi r c}
+      \stp
+
+
+\item  Show that the Coulomb gauge expression  
+   can be written
+      \begin{align}
+     \A_{\rm coul}(\r) =&  
+             \frac{\dot {\bm p} }{4\pi r c} 
+             - \nabla \, \frac{\partial}{c \partial t} 
+             \left[ \int d^3\r_0 \, \varphi(\r_0) \, 
+             \frac{1}{4\pi|\r - \r_0|} \right] 
+      \end{align}
+      At home (or in class if you have time) show that\footnote{ Use the ``Coulomb Identity" 
+   \st
+      \frac{1}{4\pi|\r - \r_0|}  = \sum_{\ell m} \frac{1}{2\ell + 1} \, \frac{r_{<}^\ell}{ r_>^{\ell+1} } \,  Y_{\ell m}(\theta,\phi)  Y_{\ell m}(\theta_0,\phi_0)
+   \stp
+      and the trick in \href{http://tonic.physics.sunysb.edu/~dteaney/S18_Phy505/lectures/magneto_sphere.pdf}{lecture} with 
+      \st
+       \varphi(\r_0) =  \frac{p \cos(\theta_0) }{4\pi r_0^2 }
+      \stp}
+      \st
+      \left[ \int d^3\r_0 \, \varphi(\r_0) \, 
+             \frac{1}{4\pi|\r - \r_0|} \right]  = \frac{\p \cdot \n}{8\pi}
+      \stp
+      where $\n \equiv \hat{\r}$,  to show that
+      \begin{subequations}
+         \label{Acoul}
+      \begin{align}
+     \A_{\rm coul}(\r) =&   
+             \frac{ \dot{\bm p} }{4\pi r c} -  \nabla \frac{\partial}{c \partial t} \left( \frac{\n \cdot \p}{8\pi } \right) \\
+%         =&
+%             \frac{ \dot{\bm p} }{4\pi r c} +  \frac{\n (\n\cdot \dot \p) - \dot \p}{8\pi r c}  \\
+         =& \frac{ \n (\n \cdot \dot \p) + \dot \p}{8\pi rc } 
+     \end{align}
+      \end{subequations}
+      As a by product you should find 
+      \st
+        \partial_i n_j = \frac{\delta_{ij} - n_i n_j}{r}
+      \stp
+      which will be relatively useful going forward.
+      
+
+   \item Without calculation explain why the magnetic field $\B^{(1)}$ from \Eq{Acoul} and \Eq{Aguess} must agree.  Which gauge is easier for the magnetic field?
+
+   \item Starting from the equations written down in (a), determine the correction to  order $1/c^2$ to $\varphi$ and in the Lorenz and Coulomb gauges. You should find :  
+      \st
+           \varphi^{(2)}_{\rm lrnz} =  - \, \frac{\n \cdot \ddot \p }{8\pi r c^2}
+      \stp
+      Relate the two results for $(\varphi, \A) $ via a gauge transformation. 
+
+   \item Determine the electric field to second order in $1/c$ using
+      the Lorenz and Coulomb gauges. Notice how particularly
+      simple the  Coulomb gauge is for this purpose.  You
+      should find (in either gauge) 
+      \st
+        \E^{(2)} =  - \frac{ \n (\n\cdot \ddot \p) + \ddot \p }{8\pi r c^2} 
+      \stp
+
+    \item At what radius does $\E^{(2)}$ become comparable to $\E^{(0)}$
+
+\end{enumerate}
+
+
+
+
+\end{document}
+
+
+

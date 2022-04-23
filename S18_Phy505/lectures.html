@@ -1,0 +1,318 @@
+<head>
+  <title>Physics 505 -- Spring 2018</title>
+  <meta name="Physics 505" content="Physics 505 -- Spring 2018" />
+  <meta name="Graduate Electrodynamics" content="Physics, Electrodynamics" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+<div id="main">
+  <div id="header">
+    <div id="logo">
+      <h1>Physics 505</h1>
+      <div class="slogan">Classical Electrodynamics</div>
+    </div>
+    <div id="menubar">
+      <ul id="menu">
+        <!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+        <li><a href="course.html">Home</a></li>
+        <li><a href="syllabus.html">Syllabus</a></li>
+        <li><a href="homework.html">Homework</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li class="current"><a href="lectures.html">Lectures</a></li>
+        <li><a href="exams.html">Exams</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="site_content"> 
+  <div id="content">
+    <h2>Lecture Notes and Tentative Schedule</h2>
+    <p> These are lecture notes that I use. They are not a
+    substitute for a good book or for going to class. But, if you
+    miss <em> one class </em> they can work for you  </p>
+    <ul> 
+      <li> <a href=#Overview>Overview</a></li>
+      <li> <a href=#Estatics>Electrostatics</a></li>
+      <li> <a href=#EstaticsMedia>Electrostatics and Media</a></li>
+      <li> <a href=#Mstatics>Magnetostatics</a> </li>
+      <li> <a href=#Induction>Induction, conservation laws, waves</a></li>
+      <li> <a href=#Nonrelrad>Non-relativistic radiation</a></li>
+      <li> <a href=#Relrad>Relativity and relativistic  radiation</a></li>
+      <li> <a href=#Scattering>Scattering and diffraction</a></li>
+    </ul>
+    <br>
+
+    <h4> <a name="Overview"></a>Overivew</h4>
+    <table width=inherit>
+      <TR> <TD> <p> Week 1: 1/22 </p> </TD> <TD> The Maxwell equations and mathematical review:  
+          <ul> 
+            <li> <a href="./lectures/units.pdf">Units</a></li>
+            <li> <a href="./lectures/overview.pdf">Overview: Specify the currents (or a constituent relation) and solve for the fields </a></li>
+            <li> <a href="./lectures/vector_analysis.pdf">Basic vector analysis, tensors, "bac-abc":</a>
+              <ul> 
+                 <li> A slower treatment of tensors was in first two lectures of math phys:  <a href="./lectures/mathphys_l1.pdf">l1</a>,<a href="./lectures/mathphys_l2.pdf">l2</a>
+                 </ul>
+                 </li>
+              <ul> 
+                 <li> <a href="./lectures/helmholtz.pdf">Helmholtz theorem's and consequences</a>
+                    <ul>
+                <li> Gauge invariance  </li>
+                <li> Current conservation</li>
+              </ul> 
+            </li>
+            <li> <a href="./lectures/dimensional_analysis.pdf">Expansion of the Maxwell equations in 1/c</a></li>
+          </ul> </TD> 
+      </TR>
+    </table>
+    <br>
+    <h4> <a name="Estatics"></a>Electrostatics</h4>
+    <table width=730px>
+       <TR> <TD><p> Week 1: 1/22 </p> </TD> <TD>
+          Electrostatics: 
+          <ul>
+            <li> <a href="./lectures/estatics_basics.pdf">Fundamental equations and boundary conditions</a> </li>
+            <li> <a href="./lectures/estatics_energy.pdf">Electrostatic energy</a> </li>
+            <li>  <a href="./lectures/estatics_stress.pdf"> Stress and force in electrostatics:</a>
+              <ul>
+                <li>The stress tensor and forces generally, momentum conservation law</a>
+                <li> The electric stress tensor and two in class problems</a>
+              </ul>
+              <li> <a href="./lectures/estatics_multipoles.pdf">The multipole expansion </a>
+                <li> <a href="./lectures/estatics_force_multipole.pdf">
+                    Forces on a multipole </a>
+          </ul>
+      </TD>
+      </TR>
+      <TR> <TD> Week 2: 1/29   </TD> <TD> Methods of Electrostatics  </a>
+        <ul> 
+          <li> <a href="./lectures/estatics_green_intro.pdf">Intro to Green Functions and Image Charges </a> </li>
+          <li> <a href="./lectures/estatics_green.pdf">Green Theorem </a>
+            <ul> <li>Example </li>
+              <li>Proof </li>
+            </ul>
+          </li>
+          <li> Separation of Variables for BVP: 
+          <ul> 
+            <li> <a href="./lectures/sturm_louiville.pdf">Eigen function expansions and Sturm Liouville Equations</a> </li>
+            <li> <a href="./lectures/estatics_cartesian.pdf">Separation of Variables in cartesian coordinates. Self adjoint operators</a> </li>
+            <li> <a href="./lectures/1d_green_functions.pdf">Green functions of of 1D second order differential equations</a> 
+           <li> <a href="./lectures/green_with_separation.pdf">Finding green functions with separation</a> 
+          </ul>
+           <li> Separation of variables in Spherical Coordinates:
+              <ul>
+            <li> <a href="./lectures/estatics_spherical_v2.pdf">Separation in spherical coordinates. Sphere in an electric field</a> </li>
+            <li> <a href="./lectures/estatics_spherical.pdf">A charged spherical shell</a>
+            </li>
+            <li> <a href="./lectures/estatics_green_separation.pdf">Free green functions by separation and the multipole identity</a> </li>
+            <li> <a href="./lectures/estatics_multipole_harmonics.pdf">Multipole expansion again, but with spherical harmonics</a> </li>
+          </ul>
+          <li> A charged ring in a sphere, a good example:
+            <ul>
+              <li> <a href="./lectures/estatics_ring_liouville.pdf">Green function for a charged ring in a grounded sphere</a> </li>
+              <li> <a href="./lectures/estatics_ring_force.pdf">The force and analysis of induced charge</a> </li>
+            </ul> 
+          </li>
+          <li> <a href="./lectures/estatics_cylindrical.pdf">A charged cylindrical shell and modified bessel functions</a> </li>
+      </TD> 
+      <TR> <TD> Week 3: 2/5  </TD> <TD>  Week 2 continued </TD>
+      </TR>
+      </Table>
+      <br>
+      <h4> <a name="EstaticsMedia"></a>Electrostatics in media</h4>
+      <br>
+    <table width=730px>
+      <TR> <TD> Week 4: 2/12  </TD> <TD> Electrostatics in Material:
+          <ul>
+            <li> <a href="./lectures/dielectric_symmetry.pdf">Constitutive relations and symmetry</a>
+            <li> <a href="./lectures/dielectric_setup.pdf">A consitutive relation for the current in electric fields</a>
+              <ul>
+                <li> Determining the current --  the polarization vector </li>
+                <li> The material charge density in the bulk and interfaces </li>
+                <li> Relation to the dipole picture  </li>
+              </ul> 
+            </li>
+            <li> <a href="./lectures/dielectric_bvp.pdf">Boundary value problems with dielectrics</a> </li>
+            <li> <a href="./lectures/dielectric_energy_stress.pdf">Energy and stress in dielectrics</a> </li>
+      </TD>
+      </TR>
+    </table>
+    <br>
+    <h4> <a name="Mstatics"></a>Magnetostatics</h4>
+    <br>
+    <table width=730px>
+      <TR> <TD> Week 5: 2/19  </TD> <TD>  
+          <p>
+          Magnetostatics:
+          </p>
+          <ul>
+            <li> <a href="./lectures/ohms_law.pdf">Ohms Law and steady currents</a> </li>
+              <li><a href="./lectures/magneto_basics.pdf">Basics</a> 
+                <ul>
+                  <li> Expansion of the Maxwell Equations in 1/c </li>
+                  <li> Amperes Law and Biot Savat </li>
+                  <li> Gauge Potentials and the Coulomb Gauge </li>
+                </ul> 
+              </li>
+              <li> <a href="./lectures/magneto_multipoles.pdf"> Magnetic Multipoles</a> 
+                  <ul>
+                    <li> Field from  a multipole </li>
+                    <li> Force and torque on a multipole </li>
+                  </ul>
+              </li>
+              <li> <a href="./lectures/magneto_sphere.pdf"> Boundary conditions in magnetostatics </a>
+                    <ul> 
+                      <li> Boundary conditions </li>
+                      <li> a spinning sphere </li>
+                    </ul>
+                    <li> <a href="./lectures/magneto_matter.pdf">Magnetic Fields in matter: </a>
+                      <ul>
+                        <li> A derivative expansion for the constitutive relation </li>
+                        <li> The magnetization and associated boundary currents </li>
+                        <li> The equations of linearized magneto statics </li>
+                        <li> Solving the separated vector potential equations </li>
+                        <li> <a href="./lectures/magneto_scalar_potential.pdf">The scalar potential for magnetostatics (skipped)</a>
+                        <li> <a href="./lectures/magneto_ferro.pdf"> Diamagnetic, Paramagnetic, and  Ferromagnetic substances </a> </li>
+                      </ul>
+                    </li> 
+      </TD> </TR>
+    </table>
+    <br>
+    <h4> <a name="Induction"></a> Induction, Conservation Laws, Waves </h4>
+
+    <table width=750px>
+      <TR> <TD>  Week 6: 2/26  </TD> <TD> <p> Quasi-statics in vacuum and metals. Maxwell Equations for Potentials.  <br> </p>
+      <ul>
+        <li> <a href="./lectures/induction_basic.pdf">Basics of Induction: </a>
+          <ul> 
+            <li> The maxwell equations expansion to 1/c^2 </li>
+            <li> Energy stored in magnetic field. </li>
+            <li> <a href="./lectures/induction_basic_wires.pdf">Mutual inductance example</li>
+          </ul> 
+        </li>
+        <li> <a href="./lectures/induction_potentials.pdf">The Maxwell equations for the gauge potentials and quasistatics.</a> </li>
+        <li> <a href="./lectures/induction_metals.pdf">Quasi-static fields in metals</a> </li>
+      </ul> 
+      </TD> </TR>
+
+      <TR> <TD> Week 7: 3/5  </TD> <TD>  
+          Conservation Laws. Propagation of waves in media and interfaces:  
+          <ul>
+            <li> <a href="./lectures/conservation.pdf">Conservation Laws</a> </li>
+            <li> <a href="./lectures/waves_basic.pdf">Basics of Waves</a></li>
+            <li> <a href="./lectures/waves_reflection.pdf">Reflection at Interfaces</a></li>
+            <li> <a href="./lectures/waves_metals.pdf">Waves in Metals and Reflection</a></li>
+          </ul>
+      </TD> </TR>
+      <TR> <TD> Spring Break: 3/12--3/18  </TD> <TD>  
+
+      <TR> <TD> Week 8: 3/19  </TD> <TD>  
+          Dispersion. Wave packtes.
+          <ul>
+            <li> <a href="./lectures/dispersion_waves.pdf">Linear response. Waves in dispersive media</a> </li>
+            <li> <a href="./lectures/dispersion_lorentz.pdf">Lorentz model for insulators and metals</a> </li>
+            <li> <a href="./lectures/dispersion_wavepackets.pdf">Wave packets, group velocity, and phase shifts</a> </li>
+            <li> <a href="./lectures/dispersion_kramers.pdf">Kramers Kronig relations</a> </li>
+          </ul> 
+      </TD> </TR> 
+    </table>
+    <br>
+    <h4> <a name="Nonrelrad"></a>Non-Relativistic Radiation </h4>
+    <table width=730px> 
+
+      <TR> <TD> Week 9: 3/26  </TD> <TD>   Retarded Green Functions. 
+          <ul>
+            <li> <a href="./lectures/green_basics.pdf">Simple Harmonic Oscillator</a> </li>
+            <li> <a href="./lectures/green_waves.pdf">The wave equation</a> </li>
+            <li> <a href="./lectures/green.pdf">Green theorem notes</a> </li>
+          </ul>
+      </TD> </TD>
+
+      <TR> <TD> Week 10: 4/2  </TD> <TD>  
+          Multipole radiation  and radiation from  slow charges.  
+          <ul> 
+            <li> <a href="./lectures/non_rel_rad_intro.pdf">Radiation fields</a>, and <a href="./lectures/non_rel_rad_intro_fields.pdf">technical note</a> </li>
+            <li> <a href="./lectures/non_rel_rad_larmour.pdf">Larmour formula and electric dipole radiation</a> </li>
+            <li> <a href="./lectures/non_rel_rad_multipole.pdf">Magnetic dipole and quadrupole radiation</a> </li>
+            <li> <a href="./lectures/non_rel_rad_antennas.pdf">Antennas</a> </li>
+          </ul>
+      </TD> </TR>
+    </table>
+
+    <br>
+    <h4> <a name="Relrad"></a>Relativity  and Relativistic Radiation </h4>
+    <table width=730px>
+      <TR> <TD> Week 11: 4/9   </TD> <TD> Relativity and Electrodynamics:
+          <ul>
+            <li> <a href="./lectures/relativity_intro.pdf"> Introduction and Manifest Covariance.</a> In-class <a href="./lectures/relativity_intro_problems.pdf">problems </a> </li>
+            <li> <a href="./lectures/relativity_electrodynamics.pdf"> Electrodynamics in Covariant Form: </a>
+              <ul>
+                <li> The sourced (i.e. current driven) Maxwell equations  </li>
+                <li> The unsourced Maxwell equations and the Bianchi identity </li>
+                <li> The stress tensor </li>
+                <li> <a href="./lectures/relativity_intro_problems_2.pdf">One line problems.</a> </li>
+              </ul> 
+            </li>
+            <li> <a href="./lectures/relativity_transforms.pdf">Transformations of fields. </a> 
+              <ul>
+                <li> Fields of fast particles </li>
+                <li> Constituent relations of moving bodies </li>
+              </ul> </li>
+              <li> <a href="./lectures/relativity_point_particles.pdf">Relativistic action and Hamiltonian for particles. </a> </li>
+              <li> <a href="./lectures/relativity_fields.pdf">Relativistic action for the fields. </a> </li>
+          </ul> </li>
+      </TD>  </TR>
+
+      <TR> <TD> Week 12: 4/16  </TD> <TD>   Radiation from relativistic charges:
+          <ul> 
+            <li> <a href="./lectures/relrad_intro.pdf">The fields of point particle </a>
+              <ul>
+                <li>  Lienard-Wiechert potentials and fields. </li>
+                <li>  The power during radiated by relativistic charged  particles. </li>
+                <li>  Circular versus Linear Accelerators. </li>
+              </ul> 
+            </li>
+            <li> <a href="./lectures/relrad_synchrotron.pdf">The frequency spectrum in relativistic radiation,  synchrotron radiation. </a>
+              <ul> 
+                <li> The frequency spectrum associated with relativistic charged particles </li>
+                <li> Qualitative estimates of  synchrotron radiation. </li>
+                <li> Quantitive calculations of sychrotron radiation. </li>
+              </ul>
+            </li>
+            <li> <a href="./lectures/relrad_bremm.pdf">The bremsstrahlung spectrum</a>
+              <ul>
+                <li> The spectrum of photons accompanying a collision. </li>
+                <li> Number of photons in a bremsstrahlung cone. </li>
+                <li> Number of bremsstrahlung photons with a given polarization. </li>
+              </ul> 
+            </li>
+      </TD> </TR>
+
+    </table>
+
+    <br>
+    <h4> <a name="Scattering"></a>Scattering and Diffraction </h4>
+    <table width=730px>
+
+      <TR> <TD> Week 13: 4/23  </TD> <TD> Relativistic radiation continued </TD> </TR>
+
+      <TR> <TD> Week 14: 4/30 </TD> <TD>
+          Scattering and Diffraction
+          <ul> 
+            <li> <a href="./lectures/scattering_thompson.pdf">Overview</a>
+              <ul>
+                <li> Cross sections </li>
+                <li> The Thompson cross section and associated polarizations</a> </li>
+              </ul> 
+            </li>
+            <li> <a href="./lectures/scattering_dipole.pdf">Dipole scattering</a> </li>
+            <li> <a href="./lectures/scattering_born.pdf">Born approximation</a> </li>
+          </ul>
+      </TD> </TR>
+    </table>
+
+  </div>
+  </div> 
+</div>
+</div>
+
