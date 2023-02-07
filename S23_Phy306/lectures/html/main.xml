@@ -5729,6 +5729,312 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
           </Math>
         </equation>
 <!--  %**** main.tex Line 275 **** -->      </para>
+      <para xml:id="Ch1.S4.p2">
+        <p>To find the speed distribution we have to add up the probabilities
+<Math mode="inline" tex="d\mathscr{P}_{\vec{v}}" text="d * P _ (vec@(v))" xml:id="Ch1.S4.p2.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                  <XMTok font="script" role="UNKNOWN">P</XMTok>
+                  <XMApp>
+                    <XMTok fontsize="70%" name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> for all veloicties with speed between <Math mode="inline" tex="v" text="v" xml:id="Ch1.S4.p2.m2">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+            </XMath>
+          </Math> and <Math mode="inline" tex="v+{\rm d}v" text="v + d * v" xml:id="Ch1.S4.p2.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok role="UNKNOWN">d</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>.
+This is a spherical shell of width <Math mode="inline" tex="{\rm d}v" text="d * v" xml:id="Ch1.S4.p2.m4">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok role="UNKNOWN">d</XMTok>
+                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> (see lecture)</p>
+        <equationgroup class="ltx_eqn_align" xml:id="A2.S3.EGx8">
+          <equation xml:id="Ch1.E48">
+            <tags>
+              <tag>(1.48)</tag>
+              <tag role="autoref">Equation 1.48</tag>
+              <tag role="refnum">1.48</tag>
+            </tags>
+            <MathFork>
+              <Math tex="\displaystyle d\mathscr{P}_{v}=\int_{\mbox{$\vec{v}$ in shell}}{\rm d}\mathscr%&#10;{P}_{\vec{v}}" text="d * P _ v = (integral _ [→v in shell])@(differential-d@(P _ (vec@(v))))" xml:id="Ch1.E48.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="script" role="UNKNOWN">P</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                        <XMText><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E48.m2.m1.mf">
+                            <XMath>
+                              <XMApp>
+                                <XMTok fontsize="70%" name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                              </XMApp>
+                            </XMath>
+                          </Math><text fontsize="70%"> in shell</text></XMText>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="differential-d" role="DIFFOP">d</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="script" role="UNKNOWN">P</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>
+              <MathBranch>
+                <td align="right"><Math mode="inline" tex="\displaystyle d\mathscr{P}_{v}=" text="d * P _ v = absent" xml:id="Ch1.E48.m1">
+                    <XMath>
+                      <XMApp>
+                        <XMTok meaning="equals" role="RELOP">=</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                            <XMTok font="script" role="UNKNOWN">P</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok meaning="absent"/>
+                      </XMApp>
+                    </XMath>
+                  </Math></td>
+                <td align="left"><Math mode="inline" tex="\displaystyle\int_{\mbox{$\vec{v}$ in shell}}{\rm d}\mathscr{P}_{\vec{v}}" text="(integral _ [→v in shell])@(differential-d@(P _ (vec@(v))))" xml:id="Ch1.E48.m2">
+                    <XMath>
+                      <XMApp>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                          <XMText><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E48.m2.m1">
+                              <XMath>
+                                <XMApp>
+                                  <XMTok fontsize="70%" name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                                </XMApp>
+                              </XMath>
+                            </Math><text fontsize="70%"> in shell</text></XMText>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="differential-d" role="DIFFOP">d</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                            <XMTok font="script" role="UNKNOWN">P</XMTok>
+                            <XMApp>
+                              <XMTok fontsize="70%" name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math></td>
+              </MathBranch>
+            </MathFork>
+          </equation>
+          <equation xml:id="Ch1.E49">
+            <tags>
+              <tag>(1.49)</tag>
+              <tag role="autoref">Equation 1.49</tag>
+              <tag role="refnum">1.49</tag>
+            </tags>
+            <MathFork>
+              <Math tex="\displaystyle=\left(\frac{m}{2\pi{kT}}\right)^{3/2}e^{-mv^{2}/2{k_{%&#10;\scriptscriptstyle B}T}}\,4\pi v^{2}\,{\rm d}v" text="absent = (m / (2 * pi * k * T)) ^ (3 / 2) * e ^ (- ((m * v ^ 2) / 2) * k _ B * T) * 4 * pi * v ^ 2 * d * v" xml:id="Ch1.E49.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMTok meaning="absent"/>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMDual>
+                          <XMRef idref="Ch1.E49.m3.1"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="true">(</XMTok>
+                            <XMApp xml:id="Ch1.E49.m3.1">
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                                <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                          <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                        <XMApp>
+                          <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMApp>
+                              <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                                  <XMTok fontsize="50%" meaning="2" role="NUMBER">2</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">k</XMTok>
+                              <XMTok font="italic" fontsize="50%" role="UNKNOWN">B</XMTok>
+                            </XMApp>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok meaning="4" role="NUMBER"> 4</XMTok>
+                      <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                      <XMApp rpadding="1.7pt">
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMTok role="UNKNOWN">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>
+              <MathBranch>
+                <td align="right"><Math mode="inline" tex="\displaystyle=" text="=" xml:id="Ch1.E49.m1">
+                    <XMath>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    </XMath>
+                  </Math></td>
+                <td align="left"><Math mode="inline" tex="\displaystyle\left(\frac{m}{2\pi{kT}}\right)^{3/2}e^{-mv^{2}/2{k_{%&#10;\scriptscriptstyle B}T}}\,4\pi v^{2}\,{\rm d}v" text="(m / (2 * pi * k * T)) ^ (3 / 2) * e ^ (- ((m * v ^ 2) / 2) * k _ B * T) * 4 * pi * v ^ 2 * d * v" xml:id="Ch1.E49.m2">
+                    <XMath>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMDual>
+                            <XMRef idref="Ch1.E49.m2.1"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="true">(</XMTok>
+                              <XMApp xml:id="Ch1.E49.m2.1">
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                                <XMApp>
+                                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                  <XMTok meaning="2" role="NUMBER">2</XMTok>
+                                  <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                                  <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                                  <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                          <XMApp>
+                            <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                            <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMApp>
+                                <XMTok fontsize="70%" meaning="divide" role="MULOP">/</XMTok>
+                                <XMApp>
+                                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
+                                  <XMApp>
+                                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">v</XMTok>
+                                    <XMTok fontsize="50%" meaning="2" role="NUMBER">2</XMTok>
+                                  </XMApp>
+                                </XMApp>
+                                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">k</XMTok>
+                                <XMTok font="italic" fontsize="50%" role="UNKNOWN">B</XMTok>
+                              </XMApp>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok meaning="4" role="NUMBER"> 4</XMTok>
+                        <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                        <XMApp rpadding="1.7pt">
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMTok role="UNKNOWN">d</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                      </XMApp>
+                    </XMath>
+                  </Math></td>
+              </MathBranch>
+            </MathFork>
+          </equation>
+        </equationgroup>
+      </para>
     </section>
     <section inlist="toc" xml:id="Ch1.S5">
       <tags>
@@ -5738,15 +6044,809 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
         <tag role="typerefnum">§1.5</tag>
       </tags>
       <title><tag close=" ">1.5</tag>Change of variables and solid angles</title>
-    </section>
-    <section inlist="toc" xml:id="Ch1.S6">
-      <tags>
-        <tag>1.6</tag>
-        <tag role="autoref">section 1.6</tag>
-        <tag role="refnum">1.6</tag>
-        <tag role="typerefnum">§1.6</tag>
-      </tags>
-      <title><tag close=" ">1.6</tag>Pressure and effusion</title>
+      <para xml:id="Ch1.S5.p1">
+        <p>Consider the basic oriented integral.</p>
+        <equation xml:id="Ch1.E50">
+          <tags>
+            <tag>(1.50)</tag>
+            <tag role="autoref">Equation 1.50</tag>
+            <tag role="refnum">1.50</tag>
+          </tags>
+          <Math mode="display" tex="I=\int^{2}_{1}x^{2}dx" text="I = ((integral ^ 2) _ 1)@(x ^ 2 * differential-d@(x))" xml:id="Ch1.E50.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMApp>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok font="italic" meaning="differential-d" role="DIFFOP">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>
+        </equation>
+        <p>Undergoing a change of variables, we can set <Math mode="inline" tex="u=-2x" text="u = - 2 * x" xml:id="Ch1.S5.p1.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>, giving <Math mode="inline" tex="x=-u/2" text="x = - u / 2" xml:id="Ch1.S5.p1.m2">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMApp>
+                    <XMTok meaning="divide" role="MULOP">/</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math> and <Math mode="inline" tex="dx=-\frac{1}{2}du" text="d * x = - (1 / 2) * d * u" xml:id="Ch1.S5.p1.m3">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>. The integral then becomes</p>
+        <equation xml:id="Ch1.E51">
+          <tags>
+            <tag>(1.51)</tag>
+            <tag role="autoref">Equation 1.51</tag>
+            <tag role="refnum">1.51</tag>
+          </tags>
+          <Math mode="display" tex="I=\int^{-4}_{-2}\left(\frac{u}{2}\right)^{2}\left(-\frac{1}{2}\right)du=\int^{%&#10;-2}_{-4}\left(\frac{u}{2}\right)^{2}\left(\frac{1}{2}\right)du" text="I = ((integral ^ (- 4)) _ (- 2))@((u / 2) ^ 2 * (- 1 / 2) * differential-d@(u)) = ((integral ^ (- 2)) _ (- 4))@((u / 2) ^ 2 * (1 / 2) * differential-d@(u))" xml:id="Ch1.E51.m1">
+            <XMath>
+              <XMApp>
+                <XMTok meaning="multirelation"/>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                      <XMApp>
+                        <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                        <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch1.E51.m1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch1.E51.m1.1">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMDual>
+                      <XMRef idref="Ch1.E51.m1.4"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">(</XMTok>
+                        <XMApp xml:id="Ch1.E51.m1.4">
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMTok meaning="1" role="NUMBER">1</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok font="italic" meaning="differential-d" role="DIFFOP">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                      <XMApp>
+                        <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch1.E51.m1.2"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch1.E51.m1.2">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMDual>
+                      <XMRef idref="Ch1.E51.m1.3"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">(</XMTok>
+                        <XMApp xml:id="Ch1.E51.m1.3">
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMTok meaning="1" role="NUMBER">1</XMTok>
+                          <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok font="italic" meaning="differential-d" role="DIFFOP">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>
+        </equation>
+      </para>
+      <subsection inlist="toc" xml:id="Ch1.S5.SS1">
+        <tags>
+          <tag>1.5.1</tag>
+          <tag role="autoref">subsection 1.5.1</tag>
+          <tag role="refnum">1.5.1</tag>
+          <tag role="typerefnum">§1.5.1</tag>
+        </tags>
+        <title><tag close=" ">1.5.1</tag>Change of variables in 1d</title>
+        <para xml:id="Ch1.S5.SS1.p1">
+          <p>Given a variable <Math mode="inline" tex="x" text="x" xml:id="Ch1.S5.SS1.p1.m1">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">x</XMTok>
+              </XMath>
+            </Math> and its probability distribution</p>
+          <equation xml:id="Ch1.E52">
+            <tags>
+              <tag>(1.52)</tag>
+              <tag role="autoref">Equation 1.52</tag>
+              <tag role="refnum">1.52</tag>
+            </tags>
+            <Math mode="display" tex="{\rm d}\mathscr{P}_{x}=P(x)\,{\rm d}x" text="d * P _ x = P * x * d * x" xml:id="Ch1.E52.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok role="UNKNOWN">d</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="script" role="UNKNOWN">P</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMDual>
+                      <XMRef idref="Ch1.E52.m1.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="Ch1.E52.m1.1">x</XMTok>
+                        <XMTok role="CLOSE" rpadding="1.7pt" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMTok role="UNKNOWN">d</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>
+          </equation>
+          <p>How do we find the probability of <Math mode="inline" tex="u" text="u" xml:id="Ch1.S5.SS1.p1.m2">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">u</XMTok>
+              </XMath>
+            </Math> where given a map <Math mode="inline" tex="\varphi:x\rightarrow u" text="varphi colon x rightarrow u" xml:id="Ch1.S5.SS1.p1.m3">
+              <XMath>
+                <XMApp>
+                  <XMTok name="colon" role="METARELOP">:</XMTok>
+                  <XMTok font="italic" name="varphi" role="UNKNOWN">φ</XMTok>
+                  <XMApp>
+                    <XMTok name="rightarrow" role="ARROW">→</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>, i.e. <Math mode="inline" tex="u(x)" text="u * x" xml:id="Ch1.S5.SS1.p1.m4">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                  <XMDual>
+                    <XMRef idref="Ch1.S5.SS1.p1.m4.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="Ch1.S5.SS1.p1.m4.1">x</XMTok>
+                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+              </XMath>
+            </Math> is a function of <Math mode="inline" tex="x" text="x" xml:id="Ch1.S5.SS1.p1.m5">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">x</XMTok>
+              </XMath>
+            </Math>? Assuming that
+that the map is one to one we have
+<!--  %**** main.tex Line 300 **** --></p>
+          <equation xml:id="Ch1.E53">
+            <tags>
+              <tag>(1.53)</tag>
+              <tag role="autoref">Equation 1.53</tag>
+              <tag role="refnum">1.53</tag>
+            </tags>
+            <Math mode="display" tex="{\rm d}\mathscr{P}_{u}=P(x(u))\left|\frac{dx}{du}\right|{\rm d}u=P(x(u))\frac{%&#10;{\rm d}u}{|\frac{du}{dx}|}" text="d * P _ u = P * x * u * absolute-value@((d * x) / (d * u)) * d * u = P * x * u * ((d * u) / absolute-value@((d * u) / (d * x)))" xml:id="Ch1.E53.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="multirelation"/>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok role="UNKNOWN">d</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="script" role="UNKNOWN">P</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMDual>
+                      <XMRef idref="Ch1.E53.m1.5"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="Ch1.E53.m1.5">
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMDual>
+                            <XMRef idref="Ch1.E53.m1.2"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="false">(</XMTok>
+                              <XMTok font="italic" role="UNKNOWN" xml:id="Ch1.E53.m1.2">u</XMTok>
+                              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="absolute-value"/>
+                        <XMRef idref="Ch1.E53.m1.4"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="VERTBAR" stretchy="true">|</XMTok>
+                        <XMApp xml:id="Ch1.E53.m1.4">
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="VERTBAR" stretchy="true">|</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMTok role="UNKNOWN">d</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                  </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMDual>
+                      <XMRef idref="Ch1.E53.m1.6"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="Ch1.E53.m1.6">
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMDual>
+                            <XMRef idref="Ch1.E53.m1.3"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="false">(</XMTok>
+                              <XMTok font="italic" role="UNKNOWN" xml:id="Ch1.E53.m1.3">u</XMTok>
+                              <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok role="UNKNOWN">d</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                      </XMApp>
+                      <XMDual>
+                        <XMApp>
+                          <XMTok meaning="absolute-value"/>
+                          <XMRef idref="Ch1.E53.m1.1"/>
+                        </XMApp>
+                        <XMWrap>
+                          <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                          <XMApp xml:id="Ch1.E53.m1.1">
+                            <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>
+          </equation>
+          <p>We note the absolute values here, which reflects the fact
+that when discussing probability we are asking wether a particle
+is in a bin of size <Math mode="inline" tex="{\rm d}u" text="d * u" xml:id="Ch1.S5.SS1.p1.m6">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok role="UNKNOWN">d</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>, and the bin size isn’t like positive or negative.</p>
+        </para>
+        <para xml:id="Ch1.S5.SS1.p2">
+          <p>The general formula for change of variables is</p>
+          <equation xml:id="Ch1.E54">
+            <tags>
+              <tag>(1.54)</tag>
+              <tag role="autoref">Equation 1.54</tag>
+              <tag role="refnum">1.54</tag>
+            </tags>
+            <Math mode="display" tex="\int_{R}f(x){\rm d}x=\int_{R_{u}}f(x(u))\left|\frac{dx}{du}\right|\,{\rm d}u" text="(integral _ R)@(f * x * differential-d@(x)) = (integral _ R _ u)@(f * x * u * absolute-value@((d * x) / (d * u)) * differential-d@(u))" xml:id="Ch1.E54.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                      <XMDual>
+                        <XMRef idref="Ch1.E54.m1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMTok font="italic" role="UNKNOWN" xml:id="Ch1.E54.m1.1">x</XMTok>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMApp>
+                        <XMTok meaning="differential-d" role="DIFFOP">d</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">R</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">u</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">f</XMTok>
+                      <XMDual>
+                        <XMRef idref="Ch1.E54.m1.4"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMApp xml:id="Ch1.E54.m1.4">
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                            <XMDual>
+                              <XMRef idref="Ch1.E54.m1.2"/>
+                              <XMWrap>
+                                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                <XMTok font="italic" role="UNKNOWN" xml:id="Ch1.E54.m1.2">u</XMTok>
+                                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                              </XMWrap>
+                            </XMDual>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMDual>
+                        <XMApp>
+                          <XMTok meaning="absolute-value"/>
+                          <XMRef idref="Ch1.E54.m1.3"/>
+                        </XMApp>
+                        <XMWrap>
+                          <XMTok role="VERTBAR" stretchy="true">|</XMTok>
+                          <XMApp xml:id="Ch1.E54.m1.3">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="VERTBAR" rpadding="1.7pt" stretchy="true">|</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMApp>
+                        <XMTok meaning="differential-d" role="DIFFOP">d</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>
+          </equation>
+          <p>Here <Math mode="inline" tex="R" text="R" xml:id="Ch1.S5.SS1.p2.m1">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              </XMath>
+            </Math> is the region of integration for <Math mode="inline" tex="x" text="x" xml:id="Ch1.S5.SS1.p2.m2">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">x</XMTok>
+              </XMath>
+            </Math> (for example <Math mode="inline" tex="R" text="R" xml:id="Ch1.S5.SS1.p2.m3">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              </XMath>
+            </Math> is <Math mode="inline" tex="x\in[1,2]" text="x element-of closed-interval@(1, 2)" xml:id="Ch1.S5.SS1.p2.m4">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="element-of" name="in" role="RELOP">∈</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                  <XMDual>
+                    <XMApp>
+                      <XMTok meaning="closed-interval"/>
+                      <XMRef idref="Ch1.S5.SS1.p2.m4.1"/>
+                      <XMRef idref="Ch1.S5.SS1.p2.m4.2"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">[</XMTok>
+                      <XMTok meaning="1" role="NUMBER" xml:id="Ch1.S5.SS1.p2.m4.1">1</XMTok>
+                      <XMTok role="PUNCT">,</XMTok>
+                      <XMTok meaning="2" role="NUMBER" xml:id="Ch1.S5.SS1.p2.m4.2">2</XMTok>
+                      <XMTok role="CLOSE" stretchy="false">]</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+              </XMath>
+            </Math>), and <Math mode="inline" tex="R_{u}" text="R _ u" xml:id="Ch1.S5.SS1.p2.m5">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                </XMApp>
+              </XMath>
+            </Math> is the image of <Math mode="inline" tex="R" text="R" xml:id="Ch1.S5.SS1.p2.m6">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              </XMath>
+            </Math> under the map, e.g. if the map is <Math mode="inline" tex="u(x)=-2x" text="u * x = - 2 * x" xml:id="Ch1.S5.SS1.p2.m7">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                    <XMDual>
+                      <XMRef idref="Ch1.S5.SS1.p2.m7.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="Ch1.S5.SS1.p2.m7.1">x</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="2" role="NUMBER">2</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math> then <Math mode="inline" tex="R_{u}" text="R _ u" xml:id="Ch1.S5.SS1.p2.m8">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">u</XMTok>
+                </XMApp>
+              </XMath>
+            </Math> is <Math mode="inline" tex="[-4,-2]" text="closed-interval@(- 4, - 2)" xml:id="Ch1.S5.SS1.p2.m9">
+              <XMath>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="closed-interval"/>
+                    <XMRef idref="Ch1.S5.SS1.p2.m9.1"/>
+                    <XMRef idref="Ch1.S5.SS1.p2.m9.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">[</XMTok>
+                    <XMApp xml:id="Ch1.S5.SS1.p2.m9.1">
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok meaning="4" role="NUMBER">4</XMTok>
+                    </XMApp>
+                    <XMTok role="PUNCT">,</XMTok>
+                    <XMApp xml:id="Ch1.S5.SS1.p2.m9.2">
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">]</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMath>
+            </Math>. To set yourself straight of this notation just make the change of variables, getting the signs right:</p>
+          <equation xml:id="Ch1.E55">
+            <tags>
+              <tag>(1.55)</tag>
+              <tag role="autoref">Equation 1.55</tag>
+              <tag role="refnum">1.55</tag>
+            </tags>
+            <Math mode="display" tex="I=\int_{[1,2]}{\rm d}x=\int_{1}^{2}{\rm d}x=\int_{[-4,-2]}\frac{1}{2}{\rm d}u=%&#10;\int_{-4}^{-2}\frac{1}{2}\,{\rm d}u=1\,." text="I = (integral _ (closed-interval@(1, 2)))@(differential-d@(x)) = ((integral _ 1) ^ 2)@(differential-d@(x)) = (integral _ (closed-interval@(- 4, - 2)))@((1 / 2) * differential-d@(u)) = ((integral _ (- 4)) ^ (- 2))@((1 / 2) * differential-d@(u)) = 1" xml:id="Ch1.E55.m1">
+              <XMath>
+                <XMDual>
+                  <XMRef idref="Ch1.E55.m1.5"/>
+                  <XMWrap>
+                    <XMApp xml:id="Ch1.E55.m1.5">
+                      <XMTok meaning="multirelation"/>
+                      <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                          <XMDual>
+                            <XMApp>
+                              <XMTok meaning="closed-interval"/>
+                              <XMRef idref="Ch1.E55.m1.1"/>
+                              <XMRef idref="Ch1.E55.m1.2"/>
+                            </XMApp>
+                            <XMWrap>
+                              <XMTok fontsize="70%" role="OPEN" stretchy="false">[</XMTok>
+                              <XMTok fontsize="70%" meaning="1" role="NUMBER" xml:id="Ch1.E55.m1.1">1</XMTok>
+                              <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                              <XMTok fontsize="70%" meaning="2" role="NUMBER" xml:id="Ch1.E55.m1.2">2</XMTok>
+                              <XMTok fontsize="70%" role="CLOSE" stretchy="false">]</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="differential-d" role="DIFFOP">d</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                            <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                            <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                          </XMApp>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="differential-d" role="DIFFOP">d</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                          <XMDual>
+                            <XMApp>
+                              <XMTok meaning="closed-interval"/>
+                              <XMRef idref="Ch1.E55.m1.3"/>
+                              <XMRef idref="Ch1.E55.m1.4"/>
+                            </XMApp>
+                            <XMWrap>
+                              <XMTok fontsize="70%" role="OPEN" stretchy="false">[</XMTok>
+                              <XMApp xml:id="Ch1.E55.m1.3">
+                                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                                <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                              </XMApp>
+                              <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                              <XMApp xml:id="Ch1.E55.m1.4">
+                                <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                              <XMTok fontsize="70%" role="CLOSE" stretchy="false">]</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMApp>
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMTok meaning="1" role="NUMBER">1</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="differential-d" role="DIFFOP">d</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                            <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                            <XMApp>
+                              <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                              <XMTok fontsize="70%" meaning="4" role="NUMBER">4</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMApp rpadding="1.7pt">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMTok meaning="1" role="NUMBER">1</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="differential-d" role="DIFFOP">d</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMTok meaning="1" role="NUMBER" rpadding="1.7pt">1</XMTok>
+                    </XMApp>
+                    <XMTok role="PERIOD">.</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMath>
+            </Math>
+          </equation>
+        </para>
+<!--  %“subsection–Spherical coordinates˝ 
+     %In multi-dimensions we have
+     %“st
+     %“dd “Pscr =  P(x,y,z) “, “underbr–“dd x “, “dd y “, “dd z˝–“dd “rm V˝
+     %“stp
+     %where $“dd–“rm V˝$ is the ‘‘volume element”.
+     %A bit of geometry shows that the differential area $dA$ and the volume element $dV$ in spherical coordinates  are
+     %“st
+     %dA  =&amp; r^2 “sin“theta “, “dd “theta “, “dd“phi ““
+     %**** main.tex Line 325 ****
+     %d–“rm V˝  =&amp; r^2 “sin“theta “, “dd r “, “dd“theta “, “dd“phi
+     %“stp
+     %So in spherical coordinates
+     %“begin–align˝
+     %“dd “Pscr =&amp; P(x,y,z) r^2 “sin“theta “, “dd r “, “dd “theta “, “dd “phi
+     %“equiv &amp; P(r, “theta“, “phi) “dd r “, “dd “theta “, “dd “phi
+     %“end–align˝
+     %“section–Pressure and effusion˝-->      </subsection>
     </section>
   </chapter>
   <appendix inlist="toc" xml:id="A1">
@@ -5895,7 +6995,7 @@ Outside of this list, the constants will be given.</p>
                 </XMath>
               </Math>
             </equation>
-          </para>
+<!--  %**** main.tex Line 350 **** -->          </para>
         </item>
         <item xml:id="A1.S0.I1.i2">
           <tags>
@@ -5991,8 +7091,7 @@ Outside of this list, the constants will be given.</p>
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>.
-<!--  %**** main.tex Line 300 **** --></p>
+              </Math>.</p>
           </para>
         </item>
         <item xml:id="A1.S0.I1.i5">
@@ -6327,7 +7426,7 @@ Outside of this list, the constants will be given.</p>
                             <XMTok meaning="times" role="MULOP">⁢</XMTok>
                             <XMApp>
                               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+<!--  %**** main.tex Line 375 **** -->                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
                               <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
                             </XMApp>
                             <XMApp>
@@ -6367,8 +7466,7 @@ Outside of this list, the constants will be given.</p>
                   <tag role="typerefnum">2nd item</tag>
                 </tags>
                 <para xml:id="A1.S0.I1.i9.I1.i2.p1">
-                  <p>The macroscopic way: an Avagadro’s number of protons weighs a gram. This is the molar mass of the proton:
-<!--  %**** main.tex Line 325 **** --></p>
+                  <p>The macroscopic way: an Avogadro’s number of protons weighs a gram. This is the molar mass of the proton:</p>
                   <equation xml:id="A1.E5">
                     <tags>
                       <tag>(A.5)</tag>
@@ -6411,7 +7509,7 @@ Outside of this list, the constants will be given.</p>
                 </para>
               </item>
             </itemize>
-            <p>Protons and neutrons and weigh nearly the same thus the mass of one Avagadro’s number of diatomic oxygen weighs <Math mode="inline" tex="32\,{g}" text="32 * g" xml:id="A1.S0.I1.i9.p1.m1">
+            <p>Protons and neutrons and weigh nearly the same thus the mass of one Avogadro’s number of diatomic oxygen weighs <Math mode="inline" tex="32\,{g}" text="32 * g" xml:id="A1.S0.I1.i9.p1.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -6777,7 +7875,7 @@ in atomic hydrogen gas at room temperature</p>
                           <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
                           <XMApp>
                             <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+<!--  %**** main.tex Line 400 **** -->                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
                             <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
                           </XMApp>
                           <XMApp>
@@ -6798,8 +7896,7 @@ in atomic hydrogen gas at room temperature</p>
                   <tag role="typerefnum">2nd item</tag>
                 </tags>
                 <para xml:id="A1.S0.I1.i10.I1.i2.p1">
-                  <p>In comparison to the proton mass:
-<!--  %**** main.tex Line 350 **** --></p>
+                  <p>In comparison to the proton mass:</p>
                   <equation xml:id="A1.E9">
                     <tags>
                       <tag>(A.9)</tag>
@@ -7087,7 +8184,7 @@ in atomic hydrogen gas at room temperature</p>
               </Math>
             </equation>
           </para>
-        </item>
+<!--  %**** main.tex Line 425 **** -->        </item>
         <item xml:id="A1.S0.I1.i12">
           <tags>
             <tag>12.</tag>
@@ -7128,7 +8225,7 @@ in atomic hydrogen gas at room temperature</p>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMApp>
                       <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-<!--  %**** main.tex Line 375 **** -->                      <XMTok font="italic" role="UNKNOWN">a</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">a</XMTok>
                       <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
                     </XMApp>
                     <XMApp>
@@ -7173,7 +8270,7 @@ in atomic hydrogen gas at room temperature</p>
             <tag role="typerefnum">item 13</tag>
           </tags>
           <para xml:id="A1.S0.I1.i13.p1">
-            <p>An electron volt is a good unit of microscopic energy. Avagadro’s number
+            <p>An electron volt is a good unit of microscopic energy. Avogadro’s number
 times <Math mode="inline" tex="1\,{\rm eV}" text="1 * eV" xml:id="A1.S0.I1.i13.p1.m1">
                 <XMath>
                   <XMApp>
@@ -7332,7 +8429,7 @@ An explosion involves roughly an Avogadro’s number of atomic transitions, with
               </Math> of energy per mole. Burning a mole of gasoline gives roughly this amount of energy.
 <!--  %In the Otto cycle we took the input heat to be $Q˙–“rm in˝ =22“,–“rm kJ˝$ per mole, which is roughly the Faraday constant. --></p>
           </para>
-        </item>
+<!--  %**** main.tex Line 450 **** -->        </item>
         <item xml:id="A1.S0.I1.i14">
           <tags>
             <tag>14.</tag>
@@ -7345,7 +8442,7 @@ An explosion involves roughly an Avogadro’s number of atomic transitions, with
           </para>
           <para xml:id="A1.S0.I1.i14.p2">
             <p>In the Bohr model
-<!--  %**** main.tex Line 400 **** -->the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,\ring{\rm A}" text="a _ 0 = 0.53 * ring@(A)" xml:id="A1.S0.I1.i14.p2.m1">
+the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,\ring{\rm A}" text="a _ 0 = 0.53 * ring@(A)" xml:id="A1.S0.I1.i14.p2.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -7519,7 +8616,7 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
               </Math>
             </equation>
             <p>The binding energy of the electron to the proton</p>
-            <equationgroup class="ltx_eqn_align" xml:id="A2.S3.EGx8">
+            <equationgroup class="ltx_eqn_align" xml:id="A2.S3.EGx9">
               <equation xml:id="A1.E19">
                 <tags>
                   <tag>(A.19)</tag>
@@ -7771,8 +8868,7 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>
-<!--  %**** main.tex Line 425 **** --></p>
+              </Math></p>
             <equation xml:id="A1.E22">
               <tags>
                 <tag>(A.22)</tag>
@@ -7963,10 +9059,10 @@ a quantum mechanical system it is often the case that</p>
      %“beta = “alpha “, .
      %“stp
      %Here $“beta=v/c$ is the velocity (divided by $c$) of the electron going around the proton, and the fine structure constant $“alpha$ is
+     %**** main.tex Line 500 ****
      %the squared charge  of the electron in terms of fundamental constants
      %“st
      %“alpha “equiv “frac–e^2˝–4“pi “epsilon˙0 “hbar c ˝ “simeq  “frac–1˝–137˝
-     %**** main.tex Line 450 ****
      %“stp
      %$“alpha$ is a “emph–dimensionless˝,  and “emph–small˝ constant of nature, and it is because $“alpha$ is small that the electron in Hydrogen is non-relativistic, moving approximately at a hundredth of the speed of light. Omitting the details, the $“beta=“alpha$ relation follows
      %by solving for $a˙0=“hbar/mc“alpha$ from “Eq–eq:Rydberg˝ and using $p=mv=“hbar/a˙0$. Thus the kinetic energy is again
@@ -7978,7 +9074,7 @@ a quantum mechanical system it is often the case that</p>
      %%      a˙0 =  “frac–“hbar˝–m˙e c “alpha˝ “, ,
      %% “stp
      %% and then finally noting that $p=“hbar/a˙0$,  the $“beta=“alpha$ relation follows.-->          <para xml:id="A1.S0.I1.i14.p4">
-            <p>These facts gives another way to estimate
+            <p>These facts give another way to estimate
 the thermal de Broglie wavelength of a <emph font="italic">proton</emph>, by inserting <Math mode="inline" tex="a_{0}" text="a _ 0" xml:id="A1.S0.I1.i14.p4.m1">
                 <XMath>
                   <XMApp>
@@ -8154,7 +9250,7 @@ the thermal de Broglie wavelength of a <emph font="italic">proton</emph>, by ins
     </tags>
     <title><tag close=" ">Appendix B</tag>Math</title>
     <toctitle><tag close=" ">B</tag>Math</toctitle>
-    <section inlist="toc" xml:id="A2.S1">
+<!--  %**** main.tex Line 525 **** -->    <section inlist="toc" xml:id="A2.S1">
       <tags>
         <tag>B.1</tag>
         <tag role="autoref">section B.1</tag>
@@ -8170,8 +9266,7 @@ the thermal de Broglie wavelength of a <emph font="italic">proton</emph>, by ins
                 <XMTok meaning="2" role="NUMBER">2</XMTok>
               </XMApp>
             </XMath>
-          </Math>) that isn’t so bad.
-<!--  %**** main.tex Line 475 **** --></p>
+          </Math>) that isn’t so bad.</p>
       </para>
       <para xml:id="A2.S1.p2">
         <p>Suppose, for example, the integral integral you are trying to compute is an integral over position:</p>
@@ -8287,7 +9382,7 @@ in units of <Math mode="inline" tex="\ell" text="ell" xml:id="A2.S1.p2.m7">
               <XMTok name="ell" role="UNKNOWN">ℓ</XMTok>
             </XMath>
           </Math>). Here are the steps</p>
-        <equationgroup class="ltx_eqn_align" xml:id="A2.S3.EGx9">
+        <equationgroup class="ltx_eqn_align" xml:id="A2.S3.EGx10">
           <equation xml:id="A2.E2">
             <tags>
               <tag>(B.2)</tag>
@@ -8792,7 +9887,7 @@ in units of <Math mode="inline" tex="\ell" text="ell" xml:id="A2.S1.p2.m7">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
-                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+<!--  %**** main.tex Line 550 **** -->                <XMTok font="italic" role="UNKNOWN">I</XMTok>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMTok font="italic" role="UNKNOWN">c</XMTok>
@@ -8806,8 +9901,7 @@ in units of <Math mode="inline" tex="\ell" text="ell" xml:id="A2.S1.p2.m7">
             </XMath>
           </Math>
         </equation>
-        <p>shows a great deal more insight than Eq. (<ref labelref="LABEL:eq:dimensionful_integral"/>).
-<!--  %**** main.tex Line 500 **** --></p>
+        <p>shows a great deal more insight than Eq. (<ref labelref="LABEL:eq:dimensionful_integral"/>).</p>
       </para>
       <para xml:id="A2.S1.p3">
         <p>The fact that the
@@ -8892,8 +9986,8 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
      %They can be integrated, etc, so for example the expression for $“log(1 +x)$ follows from the geometric series $1/(1+x)$ by integration:
      %“begin–equation˝
      %“log(1 + x) = “int˙0^x “frac–“dd x’˝–1+x’˝ = “int˙0^x “dd  x’ “, “left[1 - x’  + (x’)^2 + “mathcal O((x’)^3)“right] = x - “frac–x^2˝–2˝ +  “frac–x^3˝–3˝ + “mathcal O (x^4)
-     %“end–equation˝
-     %**** main.tex Line 525 ****-->    </section>
+     %**** main.tex Line 575 ****
+     %“end–equation˝-->    </section>
     <section inlist="toc" xml:id="A2.S2">
       <tags>
         <tag>B.2</tag>
@@ -9208,7 +10302,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+<!--  %**** main.tex Line 600 **** -->                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                   <XMDual>
                     <XMRef idref="A2.E11.m1.1"/>
                     <XMWrap>
@@ -9241,8 +10335,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             <XMath>
               <XMTok font="italic" role="UNKNOWN">n</XMTok>
             </XMath>
-          </Math> is an integer or half-integer. In particular,
-<!--  %**** main.tex Line 550 **** --></p>
+          </Math> is an integer or half-integer. In particular,</p>
         <equation xml:id="A2.E12">
           <tags>
             <tag>(B.12)</tag>
@@ -9390,7 +10483,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             </XMath>
           </Math>
         </equation>
-        <p>which comes up a lot later in the course</p>
+        <p>which comes up a lot later in the course.</p>
       </para>
     </section>
   </appendix>
