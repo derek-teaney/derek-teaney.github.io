@@ -6,6 +6,7 @@
 <?latexml package="bm,mathrsfs,amssymb,amsmath,accents,amsbsy"?>
 <?latexml package="hyperref" options="colorlinks=true"?>
 <?latexml package="pdfpages"?>
+<?latexml package="enumitem" options="inline"?>
 <!--  %**** summary˙header.tex Line 25 **** --><!--  %“chapterstyle–southall˝ --><?latexml RelaxNGSchema="LaTeXML"?>
 <document xmlns="http://dlmf.nist.gov/LaTeXML">
   <resource src="LaTeXML.css" type="text/css"/>
@@ -4436,6 +4437,92 @@ the number of particles per volume. The number of moles is the number of particl
               </equation>
             </para>
           </item>
+          <item xml:id="Ch1.S2.I1.i6">
+            <tags>
+              <tag>•</tag>
+              <tag role="autoref">item </tag>
+              <tag role="typerefnum">6th item</tag>
+            </tags>
+            <para xml:id="Ch1.S2.I1.i6.p1">
+              <p>The formulas in this section can be used to make a variety of esimtates such as: the spacing between particles at room temperature; the typical speed; the typical debroglie wavelength; typical angular velocity and angular momentum. We defined
+the thermal deBroglie wavelength:</p>
+              <equation xml:id="Ch1.E38">
+                <tags>
+                  <tag>(1.38)</tag>
+                  <tag role="autoref">Equation 1.38</tag>
+                  <tag role="refnum">1.38</tag>
+                </tags>
+                <Math mode="display" tex="\lambda_{\rm th}=\frac{h}{\sqrt{2\pi m{k_{\scriptscriptstyle B}T}}}" text="lambda _ th = h / square-root@(2 * pi * m * k _ B * T)" xml:id="Ch1.E38.m1">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="equals" role="RELOP">=</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+                        <XMTok fontsize="70%" role="UNKNOWN">th</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                        <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                        <XMApp>
+                          <XMTok meaning="square-root"/>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok meaning="2" role="NUMBER">2</XMTok>
+                            <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                              <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                              <XMTok font="italic" fontsize="50%" role="UNKNOWN">B</XMTok>
+                            </XMApp>
+                            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math>
+              </equation>
+              <p>We note that <Math mode="inline" tex="\lambda_{\rm th}\sim h/mv_{\rm rms}" text="lambda _ th similar-to (h / m) * v _ rms" xml:id="Ch1.S2.I1.i6.p1.m1">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+                        <XMTok fontsize="70%" role="UNKNOWN">th</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp>
+                          <XMTok meaning="divide" role="MULOP">/</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                          <XMTok fontsize="70%" role="UNKNOWN">rms</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math>. The factor of <Math mode="inline" tex="\sqrt{2\pi}" text="square-root@(2 * pi)" xml:id="Ch1.S2.I1.i6.p1.m2">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="square-root"/>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                        <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math> here is purely a matter of convention.
+<!--  %**** main.tex Line 225 **** --></p>
+            </para>
+          </item>
         </itemize>
       </para>
     </section>
@@ -4494,24 +4581,24 @@ Probability the subsystem will have energy <Math mode="inline" tex="\epsilon" te
               </XMApp>
             </XMath>
           </Math></p>
-        <equation xml:id="Ch1.E38">
+        <equation xml:id="Ch1.E39">
           <tags>
-            <tag>(1.38)</tag>
-            <tag role="autoref">Equation 1.38</tag>
-            <tag role="refnum">1.38</tag>
+            <tag>(1.39)</tag>
+            <tag role="autoref">Equation 1.39</tag>
+            <tag role="refnum">1.39</tag>
           </tags>
-          <Math mode="display" tex="P(\epsilon)\propto e^{-\epsilon/{k_{\scriptscriptstyle B}T}}" text="P * epsilon proportional-to e ^ (- (epsilon / k _ B) * T)" xml:id="Ch1.E38.m1">
+          <Math mode="display" tex="P(\epsilon)\propto e^{-\epsilon/{k_{\scriptscriptstyle B}T}}" text="P * epsilon proportional-to e ^ (- (epsilon / k _ B) * T)" xml:id="Ch1.E39.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
-<!--  %**** main.tex Line 225 **** -->                  <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">P</XMTok>
                   <XMDual>
-                    <XMRef idref="Ch1.E38.m1.1"/>
+                    <XMRef idref="Ch1.E39.m1.1"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMTok font="italic" name="epsilon" role="UNKNOWN" xml:id="Ch1.E38.m1.1">ϵ</XMTok>
+                      <XMTok font="italic" name="epsilon" role="UNKNOWN" xml:id="Ch1.E39.m1.1">ϵ</XMTok>
                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
                     </XMWrap>
                   </XMDual>
@@ -4605,18 +4692,18 @@ If you have a set of microscopically small states <Math mode="inline" tex="i=1..
               </XMApp>
             </XMath>
           </Math> we have</p>
-        <equation xml:id="Ch1.E39">
+        <equation xml:id="Ch1.E40">
           <tags>
-            <tag>(1.39)</tag>
-            <tag role="autoref">Equation 1.39</tag>
-            <tag role="refnum">1.39</tag>
+            <tag>(1.40)</tag>
+            <tag role="autoref">Equation 1.40</tag>
+            <tag role="refnum">1.40</tag>
           </tags>
-          <Math mode="display" tex="\sum_{i}Ce^{-\beta\epsilon_{i}}=1\,," text="(sum _ i)@(C * e ^ (- beta * epsilon _ i)) = 1" xml:id="Ch1.E39.m1">
+          <Math mode="display" tex="\sum_{i}Ce^{-\beta\epsilon_{i}}=1\,," text="(sum _ i)@(C * e ^ (- beta * epsilon _ i)) = 1" xml:id="Ch1.E40.m1">
             <XMath>
               <XMDual>
-                <XMRef idref="Ch1.E39.m1.1"/>
+                <XMRef idref="Ch1.E40.m1.1"/>
                 <XMWrap>
-                  <XMApp xml:id="Ch1.E39.m1.1">
+                  <XMApp xml:id="Ch1.E40.m1.1">
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMApp>
                       <XMApp scriptpos="mid">
@@ -4666,43 +4753,43 @@ If you have a set of microscopically small states <Math mode="inline" tex="i=1..
               </XMApp>
             </XMath>
           </Math></p>
-        <equation xml:id="Ch1.E40">
+        <equation xml:id="Ch1.E41">
           <tags>
-            <tag>(1.40)</tag>
-            <tag role="autoref">Equation 1.40</tag>
-            <tag role="refnum">1.40</tag>
+            <tag>(1.41)</tag>
+            <tag role="autoref">Equation 1.41</tag>
+            <tag role="refnum">1.41</tag>
           </tags>
-          <Math mode="display" tex="C=\frac{1}{Z}\quad\mbox{with}\quad Z\equiv\sum_{i}e^{-\beta\epsilon_{i}}" text="formulae@(C = list@(1 / Z, [with]), Z equivalent-to (sum _ i)@(e ^ (- beta * epsilon _ i)))" xml:id="Ch1.E40.m1">
+          <Math mode="display" tex="C=\frac{1}{Z}\quad\mbox{with}\quad Z\equiv\sum_{i}e^{-\beta\epsilon_{i}}" text="formulae@(C = list@(1 / Z, [with]), Z equivalent-to (sum _ i)@(e ^ (- beta * epsilon _ i)))" xml:id="Ch1.E41.m1">
             <XMath>
               <XMDual>
                 <XMApp>
                   <XMTok meaning="formulae"/>
-                  <XMRef idref="Ch1.E40.m1.3"/>
-                  <XMRef idref="Ch1.E40.m1.4"/>
+                  <XMRef idref="Ch1.E41.m1.3"/>
+                  <XMRef idref="Ch1.E41.m1.4"/>
                 </XMApp>
                 <XMWrap>
-                  <XMApp xml:id="Ch1.E40.m1.3">
+                  <XMApp xml:id="Ch1.E41.m1.3">
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMTok font="italic" role="UNKNOWN">C</XMTok>
                     <XMDual>
                       <XMApp>
                         <XMTok meaning="list"/>
-                        <XMRef idref="Ch1.E40.m1.1"/>
-                        <XMRef idref="Ch1.E40.m1.2"/>
+                        <XMRef idref="Ch1.E41.m1.1"/>
+                        <XMRef idref="Ch1.E41.m1.2"/>
                       </XMApp>
                       <XMWrap>
-                        <XMApp xml:id="Ch1.E40.m1.1">
+                        <XMApp xml:id="Ch1.E41.m1.1">
                           <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                           <XMTok meaning="1" role="NUMBER">1</XMTok>
                           <XMTok font="italic" role="UNKNOWN">Z</XMTok>
                         </XMApp>
                         <XMTok font="italic" name="quad" role="PUNCT"> </XMTok>
-                        <XMText xml:id="Ch1.E40.m1.2">with</XMText>
+                        <XMText xml:id="Ch1.E41.m1.2">with</XMText>
                       </XMWrap>
                     </XMDual>
                   </XMApp>
                   <XMTok font="italic" name="quad" role="PUNCT"> </XMTok>
-                  <XMApp xml:id="Ch1.E40.m1.4">
+                  <XMApp xml:id="Ch1.E41.m1.4">
                     <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
                     <XMTok font="italic" role="UNKNOWN">Z</XMTok>
                     <XMApp>
@@ -4752,13 +4839,13 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
               </XMApp>
             </XMath>
           </Math> is the following</p>
-        <equation xml:id="Ch1.E41">
+        <equation xml:id="Ch1.E42">
           <tags>
-            <tag>(1.41)</tag>
-            <tag role="autoref">Equation 1.41</tag>
-            <tag role="refnum">1.41</tag>
+            <tag>(1.42)</tag>
+            <tag role="autoref">Equation 1.42</tag>
+            <tag role="refnum">1.42</tag>
           </tags>
-          <Math mode="display" tex="P(\epsilon)=\frac{e^{-\epsilon/{k_{\scriptscriptstyle B}T}}}{Z}" text="P * epsilon = e ^ (- (epsilon / k _ B) * T) / Z" xml:id="Ch1.E41.m1">
+          <Math mode="display" tex="P(\epsilon)=\frac{e^{-\epsilon/{k_{\scriptscriptstyle B}T}}}{Z}" text="P * epsilon = e ^ (- (epsilon / k _ B) * T) / Z" xml:id="Ch1.E42.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -4766,10 +4853,10 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMTok font="italic" role="UNKNOWN">P</XMTok>
                   <XMDual>
-                    <XMRef idref="Ch1.E41.m1.1"/>
+                    <XMRef idref="Ch1.E42.m1.1"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMTok font="italic" name="epsilon" role="UNKNOWN" xml:id="Ch1.E41.m1.1">ϵ</XMTok>
+                      <XMTok font="italic" name="epsilon" role="UNKNOWN" xml:id="Ch1.E42.m1.1">ϵ</XMTok>
                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
                     </XMWrap>
                   </XMDual>
@@ -4803,7 +4890,7 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
           </Math>
         </equation>
       </para>
-    </section>
+<!--  %**** main.tex Line 250 **** -->    </section>
     <section inlist="toc" xml:id="Ch1.S4">
       <tags>
         <tag>1.4</tag>
@@ -4898,13 +4985,13 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
               </XMApp>
             </XMath>
           </Math>.</p>
-        <equation xml:id="Ch1.E42">
+        <equation xml:id="Ch1.E43">
           <tags>
-            <tag>(1.42)</tag>
-            <tag role="autoref">Equation 1.42</tag>
-            <tag role="refnum">1.42</tag>
+            <tag>(1.43)</tag>
+            <tag role="autoref">Equation 1.43</tag>
+            <tag role="refnum">1.43</tag>
           </tags>
-          <Math mode="display" tex="{\rm d}\mathscr{P}_{\vec{v}}=Ce^{-mv^{2}/2{k_{\scriptscriptstyle B}T}}\,{\rm d%&#10;}v_{x}{\rm d}v_{y}{\rm d}v_{z}=P(v_{x},v_{y},v_{z})\,{\rm d}^{3}v" text="d * P _ (vec@(v)) = C * e ^ (- ((m * v ^ 2) / 2) * k _ B * T) * d * v _ x * d * v _ y * d * v _ z = P * vector@(v _ x, v _ y, v _ z) * d ^ 3 * v" xml:id="Ch1.E42.m1">
+          <Math mode="display" tex="{\rm d}\mathscr{P}_{\vec{v}}=Ce^{-mv^{2}/2{k_{\scriptscriptstyle B}T}}\,{\rm d%&#10;}v_{x}{\rm d}v_{y}{\rm d}v_{z}=P(v_{x},v_{y},v_{z})\,{\rm d}^{3}v" text="d * P _ (vec@(v)) = C * e ^ (- ((m * v ^ 2) / 2) * k _ B * T) * d * v _ x * d * v _ y * d * v _ z = P * vector@(v _ x, v _ y, v _ z) * d ^ 3 * v" xml:id="Ch1.E43.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="multirelation"/>
@@ -4979,25 +5066,25 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                   <XMDual>
                     <XMApp>
                       <XMTok meaning="vector"/>
-                      <XMRef idref="Ch1.E42.m1.1"/>
-                      <XMRef idref="Ch1.E42.m1.2"/>
-                      <XMRef idref="Ch1.E42.m1.3"/>
+                      <XMRef idref="Ch1.E43.m1.1"/>
+                      <XMRef idref="Ch1.E43.m1.2"/>
+                      <XMRef idref="Ch1.E43.m1.3"/>
                     </XMApp>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMApp xml:id="Ch1.E42.m1.1">
+                      <XMApp xml:id="Ch1.E43.m1.1">
                         <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                         <XMTok font="italic" role="UNKNOWN">v</XMTok>
                         <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
                       </XMApp>
                       <XMTok role="PUNCT">,</XMTok>
-                      <XMApp xml:id="Ch1.E42.m1.2">
+                      <XMApp xml:id="Ch1.E43.m1.2">
                         <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                         <XMTok font="italic" role="UNKNOWN">v</XMTok>
                         <XMTok font="italic" fontsize="70%" role="UNKNOWN">y</XMTok>
                       </XMApp>
                       <XMTok role="PUNCT">,</XMTok>
-                      <XMApp xml:id="Ch1.E42.m1.3">
+                      <XMApp xml:id="Ch1.E43.m1.3">
                         <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                         <XMTok font="italic" role="UNKNOWN">v</XMTok>
                         <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
@@ -5011,7 +5098,7 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                     <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
                   </XMApp>
                   <XMTok font="italic" role="UNKNOWN">v</XMTok>
-<!--  %**** main.tex Line 250 **** -->                </XMApp>
+                </XMApp>
               </XMApp>
             </XMath>
           </Math>
@@ -5070,14 +5157,14 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
             </XMath>
           </Math> from the normalziation condition:</p>
         <equationgroup class="ltx_eqn_align" xml:id="A2.S3.EGx7">
-          <equation xml:id="Ch1.E43">
+          <equation xml:id="Ch1.E44">
             <tags>
-              <tag>(1.43)</tag>
-              <tag role="autoref">Equation 1.43</tag>
-              <tag role="refnum">1.43</tag>
+              <tag>(1.44)</tag>
+              <tag role="autoref">Equation 1.44</tag>
+              <tag role="refnum">1.44</tag>
             </tags>
             <MathFork>
-              <Math tex="\displaystyle 1=\int_{\mbox{all $\vec{v}$}}{\rm d}\mathscr{P}=\int_{\mbox{all %&#10;$\vec{v}$}}\,Ce^{-m(v_{x}^{2}+v_{y}^{2}+v_{z}^{2})/2{k_{\scriptscriptstyle B}T%&#10;}}\,{\rm d}v_{x}{\rm d}v_{y}{\rm d}v_{z}" text="1 = (integral _ [all →v])@(differential-d@(P)) = (integral _ [all →v])@(C * e ^ (- ((m * ((v _ x) ^ 2 + (v _ y) ^ 2 + (v _ z) ^ 2)) / 2) * k _ B * T) * differential-d@(v _ x) * differential-d@(v _ y) * differential-d@(v _ z))" xml:id="Ch1.E43.m3">
+              <Math tex="\displaystyle 1=\int_{\mbox{all $\vec{v}$}}{\rm d}\mathscr{P}=\int_{\mbox{all %&#10;$\vec{v}$}}\,Ce^{-m(v_{x}^{2}+v_{y}^{2}+v_{z}^{2})/2{k_{\scriptscriptstyle B}T%&#10;}}\,{\rm d}v_{x}{\rm d}v_{y}{\rm d}v_{z}" text="1 = (integral _ [all →v])@(differential-d@(P)) = (integral _ [all →v])@(C * e ^ (- ((m * ((v _ x) ^ 2 + (v _ y) ^ 2 + (v _ z) ^ 2)) / 2) * k _ B * T) * differential-d@(v _ x) * differential-d@(v _ y) * differential-d@(v _ z))" xml:id="Ch1.E44.m3">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="multirelation"/>
@@ -5087,7 +5174,7 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                       <XMApp>
                         <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                         <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
-                        <XMText><text fontsize="70%">all </text><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E43.m1.m1.mf">
+                        <XMText><text fontsize="70%">all </text><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E44.m1.m1.mf">
                             <XMath>
                               <XMApp>
                                 <XMTok fontsize="70%" name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
@@ -5106,7 +5193,7 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                       <XMApp rpadding="1.7pt">
                         <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                         <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
-                        <XMText><text fontsize="70%">all </text><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E43.m2.m1.mf">
+                        <XMText><text fontsize="70%">all </text><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E44.m2.m1.mf">
                             <XMath>
                               <XMApp>
                                 <XMTok fontsize="70%" name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
@@ -5131,10 +5218,10 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                   <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
                                   <XMDual>
-                                    <XMRef idref="Ch1.E43.m3.1"/>
+                                    <XMRef idref="Ch1.E44.m3.1"/>
                                     <XMWrap>
                                       <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
-                                      <XMApp xml:id="Ch1.E43.m3.1">
+                                      <XMApp xml:id="Ch1.E44.m3.1">
                                         <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
                                         <XMApp>
                                           <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
@@ -5209,7 +5296,7 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                 </XMath>
               </Math>
               <MathBranch>
-                <td align="right"><Math mode="inline" tex="\displaystyle 1=\int_{\mbox{all $\vec{v}$}}{\rm d}\mathscr{P}=" text="1 = (integral _ [all →v])@(differential-d@(P)) = absent" xml:id="Ch1.E43.m1">
+                <td align="right"><Math mode="inline" tex="\displaystyle 1=\int_{\mbox{all $\vec{v}$}}{\rm d}\mathscr{P}=" text="1 = (integral _ [all →v])@(differential-d@(P)) = absent" xml:id="Ch1.E44.m1">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="multirelation"/>
@@ -5219,7 +5306,7 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                           <XMApp>
                             <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                             <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
-                            <XMText><text fontsize="70%">all </text><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E43.m1.m1">
+                            <XMText><text fontsize="70%">all </text><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E44.m1.m1">
                                 <XMath>
                                   <XMApp>
                                     <XMTok fontsize="70%" name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
@@ -5238,13 +5325,13 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                       </XMApp>
                     </XMath>
                   </Math></td>
-                <td align="left"><Math mode="inline" tex="\displaystyle\int_{\mbox{all $\vec{v}$}}\,Ce^{-m(v_{x}^{2}+v_{y}^{2}+v_{z}^{2}%&#10;)/2{k_{\scriptscriptstyle B}T}}\,{\rm d}v_{x}{\rm d}v_{y}{\rm d}v_{z}" text="(integral _ [all →v])@(C * e ^ (- ((m * ((v _ x) ^ 2 + (v _ y) ^ 2 + (v _ z) ^ 2)) / 2) * k _ B * T) * differential-d@(v _ x) * differential-d@(v _ y) * differential-d@(v _ z))" xml:id="Ch1.E43.m2">
+                <td align="left"><Math mode="inline" tex="\displaystyle\int_{\mbox{all $\vec{v}$}}\,Ce^{-m(v_{x}^{2}+v_{y}^{2}+v_{z}^{2}%&#10;)/2{k_{\scriptscriptstyle B}T}}\,{\rm d}v_{x}{\rm d}v_{y}{\rm d}v_{z}" text="(integral _ [all →v])@(C * e ^ (- ((m * ((v _ x) ^ 2 + (v _ y) ^ 2 + (v _ z) ^ 2)) / 2) * k _ B * T) * differential-d@(v _ x) * differential-d@(v _ y) * differential-d@(v _ z))" xml:id="Ch1.E44.m2">
                     <XMath>
                       <XMApp>
                         <XMApp rpadding="1.7pt">
                           <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                           <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
-                          <XMText><text fontsize="70%">all </text><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E43.m2.m1">
+                          <XMText><text fontsize="70%">all </text><Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.E44.m2.m1">
                               <XMath>
                                 <XMApp>
                                   <XMTok fontsize="70%" name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
@@ -5269,10 +5356,10 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                     <XMTok font="italic" fontsize="70%" role="UNKNOWN">m</XMTok>
                                     <XMDual>
-                                      <XMRef idref="Ch1.E43.m2.1"/>
+                                      <XMRef idref="Ch1.E44.m2.1"/>
                                       <XMWrap>
                                         <XMTok fontsize="70%" role="OPEN" stretchy="false">(</XMTok>
-                                        <XMApp xml:id="Ch1.E43.m2.1">
+                                        <XMApp xml:id="Ch1.E44.m2.1">
                                           <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
                                           <XMApp>
                                             <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
@@ -5349,7 +5436,31 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
             </MathFork>
           </equation>
         </equationgroup>
-<!--  %Each of these integrals are gaussian with width $“sigma^2 = “kT/m$,  their integral is $“sqrt–2“pi “sigma^2˝$, and so,  $C (2“pi “sigma^2)^–3/2˝ =1$. Putting the constants together -->        <p>Doing this leads to the distribution of velocities
+<!--  %Each of these integrals are gaussian with width $“sigma^2 = “kT/m$,  their integral is $“sqrt–2“pi “sigma^2˝$, and so,  $C (2“pi “sigma^2)^–3/2˝ =1$. Putting the constants together -->        <p>Doing this integral (which factorizes into and integrals over <Math mode="inline" tex="v_{x}" text="v _ x" xml:id="Ch1.S4.p1.m10">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>, <Math mode="inline" tex="v_{y}" text="v _ y" xml:id="Ch1.S4.p1.m11">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">y</XMTok>
+              </XMApp>
+            </XMath>
+          </Math> and <Math mode="inline" tex="v_{z}" text="v _ z" xml:id="Ch1.S4.p1.m12">
+            <XMath>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+              </XMApp>
+            </XMath>
+          </Math>) leads to the distribution of velocities
 <!--  %=&amp; C “int˙–-“infty˝^–“infty˝ e^–-“frac–mv˙x^2˝–2“kT˝˝  “dd v˙x “times “int˙–-“infty˝^–“infty˝ e^–-“frac–mv˙y^2˝–2“kT˝˝ “dd v˙y  “times “int˙–-“infty˝^–“infty˝ e^–-“frac–mv˙z^2˝–2“kT˝˝ “dd v˙z 
      %“end–align˝
      %Each of these integrals are Gaussian with width $“sigma^2 = “kT/m$,  their integral is $“sqrt–2“pi “sigma^2˝$, and so,  $C (2“pi “sigma^2)^–3/2˝ =1$. Putting the constants together--></p>
@@ -5458,14 +5569,14 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
             </XMath>
           </Math>
         </equation>
-        <p>We note that the probability for the vector <Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.S4.p1.m10">
+        <p>We note that the probability for the vector <Math mode="inline" tex="\vec{v}" text="vec@(v)" xml:id="Ch1.S4.p1.m13">
             <XMath>
               <XMApp>
                 <XMTok name="vec" role="OVERACCENT" stretchy="false">→</XMTok>
                 <XMTok font="italic" role="UNKNOWN">v</XMTok>
               </XMApp>
             </XMath>
-          </Math> factorizes into a probability of <Math mode="inline" tex="v_{x}" text="v _ x" xml:id="Ch1.S4.p1.m11">
+          </Math> factorizes into a probability of <Math mode="inline" tex="v_{x}" text="v _ x" xml:id="Ch1.S4.p1.m14">
             <XMath>
               <XMApp>
                 <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -5473,7 +5584,7 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                 <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
               </XMApp>
             </XMath>
-          </Math>, times a probability of <Math mode="inline" tex="v_{y}" text="v _ y" xml:id="Ch1.S4.p1.m12">
+          </Math>, times a probability of <Math mode="inline" tex="v_{y}" text="v _ y" xml:id="Ch1.S4.p1.m15">
             <XMath>
               <XMApp>
                 <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -5481,7 +5592,7 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                 <XMTok font="italic" fontsize="70%" role="UNKNOWN">y</XMTok>
               </XMApp>
             </XMath>
-          </Math>, times a probability of <Math mode="inline" tex="v_{z}" text="v _ z" xml:id="Ch1.S4.p1.m13">
+          </Math>, times a probability of <Math mode="inline" tex="v_{z}" text="v _ z" xml:id="Ch1.S4.p1.m16">
             <XMath>
               <XMApp>
                 <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -5576,27 +5687,27 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
             </XMath>
           </Math>
         </equation>
-        <p>So, that the probability of finding a particle with <Math mode="inline" tex="x" text="x" xml:id="Ch1.S4.p1.m14">
+        <p>So, that the probability of finding a particle with <Math mode="inline" tex="x" text="x" xml:id="Ch1.S4.p1.m17">
             <XMath>
               <XMTok font="italic" role="UNKNOWN">x</XMTok>
             </XMath>
-          </Math>-component of velocity in <Math mode="inline" tex="[v_{x},v_{x}+{\rm d}v_{x}]" text="closed-interval@(v _ x, v _ x + d * v _ x)" xml:id="Ch1.S4.p1.m15">
+          </Math>-component of velocity in <Math mode="inline" tex="[v_{x},v_{x}+{\rm d}v_{x}]" text="closed-interval@(v _ x, v _ x + d * v _ x)" xml:id="Ch1.S4.p1.m18">
             <XMath>
               <XMDual>
                 <XMApp>
                   <XMTok meaning="closed-interval"/>
-                  <XMRef idref="Ch1.S4.p1.m15.1"/>
-                  <XMRef idref="Ch1.S4.p1.m15.2"/>
+                  <XMRef idref="Ch1.S4.p1.m18.1"/>
+                  <XMRef idref="Ch1.S4.p1.m18.2"/>
                 </XMApp>
                 <XMWrap>
                   <XMTok role="OPEN" stretchy="false">[</XMTok>
-                  <XMApp xml:id="Ch1.S4.p1.m15.1">
+                  <XMApp xml:id="Ch1.S4.p1.m18.1">
                     <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                     <XMTok font="italic" role="UNKNOWN">v</XMTok>
                     <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
                   </XMApp>
                   <XMTok role="PUNCT">,</XMTok>
-                  <XMApp xml:id="Ch1.S4.p1.m15.2">
+                  <XMApp xml:id="Ch1.S4.p1.m18.2">
                     <XMTok meaning="plus" role="ADDOP">+</XMTok>
                     <XMApp>
                       <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -5617,7 +5728,8 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
                 </XMWrap>
               </XMDual>
             </XMath>
-          </Math> is</p>
+          </Math> is
+<!--  %**** main.tex Line 275 **** --></p>
         <equation xml:id="Ch1.E47">
           <tags>
             <tag>(1.47)</tag>
@@ -5747,7 +5859,7 @@ Then the probability of finding the subsystem in state <Math mode="inline" tex="
         <tag role="typerefnum">§1.5</tag>
       </tags>
       <title><tag close=" ">1.5</tag>Change of variables and solid angles</title>
-<!--  %**** main.tex Line 275 **** -->    </section>
+    </section>
     <section inlist="toc" xml:id="Ch1.S6">
       <tags>
         <tag>1.6</tag>
@@ -5904,7 +6016,7 @@ Outside of this list, the constants will be given.</p>
                 </XMath>
               </Math>
             </equation>
-          </para>
+<!--  %**** main.tex Line 300 **** -->          </para>
         </item>
         <item xml:id="A1.S0.I1.i2">
           <tags>
@@ -6107,7 +6219,7 @@ Outside of this list, the constants will be given.</p>
                 </XMath>
               </Math>.</p>
           </para>
-<!--  %**** main.tex Line 300 **** -->        </item>
+        </item>
         <item xml:id="A1.S0.I1.i7">
           <tags>
             <tag>7.</tag>
@@ -6335,7 +6447,7 @@ Outside of this list, the constants will be given.</p>
                             <XMTok meaning="times" role="MULOP">⁢</XMTok>
                             <XMApp>
                               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+<!--  %**** main.tex Line 325 **** -->                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
                               <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
                             </XMApp>
                             <XMApp>
@@ -6426,8 +6538,7 @@ Outside of this list, the constants will be given.</p>
                     <XMTok font="italic" role="UNKNOWN">g</XMTok>
                   </XMApp>
                 </XMath>
-              </Math>, since there are eight protons and neutrons in one oxygen nucleus, and two such nuclei. The electrons are light (see below) for the mass budget.
-<!--  %**** main.tex Line 325 **** --></p>
+              </Math>, since there are eight protons and neutrons in one oxygen nucleus, and two such nuclei. The electrons are light (see below) for the mass budget.</p>
           </para>
           <para xml:id="A1.S0.I1.i9.p2">
             <p>You might want to use either of these methods to evaluate <Math mode="inline" tex="v_{\rm rms}" text="v _ rms" xml:id="A1.S0.I1.i9.p2.m1">
@@ -6785,7 +6896,7 @@ in atomic hydrogen gas at room temperature</p>
                           <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
                           <XMApp>
                             <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+<!--  %**** main.tex Line 350 **** -->                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
                             <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
                           </XMApp>
                           <XMApp>
@@ -6852,8 +6963,7 @@ in atomic hydrogen gas at room temperature</p>
             <tag role="typerefnum">item 11</tag>
           </tags>
           <para xml:id="A1.S0.I1.i11.p1">
-            <p>Plancks constant is needed to convert wavelength to energy
-<!--  %**** main.tex Line 350 **** --></p>
+            <p>Plancks constant is needed to convert wavelength to energy</p>
             <equation xml:id="A1.E10">
               <tags>
                 <tag>(A.10)</tag>
@@ -7095,7 +7205,7 @@ in atomic hydrogen gas at room temperature</p>
               </Math>
             </equation>
           </para>
-        </item>
+<!--  %**** main.tex Line 375 **** -->        </item>
         <item xml:id="A1.S0.I1.i12">
           <tags>
             <tag>12.</tag>
@@ -7172,8 +7282,7 @@ in atomic hydrogen gas at room temperature</p>
                 </XMath>
               </Math>)</p>
           </para>
-<!--  %**** main.tex Line 375 **** 
-     %“item We have not needed it yet (and thus you wont need it for this exam), but this also is very helpful.-->        </item>
+<!--  %“item We have not needed it yet (and thus you wont need it for this exam), but this also is very helpful. -->        </item>
         <item xml:id="A1.S0.I1.i13">
           <tags>
             <tag>13.</tag>
@@ -7341,7 +7450,7 @@ An explosion involves roughly an Avogadro’s number of atomic transitions, with
               </Math> of energy per mole. Burning a mole of gasoline gives roughly this amount of energy.
 <!--  %In the Otto cycle we took the input heat to be $Q˙–“rm in˝ =22“,–“rm kJ˝$ per mole, which is roughly the Faraday constant. --></p>
           </para>
-        </item>
+<!--  %**** main.tex Line 400 **** -->        </item>
         <item xml:id="A1.S0.I1.i14">
           <tags>
             <tag>14.</tag>
@@ -7414,7 +7523,7 @@ the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,
                       </XMApp>
                     </XMApp>
                   </XMApp>
-<!--  %**** main.tex Line 400 **** -->                </XMath>
+                </XMath>
               </Math>
             </equation>
             <p>reflecting the uncertainty principle.
@@ -7836,7 +7945,7 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
               </tags>
               <Math mode="display" tex="\boxed{\frac{\hbar^{2}}{2m_{e}a_{0}^{2}}=\frac{1}{2}\left(\frac{e^{2}}{4\pi%&#10;\epsilon_{0}a_{0}}\right)\simeq 13.6\,{\rm eV}}" text="Planck-constant-over-2-pi ^ 2 / (2 * m _ e * (a _ 0) ^ 2) = (1 / 2) * (e ^ 2 / (4 * pi * epsilon _ 0 * a _ 0)) similar-to-or-equals 13.6 * eV" xml:id="A1.E23.m1">
                 <XMath>
-<!--  %**** main.tex Line 425 **** -->                  <XMApp enclose="box">
+                  <XMApp enclose="box">
                     <XMTok meaning="multirelation"/>
                     <XMApp>
                       <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
@@ -7971,6 +8080,7 @@ a quantum mechanical system it is often the case that</p>
      %“beta = “alpha “, .
      %“stp
      %Here $“beta=v/c$ is the velocity (divided by $c$) of the electron going around the proton, and the fine structure constant $“alpha$ is
+     %**** main.tex Line 450 ****
      %the squared charge  of the electron in terms of fundamental constants
      %“st
      %“alpha “equiv “frac–e^2˝–4“pi “epsilon˙0 “hbar c ˝ “simeq  “frac–1˝–137˝
@@ -7979,7 +8089,6 @@ a quantum mechanical system it is often the case that</p>
      %by solving for $a˙0=“hbar/mc“alpha$ from “Eq–eq:Rydberg˝ and using $p=mv=“hbar/a˙0$. Thus the kinetic energy is again
      %“begin–align˝
      %–“rm KE˝ =&amp; “frac–1˝–2˝ mv^2 = “frac–1˝–2˝ m˙e c^2 “beta^2 =  “half m˙e c^2 “alpha^2 =
-     %**** main.tex Line 450 ****
      %“frac–1˝–2˝ (0.511“,–“rm MeV˝) (1/137)^2 = 13.6“,–“rm eV˝
      %“end–align˝
      %% “st
@@ -8162,7 +8271,7 @@ the thermal de Broglie wavelength of a <emph font="italic">proton</emph>, by ins
     </tags>
     <title><tag close=" ">Appendix B</tag>Math</title>
     <toctitle><tag close=" ">B</tag>Math</toctitle>
-    <section inlist="toc" xml:id="A2.S1">
+<!--  %**** main.tex Line 475 **** -->    <section inlist="toc" xml:id="A2.S1">
       <tags>
         <tag>B.1</tag>
         <tag role="autoref">section B.1</tag>
@@ -8799,7 +8908,7 @@ in units of <Math mode="inline" tex="\ell" text="ell" xml:id="A2.S1.p2.m7">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
-                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+<!--  %**** main.tex Line 500 **** -->                <XMTok font="italic" role="UNKNOWN">I</XMTok>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMTok font="italic" role="UNKNOWN">c</XMTok>
@@ -8882,8 +8991,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             </XMath>
           </Math> requires doing a dimensionless integral, which is the only kind of integral you should <emph font="italic">ever</emph> try to do!</p>
       </para>
-<!--  %**** main.tex Line 500 **** 
-     %“section–Basic Taylor Series˝
+<!--  %“section–Basic Taylor Series˝ 
      %You are expected to know what a  Taylor series is, but we will develop facility with them as the course develops. You are expected to have the following memorized:
      %“begin–align˝
      %“sin(x) =&amp; x - “frac–x^3˝–3!˝ + “frac–x^5˝–5!˝ +  + “mathcal O(x^7)  ““
@@ -8899,6 +9007,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
      %They can be integrated, etc, so for example the expression for $“log(1 +x)$ follows from the geometric series $1/(1+x)$ by integration:
      %“begin–equation˝
      %“log(1 + x) = “int˙0^x “frac–“dd x’˝–1+x’˝ = “int˙0^x “dd  x’ “, “left[1 - x’  + (x’)^2 + “mathcal O((x’)^3)“right] = x - “frac–x^2˝–2˝ +  “frac–x^3˝–3˝ + “mathcal O (x^4)
+     %**** main.tex Line 525 ****
      %“end–equation˝-->    </section>
     <section inlist="toc" xml:id="A2.S2">
       <tags>
@@ -8986,7 +9095,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             </XMath>
           </Math>
         </equation>
-<!--  %**** main.tex Line 525 **** -->        <p>The first couple results are</p>
+        <p>The first couple results are</p>
         <equation xml:id="A2.E8">
           <tags>
             <tag>(B.8)</tag>
@@ -9214,7 +9323,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+<!--  %**** main.tex Line 550 **** -->                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                   <XMDual>
                     <XMRef idref="A2.E11.m1.1"/>
                     <XMWrap>
@@ -9320,7 +9429,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             </XMath>
           </Math>.</p>
       </para>
-<!--  %**** main.tex Line 550 **** -->      <para xml:id="A2.S3.p2">
+      <para xml:id="A2.S3.p2">
         <p>In statistical mechanics, the gamma function occurs frequently in integrals involving the Maxwell–Boltzmann distribution. In addition, the area of a sphere in <Math mode="inline" tex="d" text="d" xml:id="A2.S3.p2.m1">
             <XMath>
               <XMTok font="italic" role="UNKNOWN">d</XMTok>
