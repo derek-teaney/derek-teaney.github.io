@@ -6260,7 +6260,7 @@ that the map is one to one we have</p>
             </Math>
           </equation>
           <p>We note the absolute values here, which reflects the fact
-that when discussing probability we are asking wether a particle
+that when discussing probability we are asking whether a particle
 is in a bin of size <Math mode="inline" tex="{\rm d}u" text="d * u" xml:id="Ch1.S5.SS1.p1.m6">
               <XMath>
                 <XMApp>
@@ -6272,8 +6272,13 @@ is in a bin of size <Math mode="inline" tex="{\rm d}u" text="d * u" xml:id="Ch1.
             </Math>, and the bin size isn’t like positive or negative.</p>
         </para>
         <para xml:id="Ch1.S5.SS1.p2">
-          <p>The general formula for change of variables is
-<!--  %**** main.tex Line 300 **** --></p>
+          <p>The general formula for change of variables for an integral<note mark="3" role="footnote" xml:id="Ch1.footnote3"><tags>
+                <tag>3</tag>
+                <tag role="autoref">footnote 3</tag>
+                <tag role="refnum">3</tag>
+                <tag role="typerefnum">footnote 3</tag>
+              </tags><!--  %**** main.tex Line 300 **** -->The difference between oriented and unoriented integral is a matter of semantics at this level. If replace an integral by a sum of rectangles,
+or you can sum them up in order from the beginning to the end (an oriented integral), or you can sum them up in any order provided they are in a specified region (an unoriented integral). </note></p>
           <equation xml:id="Ch1.E52">
             <tags>
               <tag>(1.52)</tag>
@@ -6478,14 +6483,14 @@ is in a bin of size <Math mode="inline" tex="{\rm d}u" text="d * u" xml:id="Ch1.
         </para>
         <para xml:id="Ch1.S5.SS1.p3">
           <p>To set yourself straight of this notation just make the change of variables, getting the signs right. For example,
-consider the basic oriented integral:</p>
+consider the basic integral:</p>
           <equation xml:id="Ch1.E53">
             <tags>
               <tag>(1.53)</tag>
               <tag role="autoref">Equation 1.53</tag>
               <tag role="refnum">1.53</tag>
             </tags>
-            <Math mode="display" tex="I=\int^{2}_{1}dx=\int_{[1,2]}{\rm d}x" text="I = ((integral ^ 2) _ 1)@(differential-d@(x)) = (integral _ (closed-interval@(1, 2)))@(differential-d@(x))" xml:id="Ch1.E53.m1">
+            <Math mode="display" tex="I=\int^{2}_{1}dx=\int_{[1,2]}{\rm d}x=1" text="I = ((integral ^ 2) _ 1)@(differential-d@(x)) = (integral _ (closed-interval@(1, 2)))@(differential-d@(x)) = 1" xml:id="Ch1.E53.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="multirelation"/>
@@ -6531,6 +6536,8 @@ consider the basic oriented integral:</p>
                       <XMTok font="italic" role="UNKNOWN">x</XMTok>
                     </XMApp>
                   </XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMTok meaning="1" role="NUMBER">1</XMTok>
                 </XMApp>
               </XMath>
             </Math>
@@ -6718,9 +6725,9 @@ consider the basic oriented integral:</p>
      %where $“dd–“rm V˝$ is the ‘‘volume element”.
      %A bit of geometry shows that the differential area $dA$ and the volume element $dV$ in spherical coordinates  are
      %“st
-     %dA  =&amp; r^2 “sin“theta “, “dd “theta “, “dd“phi ““
      %**** main.tex Line 325 ****
-     %d–“rm V˝  =&amp; r^2 “sin“theta “, “dd r “, “dd“theta “, “dd“phi
+     %dA  =&amp; r^2 “sin“theta “, “dd “theta “, “dd“phi ““
+     %d–“rm V˝  =&amp; r^2 “sin“theta “, “dd r “, “dd“theta “, “dd“ophi
      %“stp
      %So in spherical coordinates
      %“begin–align˝
@@ -6867,7 +6874,7 @@ Outside of this list, the constants will be given.</p>
                                 <XMTok fontsize="70%" meaning="9" role="NUMBER">9</XMTok>
                               </XMApp>
                               <XMTok role="UNKNOWN">eV</XMTok>
-                            </XMApp>
+<!--  %**** main.tex Line 350 **** -->                            </XMApp>
                           </XMApp>
                         </XMWrap>
                       </XMDual>
@@ -6876,7 +6883,7 @@ Outside of this list, the constants will be given.</p>
                 </XMath>
               </Math>
             </equation>
-<!--  %**** main.tex Line 350 **** -->          </para>
+          </para>
         </item>
         <item xml:id="A1.S0.I1.i2">
           <tags>
@@ -7292,7 +7299,8 @@ Outside of this list, the constants will be given.</p>
                   <tag role="typerefnum">1st item</tag>
                 </tags>
                 <para xml:id="A1.S0.I1.i9.I1.i1.p1">
-                  <p>The microscopic way: i.e. the rest energy in mega electron volts is</p>
+                  <p>The microscopic way: i.e. the rest energy in mega electron volts is
+<!--  %**** main.tex Line 375 **** --></p>
                   <equation xml:id="A1.E4">
                     <tags>
                       <tag>(A.4)</tag>
@@ -7307,7 +7315,7 @@ Outside of this list, the constants will be given.</p>
                             <XMTok meaning="times" role="MULOP">⁢</XMTok>
                             <XMApp>
                               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-<!--  %**** main.tex Line 375 **** -->                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
                               <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
                             </XMApp>
                             <XMApp>
@@ -7743,7 +7751,8 @@ in atomic hydrogen gas at room temperature</p>
                   <tag role="typerefnum">1st item</tag>
                 </tags>
                 <para xml:id="A1.S0.I1.i10.I1.i1.p1">
-                  <p>The microscopic way: the mass is “half an MeV”</p>
+                  <p>The microscopic way: the mass is “half an MeV”
+<!--  %**** main.tex Line 400 **** --></p>
                   <equation xml:id="A1.E8">
                     <tags>
                       <tag>(A.8)</tag>
@@ -7756,7 +7765,7 @@ in atomic hydrogen gas at room temperature</p>
                           <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
                           <XMApp>
                             <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-<!--  %**** main.tex Line 400 **** -->                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
                             <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
                           </XMApp>
                           <XMApp>
@@ -8064,8 +8073,8 @@ in atomic hydrogen gas at room temperature</p>
                 </XMath>
               </Math>
             </equation>
-          </para>
-<!--  %**** main.tex Line 425 **** -->        </item>
+<!--  %**** main.tex Line 425 **** -->          </para>
+        </item>
         <item xml:id="A1.S0.I1.i12">
           <tags>
             <tag>12.</tag>
@@ -8308,9 +8317,10 @@ An explosion involves roughly an Avogadro’s number of atomic transitions, with
                   </XMApp>
                 </XMath>
               </Math> of energy per mole. Burning a mole of gasoline gives roughly this amount of energy.
-<!--  %In the Otto cycle we took the input heat to be $Q˙–“rm in˝ =22“,–“rm kJ˝$ per mole, which is roughly the Faraday constant. --></p>
+<!--  %In the Otto cycle we took the input heat to be $Q˙–“rm in˝ =22“,–“rm kJ˝$ per mole, which is roughly the Faraday constant. 
+     %**** main.tex Line 450 ****--></p>
           </para>
-<!--  %**** main.tex Line 450 **** -->        </item>
+        </item>
         <item xml:id="A1.S0.I1.i14">
           <tags>
             <tag>14.</tag>
@@ -8939,8 +8949,8 @@ a quantum mechanical system it is often the case that</p>
      %“label–eq:ba˝
      %“beta = “alpha “, .
      %“stp
-     %Here $“beta=v/c$ is the velocity (divided by $c$) of the electron going around the proton, and the fine structure constant $“alpha$ is
      %**** main.tex Line 500 ****
+     %Here $“beta=v/c$ is the velocity (divided by $c$) of the electron going around the proton, and the fine structure constant $“alpha$ is
      %the squared charge  of the electron in terms of fundamental constants
      %“st
      %“alpha “equiv “frac–e^2˝–4“pi “epsilon˙0 “hbar c ˝ “simeq  “frac–1˝–137˝
@@ -9121,7 +9131,7 @@ the thermal de Broglie wavelength of a <emph font="italic">proton</emph>, by ins
         </item>
       </enumerate>
     </para>
-  </appendix>
+<!--  %**** main.tex Line 525 **** -->  </appendix>
   <appendix inlist="toc" xml:id="A2">
     <tags>
       <tag>Appendix B</tag>
@@ -9131,7 +9141,7 @@ the thermal de Broglie wavelength of a <emph font="italic">proton</emph>, by ins
     </tags>
     <title><tag close=" ">Appendix B</tag>Math</title>
     <toctitle><tag close=" ">B</tag>Math</toctitle>
-<!--  %**** main.tex Line 525 **** -->    <section inlist="toc" xml:id="A2.S1">
+    <section inlist="toc" xml:id="A2.S1">
       <tags>
         <tag>B.1</tag>
         <tag role="autoref">section B.1</tag>
@@ -9757,7 +9767,8 @@ in units of <Math mode="inline" tex="\ell" text="ell" xml:id="A2.S1.p2.m7">
             <XMath>
               <XMTok font="italic" role="UNKNOWN">c</XMTok>
             </XMath>
-          </Math> is an order one constant. I think that we can agree that</p>
+          </Math> is an order one constant. I think that we can agree that
+<!--  %**** main.tex Line 550 **** --></p>
         <equation xml:id="A2.E6">
           <tags>
             <tag>(B.6)</tag>
@@ -9768,7 +9779,7 @@ in units of <Math mode="inline" tex="\ell" text="ell" xml:id="A2.S1.p2.m7">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
-<!--  %**** main.tex Line 550 **** -->                <XMTok font="italic" role="UNKNOWN">I</XMTok>
+                <XMTok font="italic" role="UNKNOWN">I</XMTok>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMTok font="italic" role="UNKNOWN">c</XMTok>
@@ -9866,8 +9877,8 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
      %These get me through life.
      %They can be integrated, etc, so for example the expression for $“log(1 +x)$ follows from the geometric series $1/(1+x)$ by integration:
      %“begin–equation˝
-     %“log(1 + x) = “int˙0^x “frac–“dd x’˝–1+x’˝ = “int˙0^x “dd  x’ “, “left[1 - x’  + (x’)^2 + “mathcal O((x’)^3)“right] = x - “frac–x^2˝–2˝ +  “frac–x^3˝–3˝ + “mathcal O (x^4)
      %**** main.tex Line 575 ****
+     %“log(1 + x) = “int˙0^x “frac–“dd x’˝–1+x’˝ = “int˙0^x “dd  x’ “, “left[1 - x’  + (x’)^2 + “mathcal O((x’)^3)“right] = x - “frac–x^2˝–2˝ +  “frac–x^3˝–3˝ + “mathcal O (x^4)
      %“end–equation˝-->    </section>
     <section inlist="toc" xml:id="A2.S2">
       <tags>
@@ -10170,7 +10181,8 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                 <XMTok meaning="1" role="NUMBER">1</XMTok>
               </XMApp>
             </XMath>
-          </Math>. We have</p>
+          </Math>. We have
+<!--  %**** main.tex Line 600 **** --></p>
         <equation xml:id="A2.E11">
           <tags>
             <tag>(B.11)</tag>
@@ -10183,7 +10195,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
-<!--  %**** main.tex Line 600 **** -->                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                   <XMDual>
                     <XMRef idref="A2.E11.m1.1"/>
                     <XMWrap>
