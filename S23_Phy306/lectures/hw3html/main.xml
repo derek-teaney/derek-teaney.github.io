@@ -4439,7 +4439,7 @@ of the map <Math mode="inline" tex="x=r\sin\theta\cos\phi" text="x = r * sine@(t
                 <tag role="autoref">Equation 20</tag>
                 <tag role="refnum">20</tag>
               </tags>
-              <Math mode="display" tex="d^{3}x=\left|\left|\frac{\partial(x,y,z)}{\partial(r,\theta,\phi)}\right|%&#10;\right|drd\theta d\phi=\left|\begin{vmatrix}\sin\theta\cos\phi&amp;r\cos\theta\cos%&#10;\phi&amp;-r\sin\theta\\&#10;\sin\theta\sin\phi&amp;r\cos\theta\sin\phi&amp;r\sin\theta\\&#10;\cos\theta&amp;-r\sin\theta&amp;0\end{vmatrix}\right|=r^{2}\sin\theta{\rm d}r{\rm d}%&#10;\theta{\rm d}\phi" text="d ^ 3 * x = norm@(partial-differential@(x, y, z) / partial-differential@(r, theta, phi)) * d * r * d * theta * d * phi = absolute-value@(determinant@(matrix@(Array[[sine@(theta) * cosine@(phi), r * cosine@(theta) * cosine@(phi), - r * sine@(theta)], [sine@(theta) * sine@(phi), r * cosine@(theta) * sine@(phi), r * sine@(theta)], [cosine@(theta), - r * sine@(theta), 0]]))) = r ^ 2 * sine@(theta * d * r * d * theta * d * phi)" xml:id="S0.E20.m1">
+              <Math mode="display" tex="d^{3}x=\left|\left|\frac{\partial(x,y,z)}{\partial(r,\theta,\phi)}\right|%&#10;\right|drd\theta d\phi=\left|\begin{vmatrix}\sin\theta\cos\phi&amp;r\cos\theta\cos%&#10;\phi&amp;-r\sin\theta\sin\phi\\&#10;\sin\theta\sin\phi&amp;r\cos\theta\sin\phi&amp;r\sin\theta\cos\phi\\&#10;\cos\theta&amp;-r\sin\theta&amp;0\end{vmatrix}\right|=r^{2}\sin\theta{\rm d}r{\rm d}%&#10;\theta{\rm d}\phi" text="d ^ 3 * x = norm@(partial-differential@(x, y, z) / partial-differential@(r, theta, phi)) * d * r * d * theta * d * phi = absolute-value@(determinant@(matrix@(Array[[sine@(theta) * cosine@(phi), r * cosine@(theta) * cosine@(phi), - r * sine@(theta) * sine@(phi)], [sine@(theta) * sine@(phi), r * cosine@(theta) * sine@(phi), r * sine@(theta) * cosine@(phi)], [cosine@(theta), - r * sine@(theta), 0]]))) = r ^ 2 * sine@(theta * d * r * d * theta * d * phi)" xml:id="S0.E20.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="multirelation"/>
@@ -4572,6 +4572,10 @@ of the map <Math mode="inline" tex="x=r\sin\theta\cos\phi" text="x = r * sine@(t
                                         <XMTok meaning="sine" role="TRIGFUNCTION">sin</XMTok>
                                         <XMTok font="italic" name="theta" role="UNKNOWN">θ</XMTok>
                                       </XMApp>
+                                      <XMApp>
+                                        <XMTok meaning="sine" role="TRIGFUNCTION">sin</XMTok>
+                                        <XMTok font="italic" name="phi" role="UNKNOWN">ϕ</XMTok>
+                                      </XMApp>
                                     </XMApp>
                                   </XMApp>
                                 </XMCell>
@@ -4611,6 +4615,10 @@ of the map <Math mode="inline" tex="x=r\sin\theta\cos\phi" text="x = r * sine@(t
                                     <XMApp>
                                       <XMTok meaning="sine" role="TRIGFUNCTION">sin</XMTok>
                                       <XMTok font="italic" name="theta" role="UNKNOWN">θ</XMTok>
+                                    </XMApp>
+                                    <XMApp>
+                                      <XMTok meaning="cosine" role="TRIGFUNCTION">cos</XMTok>
+                                      <XMTok font="italic" name="phi" role="UNKNOWN">ϕ</XMTok>
                                     </XMApp>
                                   </XMApp>
                                 </XMCell>
