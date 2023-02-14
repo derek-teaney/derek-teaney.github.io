@@ -4329,8 +4329,8 @@ the number of particles per volume. The number of moles is the number of particl
         </equation>
       </para>
       <para xml:id="Ch1.S2.p6">
-        <p>The formulas in this section can be used to make a variety of estimates such as: the spacing between particles at room temperature; the typical speed; the typical debroglie wavelength; typical angular velocity and angular momentum. We defined
-the thermal deBroglie wavelength:</p>
+        <p>The formulas in this section can be used to make a variety of estimates such as: the spacing between particles at room temperature; the typical speed; the typical de Broglie wavelength; typical angular velocity and angular momentum. We defined
+the thermal de Broglie wavelength:</p>
         <equation xml:id="Ch1.E38">
           <tags>
             <tag>(1.38)</tag>
@@ -4433,7 +4433,7 @@ the thermal deBroglie wavelength:</p>
               </XMApp>
             </XMath>
           </Math>.
-The subsystem should be small and independent of the rest of the system (except in regard to energy exchange), eg. a molecule in an ideal gas.
+The subsystem should be small and independent of the rest of the system (except in regard to energy exchange), e.g. a molecule in an ideal gas.
 Probability the subsystem will have energy <Math mode="inline" tex="\epsilon" text="epsilon" xml:id="Ch1.S3.p1.m4">
             <XMath>
               <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
@@ -12244,14 +12244,22 @@ in atomic hydrogen gas at room temperature</p>
                       <tag role="autoref">Equation A.8</tag>
                       <tag role="refnum">A.8</tag>
                     </tags>
-                    <Math mode="display" tex="m_{e}\simeq 0.511\,{\rm MeV}" text="m _ e similar-to-or-equals 0.511 * MeV" xml:id="A1.E8.m1">
+                    <Math mode="display" tex="m_{e}c^{2}\simeq 0.511\,{\rm MeV}" text="m _ e * c ^ 2 similar-to-or-equals 0.511 * MeV" xml:id="A1.E8.m1">
                       <XMath>
                         <XMApp>
                           <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
                           <XMApp>
-                            <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
-                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">e</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                              <XMTok font="italic" role="UNKNOWN">c</XMTok>
+                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                            </XMApp>
                           </XMApp>
                           <XMApp>
                             <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -12874,9 +12882,9 @@ the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,
                 <tag role="autoref">Equation A.17</tag>
                 <tag role="refnum">A.17</tag>
               </tags>
-              <Math mode="display" tex="\boxed{p=\frac{\hbar}{a_{0}}}" text="p = Planck-constant-over-2-pi / a _ 0" xml:id="A1.E17.m1">
+              <Math mode="display" tex="p=\frac{\hbar}{a_{0}}" text="p = Planck-constant-over-2-pi / a _ 0" xml:id="A1.E17.m1">
                 <XMath>
-                  <XMApp enclose="box">
+                  <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMTok font="italic" role="UNKNOWN">p</XMTok>
                     <XMApp>
@@ -12899,49 +12907,120 @@ potential energy in magnitude<note mark="2" role="footnote" xml:id="A1.footnote2
                   <tag role="autoref">footnote 2</tag>
                   <tag role="refnum">2</tag>
                   <tag role="typerefnum">footnote 2</tag>
-                </tags>This follows from Newton’s Law for a circular orbit for an electron attracted to the proton via the Coulomb force:
+                </tags><!--  %**** main.tex Line 625 **** -->This follows from Newton’s Law for a circular orbit for an electron attracted to the proton via the Coulomb force:
 <equation xml:id="A1.Ex1">
-                  <Math mode="display" tex="\frac{mv^{2}}{r}=\frac{e^{2}}{4\pi\epsilon_{0}r^{2}}" text="(m * v ^ 2) / r = e ^ 2 / (4 * pi * epsilon _ 0 * r ^ 2)" xml:id="A1.Ex1.m1">
+                  <Math mode="display" tex="\frac{mv^{2}}{r}=\frac{e^{2}}{4\pi\epsilon_{0}r^{2}}\,." text="(m * v ^ 2) / r = e ^ 2 / (4 * pi * epsilon _ 0 * r ^ 2)" xml:id="A1.Ex1.m1">
                     <XMath>
-                      <XMApp>
-                        <XMTok meaning="equals" role="RELOP">=</XMTok>
-                        <XMApp>
-                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                          <XMApp>
-                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                            <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                      <XMDual>
+                        <XMRef idref="A1.Ex1.m1.1"/>
+                        <XMWrap>
+                          <XMApp xml:id="A1.Ex1.m1.1">
+                            <XMTok meaning="equals" role="RELOP">=</XMTok>
                             <XMApp>
-                              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
-                              <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
-                            </XMApp>
-                          </XMApp>
-                          <XMTok font="italic" role="UNKNOWN">r</XMTok>
-                        </XMApp>
-                        <XMApp>
-                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                          <XMApp>
-                            <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
-                            <XMTok font="italic" role="UNKNOWN">e</XMTok>
-                            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
-                          </XMApp>
-                          <XMApp>
-                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                            <XMTok meaning="4" role="NUMBER">4</XMTok>
-                            <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
-                            <XMApp>
-                              <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                              <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
-                              <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
-                            </XMApp>
-                            <XMApp>
-                              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                </XMApp>
+                              </XMApp>
                               <XMTok font="italic" role="UNKNOWN">r</XMTok>
-                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                            </XMApp>
+                            <XMApp rpadding="1.7pt">
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMApp>
+                                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                                <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok meaning="4" role="NUMBER">4</XMTok>
+                                <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                  <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                                  <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                </XMApp>
+                              </XMApp>
                             </XMApp>
                           </XMApp>
-                        </XMApp>
-                      </XMApp>
+                          <XMTok role="PERIOD">.</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMath>
+                  </Math>
+                </equation>
+Multiplying this equation by <Math mode="inline" tex="r/2" text="r / 2" xml:id="A1.footnote2.m1">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                      <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMath>
+                </Math> gives
+<equation xml:id="A1.Ex2">
+                  <Math mode="display" tex="\frac{1}{2}mv^{2}=\frac{1}{2}\frac{e^{2}}{4\pi\epsilon_{0}r}\,." text="(1 / 2) * m * v ^ 2 = (1 / 2) * (e ^ 2 / (4 * pi * epsilon _ 0 * r))" xml:id="A1.Ex2.m1">
+                    <XMath>
+                      <XMDual>
+                        <XMRef idref="A1.Ex2.m1.1"/>
+                        <XMWrap>
+                          <XMApp xml:id="A1.Ex2.m1.1">
+                            <XMTok meaning="equals" role="RELOP">=</XMTok>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMApp>
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMTok meaning="1" role="NUMBER">1</XMTok>
+                                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                              <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                              <XMApp>
+                                <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMApp>
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMTok meaning="1" role="NUMBER">1</XMTok>
+                                <XMTok meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                              <XMApp rpadding="1.7pt">
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMApp>
+                                  <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                                  <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                  <XMTok meaning="4" role="NUMBER">4</XMTok>
+                                  <XMTok font="italic" name="pi" role="UNKNOWN">π</XMTok>
+                                  <XMApp>
+                                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                    <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
+                                    <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                                  </XMApp>
+                                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
+                                </XMApp>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="PERIOD">.</XMTok>
+                        </XMWrap>
+                      </XMDual>
                     </XMath>
                   </Math>
                 </equation>
@@ -12960,8 +13039,7 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
                     <XMTok font="italic" role="UNKNOWN">e</XMTok>
                   </XMApp>
                 </XMath>
-              </Math> of the electron. The potential energy of the orbiting electron is
-<!--  %**** main.tex Line 625 **** --></p>
+              </Math> of the electron. The potential energy of the orbiting electron is</p>
             <equation xml:id="A1.E18">
               <tags>
                 <tag>(A.18)</tag>
@@ -13012,11 +13090,11 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
                   <tag role="refnum">A.19</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle{\rm BE}={\rm KE}+{\rm PE}" text="BE = KE + PE" xml:id="A1.E19.m3">
+                  <Math tex="\displaystyle E={\rm KE}+{\rm PE}" text="E = KE + PE" xml:id="A1.E19.m3">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
-                        <XMTok role="UNKNOWN">BE</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">E</XMTok>
                         <XMApp>
                           <XMTok meaning="plus" role="ADDOP">+</XMTok>
                           <XMTok role="UNKNOWN">KE</XMTok>
@@ -13026,11 +13104,11 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle{\rm BE}=" text="BE = absent" xml:id="A1.E19.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle E=" text="E = absent" xml:id="A1.E19.m1">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="equals" role="RELOP">=</XMTok>
-                            <XMTok role="UNKNOWN">BE</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">E</XMTok>
                             <XMTok meaning="absent"/>
                           </XMApp>
                         </XMath>
@@ -13263,7 +13341,7 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
                 <tag role="autoref">Equation A.22</tag>
                 <tag role="refnum">A.22</tag>
               </tags>
-              <Math mode="display" tex="{\rm KE}={\textstyle\frac{1}{2}}{\rm|PE|}={\rm|BE|}\\&#10;" text="KE = (1 / 2) * absolute-value@(PE) = absolute-value@(BE)" xml:id="A1.E22.m1">
+              <Math mode="display" tex="{\rm KE}={\textstyle\frac{1}{2}}{\rm|PE|}={E}\\&#10;" text="KE = (1 / 2) * absolute-value@(PE) = E" xml:id="A1.E22.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="multirelation"/>
@@ -13289,17 +13367,7 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
                       </XMDual>
                     </XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMDual>
-                      <XMApp>
-                        <XMTok meaning="absolute-value"/>
-                        <XMRef idref="A1.E22.m1.2"/>
-                      </XMApp>
-                      <XMWrap>
-                        <XMTok role="VERTBAR" stretchy="false">|</XMTok>
-                        <XMTok role="UNKNOWN" xml:id="A1.E22.m1.2">BE</XMTok>
-                        <XMTok role="VERTBAR" stretchy="false">|</XMTok>
-                      </XMWrap>
-                    </XMDual>
+                    <XMTok font="italic" role="UNKNOWN">E</XMTok>
                   </XMApp>
                 </XMath>
               </Math>
@@ -13397,16 +13465,18 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
                     <XMTok role="UNKNOWN">eV</XMTok>
                   </XMApp>
                 </XMath>
-              </Math> is the Rydberg constant.
-For the ground states of
-a quantum mechanical system it is often the case that</p>
+              </Math> is the Rydberg constant.</p>
+          </para>
+          <para xml:id="A1.S0.I1.i14.p4">
+            <p>For the ground states of
+<!--  %**** main.tex Line 650 **** -->a quantum mechanical system it is generically the case that</p>
             <equation xml:id="A1.E24">
               <tags>
                 <tag>(A.24)</tag>
                 <tag role="autoref">Equation A.24</tag>
                 <tag role="refnum">A.24</tag>
               </tags>
-              <Math mode="display" tex="{\rm KE}\sim{\rm|PE|}\sim{\rm|BE|}" text="KE similar-to absolute-value@(PE) similar-to absolute-value@(BE)" xml:id="A1.E24.m1">
+              <Math mode="display" tex="{\rm KE}\sim{\rm|PE|}\sim E" text="KE similar-to absolute-value@(PE) similar-to E" xml:id="A1.E24.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="multirelation"/>
@@ -13424,22 +13494,52 @@ a quantum mechanical system it is often the case that</p>
                       </XMWrap>
                     </XMDual>
                     <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
-                    <XMDual>
-                      <XMApp>
-                        <XMTok meaning="absolute-value"/>
-                        <XMRef idref="A1.E24.m1.2"/>
-                      </XMApp>
-                      <XMWrap>
-                        <XMTok role="VERTBAR" stretchy="false">|</XMTok>
-                        <XMTok role="UNKNOWN" xml:id="A1.E24.m1.2">BE</XMTok>
-                        <XMTok role="VERTBAR" stretchy="false">|</XMTok>
-                      </XMWrap>
-                    </XMDual>
+                    <XMTok font="italic" role="UNKNOWN">E</XMTok>
                   </XMApp>
                 </XMath>
               </Math>
             </equation>
-<!--  %**** main.tex Line 650 **** -->          </para>
+            <p>If the system size is of order <Math mode="inline" tex="L" text="L" xml:id="A1.S0.I1.i14.p4.m1">
+                <XMath>
+                  <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                </XMath>
+              </Math> then <Math mode="inline" tex="p\sim\hbar/L" text="p similar-to Planck-constant-over-2-pi / L" xml:id="A1.S0.I1.i14.p4.m2">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMApp>
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMTok meaning="Planck-constant-over-2-pi" name="hbar" role="ID">ℏ</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> and the
+kinetic energy is <Math mode="inline" tex="\hbar^{2}/2mL^{2}" text="(Planck-constant-over-2-pi ^ 2 / 2) * m * L ^ 2" xml:id="A1.S0.I1.i14.p4.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMTok meaning="Planck-constant-over-2-pi" name="hbar" role="ID">ℏ</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">L</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>. So the intuition from the Bohr
+model is often a good guess for more general quantum mechanical systems.</p>
+          </para>
 <!--  %The easiest way 
      %to remember the Bohr model is
      %“st
@@ -13456,13 +13556,14 @@ a quantum mechanical system it is often the case that</p>
      %“begin–align˝
      %–“rm KE˝ =&amp; “frac–1˝–2˝ mv^2 = “frac–1˝–2˝ m˙e c^2 “beta^2 =  “half m˙e c^2 “alpha^2 =
      %“frac–1˝–2˝ (0.511“,–“rm MeV˝) (1/137)^2 = 13.6“,–“rm eV˝
+     %**** main.tex Line 675 ****
      %“end–align˝
      %% “st
      %%      a˙0 =  “frac–“hbar˝–m˙e c “alpha˝ “, ,
      %% “stp
-     %% and then finally noting that $p=“hbar/a˙0$,  the $“beta=“alpha$ relation follows.-->          <para xml:id="A1.S0.I1.i14.p4">
+     %% and then finally noting that $p=“hbar/a˙0$,  the $“beta=“alpha$ relation follows.-->          <para xml:id="A1.S0.I1.i14.p5">
             <p>These facts give another way to estimate
-<!--  %**** main.tex Line 675 **** -->the thermal de Broglie wavelength of a <emph font="italic">proton</emph> at room temperature, by inserting <Math mode="inline" tex="a_{0}" text="a _ 0" xml:id="A1.S0.I1.i14.p4.m1">
+the thermal de Broglie wavelength of a <emph font="italic">proton</emph> at room temperature, by inserting <Math mode="inline" tex="a_{0}" text="a _ 0" xml:id="A1.S0.I1.i14.p5.m1">
                 <XMath>
                   <XMApp>
                     <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -13470,7 +13571,7 @@ a quantum mechanical system it is often the case that</p>
                     <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
                   </XMApp>
                 </XMath>
-              </Math> and the electron mass, and noting that <Math mode="inline" tex="h=2\pi\hbar" text="h = 2 * pi * Planck-constant-over-2-pi" xml:id="A1.S0.I1.i14.p4.m2">
+              </Math> and the electron mass, and noting that <Math mode="inline" tex="h=2\pi\hbar" text="h = 2 * pi * Planck-constant-over-2-pi" xml:id="A1.S0.I1.i14.p5.m2">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -14431,7 +14532,8 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             </XMath>
           </Math> requires doing a dimensionless integral, which is the only kind of integral you should <emph font="italic">ever</emph> try to do!</p>
       </para>
-<!--  %“section–Basic Taylor Series˝ 
+<!--  %**** main.tex Line 725 **** 
+     %“section–Basic Taylor Series˝
      %You are expected to know what a  Taylor series is, but we will develop facility with them as the course develops. You are expected to have the following memorized:
      %“begin–align˝
      %“sin(x) =&amp; x - “frac–x^3˝–3!˝ + “frac–x^5˝–5!˝ +  + “mathcal O(x^7)  ““
@@ -14439,7 +14541,6 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
      %e^x =&amp; 1 + x  + “frac–1˝–2!˝ x^2  +  “mathcal O(x^3) ““
      %“log(1 + x) =&amp; x  - “frac–1˝–2˝ x^2  + “frac–1˝–3˝ x^3 + “mathcal O(x^4)  “label–log˝ ““
      %(1 + x)^“alpha =&amp; 1 + “alpha x +  “frac–“alpha (“alpha -1)˝–2!˝ x^2
-     %**** main.tex Line 725 ****
      %+ “frac–“alpha (“alpha -1)(“alpha-2)˝–3!˝ x^3   + “mathcal O(x^4)
      %““
      %“frac–1˝–1 + x˝  =&amp; 1  - x  + x^2 + “mathcal O(x^3)  “label–denom˝
@@ -14535,7 +14636,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             </XMath>
           </Math>
         </equation>
-        <p>The first couple results are</p>
+<!--  %**** main.tex Line 750 **** -->        <p>The first couple results are</p>
         <equation xml:id="A2.E8">
           <tags>
             <tag>(B.8)</tag>
@@ -14625,15 +14726,185 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
       </tags>
       <title><tag close=" ">B.3</tag>The Gamma function</title>
       <para xml:id="A2.S3.p1">
-        <p>The gamma function is a useful special function that extends the domain of the factorial function to non-integer values. It is defined by the integral
-<!--  %**** main.tex Line 750 **** --></p>
-        <equation xml:id="A2.E9">
+        <p>The gamma function is a useful special function that extends the domain of the factorial function to non-integer values. It is defined by the integral<note mark="2" role="footnote" xml:id="A2.footnote2"><tags>
+              <tag>2</tag>
+              <tag role="autoref">footnote 2</tag>
+              <tag role="refnum">2</tag>
+              <tag role="typerefnum">footnote 2</tag>
+            </tags>
+I like to write <Math mode="inline" tex="\Gamma(z)" text="Gamma * z" xml:id="A2.footnote2.m1">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+                  <XMDual>
+                    <XMRef idref="A2.footnote2.m1.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="A2.footnote2.m1.1">z</XMTok>
+                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+              </XMath>
+            </Math> like this
+<equation xml:id="A2.E9">
+              <tags>
+                <tag>(B.9)</tag>
+                <tag role="autoref">Equation B.9</tag>
+                <tag role="refnum">B.9</tag>
+              </tags>
+              <Math mode="display" tex="\Gamma(z)=\int_{0}^{\infty}x^{z}e^{-x}\frac{{\rm d}x}{x}" text="Gamma * z = ((integral _ 0) ^ infinity)@(x ^ z * e ^ (- x) * ((d * x) / x))" xml:id="A2.E9.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+                      <XMDual>
+                        <XMRef idref="A2.E9.m1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMTok font="italic" role="UNKNOWN" xml:id="A2.E9.m1.1">z</XMTok>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                    <XMApp>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                          <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                        </XMApp>
+                        <XMTok fontsize="70%" meaning="infinity" name="infty" role="ID">∞</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">e</XMTok>
+                          <XMApp>
+                            <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok role="UNKNOWN">d</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          </XMApp>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>
+            </equation>since the measure <Math mode="inline" tex="{\rm d}x/x" text="(d * x) / x" xml:id="A2.footnote2.m2">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="divide" role="MULOP">/</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok role="UNKNOWN">d</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                  </XMApp>
+                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                </XMApp>
+              </XMath>
+            </Math> is invariant under a rescaling <Math mode="inline" tex="x^{\prime}=\lambda x" text="x ^ prime = lambda * x" xml:id="A2.footnote2.m3">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                    <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>, i.e. <Math mode="inline" tex="{\rm d}x/x={\rm d}x^{\prime}/x^{\prime}" text="(d * x) / x = (d * x ^ prime) / x ^ prime" xml:id="A2.footnote2.m4">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="equals" role="RELOP">=</XMTok>
+                  <XMApp>
+                    <XMTok meaning="divide" role="MULOP">/</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok role="UNKNOWN">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="divide" role="MULOP">/</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok role="UNKNOWN">d</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                        <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      <XMTok fontsize="70%" name="prime" role="SUPOP">′</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>. This is one reason why clever math folk defined <Math mode="inline" tex="\Gamma(z)" text="Gamma * z" xml:id="A2.footnote2.m5">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+                  <XMDual>
+                    <XMRef idref="A2.footnote2.m5.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="A2.footnote2.m5.1">z</XMTok>
+                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+              </XMath>
+            </Math> with the power <Math mode="inline" tex="z-1" text="z - 1" xml:id="A2.footnote2.m6">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">z</XMTok>
+                  <XMTok meaning="1" role="NUMBER">1</XMTok>
+                </XMApp>
+              </XMath>
+            </Math> in Eq. (<ref labelref="LABEL:eq:Gammaz"/>) instead of just <Math mode="inline" tex="z" text="z" xml:id="A2.footnote2.m7">
+              <XMath>
+                <XMTok font="italic" role="UNKNOWN">z</XMTok>
+              </XMath>
+            </Math>.
+</note></p>
+        <equation labels="LABEL:eq:Gammaz" xml:id="A2.E10">
           <tags>
-            <tag>(B.9)</tag>
-            <tag role="autoref">Equation B.9</tag>
-            <tag role="refnum">B.9</tag>
+            <tag>(B.10)</tag>
+            <tag role="autoref">Equation B.10</tag>
+            <tag role="refnum">B.10</tag>
           </tags>
-          <Math mode="display" tex="\Gamma(n)=\int_{0}^{\infty}x^{n-1}e^{-x}{\rm d}x" text="Gamma * n = ((integral _ 0) ^ infinity)@(x ^ (n - 1) * e ^ (- x) * differential-d@(x))" xml:id="A2.E9.m1">
+          <Math mode="display" tex="\Gamma(z)=\int_{0}^{\infty}x^{z-1}e^{-x}{\rm d}x" text="Gamma * z = ((integral _ 0) ^ infinity)@(x ^ (z - 1) * e ^ (- x) * differential-d@(x))" xml:id="A2.E10.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -14641,10 +14912,10 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                   <XMDual>
-                    <XMRef idref="A2.E9.m1.1"/>
+                    <XMRef idref="A2.E10.m1.1"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="A2.E9.m1.1">n</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="A2.E10.m1.1">z</XMTok>
                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
                     </XMWrap>
                   </XMDual>
@@ -14666,7 +14937,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                       <XMTok font="italic" role="UNKNOWN">x</XMTok>
                       <XMApp>
                         <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
-                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">n</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">z</XMTok>
                         <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
                       </XMApp>
                     </XMApp>
@@ -14689,13 +14960,13 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
           </Math>
         </equation>
         <p>and has the familiar recursive relationship</p>
-        <equation xml:id="A2.E10">
+        <equation xml:id="A2.E11">
           <tags>
-            <tag>(B.10)</tag>
-            <tag role="autoref">Equation B.10</tag>
-            <tag role="refnum">B.10</tag>
+            <tag>(B.11)</tag>
+            <tag role="autoref">Equation B.11</tag>
+            <tag role="refnum">B.11</tag>
           </tags>
-          <Math mode="display" tex="\Gamma(n+1)=n\Gamma(n)" text="Gamma * (n + 1) = n * Gamma * n" xml:id="A2.E10.m1">
+          <Math mode="display" tex="\Gamma(z+1)=z\Gamma(z)" text="Gamma * (z + 1) = z * Gamma * z" xml:id="A2.E11.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -14703,12 +14974,12 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                   <XMDual>
-                    <XMRef idref="A2.E10.m1.2"/>
+                    <XMRef idref="A2.E11.m1.2"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMApp xml:id="A2.E10.m1.2">
+                      <XMApp xml:id="A2.E11.m1.2">
                         <XMTok meaning="plus" role="ADDOP">+</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">z</XMTok>
                         <XMTok meaning="1" role="NUMBER">1</XMTok>
                       </XMApp>
                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
@@ -14717,13 +14988,13 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                 </XMApp>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                  <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">z</XMTok>
                   <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                   <XMDual>
-                    <XMRef idref="A2.E10.m1.1"/>
+                    <XMRef idref="A2.E11.m1.1"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="A2.E10.m1.1">n</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="A2.E11.m1.1">z</XMTok>
                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
                     </XMWrap>
                   </XMDual>
@@ -14752,13 +15023,13 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
               </XMApp>
             </XMath>
           </Math>. We have</p>
-        <equation xml:id="A2.E11">
+        <equation xml:id="A2.E12">
           <tags>
-            <tag>(B.11)</tag>
-            <tag role="autoref">Equation B.11</tag>
-            <tag role="refnum">B.11</tag>
+            <tag>(B.12)</tag>
+            <tag role="autoref">Equation B.12</tag>
+            <tag role="refnum">B.12</tag>
           </tags>
-          <Math mode="display" tex="\Gamma(n)=(n-1)!" text="Gamma * n = (n - 1)factorial" xml:id="A2.E11.m1">
+          <Math mode="display" tex="\Gamma(n)=(n-1)!" text="Gamma * n = (n - 1)factorial" xml:id="A2.E12.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -14766,21 +15037,21 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                   <XMDual>
-                    <XMRef idref="A2.E11.m1.1"/>
+                    <XMRef idref="A2.E12.m1.1"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="A2.E11.m1.1">n</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="A2.E12.m1.1">n</XMTok>
                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
                     </XMWrap>
                   </XMDual>
                 </XMApp>
                 <XMApp>
                   <XMTok meaning="factorial" role="POSTFIX">!</XMTok>
-                  <XMDual>
-                    <XMRef idref="A2.E11.m1.2"/>
+<!--  %**** main.tex Line 775 **** -->                  <XMDual>
+                    <XMRef idref="A2.E12.m1.2"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMApp xml:id="A2.E11.m1.2">
+                      <XMApp xml:id="A2.E12.m1.2">
                         <XMTok meaning="minus" role="ADDOP">-</XMTok>
                         <XMTok font="italic" role="UNKNOWN">n</XMTok>
                         <XMTok meaning="1" role="NUMBER">1</XMTok>
@@ -14798,27 +15069,27 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
               <XMTok font="italic" role="UNKNOWN">n</XMTok>
             </XMath>
           </Math> is an integer or half-integer. In particular,</p>
-        <equation xml:id="A2.E12">
+        <equation xml:id="A2.E13">
           <tags>
-            <tag>(B.12)</tag>
-            <tag role="autoref">Equation B.12</tag>
-            <tag role="refnum">B.12</tag>
+            <tag>(B.13)</tag>
+            <tag role="autoref">Equation B.13</tag>
+            <tag role="refnum">B.13</tag>
           </tags>
-          <Math mode="display" tex="\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}." text="Gamma * (1 / 2) = square-root@(pi)" xml:id="A2.E12.m1">
+          <Math mode="display" tex="\Gamma\left(\frac{1}{2}\right)=\sqrt{\pi}." text="Gamma * (1 / 2) = square-root@(pi)" xml:id="A2.E13.m1">
             <XMath>
               <XMDual>
-                <XMRef idref="A2.E12.m1.2"/>
+                <XMRef idref="A2.E13.m1.2"/>
                 <XMWrap>
-                  <XMApp xml:id="A2.E12.m1.2">
+                  <XMApp xml:id="A2.E13.m1.2">
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMApp>
                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
                       <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                       <XMDual>
-                        <XMRef idref="A2.E12.m1.1"/>
+                        <XMRef idref="A2.E13.m1.1"/>
                         <XMWrap>
                           <XMTok role="OPEN" stretchy="true">(</XMTok>
-                          <XMApp xml:id="A2.E12.m1.1">
+                          <XMApp xml:id="A2.E13.m1.1">
                             <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                             <XMTok meaning="1" role="NUMBER">1</XMTok>
                             <XMTok meaning="2" role="NUMBER">2</XMTok>
@@ -14838,18 +15109,18 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             </XMath>
           </Math>
         </equation>
-        <p>So for instance <Math mode="inline" tex="\Gamma(3/2)=\sqrt{\pi}/2" text="Gamma * (3 / 2) = square-root@(pi) / 2" xml:id="A2.S3.p1.m3">
+        <p>So for instance, using the recursion, <Math mode="inline" tex="\Gamma(3/2)={\textstyle\frac{1}{2}}\Gamma({\textstyle\frac{1}{2}})=\sqrt{\pi}/2" text="Gamma * (3 / 2) = (1 / 2) * Gamma * (1 / 2) = square-root@(pi) / 2" xml:id="A2.S3.p1.m3">
             <XMath>
               <XMApp>
-                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok meaning="multirelation"/>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                   <XMDual>
-                    <XMRef idref="A2.S3.p1.m3.1"/>
+                    <XMRef idref="A2.S3.p1.m3.2"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMApp xml:id="A2.S3.p1.m3.1">
+                      <XMApp xml:id="A2.S3.p1.m3.2">
                         <XMTok meaning="divide" role="MULOP">/</XMTok>
                         <XMTok meaning="3" role="NUMBER">3</XMTok>
                         <XMTok meaning="2" role="NUMBER">2</XMTok>
@@ -14858,6 +15129,29 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                     </XMWrap>
                   </XMDual>
                 </XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp>
+                    <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+                  <XMDual>
+                    <XMRef idref="A2.S3.p1.m3.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                      <XMApp xml:id="A2.S3.p1.m3.1">
+                        <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
                   <XMTok meaning="divide" role="MULOP">/</XMTok>
                   <XMApp>
@@ -14876,18 +15170,18 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
               <XMTok font="italic" role="UNKNOWN">d</XMTok>
             </XMath>
           </Math> dimensions is</p>
-        <equation xml:id="A2.E13">
+        <equation xml:id="A2.E14">
           <tags>
-            <tag>(B.13)</tag>
-            <tag role="autoref">Equation B.13</tag>
-            <tag role="refnum">B.13</tag>
+            <tag>(B.14)</tag>
+            <tag role="autoref">Equation B.14</tag>
+            <tag role="refnum">B.14</tag>
           </tags>
-          <Math mode="display" tex="A_{d}=\frac{2\pi^{d/2}}{\Gamma(d/2)}r^{d-1}\,." text="A _ d = ((2 * pi ^ (d / 2)) / (Gamma * (d / 2))) * r ^ (d - 1)" xml:id="A2.E13.m1">
+          <Math mode="display" tex="A_{d}=\frac{2\pi^{d/2}}{\Gamma(d/2)}r^{d-1}\,." text="A _ d = ((2 * pi ^ (d / 2)) / (Gamma * (d / 2))) * r ^ (d - 1)" xml:id="A2.E14.m1">
             <XMath>
               <XMDual>
-                <XMRef idref="A2.E13.m1.2"/>
+                <XMRef idref="A2.E14.m1.2"/>
                 <XMWrap>
-                  <XMApp xml:id="A2.E13.m1.2">
+                  <XMApp xml:id="A2.E14.m1.2">
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMApp>
                       <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -14915,10 +15209,10 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                           <XMTok meaning="times" role="MULOP">⁢</XMTok>
                           <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                           <XMDual>
-                            <XMRef idref="A2.E13.m1.1"/>
+                            <XMRef idref="A2.E14.m1.1"/>
                             <XMWrap>
                               <XMTok role="OPEN" stretchy="false">(</XMTok>
-                              <XMApp xml:id="A2.E13.m1.1">
+                              <XMApp xml:id="A2.E14.m1.1">
                                 <XMTok meaning="divide" role="MULOP">/</XMTok>
                                 <XMTok font="italic" role="UNKNOWN">d</XMTok>
                                 <XMTok meaning="2" role="NUMBER">2</XMTok>
@@ -14947,6 +15241,6 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
         </equation>
         <p>which comes up a lot later in the course.</p>
       </para>
-<!--  %**** main.tex Line 775 **** -->    </section>
+    </section>
   </appendix>
 </document>
