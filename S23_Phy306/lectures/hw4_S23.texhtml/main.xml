@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="/Users/derekteaney/common/classes/phy306_22/hw"?>
+<?latexml class="article" options="12pt"?>
+<?latexml package="standalone"?>
+<?latexml package="geometry" options="top=1in,bottom=1in,left=1in,right=1in"?>
+<?latexml package="graphicx,graphics"?>
+<?latexml package="bm,mathrsfs,amssymb,amsmath, accents"?>
+<?latexml package="enumitem" options="inline"?>
+<?latexml package="hyperref" options="colorlinks=true"?>
+<?latexml package="pdfpages"?>
+<!--  %**** summary˙header.tex Line 25 **** --><!--  %“newcommand“ba–“begin–align˝˝ --><!--  %“newcommand“ea–“end–align˝˝ --><!--  %**** summary˙header.tex Line 50 **** --><!--  %**** summary˙header.tex Line 75 **** --><!--  %**** summary˙header.tex Line 100 **** --><!--  %**** summary˙header.tex Line 125 **** --><!--  %“def“bea#1–“begin–align˝#1“end–align˝˝ --><!--  %“newenvironment–solution˝% --><!--  %–“noindent“ignorespaces –“bf Solution:˝““˝% --><!--  %–“par“noindent% --><!--  %“ignorespacesafterend˝ --><?latexml RelaxNGSchema="LaTeXML"?>
+<?latexml class="article" options="12pt"?>
+<?latexml package="geometry" options="top=1in,bottom=1in,left=1in,right=1in"?>
+<?latexml package="graphicx,graphics"?>
+<?latexml package="bm,mathrsfs,amssymb,amsmath, accents"?>
+<?latexml package="enumitem" options="inline"?>
+<?latexml package="hyperref" options="colorlinks=true"?>
+<?latexml package="pdfpages"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+<!--  %**** summary˙header.tex Line 25 **** 
+     %“newcommand“ba–“begin–align˝˝
+     %“newcommand“ea–“end–align˝˝
+     %**** summary˙header.tex Line 50 ****
+     %**** summary˙header.tex Line 75 ****
+     %**** summary˙header.tex Line 100 ****
+     %**** summary˙header.tex Line 125 ****
+     %“def“bea#1–“begin–align˝#1“end–align˝˝
+     %“newenvironment–solution˝%
+     %–“noindent“ignorespaces –“bf Solution:˝““˝%
+     %–“par“noindent%
+     %“ignorespacesafterend˝-->  <subsection xml:id="S0.SSx1">
+    <title>Problem 1.   Classical distribution of a harmonic oscillator </title>
+    <para xml:id="S0.SSx1.p1">
+      <p>Consider a classical harmonic oscillator in one dimension interacting
+with a thermal environment. This could be for example a single atom
+attached to a large molecule in a gas.</p>
+    </para>
+    <para xml:id="S0.SSx1.p2">
+      <p>The potential energy is <Math mode="inline" tex="U={\textstyle\frac{1}{2}}kx^{2}" text="U = (1 / 2) * k * x ^ 2" xml:id="S0.SSx1.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">U</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+                <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. At some point in physics we stop using the spring constant <Math mode="inline" tex="k" text="k" xml:id="S0.SSx1.p2.m2">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">k</XMTok>
+          </XMath>
+        </Math> (for some unknown reason) and start expressing <Math mode="inline" tex="k" text="k" xml:id="S0.SSx1.p2.m3">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">k</XMTok>
+          </XMath>
+        </Math> in terms of the oscillation frequency <Math mode="inline" tex="\omega_{0}=\sqrt{k/m}" text="omega _ 0 = square-root@(k / m)" xml:id="S0.SSx1.p2.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="square-root"/>
+                <XMApp>
+                  <XMTok meaning="divide" role="MULOP">/</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. Thus, I will (usually) write the potential as</p>
+      <equation xml:id="S0.E1">
+        <tags>
+          <tag>(1)</tag>
+          <tag role="autoref">Equation 1</tag>
+          <tag role="refnum">1</tag>
+        </tags>
+        <Math mode="display" tex="U=\frac{1}{2}m\omega_{0}^{2}x^{2}" text="U = (1 / 2) * m * (omega _ 0) ^ 2 * x ^ 2" xml:id="S0.E1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMTok font="italic" role="UNKNOWN">U</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                  <XMTok meaning="1" role="NUMBER">1</XMTok>
+                  <XMTok meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+                <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                    <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                  </XMApp>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+      <p>The energy is the kinetic and potential energies and the Hamiltonian<note mark="1" role="footnote" xml:id="footnote1"><tags>
+            <tag>1</tag>
+            <tag role="autoref">footnote 1</tag>
+            <tag role="refnum">1</tag>
+            <tag role="typerefnum">footnote 1</tag>
+          </tags>
+The Hamiltonian is the energy <emph font="italic">as a function of</emph> <Math mode="inline" tex="x" text="x" xml:id="footnote1.m1">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">x</XMTok>
+            </XMath>
+          </Math> and <Math mode="inline" tex="p" text="p" xml:id="footnote1.m2">
+            <XMath>
+              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+            </XMath>
+          </Math>.</note> is</p>
+      <equation xml:id="S0.E2">
+        <tags>
+          <tag>(2)</tag>
+          <tag role="autoref">Equation 2</tag>
+          <tag role="refnum">2</tag>
+        </tags>
+        <Math mode="display" tex="H(x,p)=\frac{p^{2}}{2m}+\frac{1}{2}m\omega_{0}^{2}x^{2}" text="H * open-interval@(x, p) = p ^ 2 / (2 * m) + (1 / 2) * m * (omega _ 0) ^ 2 * x ^ 2" xml:id="S0.E2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                <XMDual>
+                  <XMApp>
+                    <XMTok meaning="open-interval"/>
+                    <XMRef idref="S0.E2.m1.1"/>
+                    <XMRef idref="S0.E2.m1.2"/>
+                  </XMApp>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S0.E2.m1.1">x</XMTok>
+                    <XMTok role="PUNCT">,</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" xml:id="S0.E2.m1.2">p</XMTok>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMDual>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                <XMApp>
+                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                  </XMApp>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp>
+                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                    <XMTok meaning="1" role="NUMBER">1</XMTok>
+                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                  <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                      <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                    </XMApp>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                    <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+      <p>The oscillator
+is in equilibrium with an environment at temperature <Math mode="inline" tex="T" text="T" xml:id="S0.SSx1.p2.m5">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+          </XMath>
+        </Math>.
+<!--  %, but may be 
+     %considered an independent subsystem.--></p>
+      <enumerate xml:id="S0.I1">
+<!--  %**** ClassicalDistributionOfAHarmonicOscillator.tex Line 25 **** -->        <item xml:id="S0.I1.i1">
+          <tags>
+            <tag>(a)</tag>
+            <tag role="autoref">item (a)</tag>
+            <tag role="refnum">(a)</tag>
+            <tag role="typerefnum">item (a)</tag>
+          </tags>
+          <para xml:id="S0.I1.i1.p1">
+            <p>What is the normalized probability density <Math mode="inline" tex="P(x,p)" text="P * open-interval@(x, p)" xml:id="S0.I1.i1.p1.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="open-interval"/>
+                        <XMRef idref="S0.I1.i1.p1.m1.1"/>
+                        <XMRef idref="S0.I1.i1.p1.m1.2"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I1.i1.p1.m1.1">x</XMTok>
+                        <XMTok role="PUNCT">,</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I1.i1.p1.m1.2">p</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMath>
+              </Math> to find
+the harmonic oscillator with position between <Math mode="inline" tex="x" text="x" xml:id="S0.I1.i1.p1.m2">
+                <XMath>
+                  <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                </XMath>
+              </Math> and <Math mode="inline" tex="x+{\rm d}x" text="x + d * x" xml:id="S0.I1.i1.p1.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok role="UNKNOWN">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>
+and momentum between <Math mode="inline" tex="p" text="p" xml:id="S0.I1.i1.p1.m4">
+                <XMath>
+                  <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                </XMath>
+              </Math> and <Math mode="inline" tex="p+{\rm d}p" text="p + d * p" xml:id="S0.I1.i1.p1.m5">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok role="UNKNOWN">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>, i.e. the probability per phase space volume <Math mode="inline" tex="{\rm d}x\,{\rm d}p" text="d * x * d * p" xml:id="S0.I1.i1.p1.m6">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok role="UNKNOWN">d</XMTok>
+                    <XMTok font="italic" role="UNKNOWN" rpadding="1.7pt">x</XMTok>
+                    <XMTok role="UNKNOWN">d</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>:</p>
+            <equation xml:id="S0.E3">
+              <tags>
+                <tag>(3)</tag>
+                <tag role="autoref">Equation 3</tag>
+                <tag role="refnum">3</tag>
+              </tags>
+              <Math mode="display" tex="{\rm d}\mathscr{P}=P(x,p)\,{\rm d}x\,{\rm d}p" text="d * P = P * open-interval@(x, p) * d * x * d * p" xml:id="S0.E3.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok role="UNKNOWN">d</XMTok>
+                      <XMTok font="script" role="UNKNOWN">P</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                      <XMDual>
+                        <XMApp>
+                          <XMTok meaning="open-interval"/>
+                          <XMRef idref="S0.E3.m1.1"/>
+                          <XMRef idref="S0.E3.m1.2"/>
+                        </XMApp>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMTok font="italic" role="UNKNOWN" xml:id="S0.E3.m1.1">x</XMTok>
+                          <XMTok role="PUNCT">,</XMTok>
+                          <XMTok font="italic" role="UNKNOWN" xml:id="S0.E3.m1.2">p</XMTok>
+                          <XMTok role="CLOSE" rpadding="1.7pt" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok role="UNKNOWN">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" rpadding="1.7pt">x</XMTok>
+                      <XMTok role="UNKNOWN">d</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>
+            </equation>
+            <p>Your final result for <Math mode="inline" tex="P(x,p)" text="P * open-interval@(x, p)" xml:id="S0.I1.i1.p1.m7">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="open-interval"/>
+                        <XMRef idref="S0.I1.i1.p1.m7.1"/>
+                        <XMRef idref="S0.I1.i1.p1.m7.2"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I1.i1.p1.m7.1">x</XMTok>
+                        <XMTok role="PUNCT">,</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I1.i1.p1.m7.2">p</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMath>
+              </Math> should be a function of <Math mode="inline" tex="\omega_{0},p,x,m" text="list@(omega _ 0, p, x, m)" xml:id="S0.I1.i1.p1.m8">
+                <XMath>
+                  <XMDual>
+                    <XMApp>
+                      <XMTok meaning="list"/>
+                      <XMRef idref="S0.I1.i1.p1.m8.4"/>
+                      <XMRef idref="S0.I1.i1.p1.m8.1"/>
+                      <XMRef idref="S0.I1.i1.p1.m8.2"/>
+                      <XMRef idref="S0.I1.i1.p1.m8.3"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMApp xml:id="S0.I1.i1.p1.m8.4">
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                        <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                      </XMApp>
+                      <XMTok role="PUNCT">,</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.I1.i1.p1.m8.1">p</XMTok>
+                      <XMTok role="PUNCT">,</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.I1.i1.p1.m8.2">x</XMTok>
+                      <XMTok role="PUNCT">,</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.I1.i1.p1.m8.3">m</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMath>
+              </Math> and <Math mode="inline" tex="{k_{\scriptscriptstyle B}T}" text="k _ B * T" xml:id="S0.I1.i1.p1.m9">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                      <XMTok font="italic" fontsize="50%" role="UNKNOWN">B</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>. You can check your result by doing part (b). Check that your
+result for <Math mode="inline" tex="P(x,p)" text="P * open-interval@(x, p)" xml:id="S0.I1.i1.p1.m10">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="open-interval"/>
+                        <XMRef idref="S0.I1.i1.p1.m10.1"/>
+                        <XMRef idref="S0.I1.i1.p1.m10.2"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I1.i1.p1.m10.1">x</XMTok>
+                        <XMTok role="PUNCT">,</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I1.i1.p1.m10.2">p</XMTok>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMath>
+              </Math> is dimensionally correct.</p>
+          </para>
+          <para xml:id="S0.I1.i1.p2">
+            <p><emph font="italic">Hint:</emph> Change variables to <Math mode="inline" tex="u_{1}=x/\sigma_{x}" text="u _ 1 = x / sigma _ x" xml:id="S0.I1.i1.p2.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> and <Math mode="inline" tex="u_{2}=p/\sigma_{p}" text="u _ 2 = p / sigma _ p" xml:id="S0.I1.i1.p2.m2">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">u</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> before doing any integrals. You need to look at the integrand (like the exponent) and decide what
+the appropriate length scale, <Math mode="inline" tex="\sigma_{x}" text="sigma _ x" xml:id="S0.I1.i1.p2.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">x</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>, and momentum scale, <Math mode="inline" tex="\sigma_{p}" text="sigma _ p" xml:id="S0.I1.i1.p2.m4">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>, are.</p>
+          </para>
+        </item>
+        <item xml:id="S0.I1.i2">
+          <tags>
+            <tag>(b)</tag>
+            <tag role="autoref">item (b)</tag>
+            <tag role="refnum">(b)</tag>
+            <tag role="typerefnum">item (b)</tag>
+          </tags>
+          <para xml:id="S0.I1.i2.p1">
+            <p>Compute the <Math mode="inline" tex="\left\langle x^{2}\right\rangle" text="delimited-⟨⟩@(x ^ 2)" xml:id="S0.I1.i2.p1.m1">
+                <XMath>
+                  <XMDual>
+                    <XMApp>
+                      <XMTok meaning="delimited-⟨⟩"/>
+                      <XMRef idref="S0.I1.i2.p1.m1.1"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMTok name="langle" role="OPEN" stretchy="true">⟨</XMTok>
+                      <XMApp xml:id="S0.I1.i2.p1.m1.1">
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMTok name="rangle" role="CLOSE" stretchy="true">⟩</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMath>
+              </Math> and <Math mode="inline" tex="\left\langle p^{2}\right\rangle" text="delimited-⟨⟩@(p ^ 2)" xml:id="S0.I1.i2.p1.m2">
+                <XMath>
+                  <XMDual>
+                    <XMApp>
+                      <XMTok meaning="delimited-⟨⟩"/>
+                      <XMRef idref="S0.I1.i2.p1.m2.1"/>
+                    </XMApp>
+                    <XMWrap>
+                      <XMTok name="langle" role="OPEN" stretchy="true">⟨</XMTok>
+                      <XMApp xml:id="S0.I1.i2.p1.m2.1">
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMTok name="rangle" role="CLOSE" stretchy="true">⟩</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                </XMath>
+              </Math> by integrating over the probability distribution. (Don’t do dimensionful integrals.) <break/></p>
+          </para>
+          <para xml:id="S0.I1.i2.p2">
+            <p>You should find <Math mode="inline" tex="\left\langle x^{2}\right\rangle={k_{\scriptscriptstyle B}T}/m\omega_{0}^{2}" text="delimited-⟨⟩@(x ^ 2) = ((k _ B * T) / m) * (omega _ 0) ^ 2" xml:id="S0.I1.i2.p2.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="delimited-⟨⟩"/>
+                        <XMRef idref="S0.I1.i2.p2.m1.1"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok name="langle" role="OPEN" stretchy="true">⟨</XMTok>
+                        <XMApp xml:id="S0.I1.i2.p2.m1.1">
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                          <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMTok name="rangle" role="CLOSE" stretchy="true">⟩</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMApp>
+                        <XMTok meaning="divide" role="MULOP">/</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                            <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                            <XMTok font="italic" fontsize="50%" role="UNKNOWN">B</XMTok>
+                          </XMApp>
+                          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                        </XMApp>
+                        <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                          <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                        </XMApp>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> and <Math mode="inline" tex="\left\langle p^{2}\right\rangle=m{k_{\scriptscriptstyle B}T}" text="delimited-⟨⟩@(p ^ 2) = m * k _ B * T" xml:id="S0.I1.i2.p2.m2">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMDual>
+                      <XMApp>
+                        <XMTok meaning="delimited-⟨⟩"/>
+                        <XMRef idref="S0.I1.i2.p2.m2.1"/>
+                      </XMApp>
+                      <XMWrap>
+                        <XMTok name="langle" role="OPEN" stretchy="true">⟨</XMTok>
+                        <XMApp xml:id="S0.I1.i2.p2.m2.1">
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                          <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
+                        <XMTok name="rangle" role="CLOSE" stretchy="true">⟩</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                        <XMTok font="italic" fontsize="50%" role="UNKNOWN">B</XMTok>
+                      </XMApp>
+                      <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>.</p>
+          </para>
+        </item>
+        <item xml:id="S0.I1.i3">
+          <tags>
+            <tag>(c)</tag>
+            <tag role="autoref">item (c)</tag>
+            <tag role="refnum">(c)</tag>
+            <tag role="typerefnum">item (c)</tag>
+          </tags>
+          <para xml:id="S0.I1.i3.p1">
+            <p>The equipartition theorem precisely says that, for a classical system,
+the average of each quadratic form in the Hamiltonian is <Math mode="inline" tex="{\textstyle\frac{1}{2}}{k_{\scriptscriptstyle B}T}" text="(1 / 2) * k _ B * T" xml:id="S0.I1.i3.p1.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                      <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                      <XMTok font="italic" fontsize="50%" role="UNKNOWN">B</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>. The
+quadratic forms here are the kinetic energy <Math mode="inline" tex="p^{2}/2m" text="(p ^ 2 / 2) * m" xml:id="S0.I1.i3.p1.m2">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMApp>
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    </XMApp>
+                    <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>, and the potential
+energy, <Math mode="inline" tex="m\omega_{0}^{2}x^{2}/2" text="(m * (omega _ 0) ^ 2 * x ^ 2) / 2" xml:id="S0.I1.i3.p1.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="divide" role="MULOP">/</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">m</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                          <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                        </XMApp>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math>. Are your results of the part (b) consistent
+with the equipartition theorem. What is the average total energy of the
+oscillator and the number of “degrees of freedom” of the oscillator?</p>
+          </para>
+        </item>
+        <item xml:id="S0.I1.i4">
+          <tags>
+            <tag>(d)</tag>
+            <tag role="autoref">item (d)</tag>
+            <tag role="refnum">(d)</tag>
+            <tag role="typerefnum">item (d)</tag>
+          </tags>
+          <para xml:id="S0.I1.i4.p1">
+            <inline-enumerate xml:id="S0.I1.i4.I1">
+              <inline-item xml:id="S0.I1.i4.I1.i1">
+                <tags>
+                  <tag>(i)</tag>
+                  <tag role="autoref">item (d)i</tag>
+                  <tag role="refnum">(d)i</tag>
+                  <tag role="typerefnum">item (d)i</tag>
+                </tags>
+                <text>For one mole of an ideal diatomic molecule <Math mode="inline" tex="H_{2}" text="H _ 2" xml:id="S0.I1.i4.I1.i1.m1">
+                    <XMath>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                    </XMath>
+                  </Math> (treated in a classical approximation), what are the total number of degrees of freedom (in the sense of the equi-partition theorem), if translations, rotations, <emph font="italic">and</emph> now vibrations are included and treated classically? </text>
+              </inline-item>
+              <inline-item xml:id="S0.I1.i4.I1.i2">
+                <tags>
+                  <tag>(ii)</tag>
+                  <tag role="autoref">item (d)ii</tag>
+                  <tag role="refnum">(d)ii</tag>
+                  <tag role="typerefnum">item (d)ii</tag>
+                </tags>
+                <text>What is the energy of the gas for one mole of substance, <Math mode="inline" tex="U^{1\rm ml}" text="U ^ (1 * m * l)" xml:id="S0.I1.i4.I1.i2.m1">
+                    <XMath>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                          <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+                          <XMTok fontsize="70%" role="UNKNOWN">l</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math>? Express your result in terms of <Math mode="inline" tex="R" text="R" xml:id="S0.I1.i4.I1.i2.m2">
+                    <XMath>
+                      <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                    </XMath>
+                  </Math> and <Math mode="inline" tex="T" text="T" xml:id="S0.I1.i4.I1.i2.m3">
+                    <XMath>
+                      <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                    </XMath>
+                  </Math>. </text>
+              </inline-item>
+              <inline-item xml:id="S0.I1.i4.I1.i3">
+                <tags>
+                  <tag>(iii)</tag>
+                  <tag role="autoref">item (d)iii</tag>
+                  <tag role="refnum">(d)iii</tag>
+                  <tag role="typerefnum">item (d)iii</tag>
+                </tags>
+                <text>As discussed in class the specific heat<note mark="2" role="footnote" xml:id="footnote2"><tags>
+                      <tag>2</tag>
+                      <tag role="autoref">footnote 2</tag>
+                      <tag role="refnum">2</tag>
+                      <tag role="typerefnum">footnote 2</tag>
+                    </tags>Specific Heat are not on the exam.</note> at constant pressure <Math mode="inline" tex="C_{p}" text="C _ p" xml:id="S0.I1.i4.I1.i3.m1">
+                    <XMath>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                      </XMApp>
+                    </XMath>
+                  </Math> is related to the internal energy <Math mode="inline" tex="U" text="U" xml:id="S0.I1.i4.I1.i3.m2">
+                    <XMath>
+                      <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                    </XMath>
+                  </Math>. Indeed, <Math mode="inline" tex="C_{p}^{1\rm ml}=(\partial U^{\rm 1ml}/\partial T)_{V}+R" text="(C _ p) ^ (1 * m * l) = (partial-differential@(U ^ (1 * m * l)) / partial-differential@(T)) _ V + R" xml:id="S0.I1.i4.I1.i3.m3">
+                    <XMath>
+                      <XMApp>
+                        <XMTok meaning="equals" role="RELOP">=</XMTok>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                            <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                            <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+                            <XMTok fontsize="70%" role="UNKNOWN">l</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                            <XMDual>
+                              <XMRef idref="S0.I1.i4.I1.i3.m3.1"/>
+                              <XMWrap>
+                                <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                <XMApp xml:id="S0.I1.i4.I1.i3.m3.1">
+                                  <XMTok meaning="divide" role="MULOP">/</XMTok>
+                                  <XMApp>
+                                    <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                    <XMApp>
+                                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                                      <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                                      <XMApp>
+                                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                                        <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+                                        <XMTok fontsize="70%" role="UNKNOWN">l</XMTok>
+                                      </XMApp>
+                                    </XMApp>
+                                  </XMApp>
+                                  <XMApp>
+                                    <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                                  </XMApp>
+                                </XMApp>
+                                <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                              </XMWrap>
+                            </XMDual>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+                          </XMApp>
+                          <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math> for one mole of substance. Is your result for <Math mode="inline" tex="U^{\rm 1ml}" text="U ^ (1 * m * l)" xml:id="S0.I1.i4.I1.i3.m4">
+                    <XMath>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                          <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+                          <XMTok fontsize="70%" role="UNKNOWN">l</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math> consistent with the experimental data on <Math mode="inline" tex="C_{p}^{1\rm ml}" text="(C _ p) ^ (1 * m * l)" xml:id="S0.I1.i4.I1.i3.m5">
+                    <XMath>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                          <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+                          <XMTok fontsize="70%" role="UNKNOWN">l</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math> shown below? Explain.
+</text>
+              </inline-item>
+            </inline-enumerate>
+          </para>
+          <figure inlist="lof" placement="h!" xml:id="S0.F1">
+            <tags>
+              <tag>Figure 1</tag>
+              <tag role="autoref">Figure 1</tag>
+              <tag role="refnum">1</tag>
+              <tag role="typerefnum">Figure 1</tag>
+            </tags>
+            <graphics candidates="cpH2.pdf" class="ltx_centering" graphic="cpH2.pdf" options="width=281.853pt" xml:id="S0.F1.g1"/>
+            <toccaption class="ltx_centering"><tag close=" ">1</tag> The heat capacity <Math mode="inline" tex="C_{p}^{\rm 1ml}" text="(C _ p) ^ (1 * m * l)" xml:id="S0.F1.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">l</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> for one mole of substance. </toccaption>
+            <caption class="ltx_centering"><tag close=": ">Figure 1</tag> The heat capacity <Math mode="inline" tex="C_{p}^{\rm 1ml}" text="(C _ p) ^ (1 * m * l)" xml:id="S0.F1.m2">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
+                      <XMTok fontsize="70%" role="UNKNOWN">l</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> for one mole of substance. </caption>
+          </figure>
+        </item>
+      </enumerate>
+    </para>
+<!--  %“problem– (Optional) Volume of Phase Space: Part II˝ 
+     %The purpose is here to get started, talking about the accessible phase space volume. The phase space volume is a measure of  the total number of possible ways for  $N$ of particles to $“emph–share˝$ (or to partition) the total energy.
+     %For instance one particle could have almost all the available energy and the remaining $N-1$ could have very little.
+     %Those possible configurations of the particles occupy only a small portion of
+     %the available phase space volume.
+     %“begin–enumerate˝
+     %% “item
+     %%   Consider two particles in one dimension confined to a ‘‘box”
+     %%   “st
+     %%        0 ¡ x˙1, x˙2¡ L
+     %%   “stp
+     %%   The two particles are  “emph–sharing˝ the energy of the system which lies between  $E$ between $E$ and
+     %%   $E+ “delta E$.
+     %**** ClassicalDistributionOfAHarmonicOscillator.tex Line 75 ****
+     %%   “st
+     %%    E ¡  “frac– p˙1^2˝–2m˝  + “frac–p˙2^2 ˝–2m˝   ¡ E + “delta E
+     %%   “stp
+     %%  Show  that  available phase space  volume  that the  two particles can share is
+     %%    “st
+     %%         V˙–“rm ps˝ =  “int˙–E˝^–E+ “delta E˝  “dd x˙1 “dd p˙1 “, “dd x˙2 “dd p˙2  = L^2 “, 2“pi  “left( 2m “delta E “right)
+     %%    “stp
+     %%   “emph–Hint:˝  The two momenta are confied to a circular shell in the $p˙1,p˙2$ plane of radius $p˙0$. How is $p˙0$ related to the energy?  If the energy
+     %%   is the between  $[E, E+ “delta E]$,  how is the thickness of the
+     %%   shell $“delta p˙0$ is related to $“delta E$?
+     %% “item
+     %% Consider a single particle in three dimensions  in a box
+     %%    “st
+     %%          0 ¡ x,  y , z ¡ L
+     %%    “stp
+     %%    The three momenta components are “emph–sharing˝ (or partitioning) the total  energy which lies  between
+     %%    $E$ and $E + “delta E$, i.e.
+     %%   “st
+     %%    E ¡  “frac– p˙x^2˝–2m˝  + “frac–p˙y^2 ˝–2m˝  + “frac–p˙z^2˝–2m˝ ¡ E + “delta E “, ,
+     %%   “stp
+     %%   The particle is free to move around in phase space but the energy must lie
+     %%   in this range.
+     %%    Show that the total phase space volume which is available to be shared
+     %%    amongst the three degrees of freedom $p˙x, p˙y, p˙z$ is
+     %**** ClassicalDistributionOfAHarmonicOscillator.tex Line 100 ****
+     %%    “st
+     %%         V˙–“rm ps˝ =  “int˙–E˝^–E+ “delta E˝  “dd^3“r “, “dd^3“p  = V (2m E)^–3/2˝“, 4“pi “,  “frac–“delta E˝–2E˝
+     %%   “stp
+     %%   with $V = L^3$.
+     %%   “emph–Hint:˝  The  momenta are confied to a spherical shell of radius $p˙0$ in the $p˙x, p˙y, p˙z$  space. How is $p˙0$ related to the energy?  If the energy
+     %%   is the between  $[E, E+ “delta E]$,  how is the thickness of the
+     %%   shell $“delta p˙0$ is related to $“delta E$?
+     %“item  Take two non-interacting particles in three dimensions  sharing (or partitioning) the available energy which lies between $E$ and $E +“delta E$
+     %“st
+     %E ¡
+     %“frac– p˙–x1˝^2˝–2m˝  + “frac–p˙–y1˝^2 ˝–2m˝  + “frac–p˙–z1˝^2˝–2m˝
+     %+ “frac– p˙–x2˝^2˝–2m˝  + “frac–p˙–y2˝^2 ˝–2m˝  + “frac–p˙–z2˝^2˝–2m˝
+     %¡ E + “delta E
+     %“stp
+     %The two particles can be anywhere in phase space, but the total energy must lie in this range.
+     %The coordinates  are in a box $0 ¡ x, y, z ¡ L$.
+     %Show that the total phase space volume which is available to be shared amongst the six degrees of freedom $p˙–x1˝,p˙–y1˝,p˙–z1˝,p˙–x2˝,p˙–y2˝,p˙–z2˝$ is
+     %“st
+     %V˙–“rm ps˝ =  “int˙–E˝^–E+ “delta E˝  “dd^3“r˙1 “dd^3“p˙1 “; “dd^3“r˙2  “dd^3“p˙2  = V^2 (2 mE)^–3˝ “,  “pi^3 “frac–“delta E˝–2E˝
+     %“stp
+     %It is helpful to realize that the area of a sphere in six dimensions
+     %is given by a general formula
+     %“st
+     %**** ClassicalDistributionOfAHarmonicOscillator.tex Line 125 ****
+     %A˙d = “frac–2 “pi^–d/2˝˝–“Gamma(d/2) ˝ r^–d-1˝
+     %“stp
+     %“end–enumerate˝
+     %“noindent So far we have been talking about phase space volume. Now we show how to translate the phase space volume  into  ‘‘the number of ways to share energy E”, or in other words, the number of accessible configurations with energy between $E$ and $E + “delta E$.
+     %Lets go back to one particle in three dimensions  which you worked out last week.    Consider (again) a single particle in three dimensions  in a box
+     %“st
+     %0 ¡ x,  y , z ¡ L
+     %“stp
+     %The three momenta components are  sharing (or partitioning) the total  energy which lies  between
+     %$E$ and $E + “delta E$, i.e.
+     %“st
+     %E ¡  “frac– p˙x^2˝–2m˝  + “frac–p˙y^2 ˝–2m˝  + “frac–p˙z^2˝–2m˝ ¡ E + “delta E “, ,
+     %“stp
+     %The particle is free to move around in phase space but the energy must lie
+     %in this range.
+     %To count the number of configurations, divide up the phase space volume into cells of (arbitrary) small size $h˙0 = “Delta x “Delta p˙x$, or in three dimensions cells of size“footnote–Classically this cell size was arbitrary. With the advent of quantum mechanics, it was realized that a natural choice for the cell size is the Plank constant $h$. But here lets understand it from a classical perspective first, choosing the cell size to be $h˙0$.  We will drop the ‘‘0” eventually.˝
+     %“st
+     %h˙0^3 =  “left(“Delta x “Delta y  “Delta z“right) “left(“Delta p˙x“Delta p˙y  “Delta p˙z “right)
+     %“stp
+     %The ‘‘number of ways” for $p˙x$, $p˙y$, $p˙z$ and to share (or partition) the available energy is denoted by $“Omega(E)$ and it is phase space volume divided by the cell size
+     %“begin–align˝
+     %“Omega(E) =&amp; “frac–1˝–h˙0^3˝ “int˙–E˝^–E+“delta E˝ “dd^3“r “dd^3“p ““
+     %=&amp; V “left( “frac–2m E˝–h˙0^2˝ “right)^–3/2˝ 4“pi  “frac–“delta E˝–2 E˝
+     %**** ClassicalDistributionOfAHarmonicOscillator.tex Line 150 ****
+     %“end–align˝
+     %$“Omega(E)$ is the number of accessible configurations for a single particle with energy between $E$ and $E+“delta E$.  The
+     %The number  of accessible configurations for two particles sharing energy between $E$ and $E + “delta E$ is
+     %“begin–align˝
+     %“Omega(E) =&amp;
+     %“frac–1˝–2!˝ “int˙–E˝^–E + “delta E˝  “frac–“dd^3“r˙1 “dd^3“p˙1˝–h˙0^3˝ “,“frac–“dd^3 “r˙2 “dd^3“p˙2˝–h˙0^3˝    ““
+     %=&amp;  V^2 “left( “frac–2 m  E˝–h˙0^2 ˝ “right)^–3˝  “pi^3 “, “frac–“delta E˝–4E˝
+     %“end–align˝
+     %The $2!$ is inserted because if I simply exchange what I call particle 1 and particle 2,  that is not to be considered a new configuration.
+     %“begin–enumerate˝[resume]
+     %“item For two particles in one dimension what is the total number of
+     %accessible configurations  $“Omega(E)$  with energy in range $[E, E+ “delta E]$? This is visualized in “Fig–fig:pspace-pdf˝.
+     %“begin–figure˝
+     %“centering
+     %“includegraphics[width=0.49“textwidth]–xspace.pdf˝
+     %“includegraphics[width=0.49“textwidth]–pspace.pdf˝
+     %“caption–The available phase space for two particles in one dimension.
+     %The black points shows one possible configuration for $(x˙1, p˙1, x˙2, p˙2)$. The accessible phase space lies in a four dimensional space.
+     %One black point can be placed anywhere in the $x˙1, x˙2$  plane, and one
+     %black point can be placed in the grid somewhere in the shell in the $p˙1, p˙2$ plane, so that $2m E ¡ p˙1^2 + p˙2^2  ¡ 2m (E + “delta E)$.  The cell size is $h˙0 = “Delta x “Delta p$. The number of possible configurations is $“frac–1˝–2! h˙0^2˝ “int dx˙1 dp˙1 dx˙2 dp˙2$. For an Avogadro’s number of particles in three dimensions, the space of accessible configurations is a $6N˙A$ dimensional space. ˝
+     %“label–fig:pspace-pdf˝
+     %“end–figure˝
+     %**** ClassicalDistributionOfAHarmonicOscillator.tex Line 175 ****
+     %“item Show that the total number of ways for $N$ particles to share the energy $E$ (i.e. total number of accessible configurations with energy $E$ and $E + “delta E$)  is
+     %“begin–align˝
+     %“Omega(E) =&amp; “frac–1˝–N!˝ “int “frac–“dd^3“r˙1 “dd^3“p˙1˝–h˙0^3˝
+     %“dots
+     %“frac–“dd^3“r˙N “dd^3“p˙N˝–h˙0^3˝
+     %=&amp; “frac–1˝–N!˝ V^N  “left(“frac–2 “pi m E˝–h˙0^2˝ “right)^–3 N/2˝ “frac–1˝–“Gamma(3N/2) ˝ “frac–“delta E˝–E˝
+     %“end–align˝
+     %$N$ here is like Avogadro’s number large. (Just try and imagine how it
+     %depends on energy, e.g. what does the graph of $x^–10˝$ look like. Now what does $x^–10^–23˝˝$ look like.)
+     %“item Use the Stirling approximation to show that
+     %“st
+     %“Omega(E) =  e^–5N/2 ˝  “left(“frac– V˝–N˝ “right)^N  “left( “frac–4“pi  m ˝–3 h˙0^2 ˝ “frac–E˝–N˝ “right)^–3N/2˝ “, “frac–“delta E˝–E˝ “propto  V^N  E^–3N/2˝
+     %“stp
+     %The thing to appreciate is how rapidly this function depends on $V$ and $E$.
+     %Hint: for large $n$
+     %“st
+     %“Gamma(n) “equiv (n-1)! “simeq n!
+     %“stp
+     %Note the Stirling approximation works for $n$ not integer, if $n!$ is
+     %understood as $“Gamma(n+1)$.
+     %“end–enumerate˝
+     %**** ClassicalDistributionOfAHarmonicOscillator.tex Line 200 ****-->  </subsection>
+</document>
