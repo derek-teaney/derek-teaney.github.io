@@ -1,0 +1,357 @@
+<!DOCTYPE html><html>
+<head>
+<title>Problem 1.   Classical distribution of a harmonic oscillator </title>
+<!--Generated on Wed Feb 15 22:44:32 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<nav class="ltx_page_navbar">
+</nav>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<section id="S0.SSx1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 1.   Classical distribution of a harmonic oscillator </h2>
+
+<div id="S0.SSx1.p1" class="ltx_para">
+<p class="ltx_p">Consider a classical harmonic oscillator in one dimension interacting
+with a thermal environment. This could be for example a single atom
+attached to a large molecule in a gas.</p>
+</div>
+<div id="S0.SSx1.p2" class="ltx_para">
+<p class="ltx_p">The potential energy is <math id="S0.SSx1.p2.m1" class="ltx_Math" alttext="U={\textstyle\frac{1}{2}}kx^{2}" display="inline"><mrow><mi>U</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>k</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></math>. At some point in physics we stop using the spring constant <math id="S0.SSx1.p2.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> (for some unknown reason) and start expressing <math id="S0.SSx1.p2.m3" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> in terms of the oscillation frequency <math id="S0.SSx1.p2.m4" class="ltx_Math" alttext="\omega_{0}=\sqrt{k/m}" display="inline"><mrow><msub><mi>ω</mi><mn>0</mn></msub><mo>=</mo><msqrt><mrow><mi>k</mi><mo>/</mo><mi>m</mi></mrow></msqrt></mrow></math>. Thus, I will (usually) write the potential as</p>
+<table id="S0.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E1.m1" class="ltx_Math" alttext="U=\frac{1}{2}m\omega_{0}^{2}x^{2}" display="block"><mrow><mi>U</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The energy is the kinetic and potential energies and the Hamiltonian<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+            <span class="ltx_tag ltx_tag_note">1</span>
+            
+            
+            
+          
+The Hamiltonian is the energy <em class="ltx_emph ltx_font_italic">as a function of</em> <math id="footnote1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="footnote1.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>.</span></span></span> is</p>
+<table id="S0.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E2.m1" class="ltx_Math" alttext="H(x,p)=\frac{p^{2}}{2m}+\frac{1}{2}m\omega_{0}^{2}x^{2}" display="block"><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><msup><mi>p</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The oscillator
+is in equilibrium with an environment at temperature <math id="S0.SSx1.p2.m5" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>.
+</p>
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">What is the normalized probability density <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="P(x,p)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> to find
+the harmonic oscillator with position between <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="S0.I1.i1.p1.m3" class="ltx_Math" alttext="x+{\rm d}x" display="inline"><mrow><mi>x</mi><mo>+</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math>
+and momentum between <math id="S0.I1.i1.p1.m4" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> and <math id="S0.I1.i1.p1.m5" class="ltx_Math" alttext="p+{\rm d}p" display="inline"><mrow><mi>p</mi><mo>+</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>p</mi></mrow></mrow></math>, i.e. the probability per phase space volume <math id="S0.I1.i1.p1.m6" class="ltx_Math" alttext="{\rm d}x\,{\rm d}p" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>x</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>p</mi></mrow></math>:</p>
+<table id="S0.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E3.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}=P(x,p)\,{\rm d}x\,{\rm d}p" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>x</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>p</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Your final result for <math id="S0.I1.i1.p1.m7" class="ltx_Math" alttext="P(x,p)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> should be a function of <math id="S0.I1.i1.p1.m8" class="ltx_Math" alttext="\omega_{0},p,x,m" display="inline"><mrow><msub><mi>ω</mi><mn>0</mn></msub><mo>,</mo><mi>p</mi><mo>,</mo><mi>x</mi><mo>,</mo><mi>m</mi></mrow></math> and <math id="S0.I1.i1.p1.m9" class="ltx_Math" alttext="{k_{\scriptscriptstyle B}T}" display="inline"><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></math>. You can check your result by doing part (b). Check that your
+result for <math id="S0.I1.i1.p1.m10" class="ltx_Math" alttext="P(x,p)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> is dimensionally correct.</p>
+</div>
+<div id="S0.I1.i1.p2" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Hint:</em> Change variables to <math id="S0.I1.i1.p2.m1" class="ltx_Math" alttext="u_{1}=x/\sigma_{x}" display="inline"><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mrow><mi>x</mi><mo>/</mo><msub><mi>σ</mi><mi>x</mi></msub></mrow></mrow></math> and <math id="S0.I1.i1.p2.m2" class="ltx_Math" alttext="u_{2}=p/\sigma_{p}" display="inline"><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mrow><mi>p</mi><mo>/</mo><msub><mi>σ</mi><mi>p</mi></msub></mrow></mrow></math> before doing any integrals. You need to look at the integrand (like the exponent) and decide what
+the appropriate length scale, <math id="S0.I1.i1.p2.m3" class="ltx_Math" alttext="\sigma_{x}" display="inline"><msub><mi>σ</mi><mi>x</mi></msub></math>, and momentum scale, <math id="S0.I1.i1.p2.m4" class="ltx_Math" alttext="\sigma_{p}" display="inline"><msub><mi>σ</mi><mi>p</mi></msub></math>, are.</p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Compute the <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="\left\langle x^{2}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⟩</mo></mrow></math> and <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="\left\langle p^{2}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mi>p</mi><mn>2</mn></msup><mo>⟩</mo></mrow></math> by integrating over the probability distribution. (Don’t do dimensionful integrals.) 
+<br class="ltx_break"></p>
+</div>
+<div id="S0.I1.i2.p2" class="ltx_para">
+<p class="ltx_p">You should find <math id="S0.I1.i2.p2.m1" class="ltx_Math" alttext="\left\langle x^{2}\right\rangle={k_{\scriptscriptstyle B}T}/m\omega_{0}^{2}" display="inline"><mrow><mrow><mo>⟨</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⟩</mo></mrow><mo>=</mo><mrow><mrow><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi>m</mi></mrow><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup></mrow></mrow></math> and <math id="S0.I1.i2.p2.m2" class="ltx_Math" alttext="\left\langle p^{2}\right\rangle=m{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mrow><mo>⟨</mo><msup><mi>p</mi><mn>2</mn></msup><mo>⟩</mo></mrow><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">The equipartition theorem precisely says that, for a classical system,
+the average of each quadratic form in the Hamiltonian is <math id="S0.I1.i3.p1.m1" class="ltx_Math" alttext="{\textstyle\frac{1}{2}}{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></math>. The
+quadratic forms here are the kinetic energy <math id="S0.I1.i3.p1.m2" class="ltx_Math" alttext="p^{2}/2m" display="inline"><mrow><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>m</mi></mrow></math>, and the potential
+energy, <math id="S0.I1.i3.p1.m3" class="ltx_Math" alttext="m\omega_{0}^{2}x^{2}/2" display="inline"><mrow><mrow><mi>m</mi><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>/</mo><mn>2</mn></mrow></math>. Are your results of the part (b) consistent
+with the equipartition theorem. What is the average total energy of the
+oscillator and the number of “degrees of freedom” of the oscillator?</p>
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<span id="S0.I1.i4.I1" class="ltx_inline-enumerate">
+<span id="S0.I1.i4.I1.i1" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(i)</span> <span class="ltx_text">For one mole of an ideal diatomic molecule <math id="S0.I1.i4.I1.i1.m1" class="ltx_Math" alttext="H_{2}" display="inline"><msub><mi>H</mi><mn>2</mn></msub></math> (treated in a classical approximation), what are the total number of degrees of freedom (in the sense of the equi-partition theorem), if translations, rotations, <em class="ltx_emph ltx_font_italic">and</em> now vibrations are included and treated classically? </span></span>
+<span id="S0.I1.i4.I1.i2" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(ii)</span> <span class="ltx_text">What is the energy of the gas for one mole of substance, <math id="S0.I1.i4.I1.i2.m1" class="ltx_Math" alttext="U^{1\rm ml}" display="inline"><msup><mi>U</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msup></math>? Express your result in terms of <math id="S0.I1.i4.I1.i2.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> and <math id="S0.I1.i4.I1.i2.m3" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>. </span></span>
+<span id="S0.I1.i4.I1.i3" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(iii)</span> <span class="ltx_text">As discussed in class the specific heat<span id="footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+                      <span class="ltx_tag ltx_tag_note">2</span>
+                      
+                      
+                      
+                    Specific Heat are not on the exam.</span></span></span> at constant pressure <math id="S0.I1.i4.I1.i3.m1" class="ltx_Math" alttext="C_{p}" display="inline"><msub><mi>C</mi><mi>p</mi></msub></math> is related to the internal energy <math id="S0.I1.i4.I1.i3.m2" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>. Indeed, <math id="S0.I1.i4.I1.i3.m3" class="ltx_Math" alttext="C_{p}^{1\rm ml}=(\partial U^{\rm 1ml}/\partial T)_{V}+R" display="inline"><mrow><msubsup><mi>C</mi><mi>p</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msubsup><mo>=</mo><mrow><msub><mrow><mo stretchy="false">(</mo><mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>U</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msup></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>T</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>V</mi></msub><mo>+</mo><mi>R</mi></mrow></mrow></math> for one mole of substance. Is your result for <math id="S0.I1.i4.I1.i3.m4" class="ltx_Math" alttext="U^{\rm 1ml}" display="inline"><msup><mi>U</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msup></math> consistent with the experimental data on <math id="S0.I1.i4.I1.i3.m5" class="ltx_Math" alttext="C_{p}^{1\rm ml}" display="inline"><msubsup><mi>C</mi><mi>p</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msubsup></math> shown below? Explain.
+</span></span>
+</span>
+</div>
+<figure id="S0.F1" class="ltx_figure"><img src="x1.png" id="S0.F1.g1" class="ltx_graphics ltx_centering" width="438" height="330" alt=" The heat capacity ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span> The heat capacity <math id="S0.F1.m2" class="ltx_Math" alttext="C_{p}^{\rm 1ml}" display="inline"><msubsup><mi>C</mi><mi>p</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msubsup></math> for one mole of substance. </figcaption>
+</figure>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 2.   Partition function of two state system</h2>
+
+<div id="S0.SSx2.p1" class="ltx_para">
+<p class="ltx_p">Consider a quantum mechanical system with energy levels <math id="S0.SSx2.p1.m1" class="ltx_Math" alttext="\epsilon_{i}" display="inline"><msub><mi>ϵ</mi><mi>i</mi></msub></math> with
+<math id="S0.SSx2.p1.m2" class="ltx_Math" alttext="i=1,2,\ldots n" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>n</mi></mrow></mrow></mrow></math>.
+Recall the definition of the partition function from last weeks homework</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="Z(\beta)=\sum_{i}e^{-\beta\epsilon_{i}}" display="block"><mrow><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><msub><mi>ϵ</mi><mi>i</mi></msub></mrow></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><math id="S0.SSx2.p1.m3" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math> is a the normalization constant so that the probability of being in the r-th state</p>
+<table id="S0.E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E4.m1" class="ltx_Math" alttext="P_{r}=\frac{1}{Z(\beta)}e^{-\beta\epsilon_{r}}" display="block"><mrow><msub><mi>P</mi><mi>r</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><msub><mi>ϵ</mi><mi>r</mi></msub></mrow></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr>
+</table>
+<p class="ltx_p">is correctly nnormalized
+</p>
+<table id="S0.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E5.m1" class="ltx_Math" alttext="\sum_{i}P_{i}=1" display="block"><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder><msub><mi>P</mi><mi>i</mi></msub></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr>
+</table>
+<ol id="S0.I2" class="ltx_enumerate">
+<li id="S0.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">Show that the mean energy can be found if you know <math id="S0.I2.i1.p1.m1" class="ltx_Math" alttext="Z(\beta)" display="inline"><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></math> via
+the formula:</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E6.m1" class="ltx_Math" alttext="\displaystyle\left\langle\epsilon\right\rangle=-\frac{1}{Z(\beta)}\frac{%
+\partial Z}{\partial\beta}" display="inline"><mrow><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>Z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>β</mi></mrow></mfrac></mstyle></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Show also that</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E7.m1" class="ltx_Math" alttext="\displaystyle\left\langle\epsilon^{2}\right\rangle=\frac{1}{Z}\left(-\frac{%
+\partial}{\partial\beta}\right)\left(-\frac{\partial}{\partial\beta}\right)Z=%
+\frac{1}{Z}\frac{\partial^{2}Z}{\partial\beta^{2}}" display="inline"><mrow><mrow><mo>⟨</mo><msup><mi>ϵ</mi><mn>2</mn></msup><mo>⟩</mo></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>Z</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo>(</mo><mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>β</mi></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mo>-</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>β</mi></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>Z</mi></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>Z</mi></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>Z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>β</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(7)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">What is <math id="S0.I2.i1.p1.m2" class="ltx_Math" alttext="\left\langle\epsilon^{m}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mi>ϵ</mi><mi>m</mi></msup><mo>⟩</mo></mrow></math> in terms of the derivatives of <math id="S0.I2.i1.p1.m3" class="ltx_Math" alttext="Z(\beta)" display="inline"><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></math>?</p>
+</div>
+<div id="S0.I2.i1.p2" class="ltx_para">
+<p class="ltx_p">From this excercise you should realize that the partition function is essentially the generating function for the probability
+distribution in Eq. (<a href="#S0.E4" title="(4) ‣ Problem 2. Partition function of two state system" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>). Indeed, the partition function “generates” averages of
+the form, <math id="S0.I2.i1.p2.m1" class="ltx_Math" alttext="\left\langle\epsilon^{m}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mi>ϵ</mi><mi>m</mi></msup><mo>⟩</mo></mrow></math>, by differentating
+<math id="S0.I2.i1.p2.m2" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> times with respect to the parameter <math id="S0.I2.i1.p2.m3" class="ltx_Math" alttext="-\beta" display="inline"><mrow><mo>-</mo><mi>β</mi></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">(Optional) Explicitly work out the relation between the generating function as we defined previously and <math id="S0.I2.i2.p1.m1" class="ltx_Math" alttext="Z(\beta)" display="inline"><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></math>. <em class="ltx_emph ltx_font_italic">Hint:</em> Show that <math id="S0.I2.i2.p1.m2" class="ltx_Math" alttext="Z(\beta+\delta\beta)/Z(\beta)" display="inline"><mrow><mrow><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>β</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>β</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mi>Z</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the generating function<span id="footnote3" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>
+                  <span class="ltx_tag ltx_tag_note">3</span>
+                  
+                  
+                  
+                
+In our previous notation the
+generating function was <math id="footnote3.m1" class="ltx_Math" alttext="\left\langle e^{a\epsilon}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mi>e</mi><mrow><mi>a</mi><mo>⁢</mo><mi>ϵ</mi></mrow></msup><mo>⟩</mo></mrow></math>, where
+the average is over the probability distribution of <math id="footnote3.m2" class="ltx_Math" alttext="\epsilon" display="inline"><mi>ϵ</mi></math>.
+The parameter of the generating function was called <math id="footnote3.m3" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math> instead of <math id="footnote3.m4" class="ltx_Math" alttext="-\delta\beta" display="inline"><mrow><mo>-</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>β</mi></mrow></mrow></math> as it is here. Somewhat pedantically then:
+
+<span id="S0.E8" class="ltx_equation ltx_eqn_table">
+
+<span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_eqn_cell ltx_align_center"><math id="S0.E8.m1" class="ltx_Math" alttext="\left\langle\epsilon\right\rangle=\left.\frac{\partial\left\langle e^{a%
+\epsilon}\right\rangle}{\partial a}\right|_{a=0}=\left.-\frac{\partial\left%
+\langle e^{-\delta\beta\epsilon}\right\rangle}{\partial\delta\beta}\right|_{%
+\delta\beta=0}=-\frac{1}{Z(\beta)}\left.\frac{\partial Z(\beta^{\prime})}{%
+\partial\beta^{\prime}}\right|_{\beta^{\prime}=\beta}" display="block"><mrow><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow><mo>=</mo><msub><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo>⟨</mo><msup><mi>e</mi><mrow><mi>a</mi><mo>⁢</mo><mi>ϵ</mi></mrow></msup><mo>⟩</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>a</mi></mrow></mfrac><mo fence="true">|</mo></mrow><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow></msub><mo>=</mo><mrow><mo>-</mo><msub><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo>⟨</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>β</mi><mo>⁢</mo><mi>ϵ</mi></mrow></mrow></msup><mo>⟩</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>β</mi></mrow></mrow></mfrac><mo fence="true">|</mo></mrow><mrow><mrow><mi>δ</mi><mo>⁢</mo><mi>β</mi></mrow><mo>=</mo><mn>0</mn></mrow></msub></mrow><mo>=</mo><mrow><mo>-</mo><msub><mrow><mrow><mfrac><mn>1</mn><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><mfrac><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>Z</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>β</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>β</mi><mo>′</mo></msup></mrow></mfrac></mrow><mo fence="true">|</mo></mrow><mrow><msup><mi>β</mi><mo>′</mo></msup><mo>=</mo><mi>β</mi></mrow></msub></mrow></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span>
+<span rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(8)</span></span></span>
+</span></span></span></span>,
+<math id="S0.I2.i2.p1.m3" class="ltx_Math" alttext="\left\langle e^{-\delta\beta\epsilon}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>β</mi><mo>⁢</mo><mi>ϵ</mi></mrow></mrow></msup><mo>⟩</mo></mrow></math>,
+for the probability distribution, <math id="S0.I2.i2.p1.m4" class="ltx_Math" alttext="P_{r}=e^{-\beta\epsilon_{r}}/Z(\beta)" display="inline"><mrow><msub><mi>P</mi><mi>r</mi></msub><mo>=</mo><mrow><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><msub><mi>ϵ</mi><mi>r</mi></msub></mrow></mrow></msup><mo>/</mo><mi>Z</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I2.i3.p1" class="ltx_para">
+<p class="ltx_p">Consider the two state system with energy <math id="S0.I2.i3.p1.m1" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> and <math id="S0.I2.i3.p1.m2" class="ltx_Math" alttext="\Delta" display="inline"><mi mathvariant="normal">Δ</mi></math> discussed two homeworks ago. Compute
+the partition function, and then compute <math id="S0.I2.i3.p1.m3" class="ltx_Math" alttext="\left\langle\epsilon\right\rangle" display="inline"><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow></math> and <math id="S0.I2.i3.p1.m4" class="ltx_Math" alttext="\langle\epsilon^{2}\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><msup><mi>ϵ</mi><mn>2</mn></msup><mo stretchy="false">⟩</mo></mrow></math> using the methods of this problem, and compare with the methods of the previous homework. Show that the variance in energy is</p>
+<table id="S0.E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E9.m1" class="ltx_Math" alttext="\left\langle(\delta\epsilon)^{2}\right\rangle=\Delta^{2}\left[\frac{e^{-\beta%
+\Delta}}{(1+e^{-\beta\Delta})^{2}}\right]" display="block"><mrow><mrow><mo>⟨</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⟩</mo></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo>[</mo><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow></mrow></msup><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9)</span></td>
+</tr>
+</table>
+<p class="ltx_p">What is the variance in the high temperatue limit <math id="S0.I2.i3.p1.m5" class="ltx_Math" alttext="{k_{\scriptscriptstyle B}T}\gg\Delta" display="inline"><mrow><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>≫</mo><mi mathvariant="normal">Δ</mi></mrow></math>. Explain the result qualitatively.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 3.   Partition function of three level system</h2>
+
+<div id="S0.SSx3.p1" class="ltx_para">
+<p class="ltx_p">Consider an ensemble at temperture <math id="S0.SSx3.p1.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> of <math id="S0.SSx3.p1.m2" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> independent “atoms”, each of which have the three energy levels shown
+below.</p>
+<img src="x2.png" id="S0.SSx3.p1.g1" class="ltx_graphics ltx_centering" width="210" height="204" alt="">
+</div>
+<div id="S0.SSx3.p2" class="ltx_para">
+<ol id="S0.I3" class="ltx_enumerate">
+<li id="S0.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I3.i1.p1" class="ltx_para">
+<p class="ltx_p">Determine the partition function and mean energy of an atom as
+a function of temperature.</p>
+</div>
+</li>
+<li id="S0.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I3.i2.p1" class="ltx_para">
+<p class="ltx_p">Determine the probabilities to be in the first excited and second excited states, <math id="S0.I3.i2.p1.m1" class="ltx_Math" alttext="P_{1}" display="inline"><msub><mi>P</mi><mn>1</mn></msub></math> and <math id="S0.I3.i2.p1.m2" class="ltx_Math" alttext="P_{2}" display="inline"><msub><mi>P</mi><mn>2</mn></msub></math>, and qualitatively
+sketch these probabilities versus temperature on the same graph, from very low to very high temperatures:</p>
+<ol id="S0.I3.i2.I1" class="ltx_enumerate">
+<li id="S0.I3.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span> 
+<div id="S0.I3.i2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Explain the qualitative features of your graph by pointing to specific terms in your equations.</p>
+</div>
+</li>
+<li id="S0.I3.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span> 
+<div id="S0.I3.i2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Determine the approximate value <math id="S0.I3.i2.I1.i2.p1.m1" class="ltx_Math" alttext="P_{2}" display="inline"><msub><mi>P</mi><mn>2</mn></msub></math> at high temperatures, and explain the result physically.
+Taking <math id="S0.I3.i2.I1.i2.p1.m2" class="ltx_Math" alttext="\Delta=0.1\,{\rm eV}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>=</mo><mrow><mpadded width="+1.7pt"><mn>0.1</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></math>, estimate the temperature (in Kelvin) when your result becomes approximately valid.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx4" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 4.   Balls in baskets</h2>
+
+<div id="S0.SSx4.p1" class="ltx_para">
+<p class="ltx_p">Consider <math id="S0.SSx4.p1.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> “atoms” with total energy <math id="S0.SSx4.p1.m2" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math>.
+The total energy consists of <math id="S0.SSx4.p1.m3" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> units of vibrational quanta of energy <math id="S0.SSx4.p1.m4" class="ltx_Math" alttext="E\equiv q\hbar\omega_{0}" display="inline"><mrow><mi>E</mi><mo>≡</mo><mrow><mi>q</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math>, where <math id="S0.SSx4.p1.m5" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> is an integer.
+We want to count the number of ways (also called states) that the atoms can share the <math id="S0.SSx4.p1.m6" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> units energy.</p>
+<ol id="S0.I4" class="ltx_enumerate">
+<li id="S0.I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I4.i1.p1" class="ltx_para">
+<p class="ltx_p">For four atoms and three quanta of energy (<math id="S0.I4.i1.p1.m1" class="ltx_Math" alttext="N=4" display="inline"><mrow><mi>N</mi><mo>=</mo><mn>4</mn></mrow></math> and <math id="S0.I4.i1.p1.m2" class="ltx_Math" alttext="q=3" display="inline"><mrow><mi>q</mi><mo>=</mo><mn>3</mn></mrow></math>) show that there
+are 20 ways for the oscillators to share the energy. For instance,
+the first atom could have the three quanta and the rest none. That is one
+possible state out of 20.</p>
+</div>
+</li>
+<li id="S0.I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I4.i2.p1" class="ltx_para">
+<p class="ltx_p">Show in general that there are</p>
+<table id="S0.E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E10.m1" class="ltx_Math" alttext="\Omega(q)=\frac{(N+q-1)!}{q!(N-1)!}" display="block"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>+</mo><mi>q</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mrow><mrow><mi>q</mi><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(10)</span></td>
+</tr>
+</table>
+<p class="ltx_p">ways to distribute <math id="S0.I4.i2.p1.m1" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> units of energy amongst the <math id="S0.I4.i2.p1.m2" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> atoms.
+Verify that this expression reproduces the results of part (a)</p>
+</div>
+<div id="S0.I4.i2.p2" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Hint:</em> Consider each oscillator to be a bin, and each bit of energy to be a ball. We are asking for the number of ways to put <math id="S0.I4.i2.p2.m1" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> balls in <math id="S0.I4.i2.p2.m2" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> bins.</p>
+</div>
+<div id="S0.I4.i2.p3" class="ltx_para">
+<p class="ltx_p">Take seven balls (units of energy) and five bins (oscillators), <math id="S0.I4.i2.p3.m1" class="ltx_Math" alttext="N=5" display="inline"><mrow><mi>N</mi><mo>=</mo><mn>5</mn></mrow></math> and <math id="S0.I4.i2.p3.m2" class="ltx_Math" alttext="q=7" display="inline"><mrow><mi>q</mi><mo>=</mo><mn>7</mn></mrow></math>. Lay out the <math id="S0.I4.i2.p3.m3" class="ltx_Math" alttext="7" display="inline"><mn>7</mn></math> energy units (balls) between the dashed lines.</p>
+<img src="x3.png" id="S0.I4.i2.p3.g1" class="ltx_graphics ltx_centering" width="338" height="44" alt="">
+<p class="ltx_p">To partition the <math id="S0.I4.i2.p3.m4" class="ltx_Math" alttext="7" display="inline"><mn>7</mn></math> balls (energy energy units) amongst the five bins (oscillators), I need four dividers, shown by the solid lines. In the figure below, I have paced the four dividers in one possible way, partitioning the energy so that the first bin has 2 units, the second bin has none, the third bin has <math id="S0.I4.i2.p3.m5" class="ltx_Math" alttext="3" display="inline"><mn>3</mn></math>, the fourth has two, and the fifth has none. The total number of objects, ball or divider, is <math id="S0.I4.i2.p3.m6" class="ltx_Math" alttext="q+(N-1)=11" display="inline"><mrow><mrow><mi>q</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>11</mn></mrow></math>. Use this logic and the number of ways of choosing <math id="S0.I4.i2.p3.m7" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> of these objects to be balls to explain Eq. (<a href="#S0.E10" title="(10) ‣ item (b) ‣ Problem 4. Balls in baskets" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10</span></a>).</p>
+</div>
+</li>
+<li id="S0.I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I4.i3.p1" class="ltx_para">
+<p class="ltx_p">Using the Stirling approximation, show that for <math id="S0.I4.i3.p1.m1" class="ltx_Math" alttext="N=400" display="inline"><mrow><mi>N</mi><mo>=</mo><mn>400</mn></mrow></math> oscillators and <math id="S0.I4.i3.p1.m2" class="ltx_Math" alttext="q=400" display="inline"><mrow><mi>q</mi><mo>=</mo><mn>400</mn></mrow></math> quanta the number of states is approximately</p>
+<table id="S0.E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E11.m1" class="ltx_Math" alttext="e^{2N\ln 2}=e^{555}" display="block"><mrow><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow></mrow></msup><mo>=</mo><msup><mi>e</mi><mn>555</mn></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(11)</span></td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Wed Feb 15 22:44:32 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
