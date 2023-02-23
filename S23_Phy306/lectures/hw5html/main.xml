@@ -1394,7 +1394,7 @@ the speed of sound of <Math mode="inline" tex="N_{2}" text="N _ 2" xml:id="S0.I2
         <tag role="refnum">1</tag>
         <tag role="typerefnum">Figure 1</tag>
       </tags>
-      <graphics candidates="Otto.pdf" class="ltx_centering" graphic="Otto.pdf" options="width=238.491pt" xml:id="S0.F1.g1"/>
+      <graphics candidates="Otto_new.pdf" class="ltx_centering" graphic="Otto_new.pdf" options="width=238.491pt" xml:id="S0.F1.g1"/>
       <toccaption class="ltx_centering"><tag close=" ">1</tag>The Otto cycle with compression ration <Math mode="inline" tex="r\equiv V_{1}/V_{2}" text="r equivalent-to V _ 1 / V _ 2" xml:id="S0.F1.m1">
           <XMath>
             <XMApp>
