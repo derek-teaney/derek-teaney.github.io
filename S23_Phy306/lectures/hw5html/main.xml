@@ -574,7 +574,7 @@ heats <Math mode="inline" tex="C_{p}" text="C _ p" xml:id="S0.I2.i4.p1.m1">
                   <tag role="refnum">1</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle C_{p}=C_{V}+\frac{VT\kappa_{T}^{2}}{\beta_{p}}\,." text="C _ p = C _ V + (V * T * (kappa _ T) ^ 2) / beta _ p" xml:id="S0.E1.m3">
+                  <Math tex="\displaystyle C_{p}=C_{V}+\frac{VT\beta_{p}^{2}}{\kappa_{T}}\,." text="C _ p = C _ V + (V * T * (beta _ p) ^ 2) / kappa _ T" xml:id="S0.E1.m3">
                     <XMath>
                       <XMDual>
                         <XMRef idref="S0.E1.m3.1"/>
@@ -603,16 +603,16 @@ heats <Math mode="inline" tex="C_{p}" text="C _ p" xml:id="S0.I2.i4.p1.m1">
                                     <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
                                     <XMApp>
                                       <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                      <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
-                                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                                      <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+                                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
                                     </XMApp>
                                     <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
                                   </XMApp>
                                 </XMApp>
                                 <XMApp>
                                   <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                  <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
-                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                                  <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
                                 </XMApp>
                               </XMApp>
                             </XMApp>
@@ -636,7 +636,7 @@ heats <Math mode="inline" tex="C_{p}" text="C _ p" xml:id="S0.I2.i4.p1.m1">
                           </XMApp>
                         </XMath>
                       </Math></td>
-                    <td align="left"><Math mode="inline" tex="\displaystyle C_{V}+\frac{VT\kappa_{T}^{2}}{\beta_{p}}\,." text="C _ V + (V * T * (kappa _ T) ^ 2) / beta _ p" xml:id="S0.E1.m2">
+                    <td align="left"><Math mode="inline" tex="\displaystyle C_{V}+\frac{VT\beta_{p}^{2}}{\kappa_{T}}\,." text="C _ V + (V * T * (beta _ p) ^ 2) / kappa _ T" xml:id="S0.E1.m2">
                         <XMath>
                           <XMDual>
                             <XMRef idref="S0.E1.m2.1"/>
@@ -658,16 +658,16 @@ heats <Math mode="inline" tex="C_{p}" text="C _ p" xml:id="S0.I2.i4.p1.m1">
                                       <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
                                       <XMApp>
                                         <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                        <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
-                                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                                        <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
+                                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
                                       </XMApp>
                                       <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
                                     </XMApp>
                                   </XMApp>
                                   <XMApp>
                                     <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                    <XMTok font="italic" name="beta" role="UNKNOWN">β</XMTok>
-                                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                                    <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
+                                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
                                   </XMApp>
                                 </XMApp>
                               </XMApp>
@@ -857,8 +857,7 @@ the results from parts (a).</p>
             <tag role="typerefnum">item (f)</tag>
           </tags>
           <para xml:id="S0.I2.i6.p1">
-            <p>(Optional: but good!)
-The <emph font="italic">adiabatic</emph> compressibility <Math mode="inline" tex="\kappa_{S}" text="kappa _ S" xml:id="S0.I2.i6.p1.m1">
+            <p>(Optional, but so good!) The <emph font="italic">adiabatic</emph> compressibility <Math mode="inline" tex="\kappa_{S}" text="kappa _ S" xml:id="S0.I2.i6.p1.m1">
                 <XMath>
                   <XMApp>
                     <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -1022,8 +1021,7 @@ will see that <Math mode="inline" tex="{\mathchar 22\mskip-12.0mu d}Q" text="¯ 
                       </XMApp>
                     </XMath>
                   </Math>
-                </equation></note>
-<!--  %**** hw5.tex Line 375 **** --></p>
+                </equation></note></p>
             <equation xml:id="S0.E5">
               <tags>
                 <tag>(5)</tag>
@@ -1036,7 +1034,7 @@ will see that <Math mode="inline" tex="{\mathchar 22\mskip-12.0mu d}Q" text="¯ 
                     <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
                     <XMApp>
                       <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
+<!--  %**** hw5.tex Line 375 **** -->                      <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
                       <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
                     </XMApp>
                     <XMApp>
@@ -1308,7 +1306,7 @@ this. A good derivation at your level is given <ref class="ltx_href" href="https
                   <XMTok font="italic" name="rho" role="UNKNOWN">ρ</XMTok>
                 </XMath>
               </Math> is the mass per volume. Air is made of
-<!--  %**** hw5.tex Line 400 **** -->diatomic molecules, primarily (78%) diatomic nitrogen <Math mode="inline" tex="N_{2}" text="N _ 2" xml:id="S0.I2.i7.p1.m2">
+diatomic molecules, primarily (78%) diatomic nitrogen <Math mode="inline" tex="N_{2}" text="N _ 2" xml:id="S0.I2.i7.p1.m2">
                 <XMath>
                   <XMApp>
                     <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -1317,7 +1315,7 @@ this. A good derivation at your level is given <ref class="ltx_href" href="https
                   </XMApp>
                 </XMath>
               </Math>. Determine
-the speed of sound of <Math mode="inline" tex="N_{2}" text="N _ 2" xml:id="S0.I2.i7.p1.m3">
+<!--  %**** hw5.tex Line 400 **** -->the speed of sound of <Math mode="inline" tex="N_{2}" text="N _ 2" xml:id="S0.I2.i7.p1.m3">
                 <XMath>
                   <XMApp>
                     <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -1678,7 +1676,7 @@ I find that the result of this idealized computation is low compared to a nomina
                 </XMath>
               </Math> is the compression ratio.</p>
           </para>
-<!--  %**** hw5.tex Line 450 **** -->          <para xml:id="S0.I3.i5.p2">
+          <para xml:id="S0.I3.i5.p2">
             <p><emph font="italic">Hint:</emph> Work analytically (symbols not numbers). Assume that the specific heat at constant volume is constant, so that the energy takes the form <Math mode="inline" tex="U=c_{0}T" text="U = c _ 0 * T" xml:id="S0.I3.i5.p2.m1">
                 <XMath>
                   <XMApp>
@@ -1695,7 +1693,8 @@ I find that the result of this idealized computation is low compared to a nomina
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>.</p>
+              </Math>.
+<!--  %**** hw5.tex Line 450 **** --></p>
           </para>
         </item>
       </enumerate>
@@ -1720,8 +1719,8 @@ I find that the result of this idealized computation is low compared to a nomina
      %%     in both cases
      %%  “item Now consider the inexact differential
      %%     “st
-     %**** hw5.tex Line 475 ****
      %%       “dbar g = y “, “dd x
+     %**** hw5.tex Line 475 ****
      %%     “stp
      %%     Determine
      %%     “st
@@ -1744,8 +1743,8 @@ I find that the result of this idealized computation is low compared to a nomina
      %%     as a gradient of a function $–“bm F˝ = “nabla f$.
      %%     “begin–enumerate˝[resume]
      %%        “item Show that “Eq–˝ is curl free, while “Eq–˝ is not.
-     %**** hw5.tex Line 500 ****
      %%        “item Consider an ideal gas with constant specific heat $C˙V$. The
+     %**** hw5.tex Line 500 ****
      %%           differential of heat transfer as the temperature and volume are changed is
      %%           “st
      %%                “dbar Q = C˙V dT   +  “frac–N “kT˝–V˝  dV
@@ -2810,10 +2809,9 @@ the following expansion for <Math mode="inline" tex="x\ll 1" text="x &lt;&lt; 1"
                 </XMath>
               </Math>
             </equation>
-            <p>The first two terms are compared to the full function in Fig. <ref labelref="LABEL:fig:BoseFactorApproximations"/>
-<!--  %**** hw5.tex Line 550 **** --></p>
+            <p>The first two terms are compared to the full function in Fig. <ref labelref="LABEL:fig:BoseFactorApproximations"/></p>
           </para>
-          <para xml:id="S0.I4.i4.p2">
+<!--  %**** hw5.tex Line 550 **** -->          <para xml:id="S0.I4.i4.p2">
             <p><emph font="italic">Hint:</emph> First expand <Math mode="inline" tex="e^{x}" text="e ^ x" xml:id="S0.I4.i4.p2.m1">
                 <XMath>
                   <XMApp>
@@ -2942,7 +2940,7 @@ Then expand further:</p>
                 <tag role="autoref">Equation 17</tag>
                 <tag role="refnum">17</tag>
               </tags>
-              <Math mode="display" tex="\frac{1}{1+u}\simeq 1-u+u^{2}+\mathcal{O}(x^{3})" text="1 / (1 + u) similar-to-or-equals (1 - u) + u ^ 2 + O * x ^ 3" xml:id="S0.E17.m1">
+              <Math mode="display" tex="\frac{1}{1+u}\simeq 1-u+u^{2}+\mathcal{O}(u^{3})" text="1 / (1 + u) similar-to-or-equals (1 - u) + u ^ 2 + O * u ^ 3" xml:id="S0.E17.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
@@ -2976,7 +2974,7 @@ Then expand further:</p>
                             <XMTok role="OPEN" stretchy="false">(</XMTok>
                             <XMApp xml:id="S0.E17.m1.1">
                               <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                              <XMTok font="italic" role="UNKNOWN">x</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">u</XMTok>
                               <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
                             </XMApp>
                             <XMTok role="CLOSE" stretchy="false">)</XMTok>
@@ -3438,8 +3436,7 @@ Then expand further:</p>
             <tag role="typerefnum">item (e)</tag>
           </tags>
           <para xml:id="S0.I4.i5.p1">
-            <p>Following the methodology of (c), determine an approximate series for
-<!--  %**** hw5.tex Line 575 **** --></p>
+            <p>Following the methodology of (c), determine an approximate series for</p>
             <equation xml:id="S0.E20">
               <tags>
                 <tag>(20)</tag>
@@ -3448,7 +3445,7 @@ Then expand further:</p>
               </tags>
               <Math mode="display" tex="\frac{1}{e^{-x}+1}" text="1 / (e ^ (- x) + 1)" xml:id="S0.E20.m1">
                 <XMath>
-                  <XMApp>
+<!--  %**** hw5.tex Line 575 **** -->                  <XMApp>
                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                     <XMTok meaning="1" role="NUMBER">1</XMTok>
                     <XMApp>
@@ -3766,9 +3763,9 @@ At small <Math mode="inline" tex="x" text="x" xml:id="S0.F2.m7">
   </subsection>
   <subsection xml:id="S0.SSx4">
     <title>Problem 4.    Energy of the quantum harmonic oscillator</title>
-<!--  %**** hw5.tex Line 600 **** -->    <para xml:id="S0.SSx4.p1">
+    <para xml:id="S0.SSx4.p1">
       <p>Recall from Homework 4 that
-the mean energy of a single classical harmonic oscillator interacting
+<!--  %**** hw5.tex Line 600 **** -->the mean energy of a single classical harmonic oscillator interacting
 with the thermal environment is</p>
       <equation xml:id="S0.E22">
         <tags>
@@ -4583,8 +4580,7 @@ with the expansions developed at large and small temperatures</caption>
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math> is
-<!--  %**** hw5.tex Line 650 **** --></p>
+              </Math> is</p>
             <equation labels="LABEL:eq:Eclassical" xml:id="S0.E28">
               <tags>
                 <tag>(28)</tag>
@@ -4598,7 +4594,7 @@ with the expansions developed at large and small temperatures</caption>
                     <XMApp>
                       <XMApp scriptpos="mid">
                         <XMTok role="SUBSCRIPTOP" scriptpos="mid1"/>
-                        <XMTok meaning="limit" role="LIMITOP" scriptpos="mid">lim</XMTok>
+<!--  %**** hw5.tex Line 650 **** -->                        <XMTok meaning="limit" role="LIMITOP" scriptpos="mid">lim</XMTok>
                         <XMApp>
                           <XMTok fontsize="70%" name="rightarrow" role="ARROW">→</XMTok>
                           <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
@@ -4928,7 +4924,7 @@ As discussed in class, the total energy for an ideal gas takes the form</p>
                             <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
                             <XMApp>
                               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-<!--  %**** hw5.tex Line 675 **** -->                              <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">C</XMTok>
                               <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
                             </XMApp>
                             <XMApp>
@@ -5033,7 +5029,7 @@ As discussed in class, the total energy for an ideal gas takes the form</p>
                                   </XMApp>
                                 </XMApp>
                                 <XMTok role="CLOSE" stretchy="true">]</XMTok>
-                              </XMWrap>
+<!--  %**** hw5.tex Line 675 **** -->                              </XMWrap>
                             </XMDual>
                           </XMApp>
                         </XMApp>
