@@ -1204,18 +1204,14 @@ this. A good derivation at your level is given <ref class="ltx_href" href="https
                 <tag role="autoref">Equation 7</tag>
                 <tag role="refnum">7</tag>
               </tags>
-              <Math mode="display" tex="c_{s}^{2}=\sqrt{\frac{B_{S}}{\rho}}" text="(c _ s) ^ 2 = square-root@(B _ S / rho)" xml:id="S0.E7.m1">
+              <Math mode="display" tex="c_{s}=\sqrt{\frac{B_{S}}{\rho}}" text="c _ s = square-root@(B _ S / rho)" xml:id="S0.E7.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMApp>
-                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                      <XMApp>
-                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                        <XMTok font="italic" role="UNKNOWN">c</XMTok>
-                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
-                      </XMApp>
-                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">c</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">s</XMTok>
                     </XMApp>
                     <XMApp>
                       <XMTok meaning="square-root"/>
