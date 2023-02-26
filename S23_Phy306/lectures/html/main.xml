@@ -7,7 +7,6 @@
 <?latexml package="hyperref" options="colorlinks=true"?>
 <?latexml package="pdfpages"?>
 <?latexml package="enumitem" options="inline"?>
-<?latexml package="esdiff"?>
 <?latexml package="cancel"?>
 <!--  %**** summary˙header.tex Line 25 **** --><!--  %“chapterstyle–southall˝ --><?latexml RelaxNGSchema="LaTeXML"?>
 <document xmlns="http://dlmf.nist.gov/LaTeXML">
@@ -12346,7 +12345,7 @@ change in energy is</p>
             <tag role="autoref">Equation 2.9</tag>
             <tag role="refnum">2.9</tag>
           </tags>
-          <Math mode="display" tex="dU=\diffp*{U}{T}{V}dT+\diffp*{U}{V}{T}\cancelto{0}{dV}" text="d * U = [\diffp] * U * T * V * d * T + [\diffp] * U * V * T * (cancel@(d * V)) ^ 0" xml:id="Ch2.E9.m1">
+          <Math mode="display" tex="dU=\left(\frac{\partial U}{\partial T}\right)_{V}dT+\left(\frac{\partial U}{%&#10;\partial V}\right)_{T}\cancelto{0}{dV}" text="d * U = (partial-differential@(U) / partial-differential@(T)) _ V * d * T + (partial-differential@(U) / partial-differential@(V)) _ T * (cancel@(d * V)) ^ 0" xml:id="Ch2.E9.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -12360,24 +12359,54 @@ change in energy is</p>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                     <XMApp>
-                      <XMTok meaning="times" role="MULOP">*</XMTok>
-                      <ERROR class="undefined">\diffp</ERROR>
-                      <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch2.E9.m1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch2.E9.m1.1">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
                     </XMApp>
-                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">V</XMTok>
                     <XMTok font="italic" role="UNKNOWN">d</XMTok>
                     <XMTok font="italic" role="UNKNOWN">T</XMTok>
                   </XMApp>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                     <XMApp>
-                      <XMTok meaning="times" role="MULOP">*</XMTok>
-                      <ERROR class="undefined">\diffp</ERROR>
-                      <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch2.E9.m1.2"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch2.E9.m1.2">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
                     </XMApp>
-                    <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
                     <XMApp>
                       <XMTok role="SUPERSCRIPTOP"/>
                       <XMApp>
@@ -12425,7 +12454,7 @@ change in energy is</p>
             <tag role="autoref">Equation 2.10</tag>
             <tag role="refnum">2.10</tag>
           </tags>
-          <Math mode="display" tex="\boxed{C_{V}=\diffp*{U}{T}{V}}" text="C _ V = [\diffp] * U * T * V" xml:id="Ch2.E10.m1">
+          <Math mode="display" tex="\boxed{C_{V}=\left(\frac{\partial U}{\partial T}\right)_{V}}" text="C _ V = (partial-differential@(U) / partial-differential@(T)) _ V" xml:id="Ch2.E10.m1">
             <XMath>
               <XMApp enclose="box">
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -12435,14 +12464,26 @@ change in energy is</p>
                   <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
                 </XMApp>
                 <XMApp>
-                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">*</XMTok>
-                    <ERROR class="undefined">\diffp</ERROR>
-                    <XMTok font="italic" role="UNKNOWN">U</XMTok>
-                  </XMApp>
-                  <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                  <XMDual>
+                    <XMRef idref="Ch2.E10.m1.1"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="true">(</XMTok>
+                      <XMApp xml:id="Ch2.E10.m1.1">
+                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                        <XMApp>
+                          <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">U</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
                 </XMApp>
               </XMApp>
             </XMath>
@@ -14154,82 +14195,133 @@ temperature and <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id=
             <tag role="autoref">Equation 2.24</tag>
             <tag role="refnum">2.24</tag>
           </tags>
-          <Math mode="display" tex="\diffp*{p}{V}{T,N}=\diffp*{p}{{v_{N}}}{T}\diffp*{{v_{N}}}{V}{N}=\frac{1}{N}%&#10;\diffp*{p}{{v_{N}}}{T}" text="list@([\diffp] * p * V * T, N) = [\diffp] * p * v _ N * T * [\diffp] * v _ N * V * N = (1 / N) * [\diffp] * p * v _ N * T" xml:id="Ch2.E24.m1">
+          <Math mode="display" tex="\left(\frac{\partial p}{\partial V}\right)_{T,N}=\left(\frac{\partial p}{%&#10;\partial{v_{N}}}\right)_{T}\left(\frac{\partial{v_{N}}}{\partial V}\right)_{N}%&#10;=\frac{1}{N}\left(\frac{\partial p}{\partial{v_{N}}}\right)_{T}" text="(partial-differential@(p) / partial-differential@(V)) _ (list@(T, N)) = (partial-differential@(p) / partial-differential@(v _ N)) _ T * (partial-differential@(v _ N) / partial-differential@(V)) _ N = (1 / N) * (partial-differential@(p) / partial-differential@(v _ N)) _ T" xml:id="Ch2.E24.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="multirelation"/>
-                <XMDual>
-                  <XMApp>
-                    <XMTok meaning="list"/>
-                    <XMRef idref="Ch2.E24.m1.2"/>
-                    <XMRef idref="Ch2.E24.m1.1"/>
-                  </XMApp>
-                  <XMWrap>
-                    <XMApp xml:id="Ch2.E24.m1.2">
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">*</XMTok>
-                        <ERROR class="undefined">\diffp</ERROR>
-                        <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                      </XMApp>
-                      <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                    </XMApp>
-                    <XMTok role="PUNCT">,</XMTok>
-                    <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.E24.m1.1">N</XMTok>
-                  </XMWrap>
-                </XMDual>
-                <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
-                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">*</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">*</XMTok>
-                        <ERROR class="undefined">\diffp</ERROR>
-                        <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                  <XMDual>
+                    <XMRef idref="Ch2.E24.m1.3"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="true">(</XMTok>
+                      <XMApp xml:id="Ch2.E24.m1.3">
+                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                        <XMApp>
+                          <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                        </XMApp>
                       </XMApp>
-                      <XMApp>
-                        <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
-                        <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
-                      </XMApp>
-                      <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                      <ERROR class="undefined">\diffp</ERROR>
-                    </XMApp>
+                      <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                  <XMDual>
                     <XMApp>
-                      <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
-                      <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                      <XMTok meaning="list"/>
+                      <XMRef idref="Ch2.E24.m1.1"/>
+                      <XMRef idref="Ch2.E24.m1.2"/>
                     </XMApp>
-                  </XMApp>
-                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                    <XMWrap>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="Ch2.E24.m1.1">T</XMTok>
+                      <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="Ch2.E24.m1.2">N</XMTok>
+                    </XMWrap>
+                  </XMDual>
                 </XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMApp>
-                    <XMTok meaning="times" role="MULOP">*</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMApp>
-                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                        <XMTok meaning="1" role="NUMBER">1</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                      </XMApp>
-                      <ERROR class="undefined">\diffp</ERROR>
-                    </XMApp>
-                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMDual>
+                      <XMRef idref="Ch2.E24.m1.4"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">(</XMTok>
+                        <XMApp xml:id="Ch2.E24.m1.4">
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMApp>
+                            <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
                   </XMApp>
                   <XMApp>
-                    <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
-                    <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMDual>
+                      <XMRef idref="Ch2.E24.m1.5"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">(</XMTok>
+                        <XMApp xml:id="Ch2.E24.m1.5">
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMApp>
+                            <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
                     <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
                   </XMApp>
-                  <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                </XMApp>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMApp>
+                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                    <XMTok meaning="1" role="NUMBER">1</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMDual>
+                      <XMRef idref="Ch2.E24.m1.6"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">(</XMTok>
+                        <XMApp xml:id="Ch2.E24.m1.6">
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMApp>
+                            <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                  </XMApp>
                 </XMApp>
               </XMApp>
             </XMath>
@@ -14242,57 +14334,81 @@ temperature and <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id=
             <tag role="autoref">Equation 2.25</tag>
             <tag role="refnum">2.25</tag>
           </tags>
-          <Math mode="display" tex="\diffp*{p}{V}{T,N}=-\frac{N}{V^{2}}\diffp*{p}{{n}}{T}\,," text="list@([\diffp] * p * V * T, N) = - (N / V ^ 2) * [\diffp] * p * n * T" xml:id="Ch2.E25.m1">
+          <Math mode="display" tex="\left(\frac{\partial p}{\partial V}\right)_{T,N}=-\frac{N}{V^{2}}\left(\frac{%&#10;\partial p}{\partial{n}}\right)_{T}\,," text="(partial-differential@(p) / partial-differential@(V)) _ (list@(T, N)) = - (N / V ^ 2) * (partial-differential@(p) / partial-differential@(n)) _ T" xml:id="Ch2.E25.m1">
             <XMath>
               <XMDual>
-                <XMRef idref="Ch2.E25.m1.2"/>
+                <XMRef idref="Ch2.E25.m1.5"/>
                 <XMWrap>
-                  <XMApp xml:id="Ch2.E25.m1.2">
+                  <XMApp xml:id="Ch2.E25.m1.5">
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMDual>
-                      <XMApp>
-                        <XMTok meaning="list"/>
-                        <XMRef idref="Ch2.E25.m1.2.1"/>
-                        <XMRef idref="Ch2.E25.m1.1"/>
-                      </XMApp>
-                      <XMWrap>
-                        <XMApp xml:id="Ch2.E25.m1.2.1">
-                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                          <XMApp>
-                            <XMTok meaning="times" role="MULOP">*</XMTok>
-                            <ERROR class="undefined">\diffp</ERROR>
-                            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch2.E25.m1.3"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch2.E25.m1.3">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                            </XMApp>
                           </XMApp>
-                          <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMDual>
+                        <XMApp>
+                          <XMTok meaning="list"/>
+                          <XMRef idref="Ch2.E25.m1.1"/>
+                          <XMRef idref="Ch2.E25.m1.2"/>
                         </XMApp>
-                        <XMTok role="PUNCT">,</XMTok>
-                        <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.E25.m1.1">N</XMTok>
-                      </XMWrap>
-                    </XMDual>
+                        <XMWrap>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="Ch2.E25.m1.1">T</XMTok>
+                          <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="Ch2.E25.m1.2">N</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
                     <XMApp>
                       <XMTok meaning="minus" role="ADDOP">-</XMTok>
                       <XMApp>
                         <XMTok meaning="times" role="MULOP">⁢</XMTok>
                         <XMApp>
-                          <XMTok meaning="times" role="MULOP">*</XMTok>
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMTok font="italic" role="UNKNOWN">N</XMTok>
                           <XMApp>
-                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                            <XMApp>
-                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                              <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                              <XMApp>
-                                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
-                                <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
-                              </XMApp>
-                            </XMApp>
-                            <ERROR class="undefined">\diffp</ERROR>
+                            <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                            <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
                           </XMApp>
-                          <XMTok font="italic" role="UNKNOWN">p</XMTok>
                         </XMApp>
-                        <XMTok font="italic" role="UNKNOWN">n</XMTok>
-                        <XMTok font="italic" role="UNKNOWN" rpadding="1.7pt">T</XMTok>
+                        <XMApp rpadding="1.7pt">
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMDual>
+                            <XMRef idref="Ch2.E25.m1.4"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="true">(</XMTok>
+                              <XMApp xml:id="Ch2.E25.m1.4">
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMApp>
+                                  <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                  <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                  <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                        </XMApp>
                       </XMApp>
                     </XMApp>
                   </XMApp>
@@ -14315,38 +14431,62 @@ temperature and <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id=
             <tag role="autoref">Equation 2.26</tag>
             <tag role="refnum">2.26</tag>
           </tags>
-          <Math mode="display" tex="N\diffp*{p}{V}{T}=\diffp*{p}{{v_{N}}}{T}=-n^{2}\diffp*{p}{n}{T}" text="N * [\diffp] * p * V * T = [\diffp] * p * v _ N * T = - n ^ 2 * [\diffp] * p * n * T" xml:id="Ch2.E26.m1">
+          <Math mode="display" tex="N\left(\frac{\partial p}{\partial V}\right)_{T}=\left(\frac{\partial p}{%&#10;\partial{v_{N}}}\right)_{T}=-n^{2}\left(\frac{\partial p}{\partial n}\right)_{T}" text="N * (partial-differential@(p) / partial-differential@(V)) _ T = (partial-differential@(p) / partial-differential@(v _ N)) _ T = - n ^ 2 * (partial-differential@(p) / partial-differential@(n)) _ T" xml:id="Ch2.E26.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="multirelation"/>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
                   <XMApp>
-                    <XMTok meaning="times" role="MULOP">*</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                      <ERROR class="undefined">\diffp</ERROR>
-                    </XMApp>
-                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMDual>
+                      <XMRef idref="Ch2.E26.m1.1"/>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="true">(</XMTok>
+                        <XMApp xml:id="Ch2.E26.m1.1">
+                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                          <XMApp>
+                            <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
                   </XMApp>
-                  <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                  <XMTok font="italic" role="UNKNOWN">T</XMTok>
                 </XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
-                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">*</XMTok>
-                    <ERROR class="undefined">\diffp</ERROR>
-                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                  </XMApp>
-                  <XMApp>
-                    <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
-                    <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
-                  </XMApp>
-                  <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                  <XMDual>
+                    <XMRef idref="Ch2.E26.m1.2"/>
+                    <XMWrap>
+                      <XMTok role="OPEN" stretchy="true">(</XMTok>
+                      <XMApp xml:id="Ch2.E26.m1.2">
+                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                        <XMApp>
+                          <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                            <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                      <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                    </XMWrap>
+                  </XMDual>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
                 </XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
@@ -14354,20 +14494,32 @@ temperature and <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id=
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                     <XMApp>
-                      <XMTok meaning="times" role="MULOP">*</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMApp>
-                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                          <XMTok font="italic" role="UNKNOWN">n</XMTok>
-                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
-                        </XMApp>
-                        <ERROR class="undefined">\diffp</ERROR>
-                      </XMApp>
-                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
                     </XMApp>
-                    <XMTok font="italic" role="UNKNOWN">n</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch2.E26.m1.3"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch2.E26.m1.3">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                    </XMApp>
                   </XMApp>
                 </XMApp>
               </XMApp>
@@ -14570,7 +14722,7 @@ The differential in volume is</p>
               <tag role="autoref">Equation 2.28</tag>
               <tag role="refnum">2.28</tag>
             </tags>
-            <Math mode="display" tex="dV=\diffp*{V}{T}{p}dT+\diffp*{V}{p}{T}dp" text="d * V = [\diffp] * V * T * p * d * T + [\diffp] * V * p * T * d * p" xml:id="Ch2.E28.m1">
+            <Math mode="display" tex="dV=\left(\frac{\partial V}{\partial T}\right)_{p}dT+\left(\frac{\partial V}{%&#10;\partial p}\right)_{T}dp" text="d * V = (partial-differential@(V) / partial-differential@(T)) _ p * d * T + (partial-differential@(V) / partial-differential@(p)) _ T * d * p" xml:id="Ch2.E28.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -14584,24 +14736,54 @@ The differential in volume is</p>
                     <XMApp>
                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
                       <XMApp>
-                        <XMTok meaning="times" role="MULOP">*</XMTok>
-                        <ERROR class="undefined">\diffp</ERROR>
-                        <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMDual>
+                          <XMRef idref="Ch2.E28.m1.1"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="true">(</XMTok>
+                            <XMApp xml:id="Ch2.E28.m1.1">
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
                       </XMApp>
-                      <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
                       <XMTok font="italic" role="UNKNOWN">d</XMTok>
                       <XMTok font="italic" role="UNKNOWN">T</XMTok>
                     </XMApp>
                     <XMApp>
                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
                       <XMApp>
-                        <XMTok meaning="times" role="MULOP">*</XMTok>
-                        <ERROR class="undefined">\diffp</ERROR>
-                        <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMDual>
+                          <XMRef idref="Ch2.E28.m1.2"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="true">(</XMTok>
+                            <XMApp xml:id="Ch2.E28.m1.2">
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
                       </XMApp>
-                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">T</XMTok>
                       <XMTok font="italic" role="UNKNOWN">d</XMTok>
                       <XMTok font="italic" role="UNKNOWN">p</XMTok>
                     </XMApp>
@@ -14620,7 +14802,7 @@ characterizes the expansion of the system with increase in temperature</p>
               <tag role="autoref">Equation 2.29</tag>
               <tag role="refnum">2.29</tag>
             </tags>
-            <Math mode="display" tex="\beta_{p}=\frac{1}{V}\diffp*{V}{T}{p}\equiv\mbox{Thermal expansion coefficient}" text="beta _ p = (1 / V) * [\diffp] * V * T * p equivalent-to [Thermal expansion coefficient]" xml:id="Ch2.E29.m1">
+            <Math mode="display" tex="\beta_{p}=\frac{1}{V}\left(\frac{\partial V}{\partial T}\right)_{p}\equiv\mbox%&#10;{Thermal expansion coefficient}" text="beta _ p = (1 / V) * (partial-differential@(V) / partial-differential@(T)) _ p equivalent-to [Thermal expansion coefficient]" xml:id="Ch2.E29.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="multirelation"/>
@@ -14633,20 +14815,32 @@ characterizes the expansion of the system with increase in temperature</p>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                     <XMApp>
-                      <XMTok meaning="times" role="MULOP">*</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMApp>
-                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                          <XMTok meaning="1" role="NUMBER">1</XMTok>
-                          <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                        </XMApp>
-                        <ERROR class="undefined">\diffp</ERROR>
-                      </XMApp>
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMTok meaning="1" role="NUMBER">1</XMTok>
                       <XMTok font="italic" role="UNKNOWN">V</XMTok>
                     </XMApp>
-                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch2.E29.m1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch2.E29.m1.1">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                    </XMApp>
                   </XMApp>
                   <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
                   <XMText>Thermal expansion coefficient</XMText>
@@ -14661,7 +14855,7 @@ characterizes the expansion of the system with increase in temperature</p>
               <tag role="autoref">Equation 2.30</tag>
               <tag role="refnum">2.30</tag>
             </tags>
-            <Math mode="display" tex="\kappa_{T}=\frac{-1}{V}\diffp*{V}{p}{T}\equiv\mbox{Isothermal compressiblity}" text="kappa _ T = ((- 1) / V) * [\diffp] * V * p * T equivalent-to [Isothermal compressiblity]" xml:id="Ch2.E30.m1">
+            <Math mode="display" tex="\kappa_{T}=\frac{-1}{V}\left(\frac{\partial V}{\partial p}\right)_{T}\equiv%&#10;\mbox{Isothermal compressiblity}" text="kappa _ T = ((- 1) / V) * (partial-differential@(V) / partial-differential@(p)) _ T equivalent-to [Isothermal compressiblity]" xml:id="Ch2.E30.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="multirelation"/>
@@ -14674,23 +14868,35 @@ characterizes the expansion of the system with increase in temperature</p>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                     <XMApp>
-                      <XMTok meaning="times" role="MULOP">*</XMTok>
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                       <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMApp>
-                          <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                          <XMApp>
-                            <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                            <XMTok meaning="1" role="NUMBER">1</XMTok>
-                          </XMApp>
-                          <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                        </XMApp>
-                        <ERROR class="undefined">\diffp</ERROR>
+                        <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                        <XMTok meaning="1" role="NUMBER">1</XMTok>
                       </XMApp>
                       <XMTok font="italic" role="UNKNOWN">V</XMTok>
                     </XMApp>
-                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch2.E30.m1.1"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch2.E30.m1.1">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                    </XMApp>
                   </XMApp>
                   <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
                   <XMText>Isothermal compressiblity</XMText>
@@ -14804,7 +15010,7 @@ characterizes the expansion of the system with increase in temperature</p>
               <tag role="autoref">Equation 2.31</tag>
               <tag role="refnum">2.31</tag>
             </tags>
-            <Math mode="display" tex="B_{T}=-\frac{1}{V}\diffp*{p}{V}{T}=\frac{1}{\kappa_{T}}" text="B _ T = - (1 / V) * [\diffp] * p * V * T = 1 / kappa _ T" xml:id="Ch2.E31.m1">
+            <Math mode="display" tex="B_{T}=-\frac{1}{V}\left(\frac{\partial p}{\partial V}\right)_{T}=\frac{1}{%&#10;\kappa_{T}}" text="B _ T = - (1 / V) * (partial-differential@(p) / partial-differential@(V)) _ T = 1 / kappa _ T" xml:id="Ch2.E31.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="multirelation"/>
@@ -14819,20 +15025,32 @@ characterizes the expansion of the system with increase in temperature</p>
                     <XMApp>
                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
                       <XMApp>
-                        <XMTok meaning="times" role="MULOP">*</XMTok>
-                        <XMApp>
-                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                          <XMApp>
-                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                            <XMTok meaning="1" role="NUMBER">1</XMTok>
-                            <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                          </XMApp>
-                          <ERROR class="undefined">\diffp</ERROR>
-                        </XMApp>
-                        <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                        <XMTok meaning="1" role="NUMBER">1</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">V</XMTok>
                       </XMApp>
-                      <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMDual>
+                          <XMRef idref="Ch2.E31.m1.1"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="true">(</XMTok>
+                            <XMApp xml:id="Ch2.E31.m1.1">
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                      </XMApp>
                     </XMApp>
                   </XMApp>
                   <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -15020,12 +15238,12 @@ The speed of sound is</p>
                 <tag role="typerefnum">footnote 5</tag>
               </tags>The “S” means at fixed entropy, and as the course progresses we will write
 <equation xml:id="Ch2.Ex8">
-                <Math mode="display" tex="\kappa_{S}\equiv-\frac{1}{V}\diffp*{V}{p}{S}\,." text="kappa _ S equivalent-to - (1 / V) * [\diffp] * V * p * S" xml:id="Ch2.Ex8.m1">
+                <Math mode="display" tex="\kappa_{S}\equiv-\frac{1}{V}\left(\frac{\partial V}{\partial p}\right)_{S}\,." text="kappa _ S equivalent-to - (1 / V) * (partial-differential@(V) / partial-differential@(p)) _ S" xml:id="Ch2.Ex8.m1">
                   <XMath>
                     <XMDual>
-                      <XMRef idref="Ch2.Ex8.m1.1"/>
+                      <XMRef idref="Ch2.Ex8.m1.2"/>
                       <XMWrap>
-                        <XMApp xml:id="Ch2.Ex8.m1.1">
+                        <XMApp xml:id="Ch2.Ex8.m1.2">
                           <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
                           <XMApp>
                             <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -15037,20 +15255,32 @@ The speed of sound is</p>
                             <XMApp>
                               <XMTok meaning="times" role="MULOP">⁢</XMTok>
                               <XMApp>
-                                <XMTok meaning="times" role="MULOP">*</XMTok>
-                                <XMApp>
-                                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                                  <XMApp>
-                                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                                    <XMTok meaning="1" role="NUMBER">1</XMTok>
-                                    <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                                  </XMApp>
-                                  <ERROR class="undefined">\diffp</ERROR>
-                                </XMApp>
+                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                <XMTok meaning="1" role="NUMBER">1</XMTok>
                                 <XMTok font="italic" role="UNKNOWN">V</XMTok>
                               </XMApp>
-                              <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                              <XMTok font="italic" role="UNKNOWN" rpadding="1.7pt">S</XMTok>
+                              <XMApp rpadding="1.7pt">
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                <XMDual>
+                                  <XMRef idref="Ch2.Ex8.m1.1"/>
+                                  <XMWrap>
+                                    <XMTok role="OPEN" stretchy="true">(</XMTok>
+                                    <XMApp xml:id="Ch2.Ex8.m1.1">
+                                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                      <XMApp>
+                                        <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                                      </XMApp>
+                                      <XMApp>
+                                        <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                                      </XMApp>
+                                    </XMApp>
+                                    <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                                  </XMWrap>
+                                </XMDual>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
+                              </XMApp>
                             </XMApp>
                           </XMApp>
                         </XMApp>
@@ -15083,7 +15313,7 @@ For an ideal gas an adiabatic expansion means <Math mode="inline" tex="pV^{\gamm
               <tag role="autoref">Equation 2.34</tag>
               <tag role="refnum">2.34</tag>
             </tags>
-            <Math mode="display" tex="\kappa_{S}=-\frac{1}{V}\diffp*{V}{p}{adiab}" text="kappa _ S = - (1 / V) * [\diffp] * V * p * a * d * i * a * b" xml:id="Ch2.E34.m1">
+            <Math mode="display" tex="\kappa_{S}=-\frac{1}{V}\left(\frac{\partial V}{\partial p}\right)_{adiab}" text="kappa _ S = - (1 / V) * (partial-differential@(V) / partial-differential@(p)) _ (a * d * i * a * b)" xml:id="Ch2.E34.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -15097,24 +15327,39 @@ For an ideal gas an adiabatic expansion means <Math mode="inline" tex="pV^{\gamm
                     <XMApp>
                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
                       <XMApp>
-                        <XMTok meaning="times" role="MULOP">*</XMTok>
-                        <XMApp>
-                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                          <XMApp>
-                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                            <XMTok meaning="1" role="NUMBER">1</XMTok>
-                            <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                          </XMApp>
-                          <ERROR class="undefined">\diffp</ERROR>
-                        </XMApp>
+                        <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                        <XMTok meaning="1" role="NUMBER">1</XMTok>
                         <XMTok font="italic" role="UNKNOWN">V</XMTok>
                       </XMApp>
-                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">d</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">i</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">b</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMDual>
+                          <XMRef idref="Ch2.E34.m1.1"/>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="true">(</XMTok>
+                            <XMApp xml:id="Ch2.E34.m1.1">
+                              <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">a</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">d</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">i</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">a</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">b</XMTok>
+                        </XMApp>
+                      </XMApp>
                     </XMApp>
                   </XMApp>
                 </XMApp>
