@@ -13308,8 +13308,8 @@ some of the heat added (per degree of temperature change) isused by the gas to d
             <XMath>
               <XMTok font="italic" name="gamma" role="UNKNOWN">γ</XMTok>
             </XMath>
-          </Math> is close to unity in practice and often nearly constant
-Using the ideal gas relation in Eq. (<ref labelref="LABEL:eq:cpcvnk"/>), <Math mode="inline" tex="C_{V}=5/2Nk_{B}" text="C _ V = (5 / 2) * N * k _ B" xml:id="Ch2.S3.p9.m2">
+          </Math> is close to unity in practice and often nearly constant.
+For instance for a diatomic gas where <Math mode="inline" tex="C_{V}=\tfrac{5}{2}Nk_{B}" text="C _ V = (5 / 2) * N * k _ B" xml:id="Ch2.S3.p9.m2">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -13321,9 +13321,9 @@ Using the ideal gas relation in Eq. (<ref labelref="LABEL:eq:cpcvnk"/>), <Math 
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMApp>
-                    <XMTok meaning="divide" role="MULOP">/</XMTok>
-                    <XMTok meaning="5" role="NUMBER">5</XMTok>
-                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                    <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                    <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
                   </XMApp>
                   <XMTok font="italic" role="UNKNOWN">N</XMTok>
                   <XMApp>
@@ -13334,7 +13334,8 @@ Using the ideal gas relation in Eq. (<ref labelref="LABEL:eq:cpcvnk"/>), <Math 
                 </XMApp>
               </XMApp>
             </XMath>
-          </Math> for a diatomic gas we have <Math mode="inline" tex="\gamma=7/5" text="gamma = 7 / 5" xml:id="Ch2.S3.p9.m3">
+          </Math>, we find
+using the relation in Eq. (<ref labelref="LABEL:eq:cpcvnk"/>), that <Math mode="inline" tex="\gamma=7/5" text="gamma = 7 / 5" xml:id="Ch2.S3.p9.m3">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -13464,7 +13465,7 @@ Usually the dependence on <Math mode="inline" tex="N" text="N" xml:id="Ch2.S4.p1
                 <XMTok meaning="multirelation"/>
                 <XMApp>
                   <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+<!--  %**** main.tex Line 650 **** -->                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
                   <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
                 </XMApp>
                 <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
@@ -13479,7 +13480,7 @@ Usually the dependence on <Math mode="inline" tex="N" text="N" xml:id="Ch2.S4.p1
                   <XMTok meaning="1" role="NUMBER">1</XMTok>
                   <XMTok font="italic" role="UNKNOWN">n</XMTok>
                 </XMApp>
-<!--  %**** main.tex Line 650 **** -->              </XMApp>
+              </XMApp>
             </XMath>
           </Math>
         </equation>
@@ -14186,9 +14187,8 @@ temperature and <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id=
         </equation>
         <p>We say that pressure is <emph class="ltx_markedasmath" font="italic">intensive</emph> since it does not change as the volume is changed provided the density is held fixed.</p>
       </para>
-      <para xml:id="Ch2.S4.p3">
-        <p>Using the chain rule, we have:
-<!--  %**** main.tex Line 675 **** --></p>
+<!--  %**** main.tex Line 675 **** -->      <para xml:id="Ch2.S4.p3">
+        <p>Using the chain rule, we have:</p>
         <equation xml:id="Ch2.E24">
           <tags>
             <tag>(2.24)</tag>
@@ -14666,7 +14666,7 @@ At low density, we can make an expansion in the density <Math mode="inline" tex=
                 </XMApp>
               </XMath>
             </Math> is valid, while at higher density
-there are corrections. The <Math mode="inline" tex="B(T)" text="B * T" xml:id="Ch2.S4.SS1.p1.m3">
+<!--  %**** main.tex Line 700 **** -->there are corrections. The <Math mode="inline" tex="B(T)" text="B * T" xml:id="Ch2.S4.SS1.p1.m3">
               <XMath>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -14711,7 +14711,7 @@ there are corrections. The <Math mode="inline" tex="B(T)" text="B * T" xml:id="C
                   </XMApp>
                 </XMApp>
               </XMath>
-            </Math>. This goes like the square of the number of particles, and hence reflects the interactions between them. <break/><!--  %**** main.tex Line 700 **** --></p>
+            </Math>. This goes like the square of the number of particles, and hence reflects the interactions between them. <break/></p>
         </para>
         <para class="ltx_noindent" xml:id="Ch2.S4.SS1.p2">
           <p><text font="bold">Response coefficients:</text> Now consider a general substance. Instead of working with the pressure as a function of temperature and volume, we will often work with the volume as a function of temperature and pressure, which contains the same information.
@@ -15067,7 +15067,7 @@ characterizes the expansion of the system with increase in temperature</p>
               </XMath>
             </Math>
           </equation>
-          <p>At constant temperature, the increase in pressure <Math mode="inline" tex="{\rm d}p" text="d * p" xml:id="Ch2.S4.SS1.p5.m3">
+<!--  %**** main.tex Line 725 **** -->          <p>At constant temperature, the increase in pressure <Math mode="inline" tex="{\rm d}p" text="d * p" xml:id="Ch2.S4.SS1.p5.m3">
               <XMath>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -15094,8 +15094,7 @@ characterizes the expansion of the system with increase in temperature</p>
                   <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
                 </XMApp>
               </XMath>
-            </Math>:
-<!--  %**** main.tex Line 725 **** --></p>
+            </Math>:</p>
           <equation xml:id="Ch2.E32">
             <tags>
               <tag>(2.32)</tag>
@@ -15395,7 +15394,8 @@ For an ideal gas an adiabatic expansion means <Math mode="inline" tex="pV^{\gamm
               </XMath>
             </Math>
           </equation>
-          <p>We will show much later in the course that for any homogeneous substance</p>
+          <p>We will show much later in the course that for any homogeneous substance
+<!--  %**** main.tex Line 750 **** --></p>
           <equation labels="LABEL:eq:kappas" xml:id="Ch2.E36">
             <tags>
               <tag>(2.36)</tag>
@@ -15408,7 +15408,7 @@ For an ideal gas an adiabatic expansion means <Math mode="inline" tex="pV^{\gamm
                   <XMTok meaning="equals" role="RELOP">=</XMTok>
                   <XMApp>
                     <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-<!--  %**** main.tex Line 750 **** -->                    <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
+                    <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
                     <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
                   </XMApp>
                   <XMApp>
@@ -15702,7 +15702,8 @@ Outside of this list, the constants will be given.</p>
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>.</p>
+              </Math>.
+<!--  %**** main.tex Line 775 **** --></p>
           </para>
         </item>
         <item xml:id="A1.S0.I1.i5">
@@ -15752,8 +15753,7 @@ Outside of this list, the constants will be given.</p>
                     <XMTok role="UNKNOWN">L</XMTok>
                   </XMApp>
                 </XMath>
-              </Math>.
-<!--  %**** main.tex Line 775 **** --></p>
+              </Math>.</p>
           </para>
         </item>
         <item xml:id="A1.S0.I1.i6">
@@ -16078,7 +16078,8 @@ Outside of this list, the constants will be given.</p>
                   <tag role="typerefnum">2nd item</tag>
                 </tags>
                 <para xml:id="A1.S0.I1.i9.I1.i2.p1">
-                  <p>The macroscopic way: an Avogadro’s number of protons weighs a gram. This is the molar mass of the proton:</p>
+                  <p>The macroscopic way: an Avogadro’s number of protons weighs a gram. This is the molar mass of the proton:
+<!--  %**** main.tex Line 800 **** --></p>
                   <equation xml:id="A1.E5">
                     <tags>
                       <tag>(A.5)</tag>
@@ -16091,7 +16092,7 @@ Outside of this list, the constants will be given.</p>
                           <XMTok meaning="multirelation"/>
                           <XMApp>
                             <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-<!--  %**** main.tex Line 800 **** -->                            <XMTok font="caligraphic" role="UNKNOWN">M</XMTok>
+                            <XMTok font="caligraphic" role="UNKNOWN">M</XMTok>
                             <XMTok fontsize="70%" role="UNKNOWN">ml</XMTok>
                           </XMApp>
                           <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -16516,7 +16517,8 @@ in atomic hydrogen gas at room temperature</p>
                   <tag role="typerefnum">2nd item</tag>
                 </tags>
                 <para xml:id="A1.S0.I1.i10.I1.i2.p1">
-                  <p>In comparison to the proton mass:</p>
+                  <p>In comparison to the proton mass:
+<!--  %**** main.tex Line 825 **** --></p>
                   <equation xml:id="A1.E9">
                     <tags>
                       <tag>(A.9)</tag>
@@ -16527,7 +16529,7 @@ in atomic hydrogen gas at room temperature</p>
                       <XMath>
                         <XMApp>
                           <XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">≃</XMTok>
-<!--  %**** main.tex Line 825 **** -->                          <XMApp>
+                          <XMApp>
                             <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                             <XMApp>
                               <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
@@ -16857,7 +16859,7 @@ in atomic hydrogen gas at room temperature</p>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMApp>
                       <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" role="UNKNOWN">a</XMTok>
+<!--  %**** main.tex Line 850 **** -->                      <XMTok font="italic" role="UNKNOWN">a</XMTok>
                       <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
                     </XMApp>
                     <XMApp>
@@ -16867,7 +16869,7 @@ in atomic hydrogen gas at room temperature</p>
                         <XMTok name="ring" role="OVERACCENT">̊</XMTok>
                         <XMTok role="UNKNOWN">A</XMTok>
                       </XMApp>
-<!--  %**** main.tex Line 850 **** -->                    </XMApp>
+                    </XMApp>
                   </XMApp>
                 </XMath>
               </Math>
@@ -17074,7 +17076,7 @@ An explosion involves roughly an Avogadro’s number of atomic transitions, with
           </para>
           <para xml:id="A1.S0.I1.i14.p2">
             <p>In the Bohr model
-the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,\ring{\rm A}" text="a _ 0 = 0.53 * ring@(A)" xml:id="A1.S0.I1.i14.p2.m1">
+<!--  %**** main.tex Line 875 **** -->the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,\ring{\rm A}" text="a _ 0 = 0.53 * ring@(A)" xml:id="A1.S0.I1.i14.p2.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -17112,8 +17114,7 @@ the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,
                     <XMTok meaning="Planck-constant-over-2-pi" name="hbar" role="ID">ℏ</XMTok>
                   </XMApp>
                 </XMath>
-              </Math>. So the momentum is
-<!--  %**** main.tex Line 875 **** --></p>
+              </Math>. So the momentum is</p>
             <equation xml:id="A1.E17">
               <tags>
                 <tag>(A.17)</tag>
@@ -17534,7 +17535,7 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
                 </MathFork>
               </equation>
             </equationgroup>
-<!--  %**** main.tex Line 900 **** -->          </para>
+          </para>
           <para xml:id="A1.S0.I1.i14.p3">
             <p>Thus we have for the Hydrogen atom where <Math mode="inline" tex="p=\hbar/a_{0}" text="p = Planck-constant-over-2-pi / a _ 0" xml:id="A1.S0.I1.i14.p3.m1">
                 <XMath>
@@ -17832,8 +17833,8 @@ kinetic energy is <Math mode="inline" tex="\hbar^{2}/2mL^{2}" text="(Planck-cons
 <!--  %The easiest way 
      %to remember the Bohr model is
      %“st
-     %“label–eq:ba˝
      %**** main.tex Line 925 ****
+     %“label–eq:ba˝
      %“beta = “alpha “, .
      %“stp
      %Here $“beta=v/c$ is the velocity (divided by $c$) of the electron going around the proton, and the fine structure constant $“alpha$ is
@@ -18066,8 +18067,8 @@ the thermal de Broglie wavelength of a <emph font="italic">proton</emph> at room
                 </XMath>
               </Math>
             </equation>
-          </para>
-<!--  %**** main.tex Line 950 **** -->        </item>
+<!--  %**** main.tex Line 950 **** -->          </para>
+        </item>
       </enumerate>
     </para>
 <!--  %===Math -->  </appendix>
@@ -19756,8 +19757,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             </MathFork>
           </equation>
         </equationgroup>
-        <p>These get me through life.
-<!--  %**** main.tex Line 1000 **** --></p>
+<!--  %**** main.tex Line 1000 **** -->        <p>These get me through life.</p>
       </para>
       <para xml:id="A2.S2.p2">
         <p>They can be integrated, etc, so for example the expression for <Math mode="inline" tex="\log(1+x)" text="logarithm@(1 + x)" xml:id="A2.S2.p2.m1">
@@ -20687,8 +20687,9 @@ I like to write <Math mode="inline" tex="\Gamma(z)" text="Gamma * z" xml:id="A2.
             </XMath>
           </Math>
         </equation>
-        <p>which comes up a lot later in the course.</p>
+        <p>which comes up a lot later in the course.
+<!--  %**** main.tex Line 1050 **** --></p>
       </para>
-<!--  %**** main.tex Line 1050 **** -->    </section>
+    </section>
   </appendix>
 </document>
