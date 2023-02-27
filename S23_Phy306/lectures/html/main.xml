@@ -13635,18 +13635,9 @@ Usually the dependence on <Math mode="inline" tex="N" text="N" xml:id="Ch2.S4.p1
             </XMath>
           </Math>
         </equation>
-        <p>The pressure is <emph class="ltx_markedasmath" font="italic">intensive</emph>. This means that
-if at fixed temperature, I double the volume <Math mode="inline" tex="V" text="V" xml:id="Ch2.S4.p2.m2">
-            <XMath>
-              <XMTok font="italic" role="UNKNOWN">V</XMTok>
-            </XMath>
-          </Math> and double <Math mode="inline" tex="N" text="N" xml:id="Ch2.S4.p2.m3">
-            <XMath>
-              <XMTok font="italic" role="UNKNOWN">N</XMTok>
-            </XMath>
-          </Math>, the
-density and volume-per-particle remain fixed. The pressure doesn’t
-change with this doubling since the temperature and density are fixed.</p>
+        <p>The pressure is intensive. This means that
+if I consider twice as many particles at the same temperature and
+desity the pressure is unchanged.</p>
       </para>
       <para xml:id="Ch2.S4.p3">
         <p>Since the pressure is intensive, <Math mode="inline" tex="p=p(T,V,N)" text="p = p * vector@(T, V, N)" xml:id="Ch2.S4.p3.m1">
@@ -14573,11 +14564,77 @@ temperature and <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id=
         </equation>
       </para>
       <para xml:id="Ch2.S4.p5">
-        <p>Thus, the derivative with respect to volume records how the pressure changes with the particle density. Since <Math mode="inline" tex="N" text="N" xml:id="Ch2.S4.p5.m1">
-            <XMath>
-              <XMTok font="italic" role="UNKNOWN">N</XMTok>
-            </XMath>
-          </Math> isn’t normally written, the notation that is commonly used is:</p>
+        <p>Thus, the derivative with respect to volume records how the pressure changes with the particle density<note mark="5" role="footnote" xml:id="Ch2.footnote5"><tags>
+              <tag>5</tag>
+              <tag role="autoref">footnote 5</tag>
+              <tag role="refnum">5</tag>
+              <tag role="typerefnum">footnote 5</tag>
+            </tags>More explicitly we would write
+<equation xml:id="Ch2.Ex9">
+              <Math mode="display" tex="\left(\frac{\partial p}{\partial V}\right)_{T}\equiv\left(\frac{\partial p}{%&#10;\partial V}\right)_{T,N}" text="(partial-differential@(p) / partial-differential@(V)) _ T equivalent-to (partial-differential@(p) / partial-differential@(V)) _ (list@(T, N))" xml:id="Ch2.Ex9.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch2.Ex9.m1.3"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch2.Ex9.m1.3">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMDual>
+                        <XMRef idref="Ch2.Ex9.m1.4"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="true">(</XMTok>
+                          <XMApp xml:id="Ch2.Ex9.m1.4">
+                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                      <XMDual>
+                        <XMApp>
+                          <XMTok meaning="list"/>
+                          <XMRef idref="Ch2.Ex9.m1.1"/>
+                          <XMRef idref="Ch2.Ex9.m1.2"/>
+                        </XMApp>
+                        <XMWrap>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="Ch2.Ex9.m1.1">T</XMTok>
+                          <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="Ch2.Ex9.m1.2">N</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math>
+            </equation></note>:
+<!--  %Since $N$ isn’t normally written,   the notation that is commonly used is: --></p>
         <equation xml:id="Ch2.E28">
           <tags>
             <tag>(2.28)</tag>
@@ -14679,7 +14736,7 @@ temperature and <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id=
             </XMath>
           </Math>
         </equation>
-        <p>Hopefully this is clear enough.</p>
+<!--  %**** main.tex Line 700 **** -->        <p>Hopefully this is clear enough.</p>
       </para>
       <subsection inlist="toc" xml:id="Ch2.S4.SS1">
         <tags>
@@ -14689,7 +14746,7 @@ temperature and <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id=
           <tag role="typerefnum">§2.4.1</tag>
         </tags>
         <title><tag close=" ">2.4.1</tag>Pressure, Volume, and the Equation of State</title>
-<!--  %**** main.tex Line 700 **** -->        <para class="ltx_noindent" xml:id="Ch2.S4.SS1.p1">
+        <para class="ltx_noindent" xml:id="Ch2.S4.SS1.p1">
           <p><text font="bold">Virial Expansion:</text> First consider gasses.
 At low density, we can make an expansion in the density <Math mode="inline" tex="N/V" text="N / V" xml:id="Ch2.S4.SS1.p1.m1">
               <XMath>
@@ -15014,7 +15071,7 @@ characterizes the expansion of the system with increase in temperature</p>
                   <XMTok meaning="multirelation"/>
                   <XMApp>
                     <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                    <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
+<!--  %**** main.tex Line 725 **** -->                    <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
                     <XMTok font="italic" fontsize="70%" role="UNKNOWN">T</XMTok>
                   </XMApp>
                   <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -15058,7 +15115,7 @@ characterizes the expansion of the system with increase in temperature</p>
             </Math>
           </equation>
         </para>
-<!--  %**** main.tex Line 725 **** -->        <para xml:id="Ch2.S4.SS1.p4">
+        <para xml:id="Ch2.S4.SS1.p4">
           <p>The derivatives of <Math mode="inline" tex="V" text="V" xml:id="Ch2.S4.SS1.p4.m1">
               <XMath>
                 <XMTok font="italic" role="UNKNOWN">V</XMTok>
@@ -15383,19 +15440,19 @@ The speed of sound is</p>
                   <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
                 </XMApp>
               </XMath>
-            </Math> is the decrease in volume with increasing pressure, with no heat flow<note mark="5" role="footnote" xml:id="Ch2.footnote5"><tags>
-                <tag>5</tag>
-                <tag role="autoref">footnote 5</tag>
-                <tag role="refnum">5</tag>
-                <tag role="typerefnum">footnote 5</tag>
-              </tags>The “S” means at fixed entropy, and as the course progresses we will write
-<equation xml:id="Ch2.Ex9">
-                <Math mode="display" tex="\kappa_{S}\equiv-\frac{1}{V}\left(\frac{\partial V}{\partial p}\right)_{S}\,." text="kappa _ S equivalent-to - (1 / V) * (partial-differential@(V) / partial-differential@(p)) _ S" xml:id="Ch2.Ex9.m1">
+            </Math> is the decrease in volume with increasing pressure, with no heat flow<note mark="6" role="footnote" xml:id="Ch2.footnote6"><tags>
+                <tag>6</tag>
+                <tag role="autoref">footnote 6</tag>
+                <tag role="refnum">6</tag>
+                <tag role="typerefnum">footnote 6</tag>
+              </tags><!--  %**** main.tex Line 750 **** -->The “S” means at fixed entropy, and as the course progresses we will write
+<equation xml:id="Ch2.Ex10">
+                <Math mode="display" tex="\kappa_{S}\equiv-\frac{1}{V}\left(\frac{\partial V}{\partial p}\right)_{S}\,." text="kappa _ S equivalent-to - (1 / V) * (partial-differential@(V) / partial-differential@(p)) _ S" xml:id="Ch2.Ex10.m1">
                   <XMath>
                     <XMDual>
-                      <XMRef idref="Ch2.Ex9.m1.2"/>
+                      <XMRef idref="Ch2.Ex10.m1.2"/>
                       <XMWrap>
-                        <XMApp xml:id="Ch2.Ex9.m1.2">
+                        <XMApp xml:id="Ch2.Ex10.m1.2">
                           <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
                           <XMApp>
                             <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -15414,10 +15471,10 @@ The speed of sound is</p>
                               <XMApp rpadding="1.7pt">
                                 <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                                 <XMDual>
-                                  <XMRef idref="Ch2.Ex9.m1.1"/>
+                                  <XMRef idref="Ch2.Ex10.m1.1"/>
                                   <XMWrap>
                                     <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                    <XMApp xml:id="Ch2.Ex9.m1.1">
+                                    <XMApp xml:id="Ch2.Ex10.m1.1">
                                       <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                       <XMApp>
                                         <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -15442,7 +15499,7 @@ The speed of sound is</p>
                   </XMath>
                 </Math>
               </equation>
-For an ideal gas, an adiabatic expansion means that <Math mode="inline" tex="pV^{\gamma}={\rm const}" text="p * V ^ gamma = const" xml:id="Ch2.footnote5.m1">
+For an ideal gas, an adiabatic expansion means that <Math mode="inline" tex="pV^{\gamma}={\rm const}" text="p * V ^ gamma = const" xml:id="Ch2.footnote6.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -15471,7 +15528,7 @@ For an ideal gas, an adiabatic expansion means that <Math mode="inline" tex="pV^
                   <XMTok meaning="equals" role="RELOP">=</XMTok>
                   <XMApp>
                     <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-<!--  %**** main.tex Line 750 **** -->                    <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
+                    <XMTok font="italic" name="kappa" role="UNKNOWN">κ</XMTok>
                     <XMTok font="italic" fontsize="70%" role="UNKNOWN">S</XMTok>
                   </XMApp>
                   <XMApp>
@@ -15767,14 +15824,14 @@ For an ideal gas, an adiabatic expansion means that <Math mode="inline" tex="pV^
               </XMApp>
             </XMath>
           </Math>:</p>
-        <equation xml:id="Ch2.Ex10">
-          <Math mode="display" tex="e_{N}\equiv\frac{U}{N}" text="e _ N equivalent-to U / N" xml:id="Ch2.Ex10.m1">
+        <equation xml:id="Ch2.Ex11">
+          <Math mode="display" tex="e_{N}\equiv\frac{U}{N}" text="e _ N equivalent-to U / N" xml:id="Ch2.Ex11.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
                 <XMApp>
                   <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                  <XMTok font="italic" role="UNKNOWN">e</XMTok>
+<!--  %**** main.tex Line 775 **** -->                  <XMTok font="italic" role="UNKNOWN">e</XMTok>
                   <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
                 </XMApp>
                 <XMApp>
@@ -15795,7 +15852,7 @@ For an ideal gas, an adiabatic expansion means that <Math mode="inline" tex="pV^
               </XMApp>
             </XMath>
           </Math> is a function of temperature and the
-<!--  %**** main.tex Line 775 **** -->volume per particle, <Math mode="inline" tex="U/N=e_{N}(T,v_{N})" text="U / N = e _ N * open-interval@(T, v _ N)" xml:id="Ch2.S5.p2.m4">
+volume per particle, <Math mode="inline" tex="U/N=e_{N}(T,v_{N})" text="U / N = e _ N * open-interval@(T, v _ N)" xml:id="Ch2.S5.p2.m4">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -16116,13 +16173,13 @@ particles and is therefore proportional to <Math mode="inline" tex="N^{2}" text=
       </para>
       <para xml:id="Ch2.S5.p4">
         <p>For an ideal gas neglect the interactions and have:</p>
-        <equation xml:id="Ch2.Ex11">
+        <equation xml:id="Ch2.Ex12">
           <tags>
             <tag>any ideal gas (2.42)</tag>
             <tag role="autoref">Equation any ideal gas (2.42)</tag>
             <tag role="refnum">any ideal gas (2.42)</tag>
           </tags>
-          <Math mode="display" tex="U(T,V,N)=Ne_{0}(T)" text="U * vector@(T, V, N) = N * e _ 0 * T" xml:id="Ch2.Ex11.m1">
+          <Math mode="display" tex="U(T,V,N)=Ne_{0}(T)" text="U * vector@(T, V, N) = N * e _ 0 * T" xml:id="Ch2.Ex12.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -16132,17 +16189,17 @@ particles and is therefore proportional to <Math mode="inline" tex="N^{2}" text=
                   <XMDual>
                     <XMApp>
                       <XMTok meaning="vector"/>
-                      <XMRef idref="Ch2.Ex11.m1.1"/>
-                      <XMRef idref="Ch2.Ex11.m1.2"/>
-                      <XMRef idref="Ch2.Ex11.m1.3"/>
+                      <XMRef idref="Ch2.Ex12.m1.1"/>
+                      <XMRef idref="Ch2.Ex12.m1.2"/>
+                      <XMRef idref="Ch2.Ex12.m1.3"/>
                     </XMApp>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.Ex11.m1.1">T</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.Ex12.m1.1">T</XMTok>
                       <XMTok role="PUNCT">,</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.Ex11.m1.2">V</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.Ex12.m1.2">V</XMTok>
                       <XMTok role="PUNCT">,</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.Ex11.m1.3">N</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.Ex12.m1.3">N</XMTok>
                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
                     </XMWrap>
                   </XMDual>
@@ -16156,24 +16213,24 @@ particles and is therefore proportional to <Math mode="inline" tex="N^{2}" text=
                     <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
                   </XMApp>
                   <XMDual>
-                    <XMRef idref="Ch2.Ex11.m1.4"/>
+                    <XMRef idref="Ch2.Ex12.m1.4"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.Ex11.m1.4">T</XMTok>
+                      <XMTok font="italic" role="UNKNOWN" xml:id="Ch2.Ex12.m1.4">T</XMTok>
                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                    </XMWrap>
+<!--  %**** main.tex Line 800 **** -->                    </XMWrap>
                   </XMDual>
                 </XMApp>
               </XMApp>
             </XMath>
           </Math>
         </equation>
-        <p>This implies that for an ideal gas<note mark="6" role="footnote" xml:id="Ch2.footnote6"><tags>
-              <tag>6</tag>
-              <tag role="autoref">footnote 6</tag>
-              <tag role="refnum">6</tag>
-              <tag role="typerefnum">footnote 6</tag>
-            </tags><!--  %**** main.tex Line 800 **** -->As is common, we are suppressing the <Math mode="inline" tex="N" text="N" xml:id="Ch2.footnote6.m1">
+        <p>This implies that for an ideal gas<note mark="7" role="footnote" xml:id="Ch2.footnote7"><tags>
+              <tag>7</tag>
+              <tag role="autoref">footnote 7</tag>
+              <tag role="refnum">7</tag>
+              <tag role="typerefnum">footnote 7</tag>
+            </tags>As is common, we are suppressing the <Math mode="inline" tex="N" text="N" xml:id="Ch2.footnote7.m1">
               <XMath>
                 <XMTok font="italic" role="UNKNOWN">N</XMTok>
               </XMath>
@@ -16232,23 +16289,23 @@ particles and is therefore proportional to <Math mode="inline" tex="N^{2}" text=
                 </XMath>
               </Math>
             </equation></note></p>
-        <equation xml:id="Ch2.Ex12">
+        <equation xml:id="Ch2.Ex13">
           <tags>
             <tag>any ideal gas (2.44)</tag>
             <tag role="autoref">Equation any ideal gas (2.44)</tag>
             <tag role="refnum">any ideal gas (2.44)</tag>
           </tags>
-          <Math mode="display" tex="\left(\frac{\partial U}{\partial V}\right)_{T}=0" text="(partial-differential@(U) / partial-differential@(V)) _ T = 0" xml:id="Ch2.Ex12.m1">
+          <Math mode="display" tex="\left(\frac{\partial U}{\partial V}\right)_{T}=0" text="(partial-differential@(U) / partial-differential@(V)) _ T = 0" xml:id="Ch2.Ex13.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
                   <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                   <XMDual>
-                    <XMRef idref="Ch2.Ex12.m1.1"/>
+                    <XMRef idref="Ch2.Ex13.m1.1"/>
                     <XMWrap>
                       <XMTok role="OPEN" stretchy="true">(</XMTok>
-                      <XMApp xml:id="Ch2.Ex12.m1.1">
+                      <XMApp xml:id="Ch2.Ex13.m1.1">
                         <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                         <XMApp>
                           <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -16344,13 +16401,13 @@ particles and is therefore proportional to <Math mode="inline" tex="N^{2}" text=
               </XMApp>
             </XMath>
           </Math>, then</p>
-        <equation xml:id="Ch2.Ex13">
+        <equation xml:id="Ch2.Ex14">
           <tags>
             <tag>diatomic ideal gas (2.45)</tag>
             <tag role="autoref">Equation diatomic ideal gas (2.45)</tag>
             <tag role="refnum">diatomic ideal gas (2.45)</tag>
           </tags>
-          <Math mode="display" tex="e_{0}=\frac{5}{2}{k_{\scriptscriptstyle B}T}" text="e _ 0 = (5 / 2) * k _ B * T" xml:id="Ch2.Ex13.m1">
+          <Math mode="display" tex="e_{0}=\frac{5}{2}{k_{\scriptscriptstyle B}T}" text="e _ 0 = (5 / 2) * k _ B * T" xml:id="Ch2.Ex14.m1">
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -16531,7 +16588,7 @@ specific heats and the response coefficients <Math mode="inline" tex="\beta_{p}"
               </XMApp>
             </XMath>
           </Math>. The
-change in energy at fixed volume is</p>
+<!--  %**** main.tex Line 825 **** -->change in energy at fixed volume is</p>
         <equation xml:id="Ch2.E47">
           <tags>
             <tag>(2.47)</tag>
@@ -16542,7 +16599,7 @@ change in energy at fixed volume is</p>
             <XMath>
               <XMApp>
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
-<!--  %**** main.tex Line 825 **** -->                <XMApp>
+                <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                   <XMTok font="italic" role="UNKNOWN">d</XMTok>
                   <XMTok font="italic" role="UNKNOWN">U</XMTok>
@@ -16841,7 +16898,7 @@ is at fixed pressure. Dividing by <Math mode="inline" tex="dT_{p}" text="d * T _
               </XMApp>
             </XMath>
           </Math>
-Thus the second response coefficient is given by <Math mode="inline" tex="C_{V}" text="C _ V" xml:id="Ch2.S5.p8.m5">
+<!--  %**** main.tex Line 850 **** -->Thus the second response coefficient is given by <Math mode="inline" tex="C_{V}" text="C _ V" xml:id="Ch2.S5.p8.m5">
             <XMath>
               <XMApp>
                 <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -16873,7 +16930,7 @@ Thus the second response coefficient is given by <Math mode="inline" tex="C_{V}"
                   <XMDual>
                     <XMRef idref="Ch2.E51.m1.1"/>
                     <XMWrap>
-<!--  %**** main.tex Line 850 **** -->                      <XMTok role="OPEN" stretchy="true">(</XMTok>
+                      <XMTok role="OPEN" stretchy="true">(</XMTok>
                       <XMApp xml:id="Ch2.E51.m1.1">
                         <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                         <XMApp>
@@ -17202,7 +17259,7 @@ an ideal gas you should be able to show that</p>
         </equation>
         <p><text class="ltx_phantom">v</text><break/></p>
       </para>
-      <para class="ltx_noindent" xml:id="Ch2.S6.p3">
+<!--  %**** main.tex Line 875 **** -->      <para class="ltx_noindent" xml:id="Ch2.S6.p3">
         <p><text font="bold">Adiabatic Expansion:</text> For an adiabatic expansion <Math mode="inline" tex="Q=0" text="Q = 0" xml:id="Ch2.S6.p3.m1">
             <XMath>
               <XMApp>
@@ -17245,7 +17302,7 @@ an ideal gas you should be able to show that</p>
                       <XMApp>
                         <XMTok font="italic" meaning="differential-d" role="DIFFOP">d</XMTok>
                         <XMTok font="italic" role="UNKNOWN">V</XMTok>
-<!--  %**** main.tex Line 875 **** -->                      </XMApp>
+                      </XMApp>
                     </XMApp>
                   </XMApp>
                 </XMApp>
@@ -17546,7 +17603,7 @@ transitions of atomic levels, each of which provide somewhat less than an electr
             </XMath>
           </Math> is known as Faraday’s constant. This is a lot of energy which is why internal combustion engines have taken over.</p>
       </para>
-      <para xml:id="Ch2.S6.p5">
+<!--  %**** main.tex Line 900 **** -->      <para xml:id="Ch2.S6.p5">
         <p>In a given closed cycle of an engine we have</p>
         <equation xml:id="Ch2.E57">
           <tags>
@@ -17633,13 +17690,13 @@ transitions of atomic levels, each of which provide somewhat less than an electr
               </XMApp>
             </XMath>
           </Math>. In total</p>
-        <equation xml:id="Ch2.Ex14">
-          <Math mode="display" tex="Q=Q_{\rm in}+Q_{\rm out}=Q_{\rm in}-|Q_{\rm out}|." text="Q = Q _ in + Q _ out = Q _ in - absolute-value@(Q _ out)" xml:id="Ch2.Ex14.m1">
+        <equation xml:id="Ch2.Ex15">
+          <Math mode="display" tex="Q=Q_{\rm in}+Q_{\rm out}=Q_{\rm in}-|Q_{\rm out}|." text="Q = Q _ in + Q _ out = Q _ in - absolute-value@(Q _ out)" xml:id="Ch2.Ex15.m1">
             <XMath>
               <XMDual>
-                <XMRef idref="Ch2.Ex14.m1.1"/>
+                <XMRef idref="Ch2.Ex15.m1.1"/>
                 <XMWrap>
-                  <XMApp xml:id="Ch2.Ex14.m1.1">
+                  <XMApp xml:id="Ch2.Ex15.m1.1">
                     <XMTok meaning="multirelation"/>
                     <XMTok font="italic" role="UNKNOWN">Q</XMTok>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -17667,11 +17724,11 @@ transitions of atomic levels, each of which provide somewhat less than an electr
                       <XMDual>
                         <XMApp>
                           <XMTok meaning="absolute-value"/>
-                          <XMRef idref="Ch2.Ex14.m1.1.1"/>
+                          <XMRef idref="Ch2.Ex15.m1.1.1"/>
                         </XMApp>
                         <XMWrap>
                           <XMTok role="VERTBAR" stretchy="false">|</XMTok>
-                          <XMApp xml:id="Ch2.Ex14.m1.1.1">
+                          <XMApp xml:id="Ch2.Ex15.m1.1.1">
                             <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                             <XMTok font="italic" role="UNKNOWN">Q</XMTok>
                             <XMTok fontsize="70%" role="UNKNOWN">out</XMTok>
@@ -17990,7 +18047,8 @@ Outside of this list, the constants will be given.</p>
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>.</p>
+              </Math>.
+<!--  %**** main.tex Line 925 **** --></p>
           </para>
         </item>
         <item xml:id="A1.S0.I1.i5">
@@ -18095,8 +18153,7 @@ Outside of this list, the constants will be given.</p>
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>.
-<!--  %**** main.tex Line 925 **** --></p>
+              </Math>.</p>
           </para>
         </item>
         <item xml:id="A1.S0.I1.i7">
@@ -18366,7 +18423,8 @@ Outside of this list, the constants will be given.</p>
                   <tag role="typerefnum">2nd item</tag>
                 </tags>
                 <para xml:id="A1.S0.I1.i9.I1.i2.p1">
-                  <p>The macroscopic way: an Avogadro’s number of protons weighs a gram. This is the molar mass of the proton:</p>
+                  <p>The macroscopic way: an Avogadro’s number of protons weighs a gram. This is the molar mass of the proton:
+<!--  %**** main.tex Line 950 **** --></p>
                   <equation xml:id="A1.E5">
                     <tags>
                       <tag>(A.5)</tag>
@@ -18406,7 +18464,7 @@ Outside of this list, the constants will be given.</p>
                       </XMath>
                     </Math>
                   </equation>
-<!--  %**** main.tex Line 950 **** -->                </para>
+                </para>
               </item>
             </itemize>
             <p>Protons and neutrons and weigh nearly the same thus the mass of one Avogadro’s number of diatomic oxygen weighs <Math mode="inline" tex="32\,{g}" text="32 * g" xml:id="A1.S0.I1.i9.p1.m1">
@@ -18804,7 +18862,8 @@ in atomic hydrogen gas at room temperature</p>
                   <tag role="typerefnum">2nd item</tag>
                 </tags>
                 <para xml:id="A1.S0.I1.i10.I1.i2.p1">
-                  <p>In comparison to the proton mass:</p>
+                  <p>In comparison to the proton mass:
+<!--  %**** main.tex Line 975 **** --></p>
                   <equation xml:id="A1.E9">
                     <tags>
                       <tag>(A.9)</tag>
@@ -18837,7 +18896,7 @@ in atomic hydrogen gas at room temperature</p>
                       </XMath>
                     </Math>
                   </equation>
-<!--  %**** main.tex Line 975 **** -->                </para>
+                </para>
               </item>
             </itemize>
           </para>
@@ -19145,7 +19204,7 @@ in atomic hydrogen gas at room temperature</p>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMApp>
                       <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" role="UNKNOWN">a</XMTok>
+<!--  %**** main.tex Line 1000 **** -->                      <XMTok font="italic" role="UNKNOWN">a</XMTok>
                       <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
                     </XMApp>
                     <XMApp>
@@ -19179,8 +19238,7 @@ in atomic hydrogen gas at room temperature</p>
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>)
-<!--  %**** main.tex Line 1000 **** --></p>
+              </Math>)</p>
           </para>
 <!--  %“item We have not needed it yet (and thus you wont need it for this exam), but this also is very helpful. -->        </item>
         <item xml:id="A1.S0.I1.i13">
@@ -19363,7 +19421,7 @@ An explosion involves roughly an Avogadro’s number of atomic transitions, with
           </para>
           <para xml:id="A1.S0.I1.i14.p2">
             <p>In the Bohr model
-the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,\ring{\rm A}" text="a _ 0 = 0.53 * ring@(A)" xml:id="A1.S0.I1.i14.p2.m1">
+<!--  %**** main.tex Line 1025 **** -->the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,\ring{\rm A}" text="a _ 0 = 0.53 * ring@(A)" xml:id="A1.S0.I1.i14.p2.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -19422,7 +19480,7 @@ the radius of the lowest electron orbit is <Math mode="inline" tex="a_{0}=0.53\,
                         <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
                       </XMApp>
                     </XMApp>
-<!--  %**** main.tex Line 1025 **** -->                  </XMApp>
+                  </XMApp>
                 </XMath>
               </Math>
             </equation>
@@ -19860,8 +19918,7 @@ The potential energy is negative reflecting the positive charge <Math mode="inli
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>
-<!--  %**** main.tex Line 1050 **** --></p>
+              </Math></p>
             <equation xml:id="A1.E22">
               <tags>
                 <tag>(A.22)</tag>
@@ -20121,10 +20178,10 @@ kinetic energy is <Math mode="inline" tex="\hbar^{2}/2mL^{2}" text="(Planck-cons
 <!--  %The easiest way 
      %to remember the Bohr model is
      %“st
+     %**** main.tex Line 1075 ****
      %“label–eq:ba˝
      %“beta = “alpha “, .
      %“stp
-     %**** main.tex Line 1075 ****
      %Here $“beta=v/c$ is the velocity (divided by $c$) of the electron going around the proton, and the fine structure constant $“alpha$ is
      %the squared charge  of the electron in terms of fundamental constants
      %“st
@@ -20355,12 +20412,11 @@ the thermal de Broglie wavelength of a <emph font="italic">proton</emph> at room
                 </XMath>
               </Math>
             </equation>
-          </para>
+<!--  %**** main.tex Line 1100 **** -->          </para>
         </item>
       </enumerate>
     </para>
-<!--  %**** main.tex Line 1100 **** 
-     %===Math-->  </appendix>
+<!--  %===Math -->  </appendix>
   <appendix inlist="toc" xml:id="A2">
     <tags>
       <tag>Appendix B</tag>
@@ -20992,7 +21048,7 @@ in units of <Math mode="inline" tex="\ell" text="ell" xml:id="A2.S1.p2.m7">
             </MathFork>
           </equation>
         </equationgroup>
-<!--  %**** main.tex Line 1125 **** -->        <p>where <Math mode="inline" tex="c" text="c" xml:id="A2.S1.p2.m8">
+        <p>where <Math mode="inline" tex="c" text="c" xml:id="A2.S1.p2.m8">
             <XMath>
               <XMTok font="italic" role="UNKNOWN">c</XMTok>
             </XMath>
@@ -22046,7 +22102,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
             </MathFork>
           </equation>
         </equationgroup>
-        <p>These get me through life.</p>
+<!--  %**** main.tex Line 1150 **** -->        <p>These get me through life.</p>
       </para>
       <para xml:id="A2.S2.p2">
         <p>They can be integrated, etc, so for example the expression for <Math mode="inline" tex="\log(1+x)" text="logarithm@(1 + x)" xml:id="A2.S2.p2.m1">
@@ -22089,8 +22145,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
                 </XMDual>
               </XMApp>
             </XMath>
-          </Math> by integration:
-<!--  %**** main.tex Line 1150 **** --></p>
+          </Math> by integration:</p>
         <equation xml:id="A2.E13">
           <tags>
             <tag>(B.13)</tag>
@@ -22469,7 +22524,7 @@ proportionality constant is <Math mode="inline" tex="c=\Gamma(5/2)/2=3\sqrt{\pi}
               <tag role="autoref">footnote 2</tag>
               <tag role="refnum">2</tag>
               <tag role="typerefnum">footnote 2</tag>
-            </tags>
+            </tags><!--  %**** main.tex Line 1175 **** -->
 I like to write <Math mode="inline" tex="\Gamma(z)" text="Gamma * z" xml:id="A2.footnote2.m1">
               <XMath>
                 <XMApp>
@@ -22648,7 +22703,7 @@ I like to write <Math mode="inline" tex="\Gamma(z)" text="Gamma * z" xml:id="A2.
                 <XMTok meaning="equals" role="RELOP">=</XMTok>
                 <XMApp>
                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
-<!--  %**** main.tex Line 1175 **** -->                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
+                  <XMTok name="Gamma" role="UNKNOWN">Γ</XMTok>
                   <XMDual>
                     <XMRef idref="A2.E17.m1.1"/>
                     <XMWrap>
@@ -22977,8 +23032,9 @@ I like to write <Math mode="inline" tex="\Gamma(z)" text="Gamma * z" xml:id="A2.
             </XMath>
           </Math>
         </equation>
-        <p>which comes up a lot later in the course.</p>
+        <p>which comes up a lot later in the course.
+<!--  %**** main.tex Line 1200 **** --></p>
       </para>
-<!--  %**** main.tex Line 1200 **** -->    </section>
+    </section>
   </appendix>
 </document>
