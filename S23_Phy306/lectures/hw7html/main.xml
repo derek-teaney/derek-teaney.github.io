@@ -187,7 +187,7 @@ the available phase space volume.
       </equation>
       <p>The particle is free to move around in phase space but the energy must lie
 in this range. Your should realize that this means that the momentum
-is confined to a spherical shall between <Math mode="inline" tex="p_{\rm min}=\sqrt{2mE}" text="p _ min = square-root@(2 * m * E)" xml:id="S0.SSx1.p2.m3">
+is confined to a spherical shell between <Math mode="inline" tex="p_{\rm min}=\sqrt{2mE}" text="p _ min = square-root@(2 * m * E)" xml:id="S0.SSx1.p2.m3">
           <XMath>
             <XMApp>
               <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -444,7 +444,7 @@ is confined to a spherical shall between <Math mode="inline" tex="p_{\rm min}=\s
             <XMath>
               <XMTok font="italic" role="UNKNOWN">h</XMTok>
             </XMath>
-          </Math></note></p>
+          </Math> somewhat arbitrarily.</note></p>
       <equation xml:id="S0.E5">
         <tags>
           <tag>(5)</tag>
@@ -4171,15 +4171,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I2.i4.p3.m7">
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math> with a sequence of imagined reservoirs at temperatures <Math mode="inline" tex="T_{B}" text="T _ B" xml:id="S0.I5.i2.p2.m5">
-                <XMath>
-                  <XMApp>
-                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                    <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">B</XMTok>
-                  </XMApp>
-                </XMath>
-              </Math> between <Math mode="inline" tex="T_{B}^{0}" text="(T _ B) ^ 0" xml:id="S0.I5.i2.p2.m6">
+              </Math> with a sequence of imagined reservoirs at temperatures between <Math mode="inline" tex="T_{B}^{0}" text="(T _ B) ^ 0" xml:id="S0.I5.i2.p2.m5">
                 <XMath>
                   <XMApp>
                     <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
@@ -4191,7 +4183,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I2.i4.p3.m7">
                     <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
                   </XMApp>
                 </XMath>
-              </Math> and <Math mode="inline" tex="T" text="T" xml:id="S0.I5.i2.p2.m7">
+              </Math> and <Math mode="inline" tex="T" text="T" xml:id="S0.I5.i2.p2.m6">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">T</XMTok>
                 </XMath>
