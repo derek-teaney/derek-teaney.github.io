@@ -565,7 +565,7 @@ is confined to a spherical shell between <Math mode="inline" tex="p_{\rm min}=\s
             <tag role="refnum">6</tag>
           </tags>
           <MathFork>
-            <Math tex="\displaystyle\Omega(E,V)=\frac{1}{h^{3}}\int_{E}^{E+\delta E}{\rm d}^{3}{\bm{r%&#10;}}{\rm d}^{3}{\bm{p}}" text="Omega * open-interval@(E, V) = (1 / h ^ 3) * ((integral _ E) ^ (E + delta * E))@(d ^ 3 * r * d ^ 3 * p)" xml:id="S0.E6.m3">
+            <Math tex="\displaystyle\Omega(E,V)=\frac{1}{h^{3}}\int_{[E,E+\delta E]}{\rm d}^{3}{\bm{r%&#10;}}{\rm d}^{3}{\bm{p}}" text="Omega * open-interval@(E, V) = (1 / h ^ 3) * (integral _ (closed-interval@(E, E + delta * E)))@(d ^ 3 * r * d ^ 3 * p)" xml:id="S0.E6.m3">
               <XMath>
                 <XMApp>
                   <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -575,14 +575,14 @@ is confined to a spherical shell between <Math mode="inline" tex="p_{\rm min}=\s
                     <XMDual>
                       <XMApp>
                         <XMTok meaning="open-interval"/>
-                        <XMRef idref="S0.E6.m3.1"/>
-                        <XMRef idref="S0.E6.m3.2"/>
+                        <XMRef idref="S0.E6.m3.3"/>
+                        <XMRef idref="S0.E6.m3.4"/>
                       </XMApp>
                       <XMWrap>
                         <XMTok role="OPEN" stretchy="false">(</XMTok>
-                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E6.m3.1">E</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E6.m3.3">E</XMTok>
                         <XMTok role="PUNCT">,</XMTok>
-                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E6.m3.2">V</XMTok>
+                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E6.m3.4">V</XMTok>
                         <XMTok role="CLOSE" stretchy="false">)</XMTok>
                       </XMWrap>
                     </XMDual>
@@ -600,21 +600,30 @@ is confined to a spherical shell between <Math mode="inline" tex="p_{\rm min}=\s
                     </XMApp>
                     <XMApp>
                       <XMApp>
-                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                        <XMApp>
-                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                          <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
-                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
-                        </XMApp>
-                        <XMApp>
-                          <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
-                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                        <XMDual>
                           <XMApp>
-                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                            <XMTok font="italic" fontsize="70%" name="delta" role="UNKNOWN">δ</XMTok>
-                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
+                            <XMTok meaning="closed-interval"/>
+                            <XMRef idref="S0.E6.m3.1"/>
+                            <XMRef idref="S0.E6.m3.2"/>
                           </XMApp>
-                        </XMApp>
+                          <XMWrap>
+                            <XMTok fontsize="70%" role="OPEN" stretchy="false">[</XMTok>
+                            <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S0.E6.m3.1">E</XMTok>
+                            <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                            <XMApp xml:id="S0.E6.m3.2">
+                              <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok font="italic" fontsize="70%" name="delta" role="UNKNOWN">δ</XMTok>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMTok fontsize="70%" role="CLOSE" stretchy="false">]</XMTok>
+                          </XMWrap>
+                        </XMDual>
                       </XMApp>
                       <XMApp>
                         <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -663,7 +672,7 @@ is confined to a spherical shell between <Math mode="inline" tex="p_{\rm min}=\s
                     </XMApp>
                   </XMath>
                 </Math></td>
-              <td align="left"><Math mode="inline" tex="\displaystyle\frac{1}{h^{3}}\int_{E}^{E+\delta E}{\rm d}^{3}{\bm{r}}{\rm d}^{3%&#10;}{\bm{p}}" text="(1 / h ^ 3) * ((integral _ E) ^ (E + delta * E))@(d ^ 3 * r * d ^ 3 * p)" xml:id="S0.E6.m2">
+              <td align="left"><Math mode="inline" tex="\displaystyle\frac{1}{h^{3}}\int_{[E,E+\delta E]}{\rm d}^{3}{\bm{r}}{\rm d}^{3%&#10;}{\bm{p}}" text="(1 / h ^ 3) * (integral _ (closed-interval@(E, E + delta * E)))@(d ^ 3 * r * d ^ 3 * p)" xml:id="S0.E6.m2">
                   <XMath>
                     <XMApp>
                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -678,21 +687,30 @@ is confined to a spherical shell between <Math mode="inline" tex="p_{\rm min}=\s
                       </XMApp>
                       <XMApp>
                         <XMApp>
-                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                          <XMApp>
-                            <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                            <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
-                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
-                          </XMApp>
-                          <XMApp>
-                            <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
-                            <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok mathstyle="display" meaning="integral" name="int" role="INTOP">∫</XMTok>
+                          <XMDual>
                             <XMApp>
-                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                              <XMTok font="italic" fontsize="70%" name="delta" role="UNKNOWN">δ</XMTok>
-                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
+                              <XMTok meaning="closed-interval"/>
+                              <XMRef idref="S0.E6.m2.1"/>
+                              <XMRef idref="S0.E6.m2.2"/>
                             </XMApp>
-                          </XMApp>
+                            <XMWrap>
+                              <XMTok fontsize="70%" role="OPEN" stretchy="false">[</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN" xml:id="S0.E6.m2.1">E</XMTok>
+                              <XMTok fontsize="70%" role="PUNCT">,</XMTok>
+                              <XMApp xml:id="S0.E6.m2.2">
+                                <XMTok fontsize="70%" meaning="plus" role="ADDOP">+</XMTok>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
+                                <XMApp>
+                                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                  <XMTok font="italic" fontsize="70%" name="delta" role="UNKNOWN">δ</XMTok>
+                                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">E</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMTok fontsize="70%" role="CLOSE" stretchy="false">]</XMTok>
+                            </XMWrap>
+                          </XMDual>
                         </XMApp>
                         <XMApp>
                           <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -965,7 +983,7 @@ is confined to a spherical shell between <Math mode="inline" tex="p_{\rm min}=\s
      %%    =&amp; V “left( “frac–2m E˝–h˙0^2˝ “right)^–3/2˝ 4“pi  “frac–“delta E˝–2 E˝
      %% “end–align˝
      %$“Omega(E,V)$ is the number of accessible configurations for a single particle with energy between $E$ and $E+“delta E$.-->    <para xml:id="S0.SSx1.p4">
-      <p>The number of accessible configurations for two particles sharing energy between <Math mode="inline" tex="E" text="E" xml:id="S0.SSx1.p4.m1">
+      <p>The number of accessible configurations for two particles sharing the available energy between <Math mode="inline" tex="E" text="E" xml:id="S0.SSx1.p4.m1">
           <XMath>
             <XMTok font="italic" role="UNKNOWN">E</XMTok>
           </XMath>
@@ -1277,7 +1295,7 @@ is confined to a spherical shell between <Math mode="inline" tex="p_{\rm min}=\s
             <tag role="typerefnum">item (b)</tag>
           </tags>
           <para xml:id="S0.I2.i2.p1">
-            <p>Show that for two particles in three dimensions the number of accssible configurations is</p>
+            <p>Show that for two particles in three dimensions the number of accessible configurations is</p>
             <equationgroup class="ltx_eqn_align" xml:id="S0.EGx3">
               <equation xml:id="S0.E10">
                 <tags>
@@ -1823,7 +1841,7 @@ the number of configurations and corresponding entropy of the system are given b
           </MathFork>
         </equation>
       </equationgroup>
-      <p>In the remainder of the excercise we will keep track of the constant, <Math mode="inline" tex="C(N)" text="C * N" xml:id="S0.SSx1.p5.m4">
+      <p>In the remainder of the exercise we will keep track of the constant <Math mode="inline" tex="C(N)" text="C * N" xml:id="S0.SSx1.p5.m4">
           <XMath>
             <XMApp>
               <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -1856,7 +1874,7 @@ the number of configurations and corresponding entropy of the system are given b
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">E</XMTok>
                 </XMath>
-              </Math> (i.e. total number of accessible configurations with energy <Math mode="inline" tex="E" text="E" xml:id="S0.I3.i3.p1.m3">
+              </Math> (i.e. total number of accessible configurations with energy between <Math mode="inline" tex="E" text="E" xml:id="S0.I3.i3.p1.m3">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">E</XMTok>
                 </XMath>
@@ -3139,7 +3157,7 @@ understood as <Math mode="inline" tex="\Gamma(n+1)" text="Gamma * (n + 1)" xml:i
                 </XMath>
               </Math>
             </equation>
-            <p>is the typical Debroglie wavelength at temperature <Math mode="inline" tex="T" text="T" xml:id="S0.I3.i4.p1.m2">
+            <p>is the typical de Broglie wavelength at temperature <Math mode="inline" tex="T" text="T" xml:id="S0.I3.i4.p1.m2">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">T</XMTok>
                 </XMath>
@@ -3301,7 +3319,7 @@ not exponentially large in contrast to the other terms. Thus <Math mode="inline"
                 </XMath>
               </Math>
             </equation>
-            <p>Convice yourself of this step by taking <Math mode="inline" tex="\delta E/E=10^{-6}" text="(delta * E) / E = 10 ^ (- 6)" xml:id="S0.I3.i4.p2.m3">
+            <p>Convince yourself of this step by taking <Math mode="inline" tex="\delta E/E=10^{-6}" text="(delta * E) / E = 10 ^ (- 6)" xml:id="S0.I3.i4.p2.m3">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -3361,7 +3379,7 @@ not exponentially large in contrast to the other terms. Thus <Math mode="inline"
                     <XMTok meaning="2" role="NUMBER">2</XMTok>
                   </XMApp>
                 </XMath>
-              </Math>? Something is exponentially large if its logarithm is of order Avagadro’s number.</p>
+              </Math>? Something is exponentially large if its logarithm is of order Avogadro’s number.</p>
           </para>
           <para class="ltx_noindent" xml:id="S0.I3.i4.p3">
             <p><text font="bold">Discussion:</text> The Sackur-Tetrode equation says that the entropy per
@@ -3889,7 +3907,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
           </XMath>
         </Math>
       </equation>
-      <p>and the corresponing entropy</p>
+      <p>and the corresponding entropy</p>
       <equation labels="LABEL:eq:entropy" xml:id="S0.E26">
         <tags>
           <tag>(26)</tag>
@@ -4130,7 +4148,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
           <XMath>
             <XMTok font="italic" role="UNKNOWN">T</XMTok>
           </XMath>
-        </Math> with heat excchange <Math mode="inline" tex="dQ" text="d * Q" xml:id="S0.SSx3.p1.m2">
+        </Math> with heat exchange <Math mode="inline" tex="dQ" text="d * Q" xml:id="S0.SSx3.p1.m2">
           <XMath>
             <XMApp>
               <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -4188,7 +4206,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
                     <XMTok font="italic" role="UNKNOWN">S</XMTok>
                   </XMApp>
                 </XMath>
-              </Math> in the non-equilibrium process by replacing the non-equilibrium process (which actually happened) with an imagined equilbrium process. This replacement is possible because the entropy change depends only on the starting and stopping points and not on the path.</p>
+              </Math> in the non-equilibrium process by replacing the non-equilibrium process (which actually happened) with an imagined equilibrium process. This replacement is possible because the entropy change depends only on the starting and stopping points and not on the path.</p>
           </para>
           <para xml:id="S0.I6.i2.p2">
             <p>In the imagined process the temperature of the ball <Math mode="inline" tex="T_{B}" text="T _ B" xml:id="S0.I6.i2.p2.m1">
@@ -4490,7 +4508,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
               <tag role="refnum">(a)</tag>
               <tag role="typerefnum">item (a)</tag>
             </tags>
-            <text>Only one reservoirat at <Math mode="inline" tex="100{}^{\circ}{\rm C}" text="100 * ^ compose C" xml:id="S0.I7.i1.m1">
+            <text>Only one reservoir at at <Math mode="inline" tex="100{}^{\circ}{\rm C}" text="100 * ^ compose C" xml:id="S0.I7.i1.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -4511,7 +4529,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
               <tag role="refnum">(b)</tag>
               <tag role="typerefnum">item (b)</tag>
             </tags>
-            <text>The water is first brought to equiibrium with a reservoir at <Math mode="inline" tex="50{}^{\circ}{\rm C}" text="50 * ^ compose C" xml:id="S0.I7.i2.m1">
+            <text>The water is first brought to equilibrium with a reservoir at <Math mode="inline" tex="50{}^{\circ}{\rm C}" text="50 * ^ compose C" xml:id="S0.I7.i2.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -5017,8 +5035,8 @@ for diatomic nitrogen <Math mode="inline" tex="N_{2}" text="N _ 2" xml:id="S0.SS
           </tr>
         </tbody>
       </tabular>
-<!--  %**** hw7.tex Line 550 **** -->      <toccaption class="ltx_centering"><tag close=" ">1</tag> Table of the second virial coefficient of diatomic nitorgen</toccaption>
-      <caption class="ltx_centering"><tag close=": ">Table 1</tag> Table of the second virial coefficient of diatomic nitorgen</caption>
+<!--  %**** hw7.tex Line 550 **** -->      <toccaption class="ltx_centering"><tag close=" ">1</tag> Table of the second virial coefficient of diatomic Nitrogen</toccaption>
+      <caption class="ltx_centering"><tag close=": ">Table 1</tag> Table of the second virial coefficient of diatomic Nitrogen</caption>
     </table>
     <para xml:id="S0.SSx5.p2">
       <enumerate xml:id="S0.I9">
@@ -5185,7 +5203,7 @@ equation is replaced by <Math mode="inline" tex="v-N_{A}(b/N_{A})" text="v - N _
               </Math> occupied by the molecules themselves.</p>
           </para>
           <para xml:id="S0.I9.i2.p3">
-            <p>The second correction arises from the existence of forces between the molecules. If the forces are attractive this will tend to reduce the pressure on the container walls. This diminution of the pressure should be proportional to the number of <emph font="italic">pairs</emph> of molucules, or upon the square of the number of particles per volume (<Math mode="inline" tex="1/v^{2}" text="1 / v ^ 2" xml:id="S0.I9.i2.p3.m1">
+            <p>The second correction arises from the existence of forces between the molecules. If the forces are attractive this will tend to reduce the pressure on the container walls. This diminution of the pressure should be proportional to the number of <emph font="italic">pairs</emph> of molecules, or upon the square of the number of particles per volume (<Math mode="inline" tex="1/v^{2}" text="1 / v ^ 2" xml:id="S0.I9.i2.p3.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="divide" role="MULOP">/</XMTok>
@@ -5262,7 +5280,7 @@ equation is replaced by <Math mode="inline" tex="v-N_{A}(b/N_{A})" text="v - N _
             <tag role="typerefnum">item (c)</tag>
           </tags>
           <para xml:id="S0.I9.i3.p1">
-            <p>(Reading Only) Experimental fits to real gasses with the van der Waals eos give the
+            <p>Experimental fits to real gasses with the van der Waals eos give the
 cooefficients <Math mode="inline" tex="a" text="a" xml:id="S0.I9.i3.p1.m1">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">a</XMTok>
@@ -5290,7 +5308,7 @@ Fig. <ref labelref="LABEL:vanfig"/>.</p>
             <caption class="ltx_centering"><tag close=": ">Figure 1</tag></caption>
           </figure>
           <para xml:id="S0.I9.i3.p2">
-            <p>(Optional) Make a graph of the prediction for <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I9.i3.p2.m1">
+            <p>Make a graph of the prediction for <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I9.i3.p2.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -5306,7 +5324,7 @@ Fig. <ref labelref="LABEL:vanfig"/>.</p>
                   </XMApp>
                 </XMath>
               </Math> from the van der Waal equation of
-state for diatomic nitorgen and compare with the experimental data in given in
+state for diatomic Nitrogen and compare with the experimental data in given in
 Table. <ref labelref="LABEL:vanBtab"/>. The plot I get is shown below in Fig. <ref labelref="LABEL:vanfig2"/></p>
           </para>
           <figure inlist="lof" labels="LABEL:vanfig2" xml:id="S0.F2">
@@ -5449,9 +5467,10 @@ green line I have increased <Math mode="inline" tex="b" text="b" xml:id="S0.F2.m
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">r</XMTok>
                 </XMath>
-              </Math> is repulive at short distances and attractive at long distances.
-<!--  %Also notable is that gasses tend to liquefy at -->A common form of in interparticle potential is
-<!--  %**** hw7.tex Line 600 **** -->given by the Leondard Jones potential</p>
+              </Math> is repulsive at short distances and attractive at long distances.
+A common form of in inter-particle potential is
+given by the Lennard Jones potential
+<!--  %**** hw7.tex Line 600 **** --></p>
             <equation xml:id="S0.E31">
               <tags>
                 <tag>(31)</tag>
@@ -5538,7 +5557,8 @@ green line I have increased <Math mode="inline" tex="b" text="b" xml:id="S0.F2.m
             </equation>
             <p>which is shown in the figure below:</p>
             <graphics candidates="LennardJones.pdf" class="ltx_centering" graphic="LennardJones.pdf" options="width=238.491pt" xml:id="S0.I9.i4.p1.g1"/>
-            <p>Give a brief (no more than three sentences) hand-wavy qualitative explanation why <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I9.i4.p1.m2">
+            <p>Also notable is that gasses tend to liquefy at low temperature.
+Give a brief (no more than three sentences) hand-wavy qualitative explanation why <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I9.i4.p1.m2">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
