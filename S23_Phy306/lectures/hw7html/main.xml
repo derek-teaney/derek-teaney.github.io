@@ -5220,7 +5220,7 @@ Fig. <ref labelref="LABEL:vanfig"/>.
             <caption class="ltx_centering"><tag close=": ">Figure 1</tag></caption>
           </figure>
           <para xml:id="S0.I8.i3.p2">
-            <p>(Optional) Make a graph of the prediction for <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I8.i3.p2.m1">
+            <p>Make a graph of the prediction for <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I8.i3.p2.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
