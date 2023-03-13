@@ -3411,244 +3411,245 @@ not exponentially large in contrast to the other terms. Thus <Math mode="inline"
                 </XMath>
               </Math>? Something is exponentially large if its logarithm is of order Avogadro’s number.</p>
           </para>
-          <para class="ltx_noindent" xml:id="S0.I3.i4.p3">
-            <p><text font="bold">Discussion:</text> The Sackur-Tetrode equation says that the entropy per
-particle <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B" xml:id="S0.I3.i4.p3.m1">
-                <XMath>
+        </item>
+      </enumerate>
+    </para>
+    <para class="ltx_noindent" xml:id="S0.SSx1.p6">
+      <p><text font="bold">Discussion:</text> The Sackur-Tetrode equation says that the entropy per
+particle <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B" xml:id="S0.SSx1.p6.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMTok font="italic" role="UNKNOWN">S</XMTok>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">B</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math> is of order the logarithm of the accessible phase space per particle in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m2">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+              <XMTok font="italic" role="UNKNOWN">h</XMTok>
+              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+            </XMApp>
+          </XMath>
+        </Math>. Roughly speaking each particle has volume <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id="S0.SSx1.p6.m3">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="equals" role="RELOP">=</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="divide" role="MULOP">/</XMTok>
+                <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. The <emph font="italic">typical</emph> momentum of a particle is of order <Math mode="inline" tex="p_{\rm typ}\sim\sqrt{m{k_{\scriptscriptstyle B}T}}" text="p _ typ similar-to square-root@(m * k _ B * T)" xml:id="S0.SSx1.p6.m4">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">typ</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="square-root"/>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">m</XMTok>
                   <XMApp>
-                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMApp>
-                      <XMTok meaning="divide" role="MULOP">/</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">S</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" role="UNKNOWN">k</XMTok>
-                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">B</XMTok>
-                    </XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                    <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                    <XMTok font="italic" fontsize="50%" role="UNKNOWN">B</XMTok>
                   </XMApp>
-                </XMath>
-              </Math> is of order the logarithm of the accessible phase space per particle in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.I3.i4.p3.m2">
-                <XMath>
-                  <XMApp>
-                    <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                    <XMTok font="italic" role="UNKNOWN">h</XMTok>
-                    <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
-                  </XMApp>
-                </XMath>
-              </Math>. Roughly speaking each particle has volume <Math mode="inline" tex="v_{N}=V/N" text="v _ N = V / N" xml:id="S0.I3.i4.p3.m3">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMApp>
-                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                      <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok meaning="divide" role="MULOP">/</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>. The <emph font="italic">typical</emph> momentum of a particle is of order <Math mode="inline" tex="p_{\rm typ}\sim\sqrt{m{k_{\scriptscriptstyle B}T}}" text="p _ typ similar-to square-root@(m * k _ B * T)" xml:id="S0.I3.i4.p3.m4">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
-                    <XMApp>
-                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                      <XMTok fontsize="70%" role="UNKNOWN">typ</XMTok>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok meaning="square-root"/>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">m</XMTok>
-                        <XMApp>
-                          <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
-                          <XMTok font="italic" role="UNKNOWN">k</XMTok>
-                          <XMTok font="italic" fontsize="50%" role="UNKNOWN">B</XMTok>
-                        </XMApp>
-                        <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                      </XMApp>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>. The phase space per particle is the coordinate space volume <Math mode="inline" tex="v_{N}" text="v _ N" xml:id="S0.I3.i4.p3.m5">
-                <XMath>
+                  <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>. The phase space per particle is the coordinate space volume <Math mode="inline" tex="v_{N}" text="v _ N" xml:id="S0.SSx1.p6.m5">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+              <XMTok font="italic" role="UNKNOWN">v</XMTok>
+              <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> times the momentum space volume <Math mode="inline" tex="\sim p_{\rm typ}^{3}" text="absent similar-to (p _ typ) ^ 3" xml:id="S0.SSx1.p6.m6">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMTok meaning="absent"/>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                  <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                  <XMTok fontsize="70%" role="UNKNOWN">typ</XMTok>
+                </XMApp>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>:</p>
+      <equation xml:id="S0.E23">
+        <tags>
+          <tag>(23)</tag>
+          <tag role="autoref">Equation 23</tag>
+          <tag role="refnum">23</tag>
+        </tags>
+        <Math mode="display" tex="V_{\rm ps}\sim v_{N}\,p_{\rm typ}^{3}" text="V _ ps similar-to v _ N * (p _ typ) ^ 3" xml:id="S0.E23.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" role="UNKNOWN">V</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">ps</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp rpadding="1.7pt">
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                  <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
                   <XMApp>
                     <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                    <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                    <XMTok fontsize="70%" role="UNKNOWN">typ</XMTok>
                   </XMApp>
-                </XMath>
-              </Math> times the momentum space volume <Math mode="inline" tex="\sim p_{\rm typ}^{3}" text="absent similar-to (p _ typ) ^ 3" xml:id="S0.I3.i4.p3.m6">
-                <XMath>
+                  <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+      <p>The entropy (per particle) is the logarithm of this phase space
+in units of <Math mode="inline" tex="h" text="h" xml:id="S0.SSx1.p6.m7">
+          <XMath>
+            <XMTok font="italic" role="UNKNOWN">h</XMTok>
+          </XMath>
+        </Math></p>
+      <equation xml:id="S0.E24">
+        <tags>
+          <tag>(24)</tag>
+          <tag role="autoref">Equation 24</tag>
+          <tag role="refnum">24</tag>
+        </tags>
+        <Math mode="display" tex="\frac{S}{Nk_{B}}\sim\log\left(\frac{v_{N}\,p_{\rm typ}^{3}}{h^{3}}\right)\sim%&#10;\log\left(\frac{v_{N}}{\lambda_{\rm th}^{3}}\right)" text="S / (N * k _ B) similar-to logarithm@((v _ N * (p _ typ) ^ 3) / h ^ 3) similar-to logarithm@(v _ N / (lambda _ th) ^ 3)" xml:id="S0.E24.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="multirelation"/>
+              <XMApp>
+                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                <XMTok font="italic" role="UNKNOWN">S</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
                   <XMApp>
-                    <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
-                    <XMTok meaning="absent"/>
-                    <XMApp>
-                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                    <XMTok font="italic" role="UNKNOWN">k</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">B</XMTok>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMRef idref="S0.E24.m1.1"/>
+                  <XMRef idref="S0.E24.m1.2"/>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E24.m1.1">log</XMTok>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="true">(</XMTok>
+                    <XMApp xml:id="S0.E24.m1.2">
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                       <XMApp>
-                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                        <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                        <XMTok fontsize="70%" role="UNKNOWN">typ</XMTok>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp rpadding="1.7pt">
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                          <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                            <XMTok font="italic" role="UNKNOWN">p</XMTok>
+                            <XMTok fontsize="70%" role="UNKNOWN">typ</XMTok>
+                          </XMApp>
+                          <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                        </XMApp>
                       </XMApp>
-                      <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                      <XMApp>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                        <XMTok font="italic" role="UNKNOWN">h</XMTok>
+                        <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                      </XMApp>
                     </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>:</p>
-            <equation xml:id="S0.E23">
-              <tags>
-                <tag>(23)</tag>
-                <tag role="autoref">Equation 23</tag>
-                <tag role="refnum">23</tag>
-              </tags>
-              <Math mode="display" tex="V_{\rm ps}\sim v_{N}\,p_{\rm typ}^{3}" text="V _ ps similar-to v _ N * (p _ typ) ^ 3" xml:id="S0.E23.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
-                    <XMApp>
-                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                      <XMTok fontsize="70%" role="UNKNOWN">ps</XMTok>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMApp rpadding="1.7pt">
-                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                  </XMWrap>
+                </XMApp>
+              </XMDual>
+              <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMRef idref="S0.E24.m1.3"/>
+                  <XMRef idref="S0.E24.m1.4"/>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E24.m1.3">log</XMTok>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="true">(</XMTok>
+                    <XMApp xml:id="S0.E24.m1.4">
+                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
                         <XMTok font="italic" role="UNKNOWN">v</XMTok>
                         <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
                       </XMApp>
                       <XMApp>
-                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
                         <XMApp>
-                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                          <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                          <XMTok fontsize="70%" role="UNKNOWN">typ</XMTok>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                          <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
+                          <XMTok fontsize="70%" role="UNKNOWN">th</XMTok>
                         </XMApp>
                         <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
                       </XMApp>
                     </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>
-            </equation>
-            <p>The entropy (per particle) is the logarithm of this phase space
-in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">h</XMTok>
-                </XMath>
-              </Math></p>
-            <equation xml:id="S0.E24">
-              <tags>
-                <tag>(24)</tag>
-                <tag role="autoref">Equation 24</tag>
-                <tag role="refnum">24</tag>
-              </tags>
-              <Math mode="display" tex="\frac{S}{Nk_{B}}\sim\log\left(\frac{v_{N}\,p_{\rm typ}^{3}}{h^{3}}\right)\sim%&#10;\log\left(\frac{v_{N}}{\lambda_{\rm th}^{3}}\right)" text="S / (N * k _ B) similar-to logarithm@((v _ N * (p _ typ) ^ 3) / h ^ 3) similar-to logarithm@(v _ N / (lambda _ th) ^ 3)" xml:id="S0.E24.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="multirelation"/>
-                    <XMApp>
-                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                      <XMTok font="italic" role="UNKNOWN">S</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                        <XMApp>
-                          <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                          <XMTok font="italic" role="UNKNOWN">k</XMTok>
-                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">B</XMTok>
-                        </XMApp>
-                      </XMApp>
-                    </XMApp>
-                    <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
-                    <XMDual>
-                      <XMApp>
-                        <XMRef idref="S0.E24.m1.1"/>
-                        <XMRef idref="S0.E24.m1.2"/>
-                      </XMApp>
-                      <XMApp>
-                        <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E24.m1.1">log</XMTok>
-                        <XMWrap>
-                          <XMTok role="OPEN" stretchy="true">(</XMTok>
-                          <XMApp xml:id="S0.E24.m1.2">
-                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                            <XMApp>
-                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                              <XMApp rpadding="1.7pt">
-                                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
-                                <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
-                              </XMApp>
-                              <XMApp>
-                                <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
-                                <XMApp>
-                                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
-                                  <XMTok font="italic" role="UNKNOWN">p</XMTok>
-                                  <XMTok fontsize="70%" role="UNKNOWN">typ</XMTok>
-                                </XMApp>
-                                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
-                              </XMApp>
-                            </XMApp>
-                            <XMApp>
-                              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
-                              <XMTok font="italic" role="UNKNOWN">h</XMTok>
-                              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
-                            </XMApp>
-                          </XMApp>
-                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
-                        </XMWrap>
-                      </XMApp>
-                    </XMDual>
-                    <XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok>
-                    <XMDual>
-                      <XMApp>
-                        <XMRef idref="S0.E24.m1.3"/>
-                        <XMRef idref="S0.E24.m1.4"/>
-                      </XMApp>
-                      <XMApp>
-                        <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E24.m1.3">log</XMTok>
-                        <XMWrap>
-                          <XMTok role="OPEN" stretchy="true">(</XMTok>
-                          <XMApp xml:id="S0.E24.m1.4">
-                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                            <XMApp>
-                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
-                              <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">N</XMTok>
-                            </XMApp>
-                            <XMApp>
-                              <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
-                              <XMApp>
-                                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
-                                <XMTok font="italic" name="lambda" role="UNKNOWN">λ</XMTok>
-                                <XMTok fontsize="70%" role="UNKNOWN">th</XMTok>
-                              </XMApp>
-                              <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
-                            </XMApp>
-                          </XMApp>
-                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
-                        </XMWrap>
-                      </XMApp>
-                    </XMDual>
-                  </XMApp>
-                </XMath>
-              </Math>
-            </equation>
-            <p>This logarithm is never very large, and in practice the entropy per particle is an order one number.</p>
-          </para>
+                    <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                  </XMWrap>
+                </XMApp>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+      <p>This logarithm is never very large, and in practice the entropy per particle is an order one number.</p>
+    </para>
 <!--  %**** hw7.tex Line 250 **** 
      %“item Compute the entropy per particle $S/N k˙B$ for Helium gas at STP.
-     %Do not  look up numbers to evaluate $v˙N/“lambda˙–“rm th˝^3$.-->        </item>
-      </enumerate>
-    </para>
-    <pagination role="newpage"/>
+     %Do not  look up numbers to evaluate $v˙N/“lambda˙–“rm th˝^3$.
+     %“end–enumerate˝-->    <pagination role="newpage"/>
 <!--  %“problem–van der Waal gas˝ 
      %Real gasses don’t quite obey the ideal gas law. A systematic way to account for deviations from ideal behavior at low densities (large volumes) is the “emph–virial expansion˝, where the pressure reads
      %“begin–align˝
@@ -3666,8 +3667,8 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
      %200 &amp; -35 ““
      %300 &amp; -4.2 ““
      %400 &amp; 9.0 ““
-     %500 &amp; 16.9 ““
      %**** hw7.tex Line 275 ****
+     %500 &amp; 16.9 ““
      %600 &amp; 21.3
      %“end–tabular˝
      %“caption– Table of the second virial coefficient of diatomic nitorgen˝
@@ -3710,8 +3711,8 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
      %“times 10^–-6˝“, –“rm m˝^3$ and $a=0.152“,–“rm Pa “, m^6˝$, which gives a better description. ˝
      %“label–vanfig2˝
      %“end–figure˝
-     %“item  Give a brief hand-wavy qualitative explanation  why $B(T)$
      %**** hw7.tex Line 325 ****
+     %“item  Give a brief hand-wavy qualitative explanation  why $B(T)$
      %might be negative at low temperatures, but positive at high temperatures.
      %“end–enumerate˝
      %“problem–Energy in the van der Waals (based on Blundell 16.)˝
@@ -3732,8 +3733,8 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
      %What is $“left(“frac–“partial T˝–“partial V˝ “right)˙U$ for an ideal gas?
      %“item  Show that for any substance we have:
      %“begin–align˝
-     %“left(“frac–“partial T˝–“partial V˝ “right)˙S =&amp;   -“frac–1˝–C˙V˝ “left[ T“left(“frac–“partial p˝–“partial T˝“right)˙V “right] “label–secondform˝““
      %**** hw7.tex Line 350 ****
+     %“left(“frac–“partial T˝–“partial V˝ “right)˙S =&amp;   -“frac–1˝–C˙V˝ “left[ T“left(“frac–“partial p˝–“partial T˝“right)˙V “right] “label–secondform˝““
      %=&amp; -“frac–1˝–C˙V˝ “left[“frac–“beta˙p˝–“kappa˙T˝“right]
      %“end–align˝
      %Show that this implies that for that an ideal gas  undergoing an adiabatic expansion that $pV^–“gamma˝ = –“rm const˝ $.
@@ -3772,8 +3773,8 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
      %“st
      %“frac–1˝–T˝ = “frac–3˝–2˝ “frac–N k˙B˝–E˝  “qquad  p = “frac–N k˙B T˝–V˝
      %“stp
-     %“item (Optional) Show that the Sackur-Tetrode equation can be written
      %**** hw7.tex Line 400 ****
+     %“item (Optional) Show that the Sackur-Tetrode equation can be written
      %“st
      %S =  N k˙B “left[ “log“left(“frac–v˝–“lambda˙–“rm th˝^3˝ “right) + “frac–5˝–2˝ “right]
      %“stp
@@ -3795,8 +3796,8 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
      %“st
      %“frac–h˝–“sqrt–m˙p k˙B T˝˝ =  “frac–h c˝–“sqrt–(m˙p c^2)(“kT)˝˝
      %“stp
-     %From there you should remember $“hbar c$ (or $hc$) and $k˙B T$.
      %**** hw7.tex Line 425 ****
+     %From there you should remember $“hbar c$ (or $hc$) and $k˙B T$.
      %Recall that the Helium nucleus consists of two protons and two neutrons.
      %Another (possibly better) strategy might be to recall that the Bohr radius is $a˙0= 0.53“,“angstrom$, and that
      %the binding energy of an electron to a proton in hydrogen is given by
@@ -4008,7 +4009,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
           </XMath>
         </Math>
       </equation>
-      <p>Recall that in an adiabatic expansion of a monoatomic ideal gas the heat exchanged is zero, and the entropy is constant as the volume increases from <Math mode="inline" tex="V_{1}" text="V _ 1" xml:id="S0.SSx2.p2.m1">
+<!--  %**** hw7.tex Line 475 **** -->      <p>Recall that in an adiabatic expansion of a monoatomic ideal gas the heat exchanged is zero, and the entropy is constant as the volume increases from <Math mode="inline" tex="V_{1}" text="V _ 1" xml:id="S0.SSx2.p2.m1">
           <XMath>
             <XMApp>
               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
@@ -4024,8 +4025,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
               <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
             </XMApp>
           </XMath>
-        </Math>.
-<!--  %**** hw7.tex Line 475 **** --></p>
+        </Math>.</p>
       <enumerate xml:id="S0.I5">
         <item xml:id="S0.I5.i3">
           <tags>
@@ -4349,7 +4349,8 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
                           <XMTok font="italic" role="UNKNOWN">T</XMTok>
                         </XMApp>
                       </XMath>
-                    </Math> as a function of</p>
+                    </Math> as a function of
+<!--  %**** hw7.tex Line 500 **** --></p>
                   <equation xml:id="S0.Ex1">
                     <Math mode="display" tex="\frac{\Delta T}{T}\equiv\frac{T-T_{B}^{0}}{T}." text="(Delta * T) / T equivalent-to (T - (T _ B) ^ 0) / T" xml:id="S0.Ex1.m1">
                       <XMath>
@@ -4358,7 +4359,7 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
                           <XMWrap>
                             <XMApp xml:id="S0.Ex1.m1.1">
                               <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
-<!--  %**** hw7.tex Line 500 **** -->                              <XMApp>
+                              <XMApp>
                                 <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                 <XMApp>
                                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -4759,8 +4760,8 @@ in units of <Math mode="inline" tex="h" text="h" xml:id="S0.I3.i4.p3.m7">
      %entropy was constant.  Work in reverse: show that if $T V^–“gamma-1˝=–“rm const˝$, then the entropy defined in “Eq–eq:entropy˝ is constant during an adiabatic expansion.
      %Describe qualitatively, using notions of phase space volume, why the entropy
      %remains fixed as the system expands.
-     %“problem–Van der Walls Equation of State˝
      %**** hw7.tex Line 525 ****
+     %“problem–Van der Walls Equation of State˝
      %This problem lays the ground work for you to be able to do part (b) of Blundell 14.7.-->    <pagination role="newpage"/>
   </subsection>
   <subsection xml:id="S0.SSx5">
@@ -5270,7 +5271,7 @@ equation is replaced by <Math mode="inline" tex="v-N_{A}(b/N_{A})" text="v - N _
                 </XMath>
               </Math>.</p>
           </para>
-          <para xml:id="S0.I9.i2.p5">
+<!--  %**** hw7.tex Line 575 **** -->          <para xml:id="S0.I9.i2.p5">
             <p><emph font="italic">Hint:</emph> In the ideal gas limit the volume per particle <Math mode="inline" tex="v" text="v" xml:id="S0.I9.i2.p5.m1">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">v</XMTok>
@@ -5298,8 +5299,7 @@ equation is replaced by <Math mode="inline" tex="v-N_{A}(b/N_{A})" text="v - N _
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">v</XMTok>
                 </XMath>
-              </Math>.
-<!--  %**** hw7.tex Line 575 **** --></p>
+              </Math>.</p>
           </para>
         </item>
         <item xml:id="S0.I9.i3">
@@ -5499,8 +5499,7 @@ green line I have increased <Math mode="inline" tex="b" text="b" xml:id="S0.F2.m
                 </XMath>
               </Math> is repulsive at short distances and attractive at long distances.
 A common form of in inter-particle potential is
-given by the Lennard Jones potential
-<!--  %**** hw7.tex Line 600 **** --></p>
+<!--  %**** hw7.tex Line 600 **** -->given by the Lennard Jones potential</p>
             <equation xml:id="S0.E31">
               <tags>
                 <tag>(31)</tag>
