@@ -2643,9 +2643,7 @@ for <Math mode="inline" tex="C_{V}^{1\,{\rm ml}}" text="(C _ V) ^ (1 * ml)" xml:
           <figure placement="h!" xml:id="S0.I2.i5.fig1">
             <graphics candidates="silver_graph.pdf" class="ltx_centering" graphic="silver_graph.pdf" options="width=433.62pt" xml:id="S0.I2.i5.g1"/>
             <break class="ltx_centering"/>
-          </figure>
-          <figure placement="h!" xml:id="S0.I2.i5.fig2">
-            <graphics candidates="diamond_graph.pdf" class="ltx_centering" graphic="diamond_graph.pdf" options="width=433.62pt" xml:id="S0.I2.i5.g2"/>
+            <graphics candidates="diamond_graph2.pdf" class="ltx_centering" graphic="diamond_graph2.pdf" options="width=433.62pt" xml:id="S0.I2.i5.g2"/>
           </figure>
 <!--  %Also show on your graph the classical prediction for the specific heat“footnote–The fact that the specific heats drop with temperature, was a major success of the early quantum mechanical theory. In the classical case you should find that $C˙V^–1“,–“rm ml˝˝=3R$ is constant˝. 
      %“item Show that the entropy of one mole of solid ($3N˙A$ harmonic oscillators) is
@@ -2655,11 +2653,10 @@ for <Math mode="inline" tex="C_{V}^{1\,{\rm ml}}" text="(C _ V) ^ (1 * ml)" xml:
      %and that  the entropy  of the system is related to $“bar n$ via:
      %“st
      %S = 3N˙Ak˙B “left[ (1 +“bar n) “log(1+ “bar n) -  “bar n “log “bar n  “right]
-     %“stp
-     %**** hw6.tex Line 200 ****-->        </item>
+     %“stp-->        </item>
       </enumerate>
     </para>
-    <pagination role="newpage"/>
+<!--  %**** hw6.tex Line 200 **** -->    <pagination role="newpage"/>
   </subsection>
   <subsection xml:id="S0.SSx3">
     <title>Problem 3.   Ways to partition energy amongst <Math mode="inline" tex="N" text="N" xml:id="S0.SSx3.m1">
@@ -2747,10 +2744,10 @@ The total energy consists of <Math mode="inline" tex="q" text="q" xml:id="S0.SSx
                 </XMath>
               </Math>) show that there
 are 20 ways for the oscillators to share the energy. For instance,
-<!--  %**** hw6.tex Line 225 **** -->the first atom could have the three quanta and the rest none. That is one
+the first atom could have the three quanta and the rest none. That is one
 possible state.</p>
           </para>
-        </item>
+<!--  %**** hw6.tex Line 225 **** -->        </item>
         <item xml:id="S0.I3.i2">
           <tags>
             <tag>(b)</tag>
@@ -2981,7 +2978,7 @@ What is the probability that the first atom has two quanta?</p>
                 </XMath>
               </Math>
             </equation>
-<!--  %**** hw6.tex Line 250 **** -->            <p>I quoted this number in lecture.</p>
+            <p>I quoted this number in lecture.</p>
           </para>
         </item>
         <item xml:id="S0.I3.i5">
@@ -2993,7 +2990,7 @@ What is the probability that the first atom has two quanta?</p>
           </tags>
           <para xml:id="S0.I3.i5.p1">
             <p>Show more generally
-that for <Math mode="inline" tex="N" text="N" xml:id="S0.I3.i5.p1.m1">
+<!--  %**** hw6.tex Line 250 **** -->that for <Math mode="inline" tex="N" text="N" xml:id="S0.I3.i5.p1.m1">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">N</XMTok>
                 </XMath>
@@ -3353,10 +3350,9 @@ that</p>
                     <XMTok meaning="400" role="NUMBER">400</XMTok>
                   </XMApp>
                 </XMath>
-              </Math>.
-<!--  %**** hw6.tex Line 275 **** --></p>
+              </Math>.</p>
           </para>
-        </item>
+<!--  %**** hw6.tex Line 275 **** -->        </item>
         <item xml:id="S0.I3.i7">
           <tags>
             <tag>(g)</tag>
@@ -3532,11 +3528,11 @@ of the full system is</p>
           </XMath>
         </Math>
       </equation>
-      <p>This probability distribution is known as the micro-canonical ensemble. It is conceptually important. The two ensembles are equivalent. They should be. We derived the Boltzmann factor and the canonical distribution from the entropy of the microcanonical ensemble.
-<!--  %**** hw6.tex Line 300 **** --></p>
+      <p>This probability distribution is known as the micro-canonical ensemble. It is conceptually important. The two ensembles are equivalent. They should be. We derived the Boltzmann factor and the canonical distribution from the entropy of the microcanonical ensemble.</p>
     </para>
 <!--  %“problem–Blundell 14.5 ˝ 
      %“begin–enumerate˝
+     %**** hw6.tex Line 300 ****
      %% “item (Optional) Read and understand Example 14.1 from the text part of Blundell. The figure in Blundell is wrong (the entropy change of the universe doesn’t go to zero). A corrected figure is shown in “Fig–fig:graphlake˝
      %“item Work problem 14.5 from Blundell.
      %% For each part
@@ -3557,10 +3553,10 @@ of the full system is</p>
      %the available phase space volume.
      %“begin–enumerate˝
      %% “item
-     %**** hw6.tex Line 325 ****
      %%   Consider two particles in one dimension confined to a ‘‘box”
      %%   “st
      %%        0 ¡ x˙1, x˙2¡ L
+     %**** hw6.tex Line 325 ****
      %%   “stp
      %%   The two particles are  “emph–sharing˝ the energy of the system which lies between  $E$ between $E$ and
      %%   $E+ “delta E$.
@@ -3582,10 +3578,10 @@ of the full system is</p>
      %%    The three momenta components are “emph–sharing˝ (or partitioning) the total  energy which lies  between
      %%    $E$ and $E + “delta E$, i.e.
      %%   “st
-     %**** hw6.tex Line 350 ****
      %%    E ¡  “frac– p˙x^2˝–2m˝  + “frac–p˙y^2 ˝–2m˝  + “frac–p˙z^2˝–2m˝ ¡ E + “delta E “, ,
      %%   “stp
      %%   The particle is free to move around in phase space but the energy must lie
+     %**** hw6.tex Line 350 ****
      %%   in this range.
      %%    Show that the total phase space volume which is available to be shared
      %%    amongst the three degrees of freedom $p˙x, p˙y, p˙z$ is
@@ -3603,10 +3599,10 @@ of the full system is</p>
      %+ “frac– p˙–x2˝^2˝–2m˝  + “frac–p˙–y2˝^2 ˝–2m˝  + “frac–p˙–z2˝^2˝–2m˝
      %¡ E + “delta E
      %“stp
-     %**** hw6.tex Line 375 ****
      %The two particles can be anywhere in phase space, but the total energy must lie in this range.
      %The coordinates  are in a box $0 ¡ x, y, z ¡ L$.
      %Show that the total phase space volume which is available to be shared amongst the six degrees of freedom $p˙–x1˝,p˙–y1˝,p˙–z1˝,p˙–x2˝,p˙–y2˝,p˙–z2˝$ is
+     %**** hw6.tex Line 375 ****
      %“st
      %V˙–“rm ps˝ =  “int˙–[E,E+“delta E]˝  “dd^3“r˙1 “dd^3“p˙1 “; “dd^3“r˙2  “dd^3“p˙2  = V^2 (2 mE)^–3˝ “,  “pi^3 “frac–“delta E˝–2E˝
      %“stp
@@ -3627,10 +3623,10 @@ of the full system is</p>
      %E ¡  “frac– p˙x^2˝–2m˝  + “frac–p˙y^2 ˝–2m˝  + “frac–p˙z^2˝–2m˝ ¡ E + “delta E “, ,
      %“stp
      %The particle is free to move around in phase space but the energy must lie
-     %**** hw6.tex Line 400 ****
      %in this range.
      %To count the number of configurations, divide up the phase space volume into cells of (arbitrary) small size $h˙0 = “Delta x “Delta p˙x$, or in three dimensions cells of size“footnote–Classically this cell size was arbitrary. With the advent of quantum mechanics, it was realized that a natural choice for the cell size is the Plank constant $h$. But here lets understand it from a classical perspective first, choosing the cell size to be $h˙0$.  We will drop the ‘‘0” eventually.˝
      %“st
+     %**** hw6.tex Line 400 ****
      %h˙0^3 =  “left(“Delta x “Delta y  “Delta z“right) “left(“Delta p˙x“Delta p˙y  “Delta p˙z “right)
      %“stp
      %The ‘‘number of ways” for $p˙x$, $p˙y$, $p˙z$ and to share (or partition) the available energy is denoted by $“Omega(E)$ and it is phase space volume divided by the cell size
@@ -3651,10 +3647,10 @@ of the full system is</p>
      %accessible configurations  $“Omega(E)$  with energy in range $[E, E+ “delta E]$? This is visualized in “Fig–fig:pspace-pdf˝.
      %“begin–figure˝
      %“centering
-     %**** hw6.tex Line 425 ****
      %“includegraphics[width=0.49“textwidth]–xspace.pdf˝
      %“includegraphics[width=0.49“textwidth]–pspace.pdf˝
      %“caption–The available phase space for two particles in one dimension.
+     %**** hw6.tex Line 425 ****
      %The black points shows one possible configuration for $(x˙1, p˙1, x˙2, p˙2)$. The accessible phase space lies in a four dimensional space.
      %One black point can be placed anywhere in the $x˙1, x˙2$  plane, and one
      %black point can be placed in the grid somewhere in the shell in the $p˙1, p˙2$ plane, so that $2m E ¡ p˙1^2 + p˙2^2  ¡ 2m (E + “delta E)$.  The cell size is $h˙0 = “Delta x “Delta p$. The number of possible configurations is $“frac–1˝–2! h˙0^2˝ “int dx˙1 dp˙1 dx˙2 dp˙2$. For an Avogadro’s number of particles in three dimensions, the space of accessible configurations is a $6N˙A$ dimensional space. ˝
@@ -3675,10 +3671,10 @@ of the full system is</p>
      %“stp
      %and that the entropy is
      %“begin–align˝
-     %**** hw6.tex Line 450 ****
      %“label–sentropy˝
      %S =&amp;
      %N k˙B “log“left[ “left( “frac–V˝–N˝ “right) “left(“frac–4“pi m˝–3h^2˝ “frac–E˝–N˝ “right)^–3/2˝ “right] + “frac–5˝–2˝ N k˙B  ““
+     %**** hw6.tex Line 450 ****
      %=&amp;N k˙B “left[ “log “left(“frac–v˝–“lambda˙–“rm th˝^3˝ “right) + “frac–5˝–2˝  “right]
      %“end–align˝
      %where $v = V/N =“ell˙0^3$ is the volume per particle (see lecture 2), and
@@ -3699,7 +3695,7 @@ of the full system is</p>
      %“st
      %e^–5N/2˝ “left(“frac–“delta E˝–E˝ “right) = e^–5N/2 +“log(“delta E/E) ˝ “simeq e^–5N/2˝
      %“stp
-     %**** hw6.tex Line 475 ****
      %Convice yourself of this step by taking $“delta E/E=10^–-6˝$ (or whatever you like). How big is $“log(“delta E/E)$ compared to $5N/2$?  Something is exponentially large if its logarithm is of order Avagadro’s number.
+     %**** hw6.tex Line 475 ****
      %“end–enumerate˝-->  </subsection>
 </document>
