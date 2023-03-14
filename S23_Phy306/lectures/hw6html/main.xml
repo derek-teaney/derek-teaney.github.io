@@ -2642,6 +2642,7 @@ for <Math mode="inline" tex="C_{V}^{1\,{\rm ml}}" text="(C _ V) ^ (1 * ml)" xml:
           </para>
           <figure placement="h!" xml:id="S0.I2.i5.fig1">
             <graphics candidates="silver_graph.pdf" graphic="silver_graph.pdf" options="width=433.62pt" xml:id="S0.I2.i5.g1"/>
+            <break/>
             <graphics candidates="diamond_graph.pdf" graphic="diamond_graph.pdf" options="width=433.62pt" xml:id="S0.I2.i5.g2"/>
           </figure>
 <!--  %Also show on your graph the classical prediction for the specific heat“footnote–The fact that the specific heats drop with temperature, was a major success of the early quantum mechanical theory. In the classical case you should find that $C˙V^–1“,–“rm ml˝˝=3R$ is constant˝. 
