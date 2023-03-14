@@ -2640,10 +2640,96 @@ for <Math mode="inline" tex="C_{V}^{1\,{\rm ml}}" text="(C _ V) ^ (1 * ml)" xml:
               </item>
             </enumerate>
           </para>
-          <figure placement="h!" xml:id="S0.I2.i5.fig1">
-            <graphics candidates="silver_graph.pdf" class="ltx_centering" graphic="silver_graph.pdf" options="width=433.62pt" xml:id="S0.I2.i5.g1"/>
-            <break class="ltx_centering"/>
-            <graphics candidates="diamond_graph2.pdf" class="ltx_centering" graphic="diamond_graph2.pdf" options="width=433.62pt" xml:id="S0.I2.i5.g2"/>
+          <figure inlist="lof" placement="h!" xml:id="S0.F2">
+            <tags>
+              <tag>Figure 2</tag>
+              <tag role="autoref">Figure 2</tag>
+              <tag role="refnum">2</tag>
+              <tag role="typerefnum">Figure 2</tag>
+            </tags>
+            <graphics candidates="diamond_silver.pdf" class="ltx_centering" graphic="diamond_silver.pdf" options="width=390.258pt" xml:id="S0.F2.g1"/>
+            <toccaption class="ltx_centering"><tag close=" ">2</tag>Specific heats of solids: (a) The Einstein Model with <Math mode="inline" tex="\hbar\omega_{0}" text="Planck-constant-over-2-pi * omega _ 0" xml:id="S0.F2.m1">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="Planck-constant-over-2-pi" name="hbar" role="ID">ℏ</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                      <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> treated as a parameter compared to the specific heat of silver. The graph approaches <Math mode="inline" tex="3R" text="3 * R" xml:id="S0.F2.m2">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="3" role="NUMBER">3</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> at high temperature. (b) The specific heat <Math mode="inline" tex="C_{V}" text="C _ V" xml:id="S0.F2.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> in units of <Math mode="inline" tex="R" text="R" xml:id="S0.F2.m4">
+                <XMath>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                </XMath>
+              </Math> of various solids versus temperature. The specific heat approaches <Math mode="inline" tex="3R" text="3 * R" xml:id="S0.F2.m5">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="3" role="NUMBER">3</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> at high temperature</toccaption>
+            <caption class="ltx_centering"><tag close=": ">Figure 2</tag>Specific heats of solids: (a) The Einstein Model with <Math mode="inline" tex="\hbar\omega_{0}" text="Planck-constant-over-2-pi * omega _ 0" xml:id="S0.F2.m6">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="Planck-constant-over-2-pi" name="hbar" role="ID">ℏ</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" name="omega" role="UNKNOWN">ω</XMTok>
+                      <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> treated as a parameter compared to the specific heat of silver. The graph approaches <Math mode="inline" tex="3R" text="3 * R" xml:id="S0.F2.m7">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="3" role="NUMBER">3</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> at high temperature. (b) The specific heat <Math mode="inline" tex="C_{V}" text="C _ V" xml:id="S0.F2.m8">
+                <XMath>
+                  <XMApp>
+                    <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                    <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                    <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> in units of <Math mode="inline" tex="R" text="R" xml:id="S0.F2.m9">
+                <XMath>
+                  <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                </XMath>
+              </Math> of various solids versus temperature. The specific heat approaches <Math mode="inline" tex="3R" text="3 * R" xml:id="S0.F2.m10">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok meaning="3" role="NUMBER">3</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">R</XMTok>
+                  </XMApp>
+                </XMath>
+              </Math> at high temperature</caption>
           </figure>
 <!--  %Also show on your graph the classical prediction for the specific heat“footnote–The fact that the specific heats drop with temperature, was a major success of the early quantum mechanical theory. In the classical case you should find that $C˙V^–1“,–“rm ml˝˝=3R$ is constant˝. 
      %“item Show that the entropy of one mole of solid ($3N˙A$ harmonic oscillators) is
