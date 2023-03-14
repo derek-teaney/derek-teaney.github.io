@@ -5509,7 +5509,7 @@ equation is replaced by <Math mode="inline" tex="v-N_{A}b_{1}" text="v - N _ A *
             <tag role="typerefnum">item (c)</tag>
           </tags>
           <para xml:id="S0.I9.i3.p1">
-            <p>Experimental fits to real gasses with the van der Waals eos give the
+            <p>(Optional, but you need to read it!) Experimental fits to real gasses with the van der Waals eos give the
 cooefficients <Math mode="inline" tex="a" text="a" xml:id="S0.I9.i3.p1.m1">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">a</XMTok>
