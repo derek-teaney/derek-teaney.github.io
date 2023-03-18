@@ -5344,7 +5344,7 @@ known as the van der Waal equation of state, which reads</p>
           </para>
           <para xml:id="S0.I9.i2.p2">
             <p>First, we recognize that the particles are not point particles, but that each
-particle in a mole has a nonzero volume <Math mode="inline" tex="b_{1}\equiv b/N_{A}" text="b _ 1 equivalent-to b / N _ A" xml:id="S0.I9.i2.p2.m1">
+particle in a mole of gas has a nonzero volume <Math mode="inline" tex="b_{1}\equiv b/N_{A}" text="b _ 1 equivalent-to b / N _ A" xml:id="S0.I9.i2.p2.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
@@ -5368,28 +5368,36 @@ particle in a mole has a nonzero volume <Math mode="inline" tex="b_{1}\equiv b/N
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">v</XMTok>
                 </XMath>
-              </Math> (the volume per mole) in the ideal gas
-equation is replaced by <Math mode="inline" tex="v-N_{A}b_{1}" text="v - N _ A * b _ 1" xml:id="S0.I9.i2.p2.m3">
+              </Math> in the ideal gas
+equation is replaced by <Math mode="inline" tex="v-N_{A}b_{1}=v-b" text="v - N _ A * b _ 1 = v - b" xml:id="S0.I9.i2.p2.m3">
                 <XMath>
                   <XMApp>
-                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
                     <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">v</XMTok>
                       <XMApp>
-                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">A</XMTok>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">A</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">b</XMTok>
+                          <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                        </XMApp>
                       </XMApp>
-                      <XMApp>
-                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                        <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
-                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">v</XMTok>
+                      <XMTok font="italic" role="UNKNOWN">b</XMTok>
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>; the total volume of one mole diminished by the volume <Math mode="inline" tex="b" text="b" xml:id="S0.I9.i2.p2.m4">
+              </Math>, i.e. the total volume diminished by the volume <Math mode="inline" tex="b" text="b" xml:id="S0.I9.i2.p2.m4">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">b</XMTok>
                 </XMath>
