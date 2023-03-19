@@ -16,7 +16,7 @@
   <resource src="LaTeXML.css" type="text/css"/>
   <resource src="ltx-article.css" type="text/css"/>
   <subsection xml:id="S0.SSx1">
-    <title>Problem 1.    Phase Space and the Entropy of an Ideal Gas</title>
+    <title>Problem 1.    Phase Space and the Entropy of a MAIG</title>
 <!--  %The purpose is here to get started, talking about the accessible phase space volume. -->    <para xml:id="S0.SSx1.p1">
       <p>The phase space volume is a measure of the total number of possible ways for <Math mode="inline" tex="N" text="N" xml:id="S0.SSx1.p1.m1">
           <XMath>
@@ -3965,9 +3965,17 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
      %“problem–Entropy of mixing ˝
      %Read section 14.6 and derive equation 14.40-->  </subsection>
   <subsection xml:id="S0.SSx2">
-    <title>Problem 2.   Entropy changes of ideal gas</title>
+    <title>Problem 2.   Entropy changes of a MAIG</title>
     <para xml:id="S0.SSx2.p1">
-      <p>Find the change in entropy of one mole of an ideal monoatomic ideal gas in the following processes:</p>
+      <p>Find the change in entropy of <Math mode="inline" tex="n_{\rm ml}" text="n _ ml" xml:id="S0.SSx2.p1.m1">
+          <XMath>
+            <XMApp>
+              <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+              <XMTok font="italic" role="UNKNOWN">n</XMTok>
+              <XMTok fontsize="70%" role="UNKNOWN">ml</XMTok>
+            </XMApp>
+          </XMath>
+        </Math> moles of an ideal monoatomic ideal gas in the following processes:</p>
       <enumerate xml:id="S0.I4">
         <item xml:id="S0.I4.i1">
           <tags>
@@ -4220,7 +4228,7 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
           </para>
         </item>
       </enumerate>
-      <p>Ans: (a) <Math mode="inline" tex="\tfrac{5}{2}R\ln(T_{2}/T_{1})" text="(5 / 2) * R * natural-logarithm@(T _ 2 / T _ 1)" xml:id="S0.SSx2.p2.m1">
+      <p>Ans: (a) <Math mode="inline" tex="\tfrac{5}{2}n_{\rm ml}R\ln(T_{2}/T_{1})" text="(5 / 2) * n _ ml * R * natural-logarithm@(T _ 2 / T _ 1)" xml:id="S0.SSx2.p2.m1">
           <XMath>
             <XMApp>
               <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -4228,6 +4236,11 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
                 <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
                 <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
                 <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">ml</XMTok>
               </XMApp>
               <XMTok font="italic" role="UNKNOWN">R</XMTok>
               <XMDual>
@@ -4258,7 +4271,7 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
               </XMDual>
             </XMApp>
           </XMath>
-        </Math>; (b) <Math mode="inline" tex="\tfrac{3}{2}R\ln(P_{2}/P_{1})" text="(3 / 2) * R * natural-logarithm@(P _ 2 / P _ 1)" xml:id="S0.SSx2.p2.m2">
+        </Math>; (b) <Math mode="inline" tex="\tfrac{3}{2}n_{\rm ml}R\ln(P_{2}/P_{1})" text="(3 / 2) * n _ ml * R * natural-logarithm@(P _ 2 / P _ 1)" xml:id="S0.SSx2.p2.m2">
           <XMath>
             <XMApp>
               <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -4266,6 +4279,11 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
                 <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
                 <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
                 <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                <XMTok fontsize="70%" role="UNKNOWN">ml</XMTok>
               </XMApp>
               <XMTok font="italic" role="UNKNOWN">R</XMTok>
               <XMDual>
@@ -4887,7 +4905,7 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
               <tag role="refnum">(d)</tag>
               <tag role="typerefnum">item (d)</tag>
             </tags>
-            <text>In practice how could the water be heated reversibly? Justify your answer </text>
+            <text>In practice how could the water be heated reversibly? Justify your answer. </text>
           </inline-item>
         </inline-enumerate> <break/></p>
     </para>
@@ -4946,13 +4964,13 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
               <tag role="refnum">(b)</tag>
               <tag role="typerefnum">item (b)</tag>
             </tags>
-            <Math mode="inline" tex="2.25\,{\rm J}/{}^{\circ}{\rm K}" text="(2.25 * J) / ^ compose K" xml:id="S0.I8.i2.m1">
+            <Math mode="inline" tex="1.75\,{\rm J}/{}^{\circ}{\rm K}" text="(1.75 * J) / ^ compose K" xml:id="S0.I8.i2.m1">
               <XMath>
                 <XMApp>
                   <XMTok meaning="divide" role="MULOP">/</XMTok>
                   <XMApp>
                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMTok meaning="2.25" role="NUMBER" rpadding="1.7pt">2.25</XMTok>
+                    <XMTok meaning="1.75" role="NUMBER" rpadding="1.7pt">1.75</XMTok>
                     <XMTok role="UNKNOWN">J</XMTok>
                   </XMApp>
                   <XMApp>
