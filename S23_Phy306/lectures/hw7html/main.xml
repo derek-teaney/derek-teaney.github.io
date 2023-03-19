@@ -3967,15 +3967,7 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
   <subsection xml:id="S0.SSx2">
     <title>Problem 2.   Entropy changes of ideal gas</title>
     <para xml:id="S0.SSx2.p1">
-      <p>Find the change in entropy of <Math mode="inline" tex="n_{\rm ml}" text="n _ ml" xml:id="S0.SSx2.p1.m1">
-          <XMath>
-            <XMApp>
-              <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-              <XMTok font="italic" role="UNKNOWN">n</XMTok>
-              <XMTok fontsize="70%" role="UNKNOWN">ml</XMTok>
-            </XMApp>
-          </XMath>
-        </Math> moles of ideal gas in the following processes:</p>
+      <p>Find the change in entropy of one mole of an ideal monoatomic ideal gas in the following processes:</p>
       <enumerate xml:id="S0.I4">
         <item xml:id="S0.I4.i1">
           <tags>
@@ -4210,7 +4202,7 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
                           <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
                         </XMApp>
                       </XMath>
-                    </Math>. (<emph font="italic">Hint:</emph> How does the temperature change during an adiabatic expansion?)</p>
+                    </Math>. (<emph font="italic">Hint:</emph> How does the temperature change during an adiabatic expansion of a mono-atomic ideal gas?)</p>
                 </para>
               </item>
               <item xml:id="S0.I5.i3.I1.i2">
@@ -4228,6 +4220,83 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
           </para>
         </item>
       </enumerate>
+      <p>Ans: (a) <Math mode="inline" tex="\tfrac{5}{2}R\ln(T_{2}/T_{1})" text="(5 / 2) * R * natural-logarithm@(T _ 2 / T _ 1)" xml:id="S0.SSx2.p2.m1">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                <XMTok fontsize="70%" meaning="5" role="NUMBER">5</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMRef idref="S0.SSx2.p2.m1.1"/>
+                  <XMRef idref="S0.SSx2.p2.m1.2"/>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="natural-logarithm" role="OPFUNCTION" xml:id="S0.SSx2.p2.m1.1">ln</XMTok>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S0.SSx2.p2.m1.2">
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMApp>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>; (b) <Math mode="inline" tex="\tfrac{3}{2}R\ln(P_{2}/P_{1})" text="(3 / 2) * R * natural-logarithm@(P _ 2 / P _ 1)" xml:id="S0.SSx2.p2.m2">
+          <XMath>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok mathstyle="text" meaning="divide" role="FRACOP"/>
+                <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
+                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMTok font="italic" role="UNKNOWN">R</XMTok>
+              <XMDual>
+                <XMApp>
+                  <XMRef idref="S0.SSx2.p2.m2.1"/>
+                  <XMRef idref="S0.SSx2.p2.m2.2"/>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="natural-logarithm" role="OPFUNCTION" xml:id="S0.SSx2.p2.m2.1">ln</XMTok>
+                  <XMWrap>
+                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                    <XMApp xml:id="S0.SSx2.p2.m2.2">
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                  </XMWrap>
+                </XMApp>
+              </XMDual>
+            </XMApp>
+          </XMath>
+        </Math>.</p>
     </para>
     <pagination role="newpage"/>
   </subsection>
@@ -4446,7 +4515,7 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
                 </XMath>
               </Math>.</p>
             <enumerate xml:id="S0.I6.i2.I1">
-              <item xml:id="S0.I6.i2.I1.i1">
+<!--  %**** hw7.tex Line 500 **** -->              <item xml:id="S0.I6.i2.I1.i1">
                 <tags>
                   <tag>(i)</tag>
                   <tag role="autoref">item (b)(i)</tag>
@@ -4489,8 +4558,7 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
                           <XMTok font="italic" role="UNKNOWN">T</XMTok>
                         </XMApp>
                       </XMath>
-                    </Math> as a function of
-<!--  %**** hw7.tex Line 500 **** --></p>
+                    </Math> as a function of</p>
                   <equation xml:id="S0.Ex1">
                     <Math mode="display" tex="\frac{\Delta T}{T}\equiv\frac{T-T_{B}^{0}}{T}." text="(Delta * T) / T equivalent-to (T - (T _ B) ^ 0) / T" xml:id="S0.Ex1.m1">
                       <XMath>
@@ -4819,7 +4887,7 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
               <tag role="refnum">(d)</tag>
               <tag role="typerefnum">item (d)</tag>
             </tags>
-            <text>In practice how could the water be heated reversibly? Justify your answer by using Eq. (<ref labelref="LABEL:eq:entropystep"/>) </text>
+            <text>In practice how could the water be heated reversibly? Justify your answer </text>
           </inline-item>
         </inline-enumerate> <break/></p>
     </para>
@@ -4928,900 +4996,85 @@ in units of <Math mode="inline" tex="h^{3}" text="h ^ 3" xml:id="S0.SSx1.p6.m9">
 <!--  %Recall that in an adiabatic expansion of an ideal gas $T V^–“gamma-1˝=–“rm const˝$, which we derived from demanding that the heat inflow was zero, and that 
      %entropy was constant.  Work in reverse: show that if $T V^–“gamma-1˝=–“rm const˝$, then the entropy defined in “Eq–eq:entropy˝ is constant during an adiabatic expansion.
      %Describe qualitatively, using notions of phase space volume, why the entropy
-     %remains fixed as the system expands.
      %**** hw7.tex Line 525 ****
+     %remains fixed as the system expands.
      %“problem–Van der Walls Equation of State˝
      %This problem lays the ground work for you to be able to do part (b) of Blundell 14.7.-->    <pagination role="newpage"/>
-  </subsection>
-  <subsection xml:id="S0.SSx5">
-    <title>Problem 5.   van der Waal gas</title>
-    <para xml:id="S0.SSx5.p1">
-      <p>Real gasses don’t quite obey the ideal gas law. A systematic way to account for deviations from ideal behavior at low densities (large volumes) is the <emph font="italic">virial expansion</emph>, where the pressure reads</p>
-      <equationgroup class="ltx_eqn_align" xml:id="S0.EGx8">
-        <equation xml:id="S0.E28">
-          <tags>
-            <tag>(28)</tag>
-            <tag role="autoref">Equation 28</tag>
-            <tag role="refnum">28</tag>
-          </tags>
-          <MathFork>
-            <Math tex="\displaystyle Pv=RT\left(1+\frac{B(T)}{v}+\frac{C(T)}{v^{2}}+\ldots\right)," text="P * v = R * T * (1 + (B * T) / v + (C * T) / v ^ 2 + ldots)" xml:id="S0.E28.m3">
-              <XMath>
-                <XMDual>
-                  <XMRef idref="S0.E28.m3.3"/>
-                  <XMWrap>
-                    <XMApp xml:id="S0.E28.m3.3">
-                      <XMTok meaning="equals" role="RELOP">=</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                      </XMApp>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">R</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                        <XMDual>
-                          <XMRef idref="S0.E28.m3.3.1"/>
-                          <XMWrap>
-                            <XMTok role="OPEN" stretchy="true">(</XMTok>
-                            <XMApp xml:id="S0.E28.m3.3.1">
-                              <XMTok meaning="plus" role="ADDOP">+</XMTok>
-                              <XMTok meaning="1" role="NUMBER">1</XMTok>
-                              <XMApp>
-                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                                <XMApp>
-                                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                                  <XMTok font="italic" role="UNKNOWN">B</XMTok>
-                                  <XMDual>
-                                    <XMRef idref="S0.E28.m3.1"/>
-                                    <XMWrap>
-                                      <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.E28.m3.1">T</XMTok>
-                                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                                    </XMWrap>
-                                  </XMDual>
-                                </XMApp>
-                                <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                              </XMApp>
-                              <XMApp>
-                                <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                                <XMApp>
-                                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                                  <XMTok font="italic" role="UNKNOWN">C</XMTok>
-                                  <XMDual>
-                                    <XMRef idref="S0.E28.m3.2"/>
-                                    <XMWrap>
-                                      <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.E28.m3.2">T</XMTok>
-                                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                                    </XMWrap>
-                                  </XMDual>
-                                </XMApp>
-                                <XMApp>
-                                  <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
-                                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                                  <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
-                                </XMApp>
-                              </XMApp>
-                              <XMTok name="ldots" role="ID">…</XMTok>
-                            </XMApp>
-                            <XMTok role="CLOSE" stretchy="true">)</XMTok>
-                          </XMWrap>
-                        </XMDual>
-                      </XMApp>
-                    </XMApp>
-                    <XMTok role="PUNCT">,</XMTok>
-                  </XMWrap>
-                </XMDual>
-              </XMath>
-            </Math>
-            <MathBranch>
-              <td align="right"><Math mode="inline" tex="\displaystyle Pv=" text="P * v = absent" xml:id="S0.E28.m1">
-                  <XMath>
-                    <XMApp>
-                      <XMTok meaning="equals" role="RELOP">=</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                      </XMApp>
-                      <XMTok meaning="absent"/>
-                    </XMApp>
-                  </XMath>
-                </Math></td>
-              <td align="left"><Math mode="inline" tex="\displaystyle RT\left(1+\frac{B(T)}{v}+\frac{C(T)}{v^{2}}+\ldots\right)," text="R * T * (1 + (B * T) / v + (C * T) / v ^ 2 + ldots)" xml:id="S0.E28.m2">
-                  <XMath>
-                    <XMDual>
-                      <XMRef idref="S0.E28.m2.3"/>
-                      <XMWrap>
-                        <XMApp xml:id="S0.E28.m2.3">
-                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                          <XMTok font="italic" role="UNKNOWN">R</XMTok>
-                          <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                          <XMDual>
-                            <XMRef idref="S0.E28.m2.3.1"/>
-                            <XMWrap>
-                              <XMTok role="OPEN" stretchy="true">(</XMTok>
-                              <XMApp xml:id="S0.E28.m2.3.1">
-                                <XMTok meaning="plus" role="ADDOP">+</XMTok>
-                                <XMTok meaning="1" role="NUMBER">1</XMTok>
-                                <XMApp>
-                                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                                  <XMApp>
-                                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                                    <XMTok font="italic" role="UNKNOWN">B</XMTok>
-                                    <XMDual>
-                                      <XMRef idref="S0.E28.m2.1"/>
-                                      <XMWrap>
-                                        <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E28.m2.1">T</XMTok>
-                                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                                      </XMWrap>
-                                    </XMDual>
-                                  </XMApp>
-                                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                                </XMApp>
-                                <XMApp>
-                                  <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                                  <XMApp>
-                                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                                    <XMTok font="italic" role="UNKNOWN">C</XMTok>
-                                    <XMDual>
-                                      <XMRef idref="S0.E28.m2.2"/>
-                                      <XMWrap>
-                                        <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E28.m2.2">T</XMTok>
-                                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                                      </XMWrap>
-                                    </XMDual>
-                                  </XMApp>
-                                  <XMApp>
-                                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
-                                    <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                                    <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
-                                  </XMApp>
-                                </XMApp>
-                                <XMTok name="ldots" role="ID">…</XMTok>
-                              </XMApp>
-                              <XMTok role="CLOSE" stretchy="true">)</XMTok>
-                            </XMWrap>
-                          </XMDual>
-                        </XMApp>
-                        <XMTok role="PUNCT">,</XMTok>
-                      </XMWrap>
-                    </XMDual>
-                  </XMath>
-                </Math></td>
-            </MathBranch>
-          </MathFork>
-        </equation>
-      </equationgroup>
-      <p>The functions <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.SSx5.p1.m1">
-          <XMath>
-            <XMApp>
-              <XMTok meaning="times" role="MULOP">⁢</XMTok>
-              <XMTok font="italic" role="UNKNOWN">B</XMTok>
-              <XMDual>
-                <XMRef idref="S0.SSx5.p1.m1.1"/>
-                <XMWrap>
-                  <XMTok role="OPEN" stretchy="false">(</XMTok>
-                  <XMTok font="italic" role="UNKNOWN" xml:id="S0.SSx5.p1.m1.1">T</XMTok>
-                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                </XMWrap>
-              </XMDual>
-            </XMApp>
-          </XMath>
-        </Math>, <Math mode="inline" tex="C(T)" text="C * T" xml:id="S0.SSx5.p1.m2">
-          <XMath>
-            <XMApp>
-              <XMTok meaning="times" role="MULOP">⁢</XMTok>
-              <XMTok font="italic" role="UNKNOWN">C</XMTok>
-              <XMDual>
-                <XMRef idref="S0.SSx5.p1.m2.1"/>
-                <XMWrap>
-                  <XMTok role="OPEN" stretchy="false">(</XMTok>
-                  <XMTok font="italic" role="UNKNOWN" xml:id="S0.SSx5.p1.m2.1">T</XMTok>
-                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                </XMWrap>
-              </XMDual>
-            </XMApp>
-          </XMath>
-        </Math>, are called the second and third virial
-coefficients, respectively. When the density of the gas is low, the third
-(and higher) terms can often be omitted. Here <Math mode="inline" tex="v\equiv v_{\rm 1ml}\equiv V/n_{\rm ml}" text="v equivalent-to v _ (1 * m * l) equivalent-to V / n _ ml" xml:id="S0.SSx5.p1.m3">
-          <XMath>
-            <XMApp>
-              <XMTok meaning="multirelation"/>
-              <XMTok font="italic" role="UNKNOWN">v</XMTok>
-              <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
-              <XMApp>
-                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                <XMApp>
-                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
-                  <XMTok fontsize="70%" role="UNKNOWN">m</XMTok>
-                  <XMTok fontsize="70%" role="UNKNOWN">l</XMTok>
-                </XMApp>
-              </XMApp>
-              <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
-              <XMApp>
-                <XMTok meaning="divide" role="MULOP">/</XMTok>
-                <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                <XMApp>
-                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                  <XMTok font="italic" role="UNKNOWN">n</XMTok>
-                  <XMTok fontsize="70%" role="UNKNOWN">ml</XMTok>
-                </XMApp>
-              </XMApp>
-            </XMApp>
-          </XMath>
-        </Math> is the volume for one mole of substance (i.e. a measure of the volume per particle). The second virial coefficient
-for diatomic nitrogen <Math mode="inline" tex="N_{2}" text="N _ 2" xml:id="S0.SSx5.p1.m4">
-          <XMath>
-            <XMApp>
-              <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-              <XMTok font="italic" role="UNKNOWN">N</XMTok>
-              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
-            </XMApp>
-          </XMath>
-        </Math> is given below</p>
-    </para>
-    <table inlist="lot" labels="LABEL:vanBtab" placement="htbp" xml:id="S0.T1">
-      <tags>
-        <tag>Table 1</tag>
-        <tag role="autoref">Table 1</tag>
-        <tag role="refnum">1</tag>
-        <tag role="typerefnum">Table 1</tag>
-      </tags>
-      <tabular class="ltx_centering ltx_guessed_headers" vattach="middle">
-        <thead>
-          <tr>
-            <td align="center" border="r" thead="column row"><Math mode="inline" tex="T" text="T" xml:id="S0.T1.m1">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                </XMath>
-              </Math> <Math mode="inline" tex="(K)" text="K" xml:id="S0.T1.m2">
-                <XMath>
-                  <XMDual>
-                    <XMRef idref="S0.T1.m2.1"/>
-                    <XMWrap>
-                      <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.T1.m2.1">K</XMTok>
-                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                    </XMWrap>
-                  </XMDual>
-                </XMath>
-              </Math></td>
-            <td align="center" thead="column"><Math mode="inline" tex="B\,({\rm cm}^{3}/{\rm mol})" text="B * (cm ^ 3 / mol)" xml:id="S0.T1.m3">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMTok font="italic" role="UNKNOWN" rpadding="1.7pt">B</XMTok>
-                    <XMDual>
-                      <XMRef idref="S0.T1.m3.1"/>
-                      <XMWrap>
-                        <XMTok role="OPEN" stretchy="false">(</XMTok>
-                        <XMApp xml:id="S0.T1.m3.1">
-                          <XMTok meaning="divide" role="MULOP">/</XMTok>
-                          <XMApp>
-                            <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                            <XMTok role="UNKNOWN">cm</XMTok>
-                            <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
-                          </XMApp>
-                          <XMTok role="UNKNOWN">mol</XMTok>
-                        </XMApp>
-                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                      </XMWrap>
-                    </XMDual>
-                  </XMApp>
-                </XMath>
-              </Math></td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td align="center" border="r t" thead="row">100</td>
-            <td align="center" border="t">-160</td>
-          </tr>
-          <tr>
-            <td align="center" border="r" thead="row">200</td>
-            <td align="center">-35</td>
-          </tr>
-          <tr>
-            <td align="center" border="r" thead="row">300</td>
-            <td align="center">-4.2</td>
-          </tr>
-          <tr>
-            <td align="center" border="r" thead="row">400</td>
-            <td align="center">9.0</td>
-          </tr>
-          <tr>
-            <td align="center" border="r" thead="row">500</td>
-            <td align="center">16.9</td>
-          </tr>
-          <tr>
-            <td align="center" border="r" thead="row">600</td>
-            <td align="center">21.3</td>
-          </tr>
-        </tbody>
-      </tabular>
-<!--  %**** hw7.tex Line 550 **** -->      <toccaption class="ltx_centering"><tag close=" ">1</tag> Table of the second virial coefficient of diatomic Nitrogen</toccaption>
-      <caption class="ltx_centering"><tag close=": ">Table 1</tag> Table of the second virial coefficient of diatomic Nitrogen</caption>
-    </table>
-    <para xml:id="S0.SSx5.p2">
-      <enumerate xml:id="S0.I9">
-        <item xml:id="S0.I9.i1">
-          <tags>
-            <tag>(a)</tag>
-            <tag role="autoref">item (a)</tag>
-            <tag role="refnum">(a)</tag>
-            <tag role="typerefnum">item (a)</tag>
-          </tags>
-          <para xml:id="S0.I9.i1.p1">
-            <p>Determine the % correction to the ideal gas pressure at a temperature <Math mode="inline" tex="200\,{\rm K}" text="200 * K" xml:id="S0.I9.i1.p1.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMTok meaning="200" role="NUMBER" rpadding="1.7pt">200</XMTok>
-                    <XMTok role="UNKNOWN">K</XMTok>
-                  </XMApp>
-                </XMath>
-              </Math> and atmospheric pressure due to the first term in the virial expansion (i.e. the term due to <Math mode="inline" tex="B" text="B" xml:id="S0.I9.i1.p1.m2">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">B</XMTok>
-                </XMath>
-              </Math>.) Estimate the size of higher order corrections due to <Math mode="inline" tex="C" text="C" xml:id="S0.I9.i1.p1.m3">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">C</XMTok>
-                </XMath>
-              </Math>. <break/>Ans: approximately 0.2%</p>
-          </para>
-        </item>
-        <item xml:id="S0.I9.i2">
-          <tags>
-            <tag>(b)</tag>
-            <tag role="autoref">item (b)</tag>
-            <tag role="refnum">(b)</tag>
-            <tag role="typerefnum">item (b)</tag>
-          </tags>
-          <para xml:id="S0.I9.i2.p1">
-            <p>A well motivated parametrization of a non-ideal gas is the
-known as the van der Waal equation of state, which reads</p>
-            <equation xml:id="S0.E29">
-              <tags>
-                <tag>(29)</tag>
-                <tag role="autoref">Equation 29</tag>
-                <tag role="refnum">29</tag>
-              </tags>
-              <Math mode="display" tex="P=\frac{RT}{v-b}-\frac{a}{v^{2}}\,," text="P = (R * T) / (v - b) - a / v ^ 2" xml:id="S0.E29.m1">
-                <XMath>
-                  <XMDual>
-                    <XMRef idref="S0.E29.m1.1"/>
-                    <XMWrap>
-                      <XMApp xml:id="S0.E29.m1.1">
-                        <XMTok meaning="equals" role="RELOP">=</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
-                        <XMApp>
-                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                          <XMApp>
-                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                            <XMApp>
-                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                              <XMTok font="italic" role="UNKNOWN">R</XMTok>
-                              <XMTok font="italic" role="UNKNOWN">T</XMTok>
-                            </XMApp>
-                            <XMApp>
-                              <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                              <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                              <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                            </XMApp>
-                          </XMApp>
-                          <XMApp rpadding="1.7pt">
-                            <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                            <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                            <XMApp>
-                              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
-                              <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
-                            </XMApp>
-                          </XMApp>
-                        </XMApp>
-                      </XMApp>
-                      <XMTok role="PUNCT">,</XMTok>
-                    </XMWrap>
-                  </XMDual>
-                </XMath>
-              </Math>
-            </equation>
-            <p>The motivation for this equation of state is the following<note mark="3" role="footnote" xml:id="footnote3"><tags>
-                  <tag>3</tag>
-                  <tag role="autoref">footnote 3</tag>
-                  <tag role="refnum">3</tag>
-                  <tag role="typerefnum">footnote 3</tag>
-                </tags>This discussion paraphrases Callen</note>:</p>
-          </para>
-          <para xml:id="S0.I9.i2.p2">
-            <p>First, we recognize that the particles are not point particles, but that each
-particle in a mole of gas has a nonzero volume <Math mode="inline" tex="b_{1}\equiv b/N_{A}" text="b _ 1 equivalent-to b / N _ A" xml:id="S0.I9.i2.p2.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equivalent-to" name="equiv" role="RELOP">≡</XMTok>
-                    <XMApp>
-                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok meaning="divide" role="MULOP">/</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                      <XMApp>
-                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                        <XMTok font="italic" fontsize="70%" role="UNKNOWN">A</XMTok>
-                      </XMApp>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>. Accordingly the volume <Math mode="inline" tex="v" text="v" xml:id="S0.I9.i2.p2.m2">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                </XMath>
-              </Math> in the ideal gas
-equation is replaced by <Math mode="inline" tex="v-N_{A}b_{1}=v-b" text="v - N _ A * b _ 1 = v - b" xml:id="S0.I9.i2.p2.m3">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMApp>
-                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMApp>
-                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                          <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">A</XMTok>
-                        </XMApp>
-                        <XMApp>
-                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                          <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                          <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
-                        </XMApp>
-                      </XMApp>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>, i.e. the total volume diminished by the volume <Math mode="inline" tex="b" text="b" xml:id="S0.I9.i2.p2.m4">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                </XMath>
-              </Math> occupied by the molecules themselves.</p>
-          </para>
-          <para xml:id="S0.I9.i2.p3">
-            <p>The second correction arises from the existence of forces between the molecules. If the forces are attractive this will tend to reduce the pressure on the container walls. This diminution of the pressure should be proportional to the number of <emph font="italic">pairs</emph> of molecules, or upon the square of the number of particles per volume (i.e. <Math mode="inline" tex="1/v^{2}" text="1 / v ^ 2" xml:id="S0.I9.i2.p3.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="divide" role="MULOP">/</XMTok>
-                    <XMTok meaning="1" role="NUMBER">1</XMTok>
-                    <XMApp>
-                      <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                      <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>); hence the second term proportional to <Math mode="inline" tex="a" text="a" xml:id="S0.I9.i2.p3.m2">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                </XMath>
-              </Math> in the van der Waals equation.</p>
-          </para>
-          <para xml:id="S0.I9.i2.p4">
-            <p>Determine the second and third virial coefficients (<Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I9.i2.p4.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">B</XMTok>
-                    <XMDual>
-                      <XMRef idref="S0.I9.i2.p4.m1.1"/>
-                      <XMWrap>
-                        <XMTok role="OPEN" stretchy="false">(</XMTok>
-                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I9.i2.p4.m1.1">T</XMTok>
-                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                      </XMWrap>
-                    </XMDual>
-                  </XMApp>
-                </XMath>
-              </Math> and <Math mode="inline" tex="C(T)" text="C * T" xml:id="S0.I9.i2.p4.m2">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">C</XMTok>
-                    <XMDual>
-                      <XMRef idref="S0.I9.i2.p4.m2.1"/>
-                      <XMWrap>
-                        <XMTok role="OPEN" stretchy="false">(</XMTok>
-                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I9.i2.p4.m2.1">T</XMTok>
-                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                      </XMWrap>
-                    </XMDual>
-                  </XMApp>
-                </XMath>
-              </Math>) for a gas obeying the van der Waals equation, in terms of <Math mode="inline" tex="b" text="b" xml:id="S0.I9.i2.p4.m3">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                </XMath>
-              </Math> and <Math mode="inline" tex="a" text="a" xml:id="S0.I9.i2.p4.m4">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                </XMath>
-              </Math>. You can check your result for <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I9.i2.p4.m5">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">B</XMTok>
-                    <XMDual>
-                      <XMRef idref="S0.I9.i2.p4.m5.1"/>
-                      <XMWrap>
-                        <XMTok role="OPEN" stretchy="false">(</XMTok>
-                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I9.i2.p4.m5.1">T</XMTok>
-                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                      </XMWrap>
-                    </XMDual>
-                  </XMApp>
-                </XMath>
-              </Math> by comparing with Fig. <ref labelref="LABEL:vanfig2"/> of part (c).</p>
-          </para>
-<!--  %**** hw7.tex Line 575 **** -->          <para xml:id="S0.I9.i2.p5">
-            <p><emph font="italic">Hint:</emph> In the ideal gas limit the volume per particle <Math mode="inline" tex="v" text="v" xml:id="S0.I9.i2.p5.m1">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                </XMath>
-              </Math> is very large, so you may expand <Math mode="inline" tex="1/(v-b)" text="1 / (v - b)" xml:id="S0.I9.i2.p5.m2">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="divide" role="MULOP">/</XMTok>
-                    <XMTok meaning="1" role="NUMBER">1</XMTok>
-                    <XMDual>
-                      <XMRef idref="S0.I9.i2.p5.m2.1"/>
-                      <XMWrap>
-                        <XMTok role="OPEN" stretchy="false">(</XMTok>
-                        <XMApp xml:id="S0.I9.i2.p5.m2.1">
-                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                          <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                          <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                        </XMApp>
-                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                      </XMWrap>
-                    </XMDual>
-                  </XMApp>
-                </XMath>
-              </Math> for large <Math mode="inline" tex="v" text="v" xml:id="S0.I9.i2.p5.m3">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">v</XMTok>
-                </XMath>
-              </Math>.</p>
-          </para>
-        </item>
-        <item xml:id="S0.I9.i3">
-          <tags>
-            <tag>(c)</tag>
-            <tag role="autoref">item (c)</tag>
-            <tag role="refnum">(c)</tag>
-            <tag role="typerefnum">item (c)</tag>
-          </tags>
-          <para xml:id="S0.I9.i3.p1">
-            <p>(Optional, but you need to read it!) Experimental fits to real gasses with the van der Waals eos give the
-cooefficients <Math mode="inline" tex="a" text="a" xml:id="S0.I9.i3.p1.m1">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                </XMath>
-              </Math>, and <Math mode="inline" tex="b" text="b" xml:id="S0.I9.i3.p1.m2">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                </XMath>
-              </Math> (and also <Math mode="inline" tex="c" text="c" xml:id="S0.I9.i3.p1.m3">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">c</XMTok>
-                </XMath>
-              </Math> discussed below), and are shown in
-table in Fig. <ref labelref="LABEL:vanfig"/>.</p>
-          </para>
-          <figure inlist="lof" labels="LABEL:vanfig" xml:id="S0.F1">
-            <tags>
-              <tag>Figure 1</tag>
-              <tag role="autoref">Figure 1</tag>
-              <tag role="refnum">1</tag>
-              <tag role="typerefnum">Figure 1</tag>
-            </tags>
-            <graphics candidates="vanderWall2.pdf" class="ltx_centering" graphic="vanderWall2.pdf" options="width=238.491pt" xml:id="S0.F1.g1"/>
-            <toccaption class="ltx_centering"><tag close=" ">1</tag> A table of van der Waal parametrizations for common gasses. The coefficient <Math mode="inline" tex="c" text="c" xml:id="S0.F1.m1">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">c</XMTok>
-                </XMath>
-              </Math> will be discussed later.</toccaption>
-            <caption class="ltx_centering"><tag close=": ">Figure 1</tag> A table of van der Waal parametrizations for common gasses. The coefficient <Math mode="inline" tex="c" text="c" xml:id="S0.F1.m2">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">c</XMTok>
-                </XMath>
-              </Math> will be discussed later.</caption>
-          </figure>
-          <para xml:id="S0.I9.i3.p2">
-            <p>Make a graph of the prediction for <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I9.i3.p2.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">B</XMTok>
-                    <XMDual>
-                      <XMRef idref="S0.I9.i3.p2.m1.1"/>
-                      <XMWrap>
-                        <XMTok role="OPEN" stretchy="false">(</XMTok>
-                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I9.i3.p2.m1.1">T</XMTok>
-                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                      </XMWrap>
-                    </XMDual>
-                  </XMApp>
-                </XMath>
-              </Math> from the van der Waal equation of
-state for diatomic Nitrogen and compare with the experimental data in given in
-Table. <ref labelref="LABEL:vanBtab"/>. The plot I get is shown below in Fig. <ref labelref="LABEL:vanfig2"/>.</p>
-          </para>
-          <figure inlist="lof" labels="LABEL:vanfig2" xml:id="S0.F2">
-            <tags>
-              <tag>Figure 2</tag>
-              <tag role="autoref">Figure 2</tag>
-              <tag role="refnum">2</tag>
-              <tag role="typerefnum">Figure 2</tag>
-            </tags>
-            <graphics candidates="BPlot.pdf" class="ltx_centering" graphic="./BPlot.pdf" options="width=346.896pt" xml:id="S0.F2.g1"/>
-            <toccaption class="ltx_centering"><tag close=" ">2</tag>A plot comparing the van der Waal prediction to the data. The red
-curve is the uses the <Math mode="inline" tex="a" text="a" xml:id="S0.F2.m1">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                </XMath>
-              </Math> and <Math mode="inline" tex="b" text="b" xml:id="S0.F2.m2">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                </XMath>
-              </Math> from Table. <ref labelref="LABEL:vanfig"/>, while in the
-green line I have increased <Math mode="inline" tex="b" text="b" xml:id="S0.F2.m3">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                </XMath>
-              </Math> to a somewhat different value of <Math mode="inline" tex="b=54.2\,\times 10^{-6}\,{\rm m}^{3}" text="b = 54.2 * 10 ^ (- 6) * m ^ 3" xml:id="S0.F2.m4">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">×</XMTok>
-                        <XMTok meaning="54.2" role="NUMBER" rpadding="1.7pt">54.2</XMTok>
-                        <XMApp rpadding="1.7pt">
-                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                          <XMTok meaning="10" role="NUMBER">10</XMTok>
-                          <XMApp>
-                            <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
-                            <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
-                          </XMApp>
-                        </XMApp>
-                      </XMApp>
-                      <XMApp>
-                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                        <XMTok role="UNKNOWN">m</XMTok>
-                        <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
-                      </XMApp>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math> and <Math mode="inline" tex="a=0.152\,{\rm Pa\,m^{6}}" text="a = 0.152 * Pa * m ^ 6" xml:id="S0.F2.m5">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMTok meaning="0.152" role="NUMBER" rpadding="1.7pt">0.152</XMTok>
-                      <XMTok role="UNKNOWN" rpadding="1.7pt">Pa</XMTok>
-                      <XMApp>
-                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
-                        <XMTok role="UNKNOWN">m</XMTok>
-                        <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
-                      </XMApp>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>, which gives a better description. </toccaption>
-            <caption class="ltx_centering"><tag close=": ">Figure 2</tag>A plot comparing the van der Waal prediction to the data. The red
-curve is the uses the <Math mode="inline" tex="a" text="a" xml:id="S0.F2.m6">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                </XMath>
-              </Math> and <Math mode="inline" tex="b" text="b" xml:id="S0.F2.m7">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                </XMath>
-              </Math> from Table. <ref labelref="LABEL:vanfig"/>, while in the
-green line I have increased <Math mode="inline" tex="b" text="b" xml:id="S0.F2.m8">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                </XMath>
-              </Math> to a somewhat different value of <Math mode="inline" tex="b=54.2\,\times 10^{-6}\,{\rm m}^{3}" text="b = 54.2 * 10 ^ (- 6) * m ^ 3" xml:id="S0.F2.m9">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">b</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">×</XMTok>
-                        <XMTok meaning="54.2" role="NUMBER" rpadding="1.7pt">54.2</XMTok>
-                        <XMApp rpadding="1.7pt">
-                          <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                          <XMTok meaning="10" role="NUMBER">10</XMTok>
-                          <XMApp>
-                            <XMTok fontsize="70%" meaning="minus" role="ADDOP">-</XMTok>
-                            <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
-                          </XMApp>
-                        </XMApp>
-                      </XMApp>
-                      <XMApp>
-                        <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
-                        <XMTok role="UNKNOWN">m</XMTok>
-                        <XMTok fontsize="70%" meaning="3" role="NUMBER">3</XMTok>
-                      </XMApp>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math> and <Math mode="inline" tex="a=0.152\,{\rm Pa\,m^{6}}" text="a = 0.152 * Pa * m ^ 6" xml:id="S0.F2.m10">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">a</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMTok meaning="0.152" role="NUMBER" rpadding="1.7pt">0.152</XMTok>
-                      <XMTok role="UNKNOWN" rpadding="1.7pt">Pa</XMTok>
-                      <XMApp>
-                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
-                        <XMTok role="UNKNOWN">m</XMTok>
-                        <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
-                      </XMApp>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>, which gives a better description. </caption>
-          </figure>
-        </item>
-        <item xml:id="S0.I9.i4">
-          <tags>
-            <tag>(d)</tag>
-            <tag role="autoref">item (d)</tag>
-            <tag role="refnum">(d)</tag>
-            <tag role="typerefnum">item (d)</tag>
-          </tags>
-          <para xml:id="S0.I9.i4.p1">
-            <p>The potential energy between two molecules separated by a distance <Math mode="inline" tex="r" text="r" xml:id="S0.I9.i4.p1.m1">
-                <XMath>
-                  <XMTok font="italic" role="UNKNOWN">r</XMTok>
-                </XMath>
-              </Math> is repulsive at short distances and attractive at long distances.
-A common form of in inter-particle potential is
-<!--  %**** hw7.tex Line 600 **** -->given by the Lennard Jones potential</p>
-            <equation xml:id="S0.E30">
-              <tags>
-                <tag>(30)</tag>
-                <tag role="autoref">Equation 30</tag>
-                <tag role="refnum">30</tag>
-              </tags>
-              <Math mode="display" tex="V_{LJ}(r)=4\epsilon\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma%&#10;}{r}\right)^{6}\right]" text="V _ (L * J) * r = 4 * epsilon * delimited-[]@((sigma / r) ^ 12 - (sigma / r) ^ 6)" xml:id="S0.E30.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMApp>
-                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                        <XMTok font="italic" role="UNKNOWN">V</XMTok>
-                        <XMApp>
-                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">L</XMTok>
-                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">J</XMTok>
-                        </XMApp>
-                      </XMApp>
-                      <XMDual>
-                        <XMRef idref="S0.E30.m1.1"/>
-                        <XMWrap>
-                          <XMTok role="OPEN" stretchy="false">(</XMTok>
-                          <XMTok font="italic" role="UNKNOWN" xml:id="S0.E30.m1.1">r</XMTok>
-                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                        </XMWrap>
-                      </XMDual>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMTok meaning="4" role="NUMBER">4</XMTok>
-                      <XMTok font="italic" name="epsilon" role="UNKNOWN">ϵ</XMTok>
-                      <XMDual>
-                        <XMApp>
-                          <XMTok meaning="delimited-[]"/>
-                          <XMRef idref="S0.E30.m1.4"/>
-                        </XMApp>
-                        <XMWrap>
-                          <XMTok role="OPEN" stretchy="true">[</XMTok>
-                          <XMApp xml:id="S0.E30.m1.4">
-                            <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                            <XMApp>
-                              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
-                              <XMDual>
-                                <XMRef idref="S0.E30.m1.2"/>
-                                <XMWrap>
-                                  <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E30.m1.2">
-                                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                                    <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
-                                    <XMTok font="italic" role="UNKNOWN">r</XMTok>
-                                  </XMApp>
-                                  <XMTok role="CLOSE" stretchy="true">)</XMTok>
-                                </XMWrap>
-                              </XMDual>
-                              <XMTok fontsize="70%" meaning="12" role="NUMBER">12</XMTok>
-                            </XMApp>
-                            <XMApp>
-                              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
-                              <XMDual>
-                                <XMRef idref="S0.E30.m1.3"/>
-                                <XMWrap>
-                                  <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E30.m1.3">
-                                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
-                                    <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
-                                    <XMTok font="italic" role="UNKNOWN">r</XMTok>
-                                  </XMApp>
-                                  <XMTok role="CLOSE" stretchy="true">)</XMTok>
-                                </XMWrap>
-                              </XMDual>
-                              <XMTok fontsize="70%" meaning="6" role="NUMBER">6</XMTok>
-                            </XMApp>
-                          </XMApp>
-                          <XMTok role="CLOSE" stretchy="true">]</XMTok>
-                        </XMWrap>
-                      </XMDual>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>
-            </equation>
-            <p>which is shown in the figure below:</p>
-            <graphics candidates="LennardJones.pdf" class="ltx_centering" graphic="LennardJones.pdf" options="width=238.491pt" xml:id="S0.I9.i4.p1.g1"/>
-            <p>Also notable is that gasses tend to liquefy at low temperature.
-Give a brief (no more than three sentences) hand-wavy qualitative explanation why <Math mode="inline" tex="B(T)" text="B * T" xml:id="S0.I9.i4.p1.m2">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">B</XMTok>
-                    <XMDual>
-                      <XMRef idref="S0.I9.i4.p1.m2.1"/>
-                      <XMWrap>
-                        <XMTok role="OPEN" stretchy="false">(</XMTok>
-                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.I9.i4.p1.m2.1">T</XMTok>
-                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                      </XMWrap>
-                    </XMDual>
-                  </XMApp>
-                </XMath>
-              </Math>
-might be negative at low temperatures, but positive at high temperatures.</p>
-          </para>
-        </item>
-      </enumerate>
-    </para>
-  </subsection>
+<!--  %“problem–van der Waal gas˝ 
+     %Real gasses don’t quite obey the ideal gas law. A systematic way to account for deviations from ideal behavior at low densities (large volumes) is the “emph–virial expansion˝, where the pressure reads
+     %“begin–align˝
+     %P v =&amp; R T “left(1 + “frac–B(T)˝–v˝ + “frac–C(T)˝–v^2˝  + “ldots “right),
+     %“end–align˝
+     %The functions  $B(T)$, $C(T)$, are called the second and third virial
+     %coefficients, respectively. When the density of the gas is low, the third
+     %(and higher) terms can often be omitted.  Here $v“equiv v˙–“rm 1ml˝ “equiv V/n˙–“rm ml˝$ is the volume for one mole of substance (i.e. a measure of the volume per particle). The second virial coefficient
+     %for diatomic nitrogen $N˙2$ is given below
+     %“begin–table˝[htbp]
+     %“centering
+     %“begin–tabular˝–c—c˝
+     %$T$ $(K)$ &amp;  $B“, (–“rm cm˝^3/–“rm mol˝)$ ““ “hline
+     %100 &amp; -160 ““
+     %200 &amp; -35 ““
+     %300 &amp; -4.2 ““
+     %400 &amp; 9.0 ““
+     %500 &amp; 16.9 ““
+     %**** hw7.tex Line 550 ****
+     %600 &amp; 21.3
+     %“end–tabular˝
+     %“caption– Table of the second virial coefficient of diatomic Nitrogen˝
+     %“label–vanBtab˝
+     %“end–table˝
+     %“begin–center˝
+     %“end–center˝
+     %“begin–enumerate˝
+     %“item  Determine the “% correction to the ideal gas pressure at a temperature $200“, –“rm K˝$ and atmospheric pressure  due to the first term in the virial expansion (i.e. the term due to $B$.)  Estimate the size of higher order corrections due to $C$. ““
+     %Ans: approximately 0.2“%
+     %“item  A well motivated parametrization of a non-ideal gas is the
+     %known as the van der Waal equation of state, which reads
+     %“st
+     %P = “frac–R T˝–v - b˝ -“frac–a˝–v^2˝ “, ,
+     %“stp
+     %The motivation for this equation of state is the following“footnote–This discussion paraphrases Callen˝:
+     %First, we recognize that the particles are not point particles, but that each
+     %particle in a mole of gas has a nonzero volume $b˙1 “equiv b/N˙A$. Accordingly the volume $v$  in the ideal gas
+     %equation is replaced by $v-N˙A b˙1=v-b$, i.e. the total volume diminished by the volume $b$ occupied by the molecules themselves.
+     %The second correction arises from the existence of forces between the molecules.  If the forces are attractive this will tend to reduce the pressure on the container walls. This diminution of the pressure should be proportional to the number of “emph–pairs˝ of molecules, or  upon the square of the number of particles per volume (i.e. $1/v^2$); hence the second term proportional to $a$ in the van der Waals equation.
+     %**** hw7.tex Line 575 ****
+     %Determine the second and third virial coefficients ($B(T)$ and $C(T)$) for a gas obeying the van der Waals equation, in terms of $b$ and $a$. You can check your result for $B(T)$ by comparing with “Fig–vanfig2˝ of part (c).
+     %“emph–Hint:˝ In the ideal gas limit the volume per particle  $v$ is very large, so you may expand $1/(v - b)$ for large $v$.
+     %“item (Optional, but you need to read it!) Experimental fits to  real gasses with the van der Waals eos give the
+     %cooefficients $a$, and $b$ (and also $c$ discussed below), and  are shown in
+     %table in “Fig–vanfig˝.
+     %“begin–figure˝
+     %“centering
+     %“includegraphics[width=0.55“textwidth]–vanderWall2.pdf˝
+     %“caption–“label–vanfig˝ A table of van der Waal parametrizations for common gasses. The coefficient $c$ will be discussed later.˝
+     %“end–figure˝
+     %Make a graph of the prediction for $B(T)$ from the van der Waal equation of
+     %state for diatomic Nitrogen and compare with the experimental data in given in
+     %Table.~“ref–vanBtab˝.  The plot I get is shown below in Fig.~“ref–vanfig2˝.
+     %“begin–figure˝
+     %“centering
+     %“includegraphics[width=0.8“textwidth]–./BPlot.pdf˝
+     %“caption–A plot comparing the van der Waal prediction to the data. The red
+     %curve is the uses the $a$ and $b$ from Table.~“ref–vanfig˝, while in the
+     %green line I have increased $b$ to a somewhat different value of $b=54.2“,
+     %“times 10^–-6˝“, –“rm m˝^3$ and $a=0.152“,–“rm Pa “, m^6˝$, which gives a better description. ˝
+     %“label–vanfig2˝
+     %“end–figure˝
+     %**** hw7.tex Line 600 ****
+     %“item  The potential energy between two molecules separated by a distance $r$ is repulsive at short distances and attractive at long distances.
+     %A common form of in inter-particle potential is
+     %given by the Lennard  Jones potential
+     %“st
+     %V˙–LJ˝(r) = 4 “epsilon “left[  “left( “frac–“sigma˝–r˝ “right)^–12˝ -  “left(“frac–“sigma˝–r˝“right)^6 “right]
+     %“stp
+     %which is shown in the figure below:
+     %“begin–center˝
+     %“includegraphics[width=0.55“textwidth]–LennardJones.pdf˝
+     %“end–center˝
+     %Also notable is that gasses tend to liquefy at  low temperature.
+     %Give a brief (no more than three sentences) hand-wavy qualitative explanation  why $B(T)$
+     %might be negative at low temperatures, but positive at high temperatures.
+     %“end–enumerate˝-->  </subsection>
 </document>
