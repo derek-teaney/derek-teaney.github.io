@@ -723,33 +723,80 @@ Also show that</p>
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math> derive the
-expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">d</XMTok>
-                    <XMTok font="italic" role="UNKNOWN">G</XMTok>
-                  </XMApp>
-                </XMath>
-              </Math> in terms of its natural variables <Math mode="inline" tex="(T,P)" text="open-interval@(T, P)" xml:id="S0.I3.i2.p1.m3">
-                <XMath>
-                  <XMDual>
-                    <XMApp>
-                      <XMTok meaning="open-interval"/>
-                      <XMRef idref="S0.I3.i2.p1.m3.1"/>
-                      <XMRef idref="S0.I3.i2.p1.m3.2"/>
-                    </XMApp>
-                    <XMWrap>
-                      <XMTok role="OPEN" stretchy="false">(</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.I3.i2.p1.m3.1">T</XMTok>
-                      <XMTok role="PUNCT">,</XMTok>
-                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.I3.i2.p1.m3.2">P</XMTok>
-                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                    </XMWrap>
-                  </XMDual>
-                </XMath>
-              </Math></p>
+              </Math>
+<inline-enumerate xml:id="S0.I3.i2.I1">
+                <inline-item xml:id="S0.I3.i2.I1.i1">
+                  <tags>
+                    <tag>(i)</tag>
+                    <tag role="autoref">item (b)(i)</tag>
+                    <tag role="refnum">(b)(i)</tag>
+                    <tag role="typerefnum">item (b)(i)</tag>
+                  </tags>
+                  <text>(optional) derive the
+expression for <Math mode="inline" tex="dF" text="d * F" xml:id="S0.I3.i2.I1.i1.m1">
+                      <XMath>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">F</XMTok>
+                        </XMApp>
+                      </XMath>
+                    </Math> in terms of its natural variables <Math mode="inline" tex="(T,V)" text="open-interval@(T, V)" xml:id="S0.I3.i2.I1.i1.m2">
+                      <XMath>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="open-interval"/>
+                            <XMRef idref="S0.I3.i2.I1.i1.m2.1"/>
+                            <XMRef idref="S0.I3.i2.I1.i1.m2.2"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="false">(</XMTok>
+                            <XMTok font="italic" role="UNKNOWN" xml:id="S0.I3.i2.I1.i1.m2.1">T</XMTok>
+                            <XMTok role="PUNCT">,</XMTok>
+                            <XMTok font="italic" role="UNKNOWN" xml:id="S0.I3.i2.I1.i1.m2.2">V</XMTok>
+                            <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMath>
+                    </Math> and
+</text>
+                </inline-item>
+                <inline-item xml:id="S0.I3.i2.I1.i2">
+                  <tags>
+                    <tag>(ii)</tag>
+                    <tag role="autoref">item (b)(ii)</tag>
+                    <tag role="refnum">(b)(ii)</tag>
+                    <tag role="typerefnum">item (b)(ii)</tag>
+                  </tags>
+                  <text>derive an expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.I1.i2.m1">
+                      <XMath>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">d</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">G</XMTok>
+                        </XMApp>
+                      </XMath>
+                    </Math> in terms of its natural variables <Math mode="inline" tex="(T,P)" text="open-interval@(T, P)" xml:id="S0.I3.i2.I1.i2.m2">
+                      <XMath>
+                        <XMDual>
+                          <XMApp>
+                            <XMTok meaning="open-interval"/>
+                            <XMRef idref="S0.I3.i2.I1.i2.m2.1"/>
+                            <XMRef idref="S0.I3.i2.I1.i2.m2.2"/>
+                          </XMApp>
+                          <XMWrap>
+                            <XMTok role="OPEN" stretchy="false">(</XMTok>
+                            <XMTok font="italic" role="UNKNOWN" xml:id="S0.I3.i2.I1.i2.m2.1">T</XMTok>
+                            <XMTok role="PUNCT">,</XMTok>
+                            <XMTok font="italic" role="UNKNOWN" xml:id="S0.I3.i2.I1.i2.m2.2">P</XMTok>
+                            <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                          </XMWrap>
+                        </XMDual>
+                      </XMath>
+                    </Math>
+</text>
+                </inline-item>
+              </inline-enumerate></p>
           </para>
         </item>
         <item xml:id="S0.I3.i3">
@@ -769,11 +816,11 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                   <tag role="refnum">6</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle H=-T^{2}\left(\frac{\partial(G/T)}{\partial T}\right)_{p}" text="H = - T ^ 2 * (partial-differential@(G / T) / partial-differential@(T)) _ p" xml:id="S0.E6.m3">
+                  <Math tex="\displaystyle U=-T^{2}\left(\frac{\partial(F/T)}{\partial T}\right)_{V}" text="U = - T ^ 2 * (partial-differential@(F / T) / partial-differential@(T)) _ V" xml:id="S0.E6.m4">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">U</XMTok>
                         <XMApp>
                           <XMTok meaning="minus" role="ADDOP">-</XMTok>
                           <XMApp>
@@ -786,23 +833,23 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                             <XMApp>
                               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                               <XMDual>
-                                <XMRef idref="S0.E6.m3.3"/>
+                                <XMRef idref="S0.E6.m4.3"/>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E6.m3.3">
+                                  <XMApp xml:id="S0.E6.m4.3">
                                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                     <XMDual>
                                       <XMApp>
-                                        <XMRef idref="S0.E6.m3.1"/>
-                                        <XMRef idref="S0.E6.m3.2"/>
+                                        <XMRef idref="S0.E6.m4.1"/>
+                                        <XMRef idref="S0.E6.m4.2"/>
                                       </XMApp>
                                       <XMApp>
-                                        <XMTok meaning="partial-differential" name="partial" role="OPERATOR" xml:id="S0.E6.m3.1">∂</XMTok>
+                                        <XMTok meaning="partial-differential" name="partial" role="OPERATOR" xml:id="S0.E6.m4.1">∂</XMTok>
                                         <XMWrap>
                                           <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                          <XMApp xml:id="S0.E6.m3.2">
+                                          <XMApp xml:id="S0.E6.m4.2">
                                             <XMTok meaning="divide" role="MULOP">/</XMTok>
-                                            <XMTok font="italic" role="UNKNOWN">G</XMTok>
+                                            <XMTok font="italic" role="UNKNOWN">F</XMTok>
                                             <XMTok font="italic" role="UNKNOWN">T</XMTok>
                                           </XMApp>
                                           <XMTok role="CLOSE" stretchy="false">)</XMTok>
@@ -817,7 +864,7 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                                   <XMTok role="CLOSE" stretchy="true">)</XMTok>
                                 </XMWrap>
                               </XMDual>
-                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
                             </XMApp>
                           </XMApp>
                         </XMApp>
@@ -825,16 +872,16 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle H=" text="H = absent" xml:id="S0.E6.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle U=" text="U = absent" xml:id="S0.E6.m1">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="equals" role="RELOP">=</XMTok>
-                            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">U</XMTok>
                             <XMTok meaning="absent"/>
                           </XMApp>
                         </XMath>
                       </Math></td>
-                    <td align="left"><Math mode="inline" tex="\displaystyle-T^{2}\left(\frac{\partial(G/T)}{\partial T}\right)_{p}" text="- T ^ 2 * (partial-differential@(G / T) / partial-differential@(T)) _ p" xml:id="S0.E6.m2">
+                    <td align="left"><Math mode="inline" tex="\displaystyle-T^{2}\left(\frac{\partial(F/T)}{\partial T}\right)_{V}" text="- T ^ 2 * (partial-differential@(F / T) / partial-differential@(T)) _ V" xml:id="S0.E6.m2">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -864,6 +911,258 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                                             <XMTok role="OPEN" stretchy="false">(</XMTok>
                                             <XMApp xml:id="S0.E6.m2.2">
                                               <XMTok meaning="divide" role="MULOP">/</XMTok>
+                                              <XMTok font="italic" role="UNKNOWN">F</XMTok>
+                                              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                                            </XMApp>
+                                            <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                          </XMWrap>
+                                        </XMApp>
+                                      </XMDual>
+                                      <XMApp>
+                                        <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                                      </XMApp>
+                                    </XMApp>
+                                    <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                                  </XMWrap>
+                                </XMDual>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                        </XMath>
+                      </Math></td>
+                  </MathBranch>
+                </MathFork>
+                <MathFork>
+                  <text class="ltx_markedasmath">(optional)</text>
+                  <MathBranch>
+                    <td align="right"><text class="ltx_markedasmath">(optional)</text></td>
+                  </MathBranch>
+                </MathFork>
+              </equation>
+              <equation xml:id="S0.E7">
+                <tags>
+                  <tag>(7)</tag>
+                  <tag role="autoref">Equation 7</tag>
+                  <tag role="refnum">7</tag>
+                </tags>
+                <MathFork>
+                  <Math tex="\displaystyle C_{V}=-T\left(\frac{\partial^{2}F}{\partial T^{2}}\right)_{V}" text="C _ V = - T * ((partial-differential ^ 2)@(F) / partial-differential@(T ^ 2)) _ V" xml:id="S0.E7.m4">
+                    <XMath>
+                      <XMApp>
+                        <XMTok meaning="equals" role="RELOP">=</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                          <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                              <XMDual>
+                                <XMRef idref="S0.E7.m4.1"/>
+                                <XMWrap>
+                                  <XMTok role="OPEN" stretchy="true">(</XMTok>
+                                  <XMApp xml:id="S0.E7.m4.1">
+                                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                    <XMApp>
+                                      <XMApp>
+                                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                                        <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                      </XMApp>
+                                      <XMTok font="italic" role="UNKNOWN">F</XMTok>
+                                    </XMApp>
+                                    <XMApp>
+                                      <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                      <XMApp>
+                                        <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                                        <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                      </XMApp>
+                                    </XMApp>
+                                  </XMApp>
+                                  <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math>
+                  <MathBranch>
+                    <td align="right"><Math mode="inline" tex="\displaystyle C_{V}=" text="C _ V = absent" xml:id="S0.E7.m1">
+                        <XMath>
+                          <XMApp>
+                            <XMTok meaning="equals" role="RELOP">=</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                              <XMTok font="italic" role="UNKNOWN">C</XMTok>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+                            </XMApp>
+                            <XMTok meaning="absent"/>
+                          </XMApp>
+                        </XMath>
+                      </Math></td>
+                    <td align="left"><Math mode="inline" tex="\displaystyle-T\left(\frac{\partial^{2}F}{\partial T^{2}}\right)_{V}" text="- T * ((partial-differential ^ 2)@(F) / partial-differential@(T ^ 2)) _ V" xml:id="S0.E7.m2">
+                        <XMath>
+                          <XMApp>
+                            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                <XMDual>
+                                  <XMRef idref="S0.E7.m2.1"/>
+                                  <XMWrap>
+                                    <XMTok role="OPEN" stretchy="true">(</XMTok>
+                                    <XMApp xml:id="S0.E7.m2.1">
+                                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                      <XMApp>
+                                        <XMApp>
+                                          <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                                          <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                        </XMApp>
+                                        <XMTok font="italic" role="UNKNOWN">F</XMTok>
+                                      </XMApp>
+                                      <XMApp>
+                                        <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                        <XMApp>
+                                          <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                                          <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                                        </XMApp>
+                                      </XMApp>
+                                    </XMApp>
+                                    <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                                  </XMWrap>
+                                </XMDual>
+                                <XMTok font="italic" fontsize="70%" role="UNKNOWN">V</XMTok>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                        </XMath>
+                      </Math></td>
+                  </MathBranch>
+                </MathFork>
+                <MathFork>
+                  <text class="ltx_markedasmath">(optional)</text>
+                  <MathBranch>
+                    <td align="right"><text class="ltx_markedasmath">(optional)</text></td>
+                  </MathBranch>
+                </MathFork>
+              </equation>
+              <equation xml:id="S0.E8">
+                <tags>
+                  <tag>(8)</tag>
+                  <tag role="autoref">Equation 8</tag>
+                  <tag role="refnum">8</tag>
+                </tags>
+                <MathFork>
+                  <Math tex="\displaystyle H=-T^{2}\left(\frac{\partial(G/T)}{\partial T}\right)_{p}" text="H = - T ^ 2 * (partial-differential@(G / T) / partial-differential@(T)) _ p" xml:id="S0.E8.m3">
+                    <XMath>
+                      <XMApp>
+                        <XMTok meaning="equals" role="RELOP">=</XMTok>
+                        <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                        <XMApp>
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMApp>
+                              <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                              <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                              <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                              <XMDual>
+                                <XMRef idref="S0.E8.m3.3"/>
+                                <XMWrap>
+                                  <XMTok role="OPEN" stretchy="true">(</XMTok>
+                                  <XMApp xml:id="S0.E8.m3.3">
+                                    <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                    <XMDual>
+                                      <XMApp>
+                                        <XMRef idref="S0.E8.m3.1"/>
+                                        <XMRef idref="S0.E8.m3.2"/>
+                                      </XMApp>
+                                      <XMApp>
+                                        <XMTok meaning="partial-differential" name="partial" role="OPERATOR" xml:id="S0.E8.m3.1">∂</XMTok>
+                                        <XMWrap>
+                                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                          <XMApp xml:id="S0.E8.m3.2">
+                                            <XMTok meaning="divide" role="MULOP">/</XMTok>
+                                            <XMTok font="italic" role="UNKNOWN">G</XMTok>
+                                            <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                                          </XMApp>
+                                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                        </XMWrap>
+                                      </XMApp>
+                                    </XMDual>
+                                    <XMApp>
+                                      <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
+                                      <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                                    </XMApp>
+                                  </XMApp>
+                                  <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                                </XMWrap>
+                              </XMDual>
+                              <XMTok font="italic" fontsize="70%" role="UNKNOWN">p</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math>
+                  <MathBranch>
+                    <td align="right"><Math mode="inline" tex="\displaystyle H=" text="H = absent" xml:id="S0.E8.m1">
+                        <XMath>
+                          <XMApp>
+                            <XMTok meaning="equals" role="RELOP">=</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">H</XMTok>
+                            <XMTok meaning="absent"/>
+                          </XMApp>
+                        </XMath>
+                      </Math></td>
+                    <td align="left"><Math mode="inline" tex="\displaystyle-T^{2}\left(\frac{\partial(G/T)}{\partial T}\right)_{p}" text="- T ^ 2 * (partial-differential@(G / T) / partial-differential@(T)) _ p" xml:id="S0.E8.m2">
+                        <XMath>
+                          <XMApp>
+                            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMApp>
+                                <XMTok role="SUPERSCRIPTOP" scriptpos="post1"/>
+                                <XMTok font="italic" role="UNKNOWN">T</XMTok>
+                                <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                <XMDual>
+                                  <XMRef idref="S0.E8.m2.3"/>
+                                  <XMWrap>
+                                    <XMTok role="OPEN" stretchy="true">(</XMTok>
+                                    <XMApp xml:id="S0.E8.m2.3">
+                                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                                      <XMDual>
+                                        <XMApp>
+                                          <XMRef idref="S0.E8.m2.1"/>
+                                          <XMRef idref="S0.E8.m2.2"/>
+                                        </XMApp>
+                                        <XMApp>
+                                          <XMTok meaning="partial-differential" name="partial" role="OPERATOR" xml:id="S0.E8.m2.1">∂</XMTok>
+                                          <XMWrap>
+                                            <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                            <XMApp xml:id="S0.E8.m2.2">
+                                              <XMTok meaning="divide" role="MULOP">/</XMTok>
                                               <XMTok font="italic" role="UNKNOWN">G</XMTok>
                                               <XMTok font="italic" role="UNKNOWN">T</XMTok>
                                             </XMApp>
@@ -888,14 +1187,14 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                   </MathBranch>
                 </MathFork>
               </equation>
-              <equation xml:id="S0.E7">
+              <equation xml:id="S0.E9">
                 <tags>
-                  <tag>(7)</tag>
-                  <tag role="autoref">Equation 7</tag>
-                  <tag role="refnum">7</tag>
+                  <tag>(9)</tag>
+                  <tag role="autoref">Equation 9</tag>
+                  <tag role="refnum">9</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle C_{p}=-T\left(\frac{\partial^{2}G}{\partial T^{2}}\right)_{p}" text="C _ p = - T * ((partial-differential ^ 2)@(G) / partial-differential@(T ^ 2)) _ p" xml:id="S0.E7.m3">
+                  <Math tex="\displaystyle C_{p}=-T\left(\frac{\partial^{2}G}{\partial T^{2}}\right)_{p}" text="C _ p = - T * ((partial-differential ^ 2)@(G) / partial-differential@(T ^ 2)) _ p" xml:id="S0.E9.m3">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -912,10 +1211,10 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                             <XMApp>
                               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                               <XMDual>
-                                <XMRef idref="S0.E7.m3.1"/>
+                                <XMRef idref="S0.E9.m3.1"/>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E7.m3.1">
+                                  <XMApp xml:id="S0.E9.m3.1">
                                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                     <XMApp>
                                       <XMApp>
@@ -945,7 +1244,7 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle C_{p}=" text="C _ p = absent" xml:id="S0.E7.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle C_{p}=" text="C _ p = absent" xml:id="S0.E9.m1">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -958,7 +1257,7 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                           </XMApp>
                         </XMath>
                       </Math></td>
-                    <td align="left"><Math mode="inline" tex="\displaystyle-T\left(\frac{\partial^{2}G}{\partial T^{2}}\right)_{p}" text="- T * ((partial-differential ^ 2)@(G) / partial-differential@(T ^ 2)) _ p" xml:id="S0.E7.m2">
+                    <td align="left"><Math mode="inline" tex="\displaystyle-T\left(\frac{\partial^{2}G}{\partial T^{2}}\right)_{p}" text="- T * ((partial-differential ^ 2)@(G) / partial-differential@(T ^ 2)) _ p" xml:id="S0.E9.m2">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -968,10 +1267,10 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                               <XMApp>
                                 <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                                 <XMDual>
-                                  <XMRef idref="S0.E7.m2.1"/>
+                                  <XMRef idref="S0.E9.m2.1"/>
                                   <XMWrap>
                                     <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                    <XMApp xml:id="S0.E7.m2.1">
+                                    <XMApp xml:id="S0.E9.m2.1">
                                       <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                       <XMApp>
                                         <XMApp>
@@ -1006,26 +1305,26 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
           </para>
         </item>
       </enumerate>
-<!--  %**** hw8.tex Line 75 **** -->    </para>
+    </para>
   </subsection>
   <subsection xml:id="S0.SSx4">
     <title>Problem 4.   van der Waal gas</title>
     <para xml:id="S0.SSx4.p1">
       <p>Real gasses don’t quite obey the ideal gas law. A systematic way to account for deviations from ideal behavior at low densities (large volumes) is the <emph font="italic">virial expansion</emph>, where the pressure reads</p>
       <equationgroup class="ltx_eqn_align" xml:id="S0.EGx3">
-        <equation xml:id="S0.E8">
+        <equation xml:id="S0.E10">
           <tags>
-            <tag>(8)</tag>
-            <tag role="autoref">Equation 8</tag>
-            <tag role="refnum">8</tag>
+            <tag>(10)</tag>
+            <tag role="autoref">Equation 10</tag>
+            <tag role="refnum">10</tag>
           </tags>
           <MathFork>
-            <Math tex="\displaystyle Pv=RT\left(1+\frac{B(T)}{v}+\frac{C(T)}{v^{2}}+\ldots\right)," text="P * v = R * T * (1 + (B * T) / v + (C * T) / v ^ 2 + ldots)" xml:id="S0.E8.m3">
+            <Math tex="\displaystyle Pv=RT\left(1+\frac{B(T)}{v}+\frac{C(T)}{v^{2}}+\ldots\right)," text="P * v = R * T * (1 + (B * T) / v + (C * T) / v ^ 2 + ldots)" xml:id="S0.E10.m3">
               <XMath>
                 <XMDual>
-                  <XMRef idref="S0.E8.m3.3"/>
+                  <XMRef idref="S0.E10.m3.3"/>
                   <XMWrap>
-                    <XMApp xml:id="S0.E8.m3.3">
+                    <XMApp xml:id="S0.E10.m3.3">
                       <XMTok meaning="equals" role="RELOP">=</XMTok>
                       <XMApp>
                         <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -1037,10 +1336,10 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                         <XMTok font="italic" role="UNKNOWN">R</XMTok>
                         <XMTok font="italic" role="UNKNOWN">T</XMTok>
                         <XMDual>
-                          <XMRef idref="S0.E8.m3.3.1"/>
+                          <XMRef idref="S0.E10.m3.3.1"/>
                           <XMWrap>
                             <XMTok role="OPEN" stretchy="true">(</XMTok>
-                            <XMApp xml:id="S0.E8.m3.3.1">
+                            <XMApp xml:id="S0.E10.m3.3.1">
                               <XMTok meaning="plus" role="ADDOP">+</XMTok>
                               <XMTok meaning="1" role="NUMBER">1</XMTok>
                               <XMApp>
@@ -1049,10 +1348,10 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                   <XMTok font="italic" role="UNKNOWN">B</XMTok>
                                   <XMDual>
-                                    <XMRef idref="S0.E8.m3.1"/>
+                                    <XMRef idref="S0.E10.m3.1"/>
                                     <XMWrap>
                                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.E8.m3.1">T</XMTok>
+                                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.E10.m3.1">T</XMTok>
                                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
                                     </XMWrap>
                                   </XMDual>
@@ -1065,10 +1364,10 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                   <XMTok font="italic" role="UNKNOWN">C</XMTok>
                                   <XMDual>
-                                    <XMRef idref="S0.E8.m3.2"/>
+                                    <XMRef idref="S0.E10.m3.2"/>
                                     <XMWrap>
                                       <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.E8.m3.2">T</XMTok>
+                                      <XMTok font="italic" role="UNKNOWN" xml:id="S0.E10.m3.2">T</XMTok>
                                       <XMTok role="CLOSE" stretchy="false">)</XMTok>
                                     </XMWrap>
                                   </XMDual>
@@ -1092,7 +1391,7 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
               </XMath>
             </Math>
             <MathBranch>
-              <td align="right"><Math mode="inline" tex="\displaystyle Pv=" text="P * v = absent" xml:id="S0.E8.m1">
+              <td align="right"><Math mode="inline" tex="\displaystyle Pv=" text="P * v = absent" xml:id="S0.E10.m1">
                   <XMath>
                     <XMApp>
                       <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -1105,20 +1404,20 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                     </XMApp>
                   </XMath>
                 </Math></td>
-              <td align="left"><Math mode="inline" tex="\displaystyle RT\left(1+\frac{B(T)}{v}+\frac{C(T)}{v^{2}}+\ldots\right)," text="R * T * (1 + (B * T) / v + (C * T) / v ^ 2 + ldots)" xml:id="S0.E8.m2">
+              <td align="left"><Math mode="inline" tex="\displaystyle RT\left(1+\frac{B(T)}{v}+\frac{C(T)}{v^{2}}+\ldots\right)," text="R * T * (1 + (B * T) / v + (C * T) / v ^ 2 + ldots)" xml:id="S0.E10.m2">
                   <XMath>
                     <XMDual>
-                      <XMRef idref="S0.E8.m2.3"/>
+                      <XMRef idref="S0.E10.m2.3"/>
                       <XMWrap>
-                        <XMApp xml:id="S0.E8.m2.3">
+                        <XMApp xml:id="S0.E10.m2.3">
                           <XMTok meaning="times" role="MULOP">⁢</XMTok>
                           <XMTok font="italic" role="UNKNOWN">R</XMTok>
                           <XMTok font="italic" role="UNKNOWN">T</XMTok>
                           <XMDual>
-                            <XMRef idref="S0.E8.m2.3.1"/>
+                            <XMRef idref="S0.E10.m2.3.1"/>
                             <XMWrap>
                               <XMTok role="OPEN" stretchy="true">(</XMTok>
-                              <XMApp xml:id="S0.E8.m2.3.1">
+                              <XMApp xml:id="S0.E10.m2.3.1">
                                 <XMTok meaning="plus" role="ADDOP">+</XMTok>
                                 <XMTok meaning="1" role="NUMBER">1</XMTok>
                                 <XMApp>
@@ -1127,10 +1426,10 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                     <XMTok font="italic" role="UNKNOWN">B</XMTok>
                                     <XMDual>
-                                      <XMRef idref="S0.E8.m2.1"/>
+                                      <XMRef idref="S0.E10.m2.1"/>
                                       <XMWrap>
                                         <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E8.m2.1">T</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E10.m2.1">T</XMTok>
                                         <XMTok role="CLOSE" stretchy="false">)</XMTok>
                                       </XMWrap>
                                     </XMDual>
@@ -1143,10 +1442,10 @@ expression for <Math mode="inline" tex="dG" text="d * G" xml:id="S0.I3.i2.p1.m2"
                                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                     <XMTok font="italic" role="UNKNOWN">C</XMTok>
                                     <XMDual>
-                                      <XMRef idref="S0.E8.m2.2"/>
+                                      <XMRef idref="S0.E10.m2.2"/>
                                       <XMWrap>
                                         <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E8.m2.2">T</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN" xml:id="S0.E10.m2.2">T</XMTok>
                                         <XMTok role="CLOSE" stretchy="false">)</XMTok>
                                       </XMWrap>
                                     </XMDual>
@@ -1310,10 +1609,10 @@ for diatomic nitrogen <Math mode="inline" tex="N_{2}" text="N _ 2" xml:id="S0.SS
           </tr>
         </tbody>
       </tabular>
-      <toccaption class="ltx_centering"><tag close=" ">1</tag> Table of the second virial coefficient of diatomic nitorgen</toccaption>
+<!--  %**** hw8.tex Line 100 **** -->      <toccaption class="ltx_centering"><tag close=" ">1</tag> Table of the second virial coefficient of diatomic nitorgen</toccaption>
       <caption class="ltx_centering"><tag close=": ">Table 1</tag> Table of the second virial coefficient of diatomic nitorgen</caption>
     </table>
-<!--  %**** hw8.tex Line 100 **** -->    <para xml:id="S0.SSx4.p2">
+    <para xml:id="S0.SSx4.p2">
       <enumerate xml:id="S0.I4">
         <item xml:id="S0.I4.i1">
           <tags>
@@ -1352,18 +1651,18 @@ for diatomic nitrogen <Math mode="inline" tex="N_{2}" text="N _ 2" xml:id="S0.SS
           <para xml:id="S0.I4.i2.p1">
             <p>A well motivated parametrization of a non-ideal gas is the
 known as the van der Waal equations of state, which reads</p>
-            <equation labels="LABEL:PVa" xml:id="S0.E9">
+            <equation labels="LABEL:PVa" xml:id="S0.E11">
               <tags>
-                <tag>(9)</tag>
-                <tag role="autoref">Equation 9</tag>
-                <tag role="refnum">9</tag>
+                <tag>(11)</tag>
+                <tag role="autoref">Equation 11</tag>
+                <tag role="refnum">11</tag>
               </tags>
-              <Math mode="display" tex="P=\frac{RT}{v-b}-\frac{a}{v^{2}}\,," text="P = (R * T) / (v - b) - a / v ^ 2" xml:id="S0.E9.m1">
+              <Math mode="display" tex="P=\frac{RT}{v-b}-\frac{a}{v^{2}}\,," text="P = (R * T) / (v - b) - a / v ^ 2" xml:id="S0.E11.m1">
                 <XMath>
                   <XMDual>
-                    <XMRef idref="S0.E9.m1.1"/>
+                    <XMRef idref="S0.E11.m1.1"/>
                     <XMWrap>
-                      <XMApp xml:id="S0.E9.m1.1">
+                      <XMApp xml:id="S0.E11.m1.1">
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
                         <XMTok font="italic" role="UNKNOWN">P</XMTok>
                         <XMApp>
@@ -1515,7 +1814,7 @@ equation is replaced by <Math mode="inline" tex="v-N_{A}(b/N_{A})" text="v - N _
                 </XMath>
               </Math>.</p>
           </para>
-          <para xml:id="S0.I4.i2.p5">
+<!--  %**** hw8.tex Line 125 **** -->          <para xml:id="S0.I4.i2.p5">
             <p><emph font="italic">Hint:</emph> In the ideal gas limit the volume per particle <Math mode="inline" tex="v" text="v" xml:id="S0.I4.i2.p5.m1">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">v</XMTok>
@@ -1555,7 +1854,7 @@ equation is replaced by <Math mode="inline" tex="v-N_{A}(b/N_{A})" text="v - N _
           </tags>
           <para xml:id="S0.I4.i3.p1">
             <p>Experimental fits to real gasses with the van der Waals eos give the
-<!--  %**** hw8.tex Line 125 **** -->cooefficients <Math mode="inline" tex="a" text="a" xml:id="S0.I4.i3.p1.m1">
+cooefficients <Math mode="inline" tex="a" text="a" xml:id="S0.I4.i3.p1.m1">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">a</XMTok>
                 </XMath>
@@ -1743,14 +2042,14 @@ green line I have increased <Math mode="inline" tex="b" text="b" xml:id="S0.F2.m
                 </XMath>
               </Math> is repulsive at short distances and attractive at long distances.
 A common form of in inter-particle potential is
-given by the Lennard Jones potential</p>
-            <equation xml:id="S0.E10">
+<!--  %**** hw8.tex Line 150 **** -->given by the Lennard Jones potential</p>
+            <equation xml:id="S0.E12">
               <tags>
-                <tag>(10)</tag>
-                <tag role="autoref">Equation 10</tag>
-                <tag role="refnum">10</tag>
+                <tag>(12)</tag>
+                <tag role="autoref">Equation 12</tag>
+                <tag role="refnum">12</tag>
               </tags>
-              <Math mode="display" tex="V_{LJ}(r)=4\epsilon\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma%&#10;}{r}\right)^{6}\right]" text="V _ (L * J) * r = 4 * epsilon * delimited-[]@((sigma / r) ^ 12 - (sigma / r) ^ 6)" xml:id="S0.E10.m1">
+              <Math mode="display" tex="V_{LJ}(r)=4\epsilon\left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma%&#10;}{r}\right)^{6}\right]" text="V _ (L * J) * r = 4 * epsilon * delimited-[]@((sigma / r) ^ 12 - (sigma / r) ^ 6)" xml:id="S0.E12.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -1766,10 +2065,10 @@ given by the Lennard Jones potential</p>
                         </XMApp>
                       </XMApp>
                       <XMDual>
-                        <XMRef idref="S0.E10.m1.1"/>
+                        <XMRef idref="S0.E12.m1.1"/>
                         <XMWrap>
                           <XMTok role="OPEN" stretchy="false">(</XMTok>
-                          <XMTok font="italic" role="UNKNOWN" xml:id="S0.E10.m1.1">r</XMTok>
+                          <XMTok font="italic" role="UNKNOWN" xml:id="S0.E12.m1.1">r</XMTok>
                           <XMTok role="CLOSE" stretchy="false">)</XMTok>
                         </XMWrap>
                       </XMDual>
@@ -1781,19 +2080,19 @@ given by the Lennard Jones potential</p>
                       <XMDual>
                         <XMApp>
                           <XMTok meaning="delimited-[]"/>
-                          <XMRef idref="S0.E10.m1.4"/>
+                          <XMRef idref="S0.E12.m1.4"/>
                         </XMApp>
                         <XMWrap>
                           <XMTok role="OPEN" stretchy="true">[</XMTok>
-                          <XMApp xml:id="S0.E10.m1.4">
+                          <XMApp xml:id="S0.E12.m1.4">
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
                             <XMApp>
                               <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
                               <XMDual>
-                                <XMRef idref="S0.E10.m1.2"/>
+                                <XMRef idref="S0.E12.m1.2"/>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E10.m1.2">
+                                  <XMApp xml:id="S0.E12.m1.2">
                                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                     <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
                                     <XMTok font="italic" role="UNKNOWN">r</XMTok>
@@ -1806,10 +2105,10 @@ given by the Lennard Jones potential</p>
                             <XMApp>
                               <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
                               <XMDual>
-                                <XMRef idref="S0.E10.m1.3"/>
+                                <XMRef idref="S0.E12.m1.3"/>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E10.m1.3">
+                                  <XMApp xml:id="S0.E12.m1.3">
                                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                     <XMTok font="italic" name="sigma" role="UNKNOWN">σ</XMTok>
                                     <XMTok font="italic" role="UNKNOWN">r</XMTok>
@@ -1821,7 +2120,7 @@ given by the Lennard Jones potential</p>
                             </XMApp>
                           </XMApp>
                           <XMTok role="CLOSE" stretchy="true">]</XMTok>
-<!--  %**** hw8.tex Line 150 **** -->                        </XMWrap>
+                        </XMWrap>
                       </XMDual>
                     </XMApp>
                   </XMApp>
@@ -1915,13 +2214,13 @@ might be negative at low temperatures, but positive at high temperatures.</p>
             </XMApp>
           </XMath>
         </Math> for a diatomic gas. A commonly used parametrization of the energy temperature relation of a van der Waals gas is</p>
-      <equation labels="LABEL:uinternal" xml:id="S0.E11">
+      <equation labels="LABEL:uinternal" xml:id="S0.E13">
         <tags>
-          <tag>(11)</tag>
-          <tag role="autoref">Equation 11</tag>
-          <tag role="refnum">11</tag>
+          <tag>(13)</tag>
+          <tag role="autoref">Equation 13</tag>
+          <tag role="refnum">13</tag>
         </tags>
-        <Math mode="display" tex="u=cRT-\frac{a}{v}" text="u = c * R * T - a / v" xml:id="S0.E11.m1">
+        <Math mode="display" tex="u=cRT-\frac{a}{v}" text="u = c * R * T - a / v" xml:id="S0.E13.m1">
           <XMath>
             <XMApp>
               <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -1977,7 +2276,7 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
     </para>
     <para xml:id="S0.SSx5.p2">
       <enumerate xml:id="S0.I5">
-        <item xml:id="S0.I5.i1">
+<!--  %**** hw8.tex Line 175 **** -->        <item xml:id="S0.I5.i1">
           <tags>
             <tag>(a)</tag>
             <tag role="autoref">item (a)</tag>
@@ -1987,24 +2286,24 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
           <para xml:id="S0.I5.i1.p1">
             <p>Show that for any substance we have</p>
             <equationgroup class="ltx_eqn_align" xml:id="S0.EGx4">
-              <equation labels="LABEL:firstform" xml:id="S0.E12">
+              <equation labels="LABEL:firstform" xml:id="S0.E14">
                 <tags>
-                  <tag>(12)</tag>
-                  <tag role="autoref">Equation 12</tag>
-                  <tag role="refnum">12</tag>
+                  <tag>(14)</tag>
+                  <tag role="autoref">Equation 14</tag>
+                  <tag role="refnum">14</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle\left(\frac{\partial T}{\partial V}\right)_{U}=-\frac{1}{C_{V}}%&#10;\left[T\left(\frac{\partial p}{\partial T}\right)_{V}-p\right]" text="(partial-differential@(T) / partial-differential@(V)) _ U = - (1 / C _ V) * delimited-[]@(T * (partial-differential@(p) / partial-differential@(T)) _ V - p)" xml:id="S0.E12.m3">
+                  <Math tex="\displaystyle\left(\frac{\partial T}{\partial V}\right)_{U}=-\frac{1}{C_{V}}%&#10;\left[T\left(\frac{\partial p}{\partial T}\right)_{V}-p\right]" text="(partial-differential@(T) / partial-differential@(V)) _ U = - (1 / C _ V) * delimited-[]@(T * (partial-differential@(p) / partial-differential@(T)) _ V - p)" xml:id="S0.E14.m3">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
                         <XMApp>
                           <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                           <XMDual>
-                            <XMRef idref="S0.E12.m3.1"/>
+                            <XMRef idref="S0.E14.m3.1"/>
                             <XMWrap>
                               <XMTok role="OPEN" stretchy="true">(</XMTok>
-                              <XMApp xml:id="S0.E12.m3.1">
+                              <XMApp xml:id="S0.E14.m3.1">
                                 <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                 <XMApp>
                                   <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -2036,11 +2335,11 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                             <XMDual>
                               <XMApp>
                                 <XMTok meaning="delimited-[]"/>
-                                <XMRef idref="S0.E12.m3.3"/>
+                                <XMRef idref="S0.E14.m3.3"/>
                               </XMApp>
                               <XMWrap>
                                 <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                <XMApp xml:id="S0.E12.m3.3">
+                                <XMApp xml:id="S0.E14.m3.3">
                                   <XMTok meaning="minus" role="ADDOP">-</XMTok>
                                   <XMApp>
                                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -2048,10 +2347,10 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                                     <XMApp>
                                       <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
                                       <XMDual>
-                                        <XMRef idref="S0.E12.m3.2"/>
+                                        <XMRef idref="S0.E14.m3.2"/>
                                         <XMWrap>
                                           <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                          <XMApp xml:id="S0.E12.m3.2">
+                                          <XMApp xml:id="S0.E14.m3.2">
                                             <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                             <XMApp>
                                               <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -2079,17 +2378,17 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle\left(\frac{\partial T}{\partial V}\right)_{U}=" text="(partial-differential@(T) / partial-differential@(V)) _ U = absent" xml:id="S0.E12.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle\left(\frac{\partial T}{\partial V}\right)_{U}=" text="(partial-differential@(T) / partial-differential@(V)) _ U = absent" xml:id="S0.E14.m1">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="equals" role="RELOP">=</XMTok>
                             <XMApp>
                               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                               <XMDual>
-                                <XMRef idref="S0.E12.m1.1"/>
+                                <XMRef idref="S0.E14.m1.1"/>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E12.m1.1">
+                                  <XMApp xml:id="S0.E14.m1.1">
                                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                     <XMApp>
                                       <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -2109,7 +2408,7 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                           </XMApp>
                         </XMath>
                       </Math></td>
-                    <td align="left"><Math mode="inline" tex="\displaystyle-\frac{1}{C_{V}}\left[T\left(\frac{\partial p}{\partial T}\right)%&#10;_{V}-p\right]" text="- (1 / C _ V) * delimited-[]@(T * (partial-differential@(p) / partial-differential@(T)) _ V - p)" xml:id="S0.E12.m2">
+                    <td align="left"><Math mode="inline" tex="\displaystyle-\frac{1}{C_{V}}\left[T\left(\frac{\partial p}{\partial T}\right)%&#10;_{V}-p\right]" text="- (1 / C _ V) * delimited-[]@(T * (partial-differential@(p) / partial-differential@(T)) _ V - p)" xml:id="S0.E14.m2">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -2127,11 +2426,11 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                               <XMDual>
                                 <XMApp>
                                   <XMTok meaning="delimited-[]"/>
-                                  <XMRef idref="S0.E12.m2.2"/>
+                                  <XMRef idref="S0.E14.m2.2"/>
                                 </XMApp>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                  <XMApp xml:id="S0.E12.m2.2">
+                                  <XMApp xml:id="S0.E14.m2.2">
                                     <XMTok meaning="minus" role="ADDOP">-</XMTok>
                                     <XMApp>
                                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -2139,10 +2438,10 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                                       <XMApp>
                                         <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
                                         <XMDual>
-                                          <XMRef idref="S0.E12.m2.1"/>
+                                          <XMRef idref="S0.E14.m2.1"/>
                                           <XMWrap>
                                             <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                            <XMApp xml:id="S0.E12.m2.1">
+                                            <XMApp xml:id="S0.E14.m2.1">
                                               <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                               <XMApp>
                                                 <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -2171,14 +2470,14 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                   </MathBranch>
                 </MathFork>
               </equation>
-              <equation xml:id="S0.E13">
+              <equation xml:id="S0.E15">
                 <tags>
-                  <tag>(13)</tag>
-                  <tag role="autoref">Equation 13</tag>
-                  <tag role="refnum">13</tag>
+                  <tag>(15)</tag>
+                  <tag role="autoref">Equation 15</tag>
+                  <tag role="refnum">15</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle=-\frac{1}{C_{V}}\left[T\frac{\beta_{p}}{\kappa_{T}}-p\right]" text="absent = - (1 / C _ V) * delimited-[]@(T * (beta _ p / kappa _ T) - p)" xml:id="S0.E13.m3">
+                  <Math tex="\displaystyle=-\frac{1}{C_{V}}\left[T\frac{\beta_{p}}{\kappa_{T}}-p\right]" text="absent = - (1 / C _ V) * delimited-[]@(T * (beta _ p / kappa _ T) - p)" xml:id="S0.E15.m3">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -2199,11 +2498,11 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                             <XMDual>
                               <XMApp>
                                 <XMTok meaning="delimited-[]"/>
-                                <XMRef idref="S0.E13.m3.1"/>
+                                <XMRef idref="S0.E15.m3.1"/>
                               </XMApp>
                               <XMWrap>
                                 <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                <XMApp xml:id="S0.E13.m3.1">
+                                <XMApp xml:id="S0.E15.m3.1">
                                   <XMTok meaning="minus" role="ADDOP">-</XMTok>
                                   <XMApp>
                                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -2233,12 +2532,12 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle=" text="=" xml:id="S0.E13.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle=" text="=" xml:id="S0.E15.m1">
                         <XMath>
                           <XMTok meaning="equals" role="RELOP">=</XMTok>
                         </XMath>
                       </Math></td>
-                    <td align="left"><Math mode="inline" tex="\displaystyle-\frac{1}{C_{V}}\left[T\frac{\beta_{p}}{\kappa_{T}}-p\right]" text="- (1 / C _ V) * delimited-[]@(T * (beta _ p / kappa _ T) - p)" xml:id="S0.E13.m2">
+                    <td align="left"><Math mode="inline" tex="\displaystyle-\frac{1}{C_{V}}\left[T\frac{\beta_{p}}{\kappa_{T}}-p\right]" text="- (1 / C _ V) * delimited-[]@(T * (beta _ p / kappa _ T) - p)" xml:id="S0.E15.m2">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -2256,11 +2555,11 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                               <XMDual>
                                 <XMApp>
                                   <XMTok meaning="delimited-[]"/>
-                                  <XMRef idref="S0.E13.m2.1"/>
+                                  <XMRef idref="S0.E15.m2.1"/>
                                 </XMApp>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                  <XMApp xml:id="S0.E13.m2.1">
+                                  <XMApp xml:id="S0.E15.m2.1">
                                     <XMTok meaning="minus" role="ADDOP">-</XMTok>
                                     <XMApp>
                                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -2321,24 +2620,24 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
           <para xml:id="S0.I5.i3.p1">
             <p>Show that for any substance we have:</p>
             <equationgroup class="ltx_eqn_align" xml:id="S0.EGx5">
-              <equation labels="LABEL:secondform" xml:id="S0.E14">
+              <equation labels="LABEL:secondform" xml:id="S0.E16">
                 <tags>
-                  <tag>(14)</tag>
-                  <tag role="autoref">Equation 14</tag>
-                  <tag role="refnum">14</tag>
+                  <tag>(16)</tag>
+                  <tag role="autoref">Equation 16</tag>
+                  <tag role="refnum">16</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle\left(\frac{\partial T}{\partial V}\right)_{S}=-\frac{1}{C_{V}}%&#10;\left[T\left(\frac{\partial p}{\partial T}\right)_{V}\right]" text="(partial-differential@(T) / partial-differential@(V)) _ S = - (1 / C _ V) * delimited-[]@(T * (partial-differential@(p) / partial-differential@(T)) _ V)" xml:id="S0.E14.m3">
+                  <Math tex="\displaystyle\left(\frac{\partial T}{\partial V}\right)_{S}=-\frac{1}{C_{V}}%&#10;\left[T\left(\frac{\partial p}{\partial T}\right)_{V}\right]" text="(partial-differential@(T) / partial-differential@(V)) _ S = - (1 / C _ V) * delimited-[]@(T * (partial-differential@(p) / partial-differential@(T)) _ V)" xml:id="S0.E16.m3">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
                         <XMApp>
                           <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                           <XMDual>
-                            <XMRef idref="S0.E14.m3.1"/>
+                            <XMRef idref="S0.E16.m3.1"/>
                             <XMWrap>
                               <XMTok role="OPEN" stretchy="true">(</XMTok>
-                              <XMApp xml:id="S0.E14.m3.1">
+                              <XMApp xml:id="S0.E16.m3.1">
                                 <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                 <XMApp>
                                   <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -2370,20 +2669,20 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                             <XMDual>
                               <XMApp>
                                 <XMTok meaning="delimited-[]"/>
-                                <XMRef idref="S0.E14.m3.3"/>
+                                <XMRef idref="S0.E16.m3.3"/>
                               </XMApp>
                               <XMWrap>
                                 <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                <XMApp xml:id="S0.E14.m3.3">
+                                <XMApp xml:id="S0.E16.m3.3">
                                   <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                   <XMTok font="italic" role="UNKNOWN">T</XMTok>
                                   <XMApp>
                                     <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
                                     <XMDual>
-                                      <XMRef idref="S0.E14.m3.2"/>
+                                      <XMRef idref="S0.E16.m3.2"/>
                                       <XMWrap>
                                         <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                        <XMApp xml:id="S0.E14.m3.2">
+                                        <XMApp xml:id="S0.E16.m3.2">
                                           <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                           <XMApp>
                                             <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -2409,17 +2708,17 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle\left(\frac{\partial T}{\partial V}\right)_{S}=" text="(partial-differential@(T) / partial-differential@(V)) _ S = absent" xml:id="S0.E14.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle\left(\frac{\partial T}{\partial V}\right)_{S}=" text="(partial-differential@(T) / partial-differential@(V)) _ S = absent" xml:id="S0.E16.m1">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="equals" role="RELOP">=</XMTok>
                             <XMApp>
                               <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
                               <XMDual>
-                                <XMRef idref="S0.E14.m1.1"/>
+                                <XMRef idref="S0.E16.m1.1"/>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E14.m1.1">
+                                  <XMApp xml:id="S0.E16.m1.1">
                                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                     <XMApp>
                                       <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -2439,7 +2738,7 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                           </XMApp>
                         </XMath>
                       </Math></td>
-                    <td align="left"><Math mode="inline" tex="\displaystyle-\frac{1}{C_{V}}\left[T\left(\frac{\partial p}{\partial T}\right)%&#10;_{V}\right]" text="- (1 / C _ V) * delimited-[]@(T * (partial-differential@(p) / partial-differential@(T)) _ V)" xml:id="S0.E14.m2">
+                    <td align="left"><Math mode="inline" tex="\displaystyle-\frac{1}{C_{V}}\left[T\left(\frac{\partial p}{\partial T}\right)%&#10;_{V}\right]" text="- (1 / C _ V) * delimited-[]@(T * (partial-differential@(p) / partial-differential@(T)) _ V)" xml:id="S0.E16.m2">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -2457,20 +2756,20 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                               <XMDual>
                                 <XMApp>
                                   <XMTok meaning="delimited-[]"/>
-                                  <XMRef idref="S0.E14.m2.2"/>
+                                  <XMRef idref="S0.E16.m2.2"/>
                                 </XMApp>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                  <XMApp xml:id="S0.E14.m2.2">
+                                  <XMApp xml:id="S0.E16.m2.2">
                                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                     <XMTok font="italic" role="UNKNOWN">T</XMTok>
                                     <XMApp>
                                       <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
                                       <XMDual>
-                                        <XMRef idref="S0.E14.m2.1"/>
+                                        <XMRef idref="S0.E16.m2.1"/>
                                         <XMWrap>
                                           <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                          <XMApp xml:id="S0.E14.m2.1">
+                                          <XMApp xml:id="S0.E16.m2.1">
                                             <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                             <XMApp>
                                               <XMTok meaning="partial-differential" name="partial" role="OPERATOR">∂</XMTok>
@@ -2497,14 +2796,14 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                   </MathBranch>
                 </MathFork>
               </equation>
-              <equation xml:id="S0.E15">
+              <equation xml:id="S0.E17">
                 <tags>
-                  <tag>(15)</tag>
-                  <tag role="autoref">Equation 15</tag>
-                  <tag role="refnum">15</tag>
+                  <tag>(17)</tag>
+                  <tag role="autoref">Equation 17</tag>
+                  <tag role="refnum">17</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle=-\frac{1}{C_{V}}\left[\frac{\beta_{p}}{\kappa_{T}}\right]" text="absent = - (1 / C _ V) * delimited-[]@(beta _ p / kappa _ T)" xml:id="S0.E15.m3">
+                  <Math tex="\displaystyle=-\frac{1}{C_{V}}\left[\frac{\beta_{p}}{\kappa_{T}}\right]" text="absent = - (1 / C _ V) * delimited-[]@(beta _ p / kappa _ T)" xml:id="S0.E17.m3">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -2525,11 +2824,11 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                             <XMDual>
                               <XMApp>
                                 <XMTok meaning="delimited-[]"/>
-                                <XMRef idref="S0.E15.m3.1"/>
+                                <XMRef idref="S0.E17.m3.1"/>
                               </XMApp>
                               <XMWrap>
                                 <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                <XMApp xml:id="S0.E15.m3.1">
+                                <XMApp xml:id="S0.E17.m3.1">
                                   <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                   <XMApp>
                                     <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
@@ -2551,12 +2850,12 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle=" text="=" xml:id="S0.E15.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle=" text="=" xml:id="S0.E17.m1">
                         <XMath>
                           <XMTok meaning="equals" role="RELOP">=</XMTok>
                         </XMath>
                       </Math></td>
-                    <td align="left"><Math mode="inline" tex="\displaystyle-\frac{1}{C_{V}}\left[\frac{\beta_{p}}{\kappa_{T}}\right]" text="- (1 / C _ V) * delimited-[]@(beta _ p / kappa _ T)" xml:id="S0.E15.m2">
+                    <td align="left"><Math mode="inline" tex="\displaystyle-\frac{1}{C_{V}}\left[\frac{\beta_{p}}{\kappa_{T}}\right]" text="- (1 / C _ V) * delimited-[]@(beta _ p / kappa _ T)" xml:id="S0.E17.m2">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -2574,11 +2873,11 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                               <XMDual>
                                 <XMApp>
                                   <XMTok meaning="delimited-[]"/>
-                                  <XMRef idref="S0.E15.m2.1"/>
+                                  <XMRef idref="S0.E17.m2.1"/>
                                 </XMApp>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                  <XMApp xml:id="S0.E15.m2.1">
+                                  <XMApp xml:id="S0.E17.m2.1">
                                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                     <XMApp>
                                       <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
@@ -2681,7 +2980,8 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
           <XMath>
             <XMTok font="italic" name="alpha" role="UNKNOWN">α</XMTok>
           </XMath>
-        </Math> is a constant greater than one). The walls of the vessels do not allow for heat flow.</p>
+        </Math> is a constant greater than one). The walls of the vessels do not allow for heat flow.
+<!--  %**** hw8.tex Line 200 **** --></p>
     </para>
     <para xml:id="S0.SSx6.p3">
       <enumerate xml:id="S0.I6">
@@ -2721,7 +3021,7 @@ depending on molecule type. Some data on <Math mode="inline" tex="c" text="c" xm
                   </XMApp>
                 </XMath>
               </Math>.
-<!--  %**** hw8.tex Line 200 **** -->Compare with the ideal gas case.</p>
+Compare with the ideal gas case.</p>
           </para>
           <para xml:id="S0.I6.i1.p2">
             <p>For definiteness evaluate your result for <Math mode="inline" tex="V_{i}=2\,{\rm L}" text="V _ i = 2 * L" xml:id="S0.I6.i1.p2.m1">
@@ -2771,13 +3071,13 @@ and <Math mode="inline" tex="T_{i}=300\,{\rm K}" text="T _ i = 300 * K" xml:id="
                 </XMath>
               </Math> and the van der Waals constants of argon.
 I find</p>
-            <equation xml:id="S0.E16">
+            <equation xml:id="S0.E18">
               <tags>
-                <tag>(16)</tag>
-                <tag role="autoref">Equation 16</tag>
-                <tag role="refnum">16</tag>
+                <tag>(18)</tag>
+                <tag role="autoref">Equation 18</tag>
+                <tag role="refnum">18</tag>
               </tags>
-              <Math mode="display" tex="\Delta T=-3.2\,{\rm K}" text="Delta * T = - 3.2 * K" xml:id="S0.E16.m1">
+              <Math mode="display" tex="\Delta T=-3.2\,{\rm K}" text="Delta * T = - 3.2 * K" xml:id="S0.E18.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -2814,14 +3114,14 @@ Assume the temperature is nearly constant during the expansion. (You should have
           <para xml:id="S0.I6.i2.p2">
             <p>You should find</p>
             <equationgroup class="ltx_eqn_align" xml:id="S0.EGx6">
-              <equation xml:id="S0.E17">
+              <equation xml:id="S0.E19">
                 <tags>
-                  <tag>(17)</tag>
-                  <tag role="autoref">Equation 17</tag>
-                  <tag role="refnum">17</tag>
+                  <tag>(19)</tag>
+                  <tag role="autoref">Equation 19</tag>
+                  <tag role="refnum">19</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle\Delta S=R\log\left(\frac{\alpha V-b}{V-b}\right)-\frac{a}{T_{i}V%&#10;}\left(\frac{\alpha-1}{\alpha}\right)" text="Delta * S = R * logarithm@((alpha * V - b) / (V - b)) - (a / (T _ i * V)) * ((alpha - 1) / alpha)" xml:id="S0.E17.m3">
+                  <Math tex="\displaystyle\Delta S=R\log\left(\frac{\alpha V-b}{V-b}\right)-\frac{a}{T_{i}V%&#10;}\left(\frac{\alpha-1}{\alpha}\right)" text="Delta * S = R * logarithm@((alpha * V - b) / (V - b)) - (a / (T _ i * V)) * ((alpha - 1) / alpha)" xml:id="S0.E19.m3">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -2837,14 +3137,14 @@ Assume the temperature is nearly constant during the expansion. (You should have
                             <XMTok font="italic" role="UNKNOWN">R</XMTok>
                             <XMDual>
                               <XMApp>
-                                <XMRef idref="S0.E17.m3.1"/>
-                                <XMRef idref="S0.E17.m3.2"/>
+                                <XMRef idref="S0.E19.m3.1"/>
+                                <XMRef idref="S0.E19.m3.2"/>
                               </XMApp>
                               <XMApp>
-                                <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E17.m3.1">log</XMTok>
+                                <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E19.m3.1">log</XMTok>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E17.m3.2">
+                                  <XMApp xml:id="S0.E19.m3.2">
                                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                     <XMApp>
                                       <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -2882,10 +3182,10 @@ Assume the temperature is nearly constant during the expansion. (You should have
                               </XMApp>
                             </XMApp>
                             <XMDual>
-                              <XMRef idref="S0.E17.m3.3"/>
+                              <XMRef idref="S0.E19.m3.3"/>
                               <XMWrap>
                                 <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                <XMApp xml:id="S0.E17.m3.3">
+                                <XMApp xml:id="S0.E19.m3.3">
                                   <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                   <XMApp>
                                     <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -2903,7 +3203,7 @@ Assume the temperature is nearly constant during the expansion. (You should have
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle\Delta S=" text="Delta * S = absent" xml:id="S0.E17.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle\Delta S=" text="Delta * S = absent" xml:id="S0.E19.m1">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -2916,7 +3216,7 @@ Assume the temperature is nearly constant during the expansion. (You should have
                           </XMApp>
                         </XMath>
                       </Math></td>
-                    <td align="left"><Math mode="inline" tex="\displaystyle R\log\left(\frac{\alpha V-b}{V-b}\right)-\frac{a}{T_{i}V}\left(%&#10;\frac{\alpha-1}{\alpha}\right)" text="R * logarithm@((alpha * V - b) / (V - b)) - (a / (T _ i * V)) * ((alpha - 1) / alpha)" xml:id="S0.E17.m2">
+                    <td align="left"><Math mode="inline" tex="\displaystyle R\log\left(\frac{\alpha V-b}{V-b}\right)-\frac{a}{T_{i}V}\left(%&#10;\frac{\alpha-1}{\alpha}\right)" text="R * logarithm@((alpha * V - b) / (V - b)) - (a / (T _ i * V)) * ((alpha - 1) / alpha)" xml:id="S0.E19.m2">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -2925,14 +3225,14 @@ Assume the temperature is nearly constant during the expansion. (You should have
                               <XMTok font="italic" role="UNKNOWN">R</XMTok>
                               <XMDual>
                                 <XMApp>
-                                  <XMRef idref="S0.E17.m2.1"/>
-                                  <XMRef idref="S0.E17.m2.2"/>
+                                  <XMRef idref="S0.E19.m2.1"/>
+                                  <XMRef idref="S0.E19.m2.2"/>
                                 </XMApp>
                                 <XMApp>
-                                  <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E17.m2.1">log</XMTok>
+                                  <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E19.m2.1">log</XMTok>
                                   <XMWrap>
                                     <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                    <XMApp xml:id="S0.E17.m2.2">
+                                    <XMApp xml:id="S0.E19.m2.2">
                                       <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                       <XMApp>
                                         <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -2970,10 +3270,10 @@ Assume the temperature is nearly constant during the expansion. (You should have
                                 </XMApp>
                               </XMApp>
                               <XMDual>
-                                <XMRef idref="S0.E17.m2.3"/>
+                                <XMRef idref="S0.E19.m2.3"/>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">(</XMTok>
-                                  <XMApp xml:id="S0.E17.m2.3">
+                                  <XMApp xml:id="S0.E19.m2.3">
                                     <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                                     <XMApp>
                                       <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -2999,10 +3299,10 @@ Assume the temperature is nearly constant during the expansion. (You should have
     </para>
 <!--  %“problem– Entropy of Mixing form Gibbs Formula˝ 
      %“begin–figure˝[htbp]
+     %**** hw8.tex Line 225 ****
      %“centering
      %“includegraphics–mixing.pdf˝
      %“label–entropy of mixing˝
-     %**** hw8.tex Line 225 ****
      %“end–figure˝
      %“begin–enumerate˝
      %“item (Optional) Consider the entropy of mixing described previously.
