@@ -100,8 +100,10 @@ For instance, if the number of atoms is five, and the number of excited atoms (s
                 </XMath>
               </Math>, then two possible configurations are shown below
 <!--  %**** hw10.tex Line 25 **** --></p>
-            <graphics candidates="hw1count.pdf" class="ltx_centering" graphic="hw1count.pdf" options="width=238.491pt" xml:id="S0.I1.i1.p1.g1"/>
           </para>
+          <figure placement="h!" xml:id="S0.I1.i1.fig1">
+            <graphics candidates="hw1count.pdf" class="ltx_centering" graphic="hw1count.pdf" options="width=238.491pt" xml:id="S0.I1.i1.g1"/>
+          </figure>
         </item>
         <item xml:id="S0.I1.i2">
           <tags>
@@ -214,7 +216,7 @@ For instance, if the number of atoms is five, and the number of excited atoms (s
   <subsection labels="LABEL:entropy_of_mixing" xml:id="S0.SSx2">
     <title>Problem 2.    Entropy of Mixing form Gibbs Formula</title>
     <figure placement="htbp" xml:id="S0.SSx2.fig1">
-      <graphics candidates="mixing.pdf" class="ltx_centering" graphic="mixing.pdf" xml:id="S0.SSx2.g1"/>
+      <graphics candidates="mixing2.pdf" class="ltx_centering" graphic="mixing2.pdf" options="width=260.172pt" xml:id="S0.SSx2.g1"/>
     </figure>
     <para xml:id="S0.SSx2.p1">
       <enumerate xml:id="S0.I2">
@@ -403,7 +405,7 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                 </MathFork>
               </equation>
             </equationgroup>
-          </para>
+<!--  %**** hw10.tex Line 50 **** -->          </para>
         </item>
         <item xml:id="S0.I2.i2">
           <tags>
@@ -794,7 +796,7 @@ the atoms is <Math mode="inline" tex="\bar{E}=-\mu_{B}B(\bar{N}_{\uparrow}-\bar{
                             </XMApp>
                           </XMApp>
                           <XMTok role="CLOSE" stretchy="true">)</XMTok>
-                        </XMWrap>
+<!--  %**** hw10.tex Line 75 **** -->                        </XMWrap>
                       </XMApp>
                     </XMDual>
                   </XMApp>
@@ -816,7 +818,7 @@ the atoms is <Math mode="inline" tex="\bar{E}=-\mu_{B}B(\bar{N}_{\uparrow}-\bar{
                   <XMTok font="italic" role="UNKNOWN">M</XMTok>
                 </XMath>
               </Math>
-<!--  %**** hw10.tex Line 75 **** -->and sketch the magenetization versus <Math mode="inline" tex="B" text="B" xml:id="S0.I3.i3.p1.m2">
+and sketch the magenetization versus <Math mode="inline" tex="B" text="B" xml:id="S0.I3.i3.p1.m2">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">B</XMTok>
                 </XMath>
@@ -1034,7 +1036,8 @@ procedure determines the entropy, and from there all else can be determined.</p>
                 <XMath>
                   <XMTok font="caligraphic" role="UNKNOWN">E</XMTok>
                 </XMath>
-              </Math> is</p>
+              </Math> is
+<!--  %**** hw10.tex Line 100 **** --></p>
             <equation xml:id="S0.E6">
               <tags>
                 <tag>(6)</tag>
@@ -1083,7 +1086,7 @@ procedure determines the entropy, and from there all else can be determined.</p>
                         </XMApp>
                       </XMApp>
                     </XMApp>
-<!--  %**** hw10.tex Line 100 **** -->                  </XMApp>
+                  </XMApp>
                 </XMath>
               </Math>
             </equation>
