@@ -118,73 +118,304 @@ For instance, if the number of atoms is five, and the number of excited atoms (s
                   <XMTok font="italic" role="UNKNOWN">N</XMTok>
                 </XMath>
               </Math> large:</p>
-            <equation xml:id="S0.E1">
-              <tags>
-                <tag>(1)</tag>
-                <tag role="autoref">Equation 1</tag>
-                <tag role="refnum">1</tag>
-              </tags>
-              <Math mode="display" tex="\ln\Omega=N\left(-P_{0}\ln P_{0}-P_{1}\ln P_{1}\right)" text="natural-logarithm@(Omega) = N * (- P _ 0 * natural-logarithm@(P _ 0) - P _ 1 * natural-logarithm@(P _ 1))" xml:id="S0.E1.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMApp>
-                      <XMTok meaning="natural-logarithm" role="OPFUNCTION">ln</XMTok>
-                      <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                      <XMDual>
-                        <XMRef idref="S0.E1.m1.1"/>
-                        <XMWrap>
-                          <XMTok role="OPEN" stretchy="true">(</XMTok>
-                          <XMApp xml:id="S0.E1.m1.1">
+            <equationgroup class="ltx_eqn_align" xml:id="S0.EGx1">
+              <equation xml:id="S0.E1">
+                <tags>
+                  <tag>(1)</tag>
+                  <tag role="autoref">Equation 1</tag>
+                  <tag role="refnum">1</tag>
+                </tags>
+                <MathFork>
+                  <Math tex="\displaystyle\ln\Omega=-N_{0}\ln(N_{0}/N)-N_{1}\ln(N_{1}/N)" text="natural-logarithm@(Omega) = - N _ 0 * natural-logarithm@(N _ 0 / N) - N _ 1 * natural-logarithm@(N _ 1 / N)" xml:id="S0.E1.m3">
+                    <XMath>
+                      <XMApp>
+                        <XMTok meaning="equals" role="RELOP">=</XMTok>
+                        <XMApp>
+                          <XMTok meaning="natural-logarithm" role="OPFUNCTION">ln</XMTok>
+                          <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                          <XMApp>
+                            <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                                <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                              </XMApp>
+                              <XMDual>
+                                <XMApp>
+                                  <XMRef idref="S0.E1.m3.1"/>
+                                  <XMRef idref="S0.E1.m3.3"/>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok meaning="natural-logarithm" role="OPFUNCTION" xml:id="S0.E1.m3.1">ln</XMTok>
+                                  <XMWrap>
+                                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                    <XMApp xml:id="S0.E1.m3.3">
+                                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                                      <XMApp>
+                                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                                        <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                                      </XMApp>
+                                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                                    </XMApp>
+                                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                  </XMWrap>
+                                </XMApp>
+                              </XMDual>
+                            </XMApp>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                              <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                              <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                            </XMApp>
+                            <XMDual>
+                              <XMApp>
+                                <XMRef idref="S0.E1.m3.2"/>
+                                <XMRef idref="S0.E1.m3.4"/>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok meaning="natural-logarithm" role="OPFUNCTION" xml:id="S0.E1.m3.2">ln</XMTok>
+                                <XMWrap>
+                                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                  <XMApp xml:id="S0.E1.m3.4">
+                                    <XMTok meaning="divide" role="MULOP">/</XMTok>
+                                    <XMApp>
+                                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                                    </XMApp>
+                                    <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                                  </XMApp>
+                                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                </XMWrap>
+                              </XMApp>
+                            </XMDual>
+                          </XMApp>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math>
+                  <MathBranch>
+                    <td align="right"><Math mode="inline" tex="\displaystyle\ln\Omega=" text="natural-logarithm@(Omega) = absent" xml:id="S0.E1.m1">
+                        <XMath>
+                          <XMApp>
+                            <XMTok meaning="equals" role="RELOP">=</XMTok>
+                            <XMApp>
+                              <XMTok meaning="natural-logarithm" role="OPFUNCTION">ln</XMTok>
+                              <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                            </XMApp>
+                            <XMTok meaning="absent"/>
+                          </XMApp>
+                        </XMath>
+                      </Math></td>
+                    <td align="left"><Math mode="inline" tex="\displaystyle-N_{0}\ln(N_{0}/N)-N_{1}\ln(N_{1}/N)" text="- N _ 0 * natural-logarithm@(N _ 0 / N) - N _ 1 * natural-logarithm@(N _ 1 / N)" xml:id="S0.E1.m2">
+                        <XMath>
+                          <XMApp>
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
                             <XMApp>
                               <XMTok meaning="minus" role="ADDOP">-</XMTok>
                               <XMApp>
                                 <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                 <XMApp>
-                                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                  <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                  <XMTok font="italic" role="UNKNOWN">N</XMTok>
                                   <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
                                 </XMApp>
-                                <XMApp>
-                                  <XMTok meaning="natural-logarithm" role="OPFUNCTION">ln</XMTok>
+                                <XMDual>
                                   <XMApp>
-                                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
-                                    <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                                    <XMRef idref="S0.E1.m2.1"/>
+                                    <XMRef idref="S0.E1.m2.3"/>
                                   </XMApp>
-                                </XMApp>
+                                  <XMApp>
+                                    <XMTok meaning="natural-logarithm" role="OPFUNCTION" xml:id="S0.E1.m2.1">ln</XMTok>
+                                    <XMWrap>
+                                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                      <XMApp xml:id="S0.E1.m2.3">
+                                        <XMTok meaning="divide" role="MULOP">/</XMTok>
+                                        <XMApp>
+                                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                          <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                                          <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                                        </XMApp>
+                                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                                      </XMApp>
+                                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                    </XMWrap>
+                                  </XMApp>
+                                </XMDual>
                               </XMApp>
                             </XMApp>
                             <XMApp>
                               <XMTok meaning="times" role="MULOP">⁢</XMTok>
                               <XMApp>
-                                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                <XMTok font="italic" role="UNKNOWN">N</XMTok>
                                 <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
                               </XMApp>
-                              <XMApp>
-                                <XMTok meaning="natural-logarithm" role="OPFUNCTION">ln</XMTok>
+                              <XMDual>
                                 <XMApp>
-                                  <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                  <XMTok font="italic" role="UNKNOWN">P</XMTok>
-                                  <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                                  <XMRef idref="S0.E1.m2.2"/>
+                                  <XMRef idref="S0.E1.m2.4"/>
                                 </XMApp>
-                              </XMApp>
+                                <XMApp>
+                                  <XMTok meaning="natural-logarithm" role="OPFUNCTION" xml:id="S0.E1.m2.2">ln</XMTok>
+                                  <XMWrap>
+                                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                    <XMApp xml:id="S0.E1.m2.4">
+                                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                                      <XMApp>
+                                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                                      </XMApp>
+                                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                                    </XMApp>
+                                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                  </XMWrap>
+                                </XMApp>
+                              </XMDual>
                             </XMApp>
                           </XMApp>
-                          <XMTok role="CLOSE" stretchy="true">)</XMTok>
-                        </XMWrap>
-                      </XMDual>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math>
-            </equation>
+                        </XMath>
+                      </Math></td>
+                  </MathBranch>
+                </MathFork>
+              </equation>
+              <equation xml:id="S0.E2">
+                <tags>
+                  <tag>(2)</tag>
+                  <tag role="autoref">Equation 2</tag>
+                  <tag role="refnum">2</tag>
+                </tags>
+                <MathFork>
+                  <Math tex="\displaystyle=N\left(-P_{0}\ln P_{0}-P_{1}\ln P_{1}\right)" text="absent = N * (- P _ 0 * natural-logarithm@(P _ 0) - P _ 1 * natural-logarithm@(P _ 1))" xml:id="S0.E2.m3">
+                    <XMath>
+                      <XMApp>
+                        <XMTok meaning="equals" role="RELOP">=</XMTok>
+                        <XMTok meaning="absent"/>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                          <XMDual>
+                            <XMRef idref="S0.E2.m3.1"/>
+                            <XMWrap>
+                              <XMTok role="OPEN" stretchy="true">(</XMTok>
+                              <XMApp xml:id="S0.E2.m3.1">
+                                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                                <XMApp>
+                                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                                  <XMApp>
+                                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                    <XMApp>
+                                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                      <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                      <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                                    </XMApp>
+                                    <XMApp>
+                                      <XMTok meaning="natural-logarithm" role="OPFUNCTION">ln</XMTok>
+                                      <XMApp>
+                                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                        <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                                      </XMApp>
+                                    </XMApp>
+                                  </XMApp>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                  <XMApp>
+                                    <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                    <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                    <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                                  </XMApp>
+                                  <XMApp>
+                                    <XMTok meaning="natural-logarithm" role="OPFUNCTION">ln</XMTok>
+                                    <XMApp>
+                                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                      <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                                    </XMApp>
+                                  </XMApp>
+                                </XMApp>
+                              </XMApp>
+                              <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                            </XMWrap>
+                          </XMDual>
+                        </XMApp>
+                      </XMApp>
+                    </XMath>
+                  </Math>
+                  <MathBranch>
+                    <td align="right"><Math mode="inline" tex="\displaystyle=" text="=" xml:id="S0.E2.m1">
+                        <XMath>
+                          <XMTok meaning="equals" role="RELOP">=</XMTok>
+                        </XMath>
+                      </Math></td>
+                    <td align="left"><Math mode="inline" tex="\displaystyle N\left(-P_{0}\ln P_{0}-P_{1}\ln P_{1}\right)" text="N * (- P _ 0 * natural-logarithm@(P _ 0) - P _ 1 * natural-logarithm@(P _ 1))" xml:id="S0.E2.m2">
+                        <XMath>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                            <XMDual>
+                              <XMRef idref="S0.E2.m2.1"/>
+                              <XMWrap>
+                                <XMTok role="OPEN" stretchy="true">(</XMTok>
+                                <XMApp xml:id="S0.E2.m2.1">
+                                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                                  <XMApp>
+                                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                                    <XMApp>
+                                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                      <XMApp>
+                                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                        <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                                      </XMApp>
+                                      <XMApp>
+                                        <XMTok meaning="natural-logarithm" role="OPFUNCTION">ln</XMTok>
+                                        <XMApp>
+                                          <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                          <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                          <XMTok fontsize="70%" meaning="0" role="NUMBER">0</XMTok>
+                                        </XMApp>
+                                      </XMApp>
+                                    </XMApp>
+                                  </XMApp>
+                                  <XMApp>
+                                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                    <XMApp>
+                                      <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                      <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                      <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                                    </XMApp>
+                                    <XMApp>
+                                      <XMTok meaning="natural-logarithm" role="OPFUNCTION">ln</XMTok>
+                                      <XMApp>
+                                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                                        <XMTok font="italic" role="UNKNOWN">P</XMTok>
+                                        <XMTok fontsize="70%" meaning="1" role="NUMBER">1</XMTok>
+                                      </XMApp>
+                                    </XMApp>
+                                  </XMApp>
+                                </XMApp>
+                                <XMTok role="CLOSE" stretchy="true">)</XMTok>
+                              </XMWrap>
+                            </XMDual>
+                          </XMApp>
+                        </XMath>
+                      </Math></td>
+                  </MathBranch>
+                </MathFork>
+              </equation>
+            </equationgroup>
           </para>
         </item>
         <item xml:id="S0.I1.i3">
@@ -231,15 +462,15 @@ For instance, if the number of atoms is five, and the number of excited atoms (s
             <p>Consider the entropy of mixing described in class
 Two gasses initially separated into two containers which have equal temperature and pressure. When the valve is openened the two gasses mix with each other and fill the entire container, as shown in the figure above.
 Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the entropy produced during the process is</p>
-            <equationgroup class="ltx_eqn_align" xml:id="S0.EGx1">
-              <equation xml:id="S0.E2">
+            <equationgroup class="ltx_eqn_align" xml:id="S0.EGx2">
+              <equation xml:id="S0.E3">
                 <tags>
-                  <tag>(2)</tag>
-                  <tag role="autoref">Equation 2</tag>
-                  <tag role="refnum">2</tag>
+                  <tag>(3)</tag>
+                  <tag role="autoref">Equation 3</tag>
+                  <tag role="refnum">3</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle\Delta S=-Nk_{B}\left[x\log x+(1-x)\log(1-x)\right]" text="Delta * S = - N * k _ B * delimited-[]@(x * logarithm@(x) + (1 - x) * logarithm@(1 - x))" xml:id="S0.E2.m3">
+                  <Math tex="\displaystyle\Delta S=-Nk_{B}\left[x\log x+(1-x)\log(1-x)\right]" text="Delta * S = - N * k _ B * delimited-[]@(x * logarithm@(x) + (1 - x) * logarithm@(1 - x))" xml:id="S0.E3.m3">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -261,11 +492,11 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                             <XMDual>
                               <XMApp>
                                 <XMTok meaning="delimited-[]"/>
-                                <XMRef idref="S0.E2.m3.2"/>
+                                <XMRef idref="S0.E3.m3.2"/>
                               </XMApp>
                               <XMWrap>
                                 <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                <XMApp xml:id="S0.E2.m3.2">
+                                <XMApp xml:id="S0.E3.m3.2">
                                   <XMTok meaning="plus" role="ADDOP">+</XMTok>
                                   <XMApp>
                                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -278,10 +509,10 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                                   <XMApp>
                                     <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                     <XMDual>
-                                      <XMRef idref="S0.E2.m3.2.1"/>
+                                      <XMRef idref="S0.E3.m3.2.1"/>
                                       <XMWrap>
                                         <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                        <XMApp xml:id="S0.E2.m3.2.1">
+                                        <XMApp xml:id="S0.E3.m3.2.1">
                                           <XMTok meaning="minus" role="ADDOP">-</XMTok>
                                           <XMTok meaning="1" role="NUMBER">1</XMTok>
                                           <XMTok font="italic" role="UNKNOWN">x</XMTok>
@@ -291,14 +522,14 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                                     </XMDual>
                                     <XMDual>
                                       <XMApp>
-                                        <XMRef idref="S0.E2.m3.1"/>
-                                        <XMRef idref="S0.E2.m3.2.2"/>
+                                        <XMRef idref="S0.E3.m3.1"/>
+                                        <XMRef idref="S0.E3.m3.2.2"/>
                                       </XMApp>
                                       <XMApp>
-                                        <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E2.m3.1">log</XMTok>
+                                        <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E3.m3.1">log</XMTok>
                                         <XMWrap>
                                           <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                          <XMApp xml:id="S0.E2.m3.2.2">
+                                          <XMApp xml:id="S0.E3.m3.2.2">
                                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
                                             <XMTok meaning="1" role="NUMBER">1</XMTok>
                                             <XMTok font="italic" role="UNKNOWN">x</XMTok>
@@ -318,7 +549,7 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle\Delta S=" text="Delta * S = absent" xml:id="S0.E2.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle\Delta S=" text="Delta * S = absent" xml:id="S0.E3.m1">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -331,7 +562,7 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                           </XMApp>
                         </XMath>
                       </Math></td>
-                    <td align="left"><Math mode="inline" tex="\displaystyle-Nk_{B}\left[x\log x+(1-x)\log(1-x)\right]" text="- N * k _ B * delimited-[]@(x * logarithm@(x) + (1 - x) * logarithm@(1 - x))" xml:id="S0.E2.m2">
+                    <td align="left"><Math mode="inline" tex="\displaystyle-Nk_{B}\left[x\log x+(1-x)\log(1-x)\right]" text="- N * k _ B * delimited-[]@(x * logarithm@(x) + (1 - x) * logarithm@(1 - x))" xml:id="S0.E3.m2">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -346,11 +577,11 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                               <XMDual>
                                 <XMApp>
                                   <XMTok meaning="delimited-[]"/>
-                                  <XMRef idref="S0.E2.m2.2"/>
+                                  <XMRef idref="S0.E3.m2.2"/>
                                 </XMApp>
                                 <XMWrap>
                                   <XMTok role="OPEN" stretchy="true">[</XMTok>
-                                  <XMApp xml:id="S0.E2.m2.2">
+                                  <XMApp xml:id="S0.E3.m2.2">
                                     <XMTok meaning="plus" role="ADDOP">+</XMTok>
                                     <XMApp>
                                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -363,10 +594,10 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                                     <XMApp>
                                       <XMTok meaning="times" role="MULOP">⁢</XMTok>
                                       <XMDual>
-                                        <XMRef idref="S0.E2.m2.2.1"/>
+                                        <XMRef idref="S0.E3.m2.2.1"/>
                                         <XMWrap>
                                           <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                          <XMApp xml:id="S0.E2.m2.2.1">
+                                          <XMApp xml:id="S0.E3.m2.2.1">
                                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
                                             <XMTok meaning="1" role="NUMBER">1</XMTok>
                                             <XMTok font="italic" role="UNKNOWN">x</XMTok>
@@ -376,14 +607,14 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                                       </XMDual>
                                       <XMDual>
                                         <XMApp>
-                                          <XMRef idref="S0.E2.m2.1"/>
-                                          <XMRef idref="S0.E2.m2.2.2"/>
+                                          <XMRef idref="S0.E3.m2.1"/>
+                                          <XMRef idref="S0.E3.m2.2.2"/>
                                         </XMApp>
                                         <XMApp>
-                                          <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E2.m2.1">log</XMTok>
+                                          <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E3.m2.1">log</XMTok>
                                           <XMWrap>
                                             <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                            <XMApp xml:id="S0.E2.m2.2.2">
+                                            <XMApp xml:id="S0.E3.m2.2.2">
                                               <XMTok meaning="minus" role="ADDOP">-</XMTok>
                                               <XMTok meaning="1" role="NUMBER">1</XMTok>
                                               <XMTok font="italic" role="UNKNOWN">x</XMTok>
@@ -405,7 +636,7 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                 </MathFork>
               </equation>
             </equationgroup>
-<!--  %**** hw10.tex Line 50 **** -->          </para>
+          </para>
         </item>
         <item xml:id="S0.I2.i2">
           <tags>
@@ -416,15 +647,15 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
           </tags>
           <para xml:id="S0.I2.i2.p1">
             <p>Use the Gibbs formula for the entropy</p>
-            <equationgroup class="ltx_eqn_align" xml:id="S0.EGx2">
-              <equation xml:id="S0.E3">
+            <equationgroup class="ltx_eqn_align" xml:id="S0.EGx3">
+              <equation xml:id="S0.E4">
                 <tags>
-                  <tag>(3)</tag>
-                  <tag role="autoref">Equation 3</tag>
-                  <tag role="refnum">3</tag>
+                  <tag>(4)</tag>
+                  <tag role="autoref">Equation 4</tag>
+                  <tag role="refnum">4</tag>
                 </tags>
                 <MathFork>
-                  <Math tex="\displaystyle S=-k_{B}\sum_{m}P_{m}\log P_{m}" text="S = - k _ B * (sum _ m)@(P _ m * logarithm@(P _ m))" xml:id="S0.E3.m2">
+                  <Math tex="\displaystyle S=-k_{B}\sum_{m}P_{m}\log P_{m}" text="S = - k _ B * (sum _ m)@(P _ m * logarithm@(P _ m))" xml:id="S0.E4.m2">
                     <XMath>
                       <XMApp>
                         <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -467,7 +698,7 @@ Follow the thermodynamic argument given in the text (Eq. 14.39) to show that the
                     </XMath>
                   </Math>
                   <MathBranch>
-                    <td align="right"><Math mode="inline" tex="\displaystyle S=-k_{B}\sum_{m}P_{m}\log P_{m}" text="S = - k _ B * (sum _ m)@(P _ m * logarithm@(P _ m))" xml:id="S0.E3.m1">
+                    <td align="right"><Math mode="inline" tex="\displaystyle S=-k_{B}\sum_{m}P_{m}\log P_{m}" text="S = - k _ B * (sum _ m)@(P _ m * logarithm@(P _ m))" xml:id="S0.E4.m1">
                         <XMath>
                           <XMApp>
                             <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -752,17 +983,17 @@ the atoms is <Math mode="inline" tex="\bar{E}=-\mu_{B}B(\bar{N}_{\uparrow}-\bar{
                   </XMApp>
                 </XMath>
               </Math> is related to the temperature</p>
-            <equation xml:id="S0.E4">
+            <equation xml:id="S0.E5">
               <tags>
-                <tag>(4)</tag>
-                <tag role="autoref">Equation 4</tag>
-                <tag role="refnum">4</tag>
+                <tag>(5)</tag>
+                <tag role="autoref">Equation 5</tag>
+                <tag role="refnum">5</tag>
               </tags>
-              <Math mode="display" tex="\frac{\Delta}{{kT}}=\ln\left(\frac{1-\bar{n}}{\bar{n}}\right)" text="Delta / (k * T) = natural-logarithm@((1 - bar@(n)) / bar@(n))" xml:id="S0.E4.m1">
+              <Math mode="display" tex="\frac{\Delta}{{kT}}=\ln\left(\frac{1-\bar{n}}{\bar{n}}\right)" text="Delta / (k * T) = natural-logarithm@((1 - bar@(n)) / bar@(n))" xml:id="S0.E5.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMApp>
+<!--  %**** hw10.tex Line 75 **** -->                    <XMApp>
                       <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                       <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
                       <XMApp>
@@ -773,14 +1004,14 @@ the atoms is <Math mode="inline" tex="\bar{E}=-\mu_{B}B(\bar{N}_{\uparrow}-\bar{
                     </XMApp>
                     <XMDual>
                       <XMApp>
-                        <XMRef idref="S0.E4.m1.1"/>
-                        <XMRef idref="S0.E4.m1.2"/>
+                        <XMRef idref="S0.E5.m1.1"/>
+                        <XMRef idref="S0.E5.m1.2"/>
                       </XMApp>
                       <XMApp>
-                        <XMTok meaning="natural-logarithm" role="OPFUNCTION" xml:id="S0.E4.m1.1">ln</XMTok>
+                        <XMTok meaning="natural-logarithm" role="OPFUNCTION" xml:id="S0.E5.m1.1">ln</XMTok>
                         <XMWrap>
                           <XMTok role="OPEN" stretchy="true">(</XMTok>
-                          <XMApp xml:id="S0.E4.m1.2">
+                          <XMApp xml:id="S0.E5.m1.2">
                             <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
                             <XMApp>
                               <XMTok meaning="minus" role="ADDOP">-</XMTok>
@@ -796,7 +1027,7 @@ the atoms is <Math mode="inline" tex="\bar{E}=-\mu_{B}B(\bar{N}_{\uparrow}-\bar{
                             </XMApp>
                           </XMApp>
                           <XMTok role="CLOSE" stretchy="true">)</XMTok>
-<!--  %**** hw10.tex Line 75 **** -->                        </XMWrap>
+                        </XMWrap>
                       </XMApp>
                     </XMDual>
                   </XMApp>
@@ -886,7 +1117,7 @@ Show that for small fields <Math mode="inline" tex="\chi_{T}\propto 1/T" text="c
             <tag role="typerefnum">item (e)</tag>
           </tags>
           <para xml:id="S0.I3.i5.p1">
-            <p>Determine the variance in the magnetization, <Math mode="inline" tex="\left\langle(N_{\uparrow}-N_{\downarrow})^{2}\right\rangle" text="delimited-⟨⟩@((N _ uparrow - N _ downarrow) ^ 2)" xml:id="S0.I3.i5.p1.m1">
+            <p>Determine the variance in the magetization,<Math mode="inline" tex="\left\langle\delta N_{\Delta}^{2}\right\rangle" text="delimited-⟨⟩@(delta * (N _ Delta) ^ 2)" xml:id="S0.I3.i5.p1.m1">
                 <XMath>
                   <XMDual>
                     <XMApp>
@@ -896,32 +1127,45 @@ Show that for small fields <Math mode="inline" tex="\chi_{T}\propto 1/T" text="c
                     <XMWrap>
                       <XMTok name="langle" role="OPEN" stretchy="true">⟨</XMTok>
                       <XMApp xml:id="S0.I3.i5.p1.m1.1">
-                        <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
-                        <XMDual>
-                          <XMRef idref="S0.I3.i5.p1.m1.1.1"/>
-                          <XMWrap>
-                            <XMTok role="OPEN" stretchy="false">(</XMTok>
-                            <XMApp xml:id="S0.I3.i5.p1.m1.1.1">
-                              <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                              <XMApp>
-                                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                                <XMTok fontsize="70%" name="uparrow" role="ARROW">↑</XMTok>
-                              </XMApp>
-                              <XMApp>
-                                <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                                <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                                <XMTok fontsize="70%" name="downarrow" role="ARROW">↓</XMTok>
-                              </XMApp>
-                            </XMApp>
-                            <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                          </XMWrap>
-                        </XMDual>
-                        <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok font="italic" name="delta" role="UNKNOWN">δ</XMTok>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                          <XMApp>
+                            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                            <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                            <XMTok fontsize="70%" name="Delta" role="UNKNOWN">Δ</XMTok>
+                          </XMApp>
+                          <XMTok fontsize="70%" meaning="2" role="NUMBER">2</XMTok>
+                        </XMApp>
                       </XMApp>
                       <XMTok name="rangle" role="CLOSE" stretchy="true">⟩</XMTok>
                     </XMWrap>
                   </XMDual>
+                </XMath>
+              </Math>, where <Math mode="inline" tex="N_{\Delta}=N_{\uparrow}-N_{\downarrow}" text="N _ Delta = N _ uparrow - N _ downarrow" xml:id="S0.I3.i5.p1.m2">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMApp>
+                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                      <XMTok fontsize="70%" name="Delta" role="UNKNOWN">Δ</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                        <XMTok fontsize="70%" name="uparrow" role="ARROW">↑</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                        <XMTok fontsize="70%" name="downarrow" role="ARROW">↓</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
                 </XMath>
               </Math>.</p>
           </para>
@@ -998,13 +1242,13 @@ procedure determines the entropy, and from there all else can be determined.</p>
                   </XMApp>
                 </XMath>
               </Math>, i.e. the energy <emph font="italic">above</emph> the ground state energy. Show that</p>
-            <equation xml:id="S0.E5">
+            <equation xml:id="S0.E6">
               <tags>
-                <tag>(5)</tag>
-                <tag role="autoref">Equation 5</tag>
-                <tag role="refnum">5</tag>
+                <tag>(6)</tag>
+                <tag role="autoref">Equation 6</tag>
+                <tag role="refnum">6</tag>
               </tags>
-              <Math mode="display" tex="\frac{\mathcal{E}}{N}=n\Delta" text="E / N = n * Delta" xml:id="S0.E5.m1">
+              <Math mode="display" tex="\frac{\mathcal{E}}{N}=n\Delta" text="E / N = n * Delta" xml:id="S0.E6.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -1022,6 +1266,28 @@ procedure determines the entropy, and from there all else can be determined.</p>
                 </XMath>
               </Math>
             </equation>
+<!--  %**** hw10.tex Line 100 **** -->            <p>where <Math mode="inline" tex="n=N_{\downarrow}/N" text="n = N _ downarrow / N" xml:id="S0.I4.i1.p1.m3">
+                <XMath>
+                  <XMApp>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                    <XMApp>
+                      <XMTok meaning="divide" role="MULOP">/</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                        <XMTok fontsize="70%" name="downarrow" role="ARROW">↓</XMTok>
+                      </XMApp>
+                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMath>
+              </Math> is the number of excited atoms.
+<!--  %“item Show that the total  number of configurations with excitation energy $“mathcal E$ is 
+     %“st
+     %“Omega(“mathcal E) = “frac–N!˝–N˙“uparrow! N˙“downarrow!˝
+     %“stp
+     %where $N˙“uparrow = N - N˙“downarrow$ and $“mathcal E =N n “Delta$--></p>
           </para>
         </item>
         <item xml:id="S0.I4.i2">
@@ -1032,116 +1298,43 @@ procedure determines the entropy, and from there all else can be determined.</p>
             <tag role="typerefnum">item (b)</tag>
           </tags>
           <para xml:id="S0.I4.i2.p1">
-            <p>Show that the total number of configurations with excitation energy <Math mode="inline" tex="\mathcal{E}" text="E" xml:id="S0.I4.i2.p1.m1">
-                <XMath>
-                  <XMTok font="caligraphic" role="UNKNOWN">E</XMTok>
-                </XMath>
-              </Math> is
-<!--  %**** hw10.tex Line 100 **** --></p>
-            <equation xml:id="S0.E6">
-              <tags>
-                <tag>(6)</tag>
-                <tag role="autoref">Equation 6</tag>
-                <tag role="refnum">6</tag>
-              </tags>
-              <Math mode="display" tex="\Omega(\mathcal{E})=\frac{N!}{N_{\uparrow}!N_{\downarrow}!}" text="Omega * E = Nfactorial / ((N _ uparrow)factorial * (N _ downarrow)factorial)" xml:id="S0.E6.m1">
+            <p>By directly counting <Math mode="inline" tex="\Omega(N_{\downarrow},N_{\uparrow})" text="Omega * open-interval@(N _ downarrow, N _ uparrow)" xml:id="S0.I4.i2.p1.m1">
                 <XMath>
                   <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
-                      <XMDual>
-                        <XMRef idref="S0.E6.m1.1"/>
-                        <XMWrap>
-                          <XMTok role="OPEN" stretchy="false">(</XMTok>
-                          <XMTok font="caligraphic" role="UNKNOWN" xml:id="S0.E6.m1.1">E</XMTok>
-                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                        </XMWrap>
-                      </XMDual>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok mathstyle="display" meaning="divide" role="FRACOP"/>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok name="Omega" role="UNKNOWN">Ω</XMTok>
+                    <XMDual>
                       <XMApp>
-                        <XMTok meaning="factorial" role="POSTFIX">!</XMTok>
-                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                        <XMTok meaning="open-interval"/>
+                        <XMRef idref="S0.I4.i2.p1.m1.1"/>
+                        <XMRef idref="S0.I4.i2.p1.m1.2"/>
                       </XMApp>
-                      <XMApp>
-                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                        <XMApp>
-                          <XMTok meaning="factorial" role="POSTFIX">!</XMTok>
-                          <XMApp>
-                            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                            <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                            <XMTok fontsize="70%" name="uparrow" role="ARROW">↑</XMTok>
-                          </XMApp>
+                      <XMWrap>
+                        <XMTok role="OPEN" stretchy="false">(</XMTok>
+                        <XMApp xml:id="S0.I4.i2.p1.m1.1">
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                          <XMTok fontsize="70%" name="downarrow" role="ARROW">↓</XMTok>
                         </XMApp>
-                        <XMApp>
-                          <XMTok meaning="factorial" role="POSTFIX">!</XMTok>
-                          <XMApp>
-                            <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
-                            <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                            <XMTok fontsize="70%" name="downarrow" role="ARROW">↓</XMTok>
-                          </XMApp>
+                        <XMTok role="PUNCT">,</XMTok>
+                        <XMApp xml:id="S0.I4.i2.p1.m1.2">
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
+                          <XMTok font="italic" role="UNKNOWN">N</XMTok>
+                          <XMTok fontsize="70%" name="uparrow" role="ARROW">↑</XMTok>
                         </XMApp>
-                      </XMApp>
-                    </XMApp>
+                        <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
                   </XMApp>
                 </XMath>
-              </Math>
-            </equation>
-            <p>where <Math mode="inline" tex="N_{\uparrow}=N-N_{\downarrow}" text="N _ uparrow = N - N _ downarrow" xml:id="S0.I4.i2.p1.m2">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMApp>
-                      <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                      <XMTok fontsize="70%" name="uparrow" role="ARROW">↑</XMTok>
-                    </XMApp>
-                    <XMApp>
-                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                      <XMApp>
-                        <XMTok role="SUBSCRIPTOP" scriptpos="post1"/>
-                        <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                        <XMTok fontsize="70%" name="downarrow" role="ARROW">↓</XMTok>
-                      </XMApp>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math> and <Math mode="inline" tex="\mathcal{E}=Nn\Delta" text="E = N * n * Delta" xml:id="S0.I4.i2.p1.m3">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMTok font="caligraphic" role="UNKNOWN">E</XMTok>
-                    <XMApp>
-                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">N</XMTok>
-                      <XMTok font="italic" role="UNKNOWN">n</XMTok>
-                      <XMTok name="Delta" role="UNKNOWN">Δ</XMTok>
-                    </XMApp>
-                  </XMApp>
-                </XMath>
-              </Math></p>
-          </para>
-        </item>
-        <item xml:id="S0.I4.i3">
-          <tags>
-            <tag>(c)</tag>
-            <tag role="autoref">item (c)</tag>
-            <tag role="refnum">(c)</tag>
-            <tag role="typerefnum">item (c)</tag>
-          </tags>
-          <para xml:id="S0.I4.i3.p1">
-            <p>Show that the entropy as a function of energy is</p>
+              </Math> show that the entropy as a function of energy is</p>
             <equation labels="LABEL:SofN" xml:id="S0.E7">
               <tags>
                 <tag>(7)</tag>
                 <tag role="autoref">Equation 7</tag>
                 <tag role="refnum">7</tag>
               </tags>
-              <Math mode="display" tex="S(\mathcal{E})=Nk_{B}\left[(1-n)\log(1-n)-n\log n\right]" text="S * E = N * k _ B * delimited-[]@((1 - n) * logarithm@(1 - n) - n * logarithm@(n))" xml:id="S0.E7.m1">
+              <Math mode="display" tex="S(\mathcal{E})=Nk_{B}\left[-(1-n)\log(1-n)-n\log n\right]" text="S * E = N * k _ B * delimited-[]@(- (1 - n) * logarithm@(1 - n) - n * logarithm@(n))" xml:id="S0.E7.m1">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -1175,37 +1368,40 @@ procedure determines the entropy, and from there all else can be determined.</p>
                           <XMApp xml:id="S0.E7.m1.3">
                             <XMTok meaning="minus" role="ADDOP">-</XMTok>
                             <XMApp>
-                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
-                              <XMDual>
-                                <XMRef idref="S0.E7.m1.3.1"/>
-                                <XMWrap>
-                                  <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                  <XMApp xml:id="S0.E7.m1.3.1">
-                                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
-                                    <XMTok meaning="1" role="NUMBER">1</XMTok>
-                                    <XMTok font="italic" role="UNKNOWN">n</XMTok>
-                                  </XMApp>
-                                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
-                                </XMWrap>
-                              </XMDual>
-                              <XMDual>
-                                <XMApp>
-                                  <XMRef idref="S0.E7.m1.2"/>
-                                  <XMRef idref="S0.E7.m1.3.2"/>
-                                </XMApp>
-                                <XMApp>
-                                  <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E7.m1.2">log</XMTok>
+                              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMDual>
+                                  <XMRef idref="S0.E7.m1.3.1"/>
                                   <XMWrap>
                                     <XMTok role="OPEN" stretchy="false">(</XMTok>
-                                    <XMApp xml:id="S0.E7.m1.3.2">
+                                    <XMApp xml:id="S0.E7.m1.3.1">
                                       <XMTok meaning="minus" role="ADDOP">-</XMTok>
                                       <XMTok meaning="1" role="NUMBER">1</XMTok>
                                       <XMTok font="italic" role="UNKNOWN">n</XMTok>
                                     </XMApp>
                                     <XMTok role="CLOSE" stretchy="false">)</XMTok>
                                   </XMWrap>
-                                </XMApp>
-                              </XMDual>
+                                </XMDual>
+                                <XMDual>
+                                  <XMApp>
+                                    <XMRef idref="S0.E7.m1.2"/>
+                                    <XMRef idref="S0.E7.m1.3.2"/>
+                                  </XMApp>
+                                  <XMApp>
+                                    <XMTok meaning="logarithm" role="OPFUNCTION" xml:id="S0.E7.m1.2">log</XMTok>
+                                    <XMWrap>
+                                      <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                      <XMApp xml:id="S0.E7.m1.3.2">
+                                        <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                                        <XMTok meaning="1" role="NUMBER">1</XMTok>
+                                        <XMTok font="italic" role="UNKNOWN">n</XMTok>
+                                      </XMApp>
+                                      <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                    </XMWrap>
+                                  </XMApp>
+                                </XMDual>
+                              </XMApp>
                             </XMApp>
                             <XMApp>
                               <XMTok meaning="times" role="MULOP">⁢</XMTok>
@@ -1224,18 +1420,19 @@ procedure determines the entropy, and from there all else can be determined.</p>
                 </XMath>
               </Math>
             </equation>
+            <p>You may find it useful to quote results from problem one.</p>
           </para>
         </item>
-        <item xml:id="S0.I4.i4">
+        <item xml:id="S0.I4.i3">
           <tags>
-            <tag>(d)</tag>
-            <tag role="autoref">item (d)</tag>
-            <tag role="refnum">(d)</tag>
-            <tag role="typerefnum">item (d)</tag>
+            <tag>(c)</tag>
+            <tag role="autoref">item (c)</tag>
+            <tag role="refnum">(c)</tag>
+            <tag role="typerefnum">item (c)</tag>
           </tags>
-          <para xml:id="S0.I4.i4.p1">
+          <para xml:id="S0.I4.i3.p1">
             <p>Using Eq. (<ref labelref="LABEL:SofN"/>) show that the temperature of the system with a given
-<Math mode="inline" tex="\mathcal{E}" text="E" xml:id="S0.I4.i4.p1.m1">
+<Math mode="inline" tex="\mathcal{E}" text="E" xml:id="S0.I4.i3.p1.m1">
                 <XMath>
                   <XMTok font="caligraphic" role="UNKNOWN">E</XMTok>
                 </XMath>
