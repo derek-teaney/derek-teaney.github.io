@@ -1,0 +1,473 @@
+<!DOCTYPE html><html>
+<head>
+<title>Problem 1.   Carbon Monoxide Poisoning</title>
+<!--Generated on Tue Apr 25 18:51:50 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<nav class="ltx_page_navbar">
+</nav>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<section id="S0.SSx1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 1.   Carbon Monoxide Poisoning</h2>
+
+<div id="S0.SSx1.p1" class="ltx_para">
+<p class="ltx_p">A model for carbon monoxide poisoning is the following. Consider
+a gas which is mixture of diatomic oxygen <math id="S0.SSx1.p1.m1" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math> and carbon monoxide
+<math id="S0.SSx1.p1.m2" class="ltx_Math" alttext="CO" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></math>. The sites on the hemoglobin molecule can either be unoccupied, with energy <math id="S0.SSx1.p1.m3" class="ltx_Math" alttext="E=0" display="inline"><mrow><mi>E</mi><mo>=</mo><mn>0</mn></mrow></math>, occupied by an <math id="S0.SSx1.p1.m4" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math> molecule with energy <math id="S0.SSx1.p1.m5" class="ltx_Math" alttext="E=-0.65\,{\rm eV}" display="inline"><mrow><mi>E</mi><mo>=</mo><mrow><mo>-</mo><mrow><mpadded width="+1.7pt"><mn>0.65</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></mrow></math>, or occupied by a carbon monoxide molecule with energy <math id="S0.SSx1.p1.m6" class="ltx_Math" alttext="E=-0.85\,{\rm eV}" display="inline"><mrow><mi>E</mi><mo>=</mo><mrow><mo>-</mo><mrow><mpadded width="+1.7pt"><mn>0.85</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></mrow></math>, see figure.</p>
+</div>
+<figure id="S0.F1" class="ltx_figure"><img src="x1.png" id="S0.F1.g1" class="ltx_graphics ltx_centering" width="438" height="379" alt="Artists conception of problem ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>Artists conception of problem <span class="ltx_text ltx_font_sansserif">Carbon Monoxide Poisoning</span>. The large Black circles denote Carbon atoms, while the smaller circles denote Oxygen atoms. </figcaption>
+</figure>
+<div id="S0.SSx1.p2" class="ltx_para">
+<p class="ltx_p">In this problem you will calculate the probability that the hemoglobin
+site will be occupied by an <math id="S0.SSx1.p2.m1" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math> (what we want!).
+This depends on the concentration of
+<math id="S0.SSx1.p2.m2" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math> and sensitively on the concentration of carbon monoxide.</p>
+</div>
+<div id="S0.SSx1.p3" class="ltx_para">
+<p class="ltx_p">The questions below refer to the surrounding <math id="S0.SSx1.p3.m1" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math> gas at a temperature of <math id="S0.SSx1.p3.m2" class="ltx_Math" alttext="295\,{\rm K}" display="inline"><mrow><mpadded width="+1.7pt"><mn>295</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">K</mi></mrow></math>
+and a pressure of <math id="S0.SSx1.p3.m3" class="ltx_Math" alttext="0.2\,{\rm bar}" display="inline"><mrow><mpadded width="+1.7pt"><mn>0.2</mn></mpadded><mo>⁢</mo><mi>bar</mi></mrow></math>.
+From the temperature and pressure of <math id="S0.SSx1.p3.m4" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math>, the corresponding concentration <math id="S0.SSx1.p3.m5" class="ltx_Math" alttext="n=N/V" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mi>N</mi><mo>/</mo><mi>V</mi></mrow></mrow></math> of the gas can
+be found, as can its quantum concentration<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+            <span class="ltx_tag ltx_tag_note">1</span>
+            
+            
+            
+          <math id="footnote1.m1" class="ltx_Math" alttext="\lambda_{\rm th}" display="inline"><msub><mi>λ</mi><mi>th</mi></msub></math> is the thermal de Broglie wavelength. <math id="footnote1.m2" class="ltx_Math" alttext="v_{Q}\equiv\lambda_{\rm th}^{3}" display="inline"><mrow><msub><mi>v</mi><mi>Q</mi></msub><mo>≡</mo><msubsup><mi>λ</mi><mi>th</mi><mn>3</mn></msubsup></mrow></math> is the volume of a cube whose side is one thermal de Broglie wavelength. This could be called a “quantum volume” for a particle. The quantum density, or concentration, can be defined (as the book does) as <math id="footnote1.m3" class="ltx_Math" alttext="n_{Q}\equiv 1/v_{Q}" display="inline"><mrow><msub><mi>n</mi><mi>Q</mi></msub><mo>≡</mo><mrow><mn>1</mn><mo>/</mo><msub><mi>v</mi><mi>Q</mi></msub></mrow></mrow></math>. If the density <math id="footnote1.m4" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> becomes comparable to the quantum concentration, <math id="footnote1.m5" class="ltx_Math" alttext="n/n_{Q}\sim 1" display="inline"><mrow><mrow><mi>n</mi><mo>/</mo><msub><mi>n</mi><mi>Q</mi></msub></mrow><mo>∼</mo><mn>1</mn></mrow></math>, then quantum mechanics becomes important.</span></span></span>, <math id="S0.SSx1.p3.m6" class="ltx_Math" alttext="n_{Q}\equiv\lambda_{\rm th}^{-3}" display="inline"><mrow><msub><mi>n</mi><mi>Q</mi></msub><mo>≡</mo><msubsup><mi>λ</mi><mi>th</mi><mrow><mo>-</mo><mn>3</mn></mrow></msubsup></mrow></math>.
+The quantum concentration of <math id="S0.SSx1.p3.m7" class="ltx_Math" alttext="CO" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></math> can be found similarly.
+These values and the atomic numbers of the two atoms are given in the
+table below.</p>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;">quantity</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;">value</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m8" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m9" class="ltx_Math" alttext="290\,{\rm K}" display="inline"><mrow><mpadded width="+1.7pt"><mn>290</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">K</mi></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m10" class="ltx_Math" alttext="{kT}" display="inline"><mrow><mi>k</mi><mo>⁢</mo><mi>T</mi></mrow></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m11" class="ltx_Math" alttext="0.025\,{\rm eV}" display="inline"><mrow><mpadded width="+1.7pt"><mn>0.025</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m12" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m13" class="ltx_Math" alttext="0.2\,{\rm bar}" display="inline"><mrow><mpadded width="+1.7pt"><mn>0.2</mn></mpadded><mo>⁢</mo><mi>bar</mi></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m14" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m15" class="ltx_Math" alttext="0.005\,{\rm nm}^{-3}" display="inline"><mrow><mpadded width="+1.7pt"><mn>0.005</mn></mpadded><mo>⁢</mo><msup><mi>nm</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m16" class="ltx_Math" alttext="(n_{Q})_{O_{2}}" display="inline"><msub><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mi>Q</mi></msub><mo stretchy="false">)</mo></mrow><msub><mi>O</mi><mn>2</mn></msub></msub></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m17" class="ltx_Math" alttext="1.70\times 10^{5}\,{\rm nm}^{-3}" display="inline"><mrow><mrow><mn>1.70</mn><mo>×</mo><mpadded width="+1.7pt"><msup><mn>10</mn><mn>5</mn></msup></mpadded></mrow><mo>⁢</mo><msup><mi>nm</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m18" class="ltx_Math" alttext="(n_{Q})_{CO}" display="inline"><msub><mrow><mo stretchy="false">(</mo><msub><mi>n</mi><mi>Q</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></msub></math></td>
+<td class="ltx_td ltx_align_center" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;"><math id="S0.SSx1.p3.m19" class="ltx_Math" alttext="1.39\times 10^{5}\,{\rm nm}^{-3}" display="inline"><mrow><mrow><mn>1.39</mn><mo>×</mo><mpadded width="+1.7pt"><msup><mn>10</mn><mn>5</mn></msup></mpadded></mrow><mo>⁢</mo><msup><mi>nm</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;">atomic number <math id="S0.SSx1.p3.m20" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math>
+</td>
+<td class="ltx_td ltx_align_center" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;">16</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;">atomic number <math id="S0.SSx1.p3.m21" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>
+</td>
+<td class="ltx_td ltx_align_center" style="padding-top:3.472222222222222px;padding-bottom:3.472222222222222px;">12</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="S0.SSx1.p4" class="ltx_para">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Without looking up numbers estimate the quantum concentration of <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math> gas, confirming the result in the table.</p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Qualitatively explain what determines the ratio of quantum concentrations for the two gasses, <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math> and <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="CO" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">The <math id="S0.I1.i3.p1.m1" class="ltx_Math" alttext="CO" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></math> and <math id="S0.I1.i3.p1.m2" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math> molecules in the surrounding gas rotate with moment of
+inertia <math id="S0.I1.i3.p1.m3" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math>. Their rotational constants, i.e.
+<math id="S0.I1.i3.p1.m4" class="ltx_Math" alttext="\Delta\equiv\hbar^{2}/2I" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>≡</mo><mrow><mrow><msup><mi mathvariant="normal">ℏ</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>I</mi></mrow></mrow></math>,
+are <math id="S0.I1.i3.p1.m5" class="ltx_Math" alttext="\Delta_{CO}=0.00024\,{\rm eV}" display="inline"><mrow><msub><mi mathvariant="normal">Δ</mi><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></msub><mo>=</mo><mrow><mpadded width="+1.7pt"><mn>0.00024</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></math> and <math id="S0.I1.i3.p1.m6" class="ltx_Math" alttext="\Delta_{O_{2}}=0.00018\,{\rm eV}" display="inline"><mrow><msub><mi mathvariant="normal">Δ</mi><msub><mi>O</mi><mn>2</mn></msub></msub><mo>=</mo><mrow><mpadded width="+1.7pt"><mn>0.00018</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></math> respectively. Show that the rotational constant of <math id="S0.I1.i3.p1.m7" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math>
+is roughly consistent with an order of magnitude estimate
+for <math id="S0.I1.i3.p1.m8" class="ltx_Math" alttext="\Delta" display="inline"><mi mathvariant="normal">Δ</mi></math>.
+</p>
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Recall that the rotational
+energy levels are</p>
+<table id="S0.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E1.m1" class="ltx_Math" alttext="\epsilon_{\rm rot}=\ell(\ell+1)\Delta\qquad\mbox{with}\qquad\ell=0,1,2,\ldots\infty" display="block"><mrow><mrow><msub><mi>ϵ</mi><mi>rot</mi></msub><mo>=</mo><mrow><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">ℓ</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow><mo mathvariant="italic" separator="true">  </mo><mtext>with</mtext></mrow></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><mi mathvariant="normal">∞</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and that the rotational partition function (i.e. an appropriate sum over these levels) is <math id="S0.I1.i4.p1.m1" class="ltx_Math" alttext="Z_{\rm rot}\simeq{kT}/\Delta" display="inline"><mrow><msub><mi>Z</mi><mi>rot</mi></msub><mo>≃</mo><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi mathvariant="normal">Δ</mi></mrow></mrow></math> in a classical approximation. Estimate the typical value of <math id="S0.I1.i4.p1.m2" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math> for the <math id="S0.I1.i4.p1.m3" class="ltx_Math" alttext="CO" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></math> gas. Based on this estimate how accurate is the classical approximation? Ans: <math id="S0.I1.i4.p1.m4" class="ltx_Math" alttext="\ell\sim 11" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>∼</mo><mn>11</mn></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I1.i5.p1" class="ltx_para">
+<p class="ltx_p">Recall that the partition function of the classical
+diatomic gas is</p>
+<table id="S0.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E2.m1" class="ltx_Math" alttext="Z_{\rm tot}=\frac{1}{N!}(Z_{\rm trans}Z_{\rm rot})^{N}" display="block"><mrow><msub><mi>Z</mi><mi>tot</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi>N</mi><mo>!</mo></mrow></mfrac><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>Z</mi><mi>trans</mi></msub><mo>⁢</mo><msub><mi>Z</mi><mi>rot</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mi>N</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.I1.i5.p1.m1" class="ltx_Math" alttext="Z_{\rm rot}\equiv{kT}/\Delta" display="inline"><mrow><msub><mi>Z</mi><mi>rot</mi></msub><mo>≡</mo><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi mathvariant="normal">Δ</mi></mrow></mrow></math> with <math id="S0.I1.i5.p1.m2" class="ltx_Math" alttext="\Delta=\hbar^{2}/2I" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>=</mo><mrow><mrow><msup><mi mathvariant="normal">ℏ</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>I</mi></mrow></mrow></math> , and
+<math id="S0.I1.i5.p1.m3" class="ltx_Math" alttext="Z_{\rm trans}" display="inline"><msub><mi>Z</mi><mi>trans</mi></msub></math> describes the translational motion.
+</p>
+<ol id="S0.I1.i5.I1" class="ltx_enumerate">
+<li id="S0.I1.i5.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span> 
+<div id="S0.I1.i5.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Derive <math id="S0.I1.i5.I1.i1.p1.m1" class="ltx_Math" alttext="Z_{\rm rot}={kT}/\Delta" display="inline"><mrow><msub><mi>Z</mi><mi>rot</mi></msub><mo>=</mo><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi mathvariant="normal">Δ</mi></mrow></mrow></math> using a classical approximation, where the sum is replaced by an integral.</p>
+</div>
+</li>
+<li id="S0.I1.i5.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span> 
+<div id="S0.I1.i5.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Determine the chemical potential of the classical diatomic gas
+as a function of the concentration <math id="S0.I1.i5.I1.i2.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> and
+the rotational constant <math id="S0.I1.i5.I1.i2.p1.m2" class="ltx_Math" alttext="\Delta" display="inline"><mi mathvariant="normal">Δ</mi></math>.
+Your result should be a function of <math id="S0.I1.i5.I1.i2.p1.m3" class="ltx_Math" alttext="n\lambda_{\rm th}^{3}" display="inline"><mrow><mi>n</mi><mo>⁢</mo><msubsup><mi>λ</mi><mi>th</mi><mn>3</mn></msubsup></mrow></math> and <math id="S0.I1.i5.I1.i2.p1.m4" class="ltx_Math" alttext="\beta\Delta" display="inline"><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow></math>, and you can check it by doing the next part.</p>
+</div>
+</li>
+<li id="S0.I1.i5.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(iii)</span> 
+<div id="S0.I1.i5.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Numerically evaluate the chemical potential <math id="S0.I1.i5.I1.i3.p1.m1" class="ltx_Math" alttext="\mu_{O_{2}}" display="inline"><msub><mi>μ</mi><msub><mi>O</mi><mn>2</mn></msub></msub></math> of the <math id="S0.I1.i5.I1.i3.p1.m2" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math> gas. Ans: <math id="S0.I1.i5.I1.i3.p1.m3" class="ltx_Math" alttext="-0.5569\,{\rm eV}" display="inline"><mrow><mo>-</mo><mrow><mpadded width="+1.7pt"><mn>0.5569</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></math></p>
+</div>
+</li>
+<li id="S0.I1.i5.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(iv)</span> 
+<div id="S0.I1.i5.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Numerically evaluate the chemical potential <math id="S0.I1.i5.I1.i4.p1.m1" class="ltx_Math" alttext="\mu_{CO}" display="inline"><msub><mi>μ</mi><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></msub></math> of the surrounding <math id="S0.I1.i5.I1.i4.p1.m2" class="ltx_Math" alttext="CO" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></math> gas, assuming that the density of <math id="S0.I1.i5.I1.i4.p1.m3" class="ltx_Math" alttext="CO" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></math> is a thousand times smaller than <math id="S0.I1.i5.I1.i4.p1.m4" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math>. Ans: <math id="S0.I1.i5.I1.i4.p1.m5" class="ltx_Math" alttext="-0.7173\,{\rm eV}" display="inline"><mrow><mo>-</mo><mrow><mpadded width="+1.7pt"><mn>0.7173</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></math></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li id="S0.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(f)</span> 
+<div id="S0.I1.i6.p1" class="ltx_para">
+<p class="ltx_p">Now return to the hemoglobin sites. By considering the grand partition function of the site, determine the probability that the site is occupied by <math id="S0.I1.i6.p1.m1" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math>. Assume that the density of <math id="S0.I1.i6.p1.m2" class="ltx_Math" alttext="CO" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></math> is a thousand times smaller than <math id="S0.I1.i6.p1.m3" class="ltx_Math" alttext="O_{2}" display="inline"><msub><mi>O</mi><mn>2</mn></msub></math>. Evaluate this probability numerically, using the numerical results of previous parts. Ans: <math id="S0.I1.i6.p1.m4" class="ltx_Math" alttext="0.17" display="inline"><mn>0.17</mn></math></p>
+</div>
+</li>
+<li id="S0.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(g)</span> 
+<div id="S0.I1.i7.p1" class="ltx_para">
+<p class="ltx_p">Determine how the probability of (e) would change if the density of <math id="S0.I1.i7.p1.m1" class="ltx_Math" alttext="CO" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>O</mi></mrow></math> was negligibly small. Ans: <math id="S0.I1.i7.p1.m2" class="ltx_Math" alttext="0.976" display="inline"><mn>0.976</mn></math></p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 2.   Gibbs Free Energy for Several Components</h2>
+
+<div id="S0.SSx2.p1" class="ltx_para">
+<p class="ltx_p">Consider a gas consisting of three types of
+particles, <math id="S0.SSx2.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, <math id="S0.SSx2.p1.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>, <math id="S0.SSx2.p1.m3" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>.
+A chemical reaction amongst particles converts
+an atom of <math id="S0.SSx2.p1.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> plus an atom of <math id="S0.SSx2.p1.m5" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> to a molecule of <math id="S0.SSx2.p1.m6" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math></p>
+<table id="S0.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E3.m1" class="ltx_Math" alttext="A+B\leftrightarrow C" display="block"><mrow><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo>↔</mo><mi>C</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The energy is a function of <math id="S0.SSx2.p1.m7" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>, <math id="S0.SSx2.p1.m8" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>, <math id="S0.SSx2.p1.m9" class="ltx_Math" alttext="N_{A}" display="inline"><msub><mi>N</mi><mi>A</mi></msub></math>, <math id="S0.SSx2.p1.m10" class="ltx_Math" alttext="N_{B}" display="inline"><msub><mi>N</mi><mi>B</mi></msub></math> and <math id="S0.SSx2.p1.m11" class="ltx_Math" alttext="N_{C}" display="inline"><msub><mi>N</mi><mi>C</mi></msub></math>,
+i.e. <math id="S0.SSx2.p1.m12" class="ltx_Math" alttext="U(S,V,N_{A},N_{B},N_{C})" display="inline"><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo>,</mo><mi>V</mi><mo>,</mo><msub><mi>N</mi><mi>A</mi></msub><mo>,</mo><msub><mi>N</mi><mi>B</mi></msub><mo>,</mo><msub><mi>N</mi><mi>C</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math>. The change in energy is</p>
+<table id="S0.E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E4.m1" class="ltx_Math" alttext="dU=TdS-pdV+\mu_{A}dN_{A}+\mu_{B}dN_{B}+\mu_{C}dN_{C}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>U</mi></mrow><mo>=</mo><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>S</mi></mrow><mo>-</mo><mrow><mi>p</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>V</mi></mrow></mrow><mo>+</mo><mrow><msub><mi>μ</mi><mi>A</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>N</mi><mi>A</mi></msub></mrow><mo>+</mo><mrow><msub><mi>μ</mi><mi>B</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>N</mi><mi>B</mi></msub></mrow><mo>+</mo><mrow><msub><mi>μ</mi><mi>C</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>N</mi><mi>C</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This problem will lead you to conclude that
+equilibirum between <math id="S0.SSx2.p1.m13" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, <math id="S0.SSx2.p1.m14" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> and <math id="S0.SSx2.p1.m15" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is reached when
+</p>
+<table id="S0.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E5.m1" class="ltx_Math" alttext="\mu_{C}=\mu_{A}+\mu_{B}" display="block"><mrow><msub><mi>μ</mi><mi>C</mi></msub><mo>=</mo><mrow><msub><mi>μ</mi><mi>A</mi></msub><mo>+</mo><msub><mi>μ</mi><mi>B</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr>
+</table>
+<ol id="S0.I2" class="ltx_enumerate">
+<li id="S0.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">Define the Gibbs Free energy <math id="S0.I2.i1.p1.m1" class="ltx_Math" alttext="G=U-TS+PV" display="inline"><mrow><mi>G</mi><mo>=</mo><mrow><mrow><mi>U</mi><mo>-</mo><mrow><mi>T</mi><mo>⁢</mo><mi>S</mi></mrow></mrow><mo>+</mo><mrow><mi>P</mi><mo>⁢</mo><mi>V</mi></mrow></mrow></mrow></math>
+and compute its differential <math id="S0.I2.i1.p1.m2" class="ltx_Math" alttext="dG" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>G</mi></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">Generalize the scaling argumenents given in
+the book which led to to Eq. 22.5,
+to show that</p>
+<table id="S0.E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E6.m1" class="ltx_Math" alttext="G=\mu_{A}N_{A}+\mu_{B}N_{B}+\mu_{C}N_{C}" display="block"><mrow><mi>G</mi><mo>=</mo><mrow><mrow><msub><mi>μ</mi><mi>A</mi></msub><mo>⁢</mo><msub><mi>N</mi><mi>A</mi></msub></mrow><mo>+</mo><mrow><msub><mi>μ</mi><mi>B</mi></msub><mo>⁢</mo><msub><mi>N</mi><mi>B</mi></msub></mrow><mo>+</mo><mrow><msub><mi>μ</mi><mi>C</mi></msub><mo>⁢</mo><msub><mi>N</mi><mi>C</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">In particular consider how the energy of the system <math id="S0.I2.i2.p1.m1" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> changes if all extensive quantities are <math id="S0.I2.i2.p1.m2" class="ltx_Math" alttext="S,N_{A},N_{B},N_{C}" display="inline"><mrow><mi>S</mi><mo>,</mo><msub><mi>N</mi><mi>A</mi></msub><mo>,</mo><msub><mi>N</mi><mi>B</mi></msub><mo>,</mo><msub><mi>N</mi><mi>C</mi></msub></mrow></math> are scaled by a factor <math id="S0.I2.i2.p1.m3" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>.</p>
+</div>
+</li>
+<li id="S0.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I2.i3.p1" class="ltx_para">
+<p class="ltx_p">If a system is held at constant temperature and pressure, it will evolve
+it will evolve to minimize its Gibbs Free Energy. Equilibrium
+is reached when <math id="S0.I2.i3.p1.m1" class="ltx_Math" alttext="dG=0" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>G</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>. How does the Gibbs Free energy change if the
+reaction procedes by one step (i.e. we take one atoms of <math id="S0.I2.i3.p1.m2" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> one atom of <math id="S0.I2.i3.p1.m3" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> and
+make a <math id="S0.I2.i3.p1.m4" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>) at constant temperature and pressure.
+Argue that the system reaches equilibrium when</p>
+<table id="S0.E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E7.m1" class="ltx_Math" alttext="\mu_{C}-\mu_{A}-\mu_{B}=0" display="block"><mrow><mrow><msub><mi>μ</mi><mi>C</mi></msub><mo>-</mo><msub><mi>μ</mi><mi>A</mi></msub><mo>-</mo><msub><mi>μ</mi><mi>B</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(7)</span></td>
+</tr>
+</table>
+</div>
+<div id="S0.I2.i3.p2" class="ltx_para">
+<p class="ltx_p">Hint: in one step of the forward reaction <math id="S0.I2.i3.p2.m1" class="ltx_Math" alttext="A+B\rightarrow C" display="inline"><mrow><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo>→</mo><mi>C</mi></mrow></math> the change in the number of <math id="S0.I2.i3.p2.m2" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is <math id="S0.I2.i3.p2.m3" class="ltx_Math" alttext="dN_{A}=-1" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>N</mi><mi>A</mi></msub></mrow><mo>=</mo><mrow><mo>-</mo><mn>1</mn></mrow></mrow></math>. What are <math id="S0.I2.i3.p2.m4" class="ltx_Math" alttext="dN_{B}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>N</mi><mi>B</mi></msub></mrow></math> and <math id="S0.I2.i3.p2.m5" class="ltx_Math" alttext="dN_{C}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>N</mi><mi>C</mi></msub></mrow></math> for one step? What is <math id="S0.I2.i3.p2.m6" class="ltx_Math" alttext="dG" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>G</mi></mrow></math> then? And what does it need to be in equilibrium?</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 3.   Yields of three species</h2>
+
+<div id="S0.SSx3.p1" class="ltx_para">
+<p class="ltx_p">Consider three ideal gasses in equilibrium. They
+participate in the following chemical reaction</p>
+<table id="S0.E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E8.m1" class="ltx_Math" alttext="A+B\leftrightarrow C\,." display="block"><mrow><mrow><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><mo>↔</mo><mpadded width="+1.7pt"><mi>C</mi></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(8)</span></td>
+</tr>
+</table>
+<p class="ltx_p">It is energetically favorable to form atom <math id="S0.SSx3.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>, so that
+the energy of one molecule of <math id="S0.SSx3.p1.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is</p>
+<table id="S0.E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E9.m1" class="ltx_Math" alttext="\epsilon_{C}=\frac{p^{2}}{2m_{C}}-\Delta\,," display="block"><mrow><mrow><msub><mi>ϵ</mi><mi>C</mi></msub><mo>=</mo><mrow><mfrac><msup><mi>p</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>⁢</mo><msub><mi>m</mi><mi>C</mi></msub></mrow></mfrac><mo>-</mo><mpadded width="+1.7pt"><mi mathvariant="normal">Δ</mi></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.SSx3.p1.m3" class="ltx_Math" alttext="\Delta&gt;0" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>&gt;</mo><mn>0</mn></mrow></math> is the binding energy of <math id="S0.SSx3.p1.m4" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>. The molecule <math id="S0.SSx3.p1.m5" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>
+has only one internal state. The other two
+atoms have energies <math id="S0.SSx3.p1.m6" class="ltx_Math" alttext="\epsilon_{A}=p^{2}/2m_{A}" display="inline"><mrow><msub><mi>ϵ</mi><mi>A</mi></msub><mo>=</mo><mrow><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><msub><mi>m</mi><mi>A</mi></msub></mrow></mrow></math> and <math id="S0.SSx3.p1.m7" class="ltx_Math" alttext="\epsilon_{B}=p^{2}/2m_{B}" display="inline"><mrow><msub><mi>ϵ</mi><mi>B</mi></msub><mo>=</mo><mrow><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><msub><mi>m</mi><mi>B</mi></msub></mrow></mrow></math>
+and form simple ideal gasses</p>
+<ol id="S0.I3" class="ltx_enumerate">
+<li id="S0.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I3.i1.p1" class="ltx_para">
+<p class="ltx_p">If the partition function <math id="S0.I3.i1.p1.m1" class="ltx_Math" alttext="Z_{\rm tot}" display="inline"><msub><mi>Z</mi><mi>tot</mi></msub></math> of a gas of <math id="S0.I3.i1.p1.m2" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math>
+indistinguishable
+particles is given by <math id="S0.I3.i1.p1.m3" class="ltx_Math" alttext="Z_{\rm tot}=Z_{1}^{N}/N!" display="inline"><mrow><msub><mi>Z</mi><mi>tot</mi></msub><mo>=</mo><mrow><msubsup><mi>Z</mi><mn>1</mn><mi>N</mi></msubsup><mo>/</mo><mrow><mi>N</mi><mo>!</mo></mrow></mrow></mrow></math>, where <math id="S0.I3.i1.p1.m4" class="ltx_Math" alttext="Z_{1}" display="inline"><msub><mi>Z</mi><mn>1</mn></msub></math> is the single–particle
+partition function, show that the chemical potential is given by</p>
+<table id="S0.E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E10.m1" class="ltx_Math" alttext="\mu=-{kT}\log\left(\frac{Z_{1}}{N}\right)" display="block"><mrow><mi>μ</mi><mo>=</mo><mrow><mo>-</mo><mrow><mi>k</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><msub><mi>Z</mi><mn>1</mn></msub><mi>N</mi></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(10)</span></td>
+</tr>
+</table>
+</div>
+</li>
+<li id="S0.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I3.i2.p1" class="ltx_para">
+<p class="ltx_p">Assume that at one moment there are <math id="S0.I3.i2.p1.m1" class="ltx_Math" alttext="N_{A}" display="inline"><msub><mi>N</mi><mi>A</mi></msub></math>, <math id="S0.I3.i2.p1.m2" class="ltx_Math" alttext="N_{B}" display="inline"><msub><mi>N</mi><mi>B</mi></msub></math>, and <math id="S0.I3.i2.p1.m3" class="ltx_Math" alttext="N_{C}" display="inline"><msub><mi>N</mi><mi>C</mi></msub></math> particles of
+type <math id="S0.I3.i2.p1.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, <math id="S0.I3.i2.p1.m5" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>, and <math id="S0.I3.i2.p1.m6" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>, respectively. Determine the partition function
+of each species, and find the corresponding chemical potentials.
+</p>
+</div>
+</li>
+<li id="S0.I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I3.i3.p1" class="ltx_para">
+<p class="ltx_p">Show that</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E11.m1" class="ltx_Math" alttext="\displaystyle n_{A}=" display="inline"><mrow><msub><mi>n</mi><mi>A</mi></msub><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E11.m2" class="ltx_Math" alttext="\displaystyle\frac{e^{\mu_{A}/{kT}}}{\lambda_{A}^{3}}" display="inline"><mstyle displaystyle="true"><mfrac><msup><mi>e</mi><mrow><mrow><msub><mi>μ</mi><mi>A</mi></msub><mo>/</mo><mi>k</mi></mrow><mo>⁢</mo><mi>T</mi></mrow></msup><msubsup><mi>λ</mi><mi>A</mi><mn>3</mn></msubsup></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(11)</span></td>
+</tr></tbody>
+<tbody id="S0.E12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E12.m1" class="ltx_Math" alttext="\displaystyle n_{B}=" display="inline"><mrow><msub><mi>n</mi><mi>B</mi></msub><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E12.m2" class="ltx_Math" alttext="\displaystyle\frac{e^{\mu_{B}/{kT}}}{\lambda_{B}^{3}}" display="inline"><mstyle displaystyle="true"><mfrac><msup><mi>e</mi><mrow><mrow><msub><mi>μ</mi><mi>B</mi></msub><mo>/</mo><mi>k</mi></mrow><mo>⁢</mo><mi>T</mi></mrow></msup><msubsup><mi>λ</mi><mi>B</mi><mn>3</mn></msubsup></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12)</span></td>
+</tr></tbody>
+<tbody id="S0.E13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E13.m1" class="ltx_Math" alttext="\displaystyle n_{C}=" display="inline"><mrow><msub><mi>n</mi><mi>C</mi></msub><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E13.m2" class="ltx_Math" alttext="\displaystyle\frac{e^{\mu_{C}/{kT}}e^{\beta\Delta}}{\lambda_{C}^{3}}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><msup><mi>e</mi><mrow><mrow><msub><mi>μ</mi><mi>C</mi></msub><mo>/</mo><mi>k</mi></mrow><mo>⁢</mo><mi>T</mi></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow></msup></mrow><msubsup><mi>λ</mi><mi>C</mi><mn>3</mn></msubsup></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(13)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Here <math id="S0.I3.i3.p1.m1" class="ltx_Math" alttext="n_{A}=N_{A}/V" display="inline"><mrow><msub><mi>n</mi><mi>A</mi></msub><mo>=</mo><mrow><msub><mi>N</mi><mi>A</mi></msub><mo>/</mo><mi>V</mi></mrow></mrow></math> is the density of species <math id="S0.I3.i3.p1.m2" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, and <math id="S0.I3.i3.p1.m3" class="ltx_Math" alttext="\lambda_{A}" display="inline"><msub><mi>λ</mi><mi>A</mi></msub></math> is
+the thermal wavelength of <math id="S0.I3.i3.p1.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, with an analogous
+notation for <math id="S0.I3.i3.p1.m5" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> and <math id="S0.I3.i3.p1.m6" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>.</p>
+</div>
+</li>
+<li id="S0.I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I3.i4.p1" class="ltx_para">
+<p class="ltx_p">Show that in equilibrium the densities of <math id="S0.I3.i4.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, <math id="S0.I3.i4.p1.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> and <math id="S0.I3.i4.p1.m3" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> satisfy</p>
+<table id="S0.E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E14.m1" class="ltx_Math" alttext="\frac{n_{A}n_{B}}{n_{C}}=\frac{(2\pi m_{\rm red}{kT})^{\rm 3/2}}{h^{3}}e^{-%
+\beta\Delta}" display="block"><mrow><mfrac><mrow><msub><mi>n</mi><mi>A</mi></msub><mo>⁢</mo><msub><mi>n</mi><mi>B</mi></msub></mrow><msub><mi>n</mi><mi>C</mi></msub></mfrac><mo>=</mo><mrow><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msub><mi>m</mi><mi>red</mi></msub><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>T</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><msup><mi>h</mi><mn>3</mn></msup></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi></mrow></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(14)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.I3.i4.p1.m4" class="ltx_Math" alttext="m_{\rm red}=m_{A}m_{B}/(m_{A}+m_{B})" display="inline"><mrow><msub><mi>m</mi><mi>red</mi></msub><mo>=</mo><mrow><mrow><msub><mi>m</mi><mi>A</mi></msub><mo>⁢</mo><msub><mi>m</mi><mi>B</mi></msub></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>m</mi><mi>A</mi></msub><mo>+</mo><msub><mi>m</mi><mi>B</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is the reduced mass. Note <math id="S0.I3.i4.p1.m5" class="ltx_Math" alttext="m_{C}=m_{A}+m_{B}" display="inline"><mrow><msub><mi>m</mi><mi>C</mi></msub><mo>=</mo><mrow><msub><mi>m</mi><mi>A</mi></msub><mo>+</mo><msub><mi>m</mi><mi>B</mi></msub></mrow></mrow></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx4" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 4.   The Saha Equation</h2>
+
+<div id="S0.SSx4.p1" class="ltx_para">
+<p class="ltx_p">The Saha equation describes the relative abundance of
+neutral hydrogen to ionized hydrogen at a given temperature.
+The reaction here is</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E15.m1" class="ltx_Math" alttext="\displaystyle p+e\leftrightarrow H" display="inline"><mrow><mrow><mi>p</mi><mo>+</mo><mi>e</mi></mrow><mo>↔</mo><mi>H</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(15)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Read the setup of problem Blundell 22.5, and recognize that the results
+of the previous problem apply. The only difference
+is that in Blundell’s part (a), they have approximated <math id="S0.SSx4.p1.m1" class="ltx_Math" alttext="m_{\rm red}=m_{e}m_{p}/(m_{e}+m_{p})\simeq m_{e}" display="inline"><mrow><msub><mi>m</mi><mi>red</mi></msub><mo>=</mo><mrow><mrow><msub><mi>m</mi><mi>e</mi></msub><mo>⁢</mo><msub><mi>m</mi><mi>p</mi></msub></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>m</mi><mi>e</mi></msub><mo>+</mo><msub><mi>m</mi><mi>p</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><msub><mi>m</mi><mi>e</mi></msub></mrow></math>. They (following Saha) also have approximated the internal partition function of
+the hydrogen atom as a single bound state with
+binding energy <math id="S0.SSx4.p1.m2" class="ltx_Math" alttext="\Delta=R=13.6\,{\rm eV}" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>=</mo><mi>R</mi><mo>=</mo><mrow><mpadded width="+1.7pt"><mn>13.6</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></math>. We evaluate the partition function of hydrogen with the same approximation in a previous problem. Answer the following</p>
+</div>
+<div id="S0.SSx4.p2" class="ltx_para">
+<ol id="S0.I4" class="ltx_enumerate">
+<li id="S0.I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I4.i1.p1" class="ltx_para">
+<p class="ltx_p">Explain why charge neutrality implies that n<math id="S0.I4.i1.p1.m1" class="ltx_Math" alttext="{}_{e}=n_{p}" display="inline"><mrow><mmultiscripts><mo>=</mo><mprescripts></mprescripts><mi>e</mi><none></none></mmultiscripts><msub><mi>n</mi><mi>p</mi></msub></mrow></math> and conservation of nucleons implies <math id="S0.I4.i1.p1.m2" class="ltx_Math" alttext="n_{H}+n_{p}=n" display="inline"><mrow><mrow><msub><mi>n</mi><mi>H</mi></msub><mo>+</mo><msub><mi>n</mi><mi>p</mi></msub></mrow><mo>=</mo><mi>n</mi></mrow></math>, where <math id="S0.I4.i1.p1.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is the total number density of hydrogen (neutral and ionized). Writing y = <math id="S0.I4.i1.p1.m4" class="ltx_Math" alttext="n_{p}/n" display="inline"><mrow><msub><mi>n</mi><mi>p</mi></msub><mo>/</mo><mi>n</mi></mrow></math> as the degree of ionization, show that</p>
+<table id="S0.E16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E16.m1" class="ltx_Math" alttext="\frac{y^{2}}{1-y}=\frac{e^{-\beta R}}{n\lambda_{\rm th}^{3}}" display="block"><mrow><mfrac><msup><mi>y</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>-</mo><mi>y</mi></mrow></mfrac><mo>=</mo><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></msup><mrow><mi>n</mi><mo>⁢</mo><msubsup><mi>λ</mi><mi>th</mi><mn>3</mn></msubsup></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(16)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.I4.i1.p1.m5" class="ltx_Math" alttext="\lambda_{\rm th}" display="inline"><msub><mi>λ</mi><mi>th</mi></msub></math> is the thermal wavelength for the electrons.
+Solve for <math id="S0.I4.i1.p1.m6" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> in terms of <math id="S0.I4.i1.p1.m7" class="ltx_Math" alttext="x(T)=e^{-\beta R}/{n\lambda_{\rm th}}^{3}" display="inline"><mrow><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi>R</mi></mrow></mrow></msup><mo>/</mo><mi>n</mi></mrow><mo>⁢</mo><mmultiscripts><mi>λ</mi><mi>th</mi><none></none><none></none><mn>3</mn></mmultiscripts></mrow></mrow></math> and
+graph the degree of of ionization as a function of temperature in kelvin for a density of <math id="S0.I4.i1.p1.m8" class="ltx_Math" alttext="10^{20}\,{\rm m}^{-3}" display="inline"><mrow><mpadded width="+1.7pt"><msup><mn>10</mn><mn>20</mn></msup></mpadded><mo>⁢</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></math>.
+You should find that the temperature where the system becomes fully ionizied is approximately <math id="S0.I4.i1.p1.m9" class="ltx_Math" alttext="10000\,{}^{\circ}{\rm K}" display="inline"><mrow><mpadded width="+1.7pt"><mn>10000</mn></mpadded><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I4.i2.p1" class="ltx_para">
+<p class="ltx_p">Equation <a href="#S0.E16" title="(16) ‣ item (a) ‣ Problem 4. The Saha Equation" class="ltx_ref"><span class="ltx_text ltx_ref_tag">16</span></a> shows that the degree of ionization goes up when the density <math id="S0.I4.i2.p1.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> goes down. Why is that? Answer the following closely related question:
+The temperature where the hydrogen becomes fully ionized is approximately <math id="S0.I4.i2.p1.m2" class="ltx_Math" alttext="10000\,{}^{\circ}{\rm K}" display="inline"><mrow><mpadded width="+1.7pt"><mn>10000</mn></mpadded><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math>. But, the Boltzmann factor at this temperature is very small</p>
+<table id="S0.E17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E17.m1" class="ltx_Math" alttext="e^{-R/{k_{\scriptscriptstyle B}T}}=e^{-13.6\,{\rm eV}/{k_{B}(10^{4}\,{}^{\circ%
+}{\rm K})}}\simeq e^{-16.}\sim 10^{-7}\,," display="block"><mrow><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mi>R</mi><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mrow><mpadded width="+1.7pt"><mn>13.6</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mpadded width="+1.7pt"><msup><mn>10</mn><mn>4</mn></msup></mpadded><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></msup><mo>≃</mo><msup><mi>e</mi><mrow><mo>-</mo><mn>16</mn><mo>.</mo></mrow></msup><mo>∼</mo><mpadded width="+1.7pt"><msup><mn>10</mn><mrow><mo>-</mo><mn>7</mn></mrow></msup></mpadded></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(17)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Qualitatively explain why the ionized fraction at this temperature is of order unity in spite of this penalizing factor.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Tue Apr 25 18:51:50 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
