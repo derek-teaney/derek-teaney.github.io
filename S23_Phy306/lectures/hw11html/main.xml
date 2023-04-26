@@ -94,7 +94,7 @@ a gas which is mixture of diatomic oxygen <Math mode="inline" tex="O_{2}" text="
       <graphics candidates="heme.pdf" class="ltx_centering" graphic="heme.pdf" options="width=281.853pt" xml:id="S0.F1.g1"/>
       <toccaption class="ltx_centering"><tag close=" ">1</tag>Artists conception of problem <text font="sansserif">Carbon Monoxide Poisoning</text>. The large Black circles denote Carbon atoms, while the smaller circles denote Oxygen atoms. </toccaption>
       <caption class="ltx_centering"><tag close=": ">Figure 1</tag>Artists conception of problem <text font="sansserif">Carbon Monoxide Poisoning</text>. The large Black circles denote Carbon atoms, while the smaller circles denote Oxygen atoms. </caption>
-<!--  %**** hw11.tex Line 25 **** -->    </figure>
+    </figure>
     <para xml:id="S0.SSx1.p2">
       <p>In this problem you will calculate the probability that the hemoglobin
 site will be occupied by an <Math mode="inline" tex="O_{2}" text="O _ 2" xml:id="S0.SSx1.p2.m1">
