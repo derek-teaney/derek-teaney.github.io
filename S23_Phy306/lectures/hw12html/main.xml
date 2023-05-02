@@ -1768,7 +1768,7 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
         <tag role="refnum">1</tag>
         <tag role="typerefnum">Figure 1</tag>
       </tags>
-      <graphics candidates="FermiBoseList.pdf" class="ltx_centering" graphic="FermiBoseList.pdf" options="width=143.0946pt" xml:id="S0.F1.g1"/>
+      <graphics class="ltx_centering" graphic="FermiBoseListLarge.pdf" options="width=143.0946pt" xml:id="S0.F1.g1"/>
       <toccaption class="ltx_centering"><tag close=" ">1</tag>A compendium of useful integrals of Bose and Fermi distributions</toccaption>
       <caption class="ltx_centering"><tag close=": ">Figure 1</tag>A compendium of useful integrals of Bose and Fermi distributions</caption>
     </figure>
