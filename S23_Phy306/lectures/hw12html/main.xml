@@ -1673,23 +1673,15 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
             <tag role="typerefnum">item (c)</tag>
           </tags>
           <para xml:id="S0.I3.i3.p1">
-            <p>Use the Gibbs-Duhem relation (with <Math mode="inline" tex="\mu=0" text="mu = 0" xml:id="S0.I3.i3.p1.m1">
-                <XMath>
-                  <XMApp>
-                    <XMTok meaning="equals" role="RELOP">=</XMTok>
-                    <XMTok font="italic" name="mu" role="UNKNOWN">μ</XMTok>
-                    <XMTok meaning="0" role="NUMBER">0</XMTok>
-                  </XMApp>
-                </XMath>
-              </Math>) and the results for <Math mode="inline" tex="S" text="S" xml:id="S0.I3.i3.p1.m2">
+            <p>Use the Gibbs-Duhem relation and the results for <Math mode="inline" tex="S" text="S" xml:id="S0.I3.i3.p1.m1">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">S</XMTok>
                 </XMath>
-              </Math> and <Math mode="inline" tex="p" text="p" xml:id="S0.I3.i3.p1.m3">
+              </Math> and <Math mode="inline" tex="p" text="p" xml:id="S0.I3.i3.p1.m2">
                 <XMath>
                   <XMTok font="italic" role="UNKNOWN">p</XMTok>
                 </XMath>
-              </Math> in this problem to find the energy density of the system, <Math mode="inline" tex="u=U/V" text="u = U / V" xml:id="S0.I3.i3.p1.m4">
+              </Math> in this problem to find the energy density of the system, <Math mode="inline" tex="u=U/V" text="u = U / V" xml:id="S0.I3.i3.p1.m3">
                 <XMath>
                   <XMApp>
                     <XMTok meaning="equals" role="RELOP">=</XMTok>
@@ -1701,7 +1693,10 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
                     </XMApp>
                   </XMApp>
                 </XMath>
-              </Math>. Check your result by comparing with the method used in class.</p>
+              </Math>. Check your result by comparing with the method used in class. <break/></p>
+          </para>
+          <para xml:id="S0.I3.i3.p2">
+            <p><emph font="italic">Hint:</emph> What is the chemical potential of the photon gas?</p>
           </para>
         </item>
       </enumerate>
@@ -1723,9 +1718,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %% “st
      %%           n˙–BE˝ =  “frac–1˝–e^–“beta (“epsilon(p) - “mu) ˝ - 1 ˝
      %% “stp
+     %**** hw12.tex Line 175 ****
      %% and that the grand potential for one mode is
      %% “st
-     %**** hw12.tex Line 175 ****
      %%          “Phi˙G =  k˙B T “ln(1 - e^–-“beta(“epsilon(p) - “mu) ˝ )
      %% “stp
      %% Consider a gas consisting a
@@ -1748,9 +1743,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %Show also
      %the variance in the  number of particles
      %“st
+     %**** hw12.tex Line 200 ****
      %“sigma^2˙N “equiv “llangle N^2 “rrangle - “llangle N “rrangle^2
      %“stp
-     %**** hw12.tex Line 200 ****
      %is given by
      %“st
      %“sigma^2˙N = “frac–1˝–“Q˝ “left(“frac–1˝–“beta˝ “frac–“partial ˝–“partial “mu˝ “right)^2 “Q   - “left(“frac–1˝– “Q˝ “frac–1˝–“beta˝ “frac–“partial “Q˝–“partial“mu˝ “right)^2  =  “left(“frac–1˝–“beta˝“frac–“partial˝–“partial “mu˝“right)^2 “ln “Q
@@ -1773,9 +1768,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %% “stp
      %% “begin–enumerate˝[resume]
      %%  “item Go through the derivativion of the Bose-Einstein
+     %**** hw12.tex Line 225 ****
      %%     distribution and the grand potential given in class. Recall that in a classical limit it is very unlikely that there will be more
      %%     than one particle in a quantum state.
-     %**** hw12.tex Line 225 ****
      %%     Then, explain why  the classical limit means that
      %%     “st
      %%          e^–-“beta (“epsilon(p) - “mu ) ˝ “ll 1 “, .
@@ -1798,8 +1793,8 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %%      where $n˙Q = 1/“lambda˙–“rm th˝^3$.  You may wish to concentrate
      %%      only on the leading term first, and then, if you
      %%      have time consider the subleading term. Drop the subleading term
-     %%      in what follows.
      %**** hw12.tex Line 250 ****
+     %%      in what follows.
      %%   “item   From your expression for pressure or grand potential ($pV = -“Phi˙G$) determine the mean number of particles and the variance in the number
      %%      of particles.  You should find
      %%      “st
@@ -1820,9 +1815,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %% This is needed for problem 6, but it is math that all physicists should know.
      %%    Given a Taylor series of the form
      %% “st
+     %**** hw12.tex Line 275 ****
      %% “label–eq:Taylor˝
      %%  y = a˙0  + a˙1 x + a˙2 x^2 + a˙3 x^3  + “ldots
-     %**** hw12.tex Line 275 ****
      %% “stp
      %% we want to solve for $x$ as a function of $y$.
      %% “begin–enumerate˝
@@ -1842,9 +1837,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %% “stp
      %% and substitute into “Eq–eq:Taylor˝.
      %% –“bf Remark:˝ The first term is very easy to obtain, and is the
+     %**** hw12.tex Line 300 ****
      %% most iportant in practice. Without
      %% approximation  we have
-     %**** hw12.tex Line 300 ****
      %% “st
      %%   u = x + “frac–a˙2˝–a˙1˝  x^2 + “ldots
      %% “stp
@@ -1865,9 +1860,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %% “solution
      %% “begin–enumerate˝
      %% “item This is clear
+     %**** hw12.tex Line 325 ****
      %% “st
      %%   y “simeq a˙0 + a˙1 x
-     %**** hw12.tex Line 325 ****
      %% “stp
      %% so
      %% “st
@@ -1891,9 +1886,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %% “stp
      %% So  since $x “simeq y$ we have at lowest order
      %% “st
+     %**** hw12.tex Line 350 ****
      %%  y “simeq  x - “frac–y^3˝–3!˝
      %% “stp
-     %**** hw12.tex Line 350 ****
      %% Thus
      %% “st
      %%  x “simeq y + “frac–y^3˝–3!˝
@@ -1917,9 +1912,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %%    u + c˙2 u^2 + c˙3 u^3 + “ldots =  u - “frac–a˙2˝–a˙1˝ u^2   + “left( - 2 “frac–a˙2˝–a˙1 ˝ c˙2  - “frac–-a˙3˝–a˙1˝  “right) u^3
      %% “stp
      %% Comparing the quadratic orders we have
+     %**** hw12.tex Line 375 ****
      %% “st
      %%   c˙2 u^2 = -“frac–a˙2˝–a˙1˝ u^2
-     %**** hw12.tex Line 375 ****
      %% “stp
      %% So
      %% “st
@@ -1938,9 +1933,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %% is
      %% “st
      %%           n˙–BE˝ =  “frac–1˝–e^–“beta (“epsilon(p) - “mu) ˝ - 1 ˝
+     %**** hw12.tex Line 400 ****
      %% “stp
      %% and that the grand potential for one mode is
-     %**** hw12.tex Line 400 ****
      %% “st
      %%          “Phi˙G =  k˙B T “ln(1 - e^–-“beta(“epsilon(p) - “mu) ˝ )
      %% “stp
@@ -1960,9 +1955,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %%        where the second term is the first quantum correction arising
      %%        from having two particles in one quantum state.
      %%     “item  For a gas of non-relativistic particles $“epsilon(p) = p^2/2m$,
+     %**** hw12.tex Line 425 ****
      %%        start from the Bose-Einstein distribution and show that
      %%        the density $n=N/V$ of these particles in the classical limit
-     %**** hw12.tex Line 425 ****
      %%        is approximately
      %%        “st
      %%           n  = e^–“beta“mu˝ n˙Q   “left(1 +   “frac–e^–“beta“mu˝˝–2“sqrt–2˝˝  “right)
@@ -1984,9 +1979,9 @@ the entropy per photon <Math mode="inline" tex="S/Nk_{B}" text="(S / N) * k _ B"
      %%         “stp
      %%      “item  Show that
      %%         “st
+     %**** hw12.tex Line 450 ****
      %%             p V “simeq N k˙B T “left[ 1 -  “frac–1˝–4“sqrt–2˝˝  “frac–n˝–n˙Q˝  “right]
      %%         “stp
-     %**** hw12.tex Line 450 ****
      %%       “item Repeat this problem for a fermion gas close to
      %%          the classical limit.
      %% “end–enumerate˝-->  </subsection>
