@@ -1,0 +1,703 @@
+<!DOCTYPE html><html>
+<head>
+<title>Problem 1.   Parametrizing the EOS</title>
+<!--Generated on Sun Feb 26 10:40:10 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<nav class="ltx_page_navbar">
+</nav>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<section id="S0.SSx1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 1.   Parametrizing the EOS</h2>
+
+<div id="S0.SSx1.p1" class="ltx_para">
+<p class="ltx_p">The pressure as a function of temperature an volume, <math id="S0.SSx1.p1.m1" class="ltx_Math" alttext="p(T,V)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow></math>, or equivalently the volume as a function of temperature and pressure <math id="S0.SSx1.p1.m2" class="ltx_Math" alttext="V(T,p)" display="inline"><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math>, is an important physical observable. Recall that its changes are parameterized by the measurables <math id="S0.SSx1.p1.m3" class="ltx_Math" alttext="\beta_{p}" display="inline"><msub><mi>β</mi><mi>p</mi></msub></math> and <math id="S0.SSx1.p1.m4" class="ltx_Math" alttext="\kappa_{T}" display="inline"><msub><mi>κ</mi><mi>T</mi></msub></math>.
+Consider an ideal gas at temperature <math id="S0.SSx1.p1.m5" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> with <math id="S0.SSx1.p1.m6" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> particles
+</p>
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Explain the physical meaning of the thermal expansion coefficient <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="\beta_{p}" display="inline"><msub><mi>β</mi><mi>p</mi></msub></math> and isothermal compressibility <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="\kappa_{T}" display="inline"><msub><mi>κ</mi><mi>T</mi></msub></math>, and compute them for an ideal gas.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="S0.SSx1.p2" class="ltx_para">
+<p class="ltx_p">The first items only involved the EOS, <math id="S0.SSx1.p2.m1" class="ltx_Math" alttext="p(T,V)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow></math>. The next
+items also involves the energetics, so the specific heat
+and adiabatic index play a role. Assume that <math id="S0.SSx1.p2.m2" class="ltx_Math" alttext="U=c_{0}T" display="inline"><mrow><mi>U</mi><mo>=</mo><mrow><msub><mi>c</mi><mn>0</mn></msub><mo>⁢</mo><mi>T</mi></mrow></mrow></math>
+with <math id="S0.SSx1.p2.m3" class="ltx_Math" alttext="c_{0}" display="inline"><msub><mi>c</mi><mn>0</mn></msub></math> a constant</p>
+<ol id="S0.I2" class="ltx_enumerate">
+<li id="S0.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">What is <math id="S0.I2.i2.p1.m1" class="ltx_Math" alttext="c_{0}" display="inline"><msub><mi>c</mi><mn>0</mn></msub></math> for a mono-atomic ideal gas? What about a diatomic ideal gas?</p>
+</div>
+</li>
+<li id="S0.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I2.i3.p1" class="ltx_para">
+<p class="ltx_p">From the energy <math id="S0.I2.i3.p1.m1" class="ltx_Math" alttext="U(T)" display="inline"><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow></math>, derive the specific heat <math id="S0.I2.i3.p1.m2" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math> of a mono-atomic ideal gas? What is <math id="S0.I2.i3.p1.m3" class="ltx_Math" alttext="C_{p}" display="inline"><msub><mi>C</mi><mi>p</mi></msub></math> in this case and what is the adiabatic index <math id="S0.I2.i3.p1.m4" class="ltx_Math" alttext="\gamma=C_{p}/C_{V}" display="inline"><mrow><mi>γ</mi><mo>=</mo><mrow><msub><mi>C</mi><mi>p</mi></msub><mo>/</mo><msub><mi>C</mi><mi>V</mi></msub></mrow></mrow></math>? Repeat this question for a diatomic ideal gas.</p>
+</div>
+</li>
+<li id="S0.I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I2.i4.p1" class="ltx_para">
+<p class="ltx_p">In class we said that for a general substance (and not necessarily an ideal gas) the specific
+heats <math id="S0.I2.i4.p1.m1" class="ltx_Math" alttext="C_{p}" display="inline"><msub><mi>C</mi><mi>p</mi></msub></math> and <math id="S0.I2.i4.p1.m2" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math> are are related by a formula which we will prove in full generality only later:</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E1"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E1.m1" class="ltx_Math" alttext="\displaystyle C_{p}=" display="inline"><mrow><msub><mi>C</mi><mi>p</mi></msub><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E1.m2" class="ltx_Math" alttext="\displaystyle C_{V}+\frac{VT\beta_{p}^{2}}{\kappa_{T}}\,." display="inline"><mrow><mrow><msub><mi>C</mi><mi>V</mi></msub><mo>+</mo><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mi>V</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><msubsup><mi>β</mi><mi>p</mi><mn>2</mn></msubsup></mrow><msub><mi>κ</mi><mi>T</mi></msub></mfrac></mstyle></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">For an ideal gas (and one mole of substance) we have the following special case of this formula:</p>
+<table id="S0.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E2.m1" class="ltx_Math" alttext="C_{p}=C_{V}+Nk_{B}\,." display="block"><mrow><mrow><msub><mi>C</mi><mi>p</mi></msub><mo>=</mo><mrow><msub><mi>C</mi><mi>V</mi></msub><mo>+</mo><mrow><mi>N</mi><mo>⁢</mo><mpadded width="+1.7pt"><msub><mi>k</mi><mi>B</mi></msub></mpadded></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Or</p>
+<table id="S0.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E3.m1" class="ltx_Math" alttext="C_{p}^{\rm 1ml}=C_{V}^{\rm 1ml}+R" display="block"><mrow><msubsup><mi>C</mi><mi>p</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msubsup><mo>=</mo><mrow><msubsup><mi>C</mi><mi>V</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msubsup><mo>+</mo><mi>R</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Show that Eq. (<a href="#S0.E3" title="(3) ‣ item (d) ‣ Problem 1. Parametrizing the EOS" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>) follows from Eq. (<a href="#S0.E1" title="(1) ‣ item (d) ‣ Problem 1. Parametrizing the EOS" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>) together with
+the results from parts (a).</p>
+</div>
+</li>
+<li id="S0.I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I2.i5.p1" class="ltx_para">
+<p class="ltx_p">Qualitatively why is <math id="S0.I2.i5.p1.m1" class="ltx_Math" alttext="C_{p}" display="inline"><msub><mi>C</mi><mi>p</mi></msub></math> larger than <math id="S0.I2.i5.p1.m2" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math>? Think carefully about the meaning of <math id="S0.I2.i5.p1.m3" class="ltx_Math" alttext="\kappa_{T}" display="inline"><msub><mi>κ</mi><mi>T</mi></msub></math> and <math id="S0.I2.i5.p1.m4" class="ltx_Math" alttext="\beta_{p}" display="inline"><msub><mi>β</mi><mi>p</mi></msub></math> and Eq. (<a href="#S0.E1" title="(1) ‣ item (d) ‣ Problem 1. Parametrizing the EOS" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>). Using Eq. (<a href="#S0.E1" title="(1) ‣ item (d) ‣ Problem 1. Parametrizing the EOS" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>), give a rough “handwaving” argument for why <math id="S0.I2.i5.p1.m5" class="ltx_Math" alttext="C_{p}\simeq C_{V}" display="inline"><mrow><msub><mi>C</mi><mi>p</mi></msub><mo>≃</mo><msub><mi>C</mi><mi>V</mi></msub></mrow></math> for most solids and liquids, but in gasses <math id="S0.I2.i5.p1.m6" class="ltx_Math" alttext="C_{p}" display="inline"><msub><mi>C</mi><mi>p</mi></msub></math> is up to 66% larger than <math id="S0.I2.i5.p1.m7" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math>.</p>
+</div>
+</li>
+<li id="S0.I2.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(f)</span> 
+<div id="S0.I2.i6.p1" class="ltx_para">
+<p class="ltx_p">(Optional, but so good!) The <em class="ltx_emph ltx_font_italic">adiabatic</em> compressibility <math id="S0.I2.i6.p1.m1" class="ltx_Math" alttext="\kappa_{S}" display="inline"><msub><mi>κ</mi><mi>S</mi></msub></math> is
+the defined by<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                  <span class="ltx_tag ltx_tag_note">1</span>
+                  
+                  
+                  
+                The suffix <math id="footnote1.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> means adiabatic, <math id="footnote1.m2" class="ltx_Math" alttext="{\mathchar 22\mskip-12.0mu d}Q=0" display="inline"><mrow><mrow><mpadded width="-6.7pt"><mi mathvariant="normal">¯</mi></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>Q</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>. We
+will see that <math id="footnote1.m3" class="ltx_Math" alttext="{\mathchar 22\mskip-12.0mu d}Q" display="inline"><mrow><mpadded width="-6.7pt"><mi mathvariant="normal">¯</mi></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>Q</mi></mrow></math> is related to the change in entropy <math id="footnote1.m4" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>, <math id="footnote1.m5" class="ltx_Math" alttext="{\rm d}S={\mathchar 22\mskip-12.0mu d}Q/T" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>S</mi></mrow><mo>=</mo><mrow><mrow><mpadded width="-6.7pt"><mi mathvariant="normal">¯</mi></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>Q</mi></mrow><mo>/</mo><mi>T</mi></mrow></mrow></math>. So <math id="footnote1.m6" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> suffix means at fixed entropy.
+
+<span id="S0.E4" class="ltx_equation ltx_eqn_table">
+
+<span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_eqn_cell ltx_align_center"><math id="S0.E4.m1" class="ltx_Math" alttext="\kappa_{S}\equiv\frac{-1}{V}\left(\frac{\partial V}{\partial p}\right)_{S}%
+\equiv\frac{-1}{V}\left(\frac{\partial V}{\partial p}\right)_{adiab}" display="block"><mrow><msub><mi>κ</mi><mi>S</mi></msub><mo>≡</mo><mrow><mfrac><mrow><mo>-</mo><mn>1</mn></mrow><mi>V</mi></mfrac><mo>⁢</mo><msub><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>V</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow></mfrac><mo>)</mo></mrow><mi>S</mi></msub></mrow><mo>≡</mo><mrow><mfrac><mrow><mo>-</mo><mn>1</mn></mrow><mi>V</mi></mfrac><mo>⁢</mo><msub><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>V</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow></mfrac><mo>)</mo></mrow><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></msub></mrow></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span>
+<span rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></span></span>
+</span></span></span></span></p>
+<table id="S0.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E5.m1" class="ltx_Math" alttext="\kappa_{S}\equiv\frac{-1}{V}\left(\frac{\partial V}{\partial p}\right)_{adiab}" display="block"><mrow><msub><mi>κ</mi><mi>S</mi></msub><mo>≡</mo><mrow><mfrac><mrow><mo>-</mo><mn>1</mn></mrow><mi>V</mi></mfrac><mo>⁢</mo><msub><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>V</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow></mfrac><mo>)</mo></mrow><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This “<math id="S0.I2.i6.p1.m2" class="ltx_Math" alttext="adiab" display="inline"><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></math>” means that as we change the pressure, the volume and temperature change, so that no heat flows, <math id="S0.I2.i6.p1.m3" class="ltx_Math" alttext="{\mathchar 22\mskip-12.0mu d}Q=0" display="inline"><mrow><mrow><mpadded width="-6.7pt"><mi mathvariant="normal">¯</mi></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>Q</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+Show for an ideal gas that</p>
+<table id="S0.E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E6.m1" class="ltx_Math" alttext="\kappa_{S}=\frac{\kappa_{T}}{\gamma}" display="block"><mrow><msub><mi>κ</mi><mi>S</mi></msub><mo>=</mo><mfrac><msub><mi>κ</mi><mi>T</mi></msub><mi>γ</mi></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">We will show later that this result is not limited to an ideal gas.</p>
+</div>
+<div id="S0.I2.i6.p2" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Hint:</em> You will need to recall that in an adiabatic change of pressure and volume, we have <math id="S0.I2.i6.p2.m1" class="ltx_Math" alttext="pV^{\gamma}={\rm const}" display="inline"><mrow><mrow><mi>p</mi><mo>⁢</mo><msup><mi>V</mi><mi>γ</mi></msup></mrow><mo>=</mo><mi>const</mi></mrow></math> for an ideal gas.</p>
+</div>
+</li>
+<li id="S0.I2.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(g)</span> 
+<div id="S0.I2.i7.p1" class="ltx_para">
+<p class="ltx_p">As discussed in class, the speed of sound
+is related to the compressibility<span id="footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+                  <span class="ltx_tag ltx_tag_note">2</span>
+                  
+                  
+                  
+                I will not derive
+this. A good derivation at your level is given <a href="https://www.animations.physics.unsw.edu.au/jw/sound-wave-equation.htm" title="" class="ltx_ref ltx_href">here</a>. Unfortunately, this derivation uses the symbol <math id="footnote2.m1" class="ltx_Math" alttext="\kappa" display="inline"><mi>κ</mi></math> for <math id="footnote2.m2" class="ltx_Math" alttext="B_{S}" display="inline"><msub><mi>B</mi><mi>S</mi></msub></math>, which for us (and indeed almost everyone) is <math id="footnote2.m3" class="ltx_Math" alttext="1/\kappa_{S}" display="inline"><mrow><mn>1</mn><mo>/</mo><msub><mi>κ</mi><mi>S</mi></msub></mrow></math>!
+</span></span></span></p>
+<table id="S0.E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E7.m1" class="ltx_Math" alttext="c_{s}=\sqrt{\frac{B_{S}}{\rho}}" display="block"><mrow><msub><mi>c</mi><mi>s</mi></msub><mo>=</mo><msqrt><mfrac><msub><mi>B</mi><mi>S</mi></msub><mi>ρ</mi></mfrac></msqrt></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(7)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where the bulk modulus</p>
+<table id="S0.E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E8.m1" class="ltx_Math" alttext="B_{S}\equiv-V\left(\frac{\partial p}{\partial_{V}}\right)_{adiab}\equiv\frac{1%
+}{\kappa_{S}}" display="block"><mrow><msub><mi>B</mi><mi>S</mi></msub><mo>≡</mo><mrow><mo>-</mo><mrow><mi>V</mi><mo>⁢</mo><msub><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>p</mi></mrow><msub><mo>∂</mo><mi>V</mi></msub></mfrac><mo>)</mo></mrow><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></msub></mrow></mrow><mo>≡</mo><mfrac><mn>1</mn><msub><mi>κ</mi><mi>S</mi></msub></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(8)</span></td>
+</tr>
+</table>
+<p class="ltx_p">serves as a kind of spring constant for the material, and <math id="S0.I2.i7.p1.m1" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math> is the mass per volume. Air is made of
+diatomic molecules, primarily (78%) diatomic nitrogen <math id="S0.I2.i7.p1.m2" class="ltx_Math" alttext="N_{2}" display="inline"><msub><mi>N</mi><mn>2</mn></msub></math>. Determine
+the speed of sound of <math id="S0.I2.i7.p1.m3" class="ltx_Math" alttext="N_{2}" display="inline"><msub><mi>N</mi><mn>2</mn></msub></math> gas at <math id="S0.I2.i7.p1.m4" class="ltx_Math" alttext="20^{o}C" display="inline"><mrow><msup><mn>20</mn><mi>o</mi></msup><mo>⁢</mo><mi>C</mi></mrow></math> treating using only the ideal gas constant <math id="S0.I2.i7.p1.m5" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> and the fact that a nitrogen atom consists of 7 protons and 7 neutrons. Compare with the nominal value for the speed of sound in air. You should find favorable agreement.</p>
+</div>
+</li>
+<li id="S0.I2.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(h)</span> 
+<div id="S0.I2.i8.p1" class="ltx_para">
+<p class="ltx_p">(Optional) The frequency of the tuning note (<math id="S0.I2.i8.p1.m1" class="ltx_Math" alttext="A440" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mn>440</mn></mrow></math>) in the orchestra is 440 Hz. Explain qualitatively why it is the adiabatic compressibility <math id="S0.I2.i8.p1.m2" class="ltx_Math" alttext="\kappa_{S}" display="inline"><msub><mi>κ</mi><mi>S</mi></msub></math>, and not the isothermal one <math id="S0.I2.i8.p1.m3" class="ltx_Math" alttext="\kappa_{T}" display="inline"><msub><mi>κ</mi><mi>T</mi></msub></math> which is relevant for the speed of sound, by comparing the time scales of oscillation with a typical time scale for heat conduction.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 2.   Otto Cycle</h2>
+
+<div id="S0.SSx2.p1" class="ltx_para">
+<p class="ltx_p">The Otto cycle is shown in Fig. <a href="#S0.F1" title="Figure 1 ‣ Problem 2. Otto Cycle" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> and was discussed in class.</p>
+</div>
+<figure id="S0.F1" class="ltx_figure"><img src="x5.png" id="S0.F1.g1" class="ltx_graphics ltx_centering" width="372" height="481" alt="The Otto cycle with compression ration ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>The Otto cycle with compression ration <math id="S0.F1.m2" class="ltx_Math" alttext="r\equiv V_{1}/V_{2}" display="inline"><mrow><mi>r</mi><mo>≡</mo><mrow><msub><mi>V</mi><mn>1</mn></msub><mo>/</mo><msub><mi>V</mi><mn>2</mn></msub></mrow></mrow></math>.</figcaption>
+</figure>
+<div id="S0.SSx2.p2" class="ltx_para">
+<ol id="S0.I3" class="ltx_enumerate">
+<li id="S0.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I3.i1.p1" class="ltx_para">
+<p class="ltx_p">For definiteness take a volume of 2.5 L for the volume of the four cylinders. The gas is air which is sucked in at position one, at room temperature <math id="S0.I3.i1.p1.m1" class="ltx_Math" alttext="300\,{}^{\circ}{\rm K}" display="inline"><mrow><mpadded width="+1.7pt"><mn>300</mn></mpadded><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math> and standard pressure of 1 bar. Determine
+the number of moles of air in the cylinders .</p>
+</div>
+</li>
+<li id="S0.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I3.i2.p1" class="ltx_para">
+<p class="ltx_p">For definiteness take air as a diatomic ideal gas, and consider a compression ratio of <math id="S0.I3.i2.p1.m1" class="ltx_Math" alttext="r\equiv V_{1}/V_{2}=8" display="inline"><mrow><mi>r</mi><mo>≡</mo><mrow><msub><mi>V</mi><mn>1</mn></msub><mo>/</mo><msub><mi>V</mi><mn>2</mn></msub></mrow><mo>=</mo><mn>8</mn></mrow></math>.
+The heat injected by burning gasoline during the ignition is <math id="S0.I3.i2.p1.m2" class="ltx_Math" alttext="22000\,{\rm J}" display="inline"><mrow><mpadded width="+1.7pt"><mn>22000</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">J</mi></mrow></math> per mole of air. Find the temperature and pressure at points 1,2,3,4.</p>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_th ltx_th_column ltx_th_row ltx_border_r"></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r">T</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column">P (in bar)</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_r ltx_border_t">1</th>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">300 K</td>
+<td class="ltx_td ltx_align_center ltx_border_t">1 bar</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_r ltx_border_t">2</th>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_t"></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_r ltx_border_t">3</th>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_t"></td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_row ltx_border_r ltx_border_t">4</th>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_t"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li id="S0.I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I3.i3.p1" class="ltx_para">
+<p class="ltx_p">For each of the four stages, 12, 23, 34, 41, find the <math id="S0.I3.i3.p1.m1" class="ltx_Math" alttext="W" display="inline"><mi>W</mi></math>, <math id="S0.I3.i3.p1.m2" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math>, <math id="S0.I3.i3.p1.m3" class="ltx_Math" alttext="\Delta U" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>U</mi></mrow></math></p>
+</div>
+<div id="S0.I3.i3.p2" class="ltx_para ltx_align_center">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_th ltx_th_column ltx_border_r"></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r">W</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r">Q</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column">U</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">12</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_t"></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">23</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_t"></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">34</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_t"></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">41</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_t"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li id="S0.I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I3.i4.p1" class="ltx_para">
+<p class="ltx_p">If the car operates at a maximum of 6000 rpm, what is the maximum
+horsepower of the engine? Note it takes two turns to complete the cycle.
+I find that the result of this idealized computation is low compared to a nominal engine power of <math id="S0.I3.i4.p1.m1" class="ltx_Math" alttext="\sim 200\,{\rm hp}" display="inline"><mrow><mi></mi><mo>∼</mo><mrow><mpadded width="+1.7pt"><mn>200</mn></mpadded><mo>⁢</mo><mi>hp</mi></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I3.i5.p1" class="ltx_para">
+<p class="ltx_p">(Optional but good!) Show that the efficiency of the Otto cycle is <math id="S0.I3.i5.p1.m1" class="ltx_Math" alttext="1-1/r^{\gamma-1}" display="inline"><mrow><mn>1</mn><mo>-</mo><mrow><mn>1</mn><mo>/</mo><msup><mi>r</mi><mrow><mi>γ</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math> where <math id="S0.I3.i5.p1.m2" class="ltx_Math" alttext="r=V_{1}/V_{2}" display="inline"><mrow><mi>r</mi><mo>=</mo><mrow><msub><mi>V</mi><mn>1</mn></msub><mo>/</mo><msub><mi>V</mi><mn>2</mn></msub></mrow></mrow></math> is the compression ratio.</p>
+</div>
+<div id="S0.I3.i5.p2" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Hint:</em> Work analytically (symbols not numbers). Assume that the specific heat at constant volume is constant, so that the energy takes the form <math id="S0.I3.i5.p2.m1" class="ltx_Math" alttext="U=c_{0}T" display="inline"><mrow><mi>U</mi><mo>=</mo><mrow><msub><mi>c</mi><mn>0</mn></msub><mo>⁢</mo><mi>T</mi></mrow></mrow></math>.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 3.    Manipulating Taylor series </h2>
+
+<div id="S0.SSx3.p1" class="ltx_para">
+<p class="ltx_p">You are expected to know the following Taylor series in addition to
+<math id="S0.SSx3.p1.m1" class="ltx_Math" alttext="\sin(x)" display="inline"><mrow><mi>sin</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="S0.SSx3.p1.m2" class="ltx_Math" alttext="\cos(x)" display="inline"><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>:</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E9.m1" class="ltx_Math" alttext="\displaystyle e^{x}=" display="inline"><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E9.m2" class="ltx_Math" alttext="\displaystyle 1+x+\frac{1}{2!}x^{2}+\mathcal{O}(x^{3})" display="inline"><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>2</mn><mo>!</mo></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9)</span></td>
+</tr></tbody>
+<tbody id="S0.E10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E10.m1" class="ltx_Math" alttext="\displaystyle\log(1+x)=" display="inline"><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E10.m2" class="ltx_Math" alttext="\displaystyle x-\frac{1}{2}x^{2}+\frac{1}{3}x^{3}+\mathcal{O}(x^{4})" display="inline"><mrow><mrow><mi>x</mi><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>3</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>4</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(10)</span></td>
+</tr></tbody>
+<tbody id="S0.E11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E11.m1" class="ltx_Math" alttext="\displaystyle(1+x)^{\alpha}=" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>α</mi></msup><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E11.m2" class="ltx_Math" alttext="\displaystyle 1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^{2}+\frac{\alpha(\alpha-%
+1)(\alpha-2)}{3!}x^{3}+\mathcal{O}(x^{4})" display="inline"><mrow><mn>1</mn><mo>+</mo><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>!</mo></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>3</mn><mo>!</mo></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>4</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(11)</span></td>
+</tr></tbody>
+<tbody id="S0.E12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E12.m1" class="ltx_Math" alttext="\displaystyle\frac{1}{1+x}=" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac></mstyle><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E12.m2" class="ltx_Math" alttext="\displaystyle 1-x+x^{2}+\mathcal{O}(x^{3})" display="inline"><mrow><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">These get me through life.
+Here <math id="S0.SSx3.p1.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> is considered to be a small, dimensionless, number. The <math id="S0.SSx3.p1.m4" class="ltx_Math" alttext="\mathcal{O}(x^{3})" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></math> etc shows an estimate for the size of the terms that have been dropped. Some Taylor expansions will be needed in the next problem and throughout the course.
+These are to be found by combining the Taylor series above. The function
+we will study in detail is wildly important:</p>
+<table id="S0.E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E13.m1" class="ltx_Math" alttext="\frac{1}{e^{x}-1}\,." display="block"><mrow><mpadded width="+1.7pt"><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow></mfrac></mpadded><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(13)</span></td>
+</tr>
+</table>
+<p class="ltx_p">It determines the average number of vibrational quanta in a quantum harmonic oscillator at temperature <math id="S0.SSx3.p1.m5" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>.</p>
+<ol id="S0.I4" class="ltx_enumerate">
+<li id="S0.I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I4.i1.p1" class="ltx_para">
+<p class="ltx_p">(Optional) Show that Eq. (<a href="#S0.E10" title="(10) ‣ Problem 3. Manipulating Taylor series" class="ltx_ref"><span class="ltx_text ltx_ref_tag">10</span></a>) follows from Eq. (<a href="#S0.E12" title="(12) ‣ Problem 3. Manipulating Taylor series" class="ltx_ref"><span class="ltx_text ltx_ref_tag">12</span></a>) by integration.</p>
+</div>
+</li>
+<li id="S0.I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I4.i2.p1" class="ltx_para">
+<p class="ltx_p">(Optional) Show that the Taylor series <math id="S0.I4.i2.p1.m1" class="ltx_Math" alttext="(1+x)^{\alpha}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mi>α</mi></msup></math> gives the exact result for <math id="S0.I4.i2.p1.m2" class="ltx_Math" alttext="\alpha=2" display="inline"><mrow><mi>α</mi><mo>=</mo><mn>2</mn></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I4.i3.p1" class="ltx_para">
+<p class="ltx_p">Consider large <math id="S0.I4.i3.p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, i.e. <math id="S0.I4.i3.p1.m2" class="ltx_Math" alttext="x\gg 1" display="inline"><mrow><mi>x</mi><mo>≫</mo><mn>1</mn></mrow></math>. Then <math id="S0.I4.i3.p1.m3" class="ltx_Math" alttext="e^{-x}" display="inline"><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></math> is very small, i.e. <math id="S0.I4.i3.p1.m4" class="ltx_Math" alttext="e^{-x}\ll 1" display="inline"><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>≪</mo><mn>1</mn></mrow></math>. Show that</p>
+<table id="S0.E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E14.m1" class="ltx_Math" alttext="\frac{1}{e^{x}-1}\simeq e^{-x}\left(1+e^{-x}+e^{-2x}+\mathcal{O}(e^{-3x})\right)" display="block"><mrow><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow></mfrac><mo>≃</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>+</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(14)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The first two terms are compared to the full function in Fig. <a href="#S0.F2" title="Figure 2 ‣ Problem 3. Manipulating Taylor series" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a></p>
+</div>
+</li>
+<li id="S0.I4.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I4.i4.p1" class="ltx_para">
+<p class="ltx_p">By combining the expansion of <math id="S0.I4.i4.p1.m1" class="ltx_Math" alttext="1/(1+x)" display="inline"><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="S0.I4.i4.p1.m2" class="ltx_Math" alttext="e^{x}" display="inline"><msup><mi>e</mi><mi>x</mi></msup></math> derive
+the following expansion for <math id="S0.I4.i4.p1.m3" class="ltx_Math" alttext="x\ll 1" display="inline"><mrow><mi>x</mi><mo>≪</mo><mn>1</mn></mrow></math>:</p>
+<table id="S0.E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E15.m1" class="ltx_Math" alttext="\frac{1}{e^{x}-1}\simeq\frac{1}{x}-\frac{1}{2}+\frac{1}{12}x+\mathcal{O}(x^{2})" display="block"><mrow><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow></mfrac><mo>≃</mo><mrow><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>12</mn></mfrac><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(15)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The first two terms are compared to the full function in Fig. <a href="#S0.F2" title="Figure 2 ‣ Problem 3. Manipulating Taylor series" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a></p>
+</div>
+<div id="S0.I4.i4.p2" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Hint:</em> First expand <math id="S0.I4.i4.p2.m1" class="ltx_Math" alttext="e^{x}" display="inline"><msup><mi>e</mi><mi>x</mi></msup></math> to second order inclusive (i.e. the error is <math id="S0.I4.i4.p2.m2" class="ltx_Math" alttext="O(x^{3})" display="inline"><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></math>). Substitute this in Eq. (<a href="#S0.E15" title="(15) ‣ item (d) ‣ Problem 3. Manipulating Taylor series" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15</span></a>) and pull out a factor of <math id="S0.I4.i4.p2.m3" class="ltx_Math" alttext="\frac{1}{x}" display="inline"><mfrac><mn>1</mn><mi>x</mi></mfrac></math>. You should find that
+the resulting expression takes</p>
+<table id="S0.E16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E16.m1" class="ltx_Math" alttext="\frac{1}{e^{x}-1}\simeq\frac{1}{x}\left(\frac{1}{1+u}\right)" display="block"><mrow><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow></mfrac><mo>≃</mo><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>⁢</mo><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>u</mi></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(16)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.I4.i4.p2.m4" class="ltx_Math" alttext="u\simeq\frac{1}{2}x+\tfrac{1}{6}x^{2}" display="inline"><mrow><mi>u</mi><mo>≃</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mrow></math>.
+Then expand further:</p>
+<table id="S0.E17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E17.m1" class="ltx_Math" alttext="\frac{1}{1+u}\simeq 1-u+u^{2}+\mathcal{O}(u^{3})" display="block"><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>u</mi></mrow></mfrac><mo>≃</mo><mrow><mrow><mn>1</mn><mo>-</mo><mi>u</mi></mrow><mo>+</mo><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>u</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(17)</span></td>
+</tr>
+</table>
+<p class="ltx_p">When evaluating <math id="S0.I4.i4.p2.m5" class="ltx_Math" alttext="u^{2}" display="inline"><msup><mi>u</mi><mn>2</mn></msup></math> to an accuracy of <math id="S0.I4.i4.p2.m6" class="ltx_Math" alttext="\mathcal{O}(x^{3})" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></math> you can (and should!) keep only the first term of <math id="S0.I4.i4.p2.m7" class="ltx_Math" alttext="u(x)\simeq{\textstyle\frac{1}{2}}x" display="inline"><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>x</mi></mrow></mrow></math>:</p>
+<table id="S0.E18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E18.m1" class="ltx_Math" alttext="u^{2}+\mathcal{O}(x^{3})=\left(\tfrac{1}{2}x+\tfrac{1}{6}x^{2}\right)^{2}+%
+\mathcal{O}(x^{3})\simeq\left(\tfrac{1}{2}x\right)^{2}+\mathcal{O}(x^{3})" display="block"><mrow><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>6</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≃</mo><mrow><msup><mrow><mo>(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>x</mi></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(18)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This is better (and less work) than evaluating the “exact” result:</p>
+<table id="S0.E19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E19.m1" class="ltx_Math" alttext="u^{2}+O(x^{3})=\left(\tfrac{1}{2}x+\tfrac{1}{6}x^{2}\right)^{2}+\mathcal{O}(x^%
+{3})=\tfrac{1}{4}x^{2}+\tfrac{1}{6}x^{3}+\tfrac{1}{36}x^{4}+\mathcal{O}(x^{3})\,," display="block"><mrow><mrow><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>6</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>6</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>36</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(19)</span></td>
+</tr>
+</table>
+<p class="ltx_p">which is mathematically inconsistent, since other terms of order <math id="S0.I4.i4.p2.m8" class="ltx_Math" alttext="O(x^{3})" display="inline"><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></math> have already been discarded. Indeed, there is no reason to keep the terms <math id="S0.I4.i4.p2.m9" class="ltx_Math" alttext="\tfrac{1}{6}x^{3}" display="inline"><mrow><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></math> and <math id="S0.I4.i4.p2.m10" class="ltx_Math" alttext="\tfrac{1}{36}x^{4}" display="inline"><mrow><mfrac><mn>1</mn><mn>36</mn></mfrac><mo>⁢</mo><msup><mi>x</mi><mn>4</mn></msup></mrow></math> after other terms of order <math id="S0.I4.i4.p2.m11" class="ltx_Math" alttext="O(x^{3})" display="inline"><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></math> and
+<math id="S0.I4.i4.p2.m12" class="ltx_Math" alttext="O(x^{4})" display="inline"><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>4</mn></msup><mo stretchy="false">)</mo></mrow></mrow></math> have been discarded.</p>
+</div>
+</li>
+<li id="S0.I4.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I4.i5.p1" class="ltx_para">
+<p class="ltx_p">Following the methodology of (c), determine an approximate series for</p>
+<table id="S0.E20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E20.m1" class="ltx_Math" alttext="\frac{1}{e^{-x}+1}" display="block"><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>1</mn></mrow></mfrac></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(20)</span></td>
+</tr>
+</table>
+<p class="ltx_p">for <math id="S0.I4.i5.p1.m1" class="ltx_Math" alttext="x\gg 1" display="inline"><mrow><mi>x</mi><mo>≫</mo><mn>1</mn></mrow></math>. This is useful in describing the thermodynamics of metals.</p>
+</div>
+</li>
+<li id="S0.I4.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(f)</span> 
+<div id="S0.I4.i6.p1" class="ltx_para">
+<p class="ltx_p">Following the methodology of part (d), combine Taylor series to show that</p>
+<table id="S0.E21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E21.m1" class="ltx_Math" alttext="\log(1-e^{-x})\simeq\log(x)-\frac{1}{2}x+\frac{x^{2}}{24}+\mathcal{O}(x^{3})" display="block"><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>x</mi></mrow></mrow><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>24</mn></mfrac><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(21)</span></td>
+</tr>
+</table>
+<p class="ltx_p">for <math id="S0.I4.i6.p1.m1" class="ltx_Math" alttext="x\ll 1" display="inline"><mrow><mi>x</mi><mo>≪</mo><mn>1</mn></mrow></math>. This is useful in entropy of ideal gas of photons.</p>
+</div>
+</li>
+<li id="S0.I4.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(g)</span> 
+<div id="S0.I4.i7.p1" class="ltx_para">
+<p class="ltx_p">(Optional) A clever student will notice that Eq. (<a href="#S0.E21" title="(21) ‣ item (f) ‣ Problem 3. Manipulating Taylor series" class="ltx_ref"><span class="ltx_text ltx_ref_tag">21</span></a>) follows from Eq. (<a href="#S0.E15" title="(15) ‣ item (d) ‣ Problem 3. Manipulating Taylor series" class="ltx_ref"><span class="ltx_text ltx_ref_tag">15</span></a>) via integration as in part(a). Give the details of this clever thought process.</p>
+</div>
+</li>
+</ol>
+</div>
+<figure id="S0.F2" class="ltx_figure"><img src="x2.png" id="S0.F2.g1" class="ltx_graphics ltx_centering" width="641" height="508" alt="The function ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>The function <math id="S0.F2.m6" class="ltx_Math" alttext="1/(e^{x}-1)" display="inline"><mrow><mn>1</mn><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math> (red) and our approximations to it.
+At small <math id="S0.F2.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> the function is well approximated by <math id="S0.F2.m8" class="ltx_Math" alttext="\frac{1}{x}-\frac{1}{2}" display="inline"><mrow><mfrac><mn>1</mn><mi>x</mi></mfrac><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math> (blue dotted line). At large <math id="S0.F2.m9" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> the function is well approximated by <math id="S0.F2.m10" class="ltx_Math" alttext="e^{-x}+e^{-2x}" display="inline"><mrow><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup><mo>+</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></msup></mrow></math>, green dashed line. </figcaption>
+</figure>
+</section>
+<section id="S0.SSx4" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 4.    Energy of the quantum harmonic oscillator</h2>
+
+<div id="S0.SSx4.p1" class="ltx_para">
+<p class="ltx_p">Recall from Homework 4 that
+the mean energy of a single classical harmonic oscillator interacting
+with the thermal environment is</p>
+<table id="S0.E22" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E22.m1" class="ltx_Math" alttext="\left\langle E\right\rangle={k_{\scriptscriptstyle B}T}" display="block"><mrow><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow><mo>=</mo><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(22)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Now we will compare this classical result to the quantum version of the harmonic oscillator. This builds on Homework 4 and Homework 3 and you should probably look over Problem 3 of Homework 3: <a href="https://derek-teaney.github.io/S23_Phy306/lectures/hw3html/main.html" title="" class="ltx_ref ltx_href">question</a>.</p>
+</div>
+<div id="S0.SSx4.p2" class="ltx_para">
+<p class="ltx_p">Recall that the energy levels of the oscillator are <math id="S0.SSx4.p2.m1" class="ltx_Math" alttext="E_{n}=n\hbar\omega_{0}" display="inline"><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math>, where we have shifted what we call zero energy to be ground state energy <math id="S0.SSx4.p2.m2" class="ltx_Math" alttext="n=0" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></math>, while higher vibrational states have <math id="S0.SSx4.p2.m3" class="ltx_Math" alttext="n=1,2,\ldots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.</p>
+<ol id="S0.I5" class="ltx_enumerate">
+<li id="S0.I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I5.i1.p1" class="ltx_para">
+<p class="ltx_p">Determine the average energy <math id="S0.I5.i1.p1.m1" class="ltx_Math" alttext="\left\langle E\right\rangle" display="inline"><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow></math> of the quantum harmonic oscillator at temperature <math id="S0.I5.i1.p1.m2" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> or <math id="S0.I5.i1.p1.m3" class="ltx_Math" alttext="\beta=1/{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mi>β</mi><mo>=</mo><mrow><mrow><mn>1</mn><mo>/</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></math>, using the partition function from a previous homework. Express your result using <math id="S0.I5.i1.p1.m4" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math> and <math id="S0.I5.i1.p1.m5" class="ltx_Math" alttext="\hbar\omega_{0}" display="inline"><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math>. You can check your result using the next item.</p>
+</div>
+</li>
+<li id="S0.I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I5.i2.p1" class="ltx_para">
+<p class="ltx_p">How is the mean vibrational quantum number <math id="S0.I5.i2.p1.m1" class="ltx_Math" alttext="\left\langle n\right\rangle" display="inline"><mrow><mo>⟨</mo><mi>n</mi><mo>⟩</mo></mrow></math> related to <math id="S0.I5.i2.p1.m2" class="ltx_Math" alttext="\left\langle E\right\rangle" display="inline"><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow></math>? Plot the mean number of vibrational quanta <math id="S0.I5.i2.p1.m3" class="ltx_Math" alttext="\left\langle n\right\rangle" display="inline"><mrow><mo>⟨</mo><mi>n</mi><mo>⟩</mo></mrow></math> versus <math id="S0.I5.i2.p1.m4" class="ltx_Math" alttext="{k_{\scriptscriptstyle B}T}/\hbar\omega_{0}" display="inline"><mrow><mrow><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi mathvariant="normal">ℏ</mi></mrow><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> for <math id="S0.I5.i2.p1.m5" class="ltx_Math" alttext="{k_{\scriptscriptstyle B}T}/\hbar\omega_{0}=0\ldots 4" display="inline"><mrow><mrow><mrow><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi mathvariant="normal">ℏ</mi></mrow><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>4</mn></mrow></mrow></math>.
+Determine (from your graph) the temperature in units of <math id="S0.I5.i2.p1.m6" class="ltx_Math" alttext="\hbar\omega_{0}" display="inline"><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> where <math id="S0.I5.i2.p1.m7" class="ltx_Math" alttext="\left\langle n\right\rangle=1" display="inline"><mrow><mrow><mo>⟨</mo><mi>n</mi><mo>⟩</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>. I find <math id="S0.I5.i2.p1.m8" class="ltx_Math" alttext="T=1.4427\,\hbar\omega_{0}/k_{B}" display="inline"><mrow><mi>T</mi><mo>=</mo><mrow><mrow><mpadded width="+1.7pt"><mn>1.4427</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow></mrow></math>.
+You may wish to compare your exact number <math id="S0.I5.i2.p1.m9" class="ltx_Math" alttext="1.4427" display="inline"><mn>1.4427</mn></math> to your estimate of Problem 3 of Homework 3.</p>
+</div>
+</li>
+<li id="S0.I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I5.i3.p1" class="ltx_para">
+<p class="ltx_p">Plot</p>
+<table id="S0.E23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E23.m1" class="ltx_Math" alttext="\frac{\left\langle E\right\rangle}{{k_{\scriptscriptstyle B}T}}" display="block"><mfrac><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mfrac></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(23)</span></td>
+</tr>
+</table>
+<p class="ltx_p">versus <math id="S0.I5.i3.p1.m1" class="ltx_Math" alttext="{k_{\scriptscriptstyle B}T}/\hbar\omega_{0}" display="inline"><mrow><mrow><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi mathvariant="normal">ℏ</mi></mrow><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> for <math id="S0.I5.i3.p1.m2" class="ltx_Math" alttext="{k_{\scriptscriptstyle B}T}/\hbar\omega_{0}=0\ldots 4" display="inline"><mrow><mrow><mrow><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi mathvariant="normal">ℏ</mi></mrow><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>4</mn></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I5.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I5.i4.p1" class="ltx_para">
+<p class="ltx_p">You will now use the Taylor expansions of problem 2. Show that at low temperatures <math id="S0.I5.i4.p1.m1" class="ltx_Math" alttext="T\ll\hbar\omega_{0}" display="inline"><mrow><mi>T</mi><mo>≪</mo><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math> we have</p>
+<table id="S0.E24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E24.m1" class="ltx_Math" alttext="\left\langle E\right\rangle\simeq\hbar\omega_{0}e^{-\hbar\omega_{0}/{k_{%
+\scriptscriptstyle B}T}}" display="block"><mrow><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow><mo>≃</mo><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(24)</span></td>
+</tr>
+</table>
+<p class="ltx_p">or more generally</p>
+<table id="S0.E25" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E25.m1" class="ltx_Math" alttext="\left\langle E\right\rangle\simeq\hbar\omega_{0}e^{-\beta\hbar\omega_{0}}\left%
+(1+e^{-\beta\hbar\omega_{0}}+\ldots\right)" display="block"><mrow><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow><mo>≃</mo><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup><mo>⁢</mo><mrow><mo>(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(25)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Show that at high temperatures <math id="S0.I5.i4.p1.m2" class="ltx_Math" alttext="T\gg\hbar\omega_{0}" display="inline"><mrow><mi>T</mi><mo>≫</mo><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math> we have</p>
+<table id="S0.E26" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E26.m1" class="ltx_Math" alttext="\left\langle E\right\rangle\simeq{k_{\scriptscriptstyle B}T}" display="block"><mrow><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow><mo>≃</mo><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(26)</span></td>
+</tr>
+</table>
+<p class="ltx_p">or more generally</p>
+<table id="S0.E27" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E27.m1" class="ltx_Math" alttext="\left\langle E\right\rangle\simeq{k_{\scriptscriptstyle B}T}\left(1-\frac{%
+\hbar\omega_{0}}{2{k_{\scriptscriptstyle B}T}}+\ldots\right)" display="block"><mrow><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow><mo>≃</mo><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mrow><mn>1</mn><mo>-</mo><mfrac><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mfrac></mrow><mo>+</mo><mi mathvariant="normal">…</mi></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(27)</span></td>
+</tr>
+</table>
+<p class="ltx_p">A plot of the two approximations to the full function is shown
+in Fig. <a href="#S0.F3" title="Figure 3 ‣ item (d) ‣ Problem 4. Energy of the quantum harmonic oscillator" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>.</p>
+</div>
+<figure id="S0.F3" class="ltx_figure"><img src="x3.png" id="S0.F3.g1" class="ltx_graphics ltx_centering" width="507" height="435" alt=" The energy ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3: </span> The energy <math id="S0.F3.m2" class="ltx_Math" alttext="\left\langle E\right\rangle/{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mrow><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow><mo>/</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></math>. Together
+with the expansions developed at large and small temperatures</figcaption>
+</figure>
+</li>
+<li id="S0.I5.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I5.i5.p1" class="ltx_para">
+<p class="ltx_p">The high temperature limit <math id="S0.I5.i5.p1.m1" class="ltx_Math" alttext="T\gg\hbar\omega_{0}" display="inline"><mrow><mi>T</mi><mo>≫</mo><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math> is</p>
+<table id="S0.E28" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E28.m1" class="ltx_Math" alttext="\lim_{T\rightarrow\infty}\left\langle E\right\rangle\simeq{k_{%
+\scriptscriptstyle B}T}" display="block"><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>T</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mo>⁡</mo><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow></mrow><mo>≃</mo><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(28)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Explain why at high temperatures the <math id="S0.I5.i5.p1.m2" class="ltx_Math" alttext="\left\langle E\right\rangle" display="inline"><mrow><mo>⟨</mo><mi>E</mi><mo>⟩</mo></mrow></math> of the quantum oscillator agrees with the classical one by discussing the significance of the graph in (b) in the high temperature limit.</p>
+</div>
+</li>
+<li id="S0.I5.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(f)</span> 
+<div id="S0.I5.i6.p1" class="ltx_para">
+<p class="ltx_p">Consider a diatomic ideal gas. Recall that the mean energy
+of each molecule consists of a classical contribution from translational degrees of freedom <math id="S0.I5.i6.p1.m1" class="ltx_Math" alttext="\tfrac{3}{2}{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></math>, plus a classical contribution from the rotational
+degrees of freedom <math id="S0.I5.i6.p1.m2" class="ltx_Math" alttext="\tfrac{2}{2}{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mfrac><mn>2</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></math>. Now, a quantum mechanical contribution from the vibrations can added.
+The energy computed in part (a) is the contribution of the vibrational motion, and was computed quantum mechanically.
+As discussed in class, the total energy for an ideal gas takes the form</p>
+<table id="S0.E29" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E29.m1" class="ltx_Math" alttext="U=Ne_{0}(T)" display="block"><mrow><mi>U</mi><mo>=</mo><mrow><mi>N</mi><mo>⁢</mo><msub><mi>e</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(29)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and is independent of the volume.</p>
+<ol id="S0.I5.i6.I1" class="ltx_enumerate">
+<li id="S0.I5.i6.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span> 
+<div id="S0.I5.i6.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">What is <math id="S0.I5.i6.I1.i1.p1.m1" class="ltx_Math" alttext="e_{0}(T)" display="inline"><mrow><msub><mi>e</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow></math>? (Hint: just read the question!)</p>
+</div>
+</li>
+<li id="S0.I5.i6.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span> 
+<div id="S0.I5.i6.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">What are <math id="S0.I5.i6.I1.i2.p1.m1" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math> and <math id="S0.I5.i6.I1.i2.p1.m2" class="ltx_Math" alttext="C_{p}" display="inline"><msub><mi>C</mi><mi>p</mi></msub></math>? You should find that the specific heat <math id="S0.I5.i6.I1.i2.p1.m3" class="ltx_Math" alttext="C_{p}" display="inline"><msub><mi>C</mi><mi>p</mi></msub></math> is</p>
+<table id="S0.E30" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E30.m1" class="ltx_Math" alttext="C_{p}=Nk_{B}\left[\frac{7}{2}+\frac{(\beta\hbar\omega_{0})^{2}e^{-\beta\hbar%
+\omega_{0}}}{(1-e^{-\beta\hbar\omega_{0}})^{2}}\right]" display="block"><mrow><msub><mi>C</mi><mi>p</mi></msub><mo>=</mo><mrow><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo>[</mo><mrow><mfrac><mn>7</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(30)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and that the specific heat per mole</p>
+<table id="S0.E31" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E31.m1" class="ltx_Math" alttext="C_{p}^{1\rm ml}=R\left[\frac{7}{2}+\frac{(\beta\hbar\omega_{0})^{2}e^{-\beta%
+\hbar\omega_{0}}}{(1-e^{-\beta\hbar\omega_{0}})^{2}}\right]" display="block"><mrow><msubsup><mi>C</mi><mi>p</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msubsup><mo>=</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo>[</mo><mrow><mfrac><mn>7</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(31)</span></td>
+</tr>
+</table>
+</div>
+</li>
+<li id="S0.I5.i6.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(iii)</span> 
+<div id="S0.I5.i6.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Recall that for diatomic hydrogen the first vibrational
+frequency is
+<math id="S0.I5.i6.I1.i3.p1.m1" class="ltx_Math" alttext="\hbar\omega_{0}\simeq 0.54\,{\rm eV}" display="inline"><mrow><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>≃</mo><mrow><mpadded width="+1.7pt"><mn>0.54</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></math>. Using
+this number together with <math id="S0.I5.i6.I1.i3.p1.m2" class="ltx_Math" alttext="k_{B}=0.025\,{\rm eV}/300\,{}^{\circ}{\rm K}" display="inline"><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>=</mo><mrow><mrow><mrow><mpadded width="+1.7pt"><mn>0.025</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow><mo>/</mo><mpadded width="+1.7pt"><mn>300</mn></mpadded></mrow><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></mrow></math>, I made
+a graph of Eq. (<a href="#S0.E31" title="(31) ‣ item (f)ii ‣ item (f) ‣ Problem 4. Energy of the quantum harmonic oscillator" class="ltx_ref"><span class="ltx_text ltx_ref_tag">31</span></a>) that is shown below. Compare the result to the
+experimental data. What qualitatively does the (simple-minded) calculation get right and wrong? Explain.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<figure id="S0.F4" class="ltx_figure"><img src="x4.png" id="S0.F4.g1" class="ltx_graphics ltx_centering" width="507" height="693" alt="Top: a calculation of the specific heat per mole of diatomic hydrogen in units of ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 4: </span>Top: a calculation of the specific heat per mole of diatomic hydrogen in units of <math id="S0.F4.m4" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>. Bottom: experimental data on <math id="S0.F4.m5" class="ltx_Math" alttext="C_{p}" display="inline"><msub><mi>C</mi><mi>p</mi></msub></math> per mole in units of <math id="S0.F4.m6" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math></figcaption>
+</figure>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sun Feb 26 10:40:10 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html><html>
+<head>
+<title>1.5 Change of variables and solid angles‣ Chapter 1 Kinetics</title>
+<!--Generated on Sun Feb 26 19:05:14 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on February 26, 2023.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="LaTeXML-navbar-left.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+<link rel="up" href="Ch1.html" title="Chapter 1 Kinetics">
+<link rel="start" href="main.html" title="">
+<link rel="prev" href="Ch1.S4.html" title="1.4 The velocity and speed distributions ‣ Chapter 1 Kinetics">
+<link rel="next" href="Ch1.S6.html" title="1.6 Pressure and effusion ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S1.html" title="1.1 Big numbers and probability ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S2.html" title="1.2 Estimates of ideal gasses and the equipartition theorem ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S3.html" title="1.3 The Boltzmann factor ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S4.html" title="1.4 The velocity and speed distributions ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S6.html" title="1.6 Pressure and effusion ‣ Chapter 1 Kinetics">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Kinetics">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 The first law">
+<link rel="appendix" href="A1.html" title="Appendix A Estimates">
+<link rel="appendix" href="A2.html" title="Appendix B Math">
+</head>
+<body>
+<nav class="ltx_page_navbar"><a href="main.html" title="" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch1.html" title="Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S1.html" title="1.1 Big numbers and probability ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Big numbers and probability</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S2.html" title="1.2 Estimates of ideal gasses and the equipartition theorem ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Estimates of ideal gasses and the equipartition theorem</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S3.html" title="1.3 The Boltzmann factor ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>The Boltzmann factor</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S4.html" title="1.4 The velocity and speed distributions ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>The velocity and speed distributions</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.5 </span>Change of variables and solid angles</span></span>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS1" title="1.5.1 Change of variables in 1d ‣ 1.5 Change of variables and solid angles ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.5.1 </span>Change of variables in 1d</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS2" title="1.5.2 Higher dimensions: spherical coordinates and solid angle ‣ 1.5 Change of variables and solid angles ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.5.2 </span>Higher dimensions: spherical coordinates and solid angle</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S6.html" title="1.6 Pressure and effusion ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.6 </span>Pressure and effusion</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch2.html" title="Chapter 2 The first law" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>The first law</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="A1.html" title="Appendix A Estimates" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Estimates</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="A2.html" title="Appendix B Math" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Math</span></a></li>
+</ul>
+</div>
+</nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch1.html" title="Chapter 1 Kinetics" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a><a href="Ch1.S4.html" title="1.4 The velocity and speed distributions ‣ Chapter 1 Kinetics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>The velocity and speed distributions</span></a><a href="Ch1.S6.html" title="1.6 Pressure and effusion ‣ Chapter 1 Kinetics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.6 </span>Pressure and effusion</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1.5 </span>Change of variables and solid angles</h1>
+<div class="ltx_dates">(February 26, 2023)</div>
+
+<section id="SS1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.5.1 </span>Change of variables in 1d</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Given a variable <math id="SS1.p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and its probability distribution</p>
+<table id="Ch1.E54" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E54.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}_{x}=P(x)\,{\rm d}x" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi class="ltx_font_mathscript">𝒫</mi><mi>x</mi></msub></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.54)</span></td>
+</tr>
+</table>
+<p class="ltx_p">How do we find the probability of <math id="SS1.p1.m2" class="ltx_Math" alttext="u" display="inline"><mi>u</mi></math>, given a map <math id="SS1.p1.m3" class="ltx_Math" alttext="\varphi:x\rightarrow u" display="inline"><mrow><mi>φ</mi><mo>:</mo><mrow><mi>x</mi><mo>→</mo><mi>u</mi></mrow></mrow></math>, i.e. when <math id="SS1.p1.m4" class="ltx_Math" alttext="u(x)" display="inline"><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a function of <math id="SS1.p1.m5" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>? Assuming that
+that the map is one to one we have</p>
+<table id="Ch1.E55" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E55.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}_{u}=P(x(u))\left|\frac{dx}{du}\right|{\rm d}u=P(x(u))\frac{%
+{\rm d}u}{|\frac{du}{dx}|}" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi class="ltx_font_mathscript">𝒫</mi><mi>u</mi></msub></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>|</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow></mfrac><mo>|</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>u</mi></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>u</mi></mrow><mrow><mo stretchy="false">|</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo stretchy="false">|</mo></mrow></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.55)</span></td>
+</tr>
+</table>
+<p class="ltx_p">We note the absolute values here, which reflects the fact
+that when discussing probability we are asking whether a particle
+is in a bin of size <math id="SS1.p1.m6" class="ltx_Math" alttext="{\rm d}u" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>u</mi></mrow></math>, and the bin size isn’t like positive or negative.</p>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">The general formula for change of variables for an unoriented integral (like probability) is <span id="Ch1.footnote3" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>
+                <span class="ltx_tag ltx_tag_note">3</span>
+                
+                
+                
+              The difference between oriented and unoriented integral is a matter of semantics at this level. If one replaces an integral by a sum of rectangles,
+you can sum them up in order from the beginning to the end (an oriented integral), or you can sum them up in any order provided they are in a specified region (an unoriented integral). </span></span></span></p>
+<table id="Ch1.E56" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E56.m1" class="ltx_Math" alttext="\int_{R}f(x){\rm d}x=\int_{R_{u}}f(x(u))\left|\frac{dx}{du}\right|\,{\rm d}u" display="block"><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>R</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msub><mo largeop="true" symmetric="true">∫</mo><msub><mi>R</mi><mi>u</mi></msub></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>|</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow></mfrac><mo rspace="4.2pt">|</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>u</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.56)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Here <math id="SS1.p2.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is the region of integration for <math id="SS1.p2.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> (for example <math id="SS1.p2.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> could be interval <math id="SS1.p2.m4" class="ltx_Math" alttext="[1,2]" display="inline"><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false">]</mo></mrow></math>), and <math id="SS1.p2.m5" class="ltx_Math" alttext="R_{u}" display="inline"><msub><mi>R</mi><mi>u</mi></msub></math> is the image of <math id="SS1.p2.m6" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> under the map (for example if the map is <math id="SS1.p2.m7" class="ltx_Math" alttext="u(x)=-2x" display="inline"><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math> then <math id="SS1.p2.m8" class="ltx_Math" alttext="R_{u}" display="inline"><msub><mi>R</mi><mi>u</mi></msub></math> is <math id="SS1.p2.m9" class="ltx_Math" alttext="[-4,-2]" display="inline"><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mn>4</mn></mrow><mo>,</mo><mrow><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">]</mo></mrow></math>).</p>
+</div>
+<div id="SS1.p3" class="ltx_para">
+<p class="ltx_p">To set yourself straight of this notation just make the change of variables in a simple integral, getting the signs right. For example,
+consider the basic integral:</p>
+<table id="Ch1.E57" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E57.m1" class="ltx_Math" alttext="I=\int^{2}_{1}{\rm d}x=\int_{[1,2]}{\rm d}x=\frac{1}{2}" display="block"><mrow><mi>I</mi><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>1</mn><mn>2</mn></msubsup><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow><mo>=</mo><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo stretchy="false">[</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false">]</mo></mrow></msub><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.57)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Undergoing a change of variables with <math id="SS1.p3.m1" class="ltx_Math" alttext="u=-2x" display="inline"><mrow><mi>u</mi><mo>=</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math>, giving <math id="SS1.p3.m2" class="ltx_Math" alttext="x=-u/2" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mo>-</mo><mrow><mi>u</mi><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math> and <math id="SS1.p3.m3" class="ltx_Math" alttext="dx=-\frac{1}{2}du" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>u</mi></mrow></mrow></mrow></math>, with <math id="SS1.p3.m4" class="ltx_Math" alttext="|dx/du|=\tfrac{1}{2}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>/</mo><mi>d</mi></mrow><mo>⁢</mo><mi>u</mi></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>. The integral then becomes</p>
+<table id="Ch1.E58" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E58.m1" class="ltx_Math" alttext="I=\int^{-4}_{-2}\left(-\frac{1}{2}\right){\rm d}u=\int^{-2}_{-4}\frac{1}{2}{%
+\rm d}u=\int_{[-4,-2]}\,\frac{1}{2}\,{\rm d}u=1" display="block"><mrow><mi>I</mi><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mn>2</mn></mrow><mrow><mo>-</mo><mn>4</mn></mrow></msubsup><mrow><mrow><mo>(</mo><mrow><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mn>4</mn></mrow><mrow><mo>-</mo><mn>2</mn></mrow></msubsup><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mn>4</mn></mrow><mo>,</mo><mrow><mo>-</mo><mn>2</mn></mrow><mo stretchy="false">]</mo></mrow></msub></mpadded><mrow><mpadded width="+1.7pt"><mfrac><mn>1</mn><mn>2</mn></mfrac></mpadded><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>u</mi></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.58)</span></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.5.2 </span>Higher dimensions: spherical coordinates and solid angle</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">In higher-dimensions we have</p>
+<table id="Ch1.E59" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E59.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}=P(x,y,z)\,\underbrace{{\rm d}x\,{\rm d}y\,{\rm d}z}_{\mbox{%
+{\rm d}V}}" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><munder><munder accentunder="true"><mrow><mi mathvariant="normal">d</mi><mo movablelimits="false">⁢</mo><mpadded width="+1.7pt"><mi>x</mi></mpadded><mo movablelimits="false">⁢</mo><mi mathvariant="normal">d</mi><mo movablelimits="false">⁢</mo><mpadded width="+1.7pt"><mi>y</mi></mpadded><mo movablelimits="false">⁢</mo><mi mathvariant="normal">d</mi><mo movablelimits="false">⁢</mo><mi>z</mi></mrow><mo movablelimits="false">⏟</mo></munder><mtext>dV</mtext></munder></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.59)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="SS2.p1.m1" class="ltx_Math" alttext="{\rm d}{V}" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>V</mi></mrow></math> is the “volume element”. We will use spherical
+coordinates <math id="SS2.p1.m2" class="ltx_Math" alttext="x=r\sin\theta\cos\phi" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></math>, <math id="SS2.p1.m3" class="ltx_Math" alttext="y=r\sin\theta\sin\phi" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></math>, and <math id="SS2.p1.m4" class="ltx_Math" alttext="z=r\cos\theta" display="inline"><mrow><mi>z</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math> (see Fig. <a href="#Ch1.F1" title="Figure 1.1 ‣ 1.5.2 Higher dimensions: spherical coordinates and solid angle ‣ 1.5 Change of variables and solid angles ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a>).</p>
+</div>
+<figure id="Ch1.F1" class="ltx_figure"><img src="x2.png" id="Ch1.F1.g1" class="ltx_graphics ltx_centering" width="372" height="481" alt=" 
+Spherical coordinates. Use the picture to justify ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1.1: </span> 
+Spherical coordinates. Use the picture to justify <math id="Ch1.F1.m4" class="ltx_Math" alttext="x=r\sin\theta\cos\phi" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></math>, <math id="Ch1.F1.m5" class="ltx_Math" alttext="y=r\sin\theta\sin\phi" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></math> and <math id="Ch1.F1.m6" class="ltx_Math" alttext="z=r\cos\theta" display="inline"><mrow><mi>z</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math>.
+</figcaption>
+</figure>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">A bit of geometry shows that the differential area <math id="SS2.p2.m1" class="ltx_Math" alttext="dA" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow></math> and the volume element <math id="SS2.p2.m2" class="ltx_Math" alttext="dV" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>V</mi></mrow></math> in spherical coordinates are (see Fig. <a href="#Ch1.F2" title="Figure 1.2 ‣ 1.5.2 Higher dimensions: spherical coordinates and solid angle ‣ 1.5 Change of variables and solid angles ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2</span></a>)</p>
+<table id="A2.S4.EGx9" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.E60"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E60.m1" class="ltx_Math" alttext="\displaystyle dA=" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E60.m2" class="ltx_Math" alttext="\displaystyle r^{2}\sin\theta\,{\rm d}\theta\,{\rm d}\phi" display="inline"><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.60)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E61"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E61.m1" class="ltx_Math" alttext="\displaystyle dV=" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>V</mi></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E61.m2" class="ltx_Math" alttext="\displaystyle dA\,{\rm d}r=r^{2}\sin\theta\,{\rm d}r\,{\rm d}\theta\,{\rm d}\phi" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>A</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>r</mi></mrow><mo>=</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>r</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.61)</span></td>
+</tr></tbody>
+</table>
+</div>
+<figure id="Ch1.F2" class="ltx_figure"><img src="x1.png" id="Ch1.F2.g1" class="ltx_graphics ltx_centering" width="407" height="229" alt=" 
+Spherical coordinates. From the figure, justify Eq. (">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1.2: </span> 
+Spherical coordinates. From the figure, justify Eq. (<a href="#Ch1.E60" title="(1.60) ‣ 1.5.2 Higher dimensions: spherical coordinates and solid angle ‣ 1.5 Change of variables and solid angles ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.60</span></a>)
+</figcaption>
+</figure>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">So in spherical coordinates</p>
+<table id="A2.S4.EGx10" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.E62"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E62.m1" class="ltx_Math" alttext="\displaystyle{\rm d}\mathscr{P}=" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E62.m2" class="ltx_Math" alttext="\displaystyle P(x,y,z)r^{2}\sin\theta\,{\rm d}r\,{\rm d}\theta\,{\rm d}\phi" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>r</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.62)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E63"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E63.m1" class="ltx_Math" alttext="\displaystyle\equiv" display="inline"><mo>≡</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E63.m2" class="ltx_Math" alttext="\displaystyle P(r,\theta\,\phi){\rm d}r\,{\rm d}\theta\,{\rm d}\phi" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mrow><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi>ϕ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>r</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.63)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">For example, if</p>
+<table id="Ch1.E64" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E64.m1" class="ltx_Math" alttext="P(x,y,z)=Ce^{-(x^{2}+y^{2}+z^{2})/2\sigma^{2}}" display="block"><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.64)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Then</p>
+<table id="Ch1.E65" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E65.m1" class="ltx_Math" alttext="P(r,\theta,\phi)=Ce^{-r/2\sigma^{2}}r^{2}\sin\theta" display="block"><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mi>r</mi><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></mrow></msup><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.65)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p4" class="ltx_para">
+<p class="ltx_p">Rather than using geometry, we can use algebra to make the change of variables.
+The generalization of Eq. (<a href="#Ch1.E55" title="(1.55) ‣ 1.5.1 Change of variables in 1d ‣ 1.5 Change of variables and solid angles ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.55</span></a>) is</p>
+<table id="A2.S4.EGx11" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.E66"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E66.m1" class="ltx_Math" alttext="\displaystyle{\rm d}\mathscr{P}_{r,\theta,\phi}=" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi class="ltx_font_mathscript">𝒫</mi><mrow><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi></mrow></msub></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E66.m2" class="ltx_Math" alttext="\displaystyle P(x,y,z)\left|\left|\frac{\partial(x,y,z)}{\partial(r,\theta,%
+\phi)}\right|\right|{\rm d}r{\rm d}\theta{\rm d}\phi=P(r,\theta,\phi){\rm d}r{%
+\rm d}\theta{\rm d}\phi" display="inline"><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo fence="true">||</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo fence="true">||</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.66)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Here it is understood that <math id="SS2.p4.m1" class="ltx_Math" alttext="x=r\sin\theta\cos\phi" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></math>, <math id="SS2.p4.m2" class="ltx_Math" alttext="y=r\sin\theta\sin\phi" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></math>, and <math id="SS2.p4.m3" class="ltx_Math" alttext="z=r\cos\theta" display="inline"><mrow><mi>z</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math> are functions of <math id="SS2.p4.m4" class="ltx_Math" alttext="(r,\theta,\phi)" display="inline"><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></math> (see Fig. <a href="#Ch1.F1" title="Figure 1.1 ‣ 1.5.2 Higher dimensions: spherical coordinates and solid angle ‣ 1.5 Change of variables and solid angles ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a>).
+The double
+bars denote the absolute value, of the determinant of the Jacobian
+matrix.
+The Jacobian matrix (determinant) is defined by the matrix (determinant) of the possible derivatives</p>
+<table id="Ch1.E67" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E67.m1" class="ltx_Math" alttext="\left|\frac{\partial(x,y,z)}{\partial(r,\theta,\phi)}\right|=\begin{vmatrix}%
+\frac{\partial x}{\partial r}&amp;\frac{\partial x}{\partial\theta}&amp;\frac{\partial
+x%
+}{\partial\phi}\\
+\frac{\partial y}{\partial r}&amp;\frac{\partial y}{\partial\theta}&amp;\frac{\partial
+y%
+}{\partial\phi}\\
+\frac{\partial z}{\partial r}&amp;\frac{\partial z}{\partial\theta}&amp;\frac{\partial
+z%
+}{\partial\phi}\\
+\end{vmatrix}=\begin{vmatrix}\sin\theta\cos\phi&amp;r\cos\theta\cos\phi&amp;-r\sin%
+\theta\sin\phi\\
+\sin\theta\sin\phi&amp;r\cos\theta\sin\phi&amp;r\sin\theta\cos\phi\\
+\cos\theta&amp;-r\sin\theta&amp;0\end{vmatrix}=r^{2}\sin\theta" display="block"><mrow><mrow><mo>|</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mtd><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mtd><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>ϕ</mi></mrow></mfrac></mstyle></mtd></mtr><mtr><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mtd><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mtd><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>ϕ</mi></mrow></mfrac></mstyle></mtd></mtr><mtr><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mtd><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mtd><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>ϕ</mi></mrow></mfrac></mstyle></mtd></mtr></mtable><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mo>-</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mtd><mtd columnalign="center"><mrow><mo>-</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>|</mo></mrow><mo>=</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.67)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p5" class="ltx_para">
+<p class="ltx_p">Take a patch of area <math id="SS2.p5.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> on a sphere. The solid angle is
+defined as<span id="Ch1.footnote4" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">4</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">4</sup>
+                <span class="ltx_tag ltx_tag_note">4</span>
+                
+                
+                
+              I have always found the word “angle” here problematic, since it is a two dimensional region were are talking about. Indeed, the differential
+solid “angle”, <math id="Ch1.footnote4.m1" class="ltx_Math" alttext="{\rm d}\Omega=\sin\theta{\rm d}\theta{\rm d}\phi" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></mrow></math>, is parametrized by two angles, <math id="Ch1.footnote4.m2" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> and <math id="Ch1.footnote4.m3" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> </span></span></span></p>
+<table id="Ch1.E68" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E68.m1" class="ltx_Math" alttext="\Omega\equiv\frac{A}{r^{2}}\,." display="block"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>≡</mo><mpadded width="+1.7pt"><mfrac><mi>A</mi><msup><mi>r</mi><mn>2</mn></msup></mfrac></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.68)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This analogous to an angle in 1d where <math id="SS2.p5.m2" class="ltx_Math" alttext="\theta=s/r" display="inline"><mrow><mi>θ</mi><mo>=</mo><mrow><mi>s</mi><mo>/</mo><mi>r</mi></mrow></mrow></math>.
+Since the area of a region on the a sphere runs from <math id="SS2.p5.m3" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math> up to <math id="SS2.p5.m4" class="ltx_Math" alttext="4\pi r^{2}" display="inline"><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></math>, we have that <math id="SS2.p5.m5" class="ltx_Math" alttext="\Omega" display="inline"><mi mathvariant="normal">Ω</mi></math> is in the range <math id="SS2.p5.m6" class="ltx_Math" alttext="0\ldots 4\pi" display="inline"><mrow><mn>0</mn><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow></math>.
+For a small patch of the sphere subtended by <math id="SS2.p5.m7" class="ltx_Math" alttext="{\rm d}\theta" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi></mrow></math> and <math id="SS2.p5.m8" class="ltx_Math" alttext="{\rm d}\phi" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></math> (at angles <math id="SS2.p5.m9" class="ltx_Math" alttext="\theta,\phi" display="inline"><mrow><mi>θ</mi><mo>,</mo><mi>ϕ</mi></mrow></math>) we have from the geometry:</p>
+<table id="Ch1.E69" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E69.m1" class="ltx_Math" alttext="{\rm d}\Omega\equiv\frac{dA}{r^{2}}=\sin\theta{\rm d}\theta{\rm d}\phi" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow><mo>≡</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.69)</span></td>
+</tr>
+</table>
+<p class="ltx_p">If a particle’s position is distributed uniformly over the sphere, the probability distribution is</p>
+<table id="Ch1.E70" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E70.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}=\frac{{\rm d}A}{4\pi r^{2}}=\frac{{\rm d}\Omega}{4\pi}=%
+\frac{\sin\theta{\rm d}\theta{\rm d}\phi}{4\pi}" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>A</mi></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.70)</span></td>
+</tr>
+</table>
+</div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch1.S4.html" title="1.4 The velocity and speed distributions ‣ Chapter 1 Kinetics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>The velocity and speed distributions</span></a><a href="Ch1.S6.html" title="1.6 Pressure and effusion ‣ Chapter 1 Kinetics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.6 </span>Pressure and effusion</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Sun Feb 26 19:05:14 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

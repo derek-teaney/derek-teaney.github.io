@@ -1,0 +1,498 @@
+<!DOCTYPE html><html>
+<head>
+<title>Problem 1.   Phase Space and the Entropy of an Ideal Gas</title>
+<!--Generated on Sun Mar 19 01:06:43 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<nav class="ltx_page_navbar">
+</nav>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<section id="S0.SSx1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 1.    Phase Space and the Entropy of an Ideal Gas</h2>
+
+<div id="S0.SSx1.p1" class="ltx_para">
+<p class="ltx_p">The phase space volume is a measure of the total number of possible ways for <math id="S0.SSx1.p1.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> of particles to <em class="ltx_emph ltx_markedasmath ltx_font_italic">share</em> (or partition) the total energy and volume.
+For instance one particle could have almost all the available energy and the remaining <math id="S0.SSx1.p1.m3" class="ltx_Math" alttext="N-1" display="inline"><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow></math> particles could have very little.
+Such configurations are unlikely since they occupy only a small portion of
+the available phase space volume.
+</p>
+</div>
+<div id="S0.SSx1.p2" class="ltx_para">
+<p class="ltx_p">Consider a single particle in three dimensions in a box</p>
+<table id="S0.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E1.m1" class="ltx_Math" alttext="0&lt;x,y,z&lt;L" display="block"><mrow><mrow><mn>0</mn><mo>&lt;</mo><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></mrow><mo>,</mo><mrow><mi>z</mi><mo>&lt;</mo><mi>L</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The three momenta components are sharing (or partitioning) the total energy which lies between
+<math id="S0.SSx1.p2.m1" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> and <math id="S0.SSx1.p2.m2" class="ltx_Math" alttext="E+\delta E" display="inline"><mrow><mi>E</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow></mrow></math>, i.e.</p>
+<table id="S0.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E2.m1" class="ltx_Math" alttext="E&lt;\frac{p_{x}^{2}}{2m}+\frac{p_{y}^{2}}{2m}+\frac{p_{z}^{2}}{2m}&lt;E+\delta E\,," display="block"><mrow><mrow><mi>E</mi><mo>&lt;</mo><mrow><mfrac><msubsup><mi>p</mi><mi>x</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac><mo>+</mo><mfrac><msubsup><mi>p</mi><mi>y</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac><mo>+</mo><mfrac><msubsup><mi>p</mi><mi>z</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac></mrow><mo>&lt;</mo><mrow><mi>E</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>E</mi></mpadded></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The particle is free to move around in phase space but the energy must lie
+in this range. <math id="S0.SSx1.p2.m3" class="ltx_Math" alttext="\delta E/E" display="inline"><mrow><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mo>/</mo><mi>E</mi></mrow></math> is the precision in the energy and should be considered small, say <math id="S0.SSx1.p2.m4" class="ltx_Math" alttext="10^{-4}" display="inline"><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></math>. Your should realize that this means that the momentum
+is confined to a spherical shell between <math id="S0.SSx1.p2.m5" class="ltx_Math" alttext="p\equiv\sqrt{2mE}" display="inline"><mrow><mi>p</mi><mo>≡</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>E</mi></mrow></msqrt></mrow></math> and <math id="S0.SSx1.p2.m6" class="ltx_Math" alttext="p_{\rm max}=\sqrt{2m(E+\delta E)}" display="inline"><mrow><msub><mi>p</mi><mi>max</mi></msub><mo>=</mo><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>E</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt></mrow></math>.</p>
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Show that the accessible phase space volume is</p>
+<table id="S0.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E3.m1" class="ltx_Math" alttext="V_{\rm ps}=\int_{[E,E+\delta E]}{\rm d}^{3}{\bm{r}}{\rm d}^{3}{\bm{p}}=V\left[%
+4\pi\left(2mE\right)^{3/2}\frac{\delta E}{2E}\right]" display="block"><mrow><msub><mi>V</mi><mi>ps</mi></msub><mo>=</mo><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo stretchy="false">[</mo><mi>E</mi><mo>,</mo><mrow><mi>E</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></msub><mrow><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒓</mi><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒑</mi></mrow></mrow><mo>=</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo>[</mo><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>E</mi></mrow><mo>)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>E</mi></mrow></mfrac></mrow><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr>
+</table>
+<br class="ltx_break">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Hint:</em> Show that the thickness of the shell in momentum space is</p>
+<table id="S0.E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E4.m1" class="ltx_Math" alttext="\delta p\equiv p_{\rm max}-p\simeq p\,\frac{\delta E}{2E}" display="block"><mrow><mrow><mi>δ</mi><mo>⁢</mo><mi>p</mi></mrow><mo>≡</mo><mrow><msub><mi>p</mi><mi>max</mi></msub><mo>-</mo><mi>p</mi></mrow><mo>≃</mo><mrow><mpadded width="+1.7pt"><mi>p</mi></mpadded><mo>⁢</mo><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>E</mi></mrow></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div id="S0.SSx1.p3" class="ltx_para">
+<p class="ltx_p">To count the number of configurations, divide up the phase space volume into cells of (arbitrary) small size <math id="S0.SSx1.p3.m1" class="ltx_Math" alttext="h=\Delta x\Delta p_{x}" display="inline"><mrow><mi>h</mi><mo>=</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>p</mi><mi>x</mi></msub></mrow></mrow></math>, or in three dimensions cells of size<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+            <span class="ltx_tag ltx_tag_note">1</span>
+            
+            
+            
+          Classically this cell size was arbitrary. With the advent of quantum mechanics, it was realized that a natural choice for the cell size is Plank’s constant <math id="footnote1.m1" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math>. But here let’s understand it from a classical perspective first, choosing the cell size to be <math id="footnote1.m2" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math> somewhat arbitrarily.</span></span></span></p>
+<table id="S0.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E5.m1" class="ltx_Math" alttext="h^{3}=\left(\Delta x\Delta y\Delta z\right)\left(\Delta p_{x}\Delta p_{y}%
+\Delta p_{z}\right)" display="block"><mrow><msup><mi>h</mi><mn>3</mn></msup><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>z</mi></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>p</mi><mi>x</mi></msub><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>p</mi><mi>y</mi></msub><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>p</mi><mi>z</mi></msub></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The “number of ways” for <math id="S0.SSx1.p3.m2" class="ltx_Math" alttext="p_{x}" display="inline"><msub><mi>p</mi><mi>x</mi></msub></math>, <math id="S0.SSx1.p3.m3" class="ltx_Math" alttext="p_{y}" display="inline"><msub><mi>p</mi><mi>y</mi></msub></math>, <math id="S0.SSx1.p3.m4" class="ltx_Math" alttext="p_{z}" display="inline"><msub><mi>p</mi><mi>z</mi></msub></math> and to share (or partition) the available energy is denoted by <math id="S0.SSx1.p3.m5" class="ltx_Math" alttext="\Omega(E,V)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow></math> and it is phase space volume divided by the cell size</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E6"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E6.m1" class="ltx_Math" alttext="\displaystyle\Omega(E,V)=" display="inline"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E6.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{h^{3}}\int_{[E,E+\delta E]}{\rm d}^{3}{\bm{r}}{\rm d}^{3%
+}{\bm{p}}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>h</mi><mn>3</mn></msup></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo stretchy="false">[</mo><mi>E</mi><mo>,</mo><mrow><mi>E</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></msub></mstyle><mrow><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒓</mi><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒑</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr></tbody>
+<tbody id="S0.E7"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E7.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E7.m2" class="ltx_Math" alttext="\displaystyle V\left(\frac{2mE}{h^{2}}\right)^{3/2}4\pi\frac{\delta E}{2E}" display="inline"><mrow><mi>V</mi><mo>⁢</mo><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>E</mi></mrow><msup><mi>h</mi><mn>2</mn></msup></mfrac></mstyle><mo>)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>E</mi></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(7)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><math id="S0.SSx1.p3.m6" class="ltx_Math" alttext="\Omega(E,V)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the number of accessible states for a single particle with energy between <math id="S0.SSx1.p3.m7" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> and <math id="S0.SSx1.p3.m8" class="ltx_Math" alttext="E+\delta E" display="inline"><mrow><mi>E</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow></mrow></math>.</p>
+</div>
+<div id="S0.SSx1.p4" class="ltx_para">
+<p class="ltx_p">The number of accessible configurations for two particles sharing the available energy between <math id="S0.SSx1.p4.m1" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> and <math id="S0.SSx1.p4.m2" class="ltx_Math" alttext="E+\delta E" display="inline"><mrow><mi>E</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow></mrow></math> is</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E8.m1" class="ltx_Math" alttext="\displaystyle\Omega(E,V)=" display="inline"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E8.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{2!}\int_{[E,E+\delta E]}\frac{{\rm d}^{3}{\bm{r}}_{1}{%
+\rm d}^{3}{\bm{p}}_{1}}{h^{3}}\,\frac{{\rm d}^{3}{\bm{r}}_{2}{\rm d}^{3}{\bm{p%
+}}_{2}}{h^{3}}\,." display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mn>2</mn><mo>!</mo></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo stretchy="false">[</mo><mi>E</mi><mo>,</mo><mrow><mi>E</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></msub></mstyle><mrow><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><msub><mi>𝒓</mi><mn>1</mn></msub><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><msub><mi>𝒑</mi><mn>1</mn></msub></mrow><msup><mi>h</mi><mn>3</mn></msup></mfrac></mstyle></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><msub><mi>𝒓</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><msub><mi>𝒑</mi><mn>2</mn></msub></mrow><msup><mi>h</mi><mn>3</mn></msup></mfrac></mstyle></mpadded></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(8)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The <math id="S0.SSx1.p4.m3" class="ltx_Math" alttext="2!" display="inline"><mrow><mn>2</mn><mo>!</mo></mrow></math> is inserted because if I simply exchange what I call particle 1 and particle 2, that is not to be considered a new configuration.</p>
+</div>
+<div id="S0.SSx1.p5" class="ltx_para">
+<ol id="S0.I2" class="ltx_enumerate">
+<li id="S0.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">Show that for two particles in three dimensions the number of accessible configurations is</p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E9.m1" class="ltx_Math" alttext="\displaystyle\Omega(E,V)=" display="inline"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E9.m2" class="ltx_Math" alttext="\displaystyle V^{2}\left(\frac{2mE}{h^{2}}\right)^{3}\,\pi^{3}\frac{\delta E}{%
+4E}\,." display="inline"><mrow><mrow><msup><mi>V</mi><mn>2</mn></msup><mo>⁢</mo><mpadded width="+1.7pt"><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>E</mi></mrow><msup><mi>h</mi><mn>2</mn></msup></mfrac></mstyle><mo>)</mo></mrow><mn>3</mn></msup></mpadded><mo>⁢</mo><msup><mi>π</mi><mn>3</mn></msup><mo>⁢</mo><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>E</mi></mrow></mfrac></mstyle></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Hint:</em> It is helpful to recall that the area of a sphere in <math id="S0.I2.i2.p1.m1" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math> dimensions is given by a general formula</p>
+<table id="S0.E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E10.m1" class="ltx_Math" alttext="A_{d}=\frac{2\pi^{d/2}}{\Gamma(d/2)}r^{d-1}\,." display="block"><mrow><mrow><msub><mi>A</mi><mi>d</mi></msub><mo>=</mo><mrow><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>π</mi><mrow><mi>d</mi><mo>/</mo><mn>2</mn></mrow></msup></mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>r</mi><mrow><mi>d</mi><mo>-</mo><mn>1</mn></mrow></msup></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(10)</span></td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+<p class="ltx_p">In class we showed that
+for <math id="S0.SSx1.p5.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> particles with total energy <math id="S0.SSx1.p5.m2" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> and volume <math id="S0.SSx1.p5.m3" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>, the total
+the number of configurations and corresponding entropy of the system are given by</p>
+<table id="S0.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E11.m1" class="ltx_Math" alttext="\displaystyle\Omega(E,V)=" display="inline"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E11.m2" class="ltx_Math" alttext="\displaystyle C(N)V^{N}E^{3N/2}" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>V</mi><mi>N</mi></msup><mo>⁢</mo><msup><mi>E</mi><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(11)</span></td>
+</tr></tbody>
+<tbody id="S0.E12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E12.m1" class="ltx_Math" alttext="\displaystyle S(E,V)=k_{B}\ln\Omega=" display="inline"><mrow><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mi mathvariant="normal">Ω</mi></mrow></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E12.m2" class="ltx_Math" alttext="\displaystyle\frac{3}{2}Nk_{B}\log E+Nk_{B}\log V+{\rm const}\,." display="inline"><mrow><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>E</mi></mrow></mrow><mo>+</mo><mrow><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>V</mi></mrow></mrow><mo>+</mo><mpadded width="+1.7pt"><mi>const</mi></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">In the remainder of the exercise we will keep track of the constant <math id="S0.SSx1.p5.m4" class="ltx_Math" alttext="C(N)" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+<ol id="S0.I3" class="ltx_enumerate">
+<li id="S0.I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I3.i3.p1" class="ltx_para">
+<p class="ltx_p">Show that the total number of ways for <math id="S0.I3.i3.p1.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> particles to share the energy <math id="S0.I3.i3.p1.m2" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> (i.e. total number of accessible configurations with energy between <math id="S0.I3.i3.p1.m3" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> and <math id="S0.I3.i3.p1.m4" class="ltx_Math" alttext="E+\delta E" display="inline"><mrow><mi>E</mi><mo>+</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow></mrow></math>) is</p>
+<table id="S0.EGx5" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E13.m1" class="ltx_Math" alttext="\displaystyle\Omega(E,V)=" display="inline"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E13.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{N!}\int\frac{{\rm d}^{3}{\bm{r}}_{1}{\rm d}^{3}{\bm{p}}_%
+{1}}{h^{3}}\dots\frac{{\rm d}^{3}{\bm{r}}_{N}{\rm d}^{3}{\bm{p}}_{N}}{h^{3}}\,," display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>N</mi><mo>!</mo></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><msub><mi>𝒓</mi><mn>1</mn></msub><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><msub><mi>𝒑</mi><mn>1</mn></msub></mrow><msup><mi>h</mi><mn>3</mn></msup></mfrac><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mrow><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><msub><mi>𝒓</mi><mi>N</mi></msub><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><msub><mi>𝒑</mi><mi>N</mi></msub></mrow><msup><mi>h</mi><mn>3</mn></msup></mfrac></mpadded></mrow></mrow></mstyle></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(13)</span></td>
+</tr></tbody>
+<tbody id="S0.E14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E14.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E14.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{N!}V^{N}\left(\frac{2\pi mE}{h^{2}}\right)^{3N/2}\frac{1%
+}{\Gamma(3N/2)}\frac{\delta E}{E}\,." display="inline"><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>N</mi><mo>!</mo></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi>V</mi><mi>N</mi></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>E</mi></mrow><msup><mi>h</mi><mn>2</mn></msup></mfrac></mstyle><mo>)</mo></mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mi>E</mi></mfrac></mstyle></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(14)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p"><math id="S0.I3.i3.p1.m5" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> is large and is of order Avogadro’s number.
+</p>
+</div>
+</li>
+<li id="S0.I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I3.i4.p1" class="ltx_para">
+<p class="ltx_p">Use the Stirling approximation to show that<span id="footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+                  <span class="ltx_tag ltx_tag_note">2</span>
+                  
+                  
+                  
+                
+For large <math id="footnote2.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>
+
+<span id="S0.E15" class="ltx_equation ltx_eqn_table">
+
+<span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_eqn_cell ltx_align_center"><math id="S0.E15.m1" class="ltx_Math" alttext="\Gamma(n)\equiv(n-1)!\simeq n!\simeq(n/e)^{n}" display="block"><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mo>≃</mo><mrow><mi>n</mi><mo>!</mo></mrow><mo>≃</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>/</mo><mi>e</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span>
+<span rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(15)</span></span></span>
+</span>Note the Stirling approximation works for <math id="footnote2.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> not integer, if <math id="footnote2.m3" class="ltx_Math" alttext="n!" display="inline"><mrow><mi>n</mi><mo>!</mo></mrow></math> is
+understood as <math id="footnote2.m4" class="ltx_Math" alttext="\Gamma(n+1)" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math>.
+</span></span></span>
+</p>
+<table id="S0.EGx6" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E16.m1" class="ltx_Math" alttext="\displaystyle\Omega(E,V)\simeq" display="inline"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E16.m2" class="ltx_Math" alttext="\displaystyle e^{5N/2}\left(\frac{V}{N}\right)^{N}\left(\frac{4\pi m}{3h^{2}}%
+\frac{E}{N}\right)^{3N/2}\,," display="inline"><mrow><mrow><msup><mi>e</mi><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>V</mi><mi>N</mi></mfrac></mstyle><mo>)</mo></mrow><mi>N</mi></msup><mo>⁢</mo><mpadded width="+1.7pt"><msup><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>m</mi></mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>h</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mi>E</mi><mi>N</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow></msup></mpadded></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(16)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">and that the entropy is</p>
+<table id="S0.EGx7" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E18.m1" class="ltx_Math" alttext="\displaystyle S(E,V)=" display="inline"><mrow><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E18.m2" class="ltx_Math" alttext="\displaystyle Nk_{B}\log\left[\left(\frac{V}{N}\right)\left(\frac{4\pi m}{3h^{%
+2}}\frac{E}{N}\right)^{3/2}\right]+\frac{5}{2}Nk_{B}\,," display="inline"><mrow><mrow><mrow><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>[</mo><mrow><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><mi>V</mi><mi>N</mi></mfrac></mstyle><mo>)</mo></mrow><mo>⁢</mo><msup><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>m</mi></mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>h</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mi>E</mi><mi>N</mi></mfrac></mstyle></mrow><mo>)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>]</mo></mrow></mrow></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>5</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mpadded width="+1.7pt"><msub><mi>k</mi><mi>B</mi></msub></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(18)</span></td>
+</tr></tbody>
+<tbody id="S0.E19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E19.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E19.m2" class="ltx_Math" alttext="\displaystyle Nk_{B}\left[\log\left(\frac{v_{N}}{\lambda_{\rm th}^{3}}\right)+%
+\frac{5}{2}\right]\,." display="inline"><mrow><mrow><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo>[</mo><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac><msub><mi>v</mi><mi>N</mi></msub><msubsup><mi>λ</mi><mi>th</mi><mn>3</mn></msubsup></mfrac></mstyle><mo>)</mo></mrow></mrow><mo>+</mo><mstyle displaystyle="true"><mfrac><mn>5</mn><mn>2</mn></mfrac></mstyle></mrow><mo rspace="4.2pt">]</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(19)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Here <math id="S0.I3.i4.p1.m1" class="ltx_Math" alttext="v_{N}=V/N" display="inline"><mrow><msub><mi>v</mi><mi>N</mi></msub><mo>=</mo><mrow><mi>V</mi><mo>/</mo><mi>N</mi></mrow></mrow></math> is the volume per particle and</p>
+<table id="S0.E20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E20.m1" class="ltx_Math" alttext="\lambda_{\rm th}=\frac{h}{\sqrt{2\pi mk_{B}T}}=\frac{h}{\sqrt{4\pi mE/(3N)}}\,," display="block"><mrow><mrow><msub><mi>λ</mi><mi>th</mi></msub><mo>=</mo><mfrac><mi>h</mi><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></msqrt></mfrac><mo>=</mo><mpadded width="+1.7pt"><mfrac><mi>h</mi><msqrt><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>E</mi></mrow><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></msqrt></mfrac></mpadded></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(20)</span></td>
+</tr>
+</table>
+<p class="ltx_p">is the typical de Broglie wavelength at temperature <math id="S0.I3.i4.p1.m2" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>. The temperature is determined by the energy per particle for a monoatomic gas, <math id="S0.I3.i4.p1.m3" class="ltx_Math" alttext="E/N=\frac{3}{2}k_{B}T" display="inline"><mrow><mrow><mi>E</mi><mo>/</mo><mi>N</mi></mrow><mo>=</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mrow></math>.</p>
+</div>
+<div id="S0.I3.i4.p2" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Hint:</em> The <math id="S0.I3.i4.p2.m1" class="ltx_Math" alttext="\delta E/E" display="inline"><mrow><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mo>/</mo><mi>E</mi></mrow></math> term is
+not exponentially large in contrast to the other terms. Thus <math id="S0.I3.i4.p2.m2" class="ltx_Math" alttext="\delta E/E" display="inline"><mrow><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mo>/</mo><mi>E</mi></mrow></math> can be set to one via the following approximation:</p>
+<table id="S0.E21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E21.m1" class="ltx_Math" alttext="e^{5N/2}\left(\frac{\delta E}{E}\right)=e^{5N/2+\log(\delta E/E)}\simeq e^{5N/%
+2}\,." display="block"><mrow><mrow><mrow><msup><mi>e</mi><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mi>E</mi></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow><mo>+</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mo>/</mo><mi>E</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></msup><mo>≃</mo><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow></msup></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(21)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Convince yourself of this step by taking <math id="S0.I3.i4.p2.m3" class="ltx_Math" alttext="\delta E/E=10^{-6}" display="inline"><mrow><mrow><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mo>/</mo><mi>E</mi></mrow><mo>=</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow></math> (or whatever you like). How big is <math id="S0.I3.i4.p2.m4" class="ltx_Math" alttext="\log(\delta E/E)" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>δ</mi><mo>⁢</mo><mi>E</mi></mrow><mo>/</mo><mi>E</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> compared to <math id="S0.I3.i4.p2.m5" class="ltx_Math" alttext="5N/2" display="inline"><mrow><mrow><mn>5</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow></math>? Something is exponentially large if its logarithm is of order Avogadro’s number.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="S0.SSx1.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Discussion:</span>
+The result for <math id="S0.SSx1.p6.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> in Eq. (<a href="#S0.E19" title="(19) ‣ item (d) ‣ Problem 1. Phase Space and the Entropy of an Ideal Gas" class="ltx_ref"><span class="ltx_text ltx_ref_tag">19</span></a>) is known as the Sackur Tetrode equation and is fundamental. The Sackur-Tetrode equation says that the entropy per
+particle <math id="S0.SSx1.p6.m2" class="ltx_Math" alttext="S/Nk_{B}" display="inline"><mrow><mrow><mi>S</mi><mo>/</mo><mi>N</mi></mrow><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub></mrow></math> is of order the logarithm of the accessible phase space per particle in units of <math id="S0.SSx1.p6.m3" class="ltx_Math" alttext="h^{3}" display="inline"><msup><mi>h</mi><mn>3</mn></msup></math>. Roughly speaking each particle has volume <math id="S0.SSx1.p6.m4" class="ltx_Math" alttext="v_{N}=V/N" display="inline"><mrow><msub><mi>v</mi><mi>N</mi></msub><mo>=</mo><mrow><mi>V</mi><mo>/</mo><mi>N</mi></mrow></mrow></math>. The <em class="ltx_emph ltx_font_italic">typical</em> momentum of a particle is of order <math id="S0.SSx1.p6.m5" class="ltx_Math" alttext="p_{\rm typ}\sim\sqrt{m{k_{\scriptscriptstyle B}T}}" display="inline"><mrow><msub><mi>p</mi><mi>typ</mi></msub><mo>∼</mo><msqrt><mrow><mi>m</mi><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></msqrt></mrow></math>. The phase space per particle is the coordinate space volume <math id="S0.SSx1.p6.m6" class="ltx_Math" alttext="v_{N}" display="inline"><msub><mi>v</mi><mi>N</mi></msub></math> times the momentum space volume <math id="S0.SSx1.p6.m7" class="ltx_Math" alttext="\sim p_{\rm typ}^{3}" display="inline"><mrow><mi></mi><mo>∼</mo><msubsup><mi>p</mi><mi>typ</mi><mn>3</mn></msubsup></mrow></math> and is of order</p>
+<table id="S0.E22" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E22.m1" class="ltx_Math" alttext="V_{\rm ps}\sim v_{N}\,p_{\rm typ}^{3}\,." display="block"><mrow><mrow><msub><mi>V</mi><mi>ps</mi></msub><mo>∼</mo><mrow><mpadded width="+1.7pt"><msub><mi>v</mi><mi>N</mi></msub></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><msubsup><mi>p</mi><mi>typ</mi><mn>3</mn></msubsup></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(22)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The entropy per particle (divided <math id="S0.SSx1.p6.m8" class="ltx_Math" alttext="k_{B}" display="inline"><msub><mi>k</mi><mi>B</mi></msub></math>) is the logarithm of this phase space
+in units of <math id="S0.SSx1.p6.m9" class="ltx_Math" alttext="h^{3}" display="inline"><msup><mi>h</mi><mn>3</mn></msup></math> and is of order</p>
+<table id="S0.E23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E23.m1" class="ltx_Math" alttext="\frac{S}{Nk_{B}}\sim\log\left(\frac{v_{N}\,p_{\rm typ}^{3}}{h^{3}}\right)\sim%
+\log\left(\frac{v_{N}}{\lambda_{\rm th}^{3}}\right)\,." display="block"><mrow><mrow><mfrac><mi>S</mi><mrow><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub></mrow></mfrac><mo>∼</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mpadded width="+1.7pt"><msub><mi>v</mi><mi>N</mi></msub></mpadded><mo>⁢</mo><msubsup><mi>p</mi><mi>typ</mi><mn>3</mn></msubsup></mrow><msup><mi>h</mi><mn>3</mn></msup></mfrac><mo>)</mo></mrow></mrow><mo>∼</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><msub><mi>v</mi><mi>N</mi></msub><msubsup><mi>λ</mi><mi>th</mi><mn>3</mn></msubsup></mfrac><mo rspace="4.2pt">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(23)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This logarithm is never very large (at most 10), and in practice the entropy per particle is an order one number.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S0.SSx2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 2.   Entropy changes of ideal gas</h2>
+
+<div id="S0.SSx2.p1" class="ltx_para">
+<p class="ltx_p">Find the change in entropy of one mole of an ideal monoatomic ideal gas in the following processes:</p>
+<ol id="S0.I4" class="ltx_enumerate">
+<li id="S0.I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I4.i1.p1" class="ltx_para">
+<p class="ltx_p">the temperature changes from <math id="S0.I4.i1.p1.m1" class="ltx_Math" alttext="T_{1}" display="inline"><msub><mi>T</mi><mn>1</mn></msub></math> to <math id="S0.I4.i1.p1.m2" class="ltx_Math" alttext="T_{2}" display="inline"><msub><mi>T</mi><mn>2</mn></msub></math> at constant pressure;</p>
+</div>
+</li>
+<li id="S0.I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I4.i2.p1" class="ltx_para">
+<p class="ltx_p">the pressure changes from <math id="S0.I4.i2.p1.m1" class="ltx_Math" alttext="P_{1}" display="inline"><msub><mi>P</mi><mn>1</mn></msub></math> to <math id="S0.I4.i2.p1.m2" class="ltx_Math" alttext="P_{2}" display="inline"><msub><mi>P</mi><mn>2</mn></msub></math> at constant volume. </p>
+</div>
+</li>
+</ol>
+</div>
+<div id="S0.SSx2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Consider the expression for the number of states in a mono-atomic ideal gas</p>
+<table id="S0.E24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E24.m1" class="ltx_Math" alttext="\Omega=C(N)V^{N}E^{3N/2}\,," display="block"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>V</mi><mi>N</mi></msup><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>E</mi><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mn>2</mn></mrow></msup></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(24)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and the corresponding entropy</p>
+<table id="S0.E25" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E25.m1" class="ltx_Math" alttext="S=Nk_{B}\log(V)+\frac{3}{2}Nk_{B}\log(E)+{\rm const}\,." display="block"><mrow><mrow><mi>S</mi><mo>=</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mpadded width="+1.7pt"><mi>const</mi></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(25)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Recall that in an adiabatic expansion of a monoatomic ideal gas no heat enters or exits the system and the entropy remains constant as the volume increases.</p>
+<ol id="S0.I5" class="ltx_enumerate">
+<li id="S0.I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I5.i3.p1" class="ltx_para">
+<ol id="S0.I5.i3.I1" class="ltx_enumerate">
+<li id="S0.I5.i3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span> 
+<div id="S0.I5.i3.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Using Eq. (<a href="#S0.E25" title="(25) ‣ Problem 2. Entropy changes of ideal gas" class="ltx_ref"><span class="ltx_text ltx_ref_tag">25</span></a>) show that <math id="S0.I5.i3.I1.i1.p1.m1" class="ltx_Math" alttext="\Delta S=0" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>S</mi></mrow><mo>=</mo><mn>0</mn></mrow></math> for an adiabatic increase in volume from <math id="S0.I5.i3.I1.i1.p1.m2" class="ltx_Math" alttext="V_{1}" display="inline"><msub><mi>V</mi><mn>1</mn></msub></math> to <math id="S0.I5.i3.I1.i1.p1.m3" class="ltx_Math" alttext="V_{2}" display="inline"><msub><mi>V</mi><mn>2</mn></msub></math>. (<em class="ltx_emph ltx_font_italic">Hint:</em> How does the temperature change during an adiabatic expansion of a mono-atomic ideal gas?)</p>
+</div>
+</li>
+<li id="S0.I5.i3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span> 
+<div id="S0.I5.i3.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Describe how the particles are redistributed in phase space so that the entropy and total phase space volume remains constant during the expansion.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Ans: (a) <math id="S0.SSx2.p2.m1" class="ltx_Math" alttext="\tfrac{5}{2}R\ln(T_{2}/T_{1})" display="inline"><mrow><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub><mo>/</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>; (b) <math id="S0.SSx2.p2.m2" class="ltx_Math" alttext="\tfrac{3}{2}R\ln(P_{2}/P_{1})" display="inline"><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>P</mi><mn>2</mn></msub><mo>/</mo><msub><mi>P</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S0.SSx3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 3.   Ball in lake</h2>
+
+<div id="S0.SSx3.p1" class="ltx_para">
+<p class="ltx_p">In this problem we will explore examine the fundamental formula:</p>
+<table id="S0.E26" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E26.m1" class="ltx_Math" alttext="\Delta S_{AB}=\int_{A}^{B}\frac{dQ_{\rm rev}}{T}\geq\int_{A}^{B}\frac{dQ}{T}\,." display="block"><mrow><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msub><mi>S</mi><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow></msub></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>A</mi><mi>B</mi></msubsup><mfrac><mrow><mi>d</mi><mo>⁢</mo><msub><mi>Q</mi><mi>rev</mi></msub></mrow><mi>T</mi></mfrac></mrow><mo>≥</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mi>A</mi><mi>B</mi></msubsup><mpadded width="+1.7pt"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>Q</mi></mrow><mi>T</mi></mfrac></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(26)</span></td>
+</tr>
+</table>
+<p class="ltx_p">In this equation are considering a system (a ball) placed in contact with a reservoir at temperature <math id="S0.SSx3.p1.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> with heat exchange <math id="S0.SSx3.p1.m2" class="ltx_Math" alttext="dQ" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>Q</mi></mrow></math>.
+</p>
+<ol id="S0.I6" class="ltx_enumerate">
+<li id="S0.I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I6.i1.p1" class="ltx_para">
+<p class="ltx_p">A cool ball of iron with initial temperature <math id="S0.I6.i1.p1.m1" class="ltx_Math" alttext="T_{B}^{0}" display="inline"><msubsup><mi>T</mi><mi>B</mi><mn>0</mn></msubsup></math> and constant specific heat <math id="S0.I6.i1.p1.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is thrown into a large hot reservoir of water at temperature <math id="S0.I6.i1.p1.m3" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>, which may be presumed constant. The subsequent equilibration between the system and reservoir is a highly non-equilibrium and irreversible process. How much heat goes from the reservoir to the system as the reservoir and the system equilibrate?</p>
+</div>
+</li>
+<li id="S0.I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I6.i2.p1" class="ltx_para">
+<p class="ltx_p">You can compute the change in entropy of the ball <math id="S0.I6.i2.p1.m1" class="ltx_Math" alttext="\Delta S" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>S</mi></mrow></math> in the non-equilibrium process by replacing the non-equilibrium process (which actually happened) with an imagined equilibrium process. This replacement is possible because the entropy change depends only on the starting and stopping points and not on the path.</p>
+</div>
+<div id="S0.I6.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">In the imagined process the temperature of the ball <math id="S0.I6.i2.p2.m1" class="ltx_Math" alttext="T_{B}" display="inline"><msub><mi>T</mi><mi>B</mi></msub></math> is slowly raised from <math id="S0.I6.i2.p2.m2" class="ltx_Math" alttext="T_{B}^{0}" display="inline"><msubsup><mi>T</mi><mi>B</mi><mn>0</mn></msubsup></math> to <math id="S0.I6.i2.p2.m3" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> by a set of small incremental heat transfers <math id="S0.I6.i2.p2.m4" class="ltx_Math" alttext="dQ_{\rm rev}=CdT_{B}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>Q</mi><mi>rev</mi></msub></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>T</mi><mi>B</mi></msub></mrow></mrow></math> with a sequence of imagined reservoirs at temperatures between <math id="S0.I6.i2.p2.m5" class="ltx_Math" alttext="T_{B}^{0}" display="inline"><msubsup><mi>T</mi><mi>B</mi><mn>0</mn></msubsup></math> and <math id="S0.I6.i2.p2.m6" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>.</p>
+<ol id="S0.I6.i2.I1" class="ltx_enumerate">
+<li id="S0.I6.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span> 
+<div id="S0.I6.i2.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Find <math id="S0.I6.i2.I1.i1.p1.m1" class="ltx_Math" alttext="\Delta S" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>S</mi></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I6.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span> 
+<div id="S0.I6.i2.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Sketch <math id="S0.I6.i2.I1.i2.p1.m1" class="ltx_Math" alttext="\Delta S" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>S</mi></mrow></math> and <math id="S0.I6.i2.I1.i2.p1.m2" class="ltx_Math" alttext="Q/T" display="inline"><mrow><mi>Q</mi><mo>/</mo><mi>T</mi></mrow></math> as a function of</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\frac{\Delta T}{T}\equiv\frac{T-T_{B}^{0}}{T}." display="block"><mrow><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>T</mi></mrow><mi>T</mi></mfrac><mo>≡</mo><mfrac><mrow><mi>T</mi><mo>-</mo><msubsup><mi>T</mi><mi>B</mi><mn>0</mn></msubsup></mrow><mi>T</mi></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">on the same graph for <math id="S0.I6.i2.I1.i2.p1.m3" class="ltx_Math" alttext="\Delta T/T\in[0,1]" display="inline"><mrow><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi>T</mi></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></mrow></math>. Does your graph corroborate the inequality <math id="S0.I6.i2.I1.i2.p1.m4" class="ltx_Math" alttext="\Delta S\geq Q/T" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>S</mi></mrow><mo>≥</mo><mrow><mi>Q</mi><mo>/</mo><mi>T</mi></mrow></mrow></math>?</p>
+</div>
+</li>
+<li id="S0.I6.i2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(iii)</span> 
+<div id="S0.I6.i2.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Make a Taylor series of <math id="S0.I6.i2.I1.i3.p1.m1" class="ltx_Math" alttext="\Delta S" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>S</mi></mrow></math> to show that for small <math id="S0.I6.i2.I1.i3.p1.m2" class="ltx_Math" alttext="\Delta T/T" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi>T</mi></mrow></math></p>
+<table id="S0.E27" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E27.m1" class="ltx_Math" alttext="\Delta S=\frac{Q}{T}+\frac{C\Delta T^{2}}{2T^{2}}&gt;\frac{Q}{T}" display="block"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>S</mi></mrow><mo>=</mo><mrow><mfrac><mi>Q</mi><mi>T</mi></mfrac><mo>+</mo><mfrac><mrow><mi>C</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>T</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>T</mi><mn>2</mn></msup></mrow></mfrac></mrow><mo>&gt;</mo><mfrac><mi>Q</mi><mi>T</mi></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(27)</span></td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx4" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 4.   Heating water</h2>
+
+<div id="S0.SSx4.p1" class="ltx_para">
+<p class="ltx_p">One mole of water is heated from <math id="S0.SSx4.p1.m1" class="ltx_Math" alttext="0{}^{\circ}{\rm C}" display="inline"><mrow><mn>0</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math> to <math id="S0.SSx4.p1.m2" class="ltx_Math" alttext="100{}^{\circ}{\rm C}" display="inline"><mrow><mn>100</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math> by bringing it in contact with a different number of reservoirs. Find the change in entropy of the universe given the following: 
+<span id="S0.I7" class="ltx_inline-enumerate">
+<span id="S0.I7.i1" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(a)</span> <span class="ltx_text">Only one reservoir at <math id="S0.I7.i1.m1" class="ltx_Math" alttext="100{}^{\circ}{\rm C}" display="inline"><mrow><mn>100</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math> is used. </span></span>
+<span id="S0.I7.i2" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(b)</span> <span class="ltx_text">The water is first brought to equilibrium with a reservoir at <math id="S0.I7.i2.m1" class="ltx_Math" alttext="50{}^{\circ}{\rm C}" display="inline"><mrow><mn>50</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math> and then put in contact with a reservoir at <math id="S0.I7.i2.m2" class="ltx_Math" alttext="100{}^{\circ}{\rm C}" display="inline"><mrow><mn>100</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math>. </span></span>
+<span id="S0.I7.i3" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(c)</span> <span class="ltx_text">The water is brought to equilibrium successively with reservoirs at the temperatures <math id="S0.I7.i3.m1" class="ltx_Math" alttext="25{}^{\circ}{\rm C}" display="inline"><mrow><mn>25</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math>, <math id="S0.I7.i3.m2" class="ltx_Math" alttext="50{}^{\circ}{\rm C}" display="inline"><mrow><mn>50</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math>, <math id="S0.I7.i3.m3" class="ltx_Math" alttext="75{}^{\circ}{\rm C}" display="inline"><mrow><mn>75</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math> and <math id="S0.I7.i3.m4" class="ltx_Math" alttext="100{}^{\circ}{\rm C}" display="inline"><mrow><mn>100</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">C</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math>. </span></span>
+<span id="S0.I7.i4" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(d)</span> <span class="ltx_text">In practice how could the water be heated reversibly? Justify your answer </span></span>
+</span> 
+<br class="ltx_break"></p>
+</div>
+<div id="S0.SSx4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">The specific heat of water is approximately <math id="S0.SSx4.p2.m1" class="ltx_Math" alttext="4180\,{\rm J/{\rm kg}{}^{\circ}{\rm K}}" display="inline"><mrow><mrow><mrow><mpadded width="+1.7pt"><mn>4180</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">J</mi></mrow><mo>/</mo><mi>kg</mi></mrow><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math>. Ans: 
+<span id="S0.I8" class="ltx_inline-enumerate">
+<span id="S0.I8.i1" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(a)</span> <math id="S0.I8.i1.m1" class="ltx_Math" alttext="3.3\,{\rm J}/{}^{\circ}{\rm K}" display="inline"><mrow><mrow><mpadded width="+1.7pt"><mn>3.3</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">J</mi></mrow><mo>/</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math><span class="ltx_text">; </span></span>
+<span id="S0.I8.i2" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(b)</span> <math id="S0.I8.i2.m1" class="ltx_Math" alttext="2.25\,{\rm J}/{}^{\circ}{\rm K}" display="inline"><mrow><mrow><mpadded width="+1.7pt"><mn>2.25</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">J</mi></mrow><mo>/</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math><span class="ltx_text">; </span></span>
+<span id="S0.I8.i3" class="ltx_inline-item"><span class="ltx_tag ltx_tag_inline-item">(c)</span> <math id="S0.I8.i3.m1" class="ltx_Math" alttext="0.9\,{\rm J}/{}^{\circ}{\rm K}" display="inline"><mrow><mrow><mpadded width="+1.7pt"><mn>0.9</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">J</mi></mrow><mo>/</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math><span class="ltx_text">. </span></span>
+</span></p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sun Mar 19 01:06:43 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

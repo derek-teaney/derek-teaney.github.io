@@ -1,0 +1,649 @@
+<!DOCTYPE html><html>
+<head>
+<title>Problem 1.   Distributions on the sphere</title>
+<!--Generated on Fri Feb 10 16:04:57 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<nav class="ltx_page_navbar">
+</nav>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<section id="S0.SSx1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 1.   Distributions on the sphere</h2>
+
+<div id="S0.SSx1.p1" class="ltx_para">
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Consider a particle with angular coordinates <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="(\theta,\phi)" display="inline"><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></math>
+which are uniformly distributed over a sphere of radius <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, i.e.
+the probability per area is constant.
+Briefly explain (using the definition of solid angle) why <math id="S0.I1.i1.p1.m3" class="ltx_Math" alttext="{\rm d}\mathscr{P}=Cd\Omega" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow></mrow></math> with <math id="S0.I1.i1.p1.m4" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> a normalizing constant.
+Determine <math id="S0.I1.i1.p1.m5" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> and show that the probability distribution per <math id="S0.I1.i1.p1.m6" class="ltx_Math" alttext="{\rm d}\theta" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi></mrow></math> is
+<math id="S0.I1.i1.p1.m7" class="ltx_Math" alttext="{\rm d}\mathscr{P}={\textstyle\frac{1}{2}}\sin\theta d\theta" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math>. Show that <math id="S0.I1.i1.p1.m8" class="ltx_Math" alttext="\left\langle\cos^{2}\theta\right\rangle_{\rm sphere}=\frac{1}{3}" display="inline"><mrow><msub><mrow><mo>⟨</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mi>θ</mi></mrow><mo>⟩</mo></mrow><mi>sphere</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Consider a particle which is distributed (not uniformly) over the
+sphere
+</p>
+<table id="S0.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E1.m1" class="ltx_Math" alttext="d\mathscr{P}=C(1+\cos^{2}\theta)\frac{{\rm d}\Omega}{4\pi}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.I1.i2.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a normalizing constant. This probability distribution is
+visualized in Fig. <a href="#S0.F1" title="Figure 1 ‣ Problem 1. Distributions on the sphere" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>. Show that <math id="S0.I1.i2.p1.m2" class="ltx_Math" alttext="C=3/4" display="inline"><mrow><mi>C</mi><mo>=</mo><mrow><mn>3</mn><mo>/</mo><mn>4</mn></mrow></mrow></math>. Then show that the probability distribution in Eq. (<a href="#S0.E1" title="(1) ‣ item (b) ‣ Problem 1. Distributions on the sphere" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>), implies that the probability distribution for <math id="S0.I1.i2.p1.m3" class="ltx_Math" alttext="u=\cos(\theta)" display="inline"><mrow><mi>u</mi><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is</p>
+<table id="S0.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E2.m1" class="ltx_Math" alttext="d\mathscr{P}=\frac{3}{8}(1+u^{2})\,{\rm d}u" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><msup><mi>u</mi><mn>2</mn></msup></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>u</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">for <math id="S0.I1.i2.p1.m4" class="ltx_Math" alttext="u\in[-1,1]" display="inline"><mrow><mi>u</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Show for the probability distribution of (b) that <math id="S0.I1.i3.p1.m1" class="ltx_Math" alttext="\left\langle\cos^{2}\theta\right\rangle_{\rm sphere}=\frac{2}{5}" display="inline"><mrow><msub><mrow><mo>⟨</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mi>θ</mi></mrow><mo>⟩</mo></mrow><mi>sphere</mi></msub><mo>=</mo><mfrac><mn>2</mn><mn>5</mn></mfrac></mrow></math> by averaging <math id="S0.I1.i3.p1.m2" class="ltx_Math" alttext="\left\langle u^{2}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mi>u</mi><mn>2</mn></msup><mo>⟩</mo></mrow></math> with the distribution in Eq. (<a href="#S0.E2" title="(2) ‣ item (b) ‣ Problem 1. Distributions on the sphere" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>).</p>
+</div>
+</li>
+</ol>
+</div>
+<figure id="S0.F1" class="ltx_figure"><img src="x1.png" id="S0.F1.g1" class="ltx_graphics ltx_centering" width="371" height="425" alt=" A visualization of a probability distribution on a sphere ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span> A visualization of a probability distribution on a sphere <math id="S0.F1.m3" class="ltx_Math" alttext="\frac{d\mathscr{P}}{d\Omega}\propto(1+\cos^{2}\theta)" display="inline"><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow></mfrac><mo>∝</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mrow><msup><mi>cos</mi><mn>2</mn></msup><mo>⁡</mo><mi>θ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>. The colors are proportional to the probability per area or per solid angle (since <math id="S0.F1.m4" class="ltx_Math" alttext="dA\propto d\Omega" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>∝</mo><mrow><mi>d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow></mrow></math> these are the same). </figcaption>
+</figure>
+<div id="S0.SSx1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Two takeaway morals:</p>
+<ul id="S0.I2" class="ltx_itemize">
+<li id="S0.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">Moral 1: <math id="S0.I2.i1.p1.m1" class="ltx_Math" alttext="4\pi=2\cdot 2\pi" display="inline"><mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⋅</mo><mn>2</mn></mrow><mo>⁢</mo><mi>π</mi></mrow></mrow></math>, the spherical measure factorizes
+into two properly normalized probability distriubtions for <math id="S0.I2.i1.p1.m2" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> and <math id="S0.I2.i1.p1.m3" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math>:
+</p>
+<table id="S0.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E3.m1" class="ltx_Math" alttext="\frac{{\rm d}\Omega}{4\pi}=\frac{\sin\theta{\rm d}\theta\,{\rm d}\phi}{4\pi}=P%
+(\theta){\rm d}\theta\,P(\phi){\rm d}\phi=\left(\tfrac{1}{2}\sin\theta{\rm d}%
+\theta\right)\left(\frac{{\rm d}\phi}{2\pi}\right)" display="block"><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">So if you don’t care abount the about the azimuthal direction and only
+want to know about the probability of <math id="S0.I2.i1.p1.m4" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>, one has the measure <math id="S0.I2.i1.p1.m5" class="ltx_Math" alttext="d\mathscr{P}={\textstyle\frac{1}{2}}\sin\theta{\rm d}\theta" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">Moral 2: When integrating over the sphere it is almost always better to integrate over <math id="S0.I2.i2.p1.m1" class="ltx_Math" alttext="u=\cos\theta" display="inline"><mrow><mi>u</mi><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></math>, so that the measure is flat <math id="S0.I2.i2.p1.m2" class="ltx_Math" alttext="{\rm d}\Omega={\rm d}u\,{\rm d}\phi" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow><mo>=</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>u</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S0.SSx2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 2.   Density of gas at constant temperature with gravity</h2>
+
+<div id="S0.SSx2.p1" class="ltx_para">
+<p class="ltx_p">In this problem we will do two things:</p>
+<ul id="S0.I3" class="ltx_itemize">
+<li id="S0.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I3.i1.p1" class="ltx_para">
+<p class="ltx_p">We will start to use momentum instead of velocity. This is preferred for reasons that are hard to explain at this level. If you didn’t do the optional problem from last week, at least look at part (a). Takes just a second.</p>
+</div>
+</li>
+<li id="S0.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S0.I3.i2.p1" class="ltx_para">
+<p class="ltx_p">We will give an example where the energy depends on coordinates <math id="S0.I3.i2.p1.m1" class="ltx_Math" alttext="(x,y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></math> and momenta.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="S0.SSx2.p2" class="ltx_para">
+<p class="ltx_p">Consider a gas at temperature <math id="S0.SSx2.p2.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> near the earths surface.
+The energy (or Hamiltonian) of a molecule with momentum <math id="S0.SSx2.p2.m2" class="ltx_Math" alttext="{\bm{p}}=(p_{x},p_{y},p_{z})" display="inline"><mrow><mi>𝒑</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>p</mi><mi>x</mi></msub><mo>,</mo><msub><mi>p</mi><mi>y</mi></msub><mo>,</mo><msub><mi>p</mi><mi>z</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math>
+and coordinate <math id="S0.SSx2.p2.m3" class="ltx_Math" alttext="{\bm{r}}=(x,y,z)" display="inline"><mrow><mi>𝒓</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math> is<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+            <span class="ltx_tag ltx_tag_note">1</span>
+            
+            
+            
+          The Hamiltonian is the energy of the system expressed as a functions of <math id="footnote1.m1" class="ltx_Math" alttext="{\bm{r}}" display="inline"><mi>𝒓</mi></math> and <math id="footnote1.m2" class="ltx_Math" alttext="{\bm{p}}" display="inline"><mi>𝒑</mi></math></span></span></span></p>
+<table id="S0.E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E4.m1" class="ltx_Math" alttext="E=mgz+\frac{p_{x}^{2}}{2m}+\frac{p_{y}^{2}}{2m}+\frac{p_{z}^{2}}{2m}" display="block"><mrow><mi>E</mi><mo>=</mo><mrow><mrow><mi>m</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mfrac><msubsup><mi>p</mi><mi>x</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac><mo>+</mo><mfrac><msubsup><mi>p</mi><mi>y</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac><mo>+</mo><mfrac><msubsup><mi>p</mi><mi>z</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.SSx2.p2.m4" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math> is the surface of the earth.
+The probability of finding a gas molecule with coordinate between <math id="S0.SSx2.p2.m5" class="ltx_Math" alttext="{\bm{r}}=(x,y,z)" display="inline"><mrow><mi>𝒓</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="S0.SSx2.p2.m6" class="ltx_Math" alttext="{\bm{r}}+{\rm d}{\bm{r}}" display="inline"><mrow><mi>𝒓</mi><mo>+</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>𝒓</mi></mrow></mrow></math> (with <math id="S0.SSx2.p2.m7" class="ltx_Math" alttext="{\rm d}{\bm{r}}=(dx,dy,dz)" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>𝒓</mi></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow><mo>,</mo><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math>) and momentum between <math id="S0.SSx2.p2.m8" class="ltx_Math" alttext="{\bm{p}}" display="inline"><mi>𝒑</mi></math> and <math id="S0.SSx2.p2.m9" class="ltx_Math" alttext="{\bm{p}}+{\rm d}{\bm{p}}" display="inline"><mrow><mi>𝒑</mi><mo>+</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>𝒑</mi></mrow></mrow></math>
+</p>
+<table id="S0.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E5.m1" class="ltx_Math" alttext="d\mathscr{P}=Ce^{-E/{k_{\scriptscriptstyle B}T}}{\rm d}^{3}{\bm{r}}\,{\rm d}^{%
+3}{\bm{p}}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mi>C</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mi>E</mi><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mpadded width="+1.7pt"><mi>𝒓</mi></mpadded><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒑</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="S0.E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E6.m1" class="ltx_Math" alttext="{\rm d}^{3}{\bm{r}}{\rm d}^{3}{\bm{p}}=({\rm d}x{\rm d}y{\rm d}z)\,({\rm d}p_{%
+x}{\rm d}p_{y}{\rm d}p_{z})" display="block"><mrow><mrow><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒓</mi><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒑</mi></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>z</mi></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi>p</mi><mi>x</mi></msub><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi>p</mi><mi>y</mi></msub><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi>p</mi><mi>z</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The quantity is <math id="S0.SSx2.p2.m10" class="ltx_Math" alttext="{\rm d}^{3}{\bm{r}}{\rm d}^{3}{\bm{p}}" display="inline"><mrow><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒓</mi><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒑</mi></mrow></math> is known as the <em class="ltx_emph ltx_font_italic">phase space</em> volume element. It records the volume in the “space” of positions and momenta – and this position and momentum “space” is called <em class="ltx_emph ltx_font_italic">phase space</em>.</p>
+<ol id="S0.I4" class="ltx_enumerate">
+<li id="S0.I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I4.i1.p1" class="ltx_para">
+<p class="ltx_p">For simplicity consider the coordinates <math id="S0.I4.i1.p1.m1" class="ltx_Math" alttext="x,y,z" display="inline"><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow></math> to be constrained to an (essentially infinitely) large volume <math id="S0.I4.i1.p1.m2" class="ltx_Math" alttext="V=L^{3}" display="inline"><mrow><mi>V</mi><mo>=</mo><msup><mi>L</mi><mn>3</mn></msup></mrow></math>, i.e. <math id="S0.I4.i1.p1.m3" class="ltx_Math" alttext="\int{\rm d}^{3}{\bm{r}}=L^{3}" display="inline"><mrow><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒓</mi></mrow></mrow><mo>=</mo><msup><mi>L</mi><mn>3</mn></msup></mrow></math>. Without gravity we found that the probability distribution for position and momenta is</p>
+<table id="S0.E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E7.m1" class="ltx_Math" alttext="d\mathscr{P}=\frac{1}{V}\left(\frac{1}{2\pi mk_{B}T}\right)^{3/2}e^{-p^{2}/2m{%
+k_{\scriptscriptstyle B}T}}{\rm d}^{3}{\bm{r}}\,{\rm d}^{3}{\bm{p}}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>V</mi></mfrac><mo>⁢</mo><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mfrac><mo>)</mo></mrow><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mrow></msup><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mpadded width="+1.7pt"><mi>𝒓</mi></mpadded><mo>⁢</mo><msup><mi mathvariant="normal">d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒑</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(7)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The <math id="S0.I4.i1.p1.m4" class="ltx_Math" alttext="d^{3}{\bm{r}}/V" display="inline"><mrow><mrow><msup><mi>d</mi><mn>3</mn></msup><mo>⁢</mo><mi>𝒓</mi></mrow><mo>/</mo><mi>V</mi></mrow></math> says that the particle is equally likely to be anywhere in the box.
+If gravity is included, what is the normalization constant <math id="S0.I4.i1.p1.m5" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> in Eq. (<a href="#S0.E5" title="(5) ‣ Problem 2. Density of gas at constant temperature with gravity" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a>) and what is <math id="S0.I4.i1.p1.m6" class="ltx_Math" alttext="P(z)\equiv\frac{d\mathscr{P}}{dz}" display="inline"><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≡</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac></mrow></math>? Consider <math id="S0.I4.i1.p1.m7" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> ranging from <math id="S0.I4.i1.p1.m8" class="ltx_Math" alttext="(0,\infty)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">)</mo></mrow></math>, instead of <math id="S0.I4.i1.p1.m9" class="ltx_Math" alttext="(0,L)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>L</mi><mo stretchy="false">)</mo></mrow></math>.</p>
+</div>
+<div id="S0.I4.i1.p2" class="ltx_para">
+<p class="ltx_p">You can check your result by checking that the dimensions are correct.</p>
+</div>
+</li>
+<li id="S0.I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I4.i2.p1" class="ltx_para">
+<p class="ltx_p">Show that the mean height of a molecule of air is <math id="S0.I4.i2.p1.m1" class="ltx_Math" alttext="\left\langle h\right\rangle={k_{\scriptscriptstyle B}T}/mg" display="inline"><mrow><mrow><mo>⟨</mo><mi>h</mi><mo>⟩</mo></mrow><mo>=</mo><mrow><mrow><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi>m</mi></mrow><mo>⁢</mo><mi>g</mi></mrow></mrow></math>. (Intuitively the mean height can be estimated, by estimating when the potential energy <math id="S0.I4.i2.p1.m2" class="ltx_Math" alttext="mgh" display="inline"><mrow><mi>m</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>h</mi></mrow></math> becomes comparable to the thermal energy <math id="S0.I4.i2.p1.m3" class="ltx_Math" alttext="{k_{\scriptscriptstyle B}T}" display="inline"><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></math>.) Make a reasonable estimate for this height in kilometers, by estimating the the typical mass of an air molecule, and a typical temperature.</p>
+</div>
+<div id="S0.I4.i2.p2" class="ltx_para">
+<p class="ltx_p">Please do not substitute, <math id="S0.I4.i2.p2.m1" class="ltx_Math" alttext="k_{B}=1.38\times 10^{-23}{\rm J}/{}^{\circ}{\rm K}^{-1}" display="inline"><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>=</mo><mrow><mrow><mrow><mn>1.38</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>23</mn></mrow></msup></mrow><mo>⁢</mo><mi mathvariant="normal">J</mi></mrow><mo>/</mo><mmultiscripts><mi mathvariant="normal">K</mi><none></none><mrow><mo>-</mo><mn>1</mn></mrow><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></mrow></math>, and try not to look up numbers. Rather puts the numbers in physical terms, and remember them. For instance using <math id="S0.I4.i2.p2.m2" class="ltx_Math" alttext="R=N_{A}k_{B}=8.32\,{\rm J}/{}^{\circ}{\rm K}" display="inline"><mrow><mi>R</mi><mo>=</mo><mrow><msub><mi>N</mi><mi>A</mi></msub><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>=</mo><mrow><mrow><mpadded width="+1.7pt"><mn>8.32</mn></mpadded><mo>⁢</mo><mi mathvariant="normal">J</mi></mrow><mo>/</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></mrow></math>. A list of useful constants that you need for this course is maintained on the <a href="https://derek-teaney.github.io/S23_Phy306/lectures/html/A1.html" title="" class="ltx_ref ltx_href">web site</a>.</p>
+</div>
+</li>
+<li id="S0.I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I4.i3.p1" class="ltx_para">
+<p class="ltx_p">If the gas density at <math id="S0.I4.i3.p1.m1" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math> is <math id="S0.I4.i3.p1.m2" class="ltx_Math" alttext="n_{0}" display="inline"><msub><mi>n</mi><mn>0</mn></msub></math>, what is the density <math id="S0.I4.i3.p1.m3" class="ltx_Math" alttext="n(z)" display="inline"><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math> at
+height <math id="S0.I4.i3.p1.m4" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>?</p>
+</div>
+</li>
+<li id="S0.I4.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I4.i4.p1" class="ltx_para">
+<p class="ltx_p">A mechanical analysis of the forces in the the gas says that</p>
+<table id="S0.E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E8.m1" class="ltx_Math" alttext="\frac{dp(z)}{dz}=-mgn(z)" display="block"><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac><mo>=</mo><mrow><mo>-</mo><mrow><mi>m</mi><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(8)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.I4.i4.p1.m1" class="ltx_Math" alttext="p(z)" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the pressure in the gas at height <math id="S0.I4.i4.p1.m2" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>. Explain briefly the physical meaning of Eq. (<a href="#S0.E8" title="(8) ‣ item (d) ‣ Problem 2. Density of gas at constant temperature with gravity" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8</span></a>), and
+then show that part <math id="S0.I4.i4.p1.m3" class="ltx_Math" alttext="(c)" display="inline"><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></math> is consistent with Eq. (<a href="#S0.E8" title="(8) ‣ item (d) ‣ Problem 2. Density of gas at constant temperature with gravity" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8</span></a>) and the ideal gas law, <math id="S0.I4.i4.p1.m4" class="ltx_Math" alttext="pV=n_{\rm ml}RT" display="inline"><mrow><mrow><mi>p</mi><mo>⁢</mo><mi>V</mi></mrow><mo>=</mo><mrow><msub><mi>n</mi><mi>ml</mi></msub><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mi>T</mi></mrow></mrow></math> provided the temperature is constant.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S0.SSx3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 3.   Probability distribution of a Quantum Harmonic Oscillator</h2>
+
+<div id="S0.SSx3.p1" class="ltx_para">
+<p class="ltx_p">Consider a quantum harmonic oscillator in one dimension interacting
+with a thermal environment. This could be, for example, a single atom
+attached via a spring-like bond to a large stationary molecule. The vibrational
+frequency of the oscillator is <math id="S0.SSx3.p1.m1" class="ltx_Math" alttext="\omega_{0}=\sqrt{k/m}" display="inline"><mrow><msub><mi>ω</mi><mn>0</mn></msub><mo>=</mo><msqrt><mrow><mi>k</mi><mo>/</mo><mi>m</mi></mrow></msqrt></mrow></math>.</p>
+</div>
+<div id="S0.SSx3.p2" class="ltx_para">
+<p class="ltx_p">Recall that the energy levels of a quantum harmonic oscillator are
+</p>
+<table id="S0.E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E9.m1" class="ltx_Math" alttext="\epsilon_{n}=\left(n+{\textstyle\frac{1}{2}}\right)\hbar\omega_{0}" display="block"><mrow><msub><mi>ϵ</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mi>n</mi><mo>+</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9)</span></td>
+</tr>
+</table>
+<p class="ltx_p">with <math id="S0.SSx3.p2.m1" class="ltx_Math" alttext="n=0,1,2,\ldots" display="inline"><mrow><mi>n</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>.
+<math id="S0.SSx3.p2.m2" class="ltx_Math" alttext="\hbar\omega_{0}" display="inline"><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> is one quantized unit of vibrational energy.
+The integer <math id="S0.SSx3.p2.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is known as the vibrational quantum number – the larger is <math id="S0.SSx3.p2.m4" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>, the larger is the energy (in units of <math id="S0.SSx3.p2.m5" class="ltx_Math" alttext="\hbar\omega_{0}" display="inline"><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math>, and the more the atom is vibrating. For large <math id="S0.SSx3.p2.m6" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> the energy is nearly continuous and the motion can be treated classically.
+A plot of the energy levels and the wave-functions
+are shown in Fig. <a href="#S0.F2" title="Figure 2 ‣ Problem 3. Probability distribution of a Quantum Harmonic Oscillator" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>.</p>
+</div>
+<figure id="S0.F2" class="ltx_figure"><img src="x2.png" id="S0.F2.g1" class="ltx_graphics ltx_centering" width="539" height="406" alt="  Energy levels ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>  Energy levels <math id="S0.F2.m2" class="ltx_Math" alttext="\epsilon_{n}\equiv E_{n}=(n+{\textstyle\frac{1}{2}})\hbar\omega_{0}" display="inline"><mrow><msub><mi>ϵ</mi><mi>n</mi></msub><mo>≡</mo><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math> and wave functions for the first six levels of the quantum harmonic oscillator. </figcaption>
+</figure>
+<div id="S0.SSx3.p3" class="ltx_para">
+<p class="ltx_p">Since only differences in energies are physically important, we can shift
+what we call “zero energy” downward by <math id="S0.SSx3.p3.m1" class="ltx_Math" alttext="{\textstyle\frac{1}{2}}\hbar\omega_{0}" display="inline"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> and write
+the energy levels as</p>
+<table id="S0.E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E10.m1" class="ltx_Math" alttext="\epsilon_{n}=n\hbar\omega_{0}" display="block"><mrow><msub><mi>ϵ</mi><mi>n</mi></msub><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(10)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The probability to find the oscillator in the <math id="S0.SSx3.p3.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-th vibrational state is</p>
+<table id="S0.E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E11.m1" class="ltx_Math" alttext="P_{n}=\frac{1}{Z}e^{-\epsilon_{n}/{k_{\scriptscriptstyle B}T}}=\frac{1}{Z}e^{-%
+n\hbar\omega_{0}/{k_{\scriptscriptstyle B}T}}" display="block"><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><mi>Z</mi></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msub><mi>ϵ</mi><mi>n</mi></msub><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></msup></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mi>Z</mi></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(11)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.SSx3.p3.m3" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math> is a normalizing constant. <math id="S0.SSx3.p3.m4" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math> is known as the partition function
+in English, and the letter <math id="S0.SSx3.p3.m5" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math> is short for <a href="https://www.howtopronounce.com/german/zustandssumme" title="" class="ltx_ref ltx_href">Zustandsumme</a>
+in German (meaning sum over states).</p>
+<ol id="S0.I5" class="ltx_enumerate">
+<li id="S0.I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I5.i1.p1" class="ltx_para">
+<p class="ltx_p">For the probabilities to be correctly normalized, show that <math id="S0.I5.i1.p1.m1" class="ltx_Math" alttext="Z=\sum_{n=0}^{\infty}e^{-n\beta\hbar\omega_{0}}" display="inline"><mrow><mi>Z</mi><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>n</mi><mo>⁢</mo><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup></mrow></mrow></math>.
+I find the German name descriptive, because, as you
+should see, it is a “sum over states”.</p>
+</div>
+</li>
+<li id="S0.I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I5.i2.p1" class="ltx_para">
+<p class="ltx_p">Noting that <math id="S0.I5.i2.p1.m1" class="ltx_Math" alttext="e^{-n\hbar\omega_{0}/{k_{\scriptscriptstyle B}T}}=u^{n}" display="inline"><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></msup><mo>=</mo><msup><mi>u</mi><mi>n</mi></msup></mrow></math> with <math id="S0.I5.i2.p1.m2" class="ltx_Math" alttext="u=e^{-\hbar\omega_{0}/{k_{\scriptscriptstyle B}T}}" display="inline"><mrow><mi>u</mi><mo>=</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></msup></mrow></math>, evaluate the sum, and determine the explicit form for <math id="S0.I5.i2.p1.m3" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math>
+and <math id="S0.I5.i2.p1.m4" class="ltx_Math" alttext="P_{n}" display="inline"><msub><mi>P</mi><mi>n</mi></msub></math>. A plot of <math id="S0.I5.i2.p1.m5" class="ltx_Math" alttext="P_{n}" display="inline"><msub><mi>P</mi><mi>n</mi></msub></math> for a variety of <math id="S0.I5.i2.p1.m6" class="ltx_Math" alttext="\hbar\omega_{0}" display="inline"><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> is shown in Fig. <a href="#S0.F3" title="Figure 3 ‣ item (b) ‣ Problem 3. Probability distribution of a Quantum Harmonic Oscillator" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>. Describe qualitatively what this plot is telling you physically.</p>
+</div>
+<div id="S0.I5.i2.p2" class="ltx_para">
+<p class="ltx_p">You should find</p>
+<table id="S0.E12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E12.m1" class="ltx_Math" alttext="P_{n}=e^{-n\hbar\omega_{0}/{k_{\scriptscriptstyle B}T}}(1-e^{-\hbar\omega_{0}/%
+{k_{\scriptscriptstyle B}T}})" display="block"><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mrow><mi>n</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12)</span></td>
+</tr>
+</table>
+</div>
+<figure id="S0.F3" class="ltx_figure"><img src="x3.png" id="S0.F3.g1" class="ltx_graphics ltx_centering" width="407" height="335" alt="Probability for the oscillator to have ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3: </span>Probability for the oscillator to have <math id="S0.F3.m4" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> quanta of vibrational energy <math id="S0.F3.m5" class="ltx_Math" alttext="\hbar\omega_{0}" display="inline"><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> for different values <math id="S0.F3.m6" class="ltx_Math" alttext="\hbar\omega_{0}/{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mrow><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>/</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub></mrow><mo>⁢</mo><mi>T</mi></mrow></math>.
+</figcaption>
+</figure>
+</li>
+<li id="S0.I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I5.i3.p1" class="ltx_para">
+<p class="ltx_p">The first vibrational excited state (<math id="S0.I5.i3.p1.m1" class="ltx_Math" alttext="n=1" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow></math>) of diatomic hydrogen <math id="S0.I5.i3.p1.m2" class="ltx_Math" alttext="H_{2}" display="inline"><msub><mi>H</mi><mn>2</mn></msub></math> is excited from the ground state (<math id="S0.I5.i3.p1.m3" class="ltx_Math" alttext="n=0" display="inline"><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow></math>) by a photon of wavelength of
+<math id="S0.I5.i3.p1.m4" class="ltx_Math" alttext="\lambda_{0}=2270\,{\rm nm}" display="inline"><mrow><msub><mi>λ</mi><mn>0</mn></msub><mo>=</mo><mrow><mpadded width="+1.7pt"><mn>2270</mn></mpadded><mo>⁢</mo><mi>nm</mi></mrow></mrow></math>. This wavelength is typical of molecular vibrations – is the photon, ifrared, visible, or uv? Express the vibrational unit of energy <math id="S0.I5.i3.p1.m5" class="ltx_Math" alttext="\hbar\omega_{0}" display="inline"><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> in eV. By looking at Fig. <a href="#S0.F3" title="Figure 3 ‣ item (b) ‣ Problem 3. Probability distribution of a Quantum Harmonic Oscillator" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>, give a rough estimate for the temperature when the mean number of vibrational quanta of energy in the oscillations of <math id="S0.I5.i3.p1.m6" class="ltx_Math" alttext="H_{2}" display="inline"><msub><mi>H</mi><mn>2</mn></msub></math> becomes of order unity.</p>
+</div>
+<div id="S0.I5.i3.p2" class="ltx_para">
+<p class="ltx_p">Please do use constants like <math id="S0.I5.i3.p2.m1" class="ltx_Math" alttext="\hbar=1.05\times 10^{-34}\,{\rm J\,s}" display="inline"><mrow><mi mathvariant="normal">ℏ</mi><mo>=</mo><mrow><mrow><mn>1.05</mn><mo>×</mo><mpadded width="+1.7pt"><msup><mn>10</mn><mrow><mo>-</mo><mn>34</mn></mrow></msup></mpadded></mrow><mo>⁢</mo><mpadded width="+1.7pt"><mi mathvariant="normal">J</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">s</mi></mrow></mrow></math> and <math id="S0.I5.i3.p2.m2" class="ltx_Math" alttext="k_{B}=1.38\times 10^{-23}{\rm J}/{}^{\circ}{\rm K}^{-1}" display="inline"><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>=</mo><mrow><mrow><mrow><mn>1.38</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>23</mn></mrow></msup></mrow><mo>⁢</mo><mi mathvariant="normal">J</mi></mrow><mo>/</mo><mmultiscripts><mi mathvariant="normal">K</mi><none></none><mrow><mo>-</mo><mn>1</mn></mrow><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></mrow></math>, but rather try to put it in physical terms. For instance use <math id="S0.I5.i3.p2.m3" class="ltx_Math" alttext="\hbar c=197\,{\rm eV}\,{\rm nm}" display="inline"><mrow><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><mi>c</mi></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><mn>197</mn></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><mi>eV</mi></mpadded><mo>⁢</mo><mi>nm</mi></mrow></mrow></math>, and <math id="S0.I5.i3.p2.m4" class="ltx_Math" alttext="k_{B}T\simeq 1/44\,{\rm eV}" display="inline"><mrow><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>≃</mo><mrow><mrow><mn>1</mn><mo>/</mo><mpadded width="+1.7pt"><mn>44</mn></mpadded></mrow><mo>⁢</mo><mi>eV</mi></mrow></mrow></math> at freezing <math id="S0.I5.i3.p2.m5" class="ltx_Math" alttext="273\,{}^{\circ}{\rm K}" display="inline"><mrow><mpadded width="+1.7pt"><mn>273</mn></mpadded><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mo>∘</mo></mmultiscripts></mrow></math>. A summary of constants you will need for the course are given
+<a href="https://derek-teaney.github.io/S23_Phy306/lectures/html/A1.html" title="" class="ltx_ref ltx_href">on the website</a>.</p>
+</div>
+<div id="S0.I5.i3.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Discussion:</span> I find <math id="S0.I5.i3.p3.m1" class="ltx_Math" alttext="T\simeq 6000{}^{o}{\rm K}" display="inline"><mrow><mi>T</mi><mo>≃</mo><mrow><mn>6000</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mi>o</mi></mmultiscripts></mrow></mrow></math>. Indeed this is about right. At room temperatures diatomic molecules translate and rotate so <math id="S0.I5.i3.p3.m2" class="ltx_Math" alttext="\left\langle\epsilon\right\rangle=\frac{5}{2}{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow><mo>=</mo><mrow><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mrow></math>. At higher temperatures (at around <math id="S0.I5.i3.p3.m3" class="ltx_Math" alttext="1000{}^{o}\rm K" display="inline"><mrow><mn>1000</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mi>o</mi></mmultiscripts></mrow></math>) they begin to vibrate, and the <math id="S0.I5.i3.p3.m4" class="ltx_Math" alttext="\tfrac{5}{2}{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></math> estimate for the molecule’s energy is no longer valid. Much above this temperature the molecule begins to break apart as the number of vibrational quanta gets larger and larger. The following figure shows the specific heat of <math id="S0.I5.i3.p3.m5" class="ltx_Math" alttext="H_{2}" display="inline"><msub><mi>H</mi><mn>2</mn></msub></math> gas. As
+we will discuss fully later, the increase increase starting at around <math id="S0.I5.i3.p3.m6" class="ltx_Math" alttext="1000{}^{o}{\rm K}" display="inline"><mrow><mn>1000</mn><mo>⁢</mo><mmultiscripts><mi mathvariant="normal">K</mi><mprescripts></mprescripts><none></none><mi>o</mi></mmultiscripts></mrow></math> reflects the fact vibrational degrees of freedom becoming active, i.e. that the mean <math id="S0.I5.i3.p3.m7" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is becoming greater than one.</p>
+<img src="x4.png" id="S0.I5.i3.p3.g1" class="ltx_graphics ltx_centering" width="438" height="330" alt="">
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S0.SSx4" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 4.   Probabilities for escaping particles</h2>
+
+<div id="S0.SSx4.p1" class="ltx_para ltx_align_center">
+<img src="x10.png" id="S0.SSx4.p1.g1" class="ltx_graphics" width="238" height="305" alt="">
+</div>
+<div id="S0.SSx4.p2" class="ltx_para">
+<p class="ltx_p">In class we showed the number of particles per area
+per second passing through a hole in the container with speeds between <math id="S0.SSx4.p2.m1" class="ltx_Math" alttext="(v,v+dv)" display="inline"><mrow><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mrow><mi>v</mi><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>v</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></math>, and angles
+between <math id="S0.SSx4.p2.m2" class="ltx_Math" alttext="(\theta,\theta+d\theta)" display="inline"><mrow><mo stretchy="false">(</mo><mi>θ</mi><mo>,</mo><mrow><mi>θ</mi><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></math> and <math id="S0.SSx4.p2.m3" class="ltx_Math" alttext="(\phi,\phi+d\phi)" display="inline"><mrow><mo stretchy="false">(</mo><mi>ϕ</mi><mo>,</mo><mrow><mi>ϕ</mi><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></math>
+is</p>
+<table id="S0.E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E13.m1" class="ltx_Math" alttext="{\rm d}\Phi=nP(v)\,v\cos\theta\,{\rm d}v\,\frac{{\rm d}\Omega}{4\pi}\,." display="block"><mrow><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Φ</mi></mrow><mo>=</mo><mrow><mi>n</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>v</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mpadded width="+1.7pt"><mi>θ</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>v</mi></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow><mrow><mn>4</mn><mo>⁢</mo><mi>π</mi></mrow></mfrac></mpadded></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(13)</span></td>
+</tr>
+</table>
+<p class="ltx_p">with <math id="S0.SSx4.p2.m4" class="ltx_Math" alttext="{\rm d}\Omega=\sin\theta{\rm d}\theta{\rm d}\phi" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Ω</mi></mrow><mo>=</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></mrow></math>.
+</p>
+<ol id="S0.I6" class="ltx_enumerate">
+<li id="S0.I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I6.i1.p1" class="ltx_para">
+<p class="ltx_p">Show that the total number of particles passing through
+the hole per are per time is</p>
+<table id="S0.E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E14.m1" class="ltx_Math" alttext="\Phi=\frac{1}{4}n\left\langle v\right\rangle" display="block"><mrow><mi mathvariant="normal">Φ</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo>⟨</mo><mi>v</mi><mo>⟩</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(14)</span></td>
+</tr>
+</table>
+<p class="ltx_p">For reference <math id="S0.I6.i1.p1.m1" class="ltx_Math" alttext="\left\langle v\right\rangle=(8{k_{\scriptscriptstyle B}T}/\pi m)^{1/2}" display="inline"><mrow><mrow><mo>⟨</mo><mi>v</mi><mo>⟩</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>8</mn><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi>π</mi></mrow><mo>⁢</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></math> but
+you do not need to show this for this probelm.</p>
+</div>
+</li>
+<li id="S0.I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I6.i2.p1" class="ltx_para">
+<p class="ltx_p">Show that the average value of <math id="S0.I6.i2.p1.m1" class="ltx_Math" alttext="\cos\theta" display="inline"><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></math> for
+these particles is <math id="S0.I6.i2.p1.m2" class="ltx_Math" alttext="2/3" display="inline"><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I6.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I6.i3.p1" class="ltx_para">
+<p class="ltx_p">Your bicycle tire has a slow leak, so that it goes flat within about an <math id="S0.I6.i3.p1.m1" class="ltx_Math" alttext="\tau\simeq 1\,{\rm hour}" display="inline"><mrow><mi>τ</mi><mo>≃</mo><mrow><mpadded width="+1.7pt"><mn>1</mn></mpadded><mo>⁢</mo><mi>hour</mi></mrow></mrow></math> after being fully inflated. Make an estimate for the radius of the hole when the tire is fully inflated. Take any reasonable estimate for the volume of an inflated tire, the temperature, and a typical mass for air.</p>
+</div>
+<div id="S0.I6.i3.p2" class="ltx_para">
+<p class="ltx_p">Hint: show that the loss of atoms per time takes the form <math id="S0.I6.i3.p2.m1" class="ltx_Math" alttext="dN/dt=-N/\tau" display="inline"><mrow><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>N</mi></mrow><mo>/</mo><mi>d</mi></mrow><mo>⁢</mo><mi>t</mi></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mi>N</mi><mo>/</mo><mi>τ</mi></mrow></mrow></mrow></math>, where <math id="S0.I6.i3.p2.m2" class="ltx_Math" alttext="\tau^{-1}\equiv A({k_{\scriptscriptstyle B}T}/2\pi m)^{1/2}/V" display="inline"><mrow><msup><mi>τ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>≡</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow><mo>/</mo><mi>V</mi></mrow></mrow></math> is a characteristic decay time, and <math id="S0.I6.i3.p2.m3" class="ltx_Math" alttext="A=\pi R^{2}" display="inline"><mrow><mi>A</mi><mo>=</mo><mrow><mi>π</mi><mo>⁢</mo><msup><mi>R</mi><mn>2</mn></msup></mrow></mrow></math>. </p>
+</div>
+<div id="S0.I6.i3.p3" class="ltx_para">
+<p class="ltx_p">For reasonable estimates of the volume and temperature I find
+a hole radius of about <math id="S0.I6.i3.p3.m1" class="ltx_Math" alttext="R\sim 30\,{\rm microns}" display="inline"><mrow><mi>R</mi><mo>∼</mo><mrow><mpadded width="+1.7pt"><mn>30</mn></mpadded><mo>⁢</mo><mi>microns</mi></mrow></mrow></math>. But of course if
+your results could differ from mine by factors of two or three.
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S0.SSx5" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 5.    2D World </h2>
+
+<div id="S0.SSx5.p1" class="ltx_para">
+<p class="ltx_p">Consider a mono-atomic ideal gas in a two dimensional world, so the velocities are labeled by <math id="S0.SSx5.p1.m1" class="ltx_Math" alttext="\bm{v}=(v_{x},v_{y})" display="inline"><mrow><mi>𝒗</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><mi>x</mi></msub><mo>,</mo><msub><mi>v</mi><mi>y</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+<ol id="S0.I7" class="ltx_enumerate">
+<li id="S0.I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I7.i1.p1" class="ltx_para">
+<p class="ltx_p">Use Jacobians to show that the “volume element” is
+</p>
+<table id="S0.E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E15.m1" class="ltx_Math" alttext="{\rm d}v_{x}{\rm d}v_{y}=\left|\left|\frac{\partial(v_{x},v_{y})}{\partial(v,%
+\theta)}\right|\right|dvd\theta=\ v\,{\rm d}v\,{\rm d}\theta" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi>v</mi><mi>x</mi></msub><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi>v</mi><mi>y</mi></msub></mrow><mo>=</mo><mrow><mrow><mo fence="true">||</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><mi>x</mi></msub><mo>,</mo><msub><mi>v</mi><mi>y</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo fence="true">||</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>v</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow><mo rspace="7.5pt">=</mo><mrow><mpadded width="+1.7pt"><mi>v</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>v</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(15)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.I7.i1.p1.m1" class="ltx_Math" alttext="v_{x}=v\cos\theta" display="inline"><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math> and <math id="S0.I7.i1.p1.m2" class="ltx_Math" alttext="v_{y}=v\sin\theta" display="inline"><mrow><msub><mi>v</mi><mi>y</mi></msub><mo>=</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math>, with <math id="S0.I7.i1.p1.m3" class="ltx_Math" alttext="v\in[0,\infty]" display="inline"><mrow><mi>v</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">∞</mi><mo stretchy="false">]</mo></mrow></mrow></math> and <math id="S0.I7.i1.p1.m4" class="ltx_Math" alttext="\theta\in[0,2\pi]" display="inline"><mrow><mi>θ</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></math>.
+It is understood that these expressions are meant to be integrated over.
+The double bars mean determinant and then absolute value of the Jacobian matrix, which is defined as<span id="footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+                  <span class="ltx_tag ltx_tag_note">2</span>
+                  
+                  
+                  
+                Sometimes people use <math id="footnote2.m1" class="ltx_Math" alttext="\partial(v_{x},v_{y})/\partial(v,\theta)" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><mi>x</mi></msub><mo>,</mo><msub><mi>v</mi><mi>y</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>
+to mean the determinant of the Jacobian matrix, rather than just the matrix itself. Our book uses this notation, as is described in appendix <math id="footnote2.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>. </span></span></span></p>
+<table id="S0.E16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E16.m1" class="ltx_Math" alttext="\frac{\partial(v_{x},v_{y})}{\partial(v,\theta)}\equiv\begin{pmatrix}\frac{%
+\partial v_{x}}{\partial v}&amp;\frac{\partial v_{x}}{\partial\theta}\\
+\frac{\partial v_{y}}{\partial v}&amp;\frac{\partial v_{y}}{\partial\theta}\end{pmatrix}" display="block"><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><mi>x</mi></msub><mo>,</mo><msub><mi>v</mi><mi>y</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><mi>θ</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>≡</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>v</mi><mi>x</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>v</mi></mrow></mfrac></mstyle></mtd><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>v</mi><mi>x</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mtd></mtr><mtr><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>v</mi><mi>y</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>v</mi></mrow></mfrac></mstyle></mtd><mtd columnalign="center"><mstyle displaystyle="false"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>v</mi><mi>y</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(16)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This generalizes the usual <math id="S0.I7.i1.p1.m5" class="ltx_Math" alttext="1d" display="inline"><mrow><mn>1</mn><mo>⁢</mo><mi>d</mi></mrow></math> change of variables</p>
+<table id="S0.E17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E17.m1" class="ltx_Math" alttext="{\rm d}x=\left|\frac{{\rm d}x}{{\rm d}u}\right|{\rm d}u" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><mo>|</mo><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>u</mi></mrow></mfrac><mo>|</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>u</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(17)</span></td>
+</tr>
+</table>
+</div>
+</li>
+<li id="S0.I7.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I7.i2.p1" class="ltx_para">
+<p class="ltx_p">Lets understand the Jacobian. Consider the change of coordinates from
+<math id="S0.I7.i2.p1.m1" class="ltx_Math" alttext="x=r\cos\theta" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math> and <math id="S0.I7.i2.p1.m2" class="ltx_Math" alttext="y=r\sin\theta" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math>. Write down the Jacobian in
+analogy with (a).
+The columns of the Jacobian form vectors</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E18"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E18.m1" class="ltx_Math" alttext="\displaystyle{\bm{e}}_{r}\equiv" display="inline"><mrow><msub><mi>𝒆</mi><mi>r</mi></msub><mo>≡</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E18.m2" class="ltx_Math" alttext="\displaystyle\frac{\partial x}{\partial r}\,\hat{\bm{\imath}}+\frac{\partial y%
+}{\partial r}\,\hat{\bm{\jmath}}" display="inline"><mrow><mrow><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mpadded><mo>⁢</mo><mover accent="true"><mi mathvariant="bold-italic">ı</mi><mo stretchy="false">^</mo></mover></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></mpadded><mo>⁢</mo><mover accent="true"><mi mathvariant="bold-italic">ȷ</mi><mo stretchy="false">^</mo></mover></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(18)</span></td>
+</tr></tbody>
+<tbody id="S0.E19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E19.m1" class="ltx_Math" alttext="\displaystyle{\bm{e}}_{\theta}\equiv" display="inline"><mrow><msub><mi>𝒆</mi><mi>θ</mi></msub><mo>≡</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E19.m2" class="ltx_Math" alttext="\displaystyle\frac{\partial x}{\partial\theta}\,\hat{\bm{\imath}}+\frac{%
+\partial y}{\partial\theta}\,\hat{\bm{\jmath}}." display="inline"><mrow><mrow><mrow><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mpadded><mo>⁢</mo><mover accent="true"><mi mathvariant="bold-italic">ı</mi><mo stretchy="false">^</mo></mover></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mstyle></mpadded><mo>⁢</mo><mover accent="true"><mi mathvariant="bold-italic">ȷ</mi><mo stretchy="false">^</mo></mover></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(19)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The determinant of two vectors is the area of the parallelogram spanned by the two vectors<span id="footnote3" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>
+                  <span class="ltx_tag ltx_tag_note">3</span>
+                  
+                  
+                  
+                See for instance <a href="https://www.khanacademy.org/math/linear-algebra/matrix-transformations/determinant-depth/v/linear-algebra-determinant-and-area-of-a-parallelogram" title="" class="ltx_ref ltx_href">The Kahn video</a>. </span></span></span>.
+Compute the norms of these vectors <math id="S0.I7.i2.p1.m3" class="ltx_Math" alttext="|{\bm{e}}_{r}dr|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msub><mi>𝒆</mi><mi>r</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow><mo stretchy="false">|</mo></mrow></math> and
+<math id="S0.I7.i2.p1.m4" class="ltx_Math" alttext="|{\bm{e}}_{\theta}d\theta|" display="inline"><mrow><mo stretchy="false">|</mo><mrow><msub><mi>𝒆</mi><mi>θ</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">|</mo></mrow></math> and show that the vectors are orthogonal. Qualitatively interpret these vectors and their lengths by referring to Fig. <a href="#S0.F4" title="Figure 4 ‣ item (b) ‣ Problem 5. 2D World" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>. Note that the volume element is <math id="S0.I7.i2.p1.m5" class="ltx_Math" alttext="|{\bm{e}}_{r}dr||{\bm{e}}_{\theta}d\theta|" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>𝒆</mi><mi>r</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow><mo stretchy="false">|</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mrow><msub><mi>𝒆</mi><mi>θ</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow><mo stretchy="false">|</mo></mrow></mrow></math> since the vectors are orthogonal.</p>
+</div>
+<figure id="S0.F4" class="ltx_figure"><img src="x6.png" id="S0.F4.g1" class="ltx_graphics ltx_centering" width="371" height="366" alt=" 
+Cylindrical coordinates in two dimensions.
+">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 4: </span> 
+Cylindrical coordinates in two dimensions.
+</figcaption>
+</figure>
+</li>
+<li id="S0.I7.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I7.i3.p1" class="ltx_para">
+<p class="ltx_p">(Optional, but good) In three dimensions, the Jacobian
+of the map <math id="S0.I7.i3.p1.m1" class="ltx_Math" alttext="x=r\sin\theta\cos\phi" display="inline"><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></math>, <math id="S0.I7.i3.p1.m2" class="ltx_Math" alttext="y=r\sin\theta\sin\phi" display="inline"><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></math>, <math id="S0.I7.i3.p1.m3" class="ltx_Math" alttext="z=r\cos\theta" display="inline"><mrow><mi>z</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></math>, is</p>
+<table id="S0.E20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E20.m1" class="ltx_Math" alttext="d^{3}x=\left|\left|\frac{\partial(x,y,z)}{\partial(r,\theta,\phi)}\right|%
+\right|drd\theta d\phi=\left|\begin{vmatrix}\sin\theta\cos\phi&amp;r\cos\theta\cos%
+\phi&amp;-r\sin\theta\sin\phi\\
+\sin\theta\sin\phi&amp;r\cos\theta\sin\phi&amp;r\sin\theta\cos\phi\\
+\cos\theta&amp;-r\sin\theta&amp;0\end{vmatrix}\right|=r^{2}\sin\theta{\rm d}r{\rm d}%
+\theta{\rm d}\phi" display="block"><mrow><mrow><msup><mi>d</mi><mn>3</mn></msup><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mrow><mrow><mo fence="true">||</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo fence="true">||</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>ϕ</mi></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mo>|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mo>-</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mtd><mtd columnalign="center"><mrow><mo>-</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>|</mo></mrow><mo>|</mo></mrow><mo>=</mo><mrow><msup><mi>r</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mrow><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(20)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Look at the columns and find the lengths of the collumn vectors, <math id="S0.I7.i3.p1.m4" class="ltx_Math" alttext="{\bm{e}}_{r}\,dr" display="inline"><mrow><mpadded width="+1.7pt"><msub><mi>𝒆</mi><mi>r</mi></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow></math>, <math id="S0.I7.i3.p1.m5" class="ltx_Math" alttext="{\bm{e}}_{\theta}\,{\rm d}\theta" display="inline"><mrow><mpadded width="+1.7pt"><msub><mi>𝒆</mi><mi>θ</mi></msub></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>θ</mi></mrow></math> and <math id="S0.I7.i3.p1.m6" class="ltx_Math" alttext="{\bm{e}}_{\phi}\,{\rm d}\phi" display="inline"><mrow><mpadded width="+1.7pt"><msub><mi>𝒆</mi><mi>ϕ</mi></msub></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi></mrow></math>. Interpret these vectors and lengths by looking at Fig. <a href="#S0.F5" title="Figure 5 ‣ item (c) ‣ Problem 5. 2D World" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a> where the spherical coordinates explained.</p>
+</div>
+<figure id="S0.F5" class="ltx_figure">
+<table style="width:100%;">
+<tr>
+<td class="ltx_subgraphics"><img src="x9.png" id="S0.F5.g1" class="ltx_graphics ltx_centering" width="233" height="301" alt=" 
+Spherical coordinates.
+"></td>
+<td class="ltx_subgraphics"><img src="x8.png" id="S0.F5.g2" class="ltx_graphics ltx_centering" width="367" height="290" alt=" 
+Spherical coordinates.
+"></td>
+</tr>
+</table>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 5: </span> 
+Spherical coordinates.
+</figcaption>
+</figure>
+</li>
+<li id="S0.I7.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I7.i4.p1" class="ltx_para">
+<p class="ltx_p">Write down the normalized Maxwell velocity distribution, <math id="S0.I7.i4.p1.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}(v_{x},v_{y})=P(v_{x},v_{y}){\rm d}v_{x}{\rm d}v_{y}" display="inline"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><mi>x</mi></msub><mo>,</mo><msub><mi>v</mi><mi>y</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><mi>x</mi></msub><mo>,</mo><msub><mi>v</mi><mi>y</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi>v</mi><mi>x</mi></msub><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi>v</mi><mi>y</mi></msub></mrow></mrow></math>, and, using the Jacobian of part (a) and an integral over <math id="S0.I7.i4.p1.m2" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>, determine the normalized speed distribution</p>
+<table id="S0.E21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E21.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}(v)=P(v){\rm d}v" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>v</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(21)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Describe in plain speak and a simple picture (like Fig. <a href="#S0.F4" title="Figure 4 ‣ item (b) ‣ Problem 5. 2D World" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>) what we are doing with the whole “Jacobian + integral over <math id="S0.I7.i4.p1.m3" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math>” steps. 
+<br class="ltx_break"></p>
+</div>
+<div id="S0.I7.i4.p2" class="ltx_para">
+<p class="ltx_p">You should find that all factors of <math id="S0.I7.i4.p2.m1" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> have canceled in your final expression for <math id="S0.I7.i4.p2.m2" class="ltx_Math" alttext="P(v)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow></math> in two dimensions. You can check your result by doing the next item.</p>
+</div>
+</li>
+<li id="S0.I7.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I7.i5.p1" class="ltx_para">
+<p class="ltx_p">Compute <math id="S0.I7.i5.p1.m1" class="ltx_Math" alttext="\left\langle{\textstyle\frac{1}{2}}mv^{2}\right\rangle" display="inline"><mrow><mo>⟨</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><mo>⟩</mo></mrow></math> using the speed distribution. You should find <math id="S0.I7.i5.p1.m2" class="ltx_Math" alttext="{k_{\scriptscriptstyle B}T}" display="inline"><mrow><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></math>. Is your result consistent with the equipartition theorem? Explain.</p>
+</div>
+<div id="S0.I7.i5.p2" class="ltx_para">
+<p class="ltx_p">Please be explicit about how to do the integral. If you get stuck
+try changing variables to a dimensionless energy.</p>
+</div>
+</li>
+<li id="S0.I7.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(f)</span> 
+<div id="S0.I7.i6.p1" class="ltx_para">
+<p class="ltx_p">Consider a box of gas with <math id="S0.I7.i6.p1.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> particles and density <math id="S0.I7.i6.p1.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>. The box has a small hole.
+In <em class="ltx_emph ltx_font_italic">three</em> dimensions we found that the total flux (number per area per time) escaping the hole is</p>
+<table id="S0.E22" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E22.m1" class="ltx_Math" alttext="\Phi=\frac{1}{4}n\left\langle v\right\rangle" display="block"><mrow><mi mathvariant="normal">Φ</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo>⟨</mo><mi>v</mi><mo>⟩</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(22)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and the pressure is determined by <math id="S0.I7.i6.p1.m3" class="ltx_Math" alttext="\left\langle v^{2}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mi>v</mi><mn>2</mn></msup><mo>⟩</mo></mrow></math> via</p>
+<table id="S0.E23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E23.m1" class="ltx_Math" alttext="p=\frac{1}{3}nm\left\langle v^{2}\right\rangle" display="block"><mrow><mi>p</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo>⟨</mo><msup><mi>v</mi><mn>2</mn></msup><mo>⟩</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(23)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.I7.i6.p1.m4" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> is the density.
+Show
+that the <em class="ltx_emph ltx_font_italic">two</em> dimensional version of these results is</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E24"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E24.m1" class="ltx_Math" alttext="\displaystyle\Phi=" display="inline"><mrow><mi mathvariant="normal">Φ</mi><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E24.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{\pi}n\left\langle v\right\rangle" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>π</mi></mfrac></mstyle><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mrow><mo>⟨</mo><mi>v</mi><mo>⟩</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(24)</span></td>
+</tr></tbody>
+<tbody id="S0.E25"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E25.m1" class="ltx_Math" alttext="\displaystyle p=" display="inline"><mrow><mi>p</mi><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E25.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{2}nm\left\langle v^{2}\right\rangle" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo>⟨</mo><msup><mi>v</mi><mn>2</mn></msup><mo>⟩</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(25)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">where <math id="S0.I7.i6.p1.m5" class="ltx_Math" alttext="\Phi" display="inline"><mi mathvariant="normal">Φ</mi></math> is the flux (number per length per second). The first step is to find the differential flux <math id="S0.I7.i6.p1.m6" class="ltx_Math" alttext="{\rm d}\Phi" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi mathvariant="normal">Φ</mi></mrow></math> in two dimensions, generalizing Eq. (<a href="#S0.E13" title="(13) ‣ Problem 4. Probabilities for escaping particles" class="ltx_ref"><span class="ltx_text ltx_ref_tag">13</span></a>) which is for three dimensions.</p>
+</div>
+<div id="S0.I7.i6.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Discussion:</span> In two dimensions we have, <math id="S0.I7.i6.p2.m1" class="ltx_Math" alttext="\left\langle v\right\rangle=(\pi{k_{\scriptscriptstyle B}T}/2m)^{1/2}" display="inline"><mrow><mrow><mo>⟨</mo><mi>v</mi><mo>⟩</mo></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mi>π</mi><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></mrow></math> and <math id="S0.I7.i6.p2.m2" class="ltx_Math" alttext="\left\langle v^{2}\right\rangle=2{k_{\scriptscriptstyle B}T}/m" display="inline"><mrow><mrow><mo>⟨</mo><msup><mi>v</mi><mn>2</mn></msup><mo>⟩</mo></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow><mo>/</mo><mi>m</mi></mrow></mrow></math>, so the results of part (e) establish that:</p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E26"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E26.m1" class="ltx_Math" alttext="\displaystyle p=" display="inline"><mrow><mi>p</mi><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E26.m2" class="ltx_Math" alttext="\displaystyle n{k_{\scriptscriptstyle B}T}" display="inline"><mrow><mi>n</mi><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(26)</span></td>
+</tr></tbody>
+<tbody id="S0.E27"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E27.m1" class="ltx_Math" alttext="\displaystyle\Phi=" display="inline"><mrow><mi mathvariant="normal">Φ</mi><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E27.m2" class="ltx_Math" alttext="\displaystyle\frac{p}{\sqrt{2\pi m{k_{\scriptscriptstyle B}T}}}" display="inline"><mstyle displaystyle="true"><mfrac><mi>p</mi><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msub><mi>k</mi><mi mathsize="71%">B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></msqrt></mfrac></mstyle></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(27)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">It is noteworthy that these last relations are the same as their 3D counterparts. Indeed, other derivations (see our Book problem 6.9) make it clear that these last relations hold in all dimensions.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb 10 16:04:57 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html><html>
+<head>
+<title>B.3 Gaussian Integrals ‣ Appendix B Math</title>
+<!--Generated on Sun Feb 26 19:05:14 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on February 26, 2023.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="LaTeXML-navbar-left.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+<link rel="up" href="A2.html" title="Appendix B Math">
+<link rel="start" href="main.html" title="">
+<link rel="prev" href="A2.S2.html" title="B.2 Basic Taylor Series ‣ Appendix B Math">
+<link rel="next" href="A2.S4.html" title="B.4 The Gamma function ‣ Appendix B Math">
+<link rel="section" href="A2.S1.html" title="B.1 Rant on units management ‣ Appendix B Math">
+<link rel="section" href="A2.S2.html" title="B.2 Basic Taylor Series ‣ Appendix B Math">
+<link rel="section" href="A2.S4.html" title="B.4 The Gamma function ‣ Appendix B Math">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Kinetics">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 The first law">
+<link rel="appendix" href="A1.html" title="Appendix A Estimates">
+<link rel="appendix" href="A2.html" title="Appendix B Math">
+</head>
+<body>
+<nav class="ltx_page_navbar"><a href="main.html" title="" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch1.html" title="Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch2.html" title="Chapter 2 The first law" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>The first law</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="A1.html" title="Appendix A Estimates" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Estimates</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix">
+<a href="A2.html" title="Appendix B Math" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Math</span></a>
+<ul class="ltx_toclist ltx_toclist_appendix">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="A2.S1.html" title="B.1 Rant on units management ‣ Appendix B Math" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.1 </span> Rant on units management</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="A2.S2.html" title="B.2 Basic Taylor Series ‣ Appendix B Math" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.2 </span>Basic Taylor Series</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.3 </span>Gaussian Integrals</span></span></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="A2.S4.html" title="B.4 The Gamma function ‣ Appendix B Math" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.4 </span>The Gamma function</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="A2.html" title="Appendix B Math" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Math</span></a><a href="A2.S2.html" title="B.2 Basic Taylor Series ‣ Appendix B Math" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.2 </span>Basic Taylor Series</span></a><a href="A2.S4.html" title="B.4 The Gamma function ‣ Appendix B Math" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.4 </span>The Gamma function</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">B.3 </span>Gaussian Integrals </h1>
+<div class="ltx_dates">(February 26, 2023)</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">We discussed the integrals</p>
+<table id="A2.E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="A2.E14.m1" class="ltx_Math" alttext="I_{n}=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}{\rm d}x\,e^{-x^{2}/2}x^{n}" display="block"><mrow><msub><mi>I</mi><mi>n</mi></msub><mo>=</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow></msqrt></mfrac><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mrow><mo rspace="0pt">d</mo><mpadded width="+1.7pt"><mi>x</mi></mpadded></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(B.14)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The first couple results are</p>
+<table id="A2.E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="A2.E15.m1" class="ltx_Math" alttext="I_{0}=1\quad I_{2}=0\quad I_{4}=3\quad I_{6}=15" display="block"><mrow><mrow><msub><mi>I</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><msub><mi>I</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><msub><mi>I</mi><mn>4</mn></msub><mo>=</mo><mn>3</mn></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><msub><mi>I</mi><mn>6</mn></msub><mo>=</mo><mn>15</mn></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(B.15)</span></td>
+</tr>
+</table>
+<p class="ltx_p">We found these using the generating function technique.</p>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="A2.S2.html" title="B.2 Basic Taylor Series ‣ Appendix B Math" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.2 </span>Basic Taylor Series</span></a><a href="A2.S4.html" title="B.4 The Gamma function ‣ Appendix B Math" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.4 </span>The Gamma function</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Sun Feb 26 19:05:14 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

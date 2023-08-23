@@ -1,0 +1,505 @@
+<!DOCTYPE html><html>
+<head>
+<title>Problem 1.   Variance in Energy from Partition Functions</title>
+<!--Generated on Tue Mar 14 10:54:40 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<nav class="ltx_page_navbar">
+</nav>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document">
+<section id="S0.SSx1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 1.   Variance in Energy from Partition Functions</h2>
+
+<div id="S0.SSx1.p1" class="ltx_para">
+<p class="ltx_p">Recall that the partition function is</p>
+<table id="S0.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E1.m1" class="ltx_Math" alttext="Z(\beta)=\sum_{s}e^{-\beta\epsilon_{s}}" display="block"><mrow><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>s</mi></munder><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><msub><mi>ϵ</mi><mi>s</mi></msub></mrow></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and that the probability of being in state <math id="S0.SSx1.p1.m1" class="ltx_Math" alttext="s" display="inline"><mi>s</mi></math> is</p>
+<table id="S0.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E2.m1" class="ltx_Math" alttext="P_{s}=\frac{e^{-\beta\epsilon_{s}}}{Z(\beta)}" display="block"><mrow><msub><mi>P</mi><mi>s</mi></msub><mo>=</mo><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><msub><mi>ϵ</mi><mi>s</mi></msub></mrow></mrow></msup><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<ol id="S0.I1" class="ltx_enumerate">
+<li id="S0.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Show that the mean energy and <math id="S0.I1.i1.p1.m1" class="ltx_Math" alttext="\left\langle\epsilon^{2}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mi>ϵ</mi><mn>2</mn></msup><mo>⟩</mo></mrow></math> can be found if you know <math id="S0.I1.i1.p1.m2" class="ltx_Math" alttext="Z(\beta)" display="inline"><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></math> via
+the formula:</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E3.m1" class="ltx_Math" alttext="\displaystyle\left\langle\epsilon\right\rangle=" display="inline"><mrow><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E3.m2" class="ltx_Math" alttext="\displaystyle-\frac{1}{Z(\beta)}\frac{\partial Z}{\partial\beta}" display="inline"><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>Z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>β</mi></mrow></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr></tbody>
+<tbody id="S0.E4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E4.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E4.m2" class="ltx_Math" alttext="\displaystyle-\frac{\partial}{\partial\beta}\log Z(\beta)" display="inline"><mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>β</mi></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>Z</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr></tbody>
+<tbody id="S0.E5"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E5.m1" class="ltx_Math" alttext="\displaystyle\left\langle\epsilon^{2}\right\rangle=" display="inline"><mrow><mrow><mo>⟨</mo><msup><mi>ϵ</mi><mn>2</mn></msup><mo>⟩</mo></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E5.m2" class="ltx_Math" alttext="\displaystyle\frac{1}{Z(\beta)}\frac{\partial^{2}Z}{\partial\beta^{2}}" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>Z</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>Z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>β</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr></tbody>
+</table>
+</div>
+</li>
+<li id="S0.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Show that variance in the energy is</p>
+<table id="S0.E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E6.m1" class="ltx_Math" alttext="\sigma_{\epsilon}^{2}\equiv\left\langle(\delta\epsilon)^{2}\right\rangle=\left%
+\langle\epsilon^{2}\right\rangle-\left\langle\epsilon\right\rangle^{2}=\frac{%
+\partial^{2}}{\partial\beta^{2}}\left(\log Z\right)" display="block"><mrow><msubsup><mi>σ</mi><mi>ϵ</mi><mn>2</mn></msubsup><mo>≡</mo><mrow><mo>⟨</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⟩</mo></mrow><mo>=</mo><mrow><mrow><mo>⟨</mo><msup><mi>ϵ</mi><mn>2</mn></msup><mo>⟩</mo></mrow><mo>-</mo><msup><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow><mn>2</mn></msup></mrow><mo>=</mo><mrow><mfrac><msup><mo>∂</mo><mn>2</mn></msup><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>β</mi><mn>2</mn></msup></mrow></mfrac><mo>⁢</mo><mrow><mo>(</mo><mrow><mi>log</mi><mo>⁡</mo><mi>Z</mi></mrow><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and that
+</p>
+<table id="S0.E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E7.m1" class="ltx_Math" alttext="\sigma_{\epsilon}^{2}=-\frac{\partial\left\langle\epsilon\right\rangle}{%
+\partial\beta}" display="block"><mrow><msubsup><mi>σ</mi><mi>ϵ</mi><mn>2</mn></msubsup><mo>=</mo><mrow><mo>-</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>β</mi></mrow></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(7)</span></td>
+</tr>
+</table>
+</div>
+</li>
+<li id="S0.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Return to the quantum harmonic oscillator of
+discussed previously. Show that the variance in the energy is</p>
+<table id="S0.E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E8.m1" class="ltx_Math" alttext="\left\langle(\delta\epsilon)^{2}\right\rangle=(\hbar\omega_{0})^{2}\frac{e^{-%
+\beta\hbar\omega_{0}}}{(1-e^{-\beta\hbar\omega_{0}})^{2}}" display="block"><mrow><mrow><mo>⟨</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⟩</mo></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mfrac><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(8)</span></td>
+</tr>
+</table>
+</div>
+</li>
+<li id="S0.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Find the leading approximate expression for the variance <math id="S0.I1.i4.p1.m1" class="ltx_Math" alttext="\left\langle\delta\epsilon^{2}\right\rangle" display="inline"><mrow><mo>⟨</mo><mrow><mi>δ</mi><mo>⁢</mo><msup><mi>ϵ</mi><mn>2</mn></msup></mrow><mo>⟩</mo></mrow></math> in the low temperature limit <math id="S0.I1.i4.p1.m2" class="ltx_Math" alttext="{kT}\ll\hbar\omega_{0}" display="inline"><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>T</mi></mrow><mo>≪</mo><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I1.i5.p1" class="ltx_para">
+<p class="ltx_p">Consider the
+probabilities <math id="S0.I1.i5.p1.m1" class="ltx_Math" alttext="P_{n}" display="inline"><msub><mi>P</mi><mi>n</mi></msub></math> for the simple harmonic oscillator to be in the n-th state, which you worked out in a previous homework.</p>
+<ol id="S0.I1.i5.I1" class="ltx_enumerate">
+<li id="S0.I1.i5.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span> 
+<div id="S0.I1.i5.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Show by Taylor expansion that in the limit <math id="S0.I1.i5.I1.i1.p1.m1" class="ltx_Math" alttext="{kT}\ll\hbar\omega_{0}" display="inline"><mrow><mrow><mi>k</mi><mo>⁢</mo><mi>T</mi></mrow><mo>≪</mo><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math> there are effectively only two states –
+the ground state with probability <math id="S0.I1.i5.I1.i1.p1.m2" class="ltx_Math" alttext="P_{0}\simeq 1-e^{-\beta\hbar\omega_{0}}" display="inline"><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>≃</mo><mrow><mn>1</mn><mo>-</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup></mrow></mrow></math>, and the first excited state, with small probability, <math id="S0.I1.i5.I1.i1.p1.m3" class="ltx_Math" alttext="P_{1}\simeq e^{-\beta\hbar\omega_{0}}" display="inline"><mrow><msub><mi>P</mi><mn>1</mn></msub><mo>≃</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup></mrow></math>. Show that the higher excited states, <math id="S0.I1.i5.I1.i1.p1.m4" class="ltx_Math" alttext="P_{2},P_{3},\ldots" display="inline"><mrow><msub><mi>P</mi><mn>2</mn></msub><mo>,</mo><msub><mi>P</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math>, have probability of order <math id="S0.I1.i5.I1.i1.p1.m5" class="ltx_Math" alttext="O(e^{-2\beta\hbar\omega_{0}})" display="inline"><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></math> or smaller, which is negligible to order <math id="S0.I1.i5.I1.i1.p1.m6" class="ltx_Math" alttext="e^{-\beta\hbar\omega_{0}}" display="inline"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></msup></math>.</p>
+</div>
+</li>
+<li id="S0.I1.i5.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span> 
+<div id="S0.I1.i5.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Calculate the mean energy <math id="S0.I1.i5.I1.i2.p1.m1" class="ltx_Math" alttext="\left\langle\epsilon\right\rangle" display="inline"><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow></math> and the
+variance <math id="S0.I1.i5.I1.i2.p1.m2" class="ltx_Math" alttext="\left\langle(\delta\epsilon)^{2}\right\rangle" display="inline"><mrow><mo>⟨</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>ϵ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⟩</mo></mrow></math> with <math id="S0.I1.i5.I1.i2.p1.m3" class="ltx_Math" alttext="P_{0}" display="inline"><msub><mi>P</mi><mn>0</mn></msub></math>
+and <math id="S0.I1.i5.I1.i2.p1.m4" class="ltx_Math" alttext="P_{1}" display="inline"><msub><mi>P</mi><mn>1</mn></msub></math> only with these approximations. Show that the variance agrees with part (d).</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S0.SSx2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 2.   Einstein Model of Solid</h2>
+
+<div id="S0.SSx2.p1" class="ltx_para">
+<p class="ltx_p">A solid consists of an array of atoms in a crystal structure shown below.
+In a simple model (used by Einstein at the advent of quantum mechanics)
+each atom is assumed to oscillate independently of every other
+atom<span id="footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+            <span class="ltx_tag ltx_tag_note">1</span>
+            
+            
+            
+           In reality the motions of the atoms are coupled to each other,
+and the oscillation pattern of the solid, may be found by breaking
+it up into normal modes. </span></span></span>. The model has one free parameter <math id="S0.SSx2.p1.m1" class="ltx_Math" alttext="\omega_{0}" display="inline"><msub><mi>ω</mi><mn>0</mn></msub></math>
+and predicts the general properties of specific heats of solids.</p>
+</div>
+<div id="S0.SSx2.p2" class="ltx_para">
+<p class="ltx_p">In one dimension a “solid” of <math id="S0.SSx2.p2.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> atoms consists of <math id="S0.SSx2.p2.m2" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> independent harmonic oscillators. The Hamiltonian of each oscillator is</p>
+<table id="S0.E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E9.m1" class="ltx_Math" alttext="H=\frac{p^{2}}{2m}+\frac{1}{2}m\omega_{0}^{2}x^{2}" display="block"><mrow><mi>H</mi><mo>=</mo><mrow><mfrac><msup><mi>p</mi><mn>2</mn></msup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(9)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.SSx2.p2.m3" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> is the mass of the atom.
+In two dimensions each atom can oscillate in the <math id="S0.SSx2.p2.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> direction and the <math id="S0.SSx2.p2.m5" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> direction. Thus, the solid of <math id="S0.SSx2.p2.m6" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> atoms consists of <math id="S0.SSx2.p2.m7" class="ltx_Math" alttext="2N" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>N</mi></mrow></math> independent quantum oscillators. The Hamiltonian (or energy) of each atom is a sum of two harmonic oscillators:</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E10.m1" class="ltx_Math" alttext="\displaystyle H=" display="inline"><mrow><mi>H</mi><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E10.m2" class="ltx_Math" alttext="\displaystyle H_{x}+H_{y}" display="inline"><mrow><msub><mi>H</mi><mi>x</mi></msub><mo>+</mo><msub><mi>H</mi><mi>y</mi></msub></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(10)</span></td>
+</tr></tbody>
+<tbody id="S0.E11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E11.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E11.m2" class="ltx_Math" alttext="\displaystyle\left(\frac{p^{2}_{x}}{2m}+\frac{1}{2}m\omega_{0}^{2}x^{2}\right)%
++\left(\frac{p^{2}_{y}}{2m}+\frac{1}{2}m\omega_{0}^{2}y^{2}\right)" display="inline"><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><msubsup><mi>p</mi><mi>x</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><msubsup><mi>p</mi><mi>y</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(11)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Finally in three dimensions (shown below) the solid of <math id="S0.SSx2.p2.m8" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> atoms consists of <math id="S0.SSx2.p2.m9" class="ltx_Math" alttext="3N" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi></mrow></math> independent oscillators as shown below, and each atom can oscillate in the <math id="S0.SSx2.p2.m10" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, <math id="S0.SSx2.p2.m11" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>, or <math id="S0.SSx2.p2.m12" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> directions. The Hamiltonian of each atom shown in Fig. <a href="#S0.F1" title="Figure 1 ‣ Problem 2. Einstein Model of Solid" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> consists of three harmonic oscillators:</p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S0.E12"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E12.m1" class="ltx_Math" alttext="\displaystyle H=" display="inline"><mrow><mi>H</mi><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E12.m2" class="ltx_Math" alttext="\displaystyle H_{x}+H_{y}+H_{z}" display="inline"><mrow><msub><mi>H</mi><mi>x</mi></msub><mo>+</mo><msub><mi>H</mi><mi>y</mi></msub><mo>+</mo><msub><mi>H</mi><mi>z</mi></msub></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(12)</span></td>
+</tr></tbody>
+<tbody id="S0.E13"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.E13.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.E13.m2" class="ltx_Math" alttext="\displaystyle\left(\frac{p^{2}_{x}}{2m}+\frac{1}{2}m\omega_{0}^{2}x^{2}\right)%
++\left(\frac{p^{2}_{y}}{2m}+\frac{1}{2}m\omega_{0}^{2}y^{2}\right)+\left(\frac%
+{p^{2}_{z}}{2m}+\frac{1}{2}m\omega_{0}^{2}z^{2}\right)" display="inline"><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><msubsup><mi>p</mi><mi>x</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><msubsup><mi>p</mi><mi>y</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><msubsup><mi>p</mi><mi>z</mi><mn>2</mn></msubsup><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mfrac></mstyle><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mi>m</mi><mo>⁢</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(13)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The total Hamiltonian is a sum of the Hamiltonians of each atom.</p>
+</div>
+<figure id="S0.F1" class="ltx_figure"><img src="x1.gif" id="S0.F1.g1" class="ltx_graphics ltx_centering" width="297" height="323" alt="">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span></figcaption>
+</figure>
+<div id="S0.SSx2.p3" class="ltx_para">
+<ol id="S0.I2" class="ltx_enumerate">
+<li id="S0.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">By appealing to the equi-partition theorem for a classical harmonic oscillator, argue that the mean energy of the solid at temperature <math id="S0.I2.i1.p1.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> is</p>
+<table id="S0.E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E14.m1" class="ltx_Math" alttext="E=3N{kT}\,," display="block"><mrow><mrow><mi>E</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>T</mi></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(14)</span></td>
+</tr>
+</table>
+<p class="ltx_p">if the solid is treated as <math id="S0.I2.i1.p1.m2" class="ltx_Math" alttext="3N" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi></mrow></math> independent classical oscillators. Determine the specific heat <math id="S0.I2.i1.p1.m3" class="ltx_Math" alttext="C_{V}^{\rm 1ml}" display="inline"><msubsup><mi>C</mi><mi>V</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">m</mi><mo>⁢</mo><mi mathvariant="normal">l</mi></mrow></msubsup></math> for one mole of substance in this case.</p>
+</div>
+</li>
+<li id="S0.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">When each the solid is treated
+as <math id="S0.I2.i2.p1.m1" class="ltx_Math" alttext="3N" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi></mrow></math> quantum harmonic oscillators,
+the energy of the solid is <math id="S0.I2.i2.p1.m2" class="ltx_Math" alttext="E=3N\left\langle\epsilon\right\rangle" display="inline"><mrow><mi>E</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow></mrow></mrow></math>, where
+the <math id="S0.I2.i2.p1.m3" class="ltx_Math" alttext="\left\langle\epsilon\right\rangle" display="inline"><mrow><mo>⟨</mo><mi>ϵ</mi><mo>⟩</mo></mrow></math> is the average energy of the
+a single harmonic oscillator. By reviewing the
+results of previous homework, write down the total energy of the solid at temperature <math id="S0.I2.i2.p1.m4" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>, and record the mean vibrational quantum number <math id="S0.I2.i2.p1.m5" class="ltx_Math" alttext="\bar{n}" display="inline"><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></math> of a single oscillator.</p>
+</div>
+</li>
+<li id="S0.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I2.i3.p1" class="ltx_para">
+<p class="ltx_p">Show that the inverse temperature of the system is related to the mean vibrational quantum number via</p>
+<table id="S0.E15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E15.m1" class="ltx_Math" alttext="\beta\equiv\frac{1}{k_{B}T}=\frac{1}{\hbar\omega_{0}}\log\left(\frac{1+\bar{n}%
+}{\bar{n}}\right)" display="block"><mrow><mi>β</mi><mo>≡</mo><mfrac><mn>1</mn><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mfrac><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mfrac><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mrow><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(15)</span></td>
+</tr>
+</table>
+</div>
+</li>
+<li id="S0.I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I2.i4.p1" class="ltx_para">
+<p class="ltx_p">Show that the specific heat <math id="S0.I2.i4.p1.m1" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math> for one mole of
+solid is<span id="footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+                  <span class="ltx_tag ltx_tag_note">2</span>
+                  
+                  
+                  
+                It is generally when computing <math id="footnote2.m1" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math> to recognize that
+
+<span id="S0.E16" class="ltx_equation ltx_eqn_table">
+
+<span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_eqn_cell ltx_align_center"><math id="S0.E16.m1" class="ltx_Math" alttext="T\frac{\partial}{\partial T}=-\beta\frac{\partial}{\partial\beta}" display="block"><mrow><mrow><mi>T</mi><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>T</mi></mrow></mfrac></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>β</mi></mrow></mfrac></mrow></mrow></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span>
+<span rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(16)</span></span></span>
+</span></span></span></span></p>
+<table id="S0.E17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E17.m1" class="ltx_Math" alttext="C_{V}^{1\,{\rm ml}}=3R\frac{(\beta\hbar\omega_{0})^{2}\exp(-\beta\hbar\omega_{%
+0})}{(1-\exp(-\beta\hbar\omega_{0}))^{2}}\,." display="block"><mrow><mrow><msubsup><mi>C</mi><mi>V</mi><mrow><mpadded width="+1.7pt"><mn>1</mn></mpadded><mo>⁢</mo><mi>ml</mi></mrow></msubsup><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mi>R</mi><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(17)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Make a Taylor series expansion of <math id="S0.I2.i4.p1.m2" class="ltx_Math" alttext="C_{V}^{1\,{\rm ml}}" display="inline"><msubsup><mi>C</mi><mi>V</mi><mrow><mpadded width="+1.7pt"><mn>1</mn></mpadded><mo>⁢</mo><mi>ml</mi></mrow></msubsup></math> at high temperature, including the just leading term. What is the specific heat in the ultimate high temperature limit? Your result should be consistent with part (a). Why?
+</p>
+</div>
+</li>
+<li id="S0.I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I2.i5.p1" class="ltx_para">
+<p class="ltx_p">Download a text file with the experimental data on the specific
+heat of silver<span id="footnote3" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">3</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">3</sup>
+                  <span class="ltx_tag ltx_tag_note">3</span>
+                  
+                  
+                  
+                The file contains two columns, the first is the temperature in Kelvin, the second is the specific heat in units of <math id="footnote3.m1" class="ltx_Math" alttext="J/({\rm mol}\,K)" display="inline"><mrow><mi>J</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mpadded width="+1.7pt"><mi>mol</mi></mpadded><mo>⁢</mo><mi>K</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></span></span></span>, <a href="http://derek-teaney.github.io/S23_Phy306/lectures/silvercv.txt" title="" class="ltx_ref ltx_href">see here</a>. Make a graph of the data, and the Einstein prediction
+for <math id="S0.I2.i5.p1.m1" class="ltx_Math" alttext="C_{V}^{1\,{\rm ml}}" display="inline"><msubsup><mi>C</mi><mi>V</mi><mrow><mpadded width="+1.7pt"><mn>1</mn></mpadded><mo>⁢</mo><mi>ml</mi></mrow></msubsup></math> for <math id="S0.I2.i5.p1.m2" class="ltx_Math" alttext="\hbar\omega_{0}=4E_{0},2E_{0},E_{0},E_{0}/2,E_{0}/4" display="inline"><mrow><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msub><mi>E</mi><mn>0</mn></msub></mrow><mo>,</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>E</mi><mn>0</mn></msub></mrow><mo>,</mo><msub><mi>E</mi><mn>0</mn></msub><mo>,</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>/</mo><mn>2</mn></mrow><mo>,</mo><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>/</mo><mn>4</mn></mrow></mrow></mrow></math> with <math id="S0.I2.i5.p1.m3" class="ltx_Math" alttext="E_{0}=0.013\,{\rm eV}" display="inline"><mrow><msub><mi>E</mi><mn>0</mn></msub><mo>=</mo><mrow><mpadded width="+1.7pt"><mn>0.013</mn></mpadded><mo>⁢</mo><mi>eV</mi></mrow></mrow></math>. <math id="S0.I2.i5.p1.m4" class="ltx_Math" alttext="E_{0}" display="inline"><msub><mi>E</mi><mn>0</mn></msub></math> was a free parameter in the Einstein model. The graph I get for silver is shown below as well as the <math id="S0.I2.i5.p1.m5" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math> for other substances:
+</p>
+<ol id="S0.I2.i5.I1" class="ltx_enumerate">
+<li id="S0.I2.i5.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span> 
+<div id="S0.I2.i5.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Diamond is known to be a very hard substance. Loosely explain how this fact is reflected in the data on <math id="S0.I2.i5.I1.i1.p1.m1" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math> presented in the figure below?
+ <em class="ltx_emph ltx_font_italic">Hint</em>: What does the graph of <math id="S0.I2.i5.I1.i1.p1.m2" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math> for different substances tell you about the relative strengths of the spring constants of the material?</p>
+</div>
+</li>
+</ol>
+</div>
+<figure id="S0.F2" class="ltx_figure"><img src="x6.png" id="S0.F2.g1" class="ltx_graphics ltx_centering" width="486" height="602" alt="Specific heats of solids: (a) The Einstein Model with ">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>Specific heats of solids: (a) The Einstein Model with <math id="S0.F2.m6" class="ltx_Math" alttext="\hbar\omega_{0}" display="inline"><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> treated as a parameter compared to the specific heat of silver. The graph approaches <math id="S0.F2.m7" class="ltx_Math" alttext="3R" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>R</mi></mrow></math> at high temperature. (b) The specific heat <math id="S0.F2.m8" class="ltx_Math" alttext="C_{V}" display="inline"><msub><mi>C</mi><mi>V</mi></msub></math> in units of <math id="S0.F2.m9" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> of various solids versus temperature. The specific heat approaches <math id="S0.F2.m10" class="ltx_Math" alttext="3R" display="inline"><mrow><mn>3</mn><mo>⁢</mo><mi>R</mi></mrow></math> at high temperature</figcaption>
+</figure>
+</li>
+</ol>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="S0.SSx3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">Problem 3.   Ways to partition energy amongst <math id="S0.SSx3.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> quantum
+harmonic oscillators</h2>
+
+<div id="S0.SSx3.p1" class="ltx_para">
+<p class="ltx_p">Recall that the entropy (divided by <math id="S0.SSx3.p1.m1" class="ltx_Math" alttext="k_{B}" display="inline"><msub><mi>k</mi><mi>B</mi></msub></math>) is the logarithm of the number of ways a system can partition the total available energy
+into states We have computed the entropy for an ideal gas by directly counting the number of possible configurations.</p>
+</div>
+<div id="S0.SSx3.p2" class="ltx_para">
+<p class="ltx_p">We will now give another example where we can explicitly count
+the number of states. The example is that of <math id="S0.SSx3.p2.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> quantum harmonic oscillators
+sharing total energy <math id="S0.SSx3.p2.m2" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math>.
+The total energy consists of <math id="S0.SSx3.p2.m3" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> vibrational quanta of energy <math id="S0.SSx3.p2.m4" class="ltx_Math" alttext="E\equiv q\hbar\omega_{0}" display="inline"><mrow><mi>E</mi><mo>≡</mo><mrow><mi>q</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math> (<math id="S0.SSx3.p2.m5" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> is an integer).</p>
+<ol id="S0.I3" class="ltx_enumerate">
+<li id="S0.I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span> 
+<div id="S0.I3.i1.p1" class="ltx_para">
+<p class="ltx_p">(Optional: Review) For four atoms and three quanta of energy (<math id="S0.I3.i1.p1.m1" class="ltx_Math" alttext="N=4" display="inline"><mrow><mi>N</mi><mo>=</mo><mn>4</mn></mrow></math> and <math id="S0.I3.i1.p1.m2" class="ltx_Math" alttext="q=3" display="inline"><mrow><mi>q</mi><mo>=</mo><mn>3</mn></mrow></math>) show that there
+are 20 ways for the oscillators to share the energy. For instance,
+the first atom could have the three quanta and the rest none. That is one
+possible state.</p>
+</div>
+</li>
+<li id="S0.I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span> 
+<div id="S0.I3.i2.p1" class="ltx_para">
+<p class="ltx_p">(Optional: Review) If each of the ways is to partition the total energy in part(a) is equally likely (this is the microcanoncial ensemble), what is the probability that one of the atoms will have all the energy?
+What is the probability that the first atom has two quanta?</p>
+</div>
+</li>
+<li id="S0.I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span> 
+<div id="S0.I3.i3.p1" class="ltx_para">
+<p class="ltx_p">(Optional: Review) Show that that there are</p>
+<table id="S0.E18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E18.m1" class="ltx_Math" alttext="\Omega(q)=\frac{(N+q-1)!}{q!(N-1)!}" display="block"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>N</mi><mo>+</mo><mi>q</mi></mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow><mrow><mrow><mi>q</mi><mo>!</mo></mrow><mo>⁢</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>!</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(18)</span></td>
+</tr>
+</table>
+<p class="ltx_p">ways to distribute <math id="S0.I3.i3.p1.m1" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> units of energy amongst the <math id="S0.I3.i3.p1.m2" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> atoms.</p>
+</div>
+<div id="S0.I3.i3.p2" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Hint:</em> Consider each oscillator to be a bin, and each bit of energy to be a ball. We are asking for the number of ways to put <math id="S0.I3.i3.p2.m1" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> balls in <math id="S0.I3.i3.p2.m2" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> bins.</p>
+</div>
+<div id="S0.I3.i3.p3" class="ltx_para">
+<p class="ltx_p">Take seven balls (units of energy) and five bins (oscillators), <math id="S0.I3.i3.p3.m1" class="ltx_Math" alttext="N=5" display="inline"><mrow><mi>N</mi><mo>=</mo><mn>5</mn></mrow></math> and <math id="S0.I3.i3.p3.m2" class="ltx_Math" alttext="q=7" display="inline"><mrow><mi>q</mi><mo>=</mo><mn>7</mn></mrow></math>. Lay out the <math id="S0.I3.i3.p3.m3" class="ltx_Math" alttext="7" display="inline"><mn>7</mn></math> energy units (balls) between the dashed lines.</p>
+<img src="x4.png" id="S0.I3.i3.p3.g1" class="ltx_graphics ltx_centering" width="338" height="44" alt="">
+<p class="ltx_p">To partition the <math id="S0.I3.i3.p3.m4" class="ltx_Math" alttext="7" display="inline"><mn>7</mn></math> energy energy units (balls) amongst the five oscillators (bins), I need four dividers, shown by the solid lines. In the figure below, I have paced the four dividers in one possible way, partitioning the energy so that the first bin has 2 units, the second bin has none, the third bin has <math id="S0.I3.i3.p3.m5" class="ltx_Math" alttext="3" display="inline"><mn>3</mn></math>, the fourth has two, and the fifth has none. The total number of objects (ball or divider) is <math id="S0.I3.i3.p3.m6" class="ltx_Math" alttext="q+(N-1)=11" display="inline"><mrow><mrow><mi>q</mi><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>11</mn></mrow></math>. Use this logic and the number of ways of choosing <math id="S0.I3.i3.p3.m7" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> of these objects to be balls to explain Eq. (<a href="#S0.E18" title="(18) ‣ item (c) ‣ Problem 3. Ways to partition energy amongst N quantum harmonic oscillators" class="ltx_ref"><span class="ltx_text ltx_ref_tag">18</span></a>).</p>
+</div>
+</li>
+<li id="S0.I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span> 
+<div id="S0.I3.i4.p1" class="ltx_para">
+<p class="ltx_p">(Optional: Review) Show that for <math id="S0.I3.i4.p1.m1" class="ltx_Math" alttext="N=400" display="inline"><mrow><mi>N</mi><mo>=</mo><mn>400</mn></mrow></math> oscillators and <math id="S0.I3.i4.p1.m2" class="ltx_Math" alttext="q=400" display="inline"><mrow><mi>q</mi><mo>=</mo><mn>400</mn></mrow></math> quanta the number of states is approximately</p>
+<table id="S0.E19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E19.m1" class="ltx_Math" alttext="e^{2N\ln 2}=e^{555}" display="block"><mrow><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>N</mi><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mn>2</mn></mrow></mrow></msup><mo>=</mo><msup><mi>e</mi><mn>555</mn></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(19)</span></td>
+</tr>
+</table>
+<p class="ltx_p">I quoted this number in lecture.</p>
+</div>
+</li>
+<li id="S0.I3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span> 
+<div id="S0.I3.i5.p1" class="ltx_para">
+<p class="ltx_p">Show more generally
+that for <math id="S0.I3.i5.p1.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> oscillators and <math id="S0.I3.i5.p1.m2" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> quanta
+that</p>
+<table id="S0.E20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E20.m1" class="ltx_Math" alttext="\Omega(E)=e^{N\left[(1+\bar{n})\ln(1+\bar{n})-\bar{n}\ln\bar{n}\right]}" display="block"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mrow><mi>N</mi><mo>⁢</mo><mrow><mo>[</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mrow><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mrow></mrow></mrow><mo>]</mo></mrow></mrow></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(20)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.I3.i5.p1.m3" class="ltx_Math" alttext="\bar{n}=q/N=E/(N\hbar\omega_{0})" display="inline"><mrow><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover><mo>=</mo><mrow><mi>q</mi><mo>/</mo><mi>N</mi></mrow><mo>=</mo><mrow><mi>E</mi><mo>/</mo><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.
+Show the entropy of the system is </p>
+<table id="S0.E21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E21.m1" class="ltx_Math" alttext="S=Nk_{B}\left[(1+\bar{n})\log(1+\bar{n})-\bar{n}\log\bar{n}\right]" display="block"><mrow><mi>S</mi><mo>=</mo><mrow><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mo>[</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>+</mo><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>-</mo><mrow><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mrow></mrow></mrow><mo>]</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(21)</span></td>
+</tr>
+</table>
+</div>
+</li>
+<li id="S0.I3.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(f)</span> 
+<div id="S0.I3.i6.p1" class="ltx_para">
+<p class="ltx_p">Starting from your results for <math id="S0.I3.i6.p1.m1" class="ltx_Math" alttext="S(E)" display="inline"><mrow><mi>S</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></math> show
+that</p>
+<table id="S0.E22" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E22.m1" class="ltx_Math" alttext="\frac{1}{T}=\frac{k_{B}}{\hbar\omega_{0}}\log\left(\frac{1+\bar{n}}{\bar{n}}\right)" display="block"><mrow><mfrac><mn>1</mn><mi>T</mi></mfrac><mo>=</mo><mrow><mfrac><msub><mi>k</mi><mi>B</mi></msub><mrow><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mfrac><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo>(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mrow><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></mfrac><mo>)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(22)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This is the same expression as in the previous problem. Compute
+<math id="S0.I3.i6.p1.m2" class="ltx_Math" alttext="\beta\hbar\omega_{0}" display="inline"><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></math> for the special case discussed in class where <math id="S0.I3.i6.p1.m3" class="ltx_Math" alttext="N=q=400" display="inline"><mrow><mi>N</mi><mo>=</mo><mi>q</mi><mo>=</mo><mn>400</mn></mrow></math>.</p>
+</div>
+</li>
+<li id="S0.I3.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(g)</span> 
+<div id="S0.I3.i7.p1" class="ltx_para">
+<p class="ltx_p">Rearrange Eq. (<a href="#S0.E22" title="(22) ‣ item (f) ‣ Problem 3. Ways to partition energy amongst N quantum harmonic oscillators" class="ltx_ref"><span class="ltx_text ltx_ref_tag">22</span></a>) to show that <math id="S0.I3.i7.p1.m1" class="ltx_Math" alttext="\bar{n}" display="inline"><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover></math> is related to the temperature as before:</p>
+<table id="S0.E23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E23.m1" class="ltx_Math" alttext="\bar{n}=\frac{1}{e^{\beta\hbar\omega_{0}}-1}\,." display="block"><mrow><mrow><mover accent="true"><mi>n</mi><mo stretchy="false">¯</mo></mover><mo>=</mo><mpadded width="+1.7pt"><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mrow><mi>β</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></msup><mo>-</mo><mn>1</mn></mrow></mfrac></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(23)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Do not <em class="ltx_emph ltx_font_italic">use</em> the results of the previous problem in any way – just compare the result.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="S0.SSx3.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Discussion: </span> We have computed properties of the solid in two
+ways. The first method, uses the partition functions at a fixed temperature. It works with an independent subsystem which have probability</p>
+<table id="S0.E24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E24.m1" class="ltx_Math" alttext="P_{m}^{\rm sub}=\frac{1}{Z}e^{-\beta\epsilon_{m}}\,." display="block"><mrow><mrow><msubsup><mi>P</mi><mi>m</mi><mi>sub</mi></msubsup><mo>=</mo><mrow><mfrac><mn>1</mn><mi>Z</mi></mfrac><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>e</mi><mrow><mo>-</mo><mrow><mi>β</mi><mo>⁢</mo><msub><mi>ϵ</mi><mi>m</mi></msub></mrow></mrow></msup></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(24)</span></td>
+</tr>
+</table>
+<p class="ltx_p">to be in microstate <math id="S0.SSx3.p3.m1" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> of the subsystem. This probability distribution is known as the canonical ensemble. It is technically easier.</p>
+</div>
+<div id="S0.SSx3.p4" class="ltx_para">
+<p class="ltx_p">The second method, directly counts the number of states of the total system to find the total entropy at a fixed total energy.
+The probability to be in a microstate
+of the full system is</p>
+<table id="S0.E25" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.E25.m1" class="ltx_Math" alttext="P_{m}^{\rm full}=\mbox{const. }=\frac{1}{\Omega(E)}" display="block"><mrow><msubsup><mi>P</mi><mi>m</mi><mi>full</mi></msubsup><mo>=</mo><mtext>const. </mtext><mo>=</mo><mfrac><mn>1</mn><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(25)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This probability distribution is known as the micro-canonical ensemble. It is conceptually important. The two ensembles are equivalent. They should be. We derived the Boltzmann factor and the canonical distribution from the entropy of the microcanonical ensemble.</p>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Tue Mar 14 10:54:40 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

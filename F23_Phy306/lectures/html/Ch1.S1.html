@@ -1,0 +1,384 @@
+<!DOCTYPE html><html>
+<head>
+<title>1.1 Big numbers and probability‣ Chapter 1 Kinetics</title>
+<!--Generated on Sun Feb 26 19:05:14 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on February 26, 2023.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="LaTeXML-navbar-left.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+<link rel="up" href="Ch1.html" title="Chapter 1 Kinetics">
+<link rel="start" href="main.html" title="">
+<link rel="prev" href="Ch1.html" title="Chapter 1 Kinetics">
+<link rel="next" href="Ch1.S2.html" title="1.2 Estimates of ideal gasses and the equipartition theorem ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S2.html" title="1.2 Estimates of ideal gasses and the equipartition theorem ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S3.html" title="1.3 The Boltzmann factor ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S4.html" title="1.4 The velocity and speed distributions ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S5.html" title="1.5 Change of variables and solid angles ‣ Chapter 1 Kinetics">
+<link rel="section" href="Ch1.S6.html" title="1.6 Pressure and effusion ‣ Chapter 1 Kinetics">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Kinetics">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 The first law">
+<link rel="appendix" href="A1.html" title="Appendix A Estimates">
+<link rel="appendix" href="A2.html" title="Appendix B Math">
+</head>
+<body>
+<nav class="ltx_page_navbar"><a href="main.html" title="" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch1.html" title="Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self">
+<span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Big numbers and probability</span></span>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS1" title="1.1.1 Big numbers ‣ 1.1 Big numbers and probability ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1.1 </span>Big numbers</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS2" title="1.1.2 Probability ‣ 1.1 Big numbers and probability ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1.2 </span>Probability</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#SS3" title="1.1.3 Independence and the central limit theorem ‣ 1.1 Big numbers and probability ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1.3 </span>Independence and the central limit theorem</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S2.html" title="1.2 Estimates of ideal gasses and the equipartition theorem ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Estimates of ideal gasses and the equipartition theorem</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S3.html" title="1.3 The Boltzmann factor ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>The Boltzmann factor</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S4.html" title="1.4 The velocity and speed distributions ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.4 </span>The velocity and speed distributions</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S5.html" title="1.5 Change of variables and solid angles ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.5 </span>Change of variables and solid angles</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="Ch1.S6.html" title="1.6 Pressure and effusion ‣ Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.6 </span>Pressure and effusion</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch2.html" title="Chapter 2 The first law" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>The first law</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="A1.html" title="Appendix A Estimates" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Estimates</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="A2.html" title="Appendix B Math" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Math</span></a></li>
+</ul>
+</div>
+</nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch1.html" title="Chapter 1 Kinetics" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a><a href="Ch1.html" title="Chapter 1 Kinetics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a><a href="Ch1.S2.html" title="1.2 Estimates of ideal gasses and the equipartition theorem ‣ Chapter 1 Kinetics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Estimates of ideal gasses and the equipartition theorem</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1.1 </span>Big numbers and probability</h1>
+<div class="ltx_dates">(February 26, 2023)</div>
+
+<section id="SS1" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1.1 </span>Big numbers</h2>
+
+<div id="SS1.p1" class="ltx_para">
+<p class="ltx_p">Take a number like Avogadro’s number, <math id="SS1.p1.m1" class="ltx_Math" alttext="N_{A}=6\times 10^{23}" display="inline"><mrow><msub><mi>N</mi><mi>A</mi></msub><mo>=</mo><mrow><mn>6</mn><mo>×</mo><msup><mn>10</mn><mn>23</mn></msup></mrow></mrow></math>.
+The number of rearrangements is of Avogadro’s number <math id="SS1.p1.m2" class="ltx_Math" alttext="N_{A}!" display="inline"><mrow><msub><mi>N</mi><mi>A</mi></msub><mo>!</mo></mrow></math> is exponentially
+big, meaning the logarithm is also big. We proved the Stirling approximation<span id="Ch1.footnote1" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>
+                <span class="ltx_tag ltx_tag_note">1</span>
+                
+                
+                
+              <math id="Ch1.footnote1.m1" class="ltx_Math" alttext="\log(x)" display="inline"><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the same as <math id="Ch1.footnote1.m2" class="ltx_Math" alttext="\ln(x)" display="inline"><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> throughout this course! If we ever need the log base 10 we will write <math id="Ch1.footnote1.m3" class="ltx_Math" alttext="\log_{10}(x)" display="inline"><mrow><msub><mi>log</mi><mn>10</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>. </span></span></span></p>
+<table id="Ch1.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E1.m1" class="ltx_Math" alttext="\log(N!)\simeq N\log N-N" display="block"><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mi>N</mi></mrow></mrow><mo>-</mo><mi>N</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The Stirling approximation can also be written</p>
+<table id="Ch1.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E2.m1" class="ltx_Math" alttext="\log(N!)\simeq N\log(N/e)\qquad\mbox{or}\qquad\qquad N!\simeq\left(\frac{N}{e}%
+\right)^{N}" display="block"><mrow><mrow><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>!</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mrow><mi>N</mi><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>N</mi><mo>/</mo><mi>e</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo mathvariant="italic" separator="true">  </mo><mtext>or</mtext></mrow></mrow><mo mathvariant="italic" separator="true">    </mo><mrow><mrow><mi>N</mi><mo>!</mo></mrow><mo>≃</mo><msup><mrow><mo>(</mo><mfrac><mi>N</mi><mi>e</mi></mfrac><mo>)</mo></mrow><mi>N</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.2)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Given <math id="SS1.p2.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> objects, the number off ways I can choose <math id="SS1.p2.m2" class="ltx_Math" alttext="r_{1}" display="inline"><msub><mi>r</mi><mn>1</mn></msub></math> objects for group 1, and the remaining <math id="SS1.p2.m3" class="ltx_Math" alttext="r_{2}" display="inline"><msub><mi>r</mi><mn>2</mn></msub></math> objects in group 2 (with <math id="SS1.p2.m4" class="ltx_Math" alttext="r_{2}+r_{2}=N" display="inline"><mrow><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>+</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><mo>=</mo><mi>N</mi></mrow></math>) is
+given by the ‘‘binomial” coefficients
+<span id="Ch1.footnote2" class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">2</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">2</sup>
+                <span class="ltx_tag ltx_tag_note">2</span>
+                
+                
+                
+              While we wont need it, the reason why its called the binomial coefficient is because the binomial <math id="Ch1.footnote2.m1" class="ltx_Math" alttext="x+y" display="inline"><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></math> raised to a power is
+
+<span id="A2.S4.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<span id="Ch1.E3"><span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E3.m1" class="ltx_Math" alttext="\displaystyle(x+y)^{N}=" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mi>N</mi></msup><mo>=</mo><mi></mi></mrow></math></span>
+<span class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E3.m2" class="ltx_Math" alttext="\displaystyle\underbrace{(x+y)(x+y)\ldots(x+y)}_{\mbox{$N$ factors}}" display="inline"><munder><munder accentunder="true"><mrow><mrow><mo movablelimits="false" stretchy="false">(</mo><mrow><mi>x</mi><mo movablelimits="false">+</mo><mi>y</mi></mrow><mo movablelimits="false" stretchy="false">)</mo></mrow><mo movablelimits="false">⁢</mo><mrow><mo movablelimits="false" stretchy="false">(</mo><mrow><mi>x</mi><mo movablelimits="false">+</mo><mi>y</mi></mrow><mo movablelimits="false" stretchy="false">)</mo></mrow><mo movablelimits="false">⁢</mo><mi mathvariant="normal">…</mi><mo movablelimits="false">⁢</mo><mrow><mo movablelimits="false" stretchy="false">(</mo><mrow><mi>x</mi><mo movablelimits="false">+</mo><mi>y</mi></mrow><mo movablelimits="false" stretchy="false">)</mo></mrow></mrow><mo movablelimits="false">⏟</mo></munder><mrow><mi>N</mi><mtext> factors</mtext></mrow></munder></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span>
+<span rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.3)</span></span></span></span>
+<span id="Ch1.E4"><span class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<span class="ltx_eqn_cell ltx_eqn_center_padleft"></span>
+<span class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E4.m1" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></span>
+<span class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E4.m2" class="ltx_Math" alttext="\displaystyle\sum_{r_{1}=0}^{N}{}^{N}C_{r_{1}r_{2}}\,x^{r_{1}}y^{r_{2}}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn></mrow><mi>N</mi></munderover></mstyle><mrow><mmultiscripts><mi>C</mi><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><none></none><mprescripts></mprescripts><none></none><mi>N</mi></mmultiscripts><mo>⁢</mo><msup><mi>x</mi><msub><mi>r</mi><mn>1</mn></msub></msup><mo>⁢</mo><msup><mi>y</mi><msub><mi>r</mi><mn>2</mn></msub></msup></mrow></mrow></math></span>
+<span class="ltx_eqn_cell ltx_eqn_center_padright"></span>
+<span rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.4)</span></span></span></span>
+</span>
+In passing to the second line I have to choose <math id="Ch1.footnote2.m2" class="ltx_Math" alttext="r_{1}" display="inline"><msub><mi>r</mi><mn>1</mn></msub></math> terms out of the <math id="Ch1.footnote2.m3" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> terms in the first line to take <math id="Ch1.footnote2.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and the remaining <math id="Ch1.footnote2.m5" class="ltx_Math" alttext="r_{2}" display="inline"><msub><mi>r</mi><mn>2</mn></msub></math> terms will take <math id="Ch1.footnote2.m6" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>. Try it out for <math id="Ch1.footnote2.m7" class="ltx_Math" alttext="N=2" display="inline"><mrow><mi>N</mi><mo>=</mo><mn>2</mn></mrow></math> and <math id="Ch1.footnote2.m8" class="ltx_Math" alttext="N=3" display="inline"><mrow><mi>N</mi><mo>=</mo><mn>3</mn></mrow></math>.
+The multinomial coefficients are similar, and expanding <math id="Ch1.footnote2.m9" class="ltx_Math" alttext="(x+y+z)^{N}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mi>N</mi></msup></math> will lead to a similar expansion involving <math id="Ch1.footnote2.m10" class="ltx_Math" alttext="x^{r_{1}}y^{r_{2}}z^{r_{3}}" display="inline"><mrow><msup><mi>x</mi><msub><mi>r</mi><mn>1</mn></msub></msup><mo>⁢</mo><msup><mi>y</mi><msub><mi>r</mi><mn>2</mn></msub></msup><mo>⁢</mo><msup><mi>z</mi><msub><mi>r</mi><mn>3</mn></msub></msup></mrow></math>.
+</span></span></span></p>
+<table id="Ch1.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E5.m1" class="ltx_Math" alttext="{}^{N}C_{r_{1}r_{2}}=\frac{N!}{r_{1}!r_{2}!}" display="block"><mrow><mmultiscripts><mi>C</mi><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>2</mn></msub></mrow><none></none><mprescripts></mprescripts><none></none><mi>N</mi></mmultiscripts><mo>=</mo><mfrac><mrow><mi>N</mi><mo>!</mo></mrow><mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>!</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5)</span></td>
+</tr>
+</table>
+<p class="ltx_p">You should be able to explain this formula.
+This generalizes – if I have <math id="SS1.p2.m5" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> objects, and I select <math id="SS1.p2.m6" class="ltx_Math" alttext="r_{1}" display="inline"><msub><mi>r</mi><mn>1</mn></msub></math> objects into group 1, <math id="SS1.p2.m7" class="ltx_Math" alttext="r_{2}" display="inline"><msub><mi>r</mi><mn>2</mn></msub></math> objects into group 2, and the remaining <math id="SS1.p2.m8" class="ltx_Math" alttext="r_{3}" display="inline"><msub><mi>r</mi><mn>3</mn></msub></math> objects into group three (with <math id="SS1.p2.m9" class="ltx_Math" alttext="r_{1}+r_{2}+r_{3}=N" display="inline"><mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>+</mo><msub><mi>r</mi><mn>2</mn></msub><mo>+</mo><msub><mi>r</mi><mn>3</mn></msub></mrow><mo>=</mo><mi>N</mi></mrow></math>), the number of ways to do this is given by the “multinomial” coefficient:</p>
+<table id="Ch1.E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E6.m1" class="ltx_Math" alttext="{}^{N}C_{r_{1}r_{2}r_{3}}=\frac{N!}{r_{1}!r_{2}!r_{3}!}" display="block"><mrow><mmultiscripts><mi>C</mi><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>2</mn></msub><mo>⁢</mo><msub><mi>r</mi><mn>3</mn></msub></mrow><none></none><mprescripts></mprescripts><none></none><mi>N</mi></mmultiscripts><mo>=</mo><mfrac><mrow><mi>N</mi><mo>!</mo></mrow><mrow><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>!</mo></mrow><mo>⁢</mo><mrow><msub><mi>r</mi><mn>3</mn></msub><mo>!</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">You should be able to explain this formula.</p>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1.2 </span>Probability</h2>
+
+<div id="SS2.p1" class="ltx_para">
+<p class="ltx_p">First consider a set of discrete outcomes <math id="SS2.p1.m1" class="ltx_Math" alttext="i=1\ldots N" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>N</mi></mrow></mrow></math>, each with probability <math id="SS2.p1.m2" class="ltx_Math" alttext="\mathscr{P}_{i}" display="inline"><msub><mi class="ltx_font_mathscript">𝒫</mi><mi>i</mi></msub></math> (like a weighted six sided die). The sum of probabilities is unity</p>
+<table id="Ch1.E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E7.m1" class="ltx_Math" alttext="\sum_{i}\mathscr{P}_{i}=1" display="block"><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder><msub><mi class="ltx_font_mathscript">𝒫</mi><mi>i</mi></msub></mrow><mo>=</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.7)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Associated
+with each outcome is a quantity <math id="SS2.p2.m1" class="ltx_Math" alttext="x_{i}" display="inline"><msub><mi>x</mi><mi>i</mi></msub></math>, e.g. <math id="SS2.p2.m2" class="ltx_Math" alttext="x_{3}" display="inline"><msub><mi>x</mi><mn>3</mn></msub></math> the money you get for rolling a three. Then the mean of <math id="SS2.p2.m3" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> (the mean money you get by rolling the die)</p>
+<table id="Ch1.E8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E8.m1" class="ltx_Math" alttext="\left\langle x\right\rangle=\sum_{i}\mathscr{P}_{i}x_{i}" display="block"><mrow><mrow><mo>⟨</mo><mi>x</mi><mo>⟩</mo></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder><mrow><msub><mi class="ltx_font_mathscript">𝒫</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>x</mi><mi>i</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.8)</span></td>
+</tr>
+</table>
+<p class="ltx_p">For a given quantity <math id="SS2.p2.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> we define the deviation from
+the average</p>
+<table id="Ch1.E9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E9.m1" class="ltx_Math" alttext="\delta x\equiv x-\left\langle x\right\rangle" display="block"><mrow><mrow><mi>δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>≡</mo><mrow><mi>x</mi><mo>-</mo><mrow><mo>⟨</mo><mi>x</mi><mo>⟩</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.9)</span></td>
+</tr>
+</table>
+<p class="ltx_p">and the average deviation is zero <math id="SS2.p2.m5" class="ltx_Math" alttext="\left\langle\delta x\right\rangle=0" display="inline"><mrow><mrow><mo>⟨</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>⟩</mo></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+Then the <em class="ltx_emph ltx_font_italic">variance</em> is the mean of the squared deviation
+</p>
+<table id="Ch1.E10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E10.m1" class="ltx_Math" alttext="\left\langle\delta x^{2}\right\rangle=\left\langle(x-\left\langle x\right%
+\rangle)^{2}\right\rangle=\left\langle x^{2}\right\rangle-\left\langle x\right%
+\rangle^{2}" display="block"><mrow><mrow><mo>⟨</mo><mrow><mi>δ</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>⟩</mo></mrow><mo>=</mo><mrow><mo>⟨</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>-</mo><mrow><mo>⟨</mo><mi>x</mi><mo>⟩</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>⟩</mo></mrow><mo>=</mo><mrow><mrow><mo>⟨</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⟩</mo></mrow><mo>-</mo><msup><mrow><mo>⟨</mo><mi>x</mi><mo>⟩</mo></mrow><mn>2</mn></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.10)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The standard deviation is</p>
+<table id="Ch1.E11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E11.m1" class="ltx_Math" alttext="\sigma_{x}=\sqrt{\left\langle x^{2}\right\rangle}" display="block"><mrow><msub><mi>σ</mi><mi>x</mi></msub><mo>=</mo><msqrt><mrow><mo>⟨</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⟩</mo></mrow></msqrt></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.11)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p3" class="ltx_para">
+<p class="ltx_p">For continuous variable we need the concept of a probability distribution. The probability, <math id="SS2.p3.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow></math>, to find a particle with position in a <em class="ltx_emph ltx_font_italic">range </em> between <math id="SS2.p3.m2" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="SS2.p3.m3" class="ltx_Math" alttext="x+{\rm d}x" display="inline"><mrow><mi>x</mi><mo>+</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></math>, which we denote <math id="SS2.p3.m4" class="ltx_Math" alttext="[x,x+{\rm d}x]" display="inline"><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></math>, is denoted</p>
+<table id="Ch1.E12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E12.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}=P(x){\rm d}x\,," display="block"><mrow><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>x</mi></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.12)</span></td>
+</tr>
+</table>
+<p class="ltx_p">where the probability <em class="ltx_emph ltx_font_italic">density</em> <math id="SS2.p3.m5" class="ltx_Math" alttext="P(x)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> is</p>
+<table id="Ch1.E13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E13.m1" class="ltx_Math" alttext="P(x)=\frac{{\rm d}\mathscr{P}}{{\rm d}x}\,." display="block"><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mpadded width="+1.7pt"><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi class="ltx_font_mathscript">𝒫</mi></mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.13)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS2.p4" class="ltx_para">
+<p class="ltx_p">A very important probability density is the Gaussian or “normal” distribution which you should try to memorize:</p>
+<table id="Ch1.E14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E14.m1" class="ltx_Math" alttext="P(x)=\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-x^{2}/2\sigma^{2}}" display="block"><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><msup><mi>σ</mi><mn>2</mn></msup></mrow></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.14)</span></td>
+</tr>
+</table>
+<p class="ltx_p">It is also called the Bell shaped curve and you should be able to sketch it.
+In class and in homework we showed:</p>
+<table id="A2.S4.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.E15"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E15.m1" class="ltx_Math" alttext="\displaystyle\int_{-\infty}^{\infty}P(x){\rm d}x=" display="inline"><mrow><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E15.m2" class="ltx_Math" alttext="\displaystyle 1" display="inline"><mn>1</mn></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.15)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">And worked out a number of integrals</p>
+<table id="A2.S4.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.E16"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E16.m1" class="ltx_Math" alttext="\displaystyle\left\langle x^{n}\right\rangle=\int_{-\infty}^{\infty}P(x)x^{n}{%
+\rm d}x=\sigma^{n}C_{n}" display="inline"><mrow><mrow><mo>⟨</mo><msup><mi>x</mi><mi>n</mi></msup><mo>⟩</mo></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mrow><mo>-</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup></mstyle><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><msup><mi>σ</mi><mi>n</mi></msup><mo>⁢</mo><msub><mi>C</mi><mi>n</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.16)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The numbers are <math id="SS2.p4.m1" class="ltx_Math" alttext="C_{0}=1" display="inline"><mrow><msub><mi>C</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow></math>, <math id="SS2.p4.m2" class="ltx_Math" alttext="C_{2}=1" display="inline"><mrow><msub><mi>C</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow></math>, <math id="SS2.p4.m3" class="ltx_Math" alttext="C_{4}=3" display="inline"><mrow><msub><mi>C</mi><mn>4</mn></msub><mo>=</mo><mn>3</mn></mrow></math> with odd moments, such as <math id="SS2.p4.m4" class="ltx_Math" alttext="\left\langle x\right\rangle" display="inline"><mrow><mo>⟨</mo><mi>x</mi><mo>⟩</mo></mrow></math>, being zero.</p>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection">
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1.3 </span>Independence and the central limit theorem</h2>
+
+<div id="SS3.p1" class="ltx_para">
+<p class="ltx_p">Consider a two dimensional probability distribution</p>
+<table id="Ch1.E17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E17.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}_{x,y}=P(x,y){\rm d}x{\rm d}y" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi class="ltx_font_mathscript">𝒫</mi><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></msub></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.17)</span></td>
+</tr>
+</table>
+<p class="ltx_p">This is the probability of <math id="SS3.p1.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> in <math id="SS3.p1.m2" class="ltx_Math" alttext="[x,x+{\rm d}x]" display="inline"><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></math> <em class="ltx_emph ltx_font_italic">and</em> <math id="SS3.p1.m3" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> in <math id="SS3.p1.m4" class="ltx_Math" alttext="[y,y+{\rm d}y]" display="inline"><mrow><mo stretchy="false">[</mo><mi>y</mi><mo>,</mo><mrow><mi>y</mi><mo>+</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo stretchy="false">]</mo></mrow></math>.
+</p>
+</div>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">We say that <math id="SS3.p2.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="SS3.p2.m2" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> are <em class="ltx_emph ltx_font_italic">independent</em> if <math id="SS3.p2.m3" class="ltx_Math" alttext="P(x,y)=P(x)P(y)" display="inline"><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> factorizes so that the probability of finding <math id="SS3.p2.m4" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> and <math id="SS3.p2.m5" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> (in interval <math id="SS3.p2.m6" class="ltx_Math" alttext="{\rm d}x\,{\rm d}y" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>x</mi></mpadded><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>y</mi></mrow></math>) is probability of <math id="SS3.p2.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> (in interval <math id="SS3.p2.m8" class="ltx_Math" alttext="{\rm d}x" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow></math>) times the probability of in <math id="SS3.p2.m9" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> (in interval <math id="SS3.p2.m10" class="ltx_Math" alttext="{\rm d}y" display="inline"><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>y</mi></mrow></math>)</p>
+<table id="Ch1.E18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E18.m1" class="ltx_Math" alttext="{\rm d}\mathscr{P}_{x,y}=P(x){\rm d}x\times P(y){\rm d}y" display="block"><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><msub><mi class="ltx_font_mathscript">𝒫</mi><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></msub></mrow><mo>=</mo><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>x</mi></mrow><mo>×</mo><mi>P</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.18)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The constants can be arranged so that <math id="SS3.p2.m11" class="ltx_Math" alttext="P(x)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="SS3.p2.m12" class="ltx_Math" alttext="P(y)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math> are separately normalized, e.g.
+</p>
+<table id="Ch1.E19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E19.m1" class="ltx_Math" alttext="\int P(x){\rm d}x=1\quad\mbox{and}\quad\int P(y){\rm d}y=1" display="block"><mrow><mrow><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mn>1</mn><mo mathvariant="italic" separator="true"> </mo><mtext>and</mtext></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mo largeop="true" symmetric="true">∫</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo rspace="0pt">d</mo><mi>y</mi></mrow></mrow></mrow><mo>=</mo><mn>1</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.19)</span></td>
+</tr>
+</table>
+<p class="ltx_p">When the distributions are independent</p>
+<table id="Ch1.E20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E20.m1" class="ltx_Math" alttext="\left\langle xy\right\rangle=\left\langle x\right\rangle\left\langle y\right\rangle" display="block"><mrow><mrow><mo>⟨</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>⟩</mo></mrow><mo>=</mo><mrow><mrow><mo>⟨</mo><mi>x</mi><mo>⟩</mo></mrow><mo>⁢</mo><mrow><mo>⟨</mo><mi>y</mi><mo>⟩</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.20)</span></td>
+</tr>
+</table>
+</div>
+<div id="SS3.p3" class="ltx_para">
+<p class="ltx_p">For definiteness, consider a sequence of random steps in position <math id="SS3.p3.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>.
+Assume <math id="SS3.p3.m2" class="ltx_Math" alttext="x_{1}" display="inline"><msub><mi>x</mi><mn>1</mn></msub></math>, the step in position from step number one, is drawn from the probability distribution <math id="SS3.p3.m3" class="ltx_Math" alttext="P(x)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>.
+Also assume second step <math id="SS3.p3.m4" class="ltx_Math" alttext="x_{2}" display="inline"><msub><mi>x</mi><mn>2</mn></msub></math> is drawn from the same distribution, and that the choice of <math id="SS3.p3.m5" class="ltx_Math" alttext="x_{2}" display="inline"><msub><mi>x</mi><mn>2</mn></msub></math> is no way dependent on <math id="SS3.p3.m6" class="ltx_Math" alttext="x_{1}" display="inline"><msub><mi>x</mi><mn>1</mn></msub></math>.
+Similarly, the third step <math id="SS3.p3.m7" class="ltx_Math" alttext="x_{3}" display="inline"><msub><mi>x</mi><mn>3</mn></msub></math> is drawn from <math id="SS3.p3.m8" class="ltx_Math" alttext="P(x)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and is no way dependent on <math id="SS3.p3.m9" class="ltx_Math" alttext="x_{1}" display="inline"><msub><mi>x</mi><mn>1</mn></msub></math> or <math id="SS3.p3.m10" class="ltx_Math" alttext="x_{2}" display="inline"><msub><mi>x</mi><mn>2</mn></msub></math>; and so on for <math id="SS3.p3.m11" class="ltx_Math" alttext="x_{4},x_{5},x_{6}\ldots" display="inline"><mrow><msub><mi>x</mi><mn>4</mn></msub><mo>,</mo><msub><mi>x</mi><mn>5</mn></msub><mo>,</mo><mrow><msub><mi>x</mi><mn>6</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi></mrow></mrow></math>. Then we want to know what is the mean, variance, and probability distribution of the sum</p>
+<table id="Ch1.E21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E21.m1" class="ltx_Math" alttext="Y=x_{1}+x_{2}+\ldots+x_{N}" display="block"><mrow><mi>Y</mi><mo>=</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><msub><mi>x</mi><mi>N</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.21)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The answer is for the mean and variance are</p>
+<table id="A2.S4.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="Ch1.E22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E22.m1" class="ltx_Math" alttext="\displaystyle\left\langle Y\right\rangle=" display="inline"><mrow><mrow><mo>⟨</mo><mi>Y</mi><mo>⟩</mo></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E22.m2" class="ltx_Math" alttext="\displaystyle N\left\langle x\right\rangle" display="inline"><mrow><mi>N</mi><mo>⁢</mo><mrow><mo>⟨</mo><mi>x</mi><mo>⟩</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.22)</span></td>
+</tr></tbody>
+<tbody id="Ch1.E23"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ch1.E23.m1" class="ltx_Math" alttext="\displaystyle\left\langle\delta Y^{2}\right\rangle=" display="inline"><mrow><mrow><mo>⟨</mo><mrow><mi>δ</mi><mo>⁢</mo><msup><mi>Y</mi><mn>2</mn></msup></mrow><mo>⟩</mo></mrow><mo>=</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ch1.E23.m2" class="ltx_Math" alttext="\displaystyle N\left\langle\delta x^{2}\right\rangle" display="inline"><mrow><mi>N</mi><mo>⁢</mo><mrow><mo>⟨</mo><mrow><mi>δ</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>⟩</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.23)</span></td>
+</tr></tbody>
+</table>
+</div>
+<div id="SS3.p4" class="ltx_para">
+<p class="ltx_p">In general the probability of <math id="SS3.p4.m1" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> depends on <math id="SS3.p4.m2" class="ltx_Math" alttext="P(x)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>, and nothing much can be said about <math id="SS3.p4.m3" class="ltx_Math" alttext="P(Y)" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math>. However, if <math id="SS3.p4.m4" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> is large <math id="SS3.p4.m5" class="ltx_Math" alttext="N\gg 1" display="inline"><mrow><mi>N</mi><mo>≫</mo><mn>1</mn></mrow></math>, then, remarkably, the probability of <math id="SS3.p4.m6" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> takes on a universal form of a Normal distribution</p>
+<table id="Ch1.E24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch1.E24.m1" class="ltx_Math" alttext="P(Y)=\frac{1}{\sqrt{2\pi\sigma_{Y}^{2}}}\exp\left[-(Y-\left\langle Y\right%
+\rangle)^{2}/2\sigma_{Y}^{2}\right]" display="block"><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msubsup><mi>σ</mi><mi>Y</mi><mn>2</mn></msubsup></mrow></msqrt></mfrac><mo>⁢</mo><mrow><mi>exp</mi><mo>⁡</mo><mrow><mo>[</mo><mrow><mo>-</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>Y</mi><mo>-</mo><mrow><mo>⟨</mo><mi>Y</mi><mo>⟩</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow><mo>⁢</mo><msubsup><mi>σ</mi><mi>Y</mi><mn>2</mn></msubsup></mrow></mrow><mo>]</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.24)</span></td>
+</tr>
+</table>
+<p class="ltx_p">with <math id="SS3.p4.m7" class="ltx_Math" alttext="\sigma_{Y}=\sqrt{\left\langle\delta Y^{2}\right\rangle}" display="inline"><mrow><msub><mi>σ</mi><mi>Y</mi></msub><mo>=</mo><msqrt><mrow><mo>⟨</mo><mrow><mi>δ</mi><mo>⁢</mo><msup><mi>Y</mi><mn>2</mn></msup></mrow><mo>⟩</mo></mrow></msqrt></mrow></math>.
+We did not go over the proof, and it is enough at this level to just accept it as a statement of fact</p>
+</div>
+</section>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch1.html" title="Chapter 1 Kinetics" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a><a href="Ch1.S2.html" title="1.2 Estimates of ideal gasses and the equipartition theorem ‣ Chapter 1 Kinetics" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Estimates of ideal gasses and the equipartition theorem</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Sun Feb 26 19:05:14 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
