@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+
+<!--  Title ---------------------------------------- --> 
+<head>
+  <title>Physics 306 -- Fall 2023</title>
+  <meta name="Physics 306" content="Physics 306 -- Fall 2023" />
+  <meta name="Thermal Physics" content="Physics, Thermal" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+
+    <!-- Menu -------------------------------------  -->
+    <div id="header">
+      <div id="logo">
+        <h1>Thermal Physics</h1>
+        <div class="slogan">Physics 306: Fall 2023</div>
+      </div>
+
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Syllabus</a></li>
+          <li><a href="homework.html">Homework</a></li>
+          <li class="current"><a href="lectures.html">Lectures</a></li>
+           <li><a href="notes.html">Notes</a></li>  
+           <li><a href="exams.html">Exams</a></li>
+        </ul>
+      </div>
+    </div>
+
+<!-- Content ------------------------------------- -->
+<div id="site_content">
+<div id="content">
+
+    <h3>Lecture Notes:</h3>
+
+     <br>
+
+     <h3> Outline: </h3>
+     <p>
+     <ul>
+        <li> <a href="#FirstLaw">Basic Themodynamics</a> </li>
+        <li> <a href="#Probability">Probability and Statistics</a> </li>
+        <li> <a href="#FirstLook">Basics of Partition Functions</a> </li>
+        <li> <a href="#Entropy">Entropy and the Second Law</a> </li> 
+        <li> <a href="#Thermo">Thermodynamics and Free Energy</a> </li>
+        <li> <a href="#Partition">Statistical Mechanics from the Canonical Ensemble</a> </li>
+        <li> <a href="#ChemicalEq">Chemical Equilibrium</a> </li>
+        <li> <a href="#QuantumStatMech">Quantum Gasses</a> </li>
+     </ul>
+     </p>
+<br>
+<hr>
+<br>
+     <h3> <a name="FirstLaw"></a> Basic Thermodynamics </h3>
+     <p>
+      <ul> 
+         <li> <i>Estimates of ideal gasses</i>
+            <ul>
+               <li> <a href="./lectures/EquipartitionTheorem.pdf">Ideal Gas 1</a>: Ideal gas law, basic constants,  and the equipartition theorem. </li>
+               <li> <a href="./lectures/estimates.pdf">Ideal Gas 2</a>: Estimates of interparticle spacing, typical speed, debroglie wavelength. </li>
+            </ul>
+         </li>
+         <!--
+         <li> <i> <a href="./lectures/thermometers.pdf">Measuring Temperature</a></i>
+            <ul>
+               <li> Discussion Largely Based on Zemansky. Chapter 1 </li>
+               <li> Discusses how the absolute temperature scale was measured, and how other thermometers are calibrated agains this.
+            </ul>
+          <li>
+         -->
+         <li> <i> The First Law and Work</i>
+            <ul>
+               <li> <a href="./lectures/FirstLaw.pdf">Work, the first law, and isothermal expansions</a>. Also discusses the difference between an inexact differential (an small amount dW and dQ), versus an exact differential (a small change dE).  </li>
+            </ul>
+          </li>
+         <li> <i> Specific Heats</i>
+            <ul>
+               <li> <a href="./lectures/SpecificHeats.pdf">Specific heats</a> describe how energy entering the system changes the temperature. We parametrize this with specific heats Cv and Cp. I discuss these quantities and some measurements of them for gasses and solids. </li>
+            </ul>
+          </li>
+         <li> <i> Engines</i>
+            <ul>
+               <li> <a href="./lectures/AdiabaticExpansion.pdf">The adiabatic expansion</a>
+                  <li> <a href="./lectures/Engines.pdf">Engines</a>. Describes the Otto Cycle. The carnot enegine is also briefly described. In class we presented slides about how the car engine actually works, see  <a href="./lectures/EngineSlides/index.html">slides</a>. You should look at these slides while you read the notes on the Otto cycle, to try and make it a bit less abstract. 
+            </ul>
+          </li>
+         <li> <i> Non Ideal Gasses and general substances</i>
+            <ul>
+               <li> <a href="./lectures/eos.pdf">The equation of state </a> are the functions P(T,V) or V(T,P). The expansion coefficients and the isothermal compressibility parametrize the V(T,P) relation.  At the end, I give two formulas, who's significance can be understood here, but which can be proved only later. The first relates the adiabatic compressibility to the isothermal one. The second relates Cv and Cp for a general substance.
+                <li> <a href="./lectures/energy.pdf">The energy function</a> Describes the energy of a system U(T,V) how it depends on temperature and volume.  The specific heats tell one a lot about this function.
+            </ul>
+            </li>
+         <li> <i> Enthalpy </i>
+            <ul> 
+               <li> Discusses changes in phase, interpreting the Latent Heat as the change in Enthalpy of the system. Discusses chemical reactions in atmosphere and interprets the heat released in terms of change in enthalpy <a href="./lectures/Enthalpy.pdf">Lecture</a> </ul>
+         </ul>
+      </ul>
+     </p>
+     
+     <h3> <a name="Probability"></a>Probability and Statistics </h3>
+     <p> 
+      <ul> 
+         <li> <a href="./lectures/Probability_SterlingApprox.pdf">The Sterling Approximation and big numbers</a>
+         <li> <a href="./lectures/Probability_Combinatorics.pdf">Basic Combinatorics</a>
+         <li> <a href="./lectures/Probability_Distributions.pdf">Probability Distributions and Change of Variables</a>
+         <li> <a href="./lectures/Probability_CentralLimit.pdf">Independent Variables and the Central Limit Theorem</a>
+         <li> <a href="./lectures/Probability_Entropy.pdf">Entropy of a Probability Distribution</a>
+            <ul> <li> Shows how to count configurations for large N, and derives the Shannon formula. </li>
+         </ul>
+      </ul>
+      </p>
+
+       <h3> <a name="FirstLook"> </a> Basics of Partition Functions </h3>
+       <p>
+       <ul>
+            <li> <a href="./lectures/ZBasics.pdf">The Boltzmann Factor and Partition Function Basics</a></i>
+            <ul>
+               <li> First describes the partition functions basics </li>
+               <li> Computes the partition function for a two state system </li>
+               <li> Describes the partition function for a classical systems with a  particle in a 1D box </li>
+            </ul>
+         <li> <i><a href="./lectures/speed_distribution.pdf">Distribution of speeds and velocities</a></i>
+            <ul>
+               <li> This describes the distributions of velocities in a classical gas in three dimensions, using the partition function knowledge. </li>
+               <li> This covers chapter 5.  There are a tiny bits of notational change. The book calls g(vx) what I call P(vx).  And it calls  f(v), what I call P(v).  It also doesnt give a name for P(vx, vy, vz) = P(vx) P(vy) P(vz). </li>
+            </ul>
+         </li>
+
+         <!--
+         <li> <i><a href="./lectures/changeofvars.pdf">Spherical coordinates</a></i>
+            <ul>
+               <li>  This covers some mathematics needed in Chapter 6. Blundell introduces it in Chapter 6, but often in a somewhat incomplete way.  
+            </ul>
+         </li>
+
+         <li> <i><a href="./lectures/effusion.pdf">Pressure and Effusion</a></i>
+            <ul>
+               <li>  Computes the pressure and effusion rate for a monoatomic ideal gas. Completes Chapter 6 and Chapter 7.   Introduces the concept of flux  dN/dtdA
+            </ul>
+         </li>
+         -->
+      <ul>
+     </p>
+     <h3> <a name="Entropy"></a> Entropy and the Second Law</h3>
+     <p>
+     <h5> <a name="EntropyAndMicrocanonical"></a> Entropy and the Microcanonical Ensemble </a> </h5>
+     <ul>
+         <li> <i> <a href="./lectures/Entropy_Increase.pdf">Entropy, Temperature, and Energy Equilibrium</a></i>.
+            Gives an introduction to entropy based on N two state systems. Defines the inverse temperature as dS/dE.
+         </li>
+         <li> <i> <a href="./lectures/Entropy_Probability.pdf">The Boltmann factor</a></i>.  Uses notions of 
+            entropy to find the probability of a partition of energy E=E1 + E2 . This is used to derive the
+            Boltzmann Factor.
+         <li> <i> <a href="./lectures/Entropy_MicrocanonicalAlgo.pdf">The microcanonical algorithm</a></i>.
+            Shows how the relation between temperature cand energy an be found by finding the entropy, i.e. by counting. This 
+            is illustrated with a concrete example of N  two state atoms.
+         </li>
+         <li> <i> <a href="./lectures/Entropy_PhaseSpace.pdf">The microcanonical algorithm for an ideal gas</a></i>. 
+            Computes the entropy of an ideal gas and shows the microcanonical algorithm in this case.
+         </li>
+         <li>
+            <i> <a href="./lectures/EntropyAndMechanicalEquilibrium.pdf">Entropy, Pressure, and Mechanical Equilibrium</a></i>. Discusses mechanical equilibrium (equalities of pressures), in equilibrium.   </li>
+         <li>
+           <i> <a href="./lectures/EntropyAsMotherOfAll.pdf">Entropy as the Origin of Everythings</a></i>. Discusses how the pressure p(T,V) and energy U(T,V) are determined from the entropy.
+         </li>
+     </ul>
+     </p>
+     <p>
+     <h5 name="EntropyAndHeat"> Entropy in Macroscopic Systems </h5>
+     <ul>
+         <li>
+           <i> <a href="./lectures/Entropy_Irreversibility.pdf">Entropy and Irreversibility</a></i>. Discusses entropy and irreversibility.
+         </li>
+         <li>
+           <i> <a href="./lectures/Entropy_Heat.pdf">Entropy and Heat Flow</a></i>.  Works through several examples of
+           entropy associated with heat flow.  
+         </li>
+         <li>
+           <i> <a href="./lectures/JouleThompsonExpansion.pdf">Entropy change in free expansion</a></i>.  Works through 
+           entropy change of a free expansion.  
+         </li>
+         <li>
+           <i> <a href="./lectures/EntropyOfMixing.pdf">Entropy of mixing</a></i>.  Entropy change due to mixing of two gasses. This was skipped in class. Chapter 14.6
+         </li>
+         <li>
+           <i> <a href="./lectures/Entropy_Materials.pdf">Finding the entropy experimentally for real substances</a></i>. Discusses how to integrate specific heats, and heat of transition (e.g. the latent heat of boiling) to determine the entropy from thermodynamic data.
+         </li>
+         <li>
+     </ul>
+     </p>
+     <h3> <a name="Thermo"></a> Thermodynamics and Free Energy </h3>
+     <p>
+     <ul>
+        <li>
+        <li>  <a href="./lectures/Thermodynamics_EHFG.pdf">Free Energy</a>.
+           <ul>
+              <li> First we a give a review of Energy and Enthalpy, showing the mathematical structure.</li>
+              <li> Then we define the free energy, and show that in equilibrium the work done at constant temperature is the change in the free energy. </li>
+              <li> We show that a system
+                 (interacting with a reservoir at temperature T) will reach equilibrium when its free energy is minimized. </li>
+              <li> We show that the work maximum work one can get out of a thermodynamic process is given by the change  in Free Energy </li>
+              <li> We introduce the Gibbs Free energy, which slighly generalizes the Free Energy, and is appropriate when temperature and pressure (T,p) are held fixed by an external reservior. </li>
+                    </ul>
+        <li> <a href="./lectures/thermo_maxwell_relations.pdf">Maxwell Relations</a>. Maxwell and their uses. </li>
+        <li> <a href="./lectures/thermo_entropy_equations.pdf">Entropy equations</a>. Shows how the entropy and other thermodynamic potentials can be measured from specific heats, expansion coefficients, compressibilities. </li>
+     </ul>
+     </p>
+     <h3> <a name="Partition"></a> Partition Functions of Simple Systems </h3>
+     <p>
+     <ul>
+        <li>  <a href="./lectures/Z_Entropy.pdf">Entropy from partition functions</a>. Describes how to compute the entropy from a partition function, with the two state system as an example.
+        <li>  <a href="./lectures/Z_Factorization.pdf">Factorization of partition functions</a>. A simple property which guarantees that the free energy and entropy is extensive.  </li>
+        <li> <a href="./lectures/Z_IdealGas.pdf">Ideal gas</a>. 
+           The ideal gas revisited.
+        </li> 
+        <li> <a href="./lectures/Z_TwoStateGas.pdf">Ideal gas with internal states</a>. This generalizes the two state gas to a gas with two internal states two state gas. </li>
+        <li>  <a href="./lectures/Z_DiatomicGas.pdf">Diatomic gas</a>. This uses the two state gas, but discusses the rotational quantum states of a diatomic gas, i.e. the internal states are the quantized rotations.</li>
+        <!--
+        <li> <a href="./lectures/partition_quantum.pdf">Quantum mechanics in the ideal gas</a>.   Discusses the sum over states again, and the identity of particles.</li>
+        <li> <a href="./lectures/partition_rotations.pdf">Partition functions of rotations</a>.  Describes the quantum mechanical description of molecular rotations.</li>
+        -->
+        <li> <a href="./lectures/Z_ParticleInBox.pdf">The particle in the box</a>. This note describes in detail the particle in the box partition function. The focus here is showing how the sum of states becomes an integral over classical configurations.
+        <li> <a href="./lectures/partition_paramagnets.pdf">Partition functions of paramagnets</a>.  Describes what is a paramagnet and how to calculate the properties of an ideal paramagnet.</li>
+     </ul>
+     </p>
+     <h3> <a name="ChemicalEq"></a> Chemical equilibrium </h3>
+     <p>
+     <ul>
+        <li> <a href="./lectures/chemical_potential1.pdf">Chemical Equilibirum: Part 1</a>. The chemical potential and chemical equilibrium. </li>
+        <li> <a href="./lectures/chemical_potential2.pdf">Chemical Equilibirum: Part 2</a>. The grand canonical ensemble.</li>
+        <li> <a href="./lectures/chemical_potential3.pdf">Chemical Reactions</a>. Equilibrium between species.</li>
+     </ul>
+     </p>
+     <h3> <a name="QuantumStatMech"></a> Quantum Gasses </h3>
+     <p>
+     <h5> <a name="PhotonGas"></a> Photon Gas</h5>
+     <ul>
+        <li> <a href="./lectures/QuantumStatMechBasics.pdf">The basics of quantum gasses</a>. Quantum statistics of bosons and fermions. Occupation numbers</li>
+        <li> <a href="./lectures/quantum_statmech.pdf">The Photon Gas: Number and Energy Density</a>. The energy and number of photons per volume. </li>
+        <li> <a href="./lectures/quantum_statmech2.pdf">The Photon Gas: The spectrum</a>. The number of photons per frequency inteval </li>
+        <li> <a href="./lectures/PhotonGasPressure.pdf">The Photon Gas: The Pressure and Entropy</a>. The pressure and entropy per volume of a photon gas </li>
+        <li> <a href="./lectures/PhotonFlux.pdf">Photon Flux</a>. The flux of photons. This makes a lot of use of spherical coordinates and the notion of solid angle in the spherical geometry: <a href="./lectures/SolidAngle.pdf">Spherical Coordinates and Solid Angle Review</a> </li>
+     </ul>
+     </p>
+     <h5> <a name="FermiGas"></a> Degenerate Fermi Gas </h5>
+     <ul>
+        <li> <a href="./lectures/FermiGas.pdf">The basics of the degenerate Fermi Gas</a>. </li>
+        <li> 
+           <a href="./lectures/WhiteDwarfsAndNeutronStars.pdf">White-dwarf and neutron stars</a>. The lecture is based on the course notes of Richard Fitzpatrick. First discusses a simple model for the mass radius relation of the white-dwarf start using the electron degeneracy pressure. Then derives an estimate for the Chandrasekar limit.  Then briefly discusses neutron stars.</li>
+     </p>
+
+</div> <!-- site-content-->
+</div> <!-- content -->
+
+    <!--
+-->

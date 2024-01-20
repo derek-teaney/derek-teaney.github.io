@@ -1,0 +1,97 @@
+<!DOCTYPE html><html>
+<head>
+<title>3.1 Basic notions‣ Chapter 3 Entropy</title>
+<!--Generated on Fri Sep  1 09:27:00 2023 by LaTeXML (version 0.8.5) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on September 1, 2023.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="LaTeXML-navbar-left.css" type="text/css">
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=MML_HTMLorMML" type="text/javascript"></script>
+<link rel="up" href="Ch3.html" title="Chapter 3 Entropy">
+<link rel="start" href="main.html" title="">
+<link rel="prev" href="Ch3.html" title="Chapter 3 Entropy">
+<link rel="next" href="A1.html" title="Appendix A Estimates">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Kinetics">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 The first law">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Entropy">
+<link rel="appendix" href="A1.html" title="Appendix A Estimates">
+<link rel="appendix" href="A2.html" title="Appendix B Math">
+</head>
+<body>
+<nav class="ltx_page_navbar"><a href="main.html" title="" class="ltx_ref" rel="start"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a>
+<div class="ltx_TOC">
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch1.html" title="Chapter 1 Kinetics" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Kinetics</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter"><a href="Ch2.html" title="Chapter 2 The first law" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>The first law</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_chapter">
+<a href="Ch3.html" title="Chapter 3 Entropy" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Entropy</span></a>
+<ul class="ltx_toclist ltx_toclist_chapter">
+<li class="ltx_tocentry ltx_tocentry_section ltx_ref_self"><span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>Basic notions</span></span></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="A1.html" title="Appendix A Estimates" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Estimates</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_appendix"><a href="A2.html" title="Appendix B Math" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>Math</span></a></li>
+</ul>
+</div>
+</nav>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch3.html" title="Chapter 3 Entropy" class="ltx_ref" rel="up"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Entropy</span></a><a href="Ch3.html" title="Chapter 3 Entropy" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Entropy</span></a><a href="A1.html" title="Appendix A Estimates" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Estimates</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_section">
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3.1 </span>Basic notions</h1>
+<div class="ltx_dates">(September 1, 2023)</div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">We worked a very particular example to explain the concept of entropy.
+Specifically we considered <math id="p1.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> quantum harmonic oscillators sharing (or partitioning) the <math id="p1.m2" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> units of
+energy <math id="p1.m3" class="ltx_Math" alttext="E=q\hbar\omega_{0}" display="inline"><mrow><mi>E</mi><mo>=</mo><mrow><mi>q</mi><mo>⁢</mo><mi mathvariant="normal">ℏ</mi><mo>⁢</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow></mrow></math> amongst themselves. (The graphical presentation of this problem is given in the lecture notes.) The total number of ways the system can partition the available energy is <math id="p1.m4" class="ltx_Math" alttext="\Omega(E)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></math> and the entropy is</p>
+<table id="Ch3.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E1.m1" class="ltx_Math" alttext="\Omega(E)" display="block"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The system will evolve until all possible partitions of the energy are equally likely. The probability of a specific partition is</p>
+<table id="Ch3.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E2.m1" class="ltx_Math" alttext="P_{m}=\frac{1}{\Omega(E)}" display="block"><mrow><msub><mi>P</mi><mi>m</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">If there are six possible outcomes <math id="p1.m5" class="ltx_Math" alttext="\Omega(E)=6" display="inline"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>6</mn></mrow></math> (like a regular die) then the probability of an outcome is <math id="p1.m6" class="ltx_Math" alttext="1/6" display="inline"><mrow><mn>1</mn><mo>/</mo><mn>6</mn></mrow></math>. <math id="p1.m7" class="ltx_Math" alttext="\Omega" display="inline"><mi mathvariant="normal">Ω</mi></math> is an exponentially large number and is of order <math id="p1.m8" class="ltx_Math" alttext="e^{N}" display="inline"><msup><mi>e</mi><mi>N</mi></msup></math>. A precise computation done in homework gives <math id="p1.m9" class="ltx_Math" alttext="\Omega=e^{555}" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>=</mo><msup><mi>e</mi><mn>555</mn></msup></mrow></math> for <math id="p1.m10" class="ltx_Math" alttext="N=q=400" display="inline"><mrow><mi>N</mi><mo>=</mo><mi>q</mi><mo>=</mo><mn>400</mn></mrow></math>.
+The entropy is (up to a constant) the log of the number of partitions</p>
+<table id="Ch3.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ch3.E3.m1" class="ltx_Math" alttext="S=k_{B}\ln\Omega(E)=-k_{B}\log P_{m}" display="block"><mrow><mi>S</mi><mo>=</mo><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mi>ln</mi><mo>⁡</mo><mi mathvariant="normal">Ω</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>-</mo><mrow><msub><mi>k</mi><mi>B</mi></msub><mo>⁢</mo><mrow><mi>log</mi><mo>⁡</mo><msub><mi>P</mi><mi>m</mi></msub></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3.3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">Thus the entropy is of order <math id="p1.m11" class="ltx_Math" alttext="\sim Nk_{B}" display="inline"><mrow><mi></mi><mo>∼</mo><mrow><mi>N</mi><mo>⁢</mo><msub><mi>k</mi><mi>B</mi></msub></mrow></mrow></math>.</p>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="Ch3.html" title="Chapter 3 Entropy" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Entropy</span></a><a href="A1.html" title="Appendix A Estimates" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>Estimates</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Fri Sep  1 09:27:00 2023 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
