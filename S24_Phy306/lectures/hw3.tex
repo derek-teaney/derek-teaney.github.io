@@ -1,0 +1,183 @@
+
+\documentclass[12pt]{article}
+
+\usepackage{standalone}
+\RequirePackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage{graphicx,graphics}
+\usepackage{bm,mathrsfs,amssymb,amsmath, accents}
+\usepackage[inline]{enumitem}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{stmaryrd}
+\graphicspath{{./HW/}}
+
+\input{./summary_header.tex}
+
+
+\begin{document}
+\include{./HW/ParametrizingTheEos.tex}
+%\include{./HW/ParametrizingTheEos_sol.tex}
+\include{./HW/EnergyInCombustion_V0.tex}
+%\include{./HW/EnergyInCombustion_V0_sol.tex}
+\include{./HW/CombinatoricsAndTheStirlingApproximation.tex}
+%\includepdf[pages=-]{./HW/CombinatoricsAndTheStirlingApproximation_sol.pdf}
+
+\include{./HW/CentralLimitTheoremAndRandomWalk.tex}
+%\includepdf[pages=-]{./HW/CentralLimitTheoremAndRandomWalk_sol.pdf}
+
+
+\problem{A reminder on Jacobians}
+Recall that  if I have a probability distribution 
+\st
+ \dd \Pscr_x = P(x) \dd x \, , 
+\stp
+and I want to change variables to a new variable $u(x)$,  then the 
+probability distribution for $u$  is
+\st
+ \dd \Pscr_u = P(x(u)) \left| \frac{dx}{du} \right| \dd u  \, .
+\stp
+So the probability densities are arelated  by
+\st
+  P(u) = P(x(u)) \left| \frac{dx}{du} \right| \, . 
+\stp
+We will have  many physical  examples of this in  homework, e.g. the probability of a particle having a given velocity vs. the probability of a particle having a given energy.\\
+
+
+The change of variables generalizes to two and higher dimensions. Suppose 
+we have a probability density in $x,y$  describing 
+a particle's position:
+\st
+ \dd \Pscr_{x,y} = P(x, y) \,  \dd x \, \dd y \, .
+\stp
+For definiteness consider  the gaussian
+\st
+\label{eq:pxy}
+ \dd \Pscr_{x,y} = \frac{1}{2\pi \sigma^2} \exp\left(-\tfrac{x^2}{2\sigma^2}  - \tfrac{y^2}{2\sigma^2} \right) \dd x \dd y \, ,
+\stp
+shown in \Fig{xyexplain}. It seems more natural here to use polar coordinates,
+defining $x = r \cos\theta$ and $y = r\sin\theta$  with $r \in [0, \infty]$ 
+and $\theta \in [0, 2\pi]$ shown in the figure. \\
+
+In analogy with the 1D case, 
+for a change of variables $x(r,\theta)$ and $y(r,\theta)$, the probability 
+of finding a particle with radius between $r$ and $r+ \dd r$  and angle $\theta$ between $\theta$ and $\theta + \dd \theta$  is 
+\st
+  \dd \Pscr_{r, \theta} = P(x(r,\theta), y(r,\theta)) \left|\left| \frac{\partial(x, y)}{\partial (r, \theta)} \right|\right| \dd r \dd\theta \, .
+\stp
+      The double bars mean determinant and then absolute value of the Jacobian matrix, which is defined as a matrix with  all the possible derivatives of the map $(r,\theta) \rightarrow (x,y)$:\footnote{Sometimes people use $\partial(x, y)/\partial (v, \theta)$
+         to mean the determinant of the Jacobian matrix, rather than just the matrix itself. Our book uses this notation, as is described in appendix $C$. }
+      \st
+      \frac{\partial(x, y)}{\partial (r, \theta)}
+      \equiv
+             \begin{pmatrix}
+                \frac{\partial x}{\partial r} & \frac{\partial x}{\partial \theta} \\
+                \frac{\partial y}{\partial r} & \frac{\partial y}{\partial \theta}
+             \end{pmatrix} \, .
+      \stp
+      So the densities are related by
+\st
+P(r, \theta)  = P(x,y) \left|\left| \frac{\partial(x, y)}{\partial (r, \theta)} \right|\right|  \, ,
+\stp
+where it is understood that $x=r\cos\theta$ and $y=r \sin\theta$. \\
+
+    \begin{figure}
+ \centering
+ \includegraphics[width=0.55\textwidth]{./graphics/xyexplain.pdf}
+    \caption{ \label{xyexplain}  A probability distribution which 
+       has no dependence on $\theta$.
+    }
+       \end{figure}
+
+We say that the ``volume elments''  are related by the Jacobian determinant:
+      \st
+        \dd x \, \dd y = \left|\left| \frac{\partial(x,y)}{\partial (r, \theta)} \right|\right| dr d\theta =  \   r\, \dd r\, \dd \theta \, ,
+      \stp
+      where it is understood that these expressions are meant to be integrated over.  \\
+
+      \begin{enumerate}
+         \item  Compute the Jacobian matrix and find its determinant. Explicitly determine $\dd \Pscr_{r,\theta} = P(r,\theta) \dd r \dd\theta $ for the probability distribution in \Eq{eq:pxy}.  By marginalizing over (aka integrating over) the unobserved coordinate, determine 
+            $\dd \Pscr_{r} =P(r) \dd r$ and $\dd \Pscr_\theta = P(\theta) \dd \theta$, that is to say the probability distribution for $r$ (without regards to $\theta$) and the probability distribution for $\theta$ (without regards to $r$) ?
+
+        \item Let's understand the Jacobian. 
+           % Consider the change of coordinates from 
+      % $x=r\cos\theta$ and $y=r\sin\theta$. Write down the Jacobian in 
+      % analogy with (a).
+      The columns of the Jacobian form vectors
+        \begin{align}
+           {\bm e}_r  \equiv& \frac{\partial x}{\partial r} \, \hat {\bm\imath}   
+             +  \frac{\partial y}{\partial r} \, \hat {\bm \jmath}  
+             = \frac{\partial {\bm R}}{\partial r}  \, ,  \\
+           {\bm e}_\theta \equiv&  \frac{\partial x}{\partial \theta} \, \hat {\bm \imath} +  \frac{\partial y}{\partial \theta} \, \hat {\bm \jmath} 
+             = \frac{\partial {\bm R}}{\partial \theta}  \, , 
+        \end{align}
+        where ${\bm R} = x \hat{\bm \imath} + y \hat{\bm \jmath}$ is the position vector of the particle. 
+        The determinant of two vectors is the area of the parallelogram spanned by the two vectors\footnote{See for instance \href{https://www.khanacademy.org/math/linear-algebra/matrix-transformations/determinant-depth/v/linear-algebra-determinant-and-area-of-a-parallelogram}{The Kahn video}. }.
+        %These vectors describe the displacements shown in the figure below.
+        Compute the vectors\footnote{I am  asking  for the vector ${\bm e}_r$  times an (arbitrary) small increment in radial coordinate $dr$. Weighting ${\bm e}_r$ and ${\bm e_\theta}$ by the corresponding coordinate increments $dr$ and $d\theta$ gives these vectors a simple geometric meaning in terms of displacements, which I hope you will begin to understand.} ${\bm e}_r \, \dd r$ and ${\bm e}_\theta \,\dd\theta $, 
+        and the norms of the these vectors $|{\bm e}_r \dd r|$ and 
+        $|{\bm e}_\theta \dd\theta|$ and show that the vectors are orthogonal in this case. In a sentence or two, use the word ``displacement" to explain 
+        the physical meaning of the vectors ${\bm e}_r \dd r$ and ${\bm e}_\theta \dd\theta$ and their lengths by referring to \Fig{CircularFig}.   Note that the volume element is $|{\bm e}_r dr||{\bm e}_\theta d\theta|$ since the vectors are orthogonal.
+
+    \begin{figure}
+ \centering
+ \includegraphics[width=0.8\textwidth]{CircularMarkup.pdf}
+    \caption{ \label{CircularFig} 
+    Cylindrical coordinates in two dimensions.
+ }
+       \end{figure}
+       \end{enumerate}
+
+     Consider the probability distribution 
+       \st
+ \dd \Pscr_{x,y}  = \frac{1}{6 \pi} e^{\left(-5 x^2+2 x y-2 y^2\right)/18} \dd x \, \dd y
+       \stp
+       A contour plot of this probability distribution is shown in \Fig{coords}(a).
+       Consider the change of variables
+       \begin{align}
+          x =&  \left( u + v \right)  \\
+          y =&  \left( -u + 2 v \right) 
+       \end{align}
+       The $u,v$ coordinates are better adapted to the probability distribution and are shown in \Fig{coords}(a).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{figure}
+ \centering
+ \includegraphics[width=0.49\textwidth]{./graphics/XYProbDistMarkup.pdf}
+ \includegraphics[width=0.49\textwidth]{./graphics/UVProbDistribution.pdf}
+    \caption{ \label{coords} 
+       (a) A contour plot of the probability distribution $P(x,y)$ with lines of constant $u$ and $v$ indicated. Specific lines of constant $u$ and $v$ 
+       are indicated by the white lines. (b) a contour plot $P(u,v)$ with corresponding lines  of constant $u$ and $v$. The distribution becomes circular for this change of variables. }
+       \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+       \begin{enumerate}[resume]
+          \item Compute the Jacobian of the map and compute the probability distribution
+       \st
+         \dd \Pscr_{u, v} = P(u, v) \dd u\, \dd v
+       \stp
+       Your result should be qualitatively consistent with the contour plot of the result shown in \Fig{coords}(b).
+ %      The qualitative features of your result should agree with \Fig{}. 
+       % You should find
+       % \st
+       %   \dd \Pscr_{u, v} = \frac{1}{2\pi } e^{-\frac{u^2}{2} - \frac{v^2}{2} } \dd u \, \dd v
+       %\stp
+
+      Show that the probability of finding $u$ in an interval between $u$ and $u+ \dd u$ is 
+       \st
+        \dd \Pscr_{u} =P(u) \dd u \, \quad \mbox{with} \quad     P(u) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2} u^2}  \, .
+       \stp
+       % that is to say the probability of finding $u$ in an interval between $u$ and $u + \dd u$. %without regards to $v$? 
+       % You should find
+       % \st
+       %     P(u) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2} u^2} 
+       % \stp
+
+    \item Write down the column vectors, 
+       ${\bm e}_u$ and ${\bm e}_v$, of the Jacobian of the map $(u,v) \mapsto (x,y)$.
+
+       Now interpret these vectors: Sketch a unit coordinate displacement,  $du=1$ and $dv=1$,  on the origin of \Fig{coords}(b) and sketch the dispacement vectors ${\bm e}_u \, du$  for $du=1$ and 
+       ${\bm e}_v dv$ for $dv = 1$ on the origin of \Fig{coords}(a).
+       \end{enumerate}
+
+
+\end{document}
+
+
